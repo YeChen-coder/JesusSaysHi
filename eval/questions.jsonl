@@ -1,0 +1,55 @@
+{"id": "q01", "type": "direct", "question": "What did Jesus say about worrying?", "expected": ["Matthew 6:25-34", "Luke 12:22-34"]}
+{"id": "q02", "type": "situational", "question": "I can't sleep because I keep thinking about how I'll pay rent next month.", "expected": ["Matthew 6:25-34", "Luke 12:22-34"]}
+{"id": "q03", "type": "situational", "question": "I'm exhausted and burned out. Everything feels so heavy.", "expected": ["Matthew 11:28-30"]}
+{"id": "q04", "type": "direct", "question": "How many times should I forgive someone who wrongs me?", "expected": ["Matthew 18:21-35", "Luke 17:3-4"]}
+{"id": "q05", "type": "situational", "question": "My brother keeps hurting me and then apologizing. I'm done giving him chances.", "expected": ["Matthew 18:15-35", "Luke 17:3-4"]}
+{"id": "q06", "type": "direct", "question": "Did Jesus really tell people to love their enemies?", "expected": ["Matthew 5:43-48", "Luke 6:27-36"]}
+{"id": "q07", "type": "situational", "question": "There's a coworker who openly hates me and tries to make me look bad. How do I treat him?", "expected": ["Matthew 5:38-48", "Luke 6:27-36"]}
+{"id": "q08", "type": "situational", "question": "Someone humiliated me in front of everyone and I want to get back at him.", "expected": ["Matthew 5:38-48", "Luke 6:27-36"]}
+{"id": "q09", "type": "situational", "question": "I blew all the money my parents gave me and now I'm too ashamed to go home.", "expected": ["Luke 15:11-32"]}
+{"id": "q10", "type": "situational", "question": "I feel like I've wandered so far away that God has given up on me.", "expected": ["Luke 15:1-32", "Matthew 18:12-14"]}
+{"id": "q11", "type": "direct", "question": "Who counts as my neighbor?", "expected": ["Luke 10:25-37"]}
+{"id": "q12", "type": "direct", "question": "What is the greatest commandment?", "expected": ["Matthew 22:34-40", "Mark 12:28-34", "Luke 10:25-28"]}
+{"id": "q13", "type": "situational", "question": "I'm scared about the future and my heart won't stop racing.", "expected": ["John 14:1-4", "John 14:27", "John 16:33", "Matthew 6:25-34", "Luke 12:22-34"]}
+{"id": "q14", "type": "situational", "question": "My life feels like it's falling apart in a storm and I'm terrified.", "expected": ["Mark 4:35-41", "Matthew 8:23-27", "Luke 8:22-25", "Matthew 14:22-33", "Matthew 7:24-27", "Luke 6:46-49"]}
+{"id": "q15", "type": "situational", "question": "I started out with strong faith, but now I'm sinking in doubt.", "expected": ["Matthew 14:22-33", "Mark 9:14-29"]}
+{"id": "q16", "type": "situational", "question": "My friend criticizes everyone around her but never sees her own faults.", "expected": ["Matthew 7:1-5", "Luke 6:37-42"]}
+{"id": "q17", "type": "direct", "question": "Does God actually answer when I ask him for something?", "expected": ["Matthew 7:7-11", "Luke 11:5-13", "John 14:13-14", "John 16:23-24", "Mark 11:22-25", "Matthew 21:21-22"]}
+{"id": "q18", "type": "direct", "question": "How should I pray?", "expected": ["Matthew 6:5-15", "Luke 11:1-4"]}
+{"id": "q19", "type": "direct", "question": "Is it wrong to be rich?", "expected": ["Matthew 19:16-26", "Mark 10:17-27", "Luke 18:18-27", "Matthew 6:19-24", "Luke 12:13-21", "Luke 16:13", "Luke 16:19-31"]}
+{"id": "q20", "type": "situational", "question": "My job pays great but money has become my whole life and I feel empty.", "expected": ["Matthew 6:19-24", "Luke 16:13", "Luke 12:13-21", "Mark 8:34-37", "Matthew 16:24-26"]}
+{"id": "q21", "type": "situational", "question": "My family is fighting over our inheritance.", "expected": ["Luke 12:13-21"]}
+{"id": "q22", "type": "situational", "question": "I cheated on my partner and now everyone condemns me.", "expected": ["John 8:1-11", "John 7:53"]}
+{"id": "q23", "type": "situational", "question": "Everyone at my office is fighting to be the one on top.", "expected": ["Matthew 18:1-5", "Mark 9:33-37", "Luke 9:46-48", "Mark 10:35-45", "Matthew 20:20-28", "Luke 22:24-27", "Matthew 23:8-12"]}
+{"id": "q24", "type": "situational", "question": "My best friend just died and I can't stop crying.", "expected": ["John 11:17-44", "Matthew 5:4"]}
+{"id": "q25", "type": "direct", "question": "Why would anyone call the poor and the grieving blessed?", "expected": ["Matthew 5:3-12", "Luke 6:20-26"]}
+{"id": "q26", "type": "direct", "question": "What does it mean to be born again?", "expected": ["John 3:1-21"]}
+{"id": "q27", "type": "direct", "question": "Did God send his Son to condemn the world?", "expected": ["John 3:16-21", "John 12:47"]}
+{"id": "q28", "type": "direct", "question": "How do I find the way to the Father?", "expected": ["John 14:1-11"]}
+{"id": "q29", "type": "situational", "question": "I feel cut off and fruitless, like nothing I do ever grows.", "expected": ["John 15:1-11"]}
+{"id": "q30", "type": "situational", "question": "I keep chasing things that never satisfy me. I'm always thirsty for more.", "expected": ["John 4:7-26", "John 6:32-51", "John 7:37-39"]}
+{"id": "q31", "type": "situational", "question": "I feel like I'm walking around in darkness.", "expected": ["John 8:12", "John 12:35-36", "John 12:44-46", "John 1:4-9", "John 3:19-21", "Matthew 6:22-23", "Luke 11:33-36"]}
+{"id": "q32", "type": "situational", "question": "I'm so overwhelmed I feel like I could die, and my friends just keep sleeping through it.", "expected": ["Matthew 26:36-46", "Mark 14:32-42", "Luke 22:39-46"]}
+{"id": "q33", "type": "situational", "question": "I betrayed my best friend right when he needed me most.", "expected": ["Matthew 26:69-75", "Mark 14:66-72", "Luke 22:54-62", "John 18:15-27", "John 21:15-19", "Matthew 26:14-16", "Matthew 26:47-50", "Matthew 27:3-5"]}
+{"id": "q34", "type": "situational", "question": "I can't believe anything unless I see proof with my own eyes.", "expected": ["John 20:24-29"]}
+{"id": "q35", "type": "situational", "question": "I'm busy serving everyone while my sister just sits around, and I'm resentful.", "expected": ["Luke 10:38-42"]}
+{"id": "q36", "type": "situational", "question": "I can only donate a tiny amount. Does it even matter?", "expected": ["Mark 12:41-44", "Luke 21:1-4"]}
+{"id": "q37", "type": "situational", "question": "I like posting my charity work online so people see it.", "expected": ["Matthew 6:1-6"]}
+{"id": "q38", "type": "direct", "question": "Should believers pay taxes to the government?", "expected": ["Matthew 22:15-22", "Mark 12:13-17", "Luke 20:20-26", "Matthew 17:24-27"]}
+{"id": "q39", "type": "direct", "question": "What did Jesus teach about divorce?", "expected": ["Matthew 19:3-12", "Mark 10:2-12", "Matthew 5:31-32", "Luke 16:18"]}
+{"id": "q40", "type": "direct", "question": "Do little children matter to God?", "expected": ["Matthew 19:13-15", "Mark 10:13-16", "Luke 18:15-17", "Matthew 18:1-14", "Mark 9:36-37"]}
+{"id": "q41", "type": "situational", "question": "My faith is so small. Is it even enough?", "expected": ["Matthew 17:20", "Luke 17:5-6", "Matthew 13:31-32", "Mark 4:30-32", "Mark 9:14-29"]}
+{"id": "q42", "type": "situational", "question": "I've prayed for the same thing for years and nothing happens. Should I just give up?", "expected": ["Luke 18:1-8", "Luke 11:5-13", "Matthew 7:7-11"]}
+{"id": "q43", "type": "situational", "question": "Honestly, I'm proud that I'm a better person than most people around me.", "expected": ["Luke 18:9-14"]}
+{"id": "q44", "type": "situational", "question": "I've cheated people out of money and I want to make it right.", "expected": ["Luke 19:1-10"]}
+{"id": "q45", "type": "situational", "question": "I'm afraid to use my abilities because I might fail.", "expected": ["Matthew 25:14-30", "Luke 19:11-27"]}
+{"id": "q46", "type": "direct", "question": "Does helping the homeless and visiting prisoners matter to God?", "expected": ["Matthew 25:31-46"]}
+{"id": "q47", "type": "situational", "question": "How do I build a life that won't collapse when things get hard?", "expected": ["Matthew 7:24-27", "Luke 6:46-49"]}
+{"id": "q48", "type": "situational", "question": "I keep giving in to temptation and I don't know how to resist.", "expected": ["Matthew 4:1-11", "Luke 4:1-13", "Mark 1:12-13", "Matthew 26:41", "Mark 14:38", "Matthew 6:13", "Luke 11:4", "Luke 22:40", "Luke 22:46", "Matthew 5:29-30", "Mark 9:43-48"]}
+{"id": "q49", "type": "direct", "question": "Is it wrong to do work on the Sabbath?", "expected": ["Mark 2:23-3:6", "Matthew 12:1-14", "Luke 6:1-11", "Luke 13:10-17", "Luke 14:1-6", "John 5:1-18", "John 7:21-24", "John 9:13-16"]}
+{"id": "q50", "type": "direct", "question": "How will people know someone truly follows Jesus?", "expected": ["John 13:34-35", "John 15:8-17", "Matthew 7:15-23", "Luke 6:43-45"]}
+{"id": "q51", "type": "situational", "question": "I'm the boss. Why should I do humble work for my team?", "expected": ["John 13:1-17", "Mark 10:42-45", "Matthew 20:25-28", "Luke 22:24-27", "Matthew 23:11-12"]}
+{"id": "q52", "type": "situational", "question": "I feel completely worthless, like I don't matter to anyone.", "expected": ["Matthew 10:29-31", "Luke 12:6-7", "Matthew 6:26", "Luke 12:24", "Luke 15:1-32", "Matthew 18:12-14"]}
+{"id": "q53", "type": "situational", "question": "My own family doesn't respect what I do.", "expected": ["Mark 6:1-6", "Matthew 13:53-58", "Luke 4:16-30", "John 4:44", "Mark 3:20-21", "Mark 3:31-35", "John 7:1-5"]}
+{"id": "q54", "type": "situational", "question": "I'm so angry at my brother I could explode.", "expected": ["Matthew 5:21-26"]}
+{"id": "q55", "type": "direct", "question": "Should I swear an oath to prove I'm telling the truth?", "expected": ["Matthew 5:33-37", "Matthew 23:16-22"]}

@@ -1,0 +1,2816 @@
+[
+ {
+  "id": "q01",
+  "type": "direct",
+  "question": "What did Jesus say about worrying?",
+  "expected": [
+   "Matthew 6:25-34",
+   "Luke 12:22-34"
+  ],
+  "ranks": {
+   "bm25": 1,
+   "dense": 1,
+   "hybrid": 1,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Matthew 6:27-31",
+    "Luke 12:25-29",
+    "Luke 12:11-15"
+   ],
+   "dense": [
+    "Matthew 6:27-31",
+    "Luke 12:25-29",
+    "Luke 12:19-23"
+   ],
+   "hybrid": [
+    "Matthew 6:27-31",
+    "Luke 12:25-29",
+    "Luke 12:11-15"
+   ],
+   "bm25 + rewrite": [
+    "Matthew 6:30-34",
+    "Matthew 6:7-11",
+    "John 20:17-21"
+   ],
+   "dense + rewrite": [
+    "Matthew 6:25-29",
+    "Luke 12:29-33",
+    "Matthew 6:30-34"
+   ],
+   "hybrid + rewrite": [
+    "Matthew 6:30-34",
+    "Matthew 6:25-29",
+    "Luke 12:29-33"
+   ]
+  },
+  "rewrite": "Jesus about worry, anxiety, fear; trust God, daily needs, birds and flowers, peace, kingdom first"
+ },
+ {
+  "id": "q02",
+  "type": "situational",
+  "question": "I can't sleep because I keep thinking about how I'll pay rent next month.",
+  "expected": [
+   "Matthew 6:25-34",
+   "Luke 12:22-34"
+  ],
+  "ranks": {
+   "bm25": null,
+   "dense": 6,
+   "hybrid": null,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Mark 14:37-41",
+    "Matthew 22:15-19",
+    "Mark 13:33-37"
+   ],
+   "dense": [
+    "Luke 16:3-7",
+    "Matthew 18:28-32",
+    "Luke 12:17-21"
+   ],
+   "hybrid": [
+    "Mark 13:33-37",
+    "Matthew 18:26-30",
+    "Mark 14:37-41"
+   ],
+   "bm25 + rewrite": [
+    "Matthew 6:30-34",
+    "Mark 4:37-41",
+    "Luke 12:27-31"
+   ],
+   "dense + rewrite": [
+    "Matthew 6:30-34",
+    "Luke 12:19-23",
+    "Luke 12:29-33"
+   ],
+   "hybrid + rewrite": [
+    "Matthew 6:30-34",
+    "Luke 12:25-29",
+    "Mark 4:37-41"
+   ]
+  },
+  "rewrite": "Jesus calming worry about money, rent, and tomorrow\u2019s needs; trust in God\u2019s care, peace, provision, anxiety, daily bread, no fear"
+ },
+ {
+  "id": "q03",
+  "type": "situational",
+  "question": "I'm exhausted and burned out. Everything feels so heavy.",
+  "expected": [
+   "Matthew 11:28-30"
+  ],
+  "ranks": {
+   "bm25": null,
+   "dense": 1,
+   "hybrid": 7,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Matthew 23:1-5",
+    "Luke 22:41-45",
+    "Matthew 22:3-7"
+   ],
+   "dense": [
+    "Matthew 11:26-30",
+    "Luke 12:49-53",
+    "Luke 11:43-47"
+   ],
+   "hybrid": [
+    "Luke 22:41-45",
+    "Matthew 23:1-5",
+    "Luke 11:43-47"
+   ],
+   "bm25 + rewrite": [
+    "Matthew 11:26-30",
+    "Matthew 12:17-21",
+    "Luke 11:45-49"
+   ],
+   "dense + rewrite": [
+    "Matthew 11:26-30",
+    "Mark 14:33-37",
+    "Matthew 26:37-41"
+   ],
+   "hybrid + rewrite": [
+    "Matthew 11:26-30",
+    "Luke 11:43-47",
+    "Matthew 26:41-45"
+   ]
+  },
+  "rewrite": "Jesus exhaustion burned out heavy burden rest peace comfort weary soul hope keywords: tired, burdened, rest, peace, relief, burden, weary"
+ },
+ {
+  "id": "q04",
+  "type": "direct",
+  "question": "How many times should I forgive someone who wrongs me?",
+  "expected": [
+   "Matthew 18:21-35",
+   "Luke 17:3-4"
+  ],
+  "ranks": {
+   "bm25": 2,
+   "dense": 1,
+   "hybrid": 1,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 2,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Luke 7:17-21",
+    "Matthew 18:20-24",
+    "Matthew 6:9-13"
+   ],
+   "dense": [
+    "Matthew 18:20-24",
+    "Luke 17:1-5",
+    "Matthew 18:31-35"
+   ],
+   "hybrid": [
+    "Matthew 18:20-24",
+    "Luke 17:1-5",
+    "Matthew 18:31-35"
+   ],
+   "bm25 + rewrite": [
+    "Luke 17:1-5",
+    "Luke 1:75-79",
+    "Matthew 5:39-43"
+   ],
+   "dense + rewrite": [
+    "Luke 6:33-37",
+    "Matthew 18:20-24",
+    "Luke 17:3-7"
+   ],
+   "hybrid + rewrite": [
+    "Luke 17:3-7",
+    "Matthew 6:11-15",
+    "Matthew 18:31-35"
+   ]
+  },
+  "rewrite": "forgiveness when someone keeps wronging me; mercy, patience, letting go, not counting offenses, reconciliation, repent, forgive others"
+ },
+ {
+  "id": "q05",
+  "type": "situational",
+  "question": "My brother keeps hurting me and then apologizing. I'm done giving him chances.",
+  "expected": [
+   "Matthew 18:15-35",
+   "Luke 17:3-4"
+  ],
+  "ranks": {
+   "bm25": null,
+   "dense": 2,
+   "hybrid": 4,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Matthew 6:3-7",
+    "Mark 6:3-7",
+    "John 15:7-11"
+   ],
+   "dense": [
+    "Matthew 5:21-25",
+    "Matthew 18:31-35",
+    "Luke 17:1-5"
+   ],
+   "hybrid": [
+    "Matthew 5:21-25",
+    "Matthew 12:45-49",
+    "Mark 3:29-33"
+   ],
+   "bm25 + rewrite": [
+    "Matthew 18:31-35",
+    "Luke 24:45-49",
+    "Mark 1:1-5"
+   ],
+   "dense + rewrite": [
+    "Luke 17:3-7",
+    "Matthew 18:12-16",
+    "Matthew 5:21-25"
+   ],
+   "hybrid + rewrite": [
+    "Matthew 18:31-35",
+    "Matthew 3:7-11",
+    "Luke 3:5-9"
+   ]
+  },
+  "rewrite": "forgiveness when family keeps hurting you, mercy and boundaries, repentance, reconciliation, anger, forgiveness, brother, repeat offense"
+ },
+ {
+  "id": "q06",
+  "type": "direct",
+  "question": "Did Jesus really tell people to love their enemies?",
+  "expected": [
+   "Matthew 5:43-48",
+   "Luke 6:27-36"
+  ],
+  "ranks": {
+   "bm25": 1,
+   "dense": 1,
+   "hybrid": 1,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Matthew 5:43-47",
+    "Luke 6:31-35",
+    "Luke 20:43-47"
+   ],
+   "dense": [
+    "Matthew 5:43-47",
+    "Luke 6:27-31",
+    "Luke 6:35-39"
+   ],
+   "hybrid": [
+    "Matthew 5:43-47",
+    "Luke 6:27-31",
+    "Luke 6:35-39"
+   ],
+   "bm25 + rewrite": [
+    "Luke 6:27-31",
+    "Matthew 5:39-43",
+    "Matthew 5:44-48"
+   ],
+   "dense + rewrite": [
+    "Matthew 5:43-47",
+    "Luke 6:27-31",
+    "Luke 6:35-39"
+   ],
+   "hybrid + rewrite": [
+    "Luke 6:27-31",
+    "Matthew 5:43-47",
+    "Matthew 5:7-11"
+   ]
+  },
+  "rewrite": "Jesus loving enemies, enemy love, forgiveness, mercy, peace, turning the other cheek, pray for those who hurt you, love and bless enemies"
+ },
+ {
+  "id": "q07",
+  "type": "situational",
+  "question": "There's a coworker who openly hates me and tries to make me look bad. How do I treat him?",
+  "expected": [
+   "Matthew 5:38-48",
+   "Luke 6:27-36"
+  ],
+  "ranks": {
+   "bm25": 6,
+   "dense": 2,
+   "hybrid": 2,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Luke 6:19-23",
+    "John 15:19-23",
+    "Matthew 12:33-37"
+   ],
+   "dense": [
+    "John 15:17-21",
+    "Luke 6:27-31",
+    "Matthew 5:39-43"
+   ],
+   "hybrid": [
+    "John 15:17-21",
+    "Luke 6:25-29",
+    "Matthew 12:33-37"
+   ],
+   "bm25 + rewrite": [
+    "Luke 6:25-29",
+    "Matthew 5:41-45",
+    "John 15:17-21"
+   ],
+   "dense + rewrite": [
+    "Luke 6:27-31",
+    "Matthew 5:43-47",
+    "Matthew 5:7-11"
+   ],
+   "hybrid + rewrite": [
+    "Luke 6:27-31",
+    "Matthew 5:43-47",
+    "John 15:17-21"
+   ]
+  },
+  "rewrite": "enemy at work, how to treat someone who hates you, love your enemies, bless those who mistreat you, forgiveness, kindness, peace"
+ },
+ {
+  "id": "q08",
+  "type": "situational",
+  "question": "Someone humiliated me in front of everyone and I want to get back at him.",
+  "expected": [
+   "Matthew 5:38-48",
+   "Luke 6:27-36"
+  ],
+  "ranks": {
+   "bm25": 1,
+   "dense": null,
+   "hybrid": 2,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Luke 6:27-31",
+    "Luke 14:7-11",
+    "John 5:3-8"
+   ],
+   "dense": [
+    "Matthew 26:65-69",
+    "Matthew 18:30-34",
+    "Luke 14:9-13"
+   ],
+   "hybrid": [
+    "Luke 14:7-11",
+    "Luke 6:27-31",
+    "Luke 12:9-13"
+   ],
+   "bm25 + rewrite": [
+    "Luke 6:33-37",
+    "Matthew 5:43-47",
+    "Luke 6:27-31"
+   ],
+   "dense + rewrite": [
+    "Luke 6:25-29",
+    "Matthew 5:43-47",
+    "Luke 6:33-37"
+   ],
+   "hybrid + rewrite": [
+    "Luke 6:33-37",
+    "Matthew 5:43-47",
+    "Luke 6:27-31"
+   ]
+  },
+  "rewrite": "hurt, humiliation, revenge, forgiveness, enemy love, anger, shame, retaliation, forgive those who wrong you"
+ },
+ {
+  "id": "q09",
+  "type": "situational",
+  "question": "I blew all the money my parents gave me and now I'm too ashamed to go home.",
+  "expected": [
+   "Luke 15:11-32"
+  ],
+  "ranks": {
+   "bm25": null,
+   "dense": 1,
+   "hybrid": 2,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Luke 16:1-5",
+    "Matthew 25:42-46",
+    "Luke 2:39-43"
+   ],
+   "dense": [
+    "Luke 15:17-21",
+    "Luke 16:1-5",
+    "Luke 15:11-15"
+   ],
+   "hybrid": [
+    "Luke 16:1-5",
+    "Luke 15:17-21",
+    "Matthew 25:42-46"
+   ],
+   "bm25 + rewrite": [
+    "Luke 15:28-32",
+    "Luke 1:55-59",
+    "Luke 15:9-13"
+   ],
+   "dense + rewrite": [
+    "Luke 15:9-13",
+    "Luke 15:21-25",
+    "Luke 15:27-31"
+   ],
+   "hybrid + rewrite": [
+    "Luke 15:9-13",
+    "Luke 15:27-31",
+    "Luke 15:21-25"
+   ]
+  },
+  "rewrite": "lost son ashamed return home forgiveness mercy father restoration repentance grace siblings family keywords: squandered money shame homecoming"
+ },
+ {
+  "id": "q10",
+  "type": "situational",
+  "question": "I feel like I've wandered so far away that God has given up on me.",
+  "expected": [
+   "Luke 15:1-32",
+   "Matthew 18:12-14"
+  ],
+  "ranks": {
+   "bm25": null,
+   "dense": 6,
+   "hybrid": null,
+   "bm25 + rewrite": 7,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 2
+  },
+  "top": {
+   "bm25": [
+    "Mark 4:23-27",
+    "Mark 4:11-15",
+    "Luke 20:33-37"
+   ],
+   "dense": [
+    "Matthew 27:43-47",
+    "John 16:1-5",
+    "John 7:33-37"
+   ],
+   "hybrid": [
+    "Matthew 27:43-47",
+    "Mark 4:23-27",
+    "John 16:1-5"
+   ],
+   "bm25 + rewrite": [
+    "Luke 24:47-51",
+    "Matthew 10:11-15",
+    "Mark 1:1-5"
+   ],
+   "dense + rewrite": [
+    "Luke 15:3-7",
+    "Luke 15:9-13",
+    "Luke 19:9-13"
+   ],
+   "hybrid + rewrite": [
+    "Luke 24:47-51",
+    "Luke 15:3-7",
+    "Luke 19:9-13"
+   ]
+  },
+  "rewrite": "lost and far from God, feeling abandoned, Jesus welcomes the lost, mercy, forgiveness, repentance, hope, return home"
+ },
+ {
+  "id": "q11",
+  "type": "direct",
+  "question": "Who counts as my neighbor?",
+  "expected": [
+   "Luke 10:25-37"
+  ],
+  "ranks": {
+   "bm25": 2,
+   "dense": 1,
+   "hybrid": 1,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Luke 14:25-29",
+    "Luke 10:25-29",
+    "Mark 12:29-33"
+   ],
+   "dense": [
+    "Luke 10:25-29",
+    "Matthew 5:43-47",
+    "Matthew 22:39-43"
+   ],
+   "hybrid": [
+    "Luke 10:25-29",
+    "Mark 12:31-35",
+    "Matthew 22:39-43"
+   ],
+   "bm25 + rewrite": [
+    "Luke 10:25-29",
+    "Matthew 22:35-39",
+    "Luke 10:33-37"
+   ],
+   "dense + rewrite": [
+    "Luke 10:33-37",
+    "Luke 10:25-29",
+    "Matthew 5:43-47"
+   ],
+   "hybrid + rewrite": [
+    "Luke 10:25-29",
+    "Luke 10:33-37",
+    "Matthew 5:43-47"
+   ]
+  },
+  "rewrite": "neighbor love mercy mercy across boundaries outsider compassion kind action Jesus point law help victim outsider stranger inclusive love"
+ },
+ {
+  "id": "q12",
+  "type": "direct",
+  "question": "What is the greatest commandment?",
+  "expected": [
+   "Matthew 22:34-40",
+   "Mark 12:28-34",
+   "Luke 10:25-28"
+  ],
+  "ranks": {
+   "bm25": 1,
+   "dense": 1,
+   "hybrid": 1,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Matthew 22:35-39",
+    "John 15:9-13",
+    "Matthew 18:1-5"
+   ],
+   "dense": [
+    "Matthew 22:35-39",
+    "Mark 12:29-33",
+    "Matthew 5:17-21"
+   ],
+   "hybrid": [
+    "Matthew 22:35-39",
+    "John 15:9-13",
+    "Mark 12:27-31"
+   ],
+   "bm25 + rewrite": [
+    "Matthew 22:35-39",
+    "Mark 12:29-33",
+    "Luke 10:25-29"
+   ],
+   "dense + rewrite": [
+    "Matthew 22:35-39",
+    "Mark 12:29-33",
+    "Luke 10:25-29"
+   ],
+   "hybrid + rewrite": [
+    "Matthew 22:35-39",
+    "Mark 12:29-33",
+    "Luke 10:25-29"
+   ]
+  },
+  "rewrite": "greatest commandment love God with all your heart soul mind strength and love your neighbor human need: guidance to live faithfully themes: love obedience loyalty community keywords: love God neighbor commandment among the four Gospels"
+ },
+ {
+  "id": "q13",
+  "type": "situational",
+  "question": "I'm scared about the future and my heart won't stop racing.",
+  "expected": [
+   "John 14:1-4",
+   "John 14:27",
+   "John 16:33",
+   "Matthew 6:25-34",
+   "Luke 12:22-34"
+  ],
+  "ranks": {
+   "bm25": null,
+   "dense": 7,
+   "hybrid": null,
+   "bm25 + rewrite": 4,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Luke 9:47-51",
+    "Mark 9:37-41",
+    "Luke 17:5-9"
+   ],
+   "dense": [
+    "Luke 12:3-7",
+    "Matthew 10:27-31",
+    "Mark 13:7-11"
+   ],
+   "hybrid": [
+    "Luke 9:47-51",
+    "Luke 12:3-7",
+    "Matthew 10:27-31"
+   ],
+   "bm25 + rewrite": [
+    "Matthew 14:23-27",
+    "Mark 6:49-53",
+    "Mark 4:37-41"
+   ],
+   "dense + rewrite": [
+    "John 14:27-31",
+    "Matthew 10:27-31",
+    "Luke 12:3-7"
+   ],
+   "hybrid + rewrite": [
+    "John 14:27-31",
+    "Luke 12:3-7",
+    "Matthew 14:23-27"
+   ]
+  },
+  "rewrite": "fear about the future, anxious heart, Jesus peace and trust, worry, courage, not afraid, calm heart"
+ },
+ {
+  "id": "q14",
+  "type": "situational",
+  "question": "My life feels like it's falling apart in a storm and I'm terrified.",
+  "expected": [
+   "Mark 4:35-41",
+   "Matthew 8:23-27",
+   "Luke 8:22-25",
+   "Matthew 14:22-33",
+   "Matthew 7:24-27",
+   "Luke 6:46-49"
+  ],
+  "ranks": {
+   "bm25": 4,
+   "dense": 1,
+   "hybrid": 2,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Matthew 10:25-29",
+    "Mark 4:15-19",
+    "John 15:5-9"
+   ],
+   "dense": [
+    "Mark 4:37-41",
+    "Luke 21:25-29",
+    "Matthew 7:25-29"
+   ],
+   "hybrid": [
+    "Matthew 10:27-31",
+    "Matthew 7:23-27",
+    "Matthew 8:23-27"
+   ],
+   "bm25 + rewrite": [
+    "Matthew 8:23-27",
+    "Mark 4:37-41",
+    "Luke 8:21-25"
+   ],
+   "dense + rewrite": [
+    "Mark 4:37-41",
+    "Matthew 8:23-27",
+    "Luke 8:21-25"
+   ],
+   "hybrid + rewrite": [
+    "Matthew 8:23-27",
+    "Mark 4:37-41",
+    "Luke 8:21-25"
+   ]
+  },
+  "rewrite": "Jesus calming the storm, fear and trust in crisis, God\u2019s peace, safety, faith, strong wind, waves, boat, rescue"
+ },
+ {
+  "id": "q15",
+  "type": "situational",
+  "question": "I started out with strong faith, but now I'm sinking in doubt.",
+  "expected": [
+   "Matthew 14:22-33",
+   "Mark 9:14-29"
+  ],
+  "ranks": {
+   "bm25": 1,
+   "dense": 1,
+   "hybrid": 1,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Matthew 14:27-31",
+    "Luke 9:43-47",
+    "John 6:17-21"
+   ],
+   "dense": [
+    "Matthew 14:27-31",
+    "Mark 4:37-41",
+    "Matthew 7:25-29"
+   ],
+   "hybrid": [
+    "Matthew 14:27-31",
+    "Mark 11:19-23",
+    "Matthew 21:21-25"
+   ],
+   "bm25 + rewrite": [
+    "Matthew 14:27-31",
+    "Luke 12:25-29",
+    "Matthew 6:27-31"
+   ],
+   "dense + rewrite": [
+    "Matthew 14:27-31",
+    "Mark 4:37-41",
+    "Luke 8:21-25"
+   ],
+   "hybrid + rewrite": [
+    "Matthew 14:27-31",
+    "Mark 5:33-37",
+    "Mark 4:37-41"
+   ]
+  },
+  "rewrite": "doubt and sinking faith; Jesus speaks to fear, trust, and little faith; keywords: doubt, faith, worry, trust, sinking, believe"
+ },
+ {
+  "id": "q16",
+  "type": "situational",
+  "question": "My friend criticizes everyone around her but never sees her own faults.",
+  "expected": [
+   "Matthew 7:1-5",
+   "Luke 6:37-42"
+  ],
+  "ranks": {
+   "bm25": 6,
+   "dense": 1,
+   "hybrid": 1,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "John 6:35-39",
+    "Mark 5:19-23",
+    "Mark 4:9-13"
+   ],
+   "dense": [
+    "Matthew 7:1-5",
+    "Luke 6:41-45",
+    "Matthew 23:24-28"
+   ],
+   "hybrid": [
+    "Luke 6:39-43",
+    "Matthew 7:1-5",
+    "Matthew 13:13-17"
+   ],
+   "bm25 + rewrite": [
+    "Matthew 7:1-5",
+    "Matthew 23:24-28",
+    "Luke 6:39-43"
+   ],
+   "dense + rewrite": [
+    "Luke 6:37-41",
+    "Matthew 7:1-5",
+    "Matthew 23:22-26"
+   ],
+   "hybrid + rewrite": [
+    "Matthew 7:1-5",
+    "Luke 6:39-43",
+    "Matthew 23:22-26"
+   ]
+  },
+  "rewrite": "Jesus teaching on judgment and hypocrisy, self-righteous criticism, own faults first, speck and log, humility, mercy"
+ },
+ {
+  "id": "q17",
+  "type": "direct",
+  "question": "Does God actually answer when I ask him for something?",
+  "expected": [
+   "Matthew 7:7-11",
+   "Luke 11:5-13",
+   "John 14:13-14",
+   "John 16:23-24",
+   "Mark 11:22-25",
+   "Matthew 21:21-22"
+  ],
+  "ranks": {
+   "bm25": null,
+   "dense": 1,
+   "hybrid": 5,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Matthew 25:35-39",
+    "John 18:19-23",
+    "John 5:14-18"
+   ],
+   "dense": [
+    "Matthew 7:7-11",
+    "Luke 11:9-13",
+    "Luke 18:3-7"
+   ],
+   "hybrid": [
+    "Matthew 25:37-41",
+    "John 9:23-27",
+    "Mark 11:29-33"
+   ],
+   "bm25 + rewrite": [
+    "Luke 11:7-11",
+    "Matthew 7:7-11",
+    "John 8:47-51"
+   ],
+   "dense + rewrite": [
+    "Matthew 7:7-11",
+    "Luke 11:9-13",
+    "Matthew 6:7-11"
+   ],
+   "hybrid + rewrite": [
+    "Matthew 7:7-11",
+    "Luke 11:9-13",
+    "Matthew 6:29-33"
+   ]
+  },
+  "rewrite": "God hears prayer, answers in his way and timing, trust, ask, seek, knock, faith, father, need, give, receive"
+ },
+ {
+  "id": "q18",
+  "type": "direct",
+  "question": "How should I pray?",
+  "expected": [
+   "Matthew 6:5-15",
+   "Luke 11:1-4"
+  ],
+  "ranks": {
+   "bm25": 1,
+   "dense": 1,
+   "hybrid": 1,
+   "bm25 + rewrite": 2,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Matthew 6:5-9",
+    "Luke 22:45-49",
+    "Matthew 19:11-15"
+   ],
+   "dense": [
+    "Matthew 6:5-9",
+    "Luke 11:1-5",
+    "Mark 14:35-39"
+   ],
+   "hybrid": [
+    "Matthew 6:5-9",
+    "Luke 11:1-5",
+    "Mark 14:35-39"
+   ],
+   "bm25 + rewrite": [
+    "Mark 11:21-25",
+    "Luke 11:1-5",
+    "Luke 11:9-13"
+   ],
+   "dense + rewrite": [
+    "Luke 11:1-5",
+    "Matthew 6:9-13",
+    "Matthew 7:7-11"
+   ],
+   "hybrid + rewrite": [
+    "Luke 11:1-5",
+    "Luke 11:9-13",
+    "Matthew 7:7-11"
+   ]
+  },
+  "rewrite": "how to pray persistently and sincerely; God as Father, forgiveness, trust, humility, secret prayer, Jesus teaching prayer keywords: pray, Father, forgive, ask, seek, knock, kingdom"
+ },
+ {
+  "id": "q19",
+  "type": "direct",
+  "question": "Is it wrong to be rich?",
+  "expected": [
+   "Matthew 19:16-26",
+   "Mark 10:17-27",
+   "Luke 18:18-27",
+   "Matthew 6:19-24",
+   "Luke 12:13-21",
+   "Luke 16:13",
+   "Luke 16:19-31"
+  ],
+  "ranks": {
+   "bm25": 2,
+   "dense": 1,
+   "hybrid": 1,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "John 18:21-25",
+    "Luke 16:19-23",
+    "Luke 23:38-42"
+   ],
+   "dense": [
+    "Luke 16:9-13",
+    "Luke 18:21-25",
+    "Mark 10:21-25"
+   ],
+   "hybrid": [
+    "Luke 18:21-25",
+    "Mark 10:21-25",
+    "Matthew 19:21-25"
+   ],
+   "bm25 + rewrite": [
+    "Matthew 19:21-25",
+    "Mark 10:21-25",
+    "Luke 18:23-27"
+   ],
+   "dense + rewrite": [
+    "Luke 18:21-25",
+    "Mark 10:21-25",
+    "Luke 16:9-13"
+   ],
+   "hybrid + rewrite": [
+    "Mark 10:21-25",
+    "Matthew 19:21-25",
+    "Luke 18:21-25"
+   ]
+  },
+  "rewrite": "rich wealth danger trusting money Jesus kingdom generosity greed heart anxiety need stewardship riches poverty warning camel needle faithfulness"
+ },
+ {
+  "id": "q20",
+  "type": "situational",
+  "question": "My job pays great but money has become my whole life and I feel empty.",
+  "expected": [
+   "Matthew 6:19-24",
+   "Luke 16:13",
+   "Luke 12:13-21",
+   "Mark 8:34-37",
+   "Matthew 16:24-26"
+  ],
+  "ranks": {
+   "bm25": 1,
+   "dense": 1,
+   "hybrid": 1,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Matthew 6:21-25",
+    "Luke 1:49-53",
+    "Matthew 20:25-29"
+   ],
+   "dense": [
+    "Matthew 6:21-25",
+    "Luke 15:13-17",
+    "Luke 16:9-13"
+   ],
+   "hybrid": [
+    "Matthew 6:21-25",
+    "Matthew 20:11-15",
+    "Mark 4:19-23"
+   ],
+   "bm25 + rewrite": [
+    "Matthew 6:21-25",
+    "Luke 16:11-15",
+    "Luke 6:43-47"
+   ],
+   "dense + rewrite": [
+    "Matthew 6:21-25",
+    "Luke 18:21-25",
+    "Luke 12:21-25"
+   ],
+   "hybrid + rewrite": [
+    "Matthew 6:21-25",
+    "Matthew 19:19-23",
+    "Luke 16:11-15"
+   ]
+  },
+  "rewrite": "empty wealth work meaning of life Jesus money treasure heart anxiety contentment greed purpose identity"
+ },
+ {
+  "id": "q21",
+  "type": "situational",
+  "question": "My family is fighting over our inheritance.",
+  "expected": [
+   "Luke 12:13-21"
+  ],
+  "ranks": {
+   "bm25": 7,
+   "dense": 1,
+   "hybrid": 2,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "John 18:33-37",
+    "Mark 12:3-7",
+    "Mark 3:21-25"
+   ],
+   "dense": [
+    "Luke 12:13-17",
+    "Luke 15:11-15",
+    "Luke 12:49-53"
+   ],
+   "hybrid": [
+    "Mark 12:3-7",
+    "Luke 12:13-17",
+    "Matthew 21:35-39"
+   ],
+   "bm25 + rewrite": [
+    "Luke 12:11-15",
+    "Luke 11:39-43",
+    "Matthew 23:22-26"
+   ],
+   "dense + rewrite": [
+    "Luke 12:13-17",
+    "Luke 12:49-53",
+    "Matthew 19:19-23"
+   ],
+   "hybrid + rewrite": [
+    "Luke 12:13-17",
+    "Luke 18:5-9",
+    "Mark 12:7-11"
+   ]
+  },
+  "rewrite": "inheritance dispute; greed, justice, family conflict, contentment, money, ownership, fairness, peace"
+ },
+ {
+  "id": "q22",
+  "type": "situational",
+  "question": "I cheated on my partner and now everyone condemns me.",
+  "expected": [
+   "John 8:1-11",
+   "John 7:53"
+  ],
+  "ranks": {
+   "bm25": 6,
+   "dense": 2,
+   "hybrid": 2,
+   "bm25 + rewrite": null,
+   "dense + rewrite": null,
+   "hybrid + rewrite": null
+  },
+  "top": {
+   "bm25": [
+    "John 3:15-19",
+    "Luke 6:37-41",
+    "Luke 5:7-11"
+   ],
+   "dense": [
+    "Matthew 5:25-29",
+    "John 8:7-11",
+    "Luke 16:15-19"
+   ],
+   "hybrid": [
+    "John 3:17-21",
+    "John 8:7-11",
+    "Matthew 23:30-34"
+   ],
+   "bm25 + rewrite": [
+    "Luke 24:45-49",
+    "John 1:13-17",
+    "Mark 1:1-5"
+   ],
+   "dense + rewrite": [
+    "Luke 7:43-47",
+    "Mark 7:22-26",
+    "Luke 6:33-37"
+   ],
+   "hybrid + rewrite": [
+    "Matthew 5:25-29",
+    "Matthew 18:31-35",
+    "Luke 24:45-49"
+   ]
+  },
+  "rewrite": "forgiveness after adultery shame, mercy over condemnation, second chance, guilt, grace, repentance, restored dignity"
+ },
+ {
+  "id": "q23",
+  "type": "situational",
+  "question": "Everyone at my office is fighting to be the one on top.",
+  "expected": [
+   "Matthew 18:1-5",
+   "Mark 9:33-37",
+   "Luke 9:46-48",
+   "Mark 10:35-45",
+   "Matthew 20:20-28",
+   "Luke 22:24-27",
+   "Matthew 23:8-12"
+  ],
+  "ranks": {
+   "bm25": null,
+   "dense": 1,
+   "hybrid": 4,
+   "bm25 + rewrite": 3,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "John 18:36-40",
+    "Matthew 27:47-51",
+    "John 19:19-23"
+   ],
+   "dense": [
+    "Luke 22:23-27",
+    "Mark 10:41-45",
+    "Luke 12:49-53"
+   ],
+   "hybrid": [
+    "Luke 14:7-11",
+    "Matthew 25:29-33",
+    "Luke 14:29-33"
+   ],
+   "bm25 + rewrite": [
+    "Matthew 22:35-39",
+    "Mark 10:27-31",
+    "Matthew 18:1-5"
+   ],
+   "dense + rewrite": [
+    "Luke 22:23-27",
+    "Matthew 20:25-29",
+    "Mark 10:41-45"
+   ],
+   "hybrid + rewrite": [
+    "Mark 9:33-37",
+    "Matthew 18:1-5",
+    "Luke 14:7-11"
+   ]
+  },
+  "rewrite": "Jesus about pride, status, ambition, and humility in the Gospels: who is greatest, serving others, first last, humble heart, power, conflict"
+ },
+ {
+  "id": "q24",
+  "type": "situational",
+  "question": "My best friend just died and I can't stop crying.",
+  "expected": [
+   "John 11:17-44",
+   "Matthew 5:4"
+  ],
+  "ranks": {
+   "bm25": null,
+   "dense": 1,
+   "hybrid": 9,
+   "bm25 + rewrite": 4,
+   "dense + rewrite": 2,
+   "hybrid + rewrite": 3
+  },
+  "top": {
+   "bm25": [
+    "Mark 6:49-53",
+    "Luke 16:21-25",
+    "Matthew 14:29-33"
+   ],
+   "dense": [
+    "John 11:31-35",
+    "Luke 8:52-56",
+    "Matthew 9:15-19"
+   ],
+   "hybrid": [
+    "Luke 16:21-25",
+    "Luke 8:52-56",
+    "Luke 20:29-33"
+   ],
+   "bm25 + rewrite": [
+    "Matthew 2:17-21",
+    "Luke 6:21-25",
+    "John 16:19-23"
+   ],
+   "dense + rewrite": [
+    "John 16:19-23",
+    "John 11:31-35",
+    "Luke 6:21-25"
+   ],
+   "hybrid + rewrite": [
+    "Luke 6:21-25",
+    "John 16:19-23",
+    "John 11:31-35"
+   ]
+  },
+  "rewrite": "Jesus comforting grief and sorrow; human need: mourning and broken-heartedness; themes: comfort, hope, presence, peace, weeping, life, resurrection"
+ },
+ {
+  "id": "q25",
+  "type": "direct",
+  "question": "Why would anyone call the poor and the grieving blessed?",
+  "expected": [
+   "Matthew 5:3-12",
+   "Luke 6:20-26"
+  ],
+  "ranks": {
+   "bm25": 1,
+   "dense": 1,
+   "hybrid": 1,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Matthew 5:3-7",
+    "Luke 6:19-23",
+    "Mark 14:19-23"
+   ],
+   "dense": [
+    "Matthew 5:3-7",
+    "Luke 6:21-25",
+    "Luke 14:13-17"
+   ],
+   "hybrid": [
+    "Matthew 5:3-7",
+    "Luke 6:19-23",
+    "Luke 14:13-17"
+   ],
+   "bm25 + rewrite": [
+    "Matthew 5:3-7",
+    "Matthew 12:17-21",
+    "Luke 19:35-39"
+   ],
+   "dense + rewrite": [
+    "Matthew 5:3-7",
+    "Luke 6:21-25",
+    "Matthew 5:9-13"
+   ],
+   "hybrid + rewrite": [
+    "Matthew 5:3-7",
+    "Luke 6:21-25",
+    "Luke 19:37-41"
+   ]
+  },
+  "rewrite": "poor grieving blessed comfort kingdom reversal humility mercy justice Gospel Jesus sermon mount hope comforted peace\ud804\udc4b"
+ },
+ {
+  "id": "q26",
+  "type": "direct",
+  "question": "What does it mean to be born again?",
+  "expected": [
+   "John 3:1-21"
+  ],
+  "ranks": {
+   "bm25": 1,
+   "dense": 1,
+   "hybrid": 1,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "John 3:3-7",
+    "Matthew 2:3-7",
+    "John 9:17-21"
+   ],
+   "dense": [
+    "John 3:3-7",
+    "Matthew 3:7-11",
+    "John 1:13-17"
+   ],
+   "hybrid": [
+    "John 3:3-7",
+    "John 1:9-13",
+    "John 9:31-35"
+   ],
+   "bm25 + rewrite": [
+    "John 3:3-7",
+    "Luke 1:31-35",
+    "Matthew 1:19-23"
+   ],
+   "dense + rewrite": [
+    "John 3:3-7",
+    "John 1:13-17",
+    "Mark 1:7-11"
+   ],
+   "hybrid + rewrite": [
+    "John 3:3-7",
+    "Matthew 3:7-11",
+    "John 1:33-37"
+   ]
+  },
+  "rewrite": "born again meaning spiritual new life, God\u2019s kingdom, new heart, faith, repentance, new birth, rebirth, Holy Spirit, Jesus teaches in John"
+ },
+ {
+  "id": "q27",
+  "type": "direct",
+  "question": "Did God send his Son to condemn the world?",
+  "expected": [
+   "John 3:16-21",
+   "John 12:47"
+  ],
+  "ranks": {
+   "bm25": 1,
+   "dense": 1,
+   "hybrid": 1,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "John 3:15-19",
+    "John 16:7-11",
+    "Matthew 13:37-41"
+   ],
+   "dense": [
+    "John 3:17-21",
+    "John 3:32-36",
+    "John 8:23-27"
+   ],
+   "hybrid": [
+    "John 3:15-19",
+    "John 1:9-13",
+    "John 12:43-47"
+   ],
+   "bm25 + rewrite": [
+    "John 3:17-21",
+    "Luke 11:31-35",
+    "Luke 23:36-40"
+   ],
+   "dense + rewrite": [
+    "John 3:17-21",
+    "John 12:46-50",
+    "John 5:20-24"
+   ],
+   "hybrid + rewrite": [
+    "John 3:17-21",
+    "John 12:43-47",
+    "John 5:20-24"
+   ]
+  },
+  "rewrite": "God sent his Son not to condemn but to save; human need: fear, guilt, and rescue; themes: love, belief, light, salvation, judgment"
+ },
+ {
+  "id": "q28",
+  "type": "direct",
+  "question": "How do I find the way to the Father?",
+  "expected": [
+   "John 14:1-11"
+  ],
+  "ranks": {
+   "bm25": 3,
+   "dense": 1,
+   "hybrid": 1,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Matthew 7:11-15",
+    "Luke 15:7-11",
+    "John 14:3-7"
+   ],
+   "dense": [
+    "John 14:5-9",
+    "John 8:19-23",
+    "John 16:27-31"
+   ],
+   "hybrid": [
+    "John 14:3-7",
+    "Luke 11:9-13",
+    "Matthew 7:11-15"
+   ],
+   "bm25 + rewrite": [
+    "John 14:3-7",
+    "John 4:23-27",
+    "John 5:24-28"
+   ],
+   "dense + rewrite": [
+    "John 14:3-7",
+    "John 6:43-47",
+    "John 6:37-41"
+   ],
+   "hybrid + rewrite": [
+    "John 14:3-7",
+    "John 6:45-49",
+    "John 6:65-69"
+   ]
+  },
+  "rewrite": "finding the way to the Father; Jesus, truth, life, coming to the Father, trusting him, disciples, home, eternal life"
+ },
+ {
+  "id": "q29",
+  "type": "situational",
+  "question": "I feel cut off and fruitless, like nothing I do ever grows.",
+  "expected": [
+   "John 15:1-11"
+  ],
+  "ranks": {
+   "bm25": 2,
+   "dense": 1,
+   "hybrid": 1,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Matthew 9:33-37",
+    "John 15:1-5",
+    "Mark 9:43-49"
+   ],
+   "dense": [
+    "John 15:1-5",
+    "Mark 4:3-7",
+    "Matthew 13:19-23"
+   ],
+   "hybrid": [
+    "John 15:1-5",
+    "Mark 4:27-31",
+    "Mark 4:11-15"
+   ],
+   "bm25 + rewrite": [
+    "John 15:1-5",
+    "Matthew 7:17-21",
+    "Luke 13:5-9"
+   ],
+   "dense + rewrite": [
+    "John 15:1-5",
+    "John 6:59-63",
+    "Matthew 21:19-23"
+   ],
+   "hybrid + rewrite": [
+    "John 15:1-5",
+    "Luke 13:7-11",
+    "Luke 3:5-9"
+   ]
+  },
+  "rewrite": "Jesus on feeling cut off, fruitlessness, abiding, growth, bearing fruit, hope, restoration, and staying connected to God"
+ },
+ {
+  "id": "q30",
+  "type": "situational",
+  "question": "I keep chasing things that never satisfy me. I'm always thirsty for more.",
+  "expected": [
+   "John 4:7-26",
+   "John 6:32-51",
+   "John 7:37-39"
+  ],
+  "ranks": {
+   "bm25": 1,
+   "dense": 1,
+   "hybrid": 1,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "John 4:13-17",
+    "John 8:29-33",
+    "John 8:51-55"
+   ],
+   "dense": [
+    "John 4:13-17",
+    "John 6:35-39",
+    "John 7:33-37"
+   ],
+   "hybrid": [
+    "John 4:13-17",
+    "Matthew 25:19-23",
+    "Luke 12:23-27"
+   ],
+   "bm25 + rewrite": [
+    "John 4:11-15",
+    "John 6:31-35",
+    "Luke 20:7-11"
+   ],
+   "dense + rewrite": [
+    "John 4:13-17",
+    "John 7:35-39",
+    "John 6:35-39"
+   ],
+   "hybrid + rewrite": [
+    "John 4:11-15",
+    "John 6:33-37",
+    "Matthew 16:24-28"
+   ]
+  },
+  "rewrite": "Jesus on spiritual thirst and living water, longing for satisfaction, empty pursuit, true life, soul thirst, desire, fullness"
+ },
+ {
+  "id": "q31",
+  "type": "situational",
+  "question": "I feel like I'm walking around in darkness.",
+  "expected": [
+   "John 8:12",
+   "John 12:35-36",
+   "John 12:44-46",
+   "John 1:4-9",
+   "John 3:19-21",
+   "Matthew 6:22-23",
+   "Luke 11:33-36"
+  ],
+  "ranks": {
+   "bm25": 1,
+   "dense": 1,
+   "hybrid": 1,
+   "bm25 + rewrite": 2,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "John 12:31-35",
+    "Mark 8:23-27",
+    "Luke 20:43-47"
+   ],
+   "dense": [
+    "John 12:35-39",
+    "Luke 11:33-37",
+    "John 11:9-13"
+   ],
+   "hybrid": [
+    "John 12:35-39",
+    "Luke 11:33-37",
+    "John 8:11-15"
+   ],
+   "bm25 + rewrite": [
+    "Luke 15:5-9",
+    "John 3:19-23",
+    "John 1:5-9"
+   ],
+   "dense + rewrite": [
+    "John 1:5-9",
+    "John 12:35-39",
+    "John 3:19-23"
+   ],
+   "hybrid + rewrite": [
+    "John 1:5-9",
+    "John 3:19-23",
+    "John 12:35-39"
+   ]
+  },
+  "rewrite": "darkness, lost, guidance, light, Jesus leads, truth, hope, finding the way"
+ },
+ {
+  "id": "q32",
+  "type": "situational",
+  "question": "I'm so overwhelmed I feel like I could die, and my friends just keep sleeping through it.",
+  "expected": [
+   "Matthew 26:36-46",
+   "Mark 14:32-42",
+   "Luke 22:39-46"
+  ],
+  "ranks": {
+   "bm25": 4,
+   "dense": 1,
+   "hybrid": 2,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Mark 13:33-37",
+    "Mark 4:37-41",
+    "John 11:11-15"
+   ],
+   "dense": [
+    "Mark 14:33-37",
+    "John 11:11-15",
+    "Matthew 26:37-41"
+   ],
+   "hybrid": [
+    "John 11:11-15",
+    "Mark 14:33-37",
+    "Mark 4:37-41"
+   ],
+   "bm25 + rewrite": [
+    "Mark 14:33-37",
+    "Luke 22:41-45",
+    "Matthew 26:37-41"
+   ],
+   "dense + rewrite": [
+    "Mark 14:33-37",
+    "Matthew 26:37-41",
+    "Luke 22:43-47"
+   ],
+   "hybrid + rewrite": [
+    "Mark 14:33-37",
+    "Matthew 26:37-41",
+    "Luke 22:43-47"
+   ]
+  },
+  "rewrite": "overwhelmed to death, friends asleep, Jesus understands suffering, watch and pray, loneliness, fear, abandonment, wakefulness, prayer"
+ },
+ {
+  "id": "q33",
+  "type": "situational",
+  "question": "I betrayed my best friend right when he needed me most.",
+  "expected": [
+   "Matthew 26:69-75",
+   "Mark 14:66-72",
+   "Luke 22:54-62",
+   "John 18:15-27",
+   "John 21:15-19",
+   "Matthew 26:14-16",
+   "Matthew 26:47-50",
+   "Matthew 27:3-5"
+  ],
+  "ranks": {
+   "bm25": null,
+   "dense": 6,
+   "hybrid": 7,
+   "bm25 + rewrite": null,
+   "dense + rewrite": 2,
+   "hybrid + rewrite": 5
+  },
+  "top": {
+   "bm25": [
+    "Matthew 24:9-13",
+    "Luke 11:5-9",
+    "Luke 21:15-19"
+   ],
+   "dense": [
+    "Mark 14:7-11",
+    "Matthew 18:28-32",
+    "Matthew 26:21-25"
+   ],
+   "hybrid": [
+    "Matthew 26:21-25",
+    "Luke 11:5-9",
+    "Matthew 20:13-17"
+   ],
+   "bm25 + rewrite": [
+    "Luke 24:47-51",
+    "John 9:37-41",
+    "Mark 1:1-5"
+   ],
+   "dense + rewrite": [
+    "Mark 7:22-26",
+    "Matthew 27:1-5",
+    "Luke 24:43-47"
+   ],
+   "hybrid + rewrite": [
+    "Luke 24:43-47",
+    "Luke 15:3-7",
+    "Matthew 26:25-29"
+   ]
+  },
+  "rewrite": "betrayal, guilt, forgiveness, loyalty broken, shame, friendship lost, mercy, repentance, Jesus speaks to guilt and need for forgiveness"
+ },
+ {
+  "id": "q34",
+  "type": "situational",
+  "question": "I can't believe anything unless I see proof with my own eyes.",
+  "expected": [
+   "John 20:24-29"
+  ],
+  "ranks": {
+   "bm25": null,
+   "dense": 2,
+   "hybrid": 2,
+   "bm25 + rewrite": null,
+   "dense + rewrite": 3,
+   "hybrid + rewrite": 5
+  },
+  "top": {
+   "bm25": [
+    "Matthew 7:1-5",
+    "Luke 6:39-43",
+    "Mark 8:21-25"
+   ],
+   "dense": [
+    "Luke 24:39-43",
+    "John 20:25-29",
+    "John 5:36-40"
+   ],
+   "hybrid": [
+    "John 12:37-41",
+    "John 20:25-29",
+    "Matthew 13:13-17"
+   ],
+   "bm25 + rewrite": [
+    "John 16:27-31",
+    "John 2:21-25",
+    "Matthew 21:21-25"
+   ],
+   "dense + rewrite": [
+    "Matthew 21:21-25",
+    "Luke 24:37-41",
+    "John 20:27-31"
+   ],
+   "hybrid + rewrite": [
+    "Matthew 21:21-25",
+    "John 2:21-25",
+    "John 16:29-33"
+   ]
+  },
+  "rewrite": "doubt and needing proof; Jesus speaks to faith, trust, seeing, belief, signs, and honest questions"
+ },
+ {
+  "id": "q35",
+  "type": "situational",
+  "question": "I'm busy serving everyone while my sister just sits around, and I'm resentful.",
+  "expected": [
+   "Luke 10:38-42"
+  ],
+  "ranks": {
+   "bm25": null,
+   "dense": 2,
+   "hybrid": 1,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Matthew 19:26-30",
+    "Luke 14:25-29",
+    "Mark 3:31-35"
+   ],
+   "dense": [
+    "Luke 22:27-31",
+    "Luke 10:37-41",
+    "Matthew 24:45-49"
+   ],
+   "hybrid": [
+    "Luke 10:37-41",
+    "Luke 17:7-11",
+    "Mark 3:31-35"
+   ],
+   "bm25 + rewrite": [
+    "Luke 10:38-42",
+    "John 11:19-23",
+    "Matthew 5:27-31"
+   ],
+   "dense + rewrite": [
+    "Luke 10:38-42",
+    "John 11:27-31",
+    "John 11:19-23"
+   ],
+   "hybrid + rewrite": [
+    "Luke 10:38-42",
+    "John 11:19-23",
+    "John 11:27-31"
+   ]
+  },
+  "rewrite": "Jesus on serving anxiety, resentment, and choosing the better part; Martha and Mary, distraction, worry, listening, rest"
+ },
+ {
+  "id": "q36",
+  "type": "situational",
+  "question": "I can only donate a tiny amount. Does it even matter?",
+  "expected": [
+   "Mark 12:41-44",
+   "Luke 21:1-4"
+  ],
+  "ranks": {
+   "bm25": 1,
+   "dense": 1,
+   "hybrid": 1,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Mark 12:40-44",
+    "Matthew 18:16-20",
+    "Matthew 5:44-48"
+   ],
+   "dense": [
+    "Luke 21:1-5",
+    "Mark 12:40-44",
+    "Mark 14:5-9"
+   ],
+   "hybrid": [
+    "Mark 12:40-44",
+    "Luke 19:15-19",
+    "Luke 21:1-5"
+   ],
+   "bm25 + rewrite": [
+    "Luke 21:1-5",
+    "Mark 12:40-44",
+    "Matthew 5:23-27"
+   ],
+   "dense + rewrite": [
+    "Luke 21:1-5",
+    "Mark 12:40-44",
+    "Mark 14:5-9"
+   ],
+   "hybrid + rewrite": [
+    "Luke 21:1-5",
+    "Mark 12:40-44",
+    "Matthew 6:1-5"
+   ]
+  },
+  "rewrite": "small gift matters, Jesus honors sacrificial giving, poverty, generosity, trust, widow\u2019s offering"
+ },
+ {
+  "id": "q37",
+  "type": "situational",
+  "question": "I like posting my charity work online so people see it.",
+  "expected": [
+   "Matthew 6:1-6"
+  ],
+  "ranks": {
+   "bm25": null,
+   "dense": 1,
+   "hybrid": 2,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Mark 6:11-15",
+    "John 6:27-31",
+    "Mark 8:21-25"
+   ],
+   "dense": [
+    "Matthew 6:1-5",
+    "John 7:3-7",
+    "Matthew 25:35-39"
+   ],
+   "hybrid": [
+    "John 7:3-7",
+    "Matthew 6:3-7",
+    "John 9:1-5"
+   ],
+   "bm25 + rewrite": [
+    "Matthew 6:3-7",
+    "Matthew 6:15-19",
+    "John 7:1-5"
+   ],
+   "dense + rewrite": [
+    "Matthew 6:1-5",
+    "John 7:3-7",
+    "Luke 18:11-15"
+   ],
+   "hybrid + rewrite": [
+    "Matthew 6:1-5",
+    "John 7:3-7",
+    "Matthew 6:17-21"
+   ]
+  },
+  "rewrite": "Jesus teaching about doing charity in secret, not for praise, humility, motives, approval, reward, showing off, public recognition"
+ },
+ {
+  "id": "q38",
+  "type": "direct",
+  "question": "Should believers pay taxes to the government?",
+  "expected": [
+   "Matthew 22:15-22",
+   "Mark 12:13-17",
+   "Luke 20:20-26",
+   "Matthew 17:24-27"
+  ],
+  "ranks": {
+   "bm25": 1,
+   "dense": 1,
+   "hybrid": 1,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Mark 12:11-15",
+    "Matthew 22:15-19",
+    "Luke 20:21-25"
+   ],
+   "dense": [
+    "Matthew 22:17-21",
+    "Luke 20:21-25",
+    "Matthew 17:23-27"
+   ],
+   "hybrid": [
+    "Matthew 22:17-21",
+    "Mark 12:13-17",
+    "Luke 20:21-25"
+   ],
+   "bm25 + rewrite": [
+    "Matthew 22:17-21",
+    "Luke 20:21-25",
+    "Mark 12:13-17"
+   ],
+   "dense + rewrite": [
+    "Matthew 22:17-21",
+    "Luke 20:21-25",
+    "Mark 12:13-17"
+   ],
+   "hybrid + rewrite": [
+    "Matthew 22:17-21",
+    "Luke 20:21-25",
+    "Mark 12:13-17"
+   ]
+  },
+  "rewrite": "paying taxes to government; human need: conscience and civic duty; themes: justice, authority, honesty, rendering to Caesar, kingdom of God; keywords: tax, coin, Caesar"
+ },
+ {
+  "id": "q39",
+  "type": "direct",
+  "question": "What did Jesus teach about divorce?",
+  "expected": [
+   "Matthew 19:3-12",
+   "Mark 10:2-12",
+   "Matthew 5:31-32",
+   "Luke 16:18"
+  ],
+  "ranks": {
+   "bm25": 1,
+   "dense": 1,
+   "hybrid": 1,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Matthew 19:7-11",
+    "Matthew 5:31-35",
+    "Mark 10:1-5"
+   ],
+   "dense": [
+    "Matthew 19:7-11",
+    "Mark 10:1-5",
+    "Mark 10:9-13"
+   ],
+   "hybrid": [
+    "Matthew 19:7-11",
+    "Mark 10:1-5",
+    "Mark 10:9-13"
+   ],
+   "bm25 + rewrite": [
+    "Matthew 19:5-9",
+    "Luke 16:15-19",
+    "Mark 10:3-7"
+   ],
+   "dense + rewrite": [
+    "Matthew 19:7-11",
+    "Luke 16:15-19",
+    "Mark 10:9-13"
+   ],
+   "hybrid + rewrite": [
+    "Matthew 19:5-9",
+    "Luke 16:15-19",
+    "Mark 10:3-7"
+   ]
+  },
+  "rewrite": "Jesus teaching on divorce, marriage fidelity, God\u2019s intention, hardness of heart, adultery, covenant faithfulness, marriage law, relationship commitment"
+ },
+ {
+  "id": "q40",
+  "type": "direct",
+  "question": "Do little children matter to God?",
+  "expected": [
+   "Matthew 19:13-15",
+   "Mark 10:13-16",
+   "Luke 18:15-17",
+   "Matthew 18:1-14",
+   "Mark 9:36-37"
+  ],
+  "ranks": {
+   "bm25": 1,
+   "dense": 1,
+   "hybrid": 1,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Mark 10:9-13",
+    "Luke 18:15-19",
+    "John 13:31-35"
+   ],
+   "dense": [
+    "Luke 18:15-19",
+    "Mark 10:13-17",
+    "Matthew 19:13-17"
+   ],
+   "hybrid": [
+    "Mark 10:13-17",
+    "Luke 18:15-19",
+    "Matthew 19:13-17"
+   ],
+   "bm25 + rewrite": [
+    "Matthew 18:1-5",
+    "Mark 9:33-37",
+    "Mark 10:13-17"
+   ],
+   "dense + rewrite": [
+    "Mark 10:13-17",
+    "Luke 18:15-19",
+    "Matthew 18:1-5"
+   ],
+   "hybrid + rewrite": [
+    "Matthew 18:1-5",
+    "Mark 10:13-17",
+    "Luke 18:15-19"
+   ]
+  },
+  "rewrite": "Jesus and children: God values little children, welcomes them, protects them, humility, kingdom of heaven, childlike faith"
+ },
+ {
+  "id": "q41",
+  "type": "situational",
+  "question": "My faith is so small. Is it even enough?",
+  "expected": [
+   "Matthew 17:20",
+   "Luke 17:5-6",
+   "Matthew 13:31-32",
+   "Mark 4:30-32",
+   "Mark 9:14-29"
+  ],
+  "ranks": {
+   "bm25": 6,
+   "dense": 3,
+   "hybrid": 3,
+   "bm25 + rewrite": null,
+   "dense + rewrite": 5,
+   "hybrid + rewrite": null
+  },
+  "top": {
+   "bm25": [
+    "John 6:5-9",
+    "Luke 12:25-29",
+    "Matthew 15:33-37"
+   ],
+   "dense": [
+    "Luke 12:25-29",
+    "Matthew 6:29-33",
+    "Luke 17:5-9"
+   ],
+   "hybrid": [
+    "Luke 12:25-29",
+    "Matthew 6:30-34",
+    "Luke 17:3-7"
+   ],
+   "bm25 + rewrite": [
+    "Luke 12:25-29",
+    "Matthew 6:27-31",
+    "Mark 11:21-25"
+   ],
+   "dense + rewrite": [
+    "Matthew 14:27-31",
+    "Matthew 10:27-31",
+    "Mark 4:19-23"
+   ],
+   "hybrid + rewrite": [
+    "Matthew 14:27-31",
+    "Mark 11:21-25",
+    "Luke 12:25-29"
+   ]
+  },
+  "rewrite": "small faith enough; Jesus speaks to doubt, trust, worry, and growing belief; keywords: faith, trust, doubt, weak, believe"
+ },
+ {
+  "id": "q42",
+  "type": "situational",
+  "question": "I've prayed for the same thing for years and nothing happens. Should I just give up?",
+  "expected": [
+   "Luke 18:1-8",
+   "Luke 11:5-13",
+   "Matthew 7:7-11"
+  ],
+  "ranks": {
+   "bm25": null,
+   "dense": 2,
+   "hybrid": 3,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Matthew 6:7-11",
+    "Mark 14:35-39",
+    "Matthew 26:41-45"
+   ],
+   "dense": [
+    "Matthew 6:5-9",
+    "Luke 18:1-5",
+    "Matthew 7:7-11"
+   ],
+   "hybrid": [
+    "Matthew 6:7-11",
+    "Mark 14:35-39",
+    "Luke 11:1-5"
+   ],
+   "bm25 + rewrite": [
+    "Matthew 7:7-11",
+    "Luke 11:9-13",
+    "John 5:42-46"
+   ],
+   "dense + rewrite": [
+    "Matthew 7:7-11",
+    "Luke 11:9-13",
+    "Luke 18:1-5"
+   ],
+   "hybrid + rewrite": [
+    "Matthew 7:7-11",
+    "Luke 11:9-13",
+    "Luke 18:5-9"
+   ]
+  },
+  "rewrite": "persistent unanswered prayer, giving up, hope, perseverance, trust in God, waiting, discouragement, faith, asking, seeking, knocking"
+ },
+ {
+  "id": "q43",
+  "type": "situational",
+  "question": "Honestly, I'm proud that I'm a better person than most people around me.",
+  "expected": [
+   "Luke 18:9-14"
+  ],
+  "ranks": {
+   "bm25": null,
+   "dense": 1,
+   "hybrid": 3,
+   "bm25 + rewrite": 5,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Mark 9:39-43",
+    "Matthew 18:5-9",
+    "Luke 1:51-55"
+   ],
+   "dense": [
+    "Luke 18:11-15",
+    "Luke 1:47-51",
+    "Matthew 5:7-11"
+   ],
+   "hybrid": [
+    "Luke 1:47-51",
+    "Mark 9:39-43",
+    "Luke 18:11-15"
+   ],
+   "bm25 + rewrite": [
+    "Luke 1:47-51",
+    "Matthew 5:7-11",
+    "Luke 17:23-27"
+   ],
+   "dense + rewrite": [
+    "Luke 18:11-15",
+    "Matthew 20:25-29",
+    "Luke 14:7-11"
+   ],
+   "hybrid + rewrite": [
+    "Luke 18:11-15",
+    "Matthew 5:7-11",
+    "Luke 14:7-11"
+   ]
+  },
+  "rewrite": "Jesus on pride and humility; being better than others, self-righteousness, looking down on people, humble heart, mercy"
+ },
+ {
+  "id": "q44",
+  "type": "situational",
+  "question": "I've cheated people out of money and I want to make it right.",
+  "expected": [
+   "Luke 19:1-10"
+  ],
+  "ranks": {
+   "bm25": 8,
+   "dense": 9,
+   "hybrid": 1,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Luke 22:5-9",
+    "Luke 20:41-45",
+    "Matthew 20:19-23"
+   ],
+   "dense": [
+    "Matthew 18:28-32",
+    "Matthew 27:3-7",
+    "Luke 16:1-5"
+   ],
+   "hybrid": [
+    "Luke 19:7-11",
+    "Mark 12:40-44",
+    "Matthew 5:39-43"
+   ],
+   "bm25 + rewrite": [
+    "Luke 19:5-9",
+    "Mark 1:1-5",
+    "Luke 24:47-51"
+   ],
+   "dense + rewrite": [
+    "Luke 19:5-9",
+    "Matthew 18:22-26",
+    "Matthew 18:31-35"
+   ],
+   "hybrid + rewrite": [
+    "Luke 19:5-9",
+    "Mark 10:19-23",
+    "Luke 3:11-15"
+   ]
+  },
+  "rewrite": "cheating people money making it right Jesus forgiveness repentance restitution honesty Zacchaeus restoration payment making amends"
+ },
+ {
+  "id": "q45",
+  "type": "situational",
+  "question": "I'm afraid to use my abilities because I might fail.",
+  "expected": [
+   "Matthew 25:14-30",
+   "Luke 19:11-27"
+  ],
+  "ranks": {
+   "bm25": 5,
+   "dense": 1,
+   "hybrid": 1,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Matthew 12:13-17",
+    "Matthew 7:1-5",
+    "Luke 6:37-41"
+   ],
+   "dense": [
+    "Matthew 25:25-29",
+    "Luke 12:3-7",
+    "Matthew 25:13-17"
+   ],
+   "hybrid": [
+    "Matthew 25:13-17",
+    "Luke 12:3-7",
+    "Matthew 10:27-31"
+   ],
+   "bm25 + rewrite": [
+    "Matthew 25:21-25",
+    "Luke 18:5-9",
+    "Matthew 25:27-31"
+   ],
+   "dense + rewrite": [
+    "Matthew 25:21-25",
+    "Matthew 25:13-17",
+    "Luke 12:3-7"
+   ],
+   "hybrid + rewrite": [
+    "Matthew 25:21-25",
+    "Matthew 25:13-17",
+    "Matthew 25:27-31"
+   ]
+  },
+  "rewrite": "fear of failure, using God-given gifts, courage, trust, not burying talents, Jesus encourages boldness and faith, talents, fear, faithful service"
+ },
+ {
+  "id": "q46",
+  "type": "direct",
+  "question": "Does helping the homeless and visiting prisoners matter to God?",
+  "expected": [
+   "Matthew 25:31-46"
+  ],
+  "ranks": {
+   "bm25": 2,
+   "dense": 1,
+   "hybrid": 1,
+   "bm25 + rewrite": null,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 4
+  },
+  "top": {
+   "bm25": [
+    "Matthew 27:13-17",
+    "Matthew 25:35-39",
+    "Luke 1:67-71"
+   ],
+   "dense": [
+    "Matthew 25:39-43",
+    "Matthew 6:1-5",
+    "Luke 18:7-11"
+   ],
+   "hybrid": [
+    "Matthew 25:35-39",
+    "Luke 18:7-11",
+    "Matthew 18:14-18"
+   ],
+   "bm25 + rewrite": [
+    "Luke 10:33-37",
+    "Luke 7:13-17",
+    "Mark 9:21-25"
+   ],
+   "dense + rewrite": [
+    "Matthew 25:35-39",
+    "Matthew 10:7-11",
+    "Matthew 25:42-46"
+   ],
+   "hybrid + rewrite": [
+    "Matthew 20:27-31",
+    "Luke 10:33-37",
+    "Mark 10:43-47"
+   ]
+  },
+  "rewrite": "helping homeless and visiting prisoners matter to God, mercy and compassion, care for the poor and forgotten, Jesus on serving others"
+ },
+ {
+  "id": "q47",
+  "type": "situational",
+  "question": "How do I build a life that won't collapse when things get hard?",
+  "expected": [
+   "Matthew 7:24-27",
+   "Luke 6:46-49"
+  ],
+  "ranks": {
+   "bm25": 4,
+   "dense": 2,
+   "hybrid": 2,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Luke 12:17-21",
+    "Matthew 16:21-25",
+    "Mark 8:33-37"
+   ],
+   "dense": [
+    "Luke 12:19-23",
+    "Matthew 7:25-29",
+    "Luke 14:25-29"
+   ],
+   "hybrid": [
+    "Luke 12:17-21",
+    "Matthew 7:25-29",
+    "Luke 14:25-29"
+   ],
+   "bm25 + rewrite": [
+    "Matthew 7:23-27",
+    "Luke 6:45-49",
+    "Luke 10:21-25"
+   ],
+   "dense + rewrite": [
+    "Matthew 7:25-29",
+    "Luke 8:13-17",
+    "Luke 6:45-49"
+   ],
+   "hybrid + rewrite": [
+    "Matthew 7:23-27",
+    "Luke 6:45-49",
+    "Luke 8:11-15"
+   ]
+  },
+  "rewrite": "foundation, resilience, enduring life, wise builder, storms, rock, trust, obedience, hearing and doing"
+ },
+ {
+  "id": "q48",
+  "type": "situational",
+  "question": "I keep giving in to temptation and I don't know how to resist.",
+  "expected": [
+   "Matthew 4:1-11",
+   "Luke 4:1-13",
+   "Mark 1:12-13",
+   "Matthew 26:41",
+   "Mark 14:38",
+   "Matthew 6:13",
+   "Luke 11:4",
+   "Luke 22:40",
+   "Luke 22:46",
+   "Matthew 5:29-30",
+   "Mark 9:43-48"
+  ],
+  "ranks": {
+   "bm25": 2,
+   "dense": 1,
+   "hybrid": 1,
+   "bm25 + rewrite": 3,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Luke 12:55-59",
+    "Mark 14:37-41",
+    "Matthew 26:37-41"
+   ],
+   "dense": [
+    "Matthew 5:25-29",
+    "Matthew 18:7-12",
+    "Matthew 4:3-7"
+   ],
+   "hybrid": [
+    "Matthew 26:39-43",
+    "Mark 14:35-39",
+    "Matthew 5:37-41"
+   ],
+   "bm25 + rewrite": [
+    "Mark 1:1-5",
+    "Luke 1:75-79",
+    "Luke 22:43-47"
+   ],
+   "dense + rewrite": [
+    "Mark 14:35-39",
+    "Luke 17:1-5",
+    "Matthew 26:39-43"
+   ],
+   "hybrid + rewrite": [
+    "Luke 22:43-47",
+    "Luke 11:3-7",
+    "Mark 9:43-49"
+   ]
+  },
+  "rewrite": "temptation, resisting sin, self-control, prayer, watchfulness, human weakness, forgiveness, God\u2019s help"
+ },
+ {
+  "id": "q49",
+  "type": "direct",
+  "question": "Is it wrong to do work on the Sabbath?",
+  "expected": [
+   "Mark 2:23-3:6",
+   "Matthew 12:1-14",
+   "Luke 6:1-11",
+   "Luke 13:10-17",
+   "Luke 14:1-6",
+   "John 5:1-18",
+   "John 7:21-24",
+   "John 9:13-16"
+  ],
+  "ranks": {
+   "bm25": 1,
+   "dense": 1,
+   "hybrid": 1,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "John 5:16-20",
+    "Luke 13:13-17",
+    "John 18:21-25"
+   ],
+   "dense": [
+    "Luke 6:1-5",
+    "Mark 2:23-27",
+    "Luke 13:13-17"
+   ],
+   "hybrid": [
+    "Luke 13:13-17",
+    "John 5:16-20",
+    "Mark 2:24-28"
+   ],
+   "bm25 + rewrite": [
+    "Matthew 12:7-11",
+    "Luke 6:5-9",
+    "Mark 3:1-5"
+   ],
+   "dense + rewrite": [
+    "Matthew 12:7-11",
+    "Luke 14:1-5",
+    "Luke 6:5-9"
+   ],
+   "hybrid + rewrite": [
+    "Matthew 12:7-11",
+    "Luke 6:5-9",
+    "Luke 14:1-5"
+   ]
+  },
+  "rewrite": "Sabbath work guilt, rest and mercy, Jesus on lawful good work, healing, human need, justice, compassion"
+ },
+ {
+  "id": "q50",
+  "type": "direct",
+  "question": "How will people know someone truly follows Jesus?",
+  "expected": [
+   "John 13:34-35",
+   "John 15:8-17",
+   "Matthew 7:15-23",
+   "Luke 6:43-45"
+  ],
+  "ranks": {
+   "bm25": 3,
+   "dense": 7,
+   "hybrid": 1,
+   "bm25 + rewrite": 2,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "John 21:17-21",
+    "John 10:3-7",
+    "John 13:34-38"
+   ],
+   "dense": [
+    "Mark 8:34-38",
+    "Luke 9:23-27",
+    "Matthew 16:24-28"
+   ],
+   "hybrid": [
+    "John 13:34-38",
+    "Mark 2:13-17",
+    "John 13:17-21"
+   ],
+   "bm25 + rewrite": [
+    "John 15:1-5",
+    "John 15:13-17",
+    "John 15:7-11"
+   ],
+   "dense + rewrite": [
+    "John 15:13-17",
+    "John 13:17-21",
+    "John 15:5-9"
+   ],
+   "hybrid + rewrite": [
+    "John 15:13-17",
+    "John 15:5-9",
+    "Matthew 7:17-21"
+   ]
+  },
+  "rewrite": "true disciple signs love for one another obedience to Jesus fruit bearing humility service loyalty to Christ relationship not words only"
+ },
+ {
+  "id": "q51",
+  "type": "situational",
+  "question": "I'm the boss. Why should I do humble work for my team?",
+  "expected": [
+   "John 13:1-17",
+   "Mark 10:42-45",
+   "Matthew 20:25-28",
+   "Luke 22:24-27",
+   "Matthew 23:11-12"
+  ],
+  "ranks": {
+   "bm25": null,
+   "dense": 3,
+   "hybrid": 1,
+   "bm25 + rewrite": 2,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Matthew 11:1-5",
+    "Mark 6:11-15",
+    "Luke 13:13-17"
+   ],
+   "dense": [
+    "Luke 16:3-7",
+    "Matthew 20:11-15",
+    "Luke 22:23-27"
+   ],
+   "hybrid": [
+    "John 13:13-17",
+    "John 5:16-20",
+    "Luke 22:23-27"
+   ],
+   "bm25 + rewrite": [
+    "Luke 10:1-5",
+    "Matthew 23:7-11",
+    "Matthew 20:5-9"
+   ],
+   "dense + rewrite": [
+    "Luke 22:23-27",
+    "Matthew 20:25-29",
+    "Mark 10:41-45"
+   ],
+   "hybrid + rewrite": [
+    "Matthew 20:25-29",
+    "Matthew 23:7-11",
+    "Mark 10:41-45"
+   ]
+  },
+  "rewrite": "humility, servant leadership, pride, honor, helping others, greatest by serving, Jesus on leaders and workers"
+ },
+ {
+  "id": "q52",
+  "type": "situational",
+  "question": "I feel completely worthless, like I don't matter to anyone.",
+  "expected": [
+   "Matthew 10:29-31",
+   "Luke 12:6-7",
+   "Matthew 6:26",
+   "Luke 12:24",
+   "Luke 15:1-32",
+   "Matthew 18:12-14"
+  ],
+  "ranks": {
+   "bm25": null,
+   "dense": 1,
+   "hybrid": 4,
+   "bm25 + rewrite": null,
+   "dense + rewrite": null,
+   "hybrid + rewrite": null
+  },
+  "top": {
+   "bm25": [
+    "Matthew 8:3-7",
+    "Luke 12:55-59",
+    "Mark 9:7-11"
+   ],
+   "dense": [
+    "Luke 12:23-27",
+    "Luke 12:3-7",
+    "Matthew 6:25-29"
+   ],
+   "hybrid": [
+    "Matthew 25:29-33",
+    "John 15:5-9",
+    "Matthew 8:3-7"
+   ],
+   "bm25 + rewrite": [
+    "John 8:47-51",
+    "Mark 5:25-29",
+    "John 16:15-19"
+   ],
+   "dense + rewrite": [
+    "Luke 6:19-23",
+    "John 12:43-47",
+    "Luke 17:15-19"
+   ],
+   "hybrid + rewrite": [
+    "Luke 17:15-19",
+    "John 8:47-51",
+    "Luke 6:17-21"
+   ]
+  },
+  "rewrite": "Jesus healing worthlessness, feeling unloved, shame, belonging, value, God sees me, no one cares"
+ },
+ {
+  "id": "q53",
+  "type": "situational",
+  "question": "My own family doesn't respect what I do.",
+  "expected": [
+   "Mark 6:1-6",
+   "Matthew 13:53-58",
+   "Luke 4:16-30",
+   "John 4:44",
+   "Mark 3:20-21",
+   "Mark 3:31-35",
+   "John 7:1-5"
+  ],
+  "ranks": {
+   "bm25": 4,
+   "dense": 6,
+   "hybrid": 1,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 7,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Luke 9:57-61",
+    "Luke 18:1-5",
+    "John 7:41-45"
+   ],
+   "dense": [
+    "Mark 7:7-11",
+    "Matthew 10:35-39",
+    "Matthew 15:5-9"
+   ],
+   "hybrid": [
+    "John 7:5-9",
+    "Mark 12:3-7",
+    "Luke 20:11-15"
+   ],
+   "bm25 + rewrite": [
+    "Mark 3:19-23",
+    "Mark 6:3-7",
+    "Matthew 13:54-58"
+   ],
+   "dense + rewrite": [
+    "Luke 6:19-23",
+    "John 15:15-19",
+    "Mark 10:29-33"
+   ],
+   "hybrid + rewrite": [
+    "Mark 6:3-7",
+    "John 15:15-19",
+    "Matthew 10:23-27"
+   ]
+  },
+  "rewrite": "family rejection, honor, respect, Jesus speaks to rejection, unbelief, being known, calling, discipleship"
+ },
+ {
+  "id": "q54",
+  "type": "situational",
+  "question": "I'm so angry at my brother I could explode.",
+  "expected": [
+   "Matthew 5:21-26"
+  ],
+  "ranks": {
+   "bm25": 1,
+   "dense": 1,
+   "hybrid": 1,
+   "bm25 + rewrite": null,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 5
+  },
+  "top": {
+   "bm25": [
+    "Matthew 5:21-25",
+    "Luke 15:28-32",
+    "John 7:19-23"
+   ],
+   "dense": [
+    "Matthew 5:21-25",
+    "Luke 15:27-31",
+    "Luke 12:49-53"
+   ],
+   "hybrid": [
+    "Matthew 5:21-25",
+    "Luke 15:27-31",
+    "Mark 3:29-33"
+   ],
+   "bm25 + rewrite": [
+    "John 14:23-27",
+    "Matthew 18:31-35",
+    "John 20:21-25"
+   ],
+   "dense + rewrite": [
+    "Matthew 5:21-25",
+    "Luke 17:3-7",
+    "Matthew 18:12-16"
+   ],
+   "hybrid + rewrite": [
+    "Matthew 18:31-35",
+    "John 14:23-27",
+    "John 20:19-23"
+   ]
+  },
+  "rewrite": "anger toward brother forgiveness reconciliation peace heart self-control conflict Jesus words about anger and forgiving others"
+ },
+ {
+  "id": "q55",
+  "type": "direct",
+  "question": "Should I swear an oath to prove I'm telling the truth?",
+  "expected": [
+   "Matthew 5:33-37",
+   "Matthew 23:16-22"
+  ],
+  "ranks": {
+   "bm25": 1,
+   "dense": 1,
+   "hybrid": 1,
+   "bm25 + rewrite": 1,
+   "dense + rewrite": 1,
+   "hybrid + rewrite": 1
+  },
+  "top": {
+   "bm25": [
+    "Matthew 5:33-37",
+    "Matthew 23:16-20",
+    "John 8:43-47"
+   ],
+   "dense": [
+    "Matthew 5:33-37",
+    "Matthew 23:18-22",
+    "Luke 21:13-17"
+   ],
+   "hybrid": [
+    "Matthew 5:33-37",
+    "Matthew 23:18-22",
+    "John 8:45-49"
+   ],
+   "bm25 + rewrite": [
+    "Matthew 5:33-37",
+    "Matthew 23:16-20",
+    "Matthew 26:71-75"
+   ],
+   "dense + rewrite": [
+    "Matthew 5:33-37",
+    "Matthew 23:20-24",
+    "Matthew 23:13-18"
+   ],
+   "hybrid + rewrite": [
+    "Matthew 5:33-37",
+    "Matthew 23:16-20",
+    "Luke 21:13-17"
+   ]
+  },
+  "rewrite": "oath truthfulness honesty integrity trust Jesus warns against swearing, plain yes or no, speech, vows, truthful words"
+ }
+]
