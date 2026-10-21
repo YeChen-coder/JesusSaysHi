@@ -6,3 +6,5 @@ __pycache__/
 data/
 logs/
 ragflow/
+# Personal interview notes stay local
+docs/INTERVIEW.md

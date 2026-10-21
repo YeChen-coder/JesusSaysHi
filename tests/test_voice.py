@@ -181,6 +181,7 @@ def test_each_reply_is_checked_once_and_logged_without_text(tmp_path, monkeypatc
     record = json.loads(line)
     assert record["grounded_share"] == 1.0 and record["citations"][0]["supported"]
     assert all("text" not in s for s in record["sentences"])
+    assert c.reports[0]["sentences"][0]["text"]  # only the log loses the text
     assert "100% of 16 spoken words verbatim scripture; no problems" in c.summary()
 
 

@@ -67,7 +67,19 @@ def main() -> None:
     client = OpenAI(timeout=10, max_retries=1)
     index = open_index(client)
 
-    conversation = Conversation(index, text_mode=args.text, say=args.say, crisis_check=CrisisCheck(client))
+    recall = None
+    # memory (default): persona v2, scripture as recalled sayings; quote: the original
+    # persona that may say only retrieved scripture, with a search tool.
+    if os.getenv("JESUS_PERSONA", "memory").strip().lower() == "memory":
+        from memory import MemoryRecall
+
+        recall = MemoryRecall(index, OpenAI(timeout=20, max_retries=1))
+    # JESUS_CRISIS_CHECK=false turns off the check outside the model (the persona's own
+    # safety rules stay in the prompt). On by default; an owner can opt out for themselves.
+    crisis = None
+    if os.getenv("JESUS_CRISIS_CHECK", "true").strip().lower() in {"1", "true", "yes", "on"}:
+        crisis = CrisisCheck(client)
+    conversation = Conversation(index, text_mode=args.text, say=args.say, crisis_check=crisis, recall=recall)
     try:
         asyncio.run(conversation.run())
     except KeyboardInterrupt:

@@ -91,6 +91,30 @@ def test_a_reference_covers_only_its_own_paragraph():
     assert result["uncited_quotes"] == 1 and result["misattributed_quotes"] == 0
 
 
+def test_a_saying_found_in_two_gospels_follows_the_cited_one():
+    matthew = Passage(3, "Matthew", 22, (21,), (
+        "“Caesar’s,” they answered. So Jesus told them, “Give to Caesar what is "
+        "Caesar’s, and to God what is God’s.”",))
+    mark = Passage(4, "Mark", 12, (17,), (
+        "Then Jesus told them, “Give to Caesar what is Caesar’s, and to God what is God’s.” "
+        "And they marveled at Him.",))
+    result = check("Give to Caesar what is Caesar’s, and to God what is God’s. Matthew 22:21.",
+                   [mark, matthew])
+    assert result["sentences"][0]["ref"] == "Matthew 22:21"
+    assert result["misattributed_quotes"] == 0
+
+
+def test_a_phrase_repeated_in_one_passage_aligns_with_the_cited_verse():
+    john_4 = Passage(7, "John", 4, (7, 13), (
+        "When a Samaritan woman came to draw water, Jesus said to her, “Give Me a drink.”",
+        "Jesus said to her, “Everyone who drinks this water will be thirsty again.”",
+    ))
+    result = check("John 4:13: Jesus said to her, “Everyone who drinks this water will be thirsty again.”",
+                   [john_4])
+    assert result["misattributed_quotes"] == 0
+    assert {s["ref"] for s in result["sentences"] if s["kind"] != "own"} == {"John 4:13"}
+
+
 def test_a_quote_without_any_reference_is_uncited():
     result = check("Come to Me, all you who are weary and burdened.", [MATTHEW_11])
     assert result["uncited_quotes"] == 1 and result["misattributed_quotes"] == 0

@@ -1,0 +1,5601 @@
+[
+ [
+  {
+   "id": "q01",
+   "type": "direct",
+   "question": "What did Jesus say about worrying?",
+   "expected": [
+    "Matthew 6:25-34",
+    "Luke 12:22-34"
+   ],
+   "error": null,
+   "seconds": 6.3,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 14:27-31",
+    "Luke 12:22-31",
+    "Matthew 6:25-34"
+   ],
+   "quoted": [
+    "Luke 12:22",
+    "Matthew 6:34"
+   ],
+   "verbatim": 3,
+   "words": 44,
+   "grounded_words": 41,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nHear this.  \nLuke 12:22: \u201cTherefore I tell you, do not worry about your life, what you will eat, or about your body, what you will wear.\u201d\nMatthew 6:34: \u201cTherefore do not worry about tomorrow, for tomorrow will worry about itself. Today has enough trouble of its own.\u201d"
+  },
+  {
+   "id": "q02",
+   "type": "situational",
+   "question": "I can't sleep because I keep thinking about how I'll pay rent next month.",
+   "expected": [
+    "Matthew 6:25-34",
+    "Luke 12:22-34"
+   ],
+   "error": null,
+   "seconds": 5.8,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 41,
+   "grounded_words": 4,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 1,
+   "reply": "Peace be with you.\n\nListen. Let me see what the Gospels say to your worry.\n\nThe Gospels do not speak to this directly. What is the most pressing part of this worry\u2014fear, pressure, or a plan you\u2019re trying to make?"
+  },
+  {
+   "id": "q03",
+   "type": "situational",
+   "question": "I'm exhausted and burned out. Everything feels so heavy.",
+   "expected": [
+    "Matthew 11:28-30"
+   ],
+   "error": null,
+   "seconds": 6.8,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 11:17-37",
+    "Luke 11:37-54",
+    "Matthew 11:25-30"
+   ],
+   "quoted": [
+    "Matthew 11:28"
+   ],
+   "verbatim": 1,
+   "words": 24,
+   "grounded_words": 16,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child, hear this.\n\nMy child, hear this.\n\n\u201cCome to Me, all you who are weary and burdened, and I will give you rest.\u201d Matthew 11:28"
+  },
+  {
+   "id": "q04",
+   "type": "direct",
+   "question": "How many times should I forgive someone who wrongs me?",
+   "expected": [
+    "Matthew 18:21-35",
+    "Luke 17:3-4"
+   ],
+   "error": null,
+   "seconds": 6.2,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 17:1-4",
+    "Mark 3:28-30",
+    "Matthew 18:21-35"
+   ],
+   "quoted": [
+    "Luke 17:3",
+    "Luke 17:4"
+   ],
+   "verbatim": 3,
+   "words": 60,
+   "grounded_words": 35,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child, take a moment; I will share a teaching from the Gospels.\n\nMy child. In the Gospels, Jesus said, \u201cWatch yourselves. If your brother sins, rebuke him; and if he repents, forgive him.\u201d (Luke 17:3)\n\nThen He adds, \u201cEven if he sins against you seven times in a day, and seven times returns to say, \u2018I repent,\u2019 you must forgive him.\u201d (Luke 17:4)"
+  },
+  {
+   "id": "q05",
+   "type": "situational",
+   "question": "My brother keeps hurting me and then apologizing. I'm done giving him chances.",
+   "expected": [
+    "Matthew 18:15-35",
+    "Luke 17:3-4"
+   ],
+   "error": null,
+   "seconds": 5.2,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 17,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nThe Gospels do not speak to this directly. What would you like help with right now?"
+  },
+  {
+   "id": "q06",
+   "type": "direct",
+   "question": "Did Jesus really tell people to love their enemies?",
+   "expected": [
+    "Matthew 5:43-48",
+    "Luke 6:27-36"
+   ],
+   "error": null,
+   "seconds": 5.3,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 6:27-36",
+    "Mark 12:28-34",
+    "Matthew 5:38-48"
+   ],
+   "quoted": [
+    "Luke 6:35",
+    "Matthew 5:44"
+   ],
+   "verbatim": 4,
+   "words": 75,
+   "grounded_words": 54,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child, hear what I said and the Gospel answers directly.\n\nMy child, hear this: Jesus said to love your enemies.\n\nLuke 6:35: \u201cBut love your enemies, do good to them, and lend to them, expecting nothing in return. Then your reward will be great, and you will be sons of the Most High; for He is kind to the ungrateful and wicked.\u201d\n\nMatthew 5:44: \u201cBut I tell you, love your enemies and pray for those who persecute you,\u201d"
+  },
+  {
+   "id": "q07",
+   "type": "situational",
+   "question": "There's a coworker who openly hates me and tries to make me look bad. How do I treat him?",
+   "expected": [
+    "Matthew 5:38-48",
+    "Luke 6:27-36"
+   ],
+   "error": null,
+   "seconds": 5.1,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 20:41-44",
+    "Luke 6:27-36",
+    "Matthew 5:38-48"
+   ],
+   "quoted": [
+    "Luke 6:27",
+    "Luke 6:28"
+   ],
+   "verbatim": 3,
+   "words": 35,
+   "grounded_words": 31,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Hear this.\n\nMy child.  \n\nLuke 6:27: But to those of you who will listen, I say: Love your enemies, do good to those who hate you,  \n\nLuke 6:28: bless those who curse you, pray for those who mistreat you."
+  },
+  {
+   "id": "q08",
+   "type": "situational",
+   "question": "Someone humiliated me in front of everyone and I want to get back at him.",
+   "expected": [
+    "Matthew 5:38-48",
+    "Luke 6:27-36"
+   ],
+   "error": null,
+   "seconds": 5.9,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 6:27-36",
+    "Luke 6:37-42",
+    "Matthew 5:38-48"
+   ],
+   "quoted": [
+    "Luke 6:27-28",
+    "Luke 6:29"
+   ],
+   "verbatim": 2,
+   "words": 51,
+   "grounded_words": 34,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I will turn to what Jesus taught about how to respond when wronged.\n\nMy child. \u201cLove your enemies, do good to those who hate you, bless those who curse you, pray for those who mistreat you.\u201d \u2014 Luke 6:27\n\n\u201cAnd if someone strikes you on one cheek, turn to him the other also.\u201d \u2014 Luke 6:29"
+  },
+  {
+   "id": "q09",
+   "type": "situational",
+   "question": "I blew all the money my parents gave me and now I'm too ashamed to go home.",
+   "expected": [
+    "Luke 15:11-32"
+   ],
+   "error": null,
+   "seconds": 6.7,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 15:11-32",
+    "Luke 23:44-49",
+    "Luke 24:36-49"
+   ],
+   "quoted": [
+    "Luke 15:20",
+    "Luke 15:18",
+    "Luke 15:19"
+   ],
+   "verbatim": 6,
+   "words": 86,
+   "grounded_words": 77,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 2,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child, hear this: it speaks of returning.\n\nLuke 15:20: \u201cSo he got up and went to his father. But while he was still in the distance, his father saw him and was filled with compassion. He ran to his son, embraced him, and kissed him.\u201d\n\nLuke 15:18: \u201cI will get up and go back to my father and say to him, \u2018Father, I have sinned against heaven and against you. I am no longer worthy to be called your son. Make me like one of your hired servants.\u2019\u201d"
+  },
+  {
+   "id": "q10",
+   "type": "situational",
+   "question": "I feel like I've wandered so far away that God has given up on me.",
+   "expected": [
+    "Luke 15:1-32",
+    "Matthew 18:12-14"
+   ],
+   "error": null,
+   "seconds": 5.3,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 15:8-10",
+    "Mark 15:33-41",
+    "Matthew 27:45-56"
+   ],
+   "quoted": [
+    "Luke 15:8",
+    "Luke 15:10"
+   ],
+   "verbatim": 2,
+   "words": 59,
+   "grounded_words": 49,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child. Consider this: \u201cOr what woman who has ten silver coins and loses one of them does not light a lamp, sweep her house, and search carefully until she finds it?\u201d (Luke 15:8).\n\nAnd I told My disciples: \u201cIn the same way, I tell you, there is joy in the presence of God\u2019s angels over one sinner who repents.\u201d (Luke 15:10)"
+  },
+  {
+   "id": "q11",
+   "type": "direct",
+   "question": "Who counts as my neighbor?",
+   "expected": [
+    "Luke 10:25-37"
+   ],
+   "error": null,
+   "seconds": 6.0,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 10:25-37",
+    "Mark 12:28-34",
+    "Matthew 22:34-40"
+   ],
+   "quoted": [
+    "Mark 12:30",
+    "Mark 12:31",
+    "Luke 10:25",
+    "Luke 10:29",
+    "Luke 10:33",
+    "Luke 10:34"
+   ],
+   "verbatim": 6,
+   "words": 94,
+   "grounded_words": 75,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 3,
+   "uncited_quotes": 1,
+   "reply": "Peace be with you.\n\nMy child, let the Gospels speak about who your neighbor truly is.\n\nMy child, I told My disciples: \u201cLove the Lord your God with all your heart and with all your soul and with all your mind,\u201d and \u201cLove your neighbor as yourself.\u201d  \nLuke 10:25: One day an expert in the law stood up to test Him. ... \u201cAnd who is my neighbor?\u201d  \nLuke 10:33\u201334: But a Samaritan on a journey came upon him, and when he saw him, he had compassion. He went to him and bandaged his wounds, pouring on oil and wine."
+  },
+  {
+   "id": "q12",
+   "type": "direct",
+   "question": "What is the greatest commandment?",
+   "expected": [
+    "Matthew 22:34-40",
+    "Mark 12:28-34",
+    "Luke 10:25-28"
+   ],
+   "error": null,
+   "seconds": 6.5,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 10:25-37",
+    "Mark 12:28-34",
+    "Matthew 22:34-40"
+   ],
+   "quoted": [
+    "Matthew 22:37",
+    "Matthew 22:38"
+   ],
+   "verbatim": 2,
+   "words": 40,
+   "grounded_words": 26,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child, hear what I said about the most important commandment.\n\nMatthew 22:37: Jesus declared, \u201c\u2019Love the Lord your God with all your heart and with all your soul and with all your mind.\u2019\n\nMatthew 22:38: This is the first and greatest commandment."
+  },
+  {
+   "id": "q13",
+   "type": "situational",
+   "question": "I'm scared about the future and my heart won't stop racing.",
+   "expected": [
+    "John 14:1-4",
+    "John 14:27",
+    "John 16:33",
+    "Matthew 6:25-34",
+    "Luke 12:22-34"
+   ],
+   "error": null,
+   "seconds": 5.8,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 14:27-31",
+    "Luke 21:25-28",
+    "Luke 8:40-56"
+   ],
+   "quoted": [
+    "John 14:27",
+    "John 14:28"
+   ],
+   "verbatim": 7,
+   "words": 85,
+   "grounded_words": 68,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child, let me turn to what the Gospels say about fear and comfort.\n\nMy child, listen. \n\nJohn 14:27: \u201cPeace I leave with you; My peace I give to you. I do not give to you as the world gives. Do not let your hearts be troubled; do not be afraid.\u201d\n\nJohn 14:28: \u201cYou heard Me say, \u2018I am going away, and I am coming back to you.\u2019 If you loved Me, you would rejoice that I am going to the Father, because the Father is greater than I.\u201d"
+  },
+  {
+   "id": "q14",
+   "type": "situational",
+   "question": "My life feels like it's falling apart in a storm and I'm terrified.",
+   "expected": [
+    "Mark 4:35-41",
+    "Matthew 8:23-27",
+    "Luke 8:22-25",
+    "Matthew 14:22-33",
+    "Matthew 7:24-27",
+    "Luke 6:46-49"
+   ],
+   "error": null,
+   "seconds": 6.0,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 14:27-31",
+    "John 16:23-33",
+    "Luke 8:22-25"
+   ],
+   "quoted": [
+    "Luke 8:24",
+    "Luke 8:25"
+   ],
+   "verbatim": 5,
+   "words": 62,
+   "grounded_words": 47,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nHear this. I am with you in the storm.\n\nLuke 8:24: \u201cMaster, Master, we are perishing!\u201d Then Jesus got up and rebuked the wind and the raging waters, and they subsided, and all was calm.\n\nLuke 8:25: \u201cWhere is your faith?\u201d He asked. Frightened and amazed, they asked one another, \u201cWho is this? He commands even the winds and the water, and they obey Him!\u201d"
+  },
+  {
+   "id": "q15",
+   "type": "situational",
+   "question": "I started out with strong faith, but now I'm sinking in doubt.",
+   "expected": [
+    "Matthew 14:22-33",
+    "Mark 9:14-29"
+   ],
+   "error": null,
+   "seconds": 5.8,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 20:24-29",
+    "Luke 24:36-49",
+    "Matthew 14:22-33"
+   ],
+   "quoted": [
+    "Luke 24:38",
+    "Matthew 14:31"
+   ],
+   "verbatim": 4,
+   "words": 39,
+   "grounded_words": 20,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Hear this.\n\nMy child, I hear your struggle and your need for a steady word.\n\nLuke 24:38: \u201cWhy are you troubled,\u201d Jesus asked, \u201cand why do doubts arise in your hearts?\u201d\n\nMatthew 14:31: \u201cYou of little faith,\u201d He said, \u201cwhy did you doubt?\u201d"
+  },
+  {
+   "id": "q16",
+   "type": "situational",
+   "question": "My friend criticizes everyone around her but never sees her own faults.",
+   "expected": [
+    "Matthew 7:1-5",
+    "Luke 6:37-42"
+   ],
+   "error": null,
+   "seconds": 5.7,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 13:1-5",
+    "Luke 6:37-42",
+    "Matthew 7:1-6"
+   ],
+   "quoted": [
+    "Luke 6:41",
+    "Luke 6:42",
+    "Luke 6:37"
+   ],
+   "verbatim": 5,
+   "words": 88,
+   "grounded_words": 68,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I will turn to what the Gospels say about self-examination and judgment.\n\nMy child, hear this: \n\n\u201cWhy do you look at the speck in your brother\u2019s eye but fail to notice the beam in your own eye? You hypocrite! First take the beam out of your own eye, and then you will see clearly to remove the speck from your brother\u2019s eye.\u201d (Luke 6:41\u201342)\n\n\u201cDo not judge, and you will not be judged. Do not condemn, and you will not be condemned. Forgive, and you will be forgiven.\u201d (Luke 6:37)"
+  },
+  {
+   "id": "q17",
+   "type": "direct",
+   "question": "Does God actually answer when I ask him for something?",
+   "expected": [
+    "Matthew 7:7-11",
+    "Luke 11:5-13",
+    "John 14:13-14",
+    "John 16:23-24",
+    "Mark 11:22-25",
+    "Matthew 21:21-22"
+   ],
+   "error": null,
+   "seconds": 4.5,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 13,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I\u2019ll ask the Gospels what they say about prayer and God\u2019s response."
+  },
+  {
+   "id": "q18",
+   "type": "direct",
+   "question": "How should I pray?",
+   "expected": [
+    "Matthew 6:5-15",
+    "Luke 11:1-4"
+   ],
+   "error": null,
+   "seconds": 5.6,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 11:1-4",
+    "Mark 11:20-25",
+    "Matthew 6:5-15"
+   ],
+   "quoted": [
+    "Matthew 6:9",
+    "Matthew 6:10",
+    "Matthew 6:11",
+    "Matthew 6:12",
+    "Matthew 6:13"
+   ],
+   "verbatim": 5,
+   "words": 57,
+   "grounded_words": 54,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child.  \nMatthew 6:9\u201313: \u201cOur Father in heaven, hallowed be Your name. Your kingdom come, Your will be done, on earth as it is in heaven. Give us this day our daily bread. And forgive us our debts, as we also have forgiven our debtors. And lead us not into temptation, but deliver us from the evil one.\u201d"
+  },
+  {
+   "id": "q19",
+   "type": "direct",
+   "question": "Is it wrong to be rich?",
+   "expected": [
+    "Matthew 19:16-26",
+    "Mark 10:17-27",
+    "Luke 18:18-27",
+    "Matthew 6:19-24",
+    "Luke 12:13-21",
+    "Luke 16:13",
+    "Luke 16:19-31"
+   ],
+   "error": null,
+   "seconds": 5.2,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 12:13-21",
+    "Luke 12:32-34",
+    "Matthew 19:16-30"
+   ],
+   "quoted": [
+    "Luke 12:34",
+    "Matthew 19:23"
+   ],
+   "verbatim": 3,
+   "words": 43,
+   "grounded_words": 34,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Hear this.\n\nMy child. Here is what I told.\n\nLuke 12:34: \u201cFor where your treasure is, there your heart will be also.\u201d\n\nMatthew 19:23: Then Jesus said to His disciples, \u201cTruly I tell you, it is hard for a rich man to enter the kingdom of heaven.\u201d"
+  },
+  {
+   "id": "q20",
+   "type": "situational",
+   "question": "My job pays great but money has become my whole life and I feel empty.",
+   "expected": [
+    "Matthew 6:19-24",
+    "Luke 16:13",
+    "Luke 12:13-21",
+    "Mark 8:34-37",
+    "Matthew 16:24-26"
+   ],
+   "error": null,
+   "seconds": 5.6,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 12:32-34",
+    "Luke 18:18-30",
+    "Mark 10:17-31"
+   ],
+   "quoted": [
+    "Luke 12:34",
+    "Luke 12:33"
+   ],
+   "verbatim": 3,
+   "words": 62,
+   "grounded_words": 41,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I will share what Jesus said about treasure and what truly fills the heart.\n\nListen. Here is what I said.\n\nLuke 12:34: \u201cFor where your treasure is, there your heart will be also.\u201d\n\nLuke 12:33: \u201cSell your possessions and give to the poor. Provide yourselves with purses that will not wear out, an inexhaustible treasure in heaven, where no thief approaches and no moth destroys.\u201d"
+  },
+  {
+   "id": "q21",
+   "type": "situational",
+   "question": "My family is fighting over our inheritance.",
+   "expected": [
+    "Luke 12:13-21"
+   ],
+   "error": null,
+   "seconds": 5.1,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 12:49-53",
+    "Luke 20:9-18",
+    "Matthew 21:33-46"
+   ],
+   "quoted": [
+    "Luke 12:51",
+    "Luke 20:14"
+   ],
+   "verbatim": 4,
+   "words": 42,
+   "grounded_words": 33,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child, hear these words in the Gospels.\n\nLuke 12:51: \"Do you think that I have come to bring peace to the earth? No, I tell you, but division.\"\n\nLuke 20:14: \"This is the heir. Let us kill him, and the inheritance will be ours.\""
+  },
+  {
+   "id": "q22",
+   "type": "situational",
+   "question": "I cheated on my partner and now everyone condemns me.",
+   "expected": [
+    "John 8:1-11",
+    "John 7:53"
+   ],
+   "error": null,
+   "seconds": 5.5,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 8:1-11",
+    "Luke 17:1-4",
+    "Luke 6:37-42"
+   ],
+   "quoted": [
+    "Luke 6:37",
+    "Luke 17:3"
+   ],
+   "verbatim": 5,
+   "words": 46,
+   "grounded_words": 36,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child, I hear your burden. Luke 6:37 says: \u201cDo not judge, and you will not be judged. Do not condemn, and you will not be condemned. Forgive, and you will be forgiven.\u201d And Luke 17:3 says: \u201cIf your brother sins, rebuke him; and if he repents, forgive him.\u201d"
+  },
+  {
+   "id": "q23",
+   "type": "situational",
+   "question": "Everyone at my office is fighting to be the one on top.",
+   "expected": [
+    "Matthew 18:1-5",
+    "Mark 9:33-37",
+    "Luke 9:46-48",
+    "Mark 10:35-45",
+    "Matthew 20:20-28",
+    "Luke 22:24-27",
+    "Matthew 23:8-12"
+   ],
+   "error": null,
+   "seconds": 5.3,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 22:24-30",
+    "Luke 9:46-50",
+    "Mark 9:33-41"
+   ],
+   "quoted": [
+    "Luke 9:46",
+    "Mark 9:34"
+   ],
+   "verbatim": 1,
+   "words": 37,
+   "grounded_words": 19,
+   "paraphrased": 1,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child, let me speak plainly.\n\n\u201cAnd they were arguing about which of them was the greatest.\u201d \u2014 Luke 9:46\n\n\u201cBut they were silent, for on the way they had been arguing about which of them was the greatest.\u201d \u2014 Mark 9:34"
+  },
+  {
+   "id": "q24",
+   "type": "situational",
+   "question": "My best friend just died and I can't stop crying.",
+   "expected": [
+    "John 11:17-44",
+    "Matthew 5:4"
+   ],
+   "error": null,
+   "seconds": 6.4,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 16:17-22",
+    "Luke 8:40-56",
+    "Matthew 5:3-12"
+   ],
+   "quoted": [
+    "Matthew 5:4",
+    "John 16:22"
+   ],
+   "verbatim": 2,
+   "words": 59,
+   "grounded_words": 35,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child, let me offer what the Gospels say for comfort and hope.\n\nMy child, hear this: I speak comfort to the grieving heart.\n\nMatthew 5:4: \u201cBlessed are those who mourn, for they will be comforted.\u201d\n\nJohn 16:22: \u201cSo also you have sorrow now, but I will see you again and your hearts will rejoice, and no one will take away your joy.\u201d"
+  },
+  {
+   "id": "q25",
+   "type": "direct",
+   "question": "Why would anyone call the poor and the grieving blessed?",
+   "expected": [
+    "Matthew 5:3-12",
+    "Luke 6:20-26"
+   ],
+   "error": null,
+   "seconds": 5.6,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 11:17-37",
+    "Luke 6:20-23",
+    "Matthew 5:3-12"
+   ],
+   "quoted": [
+    "Luke 6:20",
+    "Matthew 5:4"
+   ],
+   "verbatim": 2,
+   "words": 37,
+   "grounded_words": 23,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I\u2019ll draw on Jesus\u2019 teaching in the Gospels.\n\nMy child, hear this: \u201cBlessed are you who are poor, for yours is the kingdom of God.\u201d (Luke 6:20)\n\nAnd, \u201cBlessed are those who mourn, for they will be comforted.\u201d (Matthew 5:4)"
+  },
+  {
+   "id": "q26",
+   "type": "direct",
+   "question": "What does it mean to be born again?",
+   "expected": [
+    "John 3:1-21"
+   ],
+   "error": null,
+   "seconds": 5.4,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 3:1-21",
+    "John 4:1-26",
+    "Matthew 3:13-17"
+   ],
+   "quoted": [
+    "John 3:3",
+    "John 3:5"
+   ],
+   "verbatim": 2,
+   "words": 53,
+   "grounded_words": 40,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I\u2019ll share what the Gospels say in Jesus\u2019 own words.\n\nMy child. Truly, truly, I tell you, no one can see the kingdom of God unless he is born again.\nJohn 3:3\n\nTruly, truly, I tell you, no one can enter the kingdom of God unless he is born of water and the Spirit.\nJohn 3:5"
+  },
+  {
+   "id": "q27",
+   "type": "direct",
+   "question": "Did God send his Son to condemn the world?",
+   "expected": [
+    "John 3:16-21",
+    "John 12:47"
+   ],
+   "error": null,
+   "seconds": 6.2,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 16:5-16",
+    "John 3:1-21",
+    "John 9:35-41"
+   ],
+   "quoted": [
+    "John 3:17"
+   ],
+   "verbatim": 1,
+   "words": 24,
+   "grounded_words": 21,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child.  \n\nJohn 3:17: For God did not send His Son into the world to condemn the world, but to save the world through Him."
+  },
+  {
+   "id": "q28",
+   "type": "direct",
+   "question": "How do I find the way to the Father?",
+   "expected": [
+    "John 14:1-11"
+   ],
+   "error": null,
+   "seconds": 5.5,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 14:15-26",
+    "John 14:5-14",
+    "Matthew 11:25-30"
+   ],
+   "quoted": [
+    "John 14:6"
+   ],
+   "verbatim": 2,
+   "words": 35,
+   "grounded_words": 21,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child, listen: I will say what the Gospels record Jesus as saying.\n\nJohn 14:6: \u201cJesus answered, \u2018I am the way and the truth and the life. No one comes to the Father except through Me.\u2019\u201d"
+  },
+  {
+   "id": "q29",
+   "type": "situational",
+   "question": "I feel cut off and fruitless, like nothing I do ever grows.",
+   "expected": [
+    "John 15:1-11"
+   ],
+   "error": null,
+   "seconds": 5.8,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 12:20-36",
+    "John 15:1-8",
+    "John 15:9-17"
+   ],
+   "quoted": [
+    "John 15:5",
+    "John 15:4"
+   ],
+   "verbatim": 5,
+   "words": 72,
+   "grounded_words": 65,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child, remain in the Lord.\n\nJohn 15:5: \u201cI am the vine and you are the branches. The one who remains in Me, and I in him, will bear much fruit. For apart from Me you can do nothing.\u201d\n\nJohn 15:4: \u201cRemain in Me, and I will remain in you. Just as no branch can bear fruit by itself unless it remains in the vine, neither can you bear fruit unless you remain in Me.\u201d"
+  },
+  {
+   "id": "q30",
+   "type": "situational",
+   "question": "I keep chasing things that never satisfy me. I'm always thirsty for more.",
+   "expected": [
+    "John 4:7-26",
+    "John 6:32-51",
+    "John 7:37-39"
+   ],
+   "error": null,
+   "seconds": 6.0,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 15:11-32",
+    "Luke 6:24-26",
+    "Matthew 13:10-17"
+   ],
+   "quoted": [
+    "Luke 6:25",
+    "Matthew 13:12"
+   ],
+   "verbatim": 4,
+   "words": 55,
+   "grounded_words": 50,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child, hear this. \n\nLuke 6:25: \u201cWoe to you who are well fed now, for you will hunger. Woe to you who laugh now, for you will mourn and weep.\u201d\n\nMatthew 13:12: \u201cWhoever has will be given more, and he will have an abundance. Whoever does not have, even what he has will be taken away from him.\u201d"
+  },
+  {
+   "id": "q31",
+   "type": "situational",
+   "question": "I feel like I'm walking around in darkness.",
+   "expected": [
+    "John 8:12",
+    "John 12:35-36",
+    "John 12:44-46",
+    "John 1:4-9",
+    "John 3:19-21",
+    "Matthew 6:22-23",
+    "Luke 11:33-36"
+   ],
+   "error": null,
+   "seconds": 5.6,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 12:20-36",
+    "John 8:12-29",
+    "Matthew 4:12-17"
+   ],
+   "quoted": [
+    "John 12:35",
+    "John 8:12"
+   ],
+   "verbatim": 5,
+   "words": 87,
+   "grounded_words": 61,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child. I\u2019ll share what the Gospels say, then let the words speak.\n\nMy child. Let these words speak to the darkness you feel.\n\nJohn 12:35 says, \u201cFor a little while longer, the Light will be among you. Walk while you have the Light, so that darkness will not overtake you. The one who walks in the darkness does not know where he is going.\u201d\n\nJohn 8:12 says, \u201cI am the light of the world. Whoever follows Me will never walk in the darkness, but will have the light of life.\u201d"
+  },
+  {
+   "id": "q32",
+   "type": "situational",
+   "question": "I'm so overwhelmed I feel like I could die, and my friends just keep sleeping through it.",
+   "expected": [
+    "Matthew 26:36-46",
+    "Mark 14:32-42",
+    "Luke 22:39-46"
+   ],
+   "error": null,
+   "seconds": 6.0,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 90,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 1,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "I hear you, and I\u2019m really glad you said it out loud. Your safety matters, and you don\u2019t have to carry this alone.\n\nIf you\u2019re in immediate danger, call emergency services\u2014911 in the US\u2014or if you\u2019re thinking about harming yourself, you can call or text 988, the Suicide & Crisis Lifeline. If there is someone nearby you trust, please reach out to them now.\n\nIf you\u2019d like, sit with this gentle reminder: \u201cCome to me, all you who labor and are heavy laden, and I will give you rest.\u201d \u2014 Matthew 11:28"
+  },
+  {
+   "id": "q33",
+   "type": "situational",
+   "question": "I betrayed my best friend right when he needed me most.",
+   "expected": [
+    "Matthew 26:69-75",
+    "Mark 14:66-72",
+    "Luke 22:54-62",
+    "John 18:15-27",
+    "John 21:15-19",
+    "Matthew 26:14-16",
+    "Matthew 26:47-50",
+    "Matthew 27:3-5"
+   ],
+   "error": null,
+   "seconds": 5.6,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 15:8-10",
+    "Luke 17:1-4",
+    "Luke 22:47-53"
+   ],
+   "quoted": [
+    "Luke 17:3",
+    "Luke 17:4"
+   ],
+   "verbatim": 3,
+   "words": 57,
+   "grounded_words": 35,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child, I am here with you now, and I will speak plainly. In Luke 17:3, Jesus said, \u201cWatch yourselves. If your brother sins, rebuke him; and if he repents, forgive him.\u201d In Luke 17:4, Jesus said, \u201cEven if he sins against you seven times in a day, and seven times returns to say, \u2018I repent,\u2019 you must forgive him.\u201d"
+  },
+  {
+   "id": "q34",
+   "type": "situational",
+   "question": "I can't believe anything unless I see proof with my own eyes.",
+   "expected": [
+    "John 20:24-29"
+   ],
+   "error": null,
+   "seconds": 8.2,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 20:24-29",
+    "John 6:22-58",
+    "Matthew 28:16-20"
+   ],
+   "quoted": [
+    "John 20:27",
+    "John 20:29"
+   ],
+   "verbatim": 7,
+   "words": 63,
+   "grounded_words": 51,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nHear this: I meet your doubt and invite you to listen.\n\nJohn 20:27: Then Jesus said to Thomas, \u201cPut your finger here and look at My hands. Reach out your hand and put it into My side. Stop doubting and believe.\u201d\n\nJohn 20:29: Jesus said to him, \u201cBecause you have seen Me, you have believed; blessed are those who have not seen and yet have believed.\u201d"
+  },
+  {
+   "id": "q35",
+   "type": "situational",
+   "question": "I'm busy serving everyone while my sister just sits around, and I'm resentful.",
+   "expected": [
+    "Luke 10:38-42"
+   ],
+   "error": null,
+   "seconds": 5.9,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 10:38-42",
+    "Luke 15:11-32",
+    "Mark 10:35-45"
+   ],
+   "quoted": [
+    "Luke 10:41",
+    "Luke 10:42"
+   ],
+   "verbatim": 3,
+   "words": 42,
+   "grounded_words": 29,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child, hear what the Gospels say.\n\nLuke 10:41: \u201cMartha, Martha,\u201d the Lord replied, \u201cyou are worried and upset about many things.\nLuke 10:42: But only one thing is necessary. Mary has chosen the good portion, and it will not be taken away from her.\u201d"
+  },
+  {
+   "id": "q36",
+   "type": "situational",
+   "question": "I can only donate a tiny amount. Does it even matter?",
+   "expected": [
+    "Mark 12:41-44",
+    "Luke 21:1-4"
+   ],
+   "error": null,
+   "seconds": 6.3,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 19:1-10",
+    "Mark 12:41-44",
+    "Matthew 6:1-4"
+   ],
+   "quoted": [
+    "Mark 12:43",
+    "Mark 12:44"
+   ],
+   "verbatim": 3,
+   "words": 72,
+   "grounded_words": 48,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I will share what the Gospels say about small gifts and giving.\n\nHear this, and let the small offering speak to your heart.\n\nMark 12:43: Jesus called His disciples to Him and said, \u201cTruly I tell you, this poor widow has put more than all the others into the treasury.\n\nMark 12:44: For they all contributed out of their surplus, but she out of her poverty has put in all she had to live on.\u201d"
+  },
+  {
+   "id": "q37",
+   "type": "situational",
+   "question": "I like posting my charity work online so people see it.",
+   "expected": [
+    "Matthew 6:1-6"
+   ],
+   "error": null,
+   "seconds": 5.7,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 7:1-24",
+    "Matthew 5:13-16",
+    "Matthew 6:1-4"
+   ],
+   "quoted": [
+    "Matthew 6:1",
+    "Matthew 5:16"
+   ],
+   "verbatim": 3,
+   "words": 90,
+   "grounded_words": 51,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child. I will hear the Gospels on this matter.\n\nMy child. Listen. Here is what I told them about doing good before others: \u201cBe careful not to perform your righteous acts before men to be seen by them. If you do, you will have no reward from your Father in heaven.\u201d (Matthew 6:1)\n\nAnd I also spoke of the light shining before others so others may glorify God: \u201cIn the same way, let your light shine before men, that they may see your good deeds and glorify your Father in heaven.\u201d (Matthew 5:16)"
+  },
+  {
+   "id": "q38",
+   "type": "direct",
+   "question": "Should believers pay taxes to the government?",
+   "expected": [
+    "Matthew 22:15-22",
+    "Mark 12:13-17",
+    "Luke 20:20-26",
+    "Matthew 17:24-27"
+   ],
+   "error": null,
+   "seconds": 5.6,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 20:19-26",
+    "Mark 12:13-17",
+    "Matthew 22:15-22"
+   ],
+   "quoted": [
+    "Mark 12:17"
+   ],
+   "verbatim": 1,
+   "words": 23,
+   "grounded_words": 16,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 1,
+   "reply": "Peace be with you.\n\nMy child.\n\nMy child.  \n\nJesus told them: \u201cGive to Caesar what is Caesar\u2019s, and to God what is God\u2019s.\u201d  \nMark 12:17"
+  },
+  {
+   "id": "q39",
+   "type": "direct",
+   "question": "What did Jesus teach about divorce?",
+   "expected": [
+    "Matthew 19:3-12",
+    "Mark 10:2-12",
+    "Matthew 5:31-32",
+    "Luke 16:18"
+   ],
+   "error": null,
+   "seconds": 5.7,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Mark 10:1-12",
+    "Matthew 19:1-12",
+    "Matthew 5:31-32"
+   ],
+   "quoted": [
+    "Mark 10:9",
+    "Matthew 19:9"
+   ],
+   "verbatim": 2,
+   "words": 32,
+   "grounded_words": 29,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nHear this.\n\nMark 10:9: \u201cTherefore what God has joined together, let man not separate.\u201d\n\nMatthew 19:9: \u201cNow I tell you that whoever divorces his wife, except for sexual immorality, and marries another woman commits adultery.\u201d"
+  },
+  {
+   "id": "q40",
+   "type": "direct",
+   "question": "Do little children matter to God?",
+   "expected": [
+    "Matthew 19:13-15",
+    "Mark 10:13-16",
+    "Luke 18:15-17",
+    "Matthew 18:1-14",
+    "Mark 9:36-37"
+   ],
+   "error": null,
+   "seconds": 5.7,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 18:15-17",
+    "Matthew 18:1-5",
+    "Matthew 19:13-15"
+   ],
+   "quoted": [
+    "Luke 18:16",
+    "Matthew 19:14"
+   ],
+   "verbatim": 4,
+   "words": 71,
+   "grounded_words": 44,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child, hear what the Gospels say about children and God.\n\nYes, little children matter to God. Jesus said, \u201cLet the little children come to Me, and do not hinder them! For the kingdom of God belongs to such as these.\u201d This is from Luke 18:16.\n\nAnd again, \u201cLet the little children come to Me, and do not hinder them! For the kingdom of heaven belongs to such as these.\u201d This is from Matthew 19:14."
+  },
+  {
+   "id": "q41",
+   "type": "situational",
+   "question": "My faith is so small. Is it even enough?",
+   "expected": [
+    "Matthew 17:20",
+    "Luke 17:5-6",
+    "Matthew 13:31-32",
+    "Mark 4:30-32",
+    "Mark 9:14-29"
+   ],
+   "error": null,
+   "seconds": 5.6,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 17:5-10",
+    "Mark 4:30-34",
+    "Matthew 17:19-20"
+   ],
+   "quoted": [
+    "Luke 17:6",
+    "Matthew 17:20"
+   ],
+   "verbatim": 4,
+   "words": 93,
+   "grounded_words": 75,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child. I will listen to what Jesus says about faith.\n\nMy little one, hear this.\n\nLuke 17:6: \u201cAnd the Lord answered, \u2018If you have faith the size of a mustard seed, you can say to this mulberry tree, \u2018Be uprooted and planted in the sea,\u2019 and it will obey you.\u201d\n\nMatthew 17:20: \u201cBecause you have so little faith,\u201d He answered. \u201cFor truly I tell you, if you have faith the size of a mustard seed, you can say to this mountain, \u2018Move from here to there,\u2019 and it will move. Nothing will be impossible for you.\u201d"
+  },
+  {
+   "id": "q42",
+   "type": "situational",
+   "question": "I've prayed for the same thing for years and nothing happens. Should I just give up?",
+   "expected": [
+    "Luke 18:1-8",
+    "Luke 11:5-13",
+    "Matthew 7:7-11"
+   ],
+   "error": null,
+   "seconds": 3.9,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 14,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child, hear this. I will point to what is written in the Gospels."
+  },
+  {
+   "id": "q43",
+   "type": "situational",
+   "question": "Honestly, I'm proud that I'm a better person than most people around me.",
+   "expected": [
+    "Luke 18:9-14"
+   ],
+   "error": null,
+   "seconds": 5.5,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 14:7-14",
+    "Luke 6:37-42",
+    "Matthew 7:1-6"
+   ],
+   "quoted": [
+    "Luke 14:11",
+    "Luke 6:42"
+   ],
+   "verbatim": 3,
+   "words": 71,
+   "grounded_words": 66,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child.\n\nListen.  \n\nLuke 14:11: \u201cFor everyone who exalts himself will be humbled, and the one who humbles himself will be exalted.\u201d\n\nLuke 6:42: \u201cHow can you say, \u2018Brother, let me take the speck out of your eye,\u2019 while you yourself fail to see the beam in your own eye? You hypocrite! First take the beam out of your own eye, and then you will see clearly to remove the speck from your brother\u2019s eye.\u201d"
+  },
+  {
+   "id": "q44",
+   "type": "situational",
+   "question": "I've cheated people out of money and I want to make it right.",
+   "expected": [
+    "Luke 19:1-10"
+   ],
+   "error": null,
+   "seconds": 5.5,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 15:8-10",
+    "Luke 17:1-4",
+    "Luke 3:1-20"
+   ],
+   "quoted": [
+    "Luke 3:8",
+    "Luke 17:3"
+   ],
+   "verbatim": 3,
+   "words": 26,
+   "grounded_words": 19,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child.\n\nMy child. Luke 3:8 says: \u201cProduce fruit, then, in keeping with repentance.\u201d And Luke 17:3 says: \u201cIf your brother sins, rebuke him; and if he repents, forgive him.\u201d"
+  },
+  {
+   "id": "q45",
+   "type": "situational",
+   "question": "I'm afraid to use my abilities because I might fail.",
+   "expected": [
+    "Matthew 25:14-30",
+    "Luke 19:11-27"
+   ],
+   "error": null,
+   "seconds": 6.7,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 16:23-33",
+    "Mark 6:45-52",
+    "Matthew 21:18-22"
+   ],
+   "quoted": [
+    "John 16:23"
+   ],
+   "verbatim": 1,
+   "words": 46,
+   "grounded_words": 17,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I will seek a word from what He said that speaks to your fear.\n\nCome near me, and I will share a word that speaks to your fear.\n\n\u201cTruly, truly, I tell you, whatever you ask the Father in My name, He will give you.\u201d \u2014 John 16:23"
+  },
+  {
+   "id": "q46",
+   "type": "direct",
+   "question": "Does helping the homeless and visiting prisoners matter to God?",
+   "expected": [
+    "Matthew 25:31-46"
+   ],
+   "error": null,
+   "seconds": 5.8,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Matthew 23:1-36",
+    "Matthew 25:31-46",
+    "Matthew 5:3-12"
+   ],
+   "quoted": [
+    "Matthew 25:40",
+    "Matthew 25:35-36"
+   ],
+   "verbatim": 3,
+   "words": 93,
+   "grounded_words": 78,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child.\n\nListen. For there is a truth revealed about what God counts as care.\n\nMatthew 25:40: And the King will reply, \u201cTruly I tell you, whatever you did for one of the least of these brothers of Mine, you did for Me.\u201d\n\nMatthew 25:36: I was hungry and you gave Me something to eat, I was thirsty and you gave Me something to drink, I was a stranger and you took Me in, I was naked and you clothed Me, I was sick and you looked after Me, I was in prison and you visited Me."
+  },
+  {
+   "id": "q47",
+   "type": "situational",
+   "question": "How do I build a life that won't collapse when things get hard?",
+   "expected": [
+    "Matthew 7:24-27",
+    "Luke 6:46-49"
+   ],
+   "error": null,
+   "seconds": 6.7,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 6:22-58",
+    "Luke 22:31-38",
+    "Luke 6:46-49"
+   ],
+   "quoted": [
+    "Luke 6:48",
+    "Luke 6:49"
+   ],
+   "verbatim": 4,
+   "words": 106,
+   "grounded_words": 80,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child, listen while the Gospels speak to what strengthens a life under strain.\n\nHear this: let My words settle as your foundation when storms threaten.\n\nLuke 6:48: He is like a man building a house, who dug down deep and laid his foundation on the rock. When the flood came, the torrent crashed against that house but could not shake it, because it was well built.\n\nLuke 6:49: But the one who hears My words and does not act on them is like a man who built his house on ground without a foundation. The torrent crashed against that house, and immediately it fell\u2014and great was its destruction!"
+  },
+  {
+   "id": "q48",
+   "type": "situational",
+   "question": "I keep giving in to temptation and I don't know how to resist.",
+   "expected": [
+    "Matthew 4:1-11",
+    "Luke 4:1-13",
+    "Mark 1:12-13",
+    "Matthew 26:41",
+    "Mark 14:38",
+    "Matthew 6:13",
+    "Luke 11:4",
+    "Luke 22:40",
+    "Luke 22:46",
+    "Matthew 5:29-30",
+    "Mark 9:43-48"
+   ],
+   "error": null,
+   "seconds": 5.4,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Mark 14:32-42",
+    "Matthew 26:36-46",
+    "Matthew 4:1-11"
+   ],
+   "quoted": [
+    "Matthew 26:41"
+   ],
+   "verbatim": 2,
+   "words": 26,
+   "grounded_words": 21,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child, hear this: \u201cWatch and pray so that you will not enter into temptation. For the spirit is willing, but the body is weak.\u201d Matthew 26:41"
+  },
+  {
+   "id": "q49",
+   "type": "direct",
+   "question": "Is it wrong to do work on the Sabbath?",
+   "expected": [
+    "Mark 2:23-3:6",
+    "Matthew 12:1-14",
+    "Luke 6:1-11",
+    "Luke 13:10-17",
+    "Luke 14:1-6",
+    "John 5:1-18",
+    "John 7:21-24",
+    "John 9:13-16"
+   ],
+   "error": null,
+   "seconds": 5.3,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 6:6-11",
+    "Mark 2:23-28",
+    "Matthew 12:9-14"
+   ],
+   "quoted": [
+    "Luke 6:9",
+    "Mark 2:25",
+    "Mark 2:27",
+    "Mark 2:28"
+   ],
+   "verbatim": 5,
+   "words": 78,
+   "grounded_words": 59,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I will look for what Jesus teaches about work on the Sabbath.\n\nHear this. Which is lawful on the Sabbath: to do good or to do evil, to save life or to destroy it? \u2014 Luke 6:9.\n\nJesus replied to them, \u201cHave you never read what David did when he and his companions were hungry and in need? ... The Sabbath was made for man, not man for the Sabbath. Therefore, the Son of Man is Lord even of the Sabbath.\u201d \u2014 Mark 2:25\u201328."
+  },
+  {
+   "id": "q50",
+   "type": "direct",
+   "question": "How will people know someone truly follows Jesus?",
+   "expected": [
+    "John 13:34-35",
+    "John 15:8-17",
+    "Matthew 7:15-23",
+    "Luke 6:43-45"
+   ],
+   "error": null,
+   "seconds": 5.7,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 13:31-35",
+    "John 15:1-8",
+    "Matthew 13:18-23"
+   ],
+   "quoted": [
+    "John 13:35",
+    "John 15:8"
+   ],
+   "verbatim": 2,
+   "words": 48,
+   "grounded_words": 36,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 1,
+   "reply": "Peace be with you.\n\nMy child, listen to the words that show how disciples are known.\n\nJohn 13:35: By this everyone will know that you are My disciples, if you love one another.\n\nJohn 15:8: This is to My Father\u2019s glory, that you bear much fruit, proving yourselves to be My disciples."
+  },
+  {
+   "id": "q51",
+   "type": "situational",
+   "question": "I'm the boss. Why should I do humble work for my team?",
+   "expected": [
+    "John 13:1-17",
+    "Mark 10:42-45",
+    "Matthew 20:25-28",
+    "Luke 22:24-27",
+    "Matthew 23:11-12"
+   ],
+   "error": null,
+   "seconds": 5.2,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Mark 10:35-45",
+    "Matthew 20:20-28",
+    "Matthew 23:1-36"
+   ],
+   "quoted": [
+    "Matthew 20:26",
+    "Matthew 20:28"
+   ],
+   "verbatim": 3,
+   "words": 63,
+   "grounded_words": 43,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. My child, this passage speaks to your leadership and humility before others.\n\nHear this: \u201cIt shall not be this way among you. Instead, whoever wants to become great among you must be your servant,\u201d from Matthew 20:26. And: \u201cFor even the Son of Man did not come to be served, but to serve, and to give His life as a ransom for many,\u201d from Matthew 20:28."
+  },
+  {
+   "id": "q52",
+   "type": "situational",
+   "question": "I feel completely worthless, like I don't matter to anyone.",
+   "expected": [
+    "Matthew 10:29-31",
+    "Luke 12:6-7",
+    "Matthew 6:26",
+    "Luke 12:24",
+    "Luke 15:1-32",
+    "Matthew 18:12-14"
+   ],
+   "error": null,
+   "seconds": 5.1,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 16:23-33",
+    "Luke 12:4-7",
+    "Matthew 10:26-31"
+   ],
+   "quoted": [
+    "Matthew 10:31",
+    "Luke 12:6"
+   ],
+   "verbatim": 4,
+   "words": 33,
+   "grounded_words": 29,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child.\n\nMy child. Matthew 10:31: \u201cSo do not be afraid; you are worth more than many sparrows.\u201d  \nLuke 12:6: \u201cAre not five sparrows sold for two pennies? Yet not one of them is forgotten by God.\u201d"
+  },
+  {
+   "id": "q53",
+   "type": "situational",
+   "question": "My own family doesn't respect what I do.",
+   "expected": [
+    "Mark 6:1-6",
+    "Matthew 13:53-58",
+    "Luke 4:16-30",
+    "John 4:44",
+    "Mark 3:20-21",
+    "Mark 3:31-35",
+    "John 7:1-5"
+   ],
+   "error": null,
+   "seconds": 5.4,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 34,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child. I will look to the Gospels for words that speak to this.\n\nThe Gospels do not speak to this directly. What would you like to share about what is happening at home?"
+  },
+  {
+   "id": "q54",
+   "type": "situational",
+   "question": "I'm so angry at my brother I could explode.",
+   "expected": [
+    "Matthew 5:21-26"
+   ],
+   "error": null,
+   "seconds": 3.9,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 16,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child. I will listen to what the Gospels say about anger and coming to peace."
+  },
+  {
+   "id": "q55",
+   "type": "direct",
+   "question": "Should I swear an oath to prove I'm telling the truth?",
+   "expected": [
+    "Matthew 5:33-37",
+    "Matthew 23:16-22"
+   ],
+   "error": null,
+   "seconds": 5.8,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 16:23-33",
+    "Luke 16:1-13",
+    "Matthew 5:33-37"
+   ],
+   "quoted": [
+    "Matthew 5:34",
+    "Matthew 5:37"
+   ],
+   "verbatim": 2,
+   "words": 57,
+   "grounded_words": 16,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 2,
+   "reply": "My child, hear what I say from the Gospel about truth and promises.\n\nHere is the teaching I bring, and I will let the verse speak plainly.\n\nMy child, hear this. I told My disciples: \u201cBut I tell you not to swear at all: either by heaven\u2026Anything more comes from the evil one.\u201d\n\nMatthew 5:34 and 5:37"
+  },
+  {
+   "id": "o01",
+   "question": "What's the weather in Chicago tomorrow?",
+   "error": null,
+   "seconds": 4.4,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 14,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "I speak only from the Gospels, and the weather is not in the Gospels."
+  },
+  {
+   "id": "o02",
+   "question": "How do I fix a Python import error?",
+   "error": null,
+   "seconds": 4.9,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 13,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I speak only from the Gospels, not from Python or coding errors."
+  },
+  {
+   "id": "o03",
+   "question": "What is the price of Bitcoin today?",
+   "error": null,
+   "seconds": 4.8,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 22,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child, I speak only from the Gospels. The price of Bitcoin today is not in them, so I cannot tell you."
+  },
+  {
+   "id": "o04",
+   "question": "Recommend a good sushi restaurant near me.",
+   "error": null,
+   "seconds": 4.3,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 17,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "I\u2019m sorry, but I can only speak from the Gospels. I can\u2019t recommend a restaurant near you."
+  },
+  {
+   "id": "o05",
+   "question": "Who won the 2022 World Cup?",
+   "error": null,
+   "seconds": 6.3,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 28,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "I speak only from the Gospels, not from world news or sports results.\n\nIf you want a word from them, tell me what you\u2019re seeking\u2014I will listen."
+  },
+  {
+   "id": "o06",
+   "question": "How do I change a flat car tire?",
+   "error": null,
+   "seconds": 4.4,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 16,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "I speak only from the Gospels, and it does not teach how to change a tire."
+  },
+  {
+   "id": "o07",
+   "question": "What is the capital of Australia?",
+   "error": null,
+   "seconds": 6.3,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 34,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "I speak only from the Gospels.\n\nThat question is outside what the Gospels address. If you\u2019d like, we can talk about what Jesus said about faith, love, and what matters most to the heart."
+  },
+  {
+   "id": "o08",
+   "question": "How many calories are in a banana?",
+   "error": null,
+   "seconds": 4.6,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 26,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "I speak only from the Gospels, and they do not give nutrition facts.\n\nI cannot answer how many calories are in a banana from that source."
+  },
+  {
+   "id": "o09",
+   "question": "Explain how a transformer neural network works.",
+   "error": null,
+   "seconds": 4.9,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 18,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "I\u2019m sorry, but I speak only from the Gospels. I can\u2019t explain transformer neural networks from the Gospels."
+  },
+  {
+   "id": "o10",
+   "question": "What's the best way to stretch for lower back pain?",
+   "error": null,
+   "seconds": 4.5,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 36,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child, I speak only from what the Gospels say.\n\nThe Gospel does not give instructions for stretching the lower back. If you want guidance for pain, the Gospels do not provide practical how-to advice."
+  }
+ ],
+ [
+  {
+   "id": "q01",
+   "type": "direct",
+   "question": "What did Jesus say about worrying?",
+   "expected": [
+    "Matthew 6:25-34",
+    "Luke 12:22-34"
+   ],
+   "error": null,
+   "seconds": 5.4,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 12:22-31",
+    "Matthew 6:25-34",
+    "Matthew 6:5-15"
+   ],
+   "quoted": [
+    "Matthew 6:33",
+    "Luke 12:22"
+   ],
+   "verbatim": 2,
+   "words": 67,
+   "grounded_words": 51,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 1,
+   "reply": "Peace be with you.\n\nListen. I\u2019ll turn to what Jesus says directly about worry.\n\nMy child, hear what I said.\n\nMatthew 6:33: \"But seek first the kingdom of God and His righteousness, and all these things will be added unto you.\"\n\nLuke 12:22\u201323: \"Then Jesus said to His disciples, 'Therefore I tell you, do not worry about your life, what you will eat, or about your body, what you will wear.' \""
+  },
+  {
+   "id": "q02",
+   "type": "situational",
+   "question": "I can't sleep because I keep thinking about how I'll pay rent next month.",
+   "expected": [
+    "Matthew 6:25-34",
+    "Luke 12:22-34"
+   ],
+   "error": null,
+   "seconds": 5.8,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 12:22-31",
+    "Matthew 6:25-34"
+   ],
+   "quoted": [
+    "Matthew 6:34"
+   ],
+   "verbatim": 2,
+   "words": 24,
+   "grounded_words": 19,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child, hear this.\n\n\"Therefore do not worry about tomorrow, for tomorrow will worry about itself. Today has enough trouble of its own.\" Matthew 6:34"
+  },
+  {
+   "id": "q03",
+   "type": "situational",
+   "question": "I'm exhausted and burned out. Everything feels so heavy.",
+   "expected": [
+    "Matthew 11:28-30"
+   ],
+   "error": null,
+   "seconds": 5.5,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Mark 6:30-44",
+    "Matthew 11:25-30",
+    "Matthew 26:36-46"
+   ],
+   "quoted": [
+    "Matthew 11:28",
+    "Matthew 11:29"
+   ],
+   "verbatim": 2,
+   "words": 56,
+   "grounded_words": 41,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child, let me hear a passage that speaks comfort in weariness.\n\nMy child, listen. \"Come to Me, all you who are weary and burdened, and I will give you rest.\" (Matthew 11:28)  \n\"Take My yoke upon you and learn from Me, for I am gentle and humble in heart, and you will find rest for your souls.\" (Matthew 11:29)"
+  },
+  {
+   "id": "q04",
+   "type": "direct",
+   "question": "How many times should I forgive someone who wrongs me?",
+   "expected": [
+    "Matthew 18:21-35",
+    "Luke 17:3-4"
+   ],
+   "error": null,
+   "seconds": 6.1,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 17:1-4",
+    "Mark 3:28-30",
+    "Matthew 18:21-35"
+   ],
+   "quoted": [
+    "Matthew 18:22",
+    "Luke 17:3"
+   ],
+   "verbatim": 3,
+   "words": 37,
+   "grounded_words": 25,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 3,
+   "reply": "My child.\n\nMy child. Here is what I told My disciples: \u201cJesus answered, \u2018I tell you, not just seven times, but seventy-seven times!\u2019\u201d and \u201cIf your brother sins, rebuke him; and if he repents, forgive him.\u201d\n\nMatthew 18:22  \nLuke 17:3"
+  },
+  {
+   "id": "q05",
+   "type": "situational",
+   "question": "My brother keeps hurting me and then apologizing. I'm done giving him chances.",
+   "expected": [
+    "Matthew 18:15-35",
+    "Luke 17:3-4"
+   ],
+   "error": null,
+   "seconds": 5.1,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 17:1-4",
+    "Mark 13:9-13",
+    "Matthew 10:16-25"
+   ],
+   "quoted": [
+    "Luke 17:3",
+    "Luke 17:4"
+   ],
+   "verbatim": 3,
+   "words": 49,
+   "grounded_words": 35,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nPeace to you, and I hear the weight in your words.\n\nLuke 17:3: \u201cWatch yourselves. If your brother sins, rebuke him; and if he repents, forgive him.\u201d\n\nLuke 17:4: \u201cEven if he sins against you seven times in a day, and seven times returns to say, \u2018I repent,\u2019 you must forgive him.\u201d"
+  },
+  {
+   "id": "q06",
+   "type": "direct",
+   "question": "Did Jesus really tell people to love their enemies?",
+   "expected": [
+    "Matthew 5:43-48",
+    "Luke 6:27-36"
+   ],
+   "error": null,
+   "seconds": 5.7,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 15:18-27",
+    "Luke 6:27-36",
+    "Matthew 5:38-48"
+   ],
+   "quoted": [
+    "Luke 6:27",
+    "Matthew 5:44"
+   ],
+   "verbatim": 3,
+   "words": 58,
+   "grounded_words": 34,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child, listen to what Jesus says about loving those who stand against you.\n\nMy child, hear this: Jesus spoke plainly about loving enemies.\n\nLuke 6:27: But to those of you who will listen, I say: Love your enemies, do good to those who hate you,\n\nMatthew 5:44: But I tell you, love your enemies and pray for those who persecute you,"
+  },
+  {
+   "id": "q07",
+   "type": "situational",
+   "question": "There's a coworker who openly hates me and tries to make me look bad. How do I treat him?",
+   "expected": [
+    "Matthew 5:38-48",
+    "Luke 6:27-36"
+   ],
+   "error": null,
+   "seconds": 7.9,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 6:27-36",
+    "Matthew 5:3-12",
+    "Matthew 5:38-48"
+   ],
+   "quoted": [
+    "Luke 6:27",
+    "Luke 6:28"
+   ],
+   "verbatim": 2,
+   "words": 49,
+   "grounded_words": 21,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child, listen for what the Gospels say about patience and others\u2019 hostility.\n\nMy child, I say to you: I told My disciples: \"Love your enemies, do good to those who hate you,\" and \"bless those who curse you, pray for those who mistreat you.\" That is from Luke 6:27 and Luke 6:28."
+  },
+  {
+   "id": "q08",
+   "type": "situational",
+   "question": "Someone humiliated me in front of everyone and I want to get back at him.",
+   "expected": [
+    "Matthew 5:38-48",
+    "Luke 6:27-36"
+   ],
+   "error": null,
+   "seconds": 5.4,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 6:27-36",
+    "Matthew 5:3-12",
+    "Matthew 5:38-48"
+   ],
+   "quoted": [
+    "Matthew 5:44-45",
+    "Luke 6:29"
+   ],
+   "verbatim": 2,
+   "words": 55,
+   "grounded_words": 37,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child. I speak as in the Gospels; let the words speak.\n\nMy child. Hear these words: \u201cBut I tell you, love your enemies and pray for those who persecute you, that you may be sons of your Father in heaven.\u201d (Matthew 5:44)\n\n\u201cAnd if someone strikes you on one cheek, turn to him the other also.\u201d (Luke 6:29)"
+  },
+  {
+   "id": "q09",
+   "type": "situational",
+   "question": "I blew all the money my parents gave me and now I'm too ashamed to go home.",
+   "expected": [
+    "Luke 15:11-32"
+   ],
+   "error": null,
+   "seconds": 5.9,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 15:11-32",
+    "Luke 15:8-10",
+    "Luke 24:36-49"
+   ],
+   "quoted": [
+    "Luke 15:20",
+    "Luke 15:24"
+   ],
+   "verbatim": 5,
+   "words": 68,
+   "grounded_words": 53,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child. I\u2019ll share what the Gospels say about guilt and returning.\n\nMy child. Listen.\n\nLuke 15:20: \u201cSo he got up and went to his father. But while he was still in the distance, his father saw him and was filled with compassion. He ran to his son, embraced him, and kissed him.\u201d\n\nLuke 15:24: \u201cFor this son of mine was dead and is alive again! He was lost and is found!\u201d"
+  },
+  {
+   "id": "q10",
+   "type": "situational",
+   "question": "I feel like I've wandered so far away that God has given up on me.",
+   "expected": [
+    "Luke 15:1-32",
+    "Matthew 18:12-14"
+   ],
+   "error": null,
+   "seconds": 5.2,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 15:1-7",
+    "Luke 15:11-32",
+    "Luke 15:8-10"
+   ],
+   "quoted": [
+    "Luke 15:5",
+    "Luke 15:7"
+   ],
+   "verbatim": 2,
+   "words": 61,
+   "grounded_words": 44,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 1,
+   "uncited_quotes": 0,
+   "reply": "Listen. I will speak only from the Gospels; let me offer what they say.\n\nMy child. Listen.\n\nLuke 15:6: And when he finds it, he joyfully puts it on his shoulders,\nLuke 15:7: I tell you that in the same way there will be more joy in heaven over one sinner who repents than over ninety-nine righteous ones who do not need to repent."
+  },
+  {
+   "id": "q11",
+   "type": "direct",
+   "question": "Who counts as my neighbor?",
+   "expected": [
+    "Luke 10:25-37"
+   ],
+   "error": null,
+   "seconds": 6.2,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 10:25-37",
+    "Luke 6:27-36",
+    "Mark 12:28-34"
+   ],
+   "quoted": [
+    "Luke 10:36",
+    "Luke 10:37"
+   ],
+   "verbatim": 5,
+   "words": 62,
+   "grounded_words": 40,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child. Let me share what is written about who your neighbor is.\n\nListen. Here is what is written about your neighbor:\n\nLuke 10:36: \u201cWhich of these three do you think was a neighbor to the man who fell into the hands of robbers?\u201d\n\nLuke 10:37: \u201cThe one who showed him mercy,\u201d replied the expert in the law. Then Jesus told him, \u201cGo and do likewise.\u201d"
+  },
+  {
+   "id": "q12",
+   "type": "direct",
+   "question": "What is the greatest commandment?",
+   "expected": [
+    "Matthew 22:34-40",
+    "Mark 12:28-34",
+    "Luke 10:25-28"
+   ],
+   "error": null,
+   "seconds": 5.3,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 10:25-37",
+    "Mark 12:28-34",
+    "Matthew 22:34-40"
+   ],
+   "quoted": [
+    "Matthew 22:37",
+    "Matthew 22:38"
+   ],
+   "verbatim": 2,
+   "words": 31,
+   "grounded_words": 28,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nHear this.  \nMatthew 22:37: \u201cJesus declared, \u2018Love the Lord your God with all your heart and with all your soul and with all your mind.\u2019\u201d  \nMatthew 22:38: \u201cThis is the first and greatest commandment.\u201d"
+  },
+  {
+   "id": "q13",
+   "type": "situational",
+   "question": "I'm scared about the future and my heart won't stop racing.",
+   "expected": [
+    "John 14:1-4",
+    "John 14:27",
+    "John 16:33",
+    "Matthew 6:25-34",
+    "Luke 12:22-34"
+   ],
+   "error": null,
+   "seconds": 5.5,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 14:27-31",
+    "Luke 12:22-31",
+    "Luke 21:25-28"
+   ],
+   "quoted": [
+    "John 14:27",
+    "Luke 12:22"
+   ],
+   "verbatim": 6,
+   "words": 94,
+   "grounded_words": 54,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child. I will let the words of the Gospels speak.\n\nMy child, I want you to hear this: let the words themselves bring peace.\n\nJohn 14:27: \u201cPeace I leave with you; My peace I give to you. I do not give to you as the world gives. Do not let your hearts be troubled; do not be afraid.\u201d\n\nLuke 12:22: \u201cTherefore I tell you, do not worry about your life, what you will eat, or about your body, what you will wear.\u201d\n\nIf fear feels loud and your heart races, you are not alone in that feeling."
+  },
+  {
+   "id": "q14",
+   "type": "situational",
+   "question": "My life feels like it's falling apart in a storm and I'm terrified.",
+   "expected": [
+    "Mark 4:35-41",
+    "Matthew 8:23-27",
+    "Luke 8:22-25",
+    "Matthew 14:22-33",
+    "Matthew 7:24-27",
+    "Luke 6:46-49"
+   ],
+   "error": null,
+   "seconds": 5.6,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 8:22-25",
+    "Matthew 11:25-30",
+    "Matthew 8:23-27"
+   ],
+   "quoted": [
+    "Luke 8:24",
+    "Matthew 11:28"
+   ],
+   "verbatim": 3,
+   "words": 57,
+   "grounded_words": 40,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child.\n\nMy child. Here is a word from My own mouth, and from what is written.\n\nLuke 8:24: \u201cMaster, Master, we are perishing!\u201d Then Jesus got up and rebuked the wind and the raging waters, and they subsided, and all was calm.\n\nMatthew 11:28: \u201cCome to Me, all you who are weary and burdened, and I will give you rest.\u201d"
+  },
+  {
+   "id": "q15",
+   "type": "situational",
+   "question": "I started out with strong faith, but now I'm sinking in doubt.",
+   "expected": [
+    "Matthew 14:22-33",
+    "Mark 9:14-29"
+   ],
+   "error": null,
+   "seconds": 6.1,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 20:24-29",
+    "Luke 24:36-49",
+    "Matthew 11:25-30"
+   ],
+   "quoted": [
+    "Matthew 11:28",
+    "Matthew 11:29"
+   ],
+   "verbatim": 2,
+   "words": 47,
+   "grounded_words": 45,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 1,
+   "reply": "Peace be with you.\n\nListen.\n\nListen. Matthew 11:28: \u201cCome to Me, all you who are weary and burdened, and I will give you rest.\u201d Matthew 11:29: \u201cTake My yoke upon you and learn from Me, for I am gentle and humble in heart, and you will find rest for your souls.\u201d"
+  },
+  {
+   "id": "q16",
+   "type": "situational",
+   "question": "My friend criticizes everyone around her but never sees her own faults.",
+   "expected": [
+    "Matthew 7:1-5",
+    "Luke 6:37-42"
+   ],
+   "error": null,
+   "seconds": 6.6,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 6:37-42",
+    "Matthew 23:1-36",
+    "Matthew 7:1-6"
+   ],
+   "quoted": [
+    "Luke 6:41",
+    "Luke 6:42"
+   ],
+   "verbatim": 3,
+   "words": 80,
+   "grounded_words": 70,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child, hear what the Scriptures say.\n\nLuke 6:41: Why do you look at the speck in your brother\u2019s eye but fail to notice the beam in your own eye?\n\nLuke 6:42: How can you say, \u2018Brother, let me take the speck out of your eye,\u2019 while you yourself fail to see the beam in your own eye? You hypocrite! First take the beam out of your own eye, and then you will see clearly to remove the speck from your brother\u2019s eye."
+  },
+  {
+   "id": "q17",
+   "type": "direct",
+   "question": "Does God actually answer when I ask him for something?",
+   "expected": [
+    "Matthew 7:7-11",
+    "Luke 11:5-13",
+    "John 14:13-14",
+    "John 16:23-24",
+    "Mark 11:22-25",
+    "Matthew 21:21-22"
+   ],
+   "error": null,
+   "seconds": 5.8,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 18:1-8",
+    "Mark 11:20-25",
+    "Matthew 21:18-22"
+   ],
+   "quoted": [
+    "Mark 11:23",
+    "Mark 11:24",
+    "Luke 18:7"
+   ],
+   "verbatim": 4,
+   "words": 116,
+   "grounded_words": 86,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 1,
+   "reply": "Peace be with you.\n\nListen. I will speak only what the Gospels say.\n\nListen. In the Gospels, Jesus says, \u201cTruly I tell you that if anyone says to this mountain, \u2018Be lifted up and thrown into the sea,\u2019 and has no doubt in his heart but believes that it will happen, it will be done for him. Therefore I tell you, whatever you ask for in prayer, believe that you have received it, and it will be yours. Mark 11:23-24.\n\nAnd He also taught a parable so people would pray and not lose heart, saying: \u201cWill not God bring about justice for His elect who cry out to Him day and night? Will He delay in helping them?\u201d Luke 18:7."
+  },
+  {
+   "id": "q18",
+   "type": "direct",
+   "question": "How should I pray?",
+   "expected": [
+    "Matthew 6:5-15",
+    "Luke 11:1-4"
+   ],
+   "error": null,
+   "seconds": 5.3,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 11:1-4",
+    "Matthew 26:36-46",
+    "Matthew 6:5-15"
+   ],
+   "quoted": [
+    "Luke 11:2"
+   ],
+   "verbatim": 2,
+   "words": 19,
+   "grounded_words": 13,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child.  \nLuke 11:2: \u201cSo Jesus told them, \u2018When you pray, say: \u201cFather, hallowed be Your name. Your kingdom come.\u201d\u2019\u201d"
+  },
+  {
+   "id": "q19",
+   "type": "direct",
+   "question": "Is it wrong to be rich?",
+   "expected": [
+    "Matthew 19:16-26",
+    "Mark 10:17-27",
+    "Luke 18:18-27",
+    "Matthew 6:19-24",
+    "Luke 12:13-21",
+    "Luke 16:13",
+    "Luke 16:19-31"
+   ],
+   "error": null,
+   "seconds": 6.5,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 18:18-30",
+    "Mark 10:17-31",
+    "Matthew 19:16-30"
+   ],
+   "quoted": [
+    "Matthew 19:24",
+    "Matthew 19:23"
+   ],
+   "verbatim": 3,
+   "words": 68,
+   "grounded_words": 56,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 1,
+   "reply": "Listen.\n\nMy child, hear this: hear what I said about wealth and the kingdom of God.\n\nMatthew 19:23: \u201cThen Jesus said to His disciples, \u2018Truly I tell you, it is hard for a rich man to enter the kingdom of heaven.\u2019\u201d\nMatthew 19:24: \u201cAgain I tell you, it is easier for a camel to pass through the eye of a needle than for a rich man to enter the kingdom of God.\u201d"
+  },
+  {
+   "id": "q20",
+   "type": "situational",
+   "question": "My job pays great but money has become my whole life and I feel empty.",
+   "expected": [
+    "Matthew 6:19-24",
+    "Luke 16:13",
+    "Luke 12:13-21",
+    "Mark 8:34-37",
+    "Matthew 16:24-26"
+   ],
+   "error": null,
+   "seconds": 5.6,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 12:32-34",
+    "Luke 18:18-30",
+    "Mark 10:17-31"
+   ],
+   "quoted": [
+    "Luke 12:34"
+   ],
+   "verbatim": 1,
+   "words": 61,
+   "grounded_words": 11,
+   "paraphrased": 0,
+   "unsupported_citations": 1,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child, let me listen to what the Gospels say about this.\n\nListen. Matthew 6:24 says, \u201cNo one can serve two masters. Either you will hate the one and love the other, or you will be devoted to the one and despise the other. You cannot serve both God and money.\u201d\n\nLuke 12:34 says, \u201cFor where your treasure is, there your heart will be also.\u201d"
+  },
+  {
+   "id": "q21",
+   "type": "situational",
+   "question": "My family is fighting over our inheritance.",
+   "expected": [
+    "Luke 12:13-21"
+   ],
+   "error": null,
+   "seconds": 7.0,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 20:9-18",
+    "Matthew 10:34-39",
+    "Matthew 21:33-46"
+   ],
+   "quoted": [
+    "Luke 20:14"
+   ],
+   "verbatim": 2,
+   "words": 48,
+   "grounded_words": 14,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I will share what the Gospels say about conflict and trust.\n\nI will share a short word from the Gospels that touches your struggle.\n\nListen to a story about inheritance and the heart.\n\nLuke 20:14: \u201cThis is the heir. Let us kill him, and the inheritance will be ours.\u201d"
+  },
+  {
+   "id": "q22",
+   "type": "situational",
+   "question": "I cheated on my partner and now everyone condemns me.",
+   "expected": [
+    "John 8:1-11",
+    "John 7:53"
+   ],
+   "error": null,
+   "seconds": 6.0,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 8:1-11",
+    "Luke 17:1-4",
+    "Luke 6:37-42"
+   ],
+   "quoted": [
+    "John 8:7",
+    "Luke 6:37"
+   ],
+   "verbatim": 4,
+   "words": 62,
+   "grounded_words": 41,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child. I\u2019ll share what the Gospels say about judgment and forgiveness.\n\nMy child, hear this: Jesus said, \u201cLet him who is without sin among you be the first to cast a stone at her.\u201d (John 8:7)\n\nAnd Jesus said, \u201cDo not judge, and you will not be judged. Do not condemn, and you will not be condemned. Forgive, and you will be forgiven.\u201d (Luke 6:37)"
+  },
+  {
+   "id": "q23",
+   "type": "situational",
+   "question": "Everyone at my office is fighting to be the one on top.",
+   "expected": [
+    "Matthew 18:1-5",
+    "Mark 9:33-37",
+    "Luke 9:46-48",
+    "Mark 10:35-45",
+    "Matthew 20:20-28",
+    "Luke 22:24-27",
+    "Matthew 23:8-12"
+   ],
+   "error": null,
+   "seconds": 5.2,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 14:7-14",
+    "Mark 10:35-45",
+    "Matthew 23:1-36"
+   ],
+   "quoted": [
+    "Luke 14:11",
+    "Mark 10:43"
+   ],
+   "verbatim": 3,
+   "words": 55,
+   "grounded_words": 38,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child, hear a passage that speaks to this struggle.\n\nMy child, come to me and listen.\n\nLuke 14:11: \u201cFor everyone who exalts himself will be humbled, and the one who humbles himself will be exalted.\u201d\n\nMark 10:43: \u201cBut it shall not be this way among you. Instead, whoever wants to become great among you must be your servant,\u201d"
+  },
+  {
+   "id": "q24",
+   "type": "situational",
+   "question": "My best friend just died and I can't stop crying.",
+   "expected": [
+    "John 11:17-44",
+    "Matthew 5:4"
+   ],
+   "error": null,
+   "seconds": 5.4,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 16:17-22",
+    "Matthew 2:16-18",
+    "Matthew 5:3-12"
+   ],
+   "quoted": [
+    "Matthew 5:4"
+   ],
+   "verbatim": 1,
+   "words": 30,
+   "grounded_words": 10,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I come with words that carry comfort in your sorrow.\n\nMy child, hear this: Jesus speaks comfort into mourning.\n\n\u201cBlessed are those who mourn, for they will be comforted.\u201d\n\u2014 Matthew 5:4"
+  },
+  {
+   "id": "q25",
+   "type": "direct",
+   "question": "Why would anyone call the poor and the grieving blessed?",
+   "expected": [
+    "Matthew 5:3-12",
+    "Luke 6:20-26"
+   ],
+   "error": null,
+   "seconds": 5.1,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 6:20-23",
+    "Mark 12:41-44",
+    "Matthew 5:3-12"
+   ],
+   "quoted": [
+    "Matthew 5:3",
+    "Matthew 5:4"
+   ],
+   "verbatim": 2,
+   "words": 26,
+   "grounded_words": 23,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nHear this. Blessed are the poor in spirit, for theirs is the kingdom of heaven. \u2014 Matthew 5:3\n\nBlessed are those who mourn, for they will be comforted. \u2014 Matthew 5:4"
+  },
+  {
+   "id": "q26",
+   "type": "direct",
+   "question": "What does it mean to be born again?",
+   "expected": [
+    "John 3:1-21"
+   ],
+   "error": null,
+   "seconds": 7.0,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 3:1-21",
+    "Luke 18:15-17",
+    "Matthew 18:1-5"
+   ],
+   "quoted": [
+    "John 3:3",
+    "John 3:5"
+   ],
+   "verbatim": 2,
+   "words": 55,
+   "grounded_words": 40,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Hear this.\n\nHear this, and I point you to my words.\n\nJohn 3:3: Jesus replied, \u201cTruly, truly, I tell you, no one can see the kingdom of God unless he is born again.\u201d\n\nJohn 3:5: Jesus answered, \u201cTruly, truly, I tell you, no one can enter the kingdom of God unless he is born of water and the Spirit."
+  },
+  {
+   "id": "q27",
+   "type": "direct",
+   "question": "Did God send his Son to condemn the world?",
+   "expected": [
+    "John 3:16-21",
+    "John 12:47"
+   ],
+   "error": null,
+   "seconds": 6.6,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 12:37-50",
+    "John 16:5-16",
+    "John 3:1-21"
+   ],
+   "quoted": [
+    "John 3:17"
+   ],
+   "verbatim": 1,
+   "words": 26,
+   "grounded_words": 21,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child, hear this: \"For God did not send His Son into the world to condemn the world, but to save the world through Him.\" John 3:17"
+  },
+  {
+   "id": "q28",
+   "type": "direct",
+   "question": "How do I find the way to the Father?",
+   "expected": [
+    "John 14:1-11"
+   ],
+   "error": null,
+   "seconds": 6.0,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 10:1-21",
+    "John 14:5-14",
+    "John 3:1-21"
+   ],
+   "quoted": [
+    "John 14:6",
+    "John 14:7"
+   ],
+   "verbatim": 4,
+   "words": 62,
+   "grounded_words": 42,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I will share what the Gospels say about the way.\n\nListen. I will speak from the Gospels.\n\nJohn 14:6: Jesus answered, \u201cI am the way and the truth and the life. No one comes to the Father except through Me.\u201d\n\nJohn 14:7: If you had known Me, you would know My Father as well. From now on you do know Him and have seen Him."
+  },
+  {
+   "id": "q29",
+   "type": "situational",
+   "question": "I feel cut off and fruitless, like nothing I do ever grows.",
+   "expected": [
+    "John 15:1-11"
+   ],
+   "error": null,
+   "seconds": 6.5,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 15:1-8",
+    "Mark 4:13-20",
+    "Matthew 13:18-23"
+   ],
+   "quoted": [
+    "John 15:4",
+    "John 15:5"
+   ],
+   "verbatim": 5,
+   "words": 83,
+   "grounded_words": 65,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child, hear this: the Gospels speak to fruitlessness and abiding in Him.\n\nMy child, hear this: \"Remain in Me, and I will remain in you. Just as no branch can bear fruit by itself unless it remains in the vine, neither can you bear fruit unless you remain in Me.\" (John 15:4)\n\nAnd \"I am the vine and you are the branches. The one who remains in Me, and I in him, will bear much fruit. For apart from Me you can do nothing.\" (John 15:5)"
+  },
+  {
+   "id": "q30",
+   "type": "situational",
+   "question": "I keep chasing things that never satisfy me. I'm always thirsty for more.",
+   "expected": [
+    "John 4:7-26",
+    "John 6:32-51",
+    "John 7:37-39"
+   ],
+   "error": null,
+   "seconds": 5.2,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 4:1-26",
+    "Luke 6:24-26",
+    "Mark 9:42-48"
+   ],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 1,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen."
+  },
+  {
+   "id": "q31",
+   "type": "situational",
+   "question": "I feel like I'm walking around in darkness.",
+   "expected": [
+    "John 8:12",
+    "John 12:35-36",
+    "John 12:44-46",
+    "John 1:4-9",
+    "John 3:19-21",
+    "Matthew 6:22-23",
+    "Luke 11:33-36"
+   ],
+   "error": "TimeoutError",
+   "seconds": 122.1,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 0,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": ""
+  },
+  {
+   "id": "q32",
+   "type": "situational",
+   "question": "I'm so overwhelmed I feel like I could die, and my friends just keep sleeping through it.",
+   "expected": [
+    "Matthew 26:36-46",
+    "Mark 14:32-42",
+    "Luke 22:39-46"
+   ],
+   "error": "TimeoutError",
+   "seconds": 122.1,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 0,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": ""
+  },
+  {
+   "id": "q33",
+   "type": "situational",
+   "question": "I betrayed my best friend right when he needed me most.",
+   "expected": [
+    "Matthew 26:69-75",
+    "Mark 14:66-72",
+    "Luke 22:54-62",
+    "John 18:15-27",
+    "John 21:15-19",
+    "Matthew 26:14-16",
+    "Matthew 26:47-50",
+    "Matthew 27:3-5"
+   ],
+   "error": null,
+   "seconds": 5.6,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 17:1-4",
+    "Luke 22:47-53",
+    "Luke 24:36-49"
+   ],
+   "quoted": [
+    "Luke 17:3",
+    "Luke 17:4"
+   ],
+   "verbatim": 3,
+   "words": 61,
+   "grounded_words": 35,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child. I will let the Gospels speak to betrayal and restoration.\n\nMy child. Here is what I told you:\n\n\u201cWatch yourselves. If your brother sins, rebuke him; and if he repents, forgive him.\u201d Luke 17:3\n\nIt is written in Luke 17:4: \u201cEven if he sins against you seven times in a day, and seven times returns to say, \u2018I repent,\u2019 you must forgive him.\u201d"
+  },
+  {
+   "id": "q34",
+   "type": "situational",
+   "question": "I can't believe anything unless I see proof with my own eyes.",
+   "expected": [
+    "John 20:24-29"
+   ],
+   "error": null,
+   "seconds": 8.7,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 20:24-29",
+    "John 4:43-54",
+    "Matthew 21:18-22"
+   ],
+   "quoted": [
+    "John 20:27",
+    "John 20:29"
+   ],
+   "verbatim": 7,
+   "words": 61,
+   "grounded_words": 51,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child, listen to what comes from the Gospels.\n\nJohn 20:27: \"Then Jesus said to Thomas, \u201cPut your finger here and look at My hands. Reach out your hand and put it into My side. Stop doubting and believe.\u201d\"\n\nJohn 20:29: \"Jesus said to him, \u201cBecause you have seen Me, you have believed; blessed are those who have not seen and yet have believed.\u201d\""
+  },
+  {
+   "id": "q35",
+   "type": "situational",
+   "question": "I'm busy serving everyone while my sister just sits around, and I'm resentful.",
+   "expected": [
+    "Luke 10:38-42"
+   ],
+   "error": null,
+   "seconds": 5.7,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 10:38-42",
+    "Luke 15:11-32",
+    "Luke 6:37-42"
+   ],
+   "quoted": [
+    "Luke 10:41",
+    "Luke 10:42"
+   ],
+   "verbatim": 3,
+   "words": 45,
+   "grounded_words": 29,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child.\n\nMy child. Here is what I told My disciples: \u201cMartha, Martha,\u201d the Lord replied, \u201cyou are worried and upset about many things. But only one thing is necessary. Mary has chosen the good portion, and it will not be taken away from her.\u201d (Luke 10:41\u201342)"
+  },
+  {
+   "id": "q36",
+   "type": "situational",
+   "question": "I can only donate a tiny amount. Does it even matter?",
+   "expected": [
+    "Mark 12:41-44",
+    "Luke 21:1-4"
+   ],
+   "error": null,
+   "seconds": 6.9,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 18:1-8",
+    "Luke 21:1-4",
+    "Mark 12:41-44"
+   ],
+   "quoted": [
+    "Mark 12:43",
+    "Luke 21:3",
+    "Mark 12:44"
+   ],
+   "verbatim": 3,
+   "words": 57,
+   "grounded_words": 38,
+   "paraphrased": 0,
+   "unsupported_citations": 1,
+   "misattributed_quotes": 3,
+   "uncited_quotes": 0,
+   "reply": "My child. Let me share a word that speaks to giving, even when it feels small.\n\nListen. \u201cTruly I tell you,\u201d He said, \u201cthis poor widow has put in more than all the others. For they all contributed out of their surplus, but she out of her poverty has put in all she had to live on.\u201d Matthew 12:43\u201344"
+  },
+  {
+   "id": "q37",
+   "type": "situational",
+   "question": "I like posting my charity work online so people see it.",
+   "expected": [
+    "Matthew 6:1-6"
+   ],
+   "error": null,
+   "seconds": 6.0,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Matthew 23:1-36",
+    "Matthew 5:13-16",
+    "Matthew 6:1-4"
+   ],
+   "quoted": [
+    "Matthew 6:1",
+    "Matthew 6:4"
+   ],
+   "verbatim": 4,
+   "words": 56,
+   "grounded_words": 49,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child, let the verse speak.\n\nMatthew 6:1: \u201cBe careful not to perform your righteous acts before men to be seen by them. If you do, you will have no reward from your Father in heaven.\n\nMatthew 6:4: \u2026so that your giving may be in secret. And your Father, who sees what is done in secret, will reward you."
+  },
+  {
+   "id": "q38",
+   "type": "direct",
+   "question": "Should believers pay taxes to the government?",
+   "expected": [
+    "Matthew 22:15-22",
+    "Mark 12:13-17",
+    "Luke 20:20-26",
+    "Matthew 17:24-27"
+   ],
+   "error": null,
+   "seconds": 5.6,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 20:19-26",
+    "Mark 12:13-17",
+    "Matthew 22:15-22"
+   ],
+   "quoted": [
+    "Mark 12:17"
+   ],
+   "verbatim": 1,
+   "words": 16,
+   "grounded_words": 12,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child.\n\nMy child.  \n\u201cGive to Caesar what is Caesar\u2019s, and to God what is God\u2019s.\u201d (Mark 12:17)"
+  },
+  {
+   "id": "q39",
+   "type": "direct",
+   "question": "What did Jesus teach about divorce?",
+   "expected": [
+    "Matthew 19:3-12",
+    "Mark 10:2-12",
+    "Matthew 5:31-32",
+    "Luke 16:18"
+   ],
+   "error": null,
+   "seconds": 7.9,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Mark 10:1-12",
+    "Matthew 19:1-12",
+    "Matthew 5:31-32"
+   ],
+   "quoted": [
+    "Matthew 5:32",
+    "Matthew 19:6"
+   ],
+   "verbatim": 4,
+   "words": 64,
+   "grounded_words": 50,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 1,
+   "reply": "Peace be with you.\n\nHear this, for I spoke plainly on what God joins and what people divide.\n\nMatthew 5:32: But I tell you that anyone who divorces his wife, except for sexual immorality, brings adultery upon her. And he who marries a divorced woman commits adultery.\n\nMatthew 19:6: So they are no longer two, but one flesh. Therefore what God has joined together, let man not separate.\u201d"
+  },
+  {
+   "id": "q40",
+   "type": "direct",
+   "question": "Do little children matter to God?",
+   "expected": [
+    "Matthew 19:13-15",
+    "Mark 10:13-16",
+    "Luke 18:15-17",
+    "Matthew 18:1-14",
+    "Mark 9:36-37"
+   ],
+   "error": null,
+   "seconds": 6.3,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 18:15-17",
+    "Luke 9:46-50",
+    "Matthew 19:13-15"
+   ],
+   "quoted": [
+    "Luke 18:16",
+    "Matthew 19:14"
+   ],
+   "verbatim": 5,
+   "words": 72,
+   "grounded_words": 53,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I will share what is written.\n\nCome, child of God. Here is what is written.\n\nLuke 18:16: But Jesus called the children to Him and said, \u201cLet the little children come to Me, and do not hinder them! For the kingdom of God belongs to such as these.\u201d\n\nMatthew 19:14: But Jesus said, \u201cLet the little children come to Me, and do not hinder them! For the kingdom of heaven belongs to such as these.\u201d"
+  },
+  {
+   "id": "q41",
+   "type": "situational",
+   "question": "My faith is so small. Is it even enough?",
+   "expected": [
+    "Matthew 17:20",
+    "Luke 17:5-6",
+    "Matthew 13:31-32",
+    "Mark 4:30-32",
+    "Mark 9:14-29"
+   ],
+   "error": null,
+   "seconds": 8.8,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 17:5-10",
+    "Matthew 13:31-32",
+    "Matthew 17:19-20"
+   ],
+   "quoted": [
+    "Matthew 17:20",
+    "Luke 17:6"
+   ],
+   "verbatim": 5,
+   "words": 99,
+   "grounded_words": 79,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 1,
+   "reply": "Peace be with you.\n\nListen. Speaking of small faith, the Gospels say something about it.\n\nMy child, listen to what Jesus said.\n\nMatthew 17:20: \u201cBecause you have so little faith,\u201d He answered. \u201cFor truly I tell you, if you have faith the size of a mustard seed, you can say to this mountain, \u2018Move from here to there,\u2019 and it will move. Nothing will be impossible for you.\u201d\n\nLuke 17:6: And the Lord answered, \u201cIf you have faith the size of a mustard seed, you can say to this mulberry tree, \u2018Be uprooted and planted in the sea,\u2019 and it will obey you."
+  },
+  {
+   "id": "q42",
+   "type": "situational",
+   "question": "I've prayed for the same thing for years and nothing happens. Should I just give up?",
+   "expected": [
+    "Luke 18:1-8",
+    "Luke 11:5-13",
+    "Matthew 7:7-11"
+   ],
+   "error": null,
+   "seconds": 6.6,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 11:5-13",
+    "Luke 18:1-8",
+    "Mark 11:20-25"
+   ],
+   "quoted": [
+    "Luke 18:1",
+    "Luke 11:9",
+    "Luke 11:10"
+   ],
+   "verbatim": 8,
+   "words": 81,
+   "grounded_words": 63,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child, let me hear what the Scriptures say in this.\n\nMy child, hear this from the Gospels.\n\nLuke 18:1: \"Then Jesus told them a parable about their need to pray at all times and not lose heart:\"\n\nLuke 11:9-10: \"So I tell you: Ask, and it will be given to you; seek, and you will find; knock, and the door will be opened to you. For everyone who asks receives; he who seeks finds; and to him who knocks, the door will be opened.\""
+  },
+  {
+   "id": "q43",
+   "type": "situational",
+   "question": "Honestly, I'm proud that I'm a better person than most people around me.",
+   "expected": [
+    "Luke 18:9-14"
+   ],
+   "error": null,
+   "seconds": 5.8,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 14:7-14",
+    "Luke 18:9-14",
+    "Matthew 23:1-36"
+   ],
+   "quoted": [
+    "Luke 18:11",
+    "Luke 18:14"
+   ],
+   "verbatim": 3,
+   "words": 72,
+   "grounded_words": 56,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child. I will see what the Gospels say about humility and judgment.\n\nMy child, listen. Luke 18:11: \"The Pharisee stood by himself and prayed, \u2018God, I thank You that I am not like other men\u2014swindlers, evildoers, adulterers\u2014or even like this tax collector.'\"  \nLuke 18:14: \"I tell you, this man, rather than the Pharisee, went home justified. For everyone who exalts himself will be humbled, but the one who humbles himself will be exalted.\""
+  },
+  {
+   "id": "q44",
+   "type": "situational",
+   "question": "I've cheated people out of money and I want to make it right.",
+   "expected": [
+    "Luke 19:1-10"
+   ],
+   "error": null,
+   "seconds": 5.9,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 13:1-5",
+    "Luke 15:8-10",
+    "Luke 17:1-4"
+   ],
+   "quoted": [
+    "Luke 17:3",
+    "Luke 13:3"
+   ],
+   "verbatim": 4,
+   "words": 60,
+   "grounded_words": 25,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I will look for what Jesus said about repentance and making things right.\n\nMy child. Luke 17:3: \u201cWatch yourselves. If your brother sins, rebuke him; and if he repents, forgive him.\u201d\n\nLuke 13:3: \u201cNo, I tell you. But unless you repent, you too will all perish.\u201d\n\nIf your heart is turning toward repentance, let the Gospels speak, and seek to make things right."
+  },
+  {
+   "id": "q45",
+   "type": "situational",
+   "question": "I'm afraid to use my abilities because I might fail.",
+   "expected": [
+    "Matthew 25:14-30",
+    "Luke 19:11-27"
+   ],
+   "error": null,
+   "seconds": 6.3,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 16:23-33",
+    "Mark 6:45-52",
+    "Matthew 14:22-33"
+   ],
+   "quoted": [
+    "Matthew 14:27",
+    "Mark 6:50"
+   ],
+   "verbatim": 4,
+   "words": 41,
+   "grounded_words": 20,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child, let the words of the Gospel speak here.\n\nMatthew 14:27: But Jesus spoke up at once: \u201cTake courage! It is I. Do not be afraid.\u201d\n\nMark 6:50: But Jesus spoke up at once: \u201cTake courage! It is I. Do not be afraid.\u201d"
+  },
+  {
+   "id": "q46",
+   "type": "direct",
+   "question": "Does helping the homeless and visiting prisoners matter to God?",
+   "expected": [
+    "Matthew 25:31-46"
+   ],
+   "error": null,
+   "seconds": 5.3,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 10:25-37",
+    "Matthew 25:31-46",
+    "Matthew 9:35-38"
+   ],
+   "quoted": [
+    "Matthew 25:40",
+    "Matthew 25:36"
+   ],
+   "verbatim": 2,
+   "words": 77,
+   "grounded_words": 49,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I will share what the Gospels say when Jesus speaks to serving others.\n\nMy child, I want to share what the Gospels say about caring for others.\n\nMatthew 25:40: \u201cAnd the King will reply, \u2018Truly I tell you, whatever you did for one of the least of these brothers of Mine, you did for Me.\u2019\u201d\n\nMatthew 25:36: \u201cI was naked and you clothed Me, I was sick and you looked after Me, I was in prison and you visited Me.\u2019\u201d"
+  },
+  {
+   "id": "q47",
+   "type": "situational",
+   "question": "How do I build a life that won't collapse when things get hard?",
+   "expected": [
+    "Matthew 7:24-27",
+    "Luke 6:46-49"
+   ],
+   "error": null,
+   "seconds": 6.0,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 21:10-19",
+    "Luke 6:46-49",
+    "Matthew 7:24-27"
+   ],
+   "quoted": [
+    "Matthew 7:24",
+    "Luke 6:48"
+   ],
+   "verbatim": 3,
+   "words": 91,
+   "grounded_words": 63,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I will share what the Gospels say about strength and hope.\n\nMy child, the Gospels teach that a life that endures is built on what I say.\n\nMatthew 7:24: \"Therefore everyone who hears these words of Mine and acts on them is like a wise man who built his house on the rock.\"\n\nLuke 6:48: \"He is like a man building a house, who dug down deep and laid his foundation on the rock. When the flood came, the torrent crashed against that house but could not shake it, because it was well built.\""
+  },
+  {
+   "id": "q48",
+   "type": "situational",
+   "question": "I keep giving in to temptation and I don't know how to resist.",
+   "expected": [
+    "Matthew 4:1-11",
+    "Luke 4:1-13",
+    "Mark 1:12-13",
+    "Matthew 26:41",
+    "Mark 14:38",
+    "Matthew 6:13",
+    "Luke 11:4",
+    "Luke 22:40",
+    "Luke 22:46",
+    "Matthew 5:29-30",
+    "Mark 9:43-48"
+   ],
+   "error": null,
+   "seconds": 5.6,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 4:1-13",
+    "Mark 14:32-42",
+    "Matthew 26:36-46"
+   ],
+   "quoted": [
+    "Matthew 26:41"
+   ],
+   "verbatim": 2,
+   "words": 39,
+   "grounded_words": 21,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I will turn to what Jesus says about desire and help.\n\nHear this. I told My disciples: \u201cWatch and pray so that you will not enter into temptation. For the spirit is willing, but the body is weak.\u201d Matthew 26:41"
+  },
+  {
+   "id": "q49",
+   "type": "direct",
+   "question": "Is it wrong to do work on the Sabbath?",
+   "expected": [
+    "Mark 2:23-3:6",
+    "Matthew 12:1-14",
+    "Luke 6:1-11",
+    "Luke 13:10-17",
+    "Luke 14:1-6",
+    "John 5:1-18",
+    "John 7:21-24",
+    "John 9:13-16"
+   ],
+   "error": null,
+   "seconds": 4.8,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 6:1-5",
+    "Mark 2:23-28",
+    "Matthew 12:1-8"
+   ],
+   "quoted": [
+    "Mark 2:28",
+    "Mark 2:27"
+   ],
+   "verbatim": 2,
+   "words": 36,
+   "grounded_words": 22,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Hear this. Let the passage speak for itself.\n\nMy child, listen. \"Therefore, the Son of Man is Lord even of the Sabbath.\" (Mark 2:28)\n\nAnd Jesus replied, \u201cThe Sabbath was made for man, not man for the Sabbath.\u201d (Mark 2:27)"
+  },
+  {
+   "id": "q50",
+   "type": "direct",
+   "question": "How will people know someone truly follows Jesus?",
+   "expected": [
+    "John 13:34-35",
+    "John 15:8-17",
+    "Matthew 7:15-23",
+    "Luke 6:43-45"
+   ],
+   "error": null,
+   "seconds": 6.0,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 13:31-35",
+    "John 14:15-26",
+    "Matthew 7:15-23"
+   ],
+   "quoted": [
+    "John 13:35",
+    "John 14:15"
+   ],
+   "verbatim": 2,
+   "words": 27,
+   "grounded_words": 24,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nHear this.\n\nJohn 13:35: \u201cBy this everyone will know that you are My disciples, if you love one another.\u201d\n\nJohn 14:15: \u201cIf you love Me, you will keep My commandments.\u201d"
+  },
+  {
+   "id": "q51",
+   "type": "situational",
+   "question": "I'm the boss. Why should I do humble work for my team?",
+   "expected": [
+    "John 13:1-17",
+    "Mark 10:42-45",
+    "Matthew 20:25-28",
+    "Luke 22:24-27",
+    "Matthew 23:11-12"
+   ],
+   "error": null,
+   "seconds": 5.5,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 22:24-30",
+    "Mark 10:35-45",
+    "Matthew 20:20-28"
+   ],
+   "quoted": [
+    "Luke 22:26",
+    "Mark 10:45"
+   ],
+   "verbatim": 3,
+   "words": 59,
+   "grounded_words": 56,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 1,
+   "reply": "Peace be with you.\n\nListen.\n\nHear this. But you shall not be like them. Instead, the greatest among you should be like the youngest, and the one who leads like the one who serves. Luke 22:26\n\nFor even the Son of Man did not come to be served, but to serve, and to give His life as a ransom for many. Mark 10:45"
+  },
+  {
+   "id": "q52",
+   "type": "situational",
+   "question": "I feel completely worthless, like I don't matter to anyone.",
+   "expected": [
+    "Matthew 10:29-31",
+    "Luke 12:6-7",
+    "Matthew 6:26",
+    "Luke 12:24",
+    "Luke 15:1-32",
+    "Matthew 18:12-14"
+   ],
+   "error": null,
+   "seconds": 5.6,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 12:4-7",
+    "Mark 10:35-45",
+    "Matthew 25:14-30"
+   ],
+   "quoted": [
+    "Luke 12:7",
+    "Luke 12:6"
+   ],
+   "verbatim": 5,
+   "words": 56,
+   "grounded_words": 40,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child. Let me listen to what the Gospels say.\n\nMy child. \u201cAnd even the very hairs of your head are all numbered. So do not be afraid; you are worth more than many sparrows.\u201d (Luke 12:7)\n\nIt is written in Luke 12:6: \u201cAre not five sparrows sold for two pennies? Yet not one of them is forgotten by God.\u201d"
+  },
+  {
+   "id": "q53",
+   "type": "situational",
+   "question": "My own family doesn't respect what I do.",
+   "expected": [
+    "Mark 6:1-6",
+    "Matthew 13:53-58",
+    "Luke 4:16-30",
+    "John 4:44",
+    "Mark 3:20-21",
+    "Mark 3:31-35",
+    "John 7:1-5"
+   ],
+   "error": null,
+   "seconds": 5.6,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 15:18-27",
+    "Luke 14:25-33",
+    "Matthew 5:3-12"
+   ],
+   "quoted": [
+    "John 15:20",
+    "John 15:21"
+   ],
+   "verbatim": 5,
+   "words": 76,
+   "grounded_words": 57,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child. Let me turn to the words of Jesus that speak into this ache.\n\nMy child, hear this.\n\nJohn 15:20: \u201cRemember the word that I spoke to you: \u2018No servant is greater than his master.\u2019 If they persecuted Me, they will persecute you as well; if they kept My word, they will keep yours as well.\u201d\n\nJohn 15:21: \u201cBut they will treat you like this because of My name, since they do not know the One who sent Me.\u201d"
+  },
+  {
+   "id": "q54",
+   "type": "situational",
+   "question": "I'm so angry at my brother I could explode.",
+   "expected": [
+    "Matthew 5:21-26"
+   ],
+   "error": null,
+   "seconds": 6.6,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 6:27-36",
+    "Luke 6:37-42",
+    "Mark 11:20-25"
+   ],
+   "quoted": [
+    "Luke 6:37"
+   ],
+   "verbatim": 3,
+   "words": 39,
+   "grounded_words": 28,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 1,
+   "reply": "Peace be with you.\n\nListen.\n\nHear this, my friend: let My words be your quiet.\n\nLuke 6:37: \u201cDo not judge, and you will not be judged. Do not condemn, and you will not be condemned. Forgive, and you will be forgiven.\u201d"
+  },
+  {
+   "id": "q55",
+   "type": "direct",
+   "question": "Should I swear an oath to prove I'm telling the truth?",
+   "expected": [
+    "Matthew 5:33-37",
+    "Matthew 23:16-22"
+   ],
+   "error": null,
+   "seconds": 5.6,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 16:23-33",
+    "Matthew 23:1-36",
+    "Matthew 5:33-37"
+   ],
+   "quoted": [
+    "Matthew 5:37"
+   ],
+   "verbatim": 1,
+   "words": 26,
+   "grounded_words": 7,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child. Here is what I told them.\n\nMatthew 5:37: Simply let your \u201cYes\u201d be \u201cYes,\u201d and your \u201cNo,\u201d \u201cNo.\u201d Anything more comes from the evil one."
+  },
+  {
+   "id": "o01",
+   "question": "What's the weather in Chicago tomorrow?",
+   "error": null,
+   "seconds": 4.6,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 21,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "I speak only from the Gospels, not about weather, forecasts, or current events. I cannot answer your question about Chicago tomorrow."
+  },
+  {
+   "id": "o02",
+   "question": "How do I fix a Python import error?",
+   "error": null,
+   "seconds": 6.3,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 12:20-36",
+    "Luke 11:5-13",
+    "Matthew 7:7-12"
+   ],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 38,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nI speak only from the Gospels, not from coding. I do not see a teaching here that directly fits a Python import error. Christians understand this in different ways.  \nWhat troubles you most about the import error?"
+  },
+  {
+   "id": "o03",
+   "question": "What is the price of Bitcoin today?",
+   "error": null,
+   "seconds": 4.6,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 34,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 1,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "I speak only from the Gospels. I cannot tell you the price of Bitcoin today.\n\n\u201cDo not worry about your life, what you will eat; or about your body, what you will put on.\u201d \u2014 Luke 12:22"
+  },
+  {
+   "id": "o04",
+   "question": "Recommend a good sushi restaurant near me.",
+   "error": null,
+   "seconds": 4.3,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 29,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "I hear you, but I speak only from the Gospels. I can\u2019t recommend a restaurant. If you\u2019d like, we can look to the Gospel for comfort or guidance instead."
+  },
+  {
+   "id": "o05",
+   "question": "Who won the 2022 World Cup?",
+   "error": null,
+   "seconds": 4.1,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 23,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "I speak only from the Gospels, not sports results. If you\u2019d like, share a spiritual or scriptural question and I\u2019ll speak from Scripture."
+  },
+  {
+   "id": "o06",
+   "question": "How do I change a flat car tire?",
+   "error": null,
+   "seconds": 5.6,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 38,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "I speak only from the Gospels, not practical car repair.\n\nI speak only from the Gospels, not practical car repair. If you need guidance for changing a tire, please consult a safe driving manual or a trusted mechanic."
+  },
+  {
+   "id": "o07",
+   "question": "What is the capital of Australia?",
+   "error": null,
+   "seconds": 5.2,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 45,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "I speak only from the Gospels. Let me defer to what they actually teach, and then you can ask about them.\n\nI speak only from the Gospels. The Gospels do not mention the capital of Australia. What would you like to discuss from the Gospels?"
+  },
+  {
+   "id": "o08",
+   "question": "How many calories are in a banana?",
+   "error": null,
+   "seconds": 4.3,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 24,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Hear this. I speak only from the Gospels, not from nutrition facts, so I cannot tell you how many calories are in a banana."
+  },
+  {
+   "id": "o09",
+   "question": "Explain how a transformer neural network works.",
+   "error": null,
+   "seconds": 4.2,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 29,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 1,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child, I speak only from the Gospels.\n\nIt is written in Matthew 11:28: \u201cCome to Me, all you who labor and are heavy laden, and I will give you rest.\u201d"
+  },
+  {
+   "id": "o10",
+   "question": "What's the best way to stretch for lower back pain?",
+   "error": null,
+   "seconds": 7.2,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 8:40-56",
+    "Matthew 4:23-25",
+    "Matthew 9:18-26"
+   ],
+   "quoted": [
+    "Matthew 4:23",
+    "Matthew 4:24"
+   ],
+   "verbatim": 2,
+   "words": 96,
+   "grounded_words": 59,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child, hear what the Gospels affirm about healing, though they do not give stretching advice.\n\n\u201cJesus went throughout Galilee, teaching in their synagogues, preaching the gospel of the kingdom, and healing every disease and sickness among the people.\u201d Matthew 4:23\n\n\u201cNews about Him spread all over Syria, and people brought to Him all who were ill with various diseases, those suffering acute pain, the demon-possessed, those having seizures, and the paralyzed, and He healed them.\u201d Matthew 4:24\n\nThe Gospels do not describe specific stretches for lower back pain. What kind of pain or movement worries you most?"
+  }
+ ],
+ [
+  {
+   "id": "q01",
+   "type": "direct",
+   "question": "What did Jesus say about worrying?",
+   "expected": [
+    "Matthew 6:25-34",
+    "Luke 12:22-34"
+   ],
+   "error": null,
+   "seconds": 6.0,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 12:22-31",
+    "Matthew 27:45-56",
+    "Matthew 6:25-34"
+   ],
+   "quoted": [
+    "Luke 12:22",
+    "Matthew 6:34"
+   ],
+   "verbatim": 3,
+   "words": 60,
+   "grounded_words": 41,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child. Let me share what the Gospels say.\n\nMy child, hear what I said to ease your burden.\n\nLuke 12:22: \u201cTherefore I tell you, do not worry about your life, what you will eat, or about your body, what you will wear.\u201d\n\nMatthew 6:34: \u201cTherefore do not worry about tomorrow, for tomorrow will worry about itself. Today has enough trouble of its own.\u201d"
+  },
+  {
+   "id": "q02",
+   "type": "situational",
+   "question": "I can't sleep because I keep thinking about how I'll pay rent next month.",
+   "expected": [
+    "Matthew 6:25-34",
+    "Luke 12:22-34"
+   ],
+   "error": null,
+   "seconds": 5.5,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 12:22-31",
+    "Matthew 6:25-34"
+   ],
+   "quoted": [
+    "Luke 12:22",
+    "Luke 12:30"
+   ],
+   "verbatim": 3,
+   "words": 51,
+   "grounded_words": 47,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child, listen.\n\nLuke 12:22: Then Jesus said to His disciples, \u201cTherefore I tell you, do not worry about your life, what you will eat, or about your body, what you will wear.\n\nLuke 12:30: For the Gentiles of the world strive after all these things, and your Father knows that you need them."
+  },
+  {
+   "id": "q03",
+   "type": "situational",
+   "question": "I'm exhausted and burned out. Everything feels so heavy.",
+   "expected": [
+    "Matthew 11:28-30"
+   ],
+   "error": null,
+   "seconds": 6.7,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 11:37-54",
+    "Mark 6:30-44",
+    "Matthew 11:25-30"
+   ],
+   "quoted": [
+    "Matthew 11:28",
+    "Matthew 11:29"
+   ],
+   "verbatim": 2,
+   "words": 54,
+   "grounded_words": 41,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I will share a brief word from the Gospel that brings comfort.\n\nCome to Me, all you who are weary and burdened, and I will give you rest. (Matthew 11:28)\n\nTake My yoke upon you and learn from Me, for I am gentle and humble in heart, and you will find rest for your souls. (Matthew 11:29)"
+  },
+  {
+   "id": "q04",
+   "type": "direct",
+   "question": "How many times should I forgive someone who wrongs me?",
+   "expected": [
+    "Matthew 18:21-35",
+    "Luke 17:3-4"
+   ],
+   "error": null,
+   "seconds": 5.5,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 17:1-4",
+    "Luke 6:27-36",
+    "Matthew 18:21-35"
+   ],
+   "quoted": [
+    "Matthew 18:22",
+    "Luke 17:4"
+   ],
+   "verbatim": 2,
+   "words": 55,
+   "grounded_words": 36,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I will point to what I said about forgiveness.\n\nHear this. I told My disciples: \u201cJesus answered, \u2018I tell you, not just seven times, but seventy-seven times!\u2019\u201d (Matthew 18:22). And I said, \u201cEven if he sins against you seven times in a day, and seven times returns to say, \u2018I repent,\u2019 you must forgive him.\u201d (Luke 17:4)"
+  },
+  {
+   "id": "q05",
+   "type": "situational",
+   "question": "My brother keeps hurting me and then apologizing. I'm done giving him chances.",
+   "expected": [
+    "Matthew 18:15-35",
+    "Luke 17:3-4"
+   ],
+   "error": null,
+   "seconds": 7.7,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 44,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. Let me share what is written that speaks to this moment.\n\nI hear your struggle, and the Gospels do not speak to this directly in a clear way. Christians understand this in different ways. What part of it hurts you most right now?"
+  },
+  {
+   "id": "q06",
+   "type": "direct",
+   "question": "Did Jesus really tell people to love their enemies?",
+   "expected": [
+    "Matthew 5:43-48",
+    "Luke 6:27-36"
+   ],
+   "error": null,
+   "seconds": 5.1,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 6:27-36",
+    "Luke 6:37-42",
+    "Matthew 5:38-48"
+   ],
+   "quoted": [
+    "Matthew 5:44",
+    "Luke 6:27"
+   ],
+   "verbatim": 2,
+   "words": 48,
+   "grounded_words": 20,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I will share what the Gospels record, and then we will let it speak.\n\nMy child, listen to what I told them: \"Love your enemies and pray for those who persecute you,\" from Matthew 5:44.  \nIt is written in Luke 6:27: \"Love your enemies, do good to those who hate you,\""
+  },
+  {
+   "id": "q07",
+   "type": "situational",
+   "question": "There's a coworker who openly hates me and tries to make me look bad. How do I treat him?",
+   "expected": [
+    "Matthew 5:38-48",
+    "Luke 6:27-36"
+   ],
+   "error": null,
+   "seconds": 5.8,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 6:27-36",
+    "Luke 6:37-42",
+    "Matthew 6:5-15"
+   ],
+   "quoted": [
+    "Luke 6:27",
+    "Luke 6:28"
+   ],
+   "verbatim": 3,
+   "words": 47,
+   "grounded_words": 31,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child. Let me point to what is written.\n\nMy child, hear this: Luke 6:27 says: \u201cBut to those of you who will listen, I say: Love your enemies, do good to those who hate you,\u201d and Luke 6:28 says: \u201cbless those who curse you, pray for those who mistreat you.\u201d"
+  },
+  {
+   "id": "q08",
+   "type": "situational",
+   "question": "Someone humiliated me in front of everyone and I want to get back at him.",
+   "expected": [
+    "Matthew 5:38-48",
+    "Luke 6:27-36"
+   ],
+   "error": null,
+   "seconds": 8.3,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 6:27-36",
+    "Luke 6:37-42",
+    "Matthew 5:38-48"
+   ],
+   "quoted": [
+    "Luke 6:28",
+    "Luke 6:35"
+   ],
+   "verbatim": 4,
+   "words": 77,
+   "grounded_words": 51,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child. I will turn to the Gospels for what to say now.\n\nMy child, hear what I have said, and open your heart to it.\n\nLuke 6:28: bless those who curse you, pray for those who mistreat you.\n\nLuke 6:35: But love your enemies, do good to them, and lend to them, expecting nothing in return. Then your reward will be great, and you will be sons of the Most High; for He is kind to the ungrateful and wicked."
+  },
+  {
+   "id": "q09",
+   "type": "situational",
+   "question": "I blew all the money my parents gave me and now I'm too ashamed to go home.",
+   "expected": [
+    "Luke 15:11-32"
+   ],
+   "error": null,
+   "seconds": 5.1,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 15:11-32",
+    "Luke 24:36-49",
+    "Mark 5:1-20"
+   ],
+   "quoted": [
+    "Luke 15:20"
+   ],
+   "verbatim": 3,
+   "words": 64,
+   "grounded_words": 36,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child. I will share a word from the Gospels that speaks to shame and trust.\n\nMy child, hear this: what the Gospels say may lighten your burden.\n\nLuke 15:20: \u201cSo he got up and went to his father. But while he was still in the distance, his father saw him and was filled with compassion. He ran to his son, embraced him, and kissed him.\u201d"
+  },
+  {
+   "id": "q10",
+   "type": "situational",
+   "question": "I feel like I've wandered so far away that God has given up on me.",
+   "expected": [
+    "Luke 15:1-32",
+    "Matthew 18:12-14"
+   ],
+   "error": null,
+   "seconds": 6.1,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 12:4-7",
+    "Mark 15:33-41",
+    "Matthew 27:45-56"
+   ],
+   "quoted": [
+    "Matthew 27:46",
+    "Luke 12:6",
+    "Luke 12:7"
+   ],
+   "verbatim": 6,
+   "words": 70,
+   "grounded_words": 49,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 2,
+   "uncited_quotes": 1,
+   "reply": "Listen. I will speak what is written, and answer with gentle words.\n\nMy child. And in that place, it is written: \u201cMy God, My God, why have You forsaken Me?\u201d\n\nLuke 12:7: \u201cAre not five sparrows sold for two pennies? Yet not one of them is forgotten by God. And even the very hairs of your head are all numbered. So do not be afraid; you are worth more than many sparrows.\u201d"
+  },
+  {
+   "id": "q11",
+   "type": "direct",
+   "question": "Who counts as my neighbor?",
+   "expected": [
+    "Luke 10:25-37"
+   ],
+   "error": null,
+   "seconds": 8.2,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 6:27-36",
+    "Mark 12:28-34",
+    "Matthew 19:16-30"
+   ],
+   "quoted": [
+    "Mark 12:31",
+    "Luke 6:31"
+   ],
+   "verbatim": 5,
+   "words": 56,
+   "grounded_words": 32,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 1,
+   "reply": "My child, hear what Jesus says about who is near to you in heart.\n\nMy child, hear this: love your neighbor as yourself; what do you wonder about now?\n\nMark 12:31: \u201cThe second is this: \u2018Love your neighbor as yourself.\u2019 No other commandment is greater than these.\u201d\n\nLuke 6:31: \u201cDo to others as you would have them do to you.\u201d"
+  },
+  {
+   "id": "q12",
+   "type": "direct",
+   "question": "What is the greatest commandment?",
+   "expected": [
+    "Matthew 22:34-40",
+    "Mark 12:28-34",
+    "Luke 10:25-28"
+   ],
+   "error": null,
+   "seconds": 5.8,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 13:31-35",
+    "Luke 10:25-37",
+    "Mark 12:28-34"
+   ],
+   "quoted": [
+    "Mark 12:29",
+    "Mark 12:30"
+   ],
+   "verbatim": 3,
+   "words": 53,
+   "grounded_words": 40,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 2,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nListen.\n\nMark 12:30: \u201cThis is the most important: \u2018Hear, O Israel, the Lord our God, the Lord is One.\nMark 12:31: Love the Lord your God with all your heart and with all your soul and with all your mind and with all your strength.\u2019\u201d\n\nMark 12:32: \u201cRight, Teacher,\u201d the scribe replied... Christians understand this in different ways."
+  },
+  {
+   "id": "q13",
+   "type": "situational",
+   "question": "I'm scared about the future and my heart won't stop racing.",
+   "expected": [
+    "John 14:1-4",
+    "John 14:27",
+    "John 16:33",
+    "Matthew 6:25-34",
+    "Luke 12:22-34"
+   ],
+   "error": null,
+   "seconds": 5.4,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 14:27-31",
+    "John 16:23-33",
+    "Matthew 6:25-34"
+   ],
+   "quoted": [
+    "John 14:27",
+    "Matthew 6:34"
+   ],
+   "verbatim": 7,
+   "words": 66,
+   "grounded_words": 51,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. Let me turn to what the Gospels say.\n\nMy child, trust for a moment.\n\nJohn 14:27: Peace I leave with you; My peace I give to you. I do not give to you as the world gives. Do not let your hearts be troubled; do not be afraid.\n\nMatthew 6:34: Therefore do not worry about tomorrow, for tomorrow will worry about itself. Today has enough trouble of its own."
+  },
+  {
+   "id": "q14",
+   "type": "situational",
+   "question": "My life feels like it's falling apart in a storm and I'm terrified.",
+   "expected": [
+    "Mark 4:35-41",
+    "Matthew 8:23-27",
+    "Luke 8:22-25",
+    "Matthew 14:22-33",
+    "Matthew 7:24-27",
+    "Luke 6:46-49"
+   ],
+   "error": null,
+   "seconds": 5.2,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Mark 6:45-52",
+    "Matthew 14:22-33",
+    "Matthew 17:1-13"
+   ],
+   "quoted": [
+    "Matthew 14:27"
+   ],
+   "verbatim": 1,
+   "words": 21,
+   "grounded_words": 4,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child, let me speak gently to you in this moment.  \n\"Take courage! It is I. Do not be afraid.\" \u2014 Matthew 14:27"
+  },
+  {
+   "id": "q15",
+   "type": "situational",
+   "question": "I started out with strong faith, but now I'm sinking in doubt.",
+   "expected": [
+    "Matthew 14:22-33",
+    "Mark 9:14-29"
+   ],
+   "error": null,
+   "seconds": 4.4,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 12,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child. Let the words of the Gospels speak to your doubt."
+  },
+  {
+   "id": "q16",
+   "type": "situational",
+   "question": "My friend criticizes everyone around her but never sees her own faults.",
+   "expected": [
+    "Matthew 7:1-5",
+    "Luke 6:37-42"
+   ],
+   "error": null,
+   "seconds": 5.6,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 8:1-11",
+    "Luke 6:37-42",
+    "Matthew 7:1-6"
+   ],
+   "quoted": [
+    "Luke 6:41",
+    "Luke 6:42"
+   ],
+   "verbatim": 2,
+   "words": 52,
+   "grounded_words": 44,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 1,
+   "uncited_quotes": 0,
+   "reply": "My child.\n\nMy child.\n\n\u201cWhy do you look at the speck in your brother\u2019s eye but fail to notice the beam in your own eye?\u201d and \u201cYou hypocrite! First take the beam out of your own eye, and then you will see clearly to remove the speck from your brother\u2019s eye.\u201d \u2014 Luke 6:41, 42"
+  },
+  {
+   "id": "q17",
+   "type": "direct",
+   "question": "Does God actually answer when I ask him for something?",
+   "expected": [
+    "Matthew 7:7-11",
+    "Luke 11:5-13",
+    "John 14:13-14",
+    "John 16:23-24",
+    "Mark 11:22-25",
+    "Matthew 21:21-22"
+   ],
+   "error": null,
+   "seconds": 16.4,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 16:23-33",
+    "Luke 11:5-13",
+    "Matthew 7:7-12"
+   ],
+   "quoted": [
+    "Luke 11:9",
+    "Luke 11:10"
+   ],
+   "verbatim": 5,
+   "words": 50,
+   "grounded_words": 36,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I\u2019ll share what Jesus says about petitions and trust.\n\nMy child, hear this:\n\n\u201cSo I tell you: Ask, and it will be given to you; seek, and you will find; knock, and the door will be opened to you.\u201d (Luke 11:9)\n\n\u201cAnd to him who knocks, the door will be opened.\u201d (Luke 11:10)"
+  },
+  {
+   "id": "q18",
+   "type": "direct",
+   "question": "How should I pray?",
+   "expected": [
+    "Matthew 6:5-15",
+    "Luke 11:1-4"
+   ],
+   "error": null,
+   "seconds": 5.7,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 11:1-4",
+    "Mark 11:20-25",
+    "Matthew 6:5-15"
+   ],
+   "quoted": [
+    "Matthew 6:5",
+    "Matthew 6:9",
+    "Matthew 6:10",
+    "Matthew 6:6"
+   ],
+   "verbatim": 6,
+   "words": 86,
+   "grounded_words": 72,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 1,
+   "uncited_quotes": 1,
+   "reply": "Listen. Let me share what Jesus says about prayer from the Gospel.\n\nHear this. When you pray, do not be like the hypocrites.\n\nMatthew 6:9: So then, this is how you should pray: \u2018Our Father in heaven, hallowed be Your name. Your kingdom come, Your will be done, on earth as it is in heaven.\u2019\n\nMatthew 6:6: But when you pray, go into your inner room, shut your door, and pray to your Father, who is unseen. And your Father, who sees what is done in secret, will reward you."
+  },
+  {
+   "id": "q19",
+   "type": "direct",
+   "question": "Is it wrong to be rich?",
+   "expected": [
+    "Matthew 19:16-26",
+    "Mark 10:17-27",
+    "Luke 18:18-27",
+    "Matthew 6:19-24",
+    "Luke 12:13-21",
+    "Luke 16:13",
+    "Luke 16:19-31"
+   ],
+   "error": null,
+   "seconds": 5.5,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 18:18-30",
+    "Mark 10:17-31",
+    "Matthew 19:16-30"
+   ],
+   "quoted": [
+    "Matthew 19:24"
+   ],
+   "verbatim": 1,
+   "words": 54,
+   "grounded_words": 29,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child, let me share a passage that speaks to this plainly.\n\nListen. How do you hear this, and where is your heart in it?\n\nMatthew 19:24: \u201cAgain I tell you, it is easier for a camel to pass through the eye of a needle than for a rich man to enter the kingdom of God.\u201d"
+  },
+  {
+   "id": "q20",
+   "type": "situational",
+   "question": "My job pays great but money has become my whole life and I feel empty.",
+   "expected": [
+    "Matthew 6:19-24",
+    "Luke 16:13",
+    "Luke 12:13-21",
+    "Mark 8:34-37",
+    "Matthew 16:24-26"
+   ],
+   "error": null,
+   "seconds": 7.3,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 6:22-58",
+    "Mark 10:17-31",
+    "Matthew 16:24-28"
+   ],
+   "quoted": [
+    "Matthew 16:26"
+   ],
+   "verbatim": 2,
+   "words": 43,
+   "grounded_words": 27,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child, let this verse speak to your heart; what matters lies beyond possessions today.\n\nMatthew 16:26: What will it profit a man if he gains the whole world, yet forfeits his soul? Or what can a man give in exchange for his soul?"
+  },
+  {
+   "id": "q21",
+   "type": "situational",
+   "question": "My family is fighting over our inheritance.",
+   "expected": [
+    "Luke 12:13-21"
+   ],
+   "error": null,
+   "seconds": 7.2,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 20:9-18",
+    "Mark 12:1-12",
+    "Matthew 21:33-46"
+   ],
+   "quoted": [
+    "Luke 20:14"
+   ],
+   "verbatim": 2,
+   "words": 33,
+   "grounded_words": 28,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child.\n\nMy child, listen.  \n\nLuke 20:14: \u201cBut when the tenants saw the son, they discussed it among themselves and said, \u2018This is the heir. Let us kill him, and the inheritance will be ours.\u2019\u201d"
+  },
+  {
+   "id": "q22",
+   "type": "situational",
+   "question": "I cheated on my partner and now everyone condemns me.",
+   "expected": [
+    "John 8:1-11",
+    "John 7:53"
+   ],
+   "error": null,
+   "seconds": 6.0,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 8:1-11",
+    "Luke 13:1-5",
+    "Luke 6:37-42"
+   ],
+   "quoted": [
+    "Luke 6:37",
+    "John 8:10",
+    "John 8:11"
+   ],
+   "verbatim": 8,
+   "words": 81,
+   "grounded_words": 52,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child, hear the words that bring hope, even now.\n\nMy child, you are loved, and the truth can set you free.\n\nLuke 6:37: Do not judge, and you will not be judged. Do not condemn, and you will not be condemned. Forgive, and you will be forgiven.\n\nJohn 8:10-11: Jesus straightened up and asked her, \u201cWoman, where are your accusers? Has no one condemned you?\u201d \u201cNo one, Lord,\u201d she answered. \u201cThen neither do I condemn you,\u201d Jesus declared. \u201cNow go and sin no more.\u201d"
+  },
+  {
+   "id": "q23",
+   "type": "situational",
+   "question": "Everyone at my office is fighting to be the one on top.",
+   "expected": [
+    "Matthew 18:1-5",
+    "Mark 9:33-37",
+    "Luke 9:46-48",
+    "Mark 10:35-45",
+    "Matthew 20:20-28",
+    "Luke 22:24-27",
+    "Matthew 23:8-12"
+   ],
+   "error": null,
+   "seconds": 4.6,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 12,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I hear your struggle; let me share what the Gospels say."
+  },
+  {
+   "id": "q24",
+   "type": "situational",
+   "question": "My best friend just died and I can't stop crying.",
+   "expected": [
+    "John 11:17-44",
+    "Matthew 5:4"
+   ],
+   "error": null,
+   "seconds": 5.8,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 16:17-22",
+    "Luke 8:40-56",
+    "Matthew 5:3-12"
+   ],
+   "quoted": [
+    "Matthew 5:4",
+    "John 16:20"
+   ],
+   "verbatim": 3,
+   "words": 55,
+   "grounded_words": 34,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child, let me hear what the Gospels say for comfort in your tears.\n\nMy child, hear this from the Gospels.\n\nMatthew 5:4: \u201cBlessed are those who mourn, for they will be comforted.\u201d\n\nJohn 16:20: Truly, truly, I tell you, you will weep and wail while the world rejoices. You will grieve, but your grief will turn to joy."
+  },
+  {
+   "id": "q25",
+   "type": "direct",
+   "question": "Why would anyone call the poor and the grieving blessed?",
+   "expected": [
+    "Matthew 5:3-12",
+    "Luke 6:20-26"
+   ],
+   "error": null,
+   "seconds": 5.9,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 11:17-37",
+    "Luke 6:20-23",
+    "Matthew 5:3-12"
+   ],
+   "quoted": [
+    "Matthew 5:3",
+    "Matthew 5:4"
+   ],
+   "verbatim": 2,
+   "words": 48,
+   "grounded_words": 23,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child, listen to what I teach about those who are poor and grieving.\n\nListen. I speak of God's blessing for the poor and grieving.\n\nMatthew 5:3: \"Blessed are the poor in spirit, for theirs is the kingdom of heaven.\"\n\nMatthew 5:4: \"Blessed are those who mourn, for they will be comforted.\""
+  },
+  {
+   "id": "q26",
+   "type": "direct",
+   "question": "What does it mean to be born again?",
+   "expected": [
+    "John 3:1-21"
+   ],
+   "error": null,
+   "seconds": 5.7,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 3:1-21",
+    "Luke 18:15-17",
+    "Matthew 18:1-5"
+   ],
+   "quoted": [
+    "John 3:3"
+   ],
+   "verbatim": 1,
+   "words": 43,
+   "grounded_words": 18,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I will let the passage speak for itself.\n\nMy child, hear this: it is by the Spirit that one is born again.\n\nJesus replied, \u201cTruly, truly, I tell you, no one can see the kingdom of God unless he is born again.\u201d John 3:3"
+  },
+  {
+   "id": "q27",
+   "type": "direct",
+   "question": "Did God send his Son to condemn the world?",
+   "expected": [
+    "John 3:16-21",
+    "John 12:47"
+   ],
+   "error": null,
+   "seconds": 5.4,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 16:5-16",
+    "John 3:1-21",
+    "John 5:16-30"
+   ],
+   "quoted": [
+    "John 3:17"
+   ],
+   "verbatim": 1,
+   "words": 24,
+   "grounded_words": 21,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child.  \n\nJohn 3:17: \u201cFor God did not send His Son into the world to condemn the world, but to save the world through Him.\u201d"
+  },
+  {
+   "id": "q28",
+   "type": "direct",
+   "question": "How do I find the way to the Father?",
+   "expected": [
+    "John 14:1-11"
+   ],
+   "error": null,
+   "seconds": 5.8,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 10:1-21",
+    "John 14:5-14",
+    "John 16:23-33"
+   ],
+   "quoted": [
+    "John 14:6",
+    "John 14:7"
+   ],
+   "verbatim": 4,
+   "words": 52,
+   "grounded_words": 46,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 1,
+   "reply": "Peace be with you.\n\nHear this.\n\nHear this.\nJohn 14:6: Jesus answered, \u201cI am the way and the truth and the life. No one comes to the Father except through Me.\u201d\nJohn 14:7: If you had known Me, you would know My Father as well. From now on you do know Him and have seen Him."
+  },
+  {
+   "id": "q29",
+   "type": "situational",
+   "question": "I feel cut off and fruitless, like nothing I do ever grows.",
+   "expected": [
+    "John 15:1-11"
+   ],
+   "error": null,
+   "seconds": 5.4,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 15:1-8",
+    "Luke 13:6-9",
+    "Matthew 7:15-23"
+   ],
+   "quoted": [
+    "John 15:4"
+   ],
+   "verbatim": 2,
+   "words": 51,
+   "grounded_words": 34,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 2,
+   "reply": "Listen. I will see what the Gospels say about suffering with fruitlessness and being connected.\n\nMy child. Remain in Me, and I will remain in you. Just as no branch can bear fruit by itself unless it remains in the vine, neither can you bear fruit unless you remain in Me."
+  },
+  {
+   "id": "q30",
+   "type": "situational",
+   "question": "I keep chasing things that never satisfy me. I'm always thirsty for more.",
+   "expected": [
+    "John 4:7-26",
+    "John 6:32-51",
+    "John 7:37-39"
+   ],
+   "error": null,
+   "seconds": 5.5,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 4:1-26",
+    "Luke 15:11-32",
+    "Matthew 5:3-12"
+   ],
+   "quoted": [
+    "John 4:14"
+   ],
+   "verbatim": 2,
+   "words": 32,
+   "grounded_words": 29,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child.  \n\u201cWhoever drinks the water I give him will never thirst. Indeed, the water I give him will become in him a fount of water springing up to eternal life.\u201d \u2014 John 4:14"
+  },
+  {
+   "id": "q31",
+   "type": "situational",
+   "question": "I feel like I'm walking around in darkness.",
+   "expected": [
+    "John 8:12",
+    "John 12:35-36",
+    "John 12:44-46",
+    "John 1:4-9",
+    "John 3:19-21",
+    "Matthew 6:22-23",
+    "Luke 11:33-36"
+   ],
+   "error": null,
+   "seconds": 7.6,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 12:20-36",
+    "John 8:12-29",
+    "Matthew 4:12-17"
+   ],
+   "quoted": [
+    "John 8:12",
+    "Matthew 4:16"
+   ],
+   "verbatim": 5,
+   "words": 59,
+   "grounded_words": 57,
+   "paraphrased": 0,
+   "unsupported_citations": 1,
+   "misattributed_quotes": 2,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nListen.\n\nJohn 8:12: Once again, Jesus spoke to the people and said, \u201cI am the light of the world. Whoever follows Me will never walk in the darkness, but will have the light of life.\u201d\n\nJohn 4:16: \u201cthe people living in darkness have seen a great light; on those living in the land of the shadow of death, a light has dawned.\u201d"
+  },
+  {
+   "id": "q32",
+   "type": "situational",
+   "question": "I'm so overwhelmed I feel like I could die, and my friends just keep sleeping through it.",
+   "expected": [
+    "Matthew 26:36-46",
+    "Mark 14:32-42",
+    "Luke 22:39-46"
+   ],
+   "error": null,
+   "seconds": 9.4,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 11:17-37",
+    "Luke 18:1-8",
+    "Matthew 15:21-28"
+   ],
+   "quoted": [
+    "Luke 18:7"
+   ],
+   "verbatim": 2,
+   "words": 106,
+   "grounded_words": 23,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "I\u2019m going to pause and speak to your safety first, then I\u2019ll share a word from Jesus.\n\nMy child, I hear your distress; your safety matters, and you deserve real help right now. If you feel in danger, please call emergency services (911 in the US), or if you have thoughts about suicide, call or text 988 (US). If you are not in the US, reach out to local emergency services or a trusted person nearby. Sometimes help begins with one person responding.\n\nLuke 18:7: \u201cWill not God bring about justice for His elect who cry out to Him day and night? Will He delay in helping them?\u201d"
+  },
+  {
+   "id": "q33",
+   "type": "situational",
+   "question": "I betrayed my best friend right when he needed me most.",
+   "expected": [
+    "Matthew 26:69-75",
+    "Mark 14:66-72",
+    "Luke 22:54-62",
+    "John 18:15-27",
+    "John 21:15-19",
+    "Matthew 26:14-16",
+    "Matthew 26:47-50",
+    "Matthew 27:3-5"
+   ],
+   "error": null,
+   "seconds": 6.5,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 17:1-4",
+    "Mark 14:43-52",
+    "Matthew 26:47-56"
+   ],
+   "quoted": [
+    "Luke 17:3",
+    "Mark 14:48"
+   ],
+   "verbatim": 4,
+   "words": 44,
+   "grounded_words": 32,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child.\n\nMy child, hear this: \u201cWatch yourselves. If your brother sins, rebuke him; and if he repents, forgive him.\u201d \u2014 Luke 17:3\n\nAlso, it is written: \u201cJesus asked the crowd, \u201cHave you come out with swords and clubs to arrest Me as you would an outlaw?\u201d\u201d \u2014 Mark 14:48"
+  },
+  {
+   "id": "q34",
+   "type": "situational",
+   "question": "I can't believe anything unless I see proof with my own eyes.",
+   "expected": [
+    "John 20:24-29"
+   ],
+   "error": null,
+   "seconds": 6.7,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 14:15-26",
+    "Luke 10:21-24",
+    "Matthew 13:10-17"
+   ],
+   "quoted": [
+    "Matthew 13:16",
+    "Luke 10:23"
+   ],
+   "verbatim": 3,
+   "words": 56,
+   "grounded_words": 32,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child, I will share a word that speaks to your longing for proof.\n\nMy child, hear this teaching for those who demand proof.\n\nMatthew 13:16: But blessed are your eyes because they see, and your ears because they hear.\n\nLuke 10:23: Then Jesus turned to the disciples and said privately, \u201cBlessed are the eyes that see what you see.\u201d"
+  },
+  {
+   "id": "q35",
+   "type": "situational",
+   "question": "I'm busy serving everyone while my sister just sits around, and I'm resentful.",
+   "expected": [
+    "Luke 10:38-42"
+   ],
+   "error": null,
+   "seconds": 5.1,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 32,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child. I\u2019ll let the Gospels speak to this.\n\nThe Gospels do not speak to this directly. What is it you most want the Gospels to help you understand about your situation?"
+  },
+  {
+   "id": "q36",
+   "type": "situational",
+   "question": "I can only donate a tiny amount. Does it even matter?",
+   "expected": [
+    "Mark 12:41-44",
+    "Luke 21:1-4"
+   ],
+   "error": null,
+   "seconds": 18.7,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 21:1-4",
+    "Luke 6:37-42",
+    "Mark 12:41-44"
+   ],
+   "quoted": [
+    "Luke 21:3",
+    "Luke 21:4"
+   ],
+   "verbatim": 3,
+   "words": 63,
+   "grounded_words": 38,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child. Let me see what the Gospels say about small gifts and generous hearts.\n\nMy child, small gifts can be deeply meaningful.\n\nLuke 21:3: \u201cTruly I tell you,\u201d He said, \u201cthis poor widow has put in more than all the others.\u201d\n\nLuke 21:4: \u201cFor they all contributed out of their surplus, but she out of her poverty has put in all she had to live on.\u201d"
+  },
+  {
+   "id": "q37",
+   "type": "situational",
+   "question": "I like posting my charity work online so people see it.",
+   "expected": [
+    "Matthew 6:1-6"
+   ],
+   "error": null,
+   "seconds": 7.4,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Matthew 25:31-46",
+    "Matthew 5:13-16",
+    "Matthew 6:1-4"
+   ],
+   "quoted": [
+    "Matthew 6:1",
+    "Matthew 6:4"
+   ],
+   "verbatim": 4,
+   "words": 65,
+   "grounded_words": 49,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nHear this: the Gospels invite humility in how your acts are seen today by God.  \n\n\"Matthew 6:1: Be careful not to perform your righteous acts before men to be seen by them. If you do, you will have no reward from your Father in heaven.\"\n\n\"Matthew 6:4: so that your giving may be in secret. And your Father, who sees what is done in secret, will reward you.\""
+  },
+  {
+   "id": "q38",
+   "type": "direct",
+   "question": "Should believers pay taxes to the government?",
+   "expected": [
+    "Matthew 22:15-22",
+    "Mark 12:13-17",
+    "Luke 20:20-26",
+    "Matthew 17:24-27"
+   ],
+   "error": null,
+   "seconds": 5.5,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 20:19-26",
+    "Mark 12:13-17",
+    "Matthew 22:15-22"
+   ],
+   "quoted": [
+    "Mark 12:17"
+   ],
+   "verbatim": 1,
+   "words": 22,
+   "grounded_words": 12,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child, hear what is written: \u201cGive to Caesar what is Caesar\u2019s, and to God what is God\u2019s.\u201d  \nYou see it in Mark 12:17."
+  },
+  {
+   "id": "q39",
+   "type": "direct",
+   "question": "What did Jesus teach about divorce?",
+   "expected": [
+    "Matthew 19:3-12",
+    "Mark 10:2-12",
+    "Matthew 5:31-32",
+    "Luke 16:18"
+   ],
+   "error": null,
+   "seconds": 5.4,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Mark 10:1-12",
+    "Matthew 19:1-12",
+    "Matthew 5:31-32"
+   ],
+   "quoted": [
+    "Matthew 19:8",
+    "Mark 10:9"
+   ],
+   "verbatim": 3,
+   "words": 41,
+   "grounded_words": 32,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nListen. I told My disciples: \u201cMoses permitted you to divorce your wives because of your hardness of heart. But it was not this way from the beginning.\u201d (Matthew 19:8)\n\nI told them, \u201cTherefore what God has joined together, let man not separate.\u201d (Mark 10:9)"
+  },
+  {
+   "id": "q40",
+   "type": "direct",
+   "question": "Do little children matter to God?",
+   "expected": [
+    "Matthew 19:13-15",
+    "Mark 10:13-16",
+    "Luke 18:15-17",
+    "Matthew 18:1-14",
+    "Mark 9:36-37"
+   ],
+   "error": null,
+   "seconds": 6.6,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 18:15-17",
+    "Mark 10:13-16",
+    "Matthew 19:13-15"
+   ],
+   "quoted": [
+    "Luke 18:16",
+    "Mark 10:16"
+   ],
+   "verbatim": 4,
+   "words": 65,
+   "grounded_words": 47,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child, I\u2019ll listen to what is written of children and God\u2019s care for them.\n\nMy child, listen.\n\nLuke 18:16: But Jesus called the children to Him and said, \u201cLet the little children come to Me, and do not hinder them! For the kingdom of God belongs to such as these.\n\nMark 10:16: And He took the children in His arms, placed His hands on them, and blessed them."
+  },
+  {
+   "id": "q41",
+   "type": "situational",
+   "question": "My faith is so small. Is it even enough?",
+   "expected": [
+    "Matthew 17:20",
+    "Luke 17:5-6",
+    "Matthew 13:31-32",
+    "Mark 4:30-32",
+    "Mark 9:14-29"
+   ],
+   "error": null,
+   "seconds": 5.7,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 17:5-10",
+    "Mark 4:30-34",
+    "Matthew 17:19-20"
+   ],
+   "quoted": [
+    "Matthew 17:20",
+    "Luke 17:5"
+   ],
+   "verbatim": 4,
+   "words": 71,
+   "grounded_words": 48,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child, let the Gospels speak about faith.\n\nMy child, hear this passage and let the verse speak.\n\nMatthew 17:20: \u201cBecause you have so little faith,\u201d He answered. \u201cFor truly I tell you, if you have faith the size of a mustard seed, you can say to this mountain, \u2018Move from here to there,\u2019 and it will move. Nothing will be impossible for you.\u201d\n\nLuke 17:5: The apostles said to the Lord, \u201cIncrease our faith!\u201d"
+  },
+  {
+   "id": "q42",
+   "type": "situational",
+   "question": "I've prayed for the same thing for years and nothing happens. Should I just give up?",
+   "expected": [
+    "Luke 18:1-8",
+    "Luke 11:5-13",
+    "Matthew 7:7-11"
+   ],
+   "error": null,
+   "seconds": 7.1,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 18:1-8",
+    "Mark 11:20-25",
+    "Matthew 24:9-14"
+   ],
+   "quoted": [
+    "Luke 18:2",
+    "Luke 18:7"
+   ],
+   "verbatim": 3,
+   "words": 61,
+   "grounded_words": 38,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 1,
+   "reply": "Listen. Let us turn to the words Jesus spoke about persistence and trust.\n\nI told My disciples: \u201cIn a certain town there was a judge who neither feared God nor respected men.\u201d\n\nLuke 18:7: Will not God bring about justice for His elect who cry out to Him day and night? Will He delay in helping them?\n\nChristians understand this in different ways."
+  },
+  {
+   "id": "q43",
+   "type": "situational",
+   "question": "Honestly, I'm proud that I'm a better person than most people around me.",
+   "expected": [
+    "Luke 18:9-14"
+   ],
+   "error": null,
+   "seconds": 9.7,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 14:7-14",
+    "Matthew 18:1-5",
+    "Matthew 18:21-35"
+   ],
+   "quoted": [
+    "Luke 14:11",
+    "Matthew 18:4"
+   ],
+   "verbatim": 2,
+   "words": 49,
+   "grounded_words": 33,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child, hear these words and let them speak openly to you now, right here.\n\nLuke 14:11: \u201cFor everyone who exalts himself will be humbled, and the one who humbles himself will be exalted.\u201d\n\nMatthew 18:4: \u201cTherefore, whoever humbles himself like this little child is the greatest in the kingdom of heaven.\u201d"
+  },
+  {
+   "id": "q44",
+   "type": "situational",
+   "question": "I've cheated people out of money and I want to make it right.",
+   "expected": [
+    "Luke 19:1-10"
+   ],
+   "error": null,
+   "seconds": 6.5,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 13:1-5",
+    "Luke 17:1-4",
+    "Luke 19:1-10"
+   ],
+   "quoted": [
+    "Luke 19:8",
+    "Luke 13:3"
+   ],
+   "verbatim": 3,
+   "words": 60,
+   "grounded_words": 35,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child, here is a word for you; what troubles your heart most?\n\nMy child, hear this: you are seen, and truth is the path.\n\nLuke 19:8: \u201cLook, Lord, half of my possessions I give to the poor, and if I have cheated anyone, I will repay it fourfold.\u201d\n\nLuke 13:3: \u201cNo, I tell you. But unless you repent, you too will all perish.\u201d"
+  },
+  {
+   "id": "q45",
+   "type": "situational",
+   "question": "I'm afraid to use my abilities because I might fail.",
+   "expected": [
+    "Matthew 25:14-30",
+    "Luke 19:11-27"
+   ],
+   "error": null,
+   "seconds": 5.9,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Mark 11:20-25",
+    "Matthew 10:26-31",
+    "Matthew 6:25-34"
+   ],
+   "quoted": [
+    "Mark 11:22",
+    "Mark 11:23"
+   ],
+   "verbatim": 3,
+   "words": 54,
+   "grounded_words": 46,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child, hear this from the Gospels.\n\nMark 11:22: \u201cHave faith in God,\u201d Jesus said to them.\n\nMark 11:23: \u201cTruly I tell you that if anyone says to this mountain, \u2018Be lifted up and thrown into the sea,\u2019 and has no doubt in his heart but believes that it will happen, it will be done for him."
+  },
+  {
+   "id": "q46",
+   "type": "direct",
+   "question": "Does helping the homeless and visiting prisoners matter to God?",
+   "expected": [
+    "Matthew 25:31-46"
+   ],
+   "error": null,
+   "seconds": 6.0,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 4:16-30",
+    "Matthew 25:31-46",
+    "Matthew 9:35-38"
+   ],
+   "quoted": [
+    "Matthew 25:40",
+    "Matthew 25:45"
+   ],
+   "verbatim": 2,
+   "words": 63,
+   "grounded_words": 43,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I will share what the Gospels say about serving the vulnerable.\n\nMy child, hear this: \u201cTruly I tell you, whatever you did for one of the least of these brothers of Mine, you did for Me,\u201d from Matthew 25:40. And again from Matthew 25:45: \u201cTruly I tell you, whatever you did not do for one of the least of these, you did not do for Me.\u201d"
+  },
+  {
+   "id": "q47",
+   "type": "situational",
+   "question": "How do I build a life that won't collapse when things get hard?",
+   "expected": [
+    "Matthew 7:24-27",
+    "Luke 6:46-49"
+   ],
+   "error": null,
+   "seconds": 6.9,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 6:22-58",
+    "Luke 6:46-49",
+    "Matthew 7:24-27"
+   ],
+   "quoted": [
+    "Matthew 7:24",
+    "Matthew 7:25"
+   ],
+   "verbatim": 3,
+   "words": 67,
+   "grounded_words": 51,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nHear this: what you build will be tested. Will you act on what you hear?\n\nMatthew 7:24: Therefore everyone who hears these words of Mine and acts on them is like a wise man who built his house on the rock.\n\nMatthew 7:25: The rain fell, the torrents raged, and the winds blew and beat against that house; yet it did not fall, because its foundation was on the rock."
+  },
+  {
+   "id": "q48",
+   "type": "situational",
+   "question": "I keep giving in to temptation and I don't know how to resist.",
+   "expected": [
+    "Matthew 4:1-11",
+    "Luke 4:1-13",
+    "Mark 1:12-13",
+    "Matthew 26:41",
+    "Mark 14:38",
+    "Matthew 6:13",
+    "Luke 11:4",
+    "Luke 22:40",
+    "Luke 22:46",
+    "Matthew 5:29-30",
+    "Mark 9:43-48"
+   ],
+   "error": null,
+   "seconds": 7.2,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 4:1-13",
+    "Mark 14:32-42",
+    "Matthew 26:36-46"
+   ],
+   "quoted": [
+    "Matthew 26:41",
+    "Luke 4:12"
+   ],
+   "verbatim": 4,
+   "words": 51,
+   "grounded_words": 37,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I will share what the Gospels say about temptation as written.\n\nHear this. \u201cWatch and pray so that you will not enter into temptation. For the spirit is willing, but the body is weak.\u201d (Matthew 26:41)\n\n\u201cBut Jesus answered, \u2018It also says, \u201cDo not put the Lord your God to the test.\u201d\u2019\u201d (Luke 4:12)"
+  },
+  {
+   "id": "q49",
+   "type": "direct",
+   "question": "Is it wrong to do work on the Sabbath?",
+   "expected": [
+    "Mark 2:23-3:6",
+    "Matthew 12:1-14",
+    "Luke 6:1-11",
+    "Luke 13:10-17",
+    "Luke 14:1-6",
+    "John 5:1-18",
+    "John 7:21-24",
+    "John 9:13-16"
+   ],
+   "error": null,
+   "seconds": 5.4,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 13:10-17",
+    "Luke 6:6-11",
+    "Mark 2:23-28"
+   ],
+   "quoted": [
+    "Luke 6:9",
+    "Mark 2:27"
+   ],
+   "verbatim": 3,
+   "words": 48,
+   "grounded_words": 34,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I will let the words speak about the Sabbath.\n\nMy child, Jesus asks: \u201cI ask you, which is lawful on the Sabbath: to do good or to do evil, to save life or to destroy it?\u201d Luke 6:9\n\nThe Sabbath was made for man, not man for the Sabbath. Mark 2:27"
+  },
+  {
+   "id": "q50",
+   "type": "direct",
+   "question": "How will people know someone truly follows Jesus?",
+   "expected": [
+    "John 13:34-35",
+    "John 15:8-17",
+    "Matthew 7:15-23",
+    "Luke 6:43-45"
+   ],
+   "error": null,
+   "seconds": 5.7,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 10:1-21",
+    "John 13:31-35",
+    "Matthew 7:15-23"
+   ],
+   "quoted": [
+    "John 13:35"
+   ],
+   "verbatim": 1,
+   "words": 18,
+   "grounded_words": 15,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nHear this. By this everyone will know that you are My disciples, if you love one another.\u201d John 13:35"
+  },
+  {
+   "id": "q51",
+   "type": "situational",
+   "question": "I'm the boss. Why should I do humble work for my team?",
+   "expected": [
+    "John 13:1-17",
+    "Mark 10:42-45",
+    "Matthew 20:25-28",
+    "Luke 22:24-27",
+    "Matthew 23:11-12"
+   ],
+   "error": null,
+   "seconds": 5.7,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 22:24-30",
+    "Mark 10:35-45",
+    "Matthew 20:20-28"
+   ],
+   "quoted": [
+    "Luke 22:26",
+    "Luke 22:27"
+   ],
+   "verbatim": 5,
+   "words": 87,
+   "grounded_words": 59,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I will share what is written directly in the Gospels about humility and service.\n\nMy child, let the words of Scripture guide your hands and your heart.\n\nLuke 22:26: \u201cBut you shall not be like them. Instead, the greatest among you should be like the youngest, and the one who leads like the one who serves.\u201d\n\nLuke 22:27: \u201cFor who is greater, the one who reclines at the table or the one who serves? Is it not the one who reclines? But I am among you as one who serves.\u201d"
+  },
+  {
+   "id": "q52",
+   "type": "situational",
+   "question": "I feel completely worthless, like I don't matter to anyone.",
+   "expected": [
+    "Matthew 10:29-31",
+    "Luke 12:6-7",
+    "Matthew 6:26",
+    "Luke 12:24",
+    "Luke 15:1-32",
+    "Matthew 18:12-14"
+   ],
+   "error": null,
+   "seconds": 5.6,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 12:4-7",
+    "Luke 15:11-32",
+    "Luke 16:19-31"
+   ],
+   "quoted": [
+    "Luke 12:6",
+    "Luke 12:7"
+   ],
+   "verbatim": 5,
+   "words": 51,
+   "grounded_words": 40,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen.\n\nMy child, hear this: you are not forgotten by God.\n\nLuke 12:6-7: \u201cAre not five sparrows sold for two pennies? Yet not one of them is forgotten by God. And even the very hairs of your head are all numbered. So do not be afraid; you are worth more than many sparrows.\u201d"
+  },
+  {
+   "id": "q53",
+   "type": "situational",
+   "question": "My own family doesn't respect what I do.",
+   "expected": [
+    "Mark 6:1-6",
+    "Matthew 13:53-58",
+    "Luke 4:16-30",
+    "John 4:44",
+    "Mark 3:20-21",
+    "Mark 3:31-35",
+    "John 7:1-5"
+   ],
+   "error": null,
+   "seconds": 5.7,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Mark 3:20-27",
+    "Matthew 10:34-39",
+    "Matthew 5:38-48"
+   ],
+   "quoted": [
+    "Matthew 10:34",
+    "Matthew 10:36"
+   ],
+   "verbatim": 3,
+   "words": 51,
+   "grounded_words": 34,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I will let the Gospels speak to your heart.\n\nMy child, hear this: \"Do not assume that I have come to bring peace to the earth; I have not come to bring peace, but a sword.\" Matthew 10:34  \n\"Hence the proverb: \u2018A man\u2019s enemies will be the members of his own household.\u2019\u201d Matthew 10:36"
+  },
+  {
+   "id": "q54",
+   "type": "situational",
+   "question": "I'm so angry at my brother I could explode.",
+   "expected": [
+    "Matthew 5:21-26"
+   ],
+   "error": null,
+   "seconds": 5.6,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 17:1-4",
+    "Matthew 18:21-35",
+    "Matthew 5:21-26"
+   ],
+   "quoted": [
+    "Matthew 5:22",
+    "Matthew 5:23"
+   ],
+   "verbatim": 2,
+   "words": 50,
+   "grounded_words": 37,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I will share what Jesus says about anger and reconciliation.\n\nHear this: Matthew 5:22: \"But I tell you that anyone who is angry with his brother will be subject to judgment.\"  \nMatthew 5:23: \"So if you are offering your gift at the altar and there remember that your brother has something against you,\""
+  },
+  {
+   "id": "q55",
+   "type": "direct",
+   "question": "Should I swear an oath to prove I'm telling the truth?",
+   "expected": [
+    "Matthew 5:33-37",
+    "Matthew 23:16-22"
+   ],
+   "error": null,
+   "seconds": 5.3,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "John 16:23-33",
+    "John 7:1-24",
+    "Matthew 5:33-37"
+   ],
+   "quoted": [
+    "Matthew 5:34",
+    "Matthew 5:33"
+   ],
+   "verbatim": 3,
+   "words": 62,
+   "grounded_words": 40,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "Listen. I will share what Jesus taught about truth and oaths.\n\nMy child, hear what I said about how to speak truth.\n\nMatthew 5:34: But I tell you not to swear at all: either by heaven, for it is God\u2019s throne;  \nMatthew 5:33: Again, you have heard that it was said to the ancients, \u2018Do not break your oath, but fulfill your vows to the Lord.\u2019"
+  },
+  {
+   "id": "o01",
+   "question": "What's the weather in Chicago tomorrow?",
+   "error": null,
+   "seconds": 3.8,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 13,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child. I speak only from the Gospels; I cannot tell the weather."
+  },
+  {
+   "id": "o02",
+   "question": "How do I fix a Python import error?",
+   "error": null,
+   "seconds": 4.6,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 48,
+   "grounded_words": 4,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 1,
+   "reply": "Peace be with you.\n\nI speak only from the Gospels, and this is outside what they address. \n\nIf you want guidance rooted in those writings, tell me what you seek\u2014your need, your worry, or the wisdom you\u2019re hoping for\u2014and I may share what the Gospels say."
+  },
+  {
+   "id": "o03",
+   "question": "What is the price of Bitcoin today?",
+   "error": null,
+   "seconds": 4.3,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 25,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "I speak only from the Gospels, not from markets or current prices.  \nIf you want a verse about trust and worry, I can share that."
+  },
+  {
+   "id": "o04",
+   "question": "Recommend a good sushi restaurant near me.",
+   "error": null,
+   "seconds": 4.6,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 38,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child, I speak only from the Gospels. I cannot recommend a sushi restaurant near you.\n\nIf you\u2019d like, I can share what the Gospels say about peace, seeking help, or how to live with trust in God."
+  },
+  {
+   "id": "o05",
+   "question": "Who won the 2022 World Cup?",
+   "error": null,
+   "seconds": 3.9,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 17,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "I speak only from the Gospels. The Gospels do not say who won the 2022 World Cup."
+  },
+  {
+   "id": "o06",
+   "question": "How do I change a flat car tire?",
+   "error": null,
+   "seconds": 4.0,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 40,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child, I speak only from the Gospels.\n\nI cannot give instructions about changing a car tire from them. The Gospels focus on God\u2019s message and my teaching to people, not on service steps. Christians understand this in different ways."
+  },
+  {
+   "id": "o07",
+   "question": "What is the capital of Australia?",
+   "error": null,
+   "seconds": 4.1,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 37,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "I speak only from the Gospels, so I cannot answer questions about capitals, geography, or other facts outside that.\n\nIf you want, you can ask about what Jesus said on love, faith, or the kingdom of God."
+  },
+  {
+   "id": "o08",
+   "question": "How many calories are in a banana?",
+   "error": null,
+   "seconds": 19.0,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 48,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 1,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "I speak only from the Gospels, so I cannot answer how many calories are in a banana.\n\nIf you\u2019re looking for nourishment in spirit, hear this: \u201cIt is written in Matthew 4:4: \u2018Man shall not live by bread alone, but by every word that comes from the mouth of God.\u2019\u201d"
+  },
+  {
+   "id": "o09",
+   "question": "Explain how a transformer neural network works.",
+   "error": null,
+   "seconds": 4.5,
+   "searches": 0,
+   "safety_replies": 0,
+   "retrieved": [],
+   "quoted": [],
+   "verbatim": 0,
+   "words": 27,
+   "grounded_words": 0,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My friend, I speak only from the Gospels.\n\nIf you are curious about how I taught and what I said, we can listen to those words together."
+  },
+  {
+   "id": "o10",
+   "question": "What's the best way to stretch for lower back pain?",
+   "error": null,
+   "seconds": 10.9,
+   "searches": 1,
+   "safety_replies": 0,
+   "retrieved": [
+    "Luke 8:40-56",
+    "Mark 5:21-43",
+    "Matthew 9:18-26"
+   ],
+   "quoted": [
+    "Matthew 9:22"
+   ],
+   "verbatim": 3,
+   "words": 41,
+   "grounded_words": 19,
+   "paraphrased": 0,
+   "unsupported_citations": 0,
+   "misattributed_quotes": 0,
+   "uncited_quotes": 0,
+   "reply": "My child, the Gospels do not give stretch instructions.\n\nMatthew 9:22: Jesus turned and saw her. \u201cTake courage, daughter,\u201d He said, \u201cyour faith has healed you.\u201d And the woman was healed from that very hour.\n\nWould you like a word of comfort instead?"
+  }
+ ]
+]

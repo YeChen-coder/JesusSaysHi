@@ -69,19 +69,22 @@ def align(spoken: list[str], source: list[str]) -> tuple[float, int, int, int, i
     return 2 * matched / (spoken_span + source_span), changed, matched, first.b, source_end
 
 
+def _source(passage: Passage, only: set[int] | None = None) -> tuple[Passage, list[str], list[int]]:
+    tokens, verse_of = [], []
+    for verse, text in zip(passage.verses, passage.texts):
+        if only is None or verse in only:
+            verse_words = words(text)
+            tokens += verse_words
+            verse_of += [verse] * len(verse_words)
+    return passage, tokens, verse_of
+
+
 def check(spoken: str, passages: list[Passage]) -> dict:
     retrieved = {(p.book, p.chapter, v) for p in passages for v in p.verses}
 
     # Each passage as one word list, remembering which verse every word came from,
     # so a quote that runs across two verses is checked as one stretch.
-    sources = []
-    for passage in passages:
-        tokens, verse_of = [], []
-        for verse, text in zip(passage.verses, passage.texts):
-            verse_words = words(text)
-            tokens += verse_words
-            verse_of += [verse] * len(verse_words)
-        sources.append((passage, tokens, verse_of))
+    sources = [_source(passage) for passage in passages]
 
     sentences, citations = [], []
     total = grounded = uncited = misattributed = 0
@@ -99,14 +102,27 @@ def check(spoken: str, passages: list[Passage]) -> dict:
             if not tokens:
                 continue
             total += len(tokens)
-            best = (0.0, len(tokens), 0, None, set())
-            for passage, source, verse_of in sources:
+            candidates = []
+            # The cited verses on their own as well: "Jesus said to her" occurs at John 4:7
+            # and 4:13, and a quote cited as 4:13 must be able to align there.
+            cited_sources = [_source(p, {v for v in p.verses if (p.book, p.chapter, v) in cited})
+                             for p in passages if any((p.book, p.chapter, v) in cited for v in p.verses)]
+            for passage, source, verse_of in sources + cited_sources:
                 similarity, changed, matched, start, end = align(tokens, source)
-                if similarity > best[0]:
+                if similarity > 0:
                     v1, v2 = verse_of[start], verse_of[end - 1]
                     ref = f"{passage.book} {passage.chapter}:{v1}" + (f"-{v2}" if v2 != v1 else "")
                     keys = {(passage.book, passage.chapter, v) for v in set(verse_of[start:end])}
-                    best = (similarity, changed, matched, ref, keys)
+                    candidates.append((similarity, changed, matched, ref, keys))
+            best = max(candidates, key=lambda c: c[0], default=(0.0, len(tokens), 0, None, set()))
+            # Parallel accounts word a saying almost identically ("Give to Caesar..." is in
+            # Matthew, Mark and Luke). If the cited verse fits the sentence as well as the
+            # best match does, the sentence is that quote, not a misattributed one.
+            if cited and best[3] and not best[4] & cited:
+                fitting = [c for c in candidates if c[4] & cited and (
+                    c[1] == 0 if best[1] == 0 else c[0] >= best[0] - 0.05)]
+                if fitting:
+                    best = max(fitting, key=lambda c: c[0])
             similarity, changed, matched, ref, keys = best
             if ref and changed == 0:
                 kind = "verbatim"
@@ -116,7 +132,8 @@ def check(spoken: str, passages: list[Passage]) -> dict:
             else:
                 kind, ref = "own", None
             sentence = {"kind": kind, "ref": ref, "similarity": round(similarity, 2),
-                        "changed_words": changed if ref else None, "text": raw.strip()}
+                        "changed_words": changed if ref else None, "matched_words": matched if ref else 0,
+                        "text": raw.strip()}
             if kind != "own" and not cited:
                 uncited += 1
                 sentence["uncited"] = True

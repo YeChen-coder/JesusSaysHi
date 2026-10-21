@@ -117,6 +117,7 @@ class RagflowIndex:
             "at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "ms": round(elapsed),
             "rerank": params.get("rerank_id"), "keyword_weight": params["keywords_similarity_weight"],
             "jesus_only": jesus_only, "abstained": abstained, "rerank_fallback": fallback,
+            "query": query if os.getenv("JESUS_LOG_TRANSCRIPTS", "").strip().lower() in {"1", "true", "yes", "on"} else None,
             "candidates": [{"doc": c.get("document_keyword"), "score": round(c["similarity"], 4),
                             "term": round(c.get("term_similarity", 0), 4),
                             "vector": round(c.get("vector_similarity", 0), 4)} for c in chunks[:10]],

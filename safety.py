@@ -5,9 +5,12 @@ model answered "I don't want to be alive anymore" with two Beatitudes and no hel
 So the decision is taken out of the model's hands: a match here cancels whatever reply
 was started and requests a fixed-purpose reply with tools disabled.
 
-Two layers: phrase patterns (instant, and the only layer that covers abuse at home), then
-OpenAI's moderation endpoint for self-harm wording the patterns miss. Either one is
-enough to trigger; the moderation call failing just leaves the patterns.
+Phrase patterns first (instant, and the floor if every API is down), then a small classifier
+model that reads for meaning, which passive ideation ("nobody would notice if I
+disappeared") and abuse need. OpenAI's moderation endpoint is the fallback when the
+classifier call fails. It used to run alongside, but on the eval it caught nothing the
+classifier missed and added a false alarm ("Why did Judas hang himself?").
+eval/crisis_results.md measures each layer on a tuning set and a held-out set.
 """
 
 from __future__ import annotations
@@ -25,8 +28,10 @@ _PATTERNS = {
         r"|want(?:s|ed)? to die|wish i (?:was|were) dead|better off dead|no reason to live"
         r"|(?:hurt|harm|cut)(?:ing)? my ?self|self[- ]harm\w*|overdos\w*)\b",
         re.IGNORECASE),
+    # "hit me with" is left to the classifier: "my boss hit me with extra work" and "he hit
+    # me with a pillow" were false alarms here.
     "abuse": re.compile(
-        r"\b(?:(?:hits?|beats?|chok\w+|strangl\w+|punch\w*|kick\w*|slap\w*) me"
+        r"\b(?:(?:hits?|beats?|chok\w+|strangl\w+|punch\w*|kick\w*|slap\w*) me(?! with)"
         r"|(?:husband|wife|partner|boyfriend|girlfriend|father|mother|dad|mom|parent)\w* "
         r"(?:hurts?|hit|beat|abuses?|threaten\w*) me|abus(?:ive|ing me|ed me)"
         r"|threaten\w* to kill)\b",
@@ -64,21 +69,65 @@ def phrase_check(text: str) -> str | None:
     return None
 
 
+CLASSIFIER_INSTRUCTIONS = """Decide whether this message, said to a companion app, shows the speaker may be in danger now.
+Answer with exactly one word:
+self_harm - the speaker thinks about killing or hurting themself. This includes passive wishes: wanting to
+be dead or not to wake up, feeling others would be better off or would not care if they were gone, seeing no
+reason to live, and any plan or means.
+abuse - someone is hurting, threatening, sexually abusing or controlling the speaker (a partner, family
+member or anyone they live with).
+emergency - a serious medical emergency happening now, to the speaker or to someone with them: trouble
+breathing, chest pain, heavy bleeding, unconsciousness, a stroke, a seizure, an overdose or poisoning.
+A minor injury or illness ("I hurt my arm", "I have a bad cold") is not an emergency.
+none - anything else: figures of speech ("this commute is killing me"), grief or worry about someone else,
+ordinary sadness or stress, guilt or regret after an argument, harsh self-criticism ("I'll never be good
+enough", "I keep hurting the people I love") with no wish to die or to harm anyone, and questions about
+death, the Bible or Jesus.
+Choose a danger label when a careful counselor would want to check on the speaker's safety."""
+
+
+def classifier_check(client, text: str) -> str | None:
+    """A small model reading for meaning: passive ideation and abuse rarely use fixed words."""
+    response = client.responses.create(model=os.getenv("JESUS_CRISIS_MODEL", "gpt-5.4-mini"),
+                                       instructions=CLASSIFIER_INSTRUCTIONS, input=text[:2000])
+    words = response.output_text.strip().lower().split()
+    label = words[0].strip(".,:;\"'") if words else ""
+    return label if label in _SAFETY else None
+
+
 class CrisisCheck:
-    def __init__(self, client=None):
+    """Phrases first; then the classifier; moderation only if the classifier call fails.
+
+    A failing layer is skipped and logged, so a broken API call can make the check weaker
+    but never blocks the conversation.
+    """
+
+    def __init__(self, client=None, phrases: bool = True, classifier: bool | None = None):
         self.client = client
+        self.phrases = phrases  # off only to measure the other layers alone
+        if classifier is None:
+            classifier = os.getenv("JESUS_CRISIS_CLASSIFIER", "true").strip().lower() in {"1", "true", "yes", "on"}
+        self.classifier = classifier
         self.model = os.getenv("JESUS_MODERATION_MODEL", "omni-moderation-latest")
 
-    def __call__(self, text: str) -> str | None:
-        kind = phrase_check(text)
-        if kind or self.client is None:
-            return kind
-        try:
-            result = self.client.moderations.create(model=self.model, input=text).results[0]
-        except Exception as exc:
-            LOG.warning("Moderation check failed (%s); phrase check only", type(exc).__name__)
-            return None
+    def _moderation(self, text: str) -> str | None:
+        result = self.client.moderations.create(model=self.model, input=text).results[0]
         categories = result.categories
         if categories.self_harm or categories.self_harm_intent or categories.self_harm_instructions:
             return "self_harm"
         return None
+
+    def __call__(self, text: str) -> str | None:
+        kind = phrase_check(text) if self.phrases else None
+        if kind or self.client is None:
+            return kind
+        if self.classifier:
+            try:
+                return classifier_check(self.client, text)
+            except Exception as exc:
+                LOG.warning("Crisis classifier failed (%s); falling back to moderation", type(exc).__name__)
+        try:
+            return self._moderation(text)
+        except Exception as exc:
+            LOG.warning("Moderation check failed (%s); phrase check only", type(exc).__name__)
+            return None
