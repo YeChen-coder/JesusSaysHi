@@ -50,6 +50,7 @@ SEARCH_DESCRIPTION = """Find passages in the four Gospels (Berean Standard Bible
 
 Args:
     themes: The person's underlying need and the themes the Gospels speak to, in plain words a modern English Bible would use, plus a few concrete keywords. Not their raw sentence, and no chapter or verse numbers.
+    jesus_words_only: True when the person asks what Jesus himself said or taught, to search only sections where Jesus speaks.
 """
 
 
@@ -62,6 +63,10 @@ def format_passages(passages: list[Passage]) -> str:
     # repeated here because it is most salient right next to the passages.
     lines = ['Quote at most two of these verses, word for word, and name each verse you quote '
              '(for example "Luke 17:3"). Do not read a whole passage.']
+    title = None
     for p in passages:
+        if p.title and p.title != title:  # the section heading, once per section
+            lines.append(f"[{p.title}]")
+        title = p.title
         lines += [f"{p.book} {p.chapter}:{v}: {t}" for v, t in zip(p.verses, p.texts)]
     return "\n".join(lines)

@@ -1,0 +1,25 @@
+{
+  "_comment": "gentleman is the SpecterSaysHi model, used as a placeholder until Jesus assets are trained. To switch: add a 'jesus' entry with its checkpoint and idle assets (paths are relative to JESUS_AVATAR_ASSETS) and set JESUS_AVATAR_CHARACTER=jesus.",
+  "default": "gentleman",
+  "characters": {
+    "gentleman": {
+      "release": "20261004-selected-idle-1-pingpong",
+      "checkpoint_sha256": "205e908f2e9ae8364417110d14f35c856ead742a0dd6c5b1a6388b5da507715d",
+      "idle_video_sha256": "345be64e81b66fb72b5be15103c7a5cd8a96c582f87875f72546049ee86a6202",
+      "checkpoint": "checkpoints/retrain_20261004/best.pth",
+      "base": "data/loop_round2_candidate1_pingpong",
+      "teeth": "data/teeth_round2_candidate1_pingpong",
+      "detail": "data/detail_round2_candidate1_pingpong",
+      "image": "data/base.jpg",
+      "landmarks": "data/base.lms",
+      "manifest": "assets-manifest.json",
+      "bundle": "asset-bundle.json",
+      "renderer": "legacy_detail",
+      "settings": {
+        "teeth_mode": "new",
+        "detail_profile": "model_idle",
+        "settle_ms": 400
+      }
+    }
+  }
+}

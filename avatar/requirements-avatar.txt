@@ -1,0 +1,9 @@
+numpy==1.26.4
+opencv-python-headless==4.9.0.80
+soundfile==0.12.1
+librosa==0.11.0
+transformers==4.39.2
+mediapipe==0.10.21
+fastapi==0.115.12
+uvicorn==0.34.2
+websockets==16.0

@@ -28,6 +28,7 @@ from agents.realtime import (
 )
 from agents.realtime.model_inputs import RealtimeModelSendInterrupt
 
+from avatar_link import AvatarLink, avatar_enabled, verse_cards
 from config import ROOT
 from echo import SpeakerReference
 from faithfulness import check
@@ -190,6 +191,7 @@ class Conversation:
         self.audio_queue: asyncio.Queue[tuple[int, str, int, bytes]] = asyncio.Queue()
         self.playback_tracker = RealtimePlaybackTracker()
         self.speaker_reference = SpeakerReference()
+        self.avatar = AvatarLink() if avatar_enabled() else None
         self.playback_generation = 0
         self.barge_mode = barge_in_mode()
         self.allow_barge_in = self.barge_mode == "server"
@@ -206,6 +208,7 @@ class Conversation:
         self.started = self.last_activity = time.monotonic()
         self.response_active = False
         self.response_request_pending = False
+        self.response_turns = 0
         self.microphone_speaking = False
         self.speaker_busy = False
         self.tools_in_progress = 0
@@ -225,19 +228,19 @@ class Conversation:
     # Tools
 
     def make_search_tool(self):
-        async def search_scripture(themes: str) -> str:
-            return await self.search(themes)
+        async def search_scripture(themes: str, jesus_words_only: bool = False) -> str:
+            return await self.search(themes, jesus_words_only)
 
         search_scripture.__doc__ = SEARCH_DESCRIPTION
         return function_tool(search_scripture)
 
-    async def search(self, themes: str) -> str:
+    async def search(self, themes: str, jesus_words_only: bool = False) -> str:
         """The search_scripture tool: retrieve, remember for the faithfulness check, format."""
         themes = themes.strip()[:500]
         if not themes:
             return "No themes were given. Ask the person one short question."
         try:
-            passages = await asyncio.to_thread(self.index.search, themes, 3)
+            passages = await asyncio.to_thread(self.index.search, themes, 3, jesus_only=jesus_words_only)
         except Exception as exc:
             LOG.error("Scripture search failed (%s)", type(exc).__name__)
             return ("Scripture search failed. Say briefly that you cannot find the words "
@@ -316,6 +319,8 @@ class Conversation:
         if item_id in self.discarded_items:
             return
         report = self._check_reply(item_id, text)
+        if report and self.avatar:
+            self.avatar.show_verses(verse_cards(report, list(self.retrieved.values())))
         if transcript_logging_enabled():
             LOG.info("Reply: %r", text)
         else:
@@ -451,6 +456,7 @@ class Conversation:
             self.barged_in = False
             self.response_input_item, self.last_committed_item = self.last_committed_item, None
             self.response_output_items = []
+            self.response_turns += 1
             self.response_active = True
             self.response_request_pending = False
             self.last_activity = time.monotonic()
@@ -481,6 +487,8 @@ class Conversation:
             elif kind in ("input_audio_buffer.speech_started", "input_audio_buffer.speech_stopped"):
                 self.last_activity = time.monotonic()
                 self.microphone_speaking = kind.endswith("speech_started")
+                if self.microphone_speaking and self.avatar:
+                    self.avatar.clear_verses()
                 if not self.microphone_speaking:
                     self.pending_transcriptions += 1
             elif kind == "response.output_audio_transcript.done":
@@ -509,6 +517,8 @@ class Conversation:
         while not self.audio_queue.empty():
             self.audio_queue.get_nowait()
         self.speaker_reference.clear()
+        if self.avatar:
+            self.avatar.reset()
         self.playback_started_at = None
         self.speaker_busy = False
         self.last_activity = time.monotonic()
@@ -610,6 +620,8 @@ class Conversation:
             if not line.strip():
                 continue
             self.reply_done.clear()
+            if self.avatar:
+                self.avatar.clear_verses()
             line = line.strip()
             self._accept_user_transcript(None, line)
             kind = await asyncio.to_thread(self.crisis_check, line) if self.crisis_check else None
@@ -712,6 +724,8 @@ class Conversation:
                             self.speaker_reference.push(piece)
                         await asyncio.to_thread(stream.write, piece)
                         if generation == self.playback_generation:
+                            if self.avatar:
+                                self.avatar.push(piece)
                             self.playback_tracker.on_play_bytes(item_id, content_index, piece)
                             self.last_activity = time.monotonic()
         except asyncio.CancelledError:
@@ -778,6 +792,8 @@ class Conversation:
             await session.enter()
             tasks = [asyncio.create_task(self._consume_events(session), name="realtime-events"),
                      asyncio.create_task(self._watchdog(), name="watchdog")]
+            if self.avatar:
+                tasks.append(asyncio.create_task(self.avatar.run(), name="avatar-link"))
             if self.text_mode:
                 tasks.append(asyncio.create_task(self._typed_input(session), name="typed-input"))
             else:

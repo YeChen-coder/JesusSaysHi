@@ -5,3 +5,4 @@ __pycache__/
 !config.example.env
 data/
 logs/
+ragflow/

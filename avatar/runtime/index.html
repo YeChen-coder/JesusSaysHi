@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JesusSaysHi</title>
+  <style>
+    body { margin: 0; overflow: hidden; background: #111; color: #eee; font: 16px system-ui; }
+    #idle-video, #frame { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+    #idle-video { z-index: 0; }
+    #frame { z-index: 1; opacity: 0; transition: opacity 180ms linear; pointer-events: none; }
+    #status { position: fixed; left: 12px; bottom: 12px; z-index: 2; padding: 8px 12px;
+              background: #000b; border-radius: 6px; }
+    #source { position: fixed; left: 12px; top: 12px; z-index: 2; padding: 8px 12px;
+              background: #000b; border-radius: 6px; font-size: 14px; }
+    body.clean #status, body.clean #source { display: none; }
+    /* Verse card: the retrieved text, shown as written even if the voice paraphrased it. */
+    #verses { position: fixed; left: 50%; bottom: 6vh; z-index: 3; transform: translate(-50%, 12px);
+              width: min(640px, calc(100vw - 32px)); box-sizing: border-box; padding: 18px 24px;
+              background: rgba(14, 12, 10, .74); backdrop-filter: blur(6px); border-radius: 10px;
+              border: 1px solid rgba(232, 214, 176, .22); opacity: 0; pointer-events: none;
+              transition: opacity 420ms ease, transform 420ms ease; }
+    #verses.shown { opacity: 1; transform: translate(-50%, 0); }
+    .verse + .verse { margin-top: 14px; }
+    .verse-text { font: 19px/1.5 Georgia, 'Times New Roman', serif; color: #f4ecdc; }
+    .verse-ref { margin-top: 6px; font: 600 12px/1 system-ui; letter-spacing: .14em;
+                 text-transform: uppercase; color: #d8bf8a; }
+  </style>
+</head>
+<body>
+  <video id="idle-video" src="/avatar/video" poster="/poster" autoplay loop muted playsinline></video>
+  <img id="frame" alt="">
+  <div id="status">Loading avatar…</div>
+  <div id="source">Waiting for an audio source</div>
+  <div id="verses" aria-live="polite"></div>
+  <script>
+  (() => {
+    const fps = 25;
+    const idle = document.getElementById('idle-video');
+    const image = document.getElementById('frame');
+    const status = document.getElementById('status');
+    let socket;
+    let queue = [];
+    let pendingIndex = -1;
+    let pendingPhase = 'speaking';
+    let shownIndex = -1;
+    let active = false;
+    let ending = false;
+    let transition = 0;
+    let previousUrl = null;
+    let rendering = false;
+    let frameFadeMs = 80;
+    let frameTransport = 'full_jpeg';
+    let pendingBox=null, pendingCanvas=null, shownBox=null, shownCanvas=null, nativePlaying=false;
+    const verses = document.getElementById('verses');
+    if (new URLSearchParams(location.search).has('clean')) document.body.classList.add('clean');
+    function showVerses(cards) {
+      verses.replaceChildren(...cards.map(card => {
+        const block = document.createElement('div');
+        block.className = 'verse';
+        const text = document.createElement('div');
+        text.className = 'verse-text';
+        text.textContent = card.text;
+        const ref = document.createElement('div');
+        ref.className = 'verse-ref';
+        ref.textContent = card.ref;
+        block.append(text, ref);
+        return block;
+      }));
+      verses.classList.add('shown');
+    }
+    function placeMouth(box,canvas) {
+      if(!box||!canvas)return;
+      shownBox=box;shownCanvas=canvas;
+      const scale=Math.min(innerWidth/canvas[0],innerHeight/canvas[1]);
+      image.style.inset='auto';image.style.objectFit='fill';
+      image.style.left=((innerWidth-canvas[0]*scale)/2+box[0]*scale)+'px';
+      image.style.top=((innerHeight-canvas[1]*scale)/2+box[1]*scale)+'px';
+      image.style.width=((box[2]-box[0])*scale)+'px';
+      image.style.height=((box[3]-box[1])*scale)+'px';
+    }
+    addEventListener('resize',()=>placeMouth(shownBox,shownCanvas));
+    document.body.dataset.mode = 'idle';
+    const frameCount = () => Math.max(1, Math.round((idle.duration || 30.08) * fps));
+
+    idle.addEventListener('loadeddata', () => {
+      if (!active) status.textContent = 'Waiting for Realtime audio';
+      if (!active) idle.play().catch(() => {});
+    });
+    idle.addEventListener('error', () => {
+      status.textContent = 'Unable to load avatar video';
+    });
+
+    function resumeIdle() {
+      if (!active) return;
+      active = false;
+      nativePlaying = false;
+      ending = false;
+      queue = [];
+      const token = ++transition;
+      const reveal = () => {
+        if (token !== transition) return;
+        image.style.transitionDuration = `${frameFadeMs}ms`;
+        image.style.opacity = '0';
+        document.body.dataset.mode = 'idle';
+        status.textContent = 'Waiting for Realtime audio';
+      };
+      const play = () => {
+        if (token !== transition) return;
+        idle.play().then(() => {
+          if (token !== transition) return;
+          if (idle.requestVideoFrameCallback) idle.requestVideoFrameCallback(reveal);
+          else requestAnimationFrame(reveal);
+        }).catch(reveal);
+      };
+      if (shownIndex >= 0 && idle.readyState >= 1) {
+        // The last tail frame already equals this idle frame. Continue the
+        // same head trajectory rather than jumping to an unrelated pose.
+        const target = ((shownIndex+(frameTransport==='mouth_png'?1:0)) % frameCount()) / fps;
+        document.body.dataset.handoffIndex = shownIndex;
+        if (Math.abs(idle.currentTime - target) > 0.02) {
+          idle.addEventListener('seeked', play, {once: true});
+          idle.currentTime = target;
+        } else play();
+      } else play();
+    }
+
+    function startSpeech() {
+      ++transition;
+      active = true;
+      ending = false;
+      queue = [];
+      shownIndex = -1;
+      pendingIndex = -1;
+      pendingPhase = 'speaking';
+      pendingBox=null;pendingCanvas=null;nativePlaying=false;
+      image.style.transitionDuration = `${frameFadeMs}ms`;
+      image.style.opacity = '0';
+      document.body.dataset.mode = 'speaking';
+      idle.pause();
+      const frame = Math.floor(idle.currentTime * fps) % frameCount();
+      if (socket?.readyState === WebSocket.OPEN) {
+        socket.send(JSON.stringify({type: 'sync', frame}));
+      }
+      status.textContent = 'Receiving FeatherTalk frames';
+    }
+
+    function connect() {
+      const scheme = location.protocol === 'https:' ? 'wss:' : 'ws:';
+      socket = new WebSocket(`${scheme}//${location.host}/view?protocol=2`);
+      socket.binaryType = 'blob';
+      socket.onopen = () => {
+        if (!active && idle.readyState >= 2) status.textContent = 'Waiting for Realtime audio';
+      };
+      socket.onmessage = event => {
+        if (typeof event.data === 'string') {
+          let control;
+          try { control = JSON.parse(event.data); } catch { return; }
+          if (control.type === 'source') {
+            const names = {jesus: 'JesusSaysHi voice', test: 'Controlled test', legacy: 'Audio input'};
+            document.getElementById('source').textContent = names[control.source] || 'Waiting for an audio source';
+          }
+          if (control.type === 'verse') { showVerses(control.verses); return; }
+          if (control.type === 'verse_clear') { verses.classList.remove('shown'); return; }
+          if (control.type === 'start') startSpeech();
+          else if (control.type === 'frame') {
+            pendingIndex = control.index;
+            pendingBox=control.bbox;pendingCanvas=control.canvas;
+            pendingPhase = control.phase === 'settling' ? 'settling' : 'speaking';
+          }
+          else if (control.type === 'settling') {
+            if (control.drop_pending) {
+              ++transition;
+              queue = [];
+            }
+            document.body.dataset.mode = 'settling';
+            status.textContent = 'Returning to idle';
+          }
+          else if (control.type === 'resume') {
+            ++transition;
+            queue = [];
+            ending = false;
+            document.body.dataset.mode = 'speaking';
+            status.textContent = 'FeatherTalk live';
+          }
+          else if (control.type === 'reset') {
+            queue = [];
+            resumeIdle();
+          } else if (control.type === 'idle') {
+            ending = true;
+            if (!queue.length && !rendering) resumeIdle();
+          }
+          return;
+        }
+        if (!active) return;
+        queue.push({blob: event.data, index: pendingIndex, phase: pendingPhase,box:pendingBox,canvas:pendingCanvas});
+        if (queue.length > 4) queue.splice(0, queue.length - 4);
+      };
+      socket.onclose = () => {
+        resumeIdle();
+        status.textContent = 'Disconnected. Reconnecting…';
+        setTimeout(connect, 1000);
+      };
+    }
+
+    setInterval(() => {
+      if (rendering) return;
+      if (!queue.length) {
+        if (ending && !rendering) resumeIdle();
+        return;
+      }
+      const next = queue.shift();
+      const token = transition;
+      const url = URL.createObjectURL(next.blob);
+      rendering = true;
+      // Decode offscreen so a canceled frame cannot overwrite the visible
+      // face during a new utterance or the handoff to the idle video.
+      const decoded = new Image();
+      decoded.onload = () => {
+        rendering = false;
+        if (!active || token !== transition) {
+          URL.revokeObjectURL(url);
+          return;
+        }
+        if (previousUrl) URL.revokeObjectURL(previousUrl);
+        previousUrl = url;
+        image.src = url;
+        if(next.box)placeMouth(next.box,next.canvas);
+        shownIndex = next.index;
+        image.dataset.index = shownIndex;
+        image.dataset.phase = next.phase;
+        document.body.dataset.mode = next.phase;
+        image.style.opacity = '1';
+        if(next.box){
+          const nativeFrame=Math.floor(idle.currentTime*fps)%frameCount();
+          const drift=((nativeFrame-shownIndex+frameCount()/2)%frameCount()+frameCount())%frameCount()-frameCount()/2;
+          if(!nativePlaying||Math.abs(drift)>2)idle.currentTime=shownIndex/fps;
+          if(!nativePlaying||idle.paused){nativePlaying=true;idle.play().catch(()=>{});}
+          image.dataset.nativeDrift=drift;image.dataset.transport='mouth_png';
+        }
+        requestAnimationFrame(()=>{if(active&&token===transition)dispatchEvent(new CustomEvent('avatar-frame-painted',{detail:{index:shownIndex,at:performance.now()}}))});
+        status.textContent = next.phase === 'settling' ? 'Returning to idle' : 'FeatherTalk live';
+      };
+      decoded.onerror = () => {
+        rendering = false;
+        URL.revokeObjectURL(url);
+      };
+      decoded.src = url;
+    }, 40);
+
+    idle.play().catch(() => {});
+    fetch('/health').then(response => response.json()).then(state => {
+      frameFadeMs = state.frame_fade_ms ?? 80;
+      frameTransport = state.frame_transport || "full_jpeg";
+    }).catch(() => {}).finally(connect);
+  })();
+  </script>
+</body>
+</html>

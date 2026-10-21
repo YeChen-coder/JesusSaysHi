@@ -130,7 +130,9 @@ class ScriptureIndex:
         return rrf([lexical, dense])
 
     def search(self, query: str, k: int = 3, mode: str = "dense",
-               query_vector: np.ndarray | None = None) -> list[Passage]:
+               query_vector: np.ndarray | None = None, jesus_only: bool = False) -> list[Passage]:
+        # jesus_only is accepted for interface parity with RagflowIndex and ignored:
+        # plain verse windows carry no red-letter metadata.
         return distinct(self.passages, self.rank(query, mode, query_vector=query_vector), k)
 
 

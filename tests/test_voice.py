@@ -20,8 +20,9 @@ class FakeIndex:
     def __init__(self):
         self.queries = []
 
-    def search(self, themes, k=3):
+    def search(self, themes, k=3, jesus_only=False):
         self.queries.append(themes)
+        self.jesus_only = jesus_only
         return [REST]
 
 
@@ -165,6 +166,8 @@ def test_search_remembers_passages_and_formats_one_verse_per_line(tmp_path):
     assert REST.id in c.retrieved and c.searches == 1
     assert result.splitlines()[1] == f"Matthew 11:28: {REST.texts[0]}"
     assert "No themes" in asyncio.run(c.search("   "))
+    asyncio.run(c.search("forgiveness", jesus_words_only=True))
+    assert c.index.jesus_only is True
 
 
 def test_each_reply_is_checked_once_and_logged_without_text(tmp_path, monkeypatch):

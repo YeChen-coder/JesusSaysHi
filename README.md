@@ -55,6 +55,53 @@ Full tables, latency and every miss are in [eval/results.md](eval/results.md). W
 
 The lesson that carried across: a rule in the prompt is a request, and the mini realtime model drops some of them. Anything that must hold, such as safety, the quote format and the citation format, is enforced or measured in code.
 
+## Phase 3: avatar and verse cards
+
+- **Avatar runtime** ([avatar/](avatar/)): FeatherTalk lip sync (Apache 2.0, see [avatar/THIRD_PARTY_NOTICES.md](avatar/THIRD_PARTY_NOTICES.md)), copied from GPTSaysHi's standalone runtime. The voice loop sends the audio the moment it reaches the speaker, so the lips follow what is heard rather than what the model has generated ahead.
+- **Placeholder character:** the avatar is still SpecterSaysHi's *gentleman* model. `JESUS_AVATAR_ASSETS` points at that release, and [avatar/characters.json](avatar/characters.json) lists it. To switch to Jesus, train FeatherTalk on the Jesus clips, put the checkpoint and idle-loop assets in a folder, add a `jesus` entry to `characters.json` with paths relative to that folder, and set `JESUS_AVATAR_ASSETS` and `JESUS_AVATAR_CHARACTER=jesus`.
+- **Verse cards:** after each reply, the verses it quoted appear under the avatar. Neighbouring verses are merged into one card. A card shows the **retrieved** text, not the spoken one, so if the voice paraphrases, the screen still shows the verse as written. Cards clear when the person starts speaking and when the session ends.
+- **Demo recorder** ([record_demo.py](record_demo.py)): ported from SpecterSaysHi. A TTS "user" is fed in as the microphone, the normal pipeline answers, and OBS records the page with `?clean=1` together with the speaker. A timeline with the faithfulness report of every reply is written next to the recording. Not recorded yet: a demo is only worth making once the Jesus assets replace the placeholder.
+
+## Phase 4: production-style retrieval on RAGFlow
+
+Phase 1 was the classic "embed, brute-force top-k" pipeline. Phase 4 replaces it with the pipeline used in enterprise RAG today, built on [RAGFlow](https://github.com/infiniflow/ragflow) v1.0 (self-hosted, [ragflow/docker](ragflow/docker) overrides) instead of hand-written stages. The phase 1 index stays available as a baseline (`JESUS_RETRIEVER=local`).
+
+| stage | how it is done here |
+|---|---|
+| Parse and clean | The BSB's **USFM** edition, not plain text: section headings (`\s1`), red letters (`\wj`), parallel accounts (`\r`). It is cross-checked against `bsb.txt` verse by verse; 3,767 of 3,768 match, and the one wording difference between the two official exports resolves to the plain text, so everything quotes one edition. ([pericopes.py](pericopes.py)) |
+| Structure-aware chunking | One document per BSB section (487), not fixed windows. |
+| Parent-child | Each verse line is a **child** that retrieval matches; the whole section is the **parent** handed to the model. |
+| Chunk enrichment | RAGFlow's extractor writes 5 keywords and 3 likely questions for every child (gpt-5.4-mini, about 4,300 calls once). |
+| Metadata | book, reference, title, parallels, `jesus_speaks`, red-letter share. |
+| Indexes | Dense (text-embedding-3-small) and full-text, in RAGFlow's Infinity engine. |
+| Query understanding | The realtime model writes the tool query as themes (rewrite), and sets `jesus_words_only` when asked what Jesus himself said (filter/route). |
+| Hybrid retrieval | Weighted full-text + dense, full-text weight 0.3. |
+| Rerank | Voyage `rerank-2.5` over the top 30 candidates. If the reranker fails, retrieval falls back to the hybrid ranking and logs it, so a spoken turn never dies on it. |
+| Abstention | If the best reranked score is under **0.30**, the tool returns nothing, and the persona says the Gospels do not speak to it. The decision is made in code, not by the model. |
+| Citations and verification | As in phase 2: one verse per line with its reference, then the faithfulness check on what was said. |
+| Observability | Every retrieval appends a trace (per-stage scores, latency, fallback, abstention) to `logs/retrieval.jsonl`. |
+| Evaluation | A stage-by-stage ablation on the same 55 questions and the same stored rewrites as phase 1, plus abstention calibration on off-topic queries ([evaluate_ragflow.py](evaluate_ragflow.py), [eval/ragflow_results.md](eval/ragflow_results.md)). |
+
+### Results
+
+| configuration | hit@1 | hit@3 | hit@5 | situational hit@3 | p50 / p90 ms |
+|---|---|---|---|---|---|
+| phase 1: local dense + rewrite | 85% | 93% | 95% | 89% | ~230 (embedding only) |
+| RAGFlow dense + rewrite | 75% | 87% | 95% | 83% | 297 / 361 |
+| RAGFlow hybrid 0.3 + rewrite | 73% | 91% | 95% | 86% | 307 / 390 |
+| RAGFlow hybrid 0.7 (default) + rewrite | 75% | 93% | 95% | 89% | 294 / 404 |
+| **RAGFlow hybrid 0.3 + rerank + rewrite** (production) | 67% | **95%** | **98%** | **92%** | 445 / 599 |
+
+What the ablation shows:
+
+1. **Hybrid search now helps.** In phase 1, BM25 over raw speech dragged dense retrieval down. Here, full-text search also matches the LLM-written questions and keywords, and with themes as the query, hybrid beats dense (91–93% against 87%).
+2. **The reranker buys recall at 3 and 5, not rank 1.** hit@3 rises to 95% and hit@5 to 98%, but hit@1 falls (75% → 67%). The tool hands the model 3 sections, so hit@3 is the number that matters, at a cost of about 150 ms.
+3. **Only reranked scores can drive abstention.** With hybrid scores, real and off-topic queries overlap (0.880 against 0.874). Reranked scores separate them: real queries score at least 0.314 (median 0.449), off-topic queries at most 0.287 (median 0.207). The 0.30 threshold sits in that gap. The gap is narrow and the off-topic set has only 10 queries, so treat the threshold as a first calibration.
+4. Retrieval stays inside a voice budget: about 0.45 s with reranking, which is covered by the model's one-word preamble.
+5. Phase 1 and phase 4 do not count hits on the same unit: phase 1 retrieves 5-verse windows, phase 4 whole sections (about 8 verses on average), and a larger unit overlaps an expected range more easily. The phase 4 rows compare cleanly with each other; the comparison with phase 1 is only approximate.
+
+Setup notes: RAGFlow 1.0's HTTP API differs from its own docs. Datasets take `parse_type` and `parser_id`, not `chunk_method`; parser settings are scoped to pipeline components (`GeneralChunker:*`, `Extractor:*`); document state is `ingestion_status`; model ids are `model@instance@provider`; and parse requests must be batched. A Voyage key from dashboard.voyageai.com only works on `api.voyageai.com` (keys from MongoDB Atlas use `ai.mongodb.com`), and it needs a payment method on file for usable rate limits, even though the free tokens still apply.
+
 ## Run it
 
 ```bash
@@ -64,11 +111,16 @@ curl -o data/raw/bsb.txt https://bereanbible.com/bsb.txt
 python build_index.py                       # about 1 minute, well under a cent
 python ask.py "I'm exhausted and everything feels heavy" --rewrite
 python evaluate.py                          # rewrites eval/results.md
+cd ragflow/docker && docker compose -f docker-compose.yml -f docker-compose.local.yml up -d   # RAGFlow at http://127.0.0.1:19480
+python ingest_ragflow.py                    # 487 sections; about 30 min of RAGFlow parsing and enrichment
+python evaluate_ragflow.py                  # writes eval/ragflow_results.md
 python jesus.py --text                      # typed conversation, with a faithfulness line per reply
 python jesus.py                             # voice: default microphone and speaker
+docker compose --env-file config.local.env up -d --build --wait avatar   # then open http://127.0.0.1:19388/
+python record_demo.py                       # needs OBS with the JesusDemo profile; see the file header
 python -m pytest
 ```
 
 ## Next
 
-- **Phase 3:** add the FeatherTalk avatar with Jesus assets, show an on-screen card with the cited verse, and record a scripted demo.
+- Train the Jesus avatar and swap it in for the placeholder (see Phase 3), then record the demo.

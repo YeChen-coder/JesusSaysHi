@@ -1,0 +1,28 @@
+# The FeatherTalk avatar. Start with:
+#   docker compose --env-file config.local.env up -d --build --wait avatar
+# then open http://127.0.0.1:19388/ (add ?clean=1 to hide the status overlays).
+name: jesussayshi
+services:
+  avatar:
+    image: jesussayshi-avatar:local
+    build: ./avatar
+    gpus: all
+    restart: "no"
+    mem_limit: 6g
+    cpus: 4
+    environment:
+      FEATHERTALK_CHARACTER: ${JESUS_AVATAR_CHARACTER:-gentleman}
+      FEATHERTALK_MODE: fast
+      FEATHERTALK_BUFFER_MS: "100"
+    volumes:
+      # Placeholder: the gentleman release that GPTSaysHi already unpacked. Point this at
+      # Jesus assets once they exist; characters.json paths are relative to it.
+      - ${JESUS_AVATAR_ASSETS:-../GPTSaysHi/assets}:/work:ro
+    ports:
+      - "127.0.0.1:19388:8081"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8081/health', timeout=2)"]
+      interval: 10s
+      timeout: 5s
+      start_period: 120s
+      retries: 12

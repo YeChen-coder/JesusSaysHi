@@ -11,6 +11,7 @@ import argparse
 import asyncio
 import json
 import logging
+import os
 import sys
 from logging.handlers import RotatingFileHandler
 
@@ -34,8 +35,20 @@ def setup_logging(text_mode: bool) -> None:
     handlers.append(console)
     logging.basicConfig(level=logging.INFO, handlers=handlers,
                         format="%(asctime)s %(levelname)s %(name)s: %(message)s")
-    for noisy in ("httpx", "openai", "agents", "websockets"):
+    for noisy in ("httpx", "httpx2", "openai", "agents", "websockets"):
         logging.getLogger(noisy).setLevel(logging.WARNING)
+
+
+def open_index(client: OpenAI):
+    """RAGFlow (default) or the phase-1 local index, chosen by JESUS_RETRIEVER."""
+    if os.getenv("JESUS_RETRIEVER", "ragflow").strip().lower() == "ragflow":
+        from ragflow_retrieval import RagflowIndex
+
+        return RagflowIndex.from_env()
+    meta = json.loads((INDEX_DIR / "meta.json").read_text(encoding="utf-8"))
+    if meta["embed_model"] != embed_model():
+        raise SystemExit(f"Index was built with {meta['embed_model']}, not {embed_model()}; rebuild it")
+    return ScriptureIndex.load(INDEX_DIR, openai_embedder(client, embed_model()))
 
 
 def main() -> None:
@@ -50,12 +63,9 @@ def main() -> None:
 
     load_settings()
     setup_logging(args.text)
-    meta = json.loads((INDEX_DIR / "meta.json").read_text(encoding="utf-8"))
-    if meta["embed_model"] != embed_model():
-        raise SystemExit(f"Index was built with {meta['embed_model']}, not {embed_model()}; rebuild it")
     # A query embedding normally takes ~0.2 s; fail fast instead of stalling a spoken turn.
     client = OpenAI(timeout=10, max_retries=1)
-    index = ScriptureIndex.load(INDEX_DIR, openai_embedder(client, embed_model()))
+    index = open_index(client)
 
     conversation = Conversation(index, text_mode=args.text, say=args.say, crisis_check=CrisisCheck(client))
     try:

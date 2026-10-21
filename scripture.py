@@ -35,6 +35,7 @@ class Passage:
     chapter: int
     verses: tuple[int, ...]
     texts: tuple[str, ...]
+    title: str = ""  # the BSB section heading, when the passage came from a section
 
     @property
     def ref(self) -> str:
