@@ -1,0 +1,38 @@
+{
+  "speech_04": {
+    "decision": "accept",
+    "note": "auto yaw 11.8 > 10 by a small margin; 0.5 s head sheet shows a frontal steady head, reading attributed to eye squint; wording exact",
+    "by": "Claude (sheet review), pending user review",
+    "at": "2026-10-21T19:41:28"
+  },
+  "speech_08": {
+    "decision": "accept",
+    "note": "auto yaw 10.7 > 10 marginally; head sheet frontal with a few small tilts, roll 11.3 within limit; wording exact",
+    "by": "Claude (sheet review), pending user review",
+    "at": "2026-10-21T19:51:58"
+  },
+  "speech_25": {
+    "decision": "accept",
+    "note": "auto roll 12.3 > 12 marginally; head sheet frontal with small tilts; wording exact",
+    "by": "Claude (sheet review), pending user review",
+    "at": "2026-10-21T19:56:14"
+  },
+  "speech_29": {
+    "decision": "accept",
+    "note": "auto yaw 10.26 > 10 marginally; head sheet frontal and steady; wording exact",
+    "by": "Claude (sheet review), pending user review",
+    "at": "2026-10-21T20:03:52"
+  },
+  "speech_36": {
+    "decision": "accept",
+    "note": "take1 kept: auto yaw 10.9 / roll 12.8 marginally over; head sheet frontal with small tilts. Retake (take2) was worse: chin lift, pitch 17. Validation clip.",
+    "by": "Claude (sheet review), pending user review",
+    "at": "2026-10-21T20:12:00"
+  },
+  "idle_listening_take1": {
+    "decision": "reject",
+    "note": "ghost smear on right side of face at ~5 s and ~9 s; regenerating",
+    "by": "Claude (sheet review), pending user review",
+    "at": "2026-10-21T21:53:12"
+  }
+}

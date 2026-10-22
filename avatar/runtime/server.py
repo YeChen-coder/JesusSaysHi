@@ -21,8 +21,8 @@ MODE = os.getenv("FEATHERTALK_MODE", "fast").strip().lower()
 NATIVE = engine.assets.renderer == 'native_face'
 TEETH = 'model' if NATIVE else os.getenv("FEATHERTALK_TEETH_MODE", engine.assets.settings['teeth_mode']).strip().lower()
 BUFFER_MS = int(os.getenv("FEATHERTALK_BUFFER_MS", "100"))
-if MODE not in {"fast", "balanced", "quality"}:
-    raise ValueError("FEATHERTALK_MODE must be fast, balanced or quality")
+if MODE not in {"fast", "balanced", "quality", "stream80"}:
+    raise ValueError("FEATHERTALK_MODE must be fast, balanced, quality or stream80")
 if TEETH not in {"model", "new"} or (TEETH == "new" and engine.teeth is None):
     raise ValueError("FEATHERTALK_TEETH_MODE must be model or available new teeth")
 if not 40 <= BUFFER_MS <= 1000:
@@ -98,7 +98,7 @@ def health():
             "settle_ms": SETTLE_FRAMES * 40, "settle_frames_rendered": settle_frames_rendered,
             "detail_profile": engine.detail_profile, "detail_last_ms": engine.detail_last_ms,
             "frame_delivery": "incremental", "history_seconds": 4,
-            "lookahead_frames": {"fast": 0, "balanced": 10, "quality": 25}[MODE],
+            "lookahead_frames": {"fast": 0, "balanced": 10, "quality": 25, "stream80": 2}[MODE],
             "model_load_seconds": engine.load_seconds,
             "stream_warmup_seconds": engine.stream_shape_warmup_seconds,
             "native_match_last_ms": getattr(engine, 'native_match_last_ms', 0.),

@@ -13,6 +13,7 @@ class RealtimeLoopSession:
             raise ValueError("New teeth assets are unavailable")
         self.engine = engine
         self.lookahead = MODES[mode]["lookahead"]
+        self.mask_after = MODES[mode].get("mask_after")
         self.gather = gather_audio_window
         self.pcm = np.empty(0, dtype=np.float32)
         self.base_frame = self.next_frame = self.received_samples = 0
@@ -37,6 +38,9 @@ class RealtimeLoopSession:
         for index in range(self.next_frame, eligible):
             base_index = self.engine.cursor
             window = self.gather(features, index - left).numpy()
+            if self.mask_after is not None:
+                # Same input as training: nothing later than index+mask_after (half window is 10).
+                window[10 + self.mask_after + 1:] = 0
             image, _ = self.engine.render(window)
             self.engine.sync()
             # EN: Lab diagnostics otherwise accumulate one entry per frame.

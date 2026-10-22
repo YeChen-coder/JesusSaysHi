@@ -1,0 +1,68 @@
+{
+  "rows": [
+    {
+      "id": "A_olive_grove",
+      "label": "Olive grove",
+      "round": 1,
+      "file": "A_olive_grove.jpg",
+      "width": 832,
+      "height": 1248,
+      "sha256": "f8399cf32c9ea72a8d244a6bffb67454cda7011e4d5ea9804e1c33cf2d28f799",
+      "bbox_xyxy": [
+        330,
+        410,
+        500,
+        580
+      ],
+      "landmark_count": 110,
+      "native_lower_face_width": 170,
+      "lower_face_width_at_720": 147.1153846153846,
+      "target_140_160": true,
+      "reference_old_width_at_720": 249.375,
+      "identity_and_anatomy": "manual review required; sizing does not establish likeness"
+    },
+    {
+      "id": "B_galilee_shore",
+      "label": "Galilee shore",
+      "round": 1,
+      "file": "B_galilee_shore.jpg",
+      "width": 832,
+      "height": 1248,
+      "sha256": "e6de6678ccbfe5bb20d40b29a4a98bbe42885fcdac216b3258ab9132db5f99f7",
+      "bbox_xyxy": [
+        331,
+        368,
+        494,
+        531
+      ],
+      "landmark_count": 110,
+      "native_lower_face_width": 163,
+      "lower_face_width_at_720": 141.05769230769232,
+      "target_140_160": true,
+      "reference_old_width_at_720": 249.375,
+      "identity_and_anatomy": "manual review required; sizing does not establish likeness"
+    },
+    {
+      "id": "C_stone_courtyard",
+      "label": "Stone courtyard",
+      "round": 1,
+      "file": "C_stone_courtyard.jpg",
+      "width": 832,
+      "height": 1248,
+      "sha256": "deb553110393b7de25887c5bc102afb8e9d5937adfbb384dcdacaf0a39b30037",
+      "bbox_xyxy": [
+        322,
+        381,
+        501,
+        560
+      ],
+      "landmark_count": 110,
+      "native_lower_face_width": 179,
+      "lower_face_width_at_720": 154.90384615384616,
+      "target_140_160": true,
+      "reference_old_width_at_720": 249.375,
+      "identity_and_anatomy": "manual review required; sizing does not establish likeness"
+    }
+  ],
+  "method": "official compute_face_bbox; normalization to 720px video width, no changes to native generated images"
+}

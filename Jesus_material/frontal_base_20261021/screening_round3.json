@@ -1,0 +1,68 @@
+{
+  "rows": [
+    {
+      "id": "B3a_galilee",
+      "label": "r3a",
+      "round": 3,
+      "file": "B3a_galilee.jpg",
+      "width": 832,
+      "height": 1248,
+      "sha256": "b6ccf7f7ec1a6a05878dd39b1f479eabaf1484fc9d5fa8835a4d7256dff930d1",
+      "bbox_xyxy": [
+        347,
+        257,
+        474,
+        384
+      ],
+      "landmark_count": 110,
+      "native_lower_face_width": 127,
+      "lower_face_width_at_720": 109.90384615384616,
+      "target_140_160": false,
+      "reference_old_width_at_720": 249.375,
+      "identity_and_anatomy": "manual review required; sizing does not establish likeness"
+    },
+    {
+      "id": "B3b_galilee",
+      "label": "r3b",
+      "round": 3,
+      "file": "B3b_galilee.jpg",
+      "width": 832,
+      "height": 1248,
+      "sha256": "a89e3f5c094330df98e8a31c7cbd82a78cf07b34fcdfbabef501d764a3040372",
+      "bbox_xyxy": [
+        348,
+        257,
+        474,
+        383
+      ],
+      "landmark_count": 110,
+      "native_lower_face_width": 126,
+      "lower_face_width_at_720": 109.03846153846153,
+      "target_140_160": false,
+      "reference_old_width_at_720": 249.375,
+      "identity_and_anatomy": "manual review required; sizing does not establish likeness"
+    },
+    {
+      "id": "B3c_from_B2",
+      "label": "r3c",
+      "round": 3,
+      "file": "B3c_from_B2.jpg",
+      "width": 832,
+      "height": 1248,
+      "sha256": "a848a3bc57114a1a67a5d905843d07bf220f1db5751deb62456ed8816e40b3a1",
+      "bbox_xyxy": [
+        345,
+        286,
+        470,
+        411
+      ],
+      "landmark_count": 110,
+      "native_lower_face_width": 125,
+      "lower_face_width_at_720": 108.17307692307692,
+      "target_140_160": false,
+      "reference_old_width_at_720": 249.375,
+      "identity_and_anatomy": "manual review required; sizing does not establish likeness"
+    }
+  ],
+  "method": "official compute_face_bbox; normalization to 720px video width, no changes to native generated images"
+}

@@ -1,0 +1,311 @@
+{
+  "version": 2,
+  "character": "Jesus (photoreal)",
+  "service": "Muse web chat (muse.ai), driven through Chrome",
+  "reference": "reference.png",
+  "reference_source": "../JESUS_SEA_BASE.png",
+  "reference_sha256": "5f90572dafdb8f70af105c5a2b87dc303bab793046a5dd4551fafff1829f0e61",
+  "reference_lower_face_width_at_720": 108.6,
+  "muse_output_observed": "768x1152 h264 24fps 240 frames 10.0s, AAC mono 24 kHz, no visible watermark",
+  "template_source": "prompts/experiments/B_still_photo.txt",
+  "acceptance": {
+    "head_motion": "head_motion.py LIMITS (smoothed p5-p95 spread)",
+    "wording": "line spoken once, no repeated clause (Whisper full + last 3 s)",
+    "visual": "identity matches reference, no watermark/text, full framing kept"
+  },
+  "rules": [
+    "one new Muse chat per clip, reference.png uploaded fresh each time",
+    "never use a previous clip or frame as input",
+    "save the downloaded file unchanged, record SHA256 and the exact prompt sent",
+    "a failed clip is regenerated with the same prompt; the failed file is kept under native/rejected/"
+  ],
+  "superseded": "v1 pilot clips (head turns, repeated clause) moved to native/v1_pilot/",
+  "items": [
+    {
+      "id": "speech_01",
+      "kind": "speech",
+      "split": "train",
+      "focus": "/p b m/ lip closure and release",
+      "dialogue": "Please bring my blue bag before we leave. Maybe we can buy some bread, make a simple meal, and meet Ben by the park before the bus comes back.",
+      "words": 29,
+      "prompt_file": "prompts/speech_01.txt",
+      "output_file": "native/speech_01.mp4",
+      "status": "delivered"
+    },
+    {
+      "id": "speech_02",
+      "kind": "speech",
+      "split": "train",
+      "focus": "/f v/ upper teeth on lower lip",
+      "dialogue": "Five friends visited the village on Friday. We found fresh flowers, shared a favorite meal, and enjoyed a very peaceful evening together before driving home through the soft fog.",
+      "words": 29,
+      "prompt_file": "prompts/speech_02.txt",
+      "output_file": "native/speech_02.mp4",
+      "status": "delivered"
+    },
+    {
+      "id": "speech_03",
+      "kind": "speech",
+      "split": "train",
+      "focus": "/th/ tongue between teeth",
+      "dialogue": "I think these three things belong together. Put them over there, beside the other books, and then we can talk through the whole plan, one step at a time.",
+      "words": 29,
+      "prompt_file": "prompts/speech_03.txt",
+      "output_file": "native/speech_03.mp4",
+      "status": "delivered"
+    },
+    {
+      "id": "speech_04",
+      "kind": "speech",
+      "split": "train",
+      "focus": "/s z/ continuous sibilants",
+      "dialogue": "Sarah says the streets are busy this morning. We can visit the stores, choose some supplies, and discuss our plans as we walk slowly past the square at noon.",
+      "words": 29,
+      "prompt_file": "prompts/speech_04.txt",
+      "output_file": "native/speech_04.mp4",
+      "status": "delivered"
+    },
+    {
+      "id": "speech_05",
+      "kind": "speech",
+      "split": "train",
+      "focus": "/sh zh ch j/",
+      "dialogue": "Shall we choose a jacket for James? We can measure the shelves, check the usual sizes, and share our decision before lunch today, then change it if he wishes.",
+      "words": 29,
+      "prompt_file": "prompts/speech_05.txt",
+      "output_file": "native/speech_05.mp4",
+      "status": "delivered"
+    },
+    {
+      "id": "speech_06",
+      "kind": "speech",
+      "split": "train",
+      "focus": "/i I e/ front vowels",
+      "dialogue": "Please sit here and tell me what you see. The green seats look different in this light, but the red desk is clear, and the window seems a little brighter.",
+      "words": 30,
+      "prompt_file": "prompts/speech_06.txt",
+      "output_file": "native/speech_06.mp4",
+      "status": "delivered"
+    },
+    {
+      "id": "speech_07",
+      "kind": "speech",
+      "split": "train",
+      "focus": "/ae a ^/ open vowels",
+      "dialogue": "My father left a black bag beside the cup. After lunch, we can walk past the shop and ask about the map together, and then catch the last tram.",
+      "words": 29,
+      "prompt_file": "prompts/speech_07.txt",
+      "output_file": "native/speech_07.mp4",
+      "status": "delivered"
+    },
+    {
+      "id": "speech_08",
+      "kind": "speech",
+      "split": "train",
+      "focus": "/u U o/ rounded vowels",
+      "dialogue": "You could choose the blue room with a good view. We can go home soon, cook some food, and enjoy a quiet evening, then look at the moon.",
+      "words": 28,
+      "prompt_file": "prompts/speech_08.txt",
+      "output_file": "native/speech_08.mp4",
+      "status": "delivered"
+    },
+    {
+      "id": "speech_09",
+      "kind": "speech",
+      "split": "train",
+      "focus": "/ai au oi/ diphthongs",
+      "dialogue": "Now is a good time to try another choice. I found a quiet house outside town, and I would like to show you the garden and the old oak tree.",
+      "words": 30,
+      "prompt_file": "prompts/speech_09.txt",
+      "output_file": "native/speech_09.mp4",
+      "status": "delivered"
+    },
+    {
+      "id": "speech_10",
+      "kind": "speech",
+      "split": "train",
+      "focus": "/w r l/ glides and liquids",
+      "dialogue": "We will walk along the river and look for the red building. When we arrive, Laura can tell us where the little room is, and we will rest a while.",
+      "words": 30,
+      "prompt_file": "prompts/speech_10.txt",
+      "output_file": "native/speech_10.mp4",
+      "status": "delivered"
+    },
+    {
+      "id": "speech_11",
+      "kind": "speech",
+      "split": "train",
+      "focus": "mixed conversational English",
+      "dialogue": "Thank you for joining me today. Tell me about your plans, and we can work through the details together, one step at a time, until everything feels clear.",
+      "words": 28,
+      "prompt_file": "prompts/speech_11.txt",
+      "output_file": "native/speech_11.mp4",
+      "status": "delivered"
+    },
+    {
+      "id": "speech_12",
+      "kind": "speech",
+      "split": "validation",
+      "focus": "question and statement with two short pauses",
+      "dialogue": "Are you ready to begin? Take a moment. Then tell me what happened this morning, and we can decide what to do next together, without any hurry at all.",
+      "words": 29,
+      "prompt_file": "prompts/speech_12.txt",
+      "output_file": "native/speech_12.mp4",
+      "status": "delivered"
+    },
+    {
+      "id": "speech_25",
+      "kind": "speech",
+      "split": "train",
+      "focus": "balanced English, bilabials",
+      "dialogue": "Pack the paper box beside my backpack. Before Monday, bring the blue mug home and remind me to buy more milk, maybe some plums, and a bit of butter.",
+      "words": 29,
+      "prompt_file": "prompts/speech_25.txt",
+      "output_file": "native/speech_25.mp4",
+      "status": "delivered"
+    },
+    {
+      "id": "speech_26",
+      "kind": "speech",
+      "split": "train",
+      "focus": "balanced English, labiodentals",
+      "dialogue": "The ferry leaves after five, so we have enough time. Find your gloves, fill the flask, and follow me down the path to the far end of the pier.",
+      "words": 29,
+      "prompt_file": "prompts/speech_26.txt",
+      "output_file": "native/speech_26.mp4",
+      "status": "delivered"
+    },
+    {
+      "id": "speech_27",
+      "kind": "speech",
+      "split": "train",
+      "focus": "balanced English",
+      "dialogue": "Please leave the envelope by the front window. Move the heavy basket carefully, and give me a moment to finish my breakfast before we leave for the market.",
+      "words": 28,
+      "prompt_file": "prompts/speech_27.txt",
+      "output_file": "native/speech_27.mp4",
+      "status": "delivered"
+    },
+    {
+      "id": "speech_28",
+      "kind": "speech",
+      "split": "train",
+      "focus": "balanced English, th",
+      "dialogue": "Those thin curtains let the sunlight through. I think the room feels brighter now, and there is space for another small table, maybe with three chairs by the wall.",
+      "words": 29,
+      "prompt_file": "prompts/speech_28.txt",
+      "output_file": "native/speech_28.mp4",
+      "status": "delivered"
+    },
+    {
+      "id": "speech_29",
+      "kind": "speech",
+      "split": "train",
+      "focus": "balanced English, sibilants",
+      "dialogue": "These oranges smell fresh, and the lemons look nice. Choose six pieces for the guests, then place the rest beside the sink and rinse the glass bowls for later.",
+      "words": 29,
+      "prompt_file": "prompts/speech_29.txt",
+      "output_file": "native/speech_29.mp4",
+      "status": "delivered"
+    },
+    {
+      "id": "speech_30",
+      "kind": "speech",
+      "split": "train",
+      "focus": "balanced English, sh/ch/j",
+      "dialogue": "The chef usually measures each portion before serving lunch. Choose a dish you enjoy, and share your suggestion with the manager tomorrow at the usual meeting.",
+      "words": 26,
+      "prompt_file": "prompts/speech_30.txt",
+      "output_file": "native/speech_30.mp4",
+      "status": "delivered"
+    },
+    {
+      "id": "speech_31",
+      "kind": "speech",
+      "split": "train",
+      "focus": "balanced English, front vowels and l",
+      "dialogue": "The little bell rings when the green light appears. Keep the lid beside the shelf, and let me see which piece fits, then we will lock the lid.",
+      "words": 28,
+      "prompt_file": "prompts/speech_31.txt",
+      "output_file": "native/speech_31.mp4",
+      "status": "delivered"
+    },
+    {
+      "id": "speech_32",
+      "kind": "speech",
+      "split": "train",
+      "focus": "balanced English, open vowels",
+      "dialogue": "Sam left his hat on the counter after lunch. Our mother asked us to pack the cups and carry the basket upstairs, and then sweep the back porch.",
+      "words": 28,
+      "prompt_file": "prompts/speech_32.txt",
+      "output_file": "native/speech_32.mp4",
+      "status": "delivered"
+    },
+    {
+      "id": "speech_33",
+      "kind": "speech",
+      "split": "train",
+      "focus": "balanced English, rounded vowels",
+      "dialogue": "The soup should cool before you taste it. Put your spoon on the wooden tray, and let the cook know how it tastes, whether it needs more salt or pepper.",
+      "words": 30,
+      "prompt_file": "prompts/speech_33.txt",
+      "output_file": "native/speech_33.mp4",
+      "status": "delivered"
+    },
+    {
+      "id": "speech_34",
+      "kind": "speech",
+      "split": "train",
+      "focus": "balanced English, diphthongs",
+      "dialogue": "Enjoy the bright afternoon while the clouds are passing. I might ride my bike around the square and buy a small gift tonight for my oldest friend.",
+      "words": 27,
+      "prompt_file": "prompts/speech_34.txt",
+      "output_file": "native/speech_34.mp4",
+      "status": "delivered"
+    },
+    {
+      "id": "speech_35",
+      "kind": "speech",
+      "split": "train",
+      "focus": "balanced English, r and l",
+      "dialogue": "We walked around the lake before the rain began. Riley remembered the narrow road, and led us toward a warm little bakery nearby, where we waited out the storm.",
+      "words": 29,
+      "prompt_file": "prompts/speech_35.txt",
+      "output_file": "native/speech_35.mp4",
+      "status": "delivered"
+    },
+    {
+      "id": "speech_36",
+      "kind": "speech",
+      "split": "validation",
+      "focus": "question, short answer, statement",
+      "dialogue": "Would you prefer coffee or tea? Either is fine. Let me know your choice, and we can enjoy a few quiet minutes together before the others arrive.",
+      "words": 27,
+      "prompt_file": "prompts/speech_36.txt",
+      "output_file": "native/speech_36.mp4",
+      "status": "delivered"
+    },
+    {
+      "id": "idle_waiting",
+      "kind": "idle",
+      "split": null,
+      "focus": null,
+      "dialogue": null,
+      "words": null,
+      "prompt_file": "prompts/idle_waiting.txt",
+      "output_file": "native/idle_waiting.mp4",
+      "status": "delivered"
+    },
+    {
+      "id": "idle_listening",
+      "kind": "idle",
+      "split": null,
+      "focus": null,
+      "dialogue": null,
+      "words": null,
+      "prompt_file": "prompts/idle_listening.txt",
+      "output_file": "native/idle_listening.mp4",
+      "status": "delivered"
+    }
+  ]
+}

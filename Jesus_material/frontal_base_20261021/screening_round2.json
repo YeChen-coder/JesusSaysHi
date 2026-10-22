@@ -1,0 +1,68 @@
+{
+  "rows": [
+    {
+      "id": "A2_olive_grove",
+      "label": "Olive grove r2",
+      "round": 2,
+      "file": "A2_olive_grove.jpg",
+      "width": 832,
+      "height": 1248,
+      "sha256": "d0a27277e7b3ce099eb5d0848eb5781f18beadf4ef12cdf024fc4db672a732fd",
+      "bbox_xyxy": [
+        354,
+        382,
+        471,
+        499
+      ],
+      "landmark_count": 110,
+      "native_lower_face_width": 117,
+      "lower_face_width_at_720": 101.25,
+      "target_140_160": false,
+      "reference_old_width_at_720": 249.375,
+      "identity_and_anatomy": "manual review required; sizing does not establish likeness"
+    },
+    {
+      "id": "B2_galilee_shore",
+      "label": "Galilee shore r2",
+      "round": 2,
+      "file": "B2_galilee_shore.jpg",
+      "width": 832,
+      "height": 1248,
+      "sha256": "dd5cf7136df0c3e15b77ce9e3794b2337260962a009e70850d25dd97bff12933",
+      "bbox_xyxy": [
+        337,
+        303,
+        481,
+        447
+      ],
+      "landmark_count": 110,
+      "native_lower_face_width": 144,
+      "lower_face_width_at_720": 124.61538461538461,
+      "target_140_160": false,
+      "reference_old_width_at_720": 249.375,
+      "identity_and_anatomy": "manual review required; sizing does not establish likeness"
+    },
+    {
+      "id": "C2_stone_courtyard",
+      "label": "Stone courtyard r2",
+      "round": 2,
+      "file": "C2_stone_courtyard.jpg",
+      "width": 832,
+      "height": 1248,
+      "sha256": "5b2b21de6a942bcdacb130a23d843664a4aa44f557dbc5cb5772cff733e9ccd5",
+      "bbox_xyxy": [
+        349,
+        275,
+        474,
+        400
+      ],
+      "landmark_count": 110,
+      "native_lower_face_width": 125,
+      "lower_face_width_at_720": 108.17307692307692,
+      "target_140_160": false,
+      "reference_old_width_at_720": 249.375,
+      "identity_and_anatomy": "manual review required; sizing does not establish likeness"
+    }
+  ],
+  "method": "official compute_face_bbox; normalization to 720px video width, no changes to native generated images"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "speech_01",
+  "expected_dialogue": "Please bring my blue bag before we leave. Maybe we can buy some bread, make a simple meal, and meet Ben by the park.",
+  "transcript": " Please bring my blue bag before we leave. Maybe we can buy some breath, make a simple meal and meet Ben by the park. Make a simple meal and meet Ben by the park.",
+  "word_error_rate": 0.4583333333333333,
+  "requires_manual_wording_review": true,
+  "wav_sha256": "1c3a32e9bde04b3d289537b1cde8e8aa198f1939e3e30e5220ba275b3ce108b9",
+  "method": "local cached Whisper-tiny, English transcription; ASR error is possible; not a lip-sync or voice-identity verification"
+}

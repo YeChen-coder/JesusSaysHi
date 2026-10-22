@@ -46,6 +46,13 @@ class NativeLoopEngine(Engine):
         # Match the accepted epoch115 exporter: normalize FP32 on CPU, then cache on GPU.
         self.model_inputs = torch.stack([torch.cat([hwc_to_chw_tensor(r.copy()),
             hwc_to_chw_tensor(mask_mouth(r.copy()))],0) for r in self.references]).contiguous().to(self.device)
+        # Optional fixed model reference (unique-frame index). With the per-frame moving
+        # reference, every blink/breath of the base changes the generated mouth, which
+        # read as twitching (Jesus: 6-7% of mouth motion above 6 Hz vs 2.5-4% real,
+        # 1.6-2% with a fixed reference). Compositing still follows the moving base.
+        self.model_reference = self.assets.settings.get('model_reference_frame')
+        if self.model_reference is not None and not 0 <= self.model_reference < len(self.unique_frames):
+            raise ValueError('model_reference_frame is outside the base frames')
         self.matcher = NativeFaceMatch()
         self.prepared = [self.matcher.prepare(frame, points, box)
                          for frame, points, box in zip(self.unique_frames, self.landmarks, self.unique_bboxes)]
@@ -79,7 +86,8 @@ class NativeLoopEngine(Engine):
     def render(self, window):
         index = self.cursor
         source = int(self.source_indices[index])
-        prediction = self.visual(self.model_inputs[source:source + 1],
+        model_source = source if self.model_reference is None else self.model_reference
+        prediction = self.visual(self.model_inputs[model_source:model_source + 1],
                                  reshape_audio_feat(torch.from_numpy(window))[None].to(self.device))[0]
         prediction = (prediction.cpu().numpy().transpose(1, 2, 0) * 255).clip(0, 255).astype(np.uint8)
         started = time.perf_counter()

@@ -1,5 +1,5 @@
 {
-  "_comment": "gentleman is the SpecterSaysHi model, used as a placeholder until Jesus assets are trained. To switch: add a 'jesus' entry with its checkpoint and idle assets (paths are relative to JESUS_AVATAR_ASSETS) and set JESUS_AVATAR_CHARACTER=jesus.",
+  "_comment": "gentleman is the SpecterSaysHi placeholder. jesus = Muse-trained model (2026-10-21); run it with JESUS_AVATAR_CHARACTER=jesus, JESUS_AVATAR_MODE=stream80 and JESUS_AVATAR_ASSETS pointing at avatar_assets/jesus_20261021.",
   "default": "gentleman",
   "characters": {
     "gentleman": {
@@ -19,6 +19,24 @@
         "teeth_mode": "new",
         "detail_profile": "model_idle",
         "settle_ms": 400
+      }
+    },
+    "jesus": {
+      "release": "20261021-muse-epoch60-idle_waiting_slow15",
+      "selected_epoch": 60,
+      "idle_name": "idle_waiting_slow15",
+      "checkpoint_sha256": "b7a59aeeffc95d417e05bc5c08eae0196a9cb20f91ff3d1d6a367d5172f2686d",
+      "idle_video_sha256": "da4449ceeec27d825e6d16785c02135c5e4c46a8ffd0e838022c1790979bdd57",
+      "checkpoint": "checkpoints/epoch_60.pth",
+      "base": "data/loop_base",
+      "image": "data/base.jpg",
+      "landmarks": "data/base.lms",
+      "renderer": "native_face",
+      "runtime_mode": "stream80",
+      "settings": {
+        "teeth_mode": "model",
+        "detail_profile": "original",
+        "settle_ms": 0
       }
     }
   }

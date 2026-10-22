@@ -8,3 +8,16 @@ logs/
 ragflow/
 # Personal interview notes stay local
 docs/INTERVIEW.md
+
+# Jesus avatar training artifacts and packaged model assets (large binaries)
+avatar_assets/
+feathertalk_jesus_20261021/checkpoints/
+feathertalk_jesus_20261021/output/
+# Muse source media stays local (large); scripts, prompts, records and review notes are committed
+Jesus_material/**/*.mp4
+Jesus_material/**/*.wav
+Jesus_material/**/*.pcm
+Jesus_material/frontal_base_20261021/*.jpg
+Jesus_material/frontal_base_20261021/*.png
+Jesus_material/e3152fc7-7992-406e-8b0a-56518ab6f914.jpg
+Jesus_material/muse_video_20261021/reference.png

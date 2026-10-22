@@ -1,0 +1,26 @@
+{
+  "rows": [
+    {
+      "id": "reference",
+      "label": "muse_base",
+      "round": 1,
+      "file": "reference.png",
+      "width": 1664,
+      "height": 2496,
+      "sha256": "5f90572dafdb8f70af105c5a2b87dc303bab793046a5dd4551fafff1829f0e61",
+      "bbox_xyxy": [
+        697,
+        515,
+        948,
+        766
+      ],
+      "landmark_count": 110,
+      "native_lower_face_width": 251,
+      "lower_face_width_at_720": 108.60576923076923,
+      "target_140_160": false,
+      "reference_old_width_at_720": 249.375,
+      "identity_and_anatomy": "manual review required; sizing does not establish likeness"
+    }
+  ],
+  "method": "official compute_face_bbox; normalization to 720px video width, no changes to native generated images"
+}

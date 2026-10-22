@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-21",
+  "muse_output": "768x1152 (2:3) h264 24fps 240 frames, 10.000s, AAC mono 24kHz, all three clips; ~1-3 min per clip, three ran concurrently",
+  "watermark": "none visible in sampled frames",
+  "framing": "knee-length, face centred at reference scale, locked camera in sampled frames",
+  "speech_findings": {
+    "speech_01": "line spoken correctly (\"bread\" heard as \"breath\" by Whisper-tiny), then \"make a simple meal and meet Ben by the park\" REPEATED from ~7s to fill 10s",
+    "speech_03": "line spoken correctly by ~7.3s, pause, then \"and then we can talk through the plan\" REPEATED at ~8.2-9.3s"
+  },
+  "cause": "dialogue finishes ~7s; Muse fills the remaining time despite the say-once instruction",
+  "evidence": [
+    "review/*_sheet.jpg",
+    "review/*_mouth_sheet.jpg",
+    "review/*_transcript.json",
+    "segment transcription 0-4.5/4.5-7.x/7.x-10s"
+  ],
+  "status": "awaiting user review"
+}

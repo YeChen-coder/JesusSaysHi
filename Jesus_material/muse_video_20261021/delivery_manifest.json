@@ -1,0 +1,867 @@
+{
+  "batch": "muse_video_20261021",
+  "plan_version": 2,
+  "reference": "reference.png",
+  "reference_sha256": "5f90572dafdb8f70af105c5a2b87dc303bab793046a5dd4551fafff1829f0e61",
+  "counts": {
+    "speech_selected": 24,
+    "train": 22,
+    "validation": 2,
+    "idle_selected": 2,
+    "auto_pass": 21,
+    "manual_accept_marginal": 5
+  },
+  "not_in_set": [
+    "native/v1_pilot/*",
+    "native/experiments/*",
+    "native/rejected/*"
+  ],
+  "caveats": [
+    "auto QC = head motion + Whisper-tiny wording; lip sync was not measured, only viewed on sheets",
+    "identity notes are from 1 fps face sheets and need the user's judgement",
+    "idle clips are inference bases only, not training data"
+  ],
+  "items": [
+    {
+      "id": "speech_01",
+      "kind": "speech",
+      "split": "train",
+      "dialogue": "Please bring my blue bag before we leave. Maybe we can buy some bread, make a simple meal, and meet Ben by the park before the bus comes back.",
+      "file": "native/speech_01.mp4",
+      "sha256": "e47c8b0ad20a176db32ae8db40911ea8fcf522c447e7c92a89d62222c1777289",
+      "bytes": 5268825,
+      "muse_thread": "https://muse.ai/thread/ba033431-713e-4c06-af03-a5b929000256",
+      "prompt_file": "prompts/speech_01.txt",
+      "auto_qc": {
+        "pass": true,
+        "problems": [],
+        "head": {
+          "yaw_deg": 6.45,
+          "pitch_deg": 10.93,
+          "roll_deg": 8.17,
+          "shift_eye": 0.23,
+          "scale_pct": 3.08
+        },
+        "transcript": "Please bring my blue bag before we leave. Maybe we can buy some bread, make a simple meal, and meet Ben by the park before the bus comes back.",
+        "voiced_s": [
+          0.25,
+          10.0
+        ]
+      },
+      "manual": null,
+      "identity_note": null,
+      "selected": true,
+      "ready_for_preprocessing": true
+    },
+    {
+      "id": "speech_02",
+      "kind": "speech",
+      "split": "train",
+      "dialogue": "Five friends visited the village on Friday. We found fresh flowers, shared a favorite meal, and enjoyed a very peaceful evening together before driving home through the soft fog.",
+      "file": "native/speech_02.mp4",
+      "sha256": "fab0a5a0b2fb6085bee42d5b024da92188e0ba1defa1f26cb1f34fa9738427f3",
+      "bytes": 4688923,
+      "muse_thread": "https://muse.ai/thread/c2b2c1e1-e578-4d8b-9573-0ed87dcc69b0",
+      "prompt_file": "prompts/speech_02.txt",
+      "auto_qc": {
+        "pass": true,
+        "problems": [],
+        "head": {
+          "yaw_deg": 8.51,
+          "pitch_deg": 12.04,
+          "roll_deg": 6.49,
+          "shift_eye": 0.12,
+          "scale_pct": 3.11
+        },
+        "transcript": "Five friends visited the village on Friday. We found fresh flowers, shared a favorite meal, and enjoyed a very peaceful evening together before driving home through the soft fog.",
+        "voiced_s": [
+          0.0,
+          9.5
+        ]
+      },
+      "manual": null,
+      "identity_note": null,
+      "selected": true,
+      "ready_for_preprocessing": true
+    },
+    {
+      "id": "speech_03",
+      "kind": "speech",
+      "split": "train",
+      "dialogue": "I think these three things belong together. Put them over there, beside the other books, and then we can talk through the whole plan, one step at a time.",
+      "file": "native/speech_03.mp4",
+      "sha256": "a3721aa28c9816530c3f3d139333170526498d10a5d381f7f32118c18d4927c4",
+      "bytes": 4663286,
+      "muse_thread": "https://muse.ai/thread/a0e83382-e6a3-4202-8f79-1f0d166a99f5",
+      "prompt_file": "prompts/speech_03.txt",
+      "auto_qc": {
+        "pass": true,
+        "problems": [],
+        "head": {
+          "yaw_deg": 5.23,
+          "pitch_deg": 7.91,
+          "roll_deg": 11.72,
+          "shift_eye": 0.21,
+          "scale_pct": 2.38
+        },
+        "transcript": "I think these three things belong together. Put them over there, beside the other books, and then we can talk through the whole plan one step at a time.",
+        "voiced_s": [
+          0.5,
+          9.25
+        ]
+      },
+      "manual": null,
+      "identity_note": null,
+      "selected": true,
+      "ready_for_preprocessing": true
+    },
+    {
+      "id": "speech_04",
+      "kind": "speech",
+      "split": "train",
+      "dialogue": "Sarah says the streets are busy this morning. We can visit the stores, choose some supplies, and discuss our plans as we walk slowly past the square at noon.",
+      "file": "native/speech_04.mp4",
+      "sha256": "72e85168da1e5a4b40e1482fe5ef17a2c2e7038f8f96de1081c93cc8618bb8e8",
+      "bytes": 4571897,
+      "muse_thread": "https://muse.ai/thread/aa4b1ddb-c4fc-4e8e-a6b1-6ce6c8d78177",
+      "prompt_file": "prompts/speech_04.txt",
+      "auto_qc": {
+        "pass": false,
+        "problems": [
+          "head yaw_deg"
+        ],
+        "head": {
+          "yaw_deg": 11.8,
+          "pitch_deg": 8.35,
+          "roll_deg": 7.01,
+          "shift_eye": 0.15,
+          "scale_pct": 4.97
+        },
+        "transcript": "Sarah says the streets are busy this morning. We can visit the stores, choose some supplies, and discuss our plans as we walk slowly past the square at noon.",
+        "voiced_s": [
+          0.25,
+          8.75
+        ]
+      },
+      "manual": {
+        "decision": "accept",
+        "note": "auto yaw 11.8 > 10 by a small margin; 0.5 s head sheet shows a frontal steady head, reading attributed to eye squint; wording exact",
+        "by": "Claude (sheet review), pending user review",
+        "at": "2026-10-21T19:41:28"
+      },
+      "identity_note": null,
+      "selected": true,
+      "ready_for_preprocessing": true
+    },
+    {
+      "id": "speech_05",
+      "kind": "speech",
+      "split": "train",
+      "dialogue": "Shall we choose a jacket for James? We can measure the shelves, check the usual sizes, and share our decision before lunch today, then change it if he wishes.",
+      "file": "native/speech_05.mp4",
+      "sha256": "67194633b59bdd12068c20f513f55d314fbd844661034af811002f89d6dbc102",
+      "bytes": 4885461,
+      "muse_thread": "https://muse.ai/thread/68cc3dad-1b01-4f99-8ad8-93d953dd2102",
+      "prompt_file": "prompts/speech_05.txt",
+      "auto_qc": {
+        "pass": true,
+        "problems": [],
+        "head": {
+          "yaw_deg": 7.1,
+          "pitch_deg": 7.27,
+          "roll_deg": 6.96,
+          "shift_eye": 0.21,
+          "scale_pct": 3.24
+        },
+        "transcript": "Shall we choose a jacket for James? We can measure the shelves, check the usual sizes, and share our decision before lunch today, then change it if you wish.",
+        "voiced_s": [
+          0.5,
+          8.75
+        ]
+      },
+      "manual": null,
+      "identity_note": "hair renders lighter/warmer brown than the reference",
+      "selected": true,
+      "ready_for_preprocessing": true
+    },
+    {
+      "id": "speech_06",
+      "kind": "speech",
+      "split": "train",
+      "dialogue": "Please sit here and tell me what you see. The green seats look different in this light, but the red desk is clear, and the window seems a little brighter.",
+      "file": "native/speech_06.mp4",
+      "sha256": "7187f14544c2a9f00a93c1d4b7a88c0463dd26a9fa799aba608ce5be5ba42006",
+      "bytes": 4836271,
+      "muse_thread": "https://muse.ai/thread/ddc783ae-68b8-47da-8974-6bcc31713054",
+      "prompt_file": "prompts/speech_06.txt",
+      "auto_qc": {
+        "pass": true,
+        "problems": [],
+        "head": {
+          "yaw_deg": 6.17,
+          "pitch_deg": 10.04,
+          "roll_deg": 9.55,
+          "shift_eye": 0.18,
+          "scale_pct": 3.97
+        },
+        "transcript": "Please sit here and tell me what you see. The green seats look different in this light, but the red desk is clear and the window seems a little brighter.",
+        "voiced_s": [
+          0.25,
+          10.0
+        ]
+      },
+      "manual": null,
+      "identity_note": null,
+      "selected": true,
+      "ready_for_preprocessing": true
+    },
+    {
+      "id": "speech_07",
+      "kind": "speech",
+      "split": "train",
+      "dialogue": "My father left a black bag beside the cup. After lunch, we can walk past the shop and ask about the map together, and then catch the last tram.",
+      "file": "native/speech_07.mp4",
+      "sha256": "e20037df2a10493c7ea950bb96a8c220aa9a198c2b55e70a63da021687fec1bf",
+      "bytes": 5139577,
+      "muse_thread": "https://muse.ai/thread/0f101dde-c29f-4f80-b47e-0495d9d6c605",
+      "prompt_file": "prompts/speech_07.txt",
+      "auto_qc": {
+        "pass": true,
+        "problems": [],
+        "head": {
+          "yaw_deg": 4.15,
+          "pitch_deg": 8.89,
+          "roll_deg": 6.88,
+          "shift_eye": 0.16,
+          "scale_pct": 2.89
+        },
+        "transcript": "My father left a black bag beside the cup. After lunch, we can walk past the shop and ask about the map together and then catch the last tram.",
+        "voiced_s": [
+          0.5,
+          10.0
+        ]
+      },
+      "manual": null,
+      "identity_note": null,
+      "selected": true,
+      "ready_for_preprocessing": true
+    },
+    {
+      "id": "speech_08",
+      "kind": "speech",
+      "split": "train",
+      "dialogue": "You could choose the blue room with a good view. We can go home soon, cook some food, and enjoy a quiet evening, then look at the moon.",
+      "file": "native/speech_08.mp4",
+      "sha256": "13807b105036cf470c251b46b7fc075ecc193627cc726522f7aa9cf052ff1e33",
+      "bytes": 4854602,
+      "muse_thread": "https://muse.ai/thread/33b17383-f8e6-4f09-ab1b-c5d93c9fa84c",
+      "prompt_file": "prompts/speech_08.txt",
+      "auto_qc": {
+        "pass": false,
+        "problems": [
+          "head yaw_deg"
+        ],
+        "head": {
+          "yaw_deg": 10.67,
+          "pitch_deg": 7.61,
+          "roll_deg": 11.32,
+          "shift_eye": 0.24,
+          "scale_pct": 3.44
+        },
+        "transcript": "You could choose the blue room with a good view. We can go home soon, cook some food and enjoy a quiet evening, then look at the moon.",
+        "voiced_s": [
+          0.5,
+          10.0
+        ]
+      },
+      "manual": {
+        "decision": "accept",
+        "note": "auto yaw 10.7 > 10 marginally; head sheet frontal with a few small tilts, roll 11.3 within limit; wording exact",
+        "by": "Claude (sheet review), pending user review",
+        "at": "2026-10-21T19:51:58"
+      },
+      "identity_note": null,
+      "selected": true,
+      "ready_for_preprocessing": true
+    },
+    {
+      "id": "speech_09",
+      "kind": "speech",
+      "split": "train",
+      "dialogue": "Now is a good time to try another choice. I found a quiet house outside town, and I would like to show you the garden and the old oak tree.",
+      "file": "native/speech_09.mp4",
+      "sha256": "6b4280cc76bedfe8dd40ba2bd654d0242b41e7dde72994f33a1d8cf4f9a1926f",
+      "bytes": 4807625,
+      "muse_thread": "https://muse.ai/thread/e0c0ae67-8fe2-49f6-8a56-a96513336446",
+      "prompt_file": "prompts/speech_09.txt",
+      "auto_qc": {
+        "pass": true,
+        "problems": [],
+        "head": {
+          "yaw_deg": 7.82,
+          "pitch_deg": 6.96,
+          "roll_deg": 6.93,
+          "shift_eye": 0.13,
+          "scale_pct": 2.26
+        },
+        "transcript": "Now is a good time to try another choice. I found a quiet house outside town and I would like to show you the garden and the old oak tree.",
+        "voiced_s": [
+          0.25,
+          9.0
+        ]
+      },
+      "manual": null,
+      "identity_note": null,
+      "selected": true,
+      "ready_for_preprocessing": true
+    },
+    {
+      "id": "speech_10",
+      "kind": "speech",
+      "split": "train",
+      "dialogue": "We will walk along the river and look for the red building. When we arrive, Laura can tell us where the little room is, and we will rest a while.",
+      "file": "native/speech_10.mp4",
+      "sha256": "35cc082e4dbb30e5e5a4b0a1405e783c24d65b9b33dd0062be5ab903e578b0ba",
+      "bytes": 4650732,
+      "muse_thread": "https://muse.ai/thread/1fb6fe8e-8a24-44a5-90a5-9c7e463ea70f",
+      "prompt_file": "prompts/speech_10.txt",
+      "auto_qc": {
+        "pass": true,
+        "problems": [],
+        "head": {
+          "yaw_deg": 7.4,
+          "pitch_deg": 11.78,
+          "roll_deg": 8.39,
+          "shift_eye": 0.2,
+          "scale_pct": 3.25
+        },
+        "transcript": "We will walk along the river and look for the red building. When we arrive, Laura can tell us where the little room is and we will rest a while.",
+        "voiced_s": [
+          0.5,
+          8.75
+        ]
+      },
+      "manual": null,
+      "identity_note": null,
+      "selected": true,
+      "ready_for_preprocessing": true
+    },
+    {
+      "id": "speech_11",
+      "kind": "speech",
+      "split": "train",
+      "dialogue": "Thank you for joining me today. Tell me about your plans, and we can work through the details together, one step at a time, until everything feels clear.",
+      "file": "native/speech_11.mp4",
+      "sha256": "a812ea7eeb0db970c1fb5cbbb1792e7443001b53d42311b1541786c812da45b3",
+      "bytes": 4879798,
+      "muse_thread": "https://muse.ai/thread/21ee8398-6268-4471-8a74-324d7535a6a6",
+      "prompt_file": "prompts/speech_11.txt",
+      "auto_qc": {
+        "pass": true,
+        "problems": [],
+        "head": {
+          "yaw_deg": 8.49,
+          "pitch_deg": 11.52,
+          "roll_deg": 11.0,
+          "shift_eye": 0.15,
+          "scale_pct": 3.12
+        },
+        "transcript": "Thank you for joining me today. Tell me about your plans and we can work through the details together one step at a time until everything feels clear.",
+        "voiced_s": [
+          0.25,
+          9.5
+        ]
+      },
+      "manual": null,
+      "identity_note": null,
+      "selected": true,
+      "ready_for_preprocessing": true
+    },
+    {
+      "id": "speech_12",
+      "kind": "speech",
+      "split": "validation",
+      "dialogue": "Are you ready to begin? Take a moment. Then tell me what happened this morning, and we can decide what to do next together, without any hurry at all.",
+      "file": "native/speech_12.mp4",
+      "sha256": "2c0c5e1d4693319e54fe5889ab301c7eebac348335452050509fb2d7cd43d2a6",
+      "bytes": 5072450,
+      "muse_thread": "https://muse.ai/thread/0ed2f106-0511-4287-b957-414cf0c451ed",
+      "prompt_file": "prompts/speech_12.txt",
+      "auto_qc": {
+        "pass": true,
+        "problems": [],
+        "head": {
+          "yaw_deg": 4.28,
+          "pitch_deg": 10.11,
+          "roll_deg": 8.76,
+          "shift_eye": 0.18,
+          "scale_pct": 3.13
+        },
+        "transcript": "Are you ready to begin? Take a moment. Then tell me what happened this morning and we can decide what to do next together without any hurry at all.",
+        "voiced_s": [
+          0.5,
+          9.25
+        ]
+      },
+      "manual": null,
+      "identity_note": null,
+      "selected": true,
+      "ready_for_preprocessing": true
+    },
+    {
+      "id": "speech_25",
+      "kind": "speech",
+      "split": "train",
+      "dialogue": "Pack the paper box beside my backpack. Before Monday, bring the blue mug home and remind me to buy more milk, maybe some plums, and a bit of butter.",
+      "file": "native/speech_25.mp4",
+      "sha256": "b8078c85fa29995fd3f6aea90a3f4110959d321eba79ca8c7c896dee1ac915a3",
+      "bytes": 4965849,
+      "muse_thread": "https://muse.ai/thread/19e17c23-582a-4472-8f47-cd41984c3301",
+      "prompt_file": "prompts/speech_25.txt",
+      "auto_qc": {
+        "pass": false,
+        "problems": [
+          "head roll_deg"
+        ],
+        "head": {
+          "yaw_deg": 7.53,
+          "pitch_deg": 12.29,
+          "roll_deg": 12.29,
+          "shift_eye": 0.19,
+          "scale_pct": 4.31
+        },
+        "transcript": "Pack the paper box beside my backpack. Before Monday, bring the blue mug home and remind me to buy more milk, maybe some plums and a bit of butter.",
+        "voiced_s": [
+          0.0,
+          9.75
+        ]
+      },
+      "manual": {
+        "decision": "accept",
+        "note": "auto roll 12.3 > 12 marginally; head sheet frontal with small tilts; wording exact",
+        "by": "Claude (sheet review), pending user review",
+        "at": "2026-10-21T19:56:14"
+      },
+      "identity_note": null,
+      "selected": true,
+      "ready_for_preprocessing": true
+    },
+    {
+      "id": "speech_26",
+      "kind": "speech",
+      "split": "train",
+      "dialogue": "The ferry leaves after five, so we have enough time. Find your gloves, fill the flask, and follow me down the path to the far end of the pier.",
+      "file": "native/speech_26.mp4",
+      "sha256": "62e0307ec13b76d0a716a2614166f8d8172a7334df31166246f2b3502a626d61",
+      "bytes": 5052693,
+      "muse_thread": "https://muse.ai/thread/53a50685-a10a-4550-b33b-b8739d026584",
+      "prompt_file": "prompts/speech_26.txt",
+      "auto_qc": {
+        "pass": true,
+        "problems": [],
+        "head": {
+          "yaw_deg": 4.94,
+          "pitch_deg": 9.47,
+          "roll_deg": 10.26,
+          "shift_eye": 0.21,
+          "scale_pct": 3.71
+        },
+        "transcript": "The ferry leaves after 5, so we have enough time. Find your gloves, fill the flask, and follow me down the path to the far end of the pier.",
+        "voiced_s": [
+          0.25,
+          10.0
+        ]
+      },
+      "manual": null,
+      "identity_note": null,
+      "selected": true,
+      "ready_for_preprocessing": true
+    },
+    {
+      "id": "speech_27",
+      "kind": "speech",
+      "split": "train",
+      "dialogue": "Please leave the envelope by the front window. Move the heavy basket carefully, and give me a moment to finish my breakfast before we leave for the market.",
+      "file": "native/speech_27.mp4",
+      "sha256": "7fbf8bf1cf91e1f22834141fdc02dd65c5df0219c0ed2416aa1ff538d2c31e4a",
+      "bytes": 4927195,
+      "muse_thread": "https://muse.ai/thread/1400d787-8a23-450f-a08a-283f759b65ff",
+      "prompt_file": "prompts/speech_27.txt",
+      "auto_qc": {
+        "pass": true,
+        "problems": [],
+        "head": {
+          "yaw_deg": 4.18,
+          "pitch_deg": 13.31,
+          "roll_deg": 7.2,
+          "shift_eye": 0.17,
+          "scale_pct": 2.27
+        },
+        "transcript": "Please leave the envelope by the front window. Move the heavy basket carefully and give me a moment to finish my breakfast before we leave for the market.",
+        "voiced_s": [
+          0.5,
+          8.75
+        ]
+      },
+      "manual": null,
+      "identity_note": "hair renders lighter/redder brown, warmer overall colour",
+      "selected": true,
+      "ready_for_preprocessing": true
+    },
+    {
+      "id": "speech_28",
+      "kind": "speech",
+      "split": "train",
+      "dialogue": "Those thin curtains let the sunlight through. I think the room feels brighter now, and there is space for another small table, maybe with three chairs by the wall.",
+      "file": "native/speech_28.mp4",
+      "sha256": "ba5bf81493dfd44756e6a844ec2faeaff1898a89e280544783b1dcb34f434c8c",
+      "bytes": 4986001,
+      "muse_thread": "https://muse.ai/thread/2729bd62-f6bc-4559-991f-8da59a2ac076",
+      "prompt_file": "prompts/speech_28.txt",
+      "auto_qc": {
+        "pass": true,
+        "problems": [],
+        "head": {
+          "yaw_deg": 8.14,
+          "pitch_deg": 8.63,
+          "roll_deg": 6.24,
+          "shift_eye": 0.14,
+          "scale_pct": 2.87
+        },
+        "transcript": "Those thin curtains let the sunlight through. I think the room feels brighter now, and there is space for another small table, maybe with three chairs by the wall.",
+        "voiced_s": [
+          0.0,
+          10.0
+        ]
+      },
+      "manual": null,
+      "identity_note": null,
+      "selected": true,
+      "ready_for_preprocessing": true
+    },
+    {
+      "id": "speech_29",
+      "kind": "speech",
+      "split": "train",
+      "dialogue": "These oranges smell fresh, and the lemons look nice. Choose six pieces for the guests, then place the rest beside the sink and rinse the glass bowls for later.",
+      "file": "native/speech_29.mp4",
+      "sha256": "e7798bb69260700e43f31227914940f8a060591127ca5021431daf841ebc3c4e",
+      "bytes": 4936074,
+      "muse_thread": "https://muse.ai/thread/789d3796-b5e7-4fcb-9bfb-1a2ff378c4e9",
+      "prompt_file": "prompts/speech_29.txt",
+      "auto_qc": {
+        "pass": false,
+        "problems": [
+          "head yaw_deg"
+        ],
+        "head": {
+          "yaw_deg": 10.26,
+          "pitch_deg": 7.82,
+          "roll_deg": 9.61,
+          "shift_eye": 0.24,
+          "scale_pct": 3.23
+        },
+        "transcript": "These oranges smell fresh and the lemons look nice. Choose six pieces for the guests, then place the rest beside the sink and rinse the glass bowls for later.",
+        "voiced_s": [
+          0.5,
+          9.5
+        ]
+      },
+      "manual": {
+        "decision": "accept",
+        "note": "auto yaw 10.26 > 10 marginally; head sheet frontal and steady; wording exact",
+        "by": "Claude (sheet review), pending user review",
+        "at": "2026-10-21T20:03:52"
+      },
+      "identity_note": "hair renders lighter brown",
+      "selected": true,
+      "ready_for_preprocessing": true
+    },
+    {
+      "id": "speech_30",
+      "kind": "speech",
+      "split": "train",
+      "dialogue": "The chef usually measures each portion before serving lunch. Choose a dish you enjoy, and share your suggestion with the manager tomorrow at the usual meeting.",
+      "file": "native/speech_30.mp4",
+      "sha256": "faf71fb338048eaa4b08e439c5295e1dbf1554da2853ce882d4d6e3ad1c30470",
+      "bytes": 4914616,
+      "muse_thread": "https://muse.ai/thread/e0c9548c-908b-45e6-b982-88540e9d3c6f",
+      "prompt_file": "prompts/speech_30.txt",
+      "auto_qc": {
+        "pass": true,
+        "problems": [],
+        "head": {
+          "yaw_deg": 8.45,
+          "pitch_deg": 8.9,
+          "roll_deg": 10.06,
+          "shift_eye": 0.14,
+          "scale_pct": 2.3
+        },
+        "transcript": "The chef usually measures each portion before serving lunch. Choose a dish you enjoy and share your suggestion with the manager tomorrow at the usual meeting.",
+        "voiced_s": [
+          0.25,
+          9.0
+        ]
+      },
+      "manual": null,
+      "identity_note": null,
+      "selected": true,
+      "ready_for_preprocessing": true
+    },
+    {
+      "id": "speech_31",
+      "kind": "speech",
+      "split": "train",
+      "dialogue": "The little bell rings when the green light appears. Keep the lid beside the shelf, and let me see which piece fits, then we will lock the lid.",
+      "file": "native/speech_31.mp4",
+      "sha256": "63c7891bde90aff4981aaa7eafc5244ea84a15d741654bb4ea559b155c39fe38",
+      "bytes": 4760580,
+      "muse_thread": "https://muse.ai/thread/a6769d04-b7fa-4472-a963-2d195c1ee930",
+      "prompt_file": "prompts/speech_31.txt",
+      "auto_qc": {
+        "pass": true,
+        "problems": [],
+        "head": {
+          "yaw_deg": 4.82,
+          "pitch_deg": 9.66,
+          "roll_deg": 6.72,
+          "shift_eye": 0.16,
+          "scale_pct": 2.76
+        },
+        "transcript": "The little bell rings when the green light appears. Keep the lid beside the shelf and let me see which piece fits, then we will lock the lid.",
+        "voiced_s": [
+          0.5,
+          10.0
+        ]
+      },
+      "manual": null,
+      "identity_note": null,
+      "selected": true,
+      "ready_for_preprocessing": true
+    },
+    {
+      "id": "speech_32",
+      "kind": "speech",
+      "split": "train",
+      "dialogue": "Sam left his hat on the counter after lunch. Our mother asked us to pack the cups and carry the basket upstairs, and then sweep the back porch.",
+      "file": "native/speech_32.mp4",
+      "sha256": "03de52658c72aa9793c89ec3b6e108f5d4d9dc25a09ad0ed4c7877bc2966471f",
+      "bytes": 4526806,
+      "muse_thread": "https://muse.ai/thread/b2f4a32f-4283-4b61-b154-80fae72fe857",
+      "prompt_file": "prompts/speech_32.txt",
+      "auto_qc": {
+        "pass": true,
+        "problems": [],
+        "head": {
+          "yaw_deg": 4.96,
+          "pitch_deg": 4.19,
+          "roll_deg": 5.3,
+          "shift_eye": 0.18,
+          "scale_pct": 3.36
+        },
+        "transcript": "Sam left his hat on the counter after lunch. Our mother asked us to pack the cups and carry the basket upstairs and then sweep the back porch.",
+        "voiced_s": [
+          0.5,
+          10.0
+        ]
+      },
+      "manual": null,
+      "identity_note": null,
+      "selected": true,
+      "ready_for_preprocessing": true
+    },
+    {
+      "id": "speech_33",
+      "kind": "speech",
+      "split": "train",
+      "dialogue": "The soup should cool before you taste it. Put your spoon on the wooden tray, and let the cook know how it tastes, whether it needs more salt or pepper.",
+      "file": "native/speech_33.mp4",
+      "sha256": "bd60de84b003f743bb7ea5f97450467ad71be56bea92b4ff6fadf6edd145d9fd",
+      "bytes": 4490722,
+      "muse_thread": "https://muse.ai/thread/f88a2235-7d2a-496f-b51c-ff2024b68935",
+      "prompt_file": "prompts/speech_33.txt",
+      "auto_qc": {
+        "pass": true,
+        "problems": [],
+        "head": {
+          "yaw_deg": 7.02,
+          "pitch_deg": 9.43,
+          "roll_deg": 11.77,
+          "shift_eye": 0.22,
+          "scale_pct": 3.18
+        },
+        "transcript": "The soup should cool before you taste it. Put your spoon on the wooden tray and let the cook know how it tastes, whether it needs more salt or pepper.",
+        "voiced_s": [
+          0.25,
+          9.25
+        ]
+      },
+      "manual": null,
+      "identity_note": null,
+      "selected": true,
+      "ready_for_preprocessing": true
+    },
+    {
+      "id": "speech_34",
+      "kind": "speech",
+      "split": "train",
+      "dialogue": "Enjoy the bright afternoon while the clouds are passing. I might ride my bike around the square and buy a small gift tonight for my oldest friend.",
+      "file": "native/speech_34.mp4",
+      "sha256": "54a050206adffefbe9325588e91517fa3e274da555b95e60d0f3041ec9d3201e",
+      "bytes": 5452204,
+      "muse_thread": "https://muse.ai/thread/2ef2ca4f-9226-4736-bb53-a4238cbfa8a8",
+      "prompt_file": "prompts/speech_34.txt",
+      "auto_qc": {
+        "pass": true,
+        "problems": [],
+        "head": {
+          "yaw_deg": 7.49,
+          "pitch_deg": 6.05,
+          "roll_deg": 9.36,
+          "shift_eye": 0.22,
+          "scale_pct": 2.24
+        },
+        "transcript": "Enjoy the bright afternoon while the clouds are passing. I might ride my bike around the square and buy a small gift tonight for my oldest friend.",
+        "voiced_s": [
+          0.5,
+          8.75
+        ]
+      },
+      "manual": null,
+      "identity_note": null,
+      "selected": true,
+      "ready_for_preprocessing": true
+    },
+    {
+      "id": "speech_35",
+      "kind": "speech",
+      "split": "train",
+      "dialogue": "We walked around the lake before the rain began. Riley remembered the narrow road, and led us toward a warm little bakery nearby, where we waited out the storm.",
+      "file": "native/speech_35.mp4",
+      "sha256": "ab7dd0adcfd77f97ddbd55c40d54d63b9640a79af7b83baca2729a4bc8eaab49",
+      "bytes": 5170284,
+      "muse_thread": "https://muse.ai/thread/ffaeb9a0-b3f1-4f67-a7a8-8be1a59bfa30",
+      "prompt_file": "prompts/speech_35.txt",
+      "auto_qc": {
+        "pass": true,
+        "problems": [],
+        "head": {
+          "yaw_deg": 8.33,
+          "pitch_deg": 10.07,
+          "roll_deg": 8.2,
+          "shift_eye": 0.14,
+          "scale_pct": 3.56
+        },
+        "transcript": "We walked around the lake before the rain began. Riley remembered the narrow road and led us toward a warm little bakery nearby where we waited out the storm.",
+        "voiced_s": [
+          0.5,
+          9.75
+        ]
+      },
+      "manual": null,
+      "identity_note": "beard renders noticeably greyer (looks older)",
+      "selected": true,
+      "ready_for_preprocessing": true
+    },
+    {
+      "id": "speech_36",
+      "kind": "speech",
+      "split": "validation",
+      "dialogue": "Would you prefer coffee or tea? Either is fine. Let me know your choice, and we can enjoy a few quiet minutes together before the others arrive.",
+      "file": "native/speech_36.mp4",
+      "sha256": "fa7417c2cadf82da249ea049c82ff1914f7ee4f4f7b89d8c942665ccae316969",
+      "bytes": 4486782,
+      "muse_thread": "https://muse.ai/thread/ba6bbe5a-602c-4670-a46c-86055cb456bc",
+      "prompt_file": "prompts/speech_36.txt",
+      "auto_qc": {
+        "pass": false,
+        "problems": [
+          "head yaw_deg,roll_deg"
+        ],
+        "head": {
+          "yaw_deg": 10.92,
+          "pitch_deg": 11.5,
+          "roll_deg": 12.81,
+          "shift_eye": 0.17,
+          "scale_pct": 3.44
+        },
+        "transcript": "Would you prefer coffee or tea? Either is fine. Let me know your choice and we can enjoy a few quiet minutes together before the others arrive.",
+        "voiced_s": [
+          0.5,
+          8.75
+        ]
+      },
+      "manual": {
+        "decision": "accept",
+        "note": "take1 kept: auto yaw 10.9 / roll 12.8 marginally over; head sheet frontal with small tilts. Retake (take2) was worse: chin lift, pitch 17. Validation clip.",
+        "by": "Claude (sheet review), pending user review",
+        "at": "2026-10-21T20:12:00"
+      },
+      "identity_note": null,
+      "selected": true,
+      "ready_for_preprocessing": true
+    },
+    {
+      "id": "idle_waiting",
+      "kind": "idle",
+      "split": null,
+      "dialogue": null,
+      "file": "native/idle_waiting.mp4",
+      "sha256": "eed868b2f4a52edd392eed6585c97cecda5359ae1de9cf8e6567607f957593cc",
+      "bytes": 4446078,
+      "muse_thread": "https://muse.ai/thread/3741e6ed-cbb9-4c43-928a-d97805ec47b4",
+      "prompt_file": "prompts/idle_waiting.txt",
+      "auto_qc": {
+        "pass": true,
+        "problems": [],
+        "head": {
+          "yaw_deg": 4.04,
+          "pitch_deg": 6.69,
+          "roll_deg": 1.47,
+          "shift_eye": 0.05,
+          "scale_pct": 2.11
+        },
+        "transcript": null,
+        "voiced_s": [
+          0.5,
+          10.0
+        ]
+      },
+      "manual": null,
+      "identity_note": null,
+      "selected": true,
+      "ready_for_preprocessing": false
+    },
+    {
+      "id": "idle_listening",
+      "kind": "idle",
+      "split": null,
+      "dialogue": null,
+      "file": "native/idle_listening.mp4",
+      "sha256": "38781e9c07c6ad14956bf32ec54c74110caf63efa4b998fbd921d7a4d62593aa",
+      "bytes": 5182558,
+      "muse_thread": "https://muse.ai/thread/7bd1c099-b090-4107-a350-bf24ab54d65e",
+      "prompt_file": "prompts/idle_listening.txt",
+      "auto_qc": {
+        "pass": true,
+        "problems": [],
+        "head": {
+          "yaw_deg": 2.9,
+          "pitch_deg": 9.76,
+          "roll_deg": 2.26,
+          "shift_eye": 0.15,
+          "scale_pct": 3.47
+        },
+        "transcript": null,
+        "voiced_s": [
+          0.25,
+          10.0
+        ]
+      },
+      "manual": null,
+      "identity_note": null,
+      "selected": true,
+      "ready_for_preprocessing": false
+    }
+  ]
+}

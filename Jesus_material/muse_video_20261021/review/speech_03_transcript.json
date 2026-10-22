@@ -1,0 +1,9 @@
+{
+  "id": "speech_03",
+  "expected_dialogue": "I think these three things belong together. Put them over there, beside the other books, and then we can talk through the plan.",
+  "transcript": " I think these three things belong together. Put them over there, beside the other books, and then we can talk through the plan. And then we can talk through the plan.",
+  "word_error_rate": 0.34782608695652173,
+  "requires_manual_wording_review": true,
+  "wav_sha256": "03c18514a99813277a55ce92754225f59453e39073cef5e0218cd57f991c7ef0",
+  "method": "local cached Whisper-tiny, English transcription; ASR error is possible; not a lip-sync or voice-identity verification"
+}

@@ -1,0 +1,630 @@
+{
+  "speech_03": {
+    "id": "speech_03",
+    "size": [
+      768,
+      1152
+    ],
+    "duration": 10.0,
+    "head": {
+      "yaw_deg": 5.23,
+      "pitch_deg": 7.91,
+      "roll_deg": 11.72,
+      "shift_eye": 0.21,
+      "scale_pct": 2.38
+    },
+    "voiced_s": [
+      0.5,
+      9.25
+    ],
+    "transcript": "I think these three things belong together. Put them over there, beside the other books, and then we can talk through the whole plan one step at a time.",
+    "tail_transcript": "the whole plan, one step at a time.",
+    "wer": 0.0,
+    "problems": [],
+    "auto_pass": true
+  },
+  "idle_waiting": {
+    "id": "idle_waiting",
+    "size": [
+      768,
+      1152
+    ],
+    "duration": 10.0,
+    "head": {
+      "yaw_deg": 4.04,
+      "pitch_deg": 6.69,
+      "roll_deg": 1.47,
+      "shift_eye": 0.05,
+      "scale_pct": 2.11
+    },
+    "voiced_s": [
+      0.5,
+      10.0
+    ],
+    "problems": [],
+    "auto_pass": true
+  },
+  "speech_01": {
+    "id": "speech_01",
+    "size": [
+      768,
+      1152
+    ],
+    "duration": 10.0,
+    "head": {
+      "yaw_deg": 6.45,
+      "pitch_deg": 10.93,
+      "roll_deg": 8.17,
+      "shift_eye": 0.23,
+      "scale_pct": 3.08
+    },
+    "voiced_s": [
+      0.25,
+      10.0
+    ],
+    "transcript": "Please bring my blue bag before we leave. Maybe we can buy some bread, make a simple meal, and meet Ben by the park before the bus comes back.",
+    "tail_transcript": "park before the bus comes back.",
+    "wer": 0.0,
+    "problems": [],
+    "auto_pass": true
+  },
+  "speech_02": {
+    "id": "speech_02",
+    "size": [
+      768,
+      1152
+    ],
+    "duration": 10.0,
+    "head": {
+      "yaw_deg": 8.51,
+      "pitch_deg": 12.04,
+      "roll_deg": 6.49,
+      "shift_eye": 0.12,
+      "scale_pct": 3.11
+    },
+    "voiced_s": [
+      0.0,
+      9.5
+    ],
+    "transcript": "Five friends visited the village on Friday. We found fresh flowers, shared a favorite meal, and enjoyed a very peaceful evening together before driving home through the soft fog.",
+    "tail_transcript": "together before driving home through the soft fog.",
+    "wer": 0.0,
+    "problems": [],
+    "auto_pass": true
+  },
+  "speech_04": {
+    "id": "speech_04",
+    "size": [
+      768,
+      1152
+    ],
+    "duration": 10.0,
+    "head": {
+      "yaw_deg": 11.8,
+      "pitch_deg": 8.35,
+      "roll_deg": 7.01,
+      "shift_eye": 0.15,
+      "scale_pct": 4.97
+    },
+    "voiced_s": [
+      0.25,
+      8.75
+    ],
+    "transcript": "Sarah says the streets are busy this morning. We can visit the stores, choose some supplies, and discuss our plans as we walk slowly past the square at noon.",
+    "tail_transcript": "slowly pass the square at noon.",
+    "wer": 0.0,
+    "problems": [
+      "head yaw_deg"
+    ],
+    "auto_pass": false
+  },
+  "speech_05": {
+    "id": "speech_05",
+    "size": [
+      768,
+      1152
+    ],
+    "duration": 10.0,
+    "head": {
+      "yaw_deg": 7.1,
+      "pitch_deg": 7.27,
+      "roll_deg": 6.96,
+      "shift_eye": 0.21,
+      "scale_pct": 3.24
+    },
+    "voiced_s": [
+      0.5,
+      8.75
+    ],
+    "transcript": "Shall we choose a jacket for James? We can measure the shelves, check the usual sizes, and share our decision before lunch today, then change it if you wish.",
+    "tail_transcript": "today then change it if you wish.",
+    "wer": 0.069,
+    "problems": [],
+    "auto_pass": true
+  },
+  "idle_listening": {
+    "id": "idle_listening",
+    "size": [
+      768,
+      1152
+    ],
+    "duration": 10.0,
+    "head": {
+      "yaw_deg": 2.9,
+      "pitch_deg": 9.76,
+      "roll_deg": 2.26,
+      "shift_eye": 0.15,
+      "scale_pct": 3.47
+    },
+    "voiced_s": [
+      0.25,
+      10.0
+    ],
+    "problems": [],
+    "auto_pass": true
+  },
+  "speech_06": {
+    "id": "speech_06",
+    "size": [
+      768,
+      1152
+    ],
+    "duration": 10.0,
+    "head": {
+      "yaw_deg": 6.17,
+      "pitch_deg": 10.04,
+      "roll_deg": 9.55,
+      "shift_eye": 0.18,
+      "scale_pct": 3.97
+    },
+    "voiced_s": [
+      0.25,
+      10.0
+    ],
+    "transcript": "Please sit here and tell me what you see. The green seats look different in this light, but the red desk is clear and the window seems a little brighter.",
+    "tail_transcript": "And the window seems a little brighter.",
+    "wer": 0.0,
+    "problems": [],
+    "auto_pass": true
+  },
+  "speech_09": {
+    "id": "speech_09",
+    "size": [
+      768,
+      1152
+    ],
+    "duration": 10.0,
+    "head": {
+      "yaw_deg": 7.82,
+      "pitch_deg": 6.96,
+      "roll_deg": 6.93,
+      "shift_eye": 0.13,
+      "scale_pct": 2.26
+    },
+    "voiced_s": [
+      0.25,
+      9.0
+    ],
+    "transcript": "Now is a good time to try another choice. I found a quiet house outside town and I would like to show you the garden and the old oak tree.",
+    "tail_transcript": "the garden and the old oak tree.",
+    "wer": 0.0,
+    "problems": [],
+    "auto_pass": true
+  },
+  "speech_07": {
+    "id": "speech_07",
+    "size": [
+      768,
+      1152
+    ],
+    "duration": 10.0,
+    "head": {
+      "yaw_deg": 4.15,
+      "pitch_deg": 8.89,
+      "roll_deg": 6.88,
+      "shift_eye": 0.16,
+      "scale_pct": 2.89
+    },
+    "voiced_s": [
+      0.5,
+      10.0
+    ],
+    "transcript": "My father left a black bag beside the cup. After lunch, we can walk past the shop and ask about the map together and then catch the last tram.",
+    "tail_transcript": "and then catch the last tram.",
+    "wer": 0.0,
+    "problems": [],
+    "auto_pass": true
+  },
+  "speech_08": {
+    "id": "speech_08",
+    "size": [
+      768,
+      1152
+    ],
+    "duration": 10.0,
+    "head": {
+      "yaw_deg": 10.67,
+      "pitch_deg": 7.61,
+      "roll_deg": 11.32,
+      "shift_eye": 0.24,
+      "scale_pct": 3.44
+    },
+    "voiced_s": [
+      0.5,
+      10.0
+    ],
+    "transcript": "You could choose the blue room with a good view. We can go home soon, cook some food and enjoy a quiet evening, then look at the moon.",
+    "tail_transcript": "evening, then look at the moon.",
+    "wer": 0.0,
+    "problems": [
+      "head yaw_deg"
+    ],
+    "auto_pass": false
+  },
+  "speech_10": {
+    "id": "speech_10",
+    "size": [
+      768,
+      1152
+    ],
+    "duration": 10.0,
+    "head": {
+      "yaw_deg": 7.4,
+      "pitch_deg": 11.78,
+      "roll_deg": 8.39,
+      "shift_eye": 0.2,
+      "scale_pct": 3.25
+    },
+    "voiced_s": [
+      0.5,
+      8.75
+    ],
+    "transcript": "We will walk along the river and look for the red building. When we arrive, Laura can tell us where the little room is and we will rest a while.",
+    "tail_transcript": "and we will rest a while.",
+    "wer": 0.0,
+    "problems": [],
+    "auto_pass": true
+  },
+  "speech_11": {
+    "id": "speech_11",
+    "size": [
+      768,
+      1152
+    ],
+    "duration": 10.0,
+    "head": {
+      "yaw_deg": 8.49,
+      "pitch_deg": 11.52,
+      "roll_deg": 11.0,
+      "shift_eye": 0.15,
+      "scale_pct": 3.12
+    },
+    "voiced_s": [
+      0.25,
+      9.5
+    ],
+    "transcript": "Thank you for joining me today. Tell me about your plans and we can work through the details together one step at a time until everything feels clear.",
+    "tail_transcript": "until everything feels clear.",
+    "wer": 0.0,
+    "problems": [],
+    "auto_pass": true
+  },
+  "speech_12": {
+    "id": "speech_12",
+    "size": [
+      768,
+      1152
+    ],
+    "duration": 10.0,
+    "head": {
+      "yaw_deg": 4.28,
+      "pitch_deg": 10.11,
+      "roll_deg": 8.76,
+      "shift_eye": 0.18,
+      "scale_pct": 3.13
+    },
+    "voiced_s": [
+      0.5,
+      9.25
+    ],
+    "transcript": "Are you ready to begin? Take a moment. Then tell me what happened this morning and we can decide what to do next together without any hurry at all.",
+    "tail_transcript": "together without any hurry at all.",
+    "wer": 0.0,
+    "problems": [],
+    "auto_pass": true
+  },
+  "speech_25": {
+    "id": "speech_25",
+    "size": [
+      768,
+      1152
+    ],
+    "duration": 10.0,
+    "head": {
+      "yaw_deg": 7.53,
+      "pitch_deg": 12.29,
+      "roll_deg": 12.29,
+      "shift_eye": 0.19,
+      "scale_pct": 4.31
+    },
+    "voiced_s": [
+      0.0,
+      9.75
+    ],
+    "transcript": "Pack the paper box beside my backpack. Before Monday, bring the blue mug home and remind me to buy more milk, maybe some plums and a bit of butter.",
+    "tail_transcript": "and a bit of butter.",
+    "wer": 0.0,
+    "problems": [
+      "head roll_deg"
+    ],
+    "auto_pass": false
+  },
+  "speech_26": {
+    "id": "speech_26",
+    "size": [
+      768,
+      1152
+    ],
+    "duration": 10.0,
+    "head": {
+      "yaw_deg": 4.94,
+      "pitch_deg": 9.47,
+      "roll_deg": 10.26,
+      "shift_eye": 0.21,
+      "scale_pct": 3.71
+    },
+    "voiced_s": [
+      0.25,
+      10.0
+    ],
+    "transcript": "The ferry leaves after 5, so we have enough time. Find your gloves, fill the flask, and follow me down the path to the far end of the pier.",
+    "tail_transcript": "path to the far end of the pier.",
+    "wer": 0.034,
+    "problems": [],
+    "auto_pass": true
+  },
+  "speech_27": {
+    "id": "speech_27",
+    "size": [
+      768,
+      1152
+    ],
+    "duration": 10.0,
+    "head": {
+      "yaw_deg": 4.18,
+      "pitch_deg": 13.31,
+      "roll_deg": 7.2,
+      "shift_eye": 0.17,
+      "scale_pct": 2.27
+    },
+    "voiced_s": [
+      0.5,
+      8.75
+    ],
+    "transcript": "Please leave the envelope by the front window. Move the heavy basket carefully and give me a moment to finish my breakfast before we leave for the market.",
+    "tail_transcript": "breakfast before we leave for the market.",
+    "wer": 0.0,
+    "problems": [],
+    "auto_pass": true
+  },
+  "speech_28": {
+    "id": "speech_28",
+    "size": [
+      768,
+      1152
+    ],
+    "duration": 10.0,
+    "head": {
+      "yaw_deg": 8.14,
+      "pitch_deg": 8.63,
+      "roll_deg": 6.24,
+      "shift_eye": 0.14,
+      "scale_pct": 2.87
+    },
+    "voiced_s": [
+      0.0,
+      10.0
+    ],
+    "transcript": "Those thin curtains let the sunlight through. I think the room feels brighter now, and there is space for another small table, maybe with three chairs by the wall.",
+    "tail_transcript": "Maybe with three chairs by the wall.",
+    "wer": 0.0,
+    "problems": [],
+    "auto_pass": true
+  },
+  "speech_29": {
+    "id": "speech_29",
+    "size": [
+      768,
+      1152
+    ],
+    "duration": 10.0,
+    "head": {
+      "yaw_deg": 10.26,
+      "pitch_deg": 7.82,
+      "roll_deg": 9.61,
+      "shift_eye": 0.24,
+      "scale_pct": 3.23
+    },
+    "voiced_s": [
+      0.5,
+      9.5
+    ],
+    "transcript": "These oranges smell fresh and the lemons look nice. Choose six pieces for the guests, then place the rest beside the sink and rinse the glass bowls for later.",
+    "tail_transcript": "side the sink and rinse the glass bowls for later.",
+    "wer": 0.0,
+    "problems": [
+      "head yaw_deg"
+    ],
+    "auto_pass": false
+  },
+  "speech_30": {
+    "id": "speech_30",
+    "size": [
+      768,
+      1152
+    ],
+    "duration": 10.0,
+    "head": {
+      "yaw_deg": 8.45,
+      "pitch_deg": 8.9,
+      "roll_deg": 10.06,
+      "shift_eye": 0.14,
+      "scale_pct": 2.3
+    },
+    "voiced_s": [
+      0.25,
+      9.0
+    ],
+    "transcript": "The chef usually measures each portion before serving lunch. Choose a dish you enjoy and share your suggestion with the manager tomorrow at the usual meeting.",
+    "tail_transcript": "tomorrow at the usual meeting.",
+    "wer": 0.0,
+    "problems": [],
+    "auto_pass": true
+  },
+  "speech_31": {
+    "id": "speech_31",
+    "size": [
+      768,
+      1152
+    ],
+    "duration": 10.0,
+    "head": {
+      "yaw_deg": 4.82,
+      "pitch_deg": 9.66,
+      "roll_deg": 6.72,
+      "shift_eye": 0.16,
+      "scale_pct": 2.76
+    },
+    "voiced_s": [
+      0.5,
+      10.0
+    ],
+    "transcript": "The little bell rings when the green light appears. Keep the lid beside the shelf and let me see which piece fits, then we will lock the lid.",
+    "tail_transcript": "piece fits, then we will lock the lid.",
+    "wer": 0.0,
+    "problems": [],
+    "auto_pass": true
+  },
+  "speech_32": {
+    "id": "speech_32",
+    "size": [
+      768,
+      1152
+    ],
+    "duration": 10.0,
+    "head": {
+      "yaw_deg": 4.96,
+      "pitch_deg": 4.19,
+      "roll_deg": 5.3,
+      "shift_eye": 0.18,
+      "scale_pct": 3.36
+    },
+    "voiced_s": [
+      0.5,
+      10.0
+    ],
+    "transcript": "Sam left his hat on the counter after lunch. Our mother asked us to pack the cups and carry the basket upstairs and then sweep the back porch.",
+    "tail_transcript": "and then sweep the back porch.",
+    "wer": 0.0,
+    "problems": [],
+    "auto_pass": true
+  },
+  "speech_33": {
+    "id": "speech_33",
+    "size": [
+      768,
+      1152
+    ],
+    "duration": 10.0,
+    "head": {
+      "yaw_deg": 7.02,
+      "pitch_deg": 9.43,
+      "roll_deg": 11.77,
+      "shift_eye": 0.22,
+      "scale_pct": 3.18
+    },
+    "voiced_s": [
+      0.25,
+      9.25
+    ],
+    "transcript": "The soup should cool before you taste it. Put your spoon on the wooden tray and let the cook know how it tastes, whether it needs more salt or pepper.",
+    "tail_transcript": "whether it needs more salt or pepper.",
+    "wer": 0.0,
+    "problems": [],
+    "auto_pass": true
+  },
+  "speech_34": {
+    "id": "speech_34",
+    "size": [
+      768,
+      1152
+    ],
+    "duration": 10.0,
+    "head": {
+      "yaw_deg": 7.49,
+      "pitch_deg": 6.05,
+      "roll_deg": 9.36,
+      "shift_eye": 0.22,
+      "scale_pct": 2.24
+    },
+    "voiced_s": [
+      0.5,
+      8.75
+    ],
+    "transcript": "Enjoy the bright afternoon while the clouds are passing. I might ride my bike around the square and buy a small gift tonight for my oldest friend.",
+    "tail_transcript": "tonight for my oldest friend.",
+    "wer": 0.0,
+    "problems": [],
+    "auto_pass": true
+  },
+  "speech_35": {
+    "id": "speech_35",
+    "size": [
+      768,
+      1152
+    ],
+    "duration": 10.0,
+    "head": {
+      "yaw_deg": 8.33,
+      "pitch_deg": 10.07,
+      "roll_deg": 8.2,
+      "shift_eye": 0.14,
+      "scale_pct": 3.56
+    },
+    "voiced_s": [
+      0.5,
+      9.75
+    ],
+    "transcript": "We walked around the lake before the rain began. Riley remembered the narrow road and led us toward a warm little bakery nearby where we waited out the storm.",
+    "tail_transcript": "little bakery nearby, where we waited out the storm.",
+    "wer": 0.0,
+    "problems": [],
+    "auto_pass": true
+  },
+  "speech_36": {
+    "id": "speech_36",
+    "size": [
+      768,
+      1152
+    ],
+    "duration": 10.0,
+    "head": {
+      "yaw_deg": 10.92,
+      "pitch_deg": 11.5,
+      "roll_deg": 12.81,
+      "shift_eye": 0.17,
+      "scale_pct": 3.44
+    },
+    "voiced_s": [
+      0.5,
+      8.75
+    ],
+    "transcript": "Would you prefer coffee or tea? Either is fine. Let me know your choice and we can enjoy a few quiet minutes together before the others arrive.",
+    "tail_transcript": "minutes together before the others arrive.",
+    "wer": 0.0,
+    "problems": [
+      "head yaw_deg,roll_deg"
+    ],
+    "auto_pass": false
+  }
+}

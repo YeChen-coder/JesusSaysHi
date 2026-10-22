@@ -10,7 +10,10 @@ from data_utils.feather_hubert.feather_hubert import load_feather_hubert,get_fea
 from inference import load_model,prepare_model_input,paste_prediction
 from face_utils import reshape_audio_feat,gather_audio_window
 
-MODES={'fast':{'lookahead':0,'chunk_ms':40},'balanced':{'lookahead':10,'chunk_ms':80},'quality':{'lookahead':25,'chunk_ms':160}}
+MODES={'fast':{'lookahead':0,'chunk_ms':40},'balanced':{'lookahead':10,'chunk_ms':80},'quality':{'lookahead':25,'chunk_ms':160},
+       # Jesus model (2026-10-21) is trained on exactly this: 2 frames (80 ms) of future audio,
+       # window rows after index+2 zeroed even if more audio has arrived. Owner limit: <=100 ms.
+       'stream80':{'lookahead':2,'chunk_ms':40,'mask_after':2}}
 
 class Engine:
     def __init__(self,checkpoint='/work/checkpoints/last.pth',device='cuda',base_image='/work/data/base.jpg',base_landmarks='/work/data/base.lms'):

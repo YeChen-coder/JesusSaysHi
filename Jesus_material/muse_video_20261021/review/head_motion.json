@@ -1,0 +1,307 @@
+{
+  "idle_waiting": {
+    "frames": 240,
+    "detected": 240,
+    "eye_distance_px": 55.32112518596027,
+    "spread_p5_p95": {
+      "yaw_deg": 80.69,
+      "pitch_deg": 12.82,
+      "roll_deg": 13.94,
+      "shift_eye": 1.15,
+      "scale_pct": 19.35
+    },
+    "max_abs": {
+      "yaw_deg": 42.85,
+      "pitch_deg": 8.4,
+      "roll_deg": 7.42,
+      "shift_eye": 1.18,
+      "scale_pct": 18.36
+    },
+    "jitter_std": {
+      "yaw_deg": 0.32,
+      "pitch_deg": 1.14,
+      "roll_deg": 0.49,
+      "shift_eye": 0.03,
+      "scale_pct": 0.6
+    },
+    "limits": {
+      "yaw_deg": 8.0,
+      "pitch_deg": 8.0,
+      "roll_deg": 4.0,
+      "shift_eye": 0.35,
+      "scale_pct": 6.0
+    },
+    "fails": [
+      "yaw_deg",
+      "pitch_deg",
+      "roll_deg",
+      "shift_eye",
+      "scale_pct"
+    ],
+    "pass": false
+  },
+  "speech_01": {
+    "frames": 240,
+    "detected": 240,
+    "eye_distance_px": 55.592737207299315,
+    "spread_p5_p95": {
+      "yaw_deg": 11.69,
+      "pitch_deg": 8.72,
+      "roll_deg": 15.9,
+      "shift_eye": 0.38,
+      "scale_pct": 4.26
+    },
+    "max_abs": {
+      "yaw_deg": 9.64,
+      "pitch_deg": 7.14,
+      "roll_deg": 9.37,
+      "shift_eye": 0.39,
+      "scale_pct": 2.75
+    },
+    "jitter_std": {
+      "yaw_deg": 0.53,
+      "pitch_deg": 1.17,
+      "roll_deg": 0.5,
+      "shift_eye": 0.01,
+      "scale_pct": 0.7
+    },
+    "limits": {
+      "yaw_deg": 8.0,
+      "pitch_deg": 8.0,
+      "roll_deg": 4.0,
+      "shift_eye": 0.35,
+      "scale_pct": 6.0
+    },
+    "fails": [
+      "yaw_deg",
+      "pitch_deg",
+      "roll_deg",
+      "shift_eye"
+    ],
+    "pass": false
+  },
+  "speech_03": {
+    "frames": 240,
+    "detected": 240,
+    "eye_distance_px": 55.70612797696934,
+    "spread_p5_p95": {
+      "yaw_deg": 50.06,
+      "pitch_deg": 9.74,
+      "roll_deg": 16.56,
+      "shift_eye": 0.56,
+      "scale_pct": 17.39
+    },
+    "max_abs": {
+      "yaw_deg": 44.95,
+      "pitch_deg": 8.12,
+      "roll_deg": 11.23,
+      "shift_eye": 0.58,
+      "scale_pct": 16.64
+    },
+    "jitter_std": {
+      "yaw_deg": 0.57,
+      "pitch_deg": 1.39,
+      "roll_deg": 0.44,
+      "shift_eye": 0.02,
+      "scale_pct": 0.49
+    },
+    "limits": {
+      "yaw_deg": 8.0,
+      "pitch_deg": 8.0,
+      "roll_deg": 4.0,
+      "shift_eye": 0.35,
+      "scale_pct": 6.0
+    },
+    "fails": [
+      "yaw_deg",
+      "pitch_deg",
+      "roll_deg",
+      "shift_eye",
+      "scale_pct"
+    ],
+    "pass": false
+  },
+  "A_anchor": {
+    "frames": 240,
+    "detected": 240,
+    "eye_distance_px": 56.011521860881864,
+    "spread_p5_p95": {
+      "yaw_deg": 10.81,
+      "pitch_deg": 6.0,
+      "roll_deg": 7.01,
+      "shift_eye": 0.28,
+      "scale_pct": 3.59
+    },
+    "max_abs": {
+      "yaw_deg": 6.79,
+      "pitch_deg": 5.02,
+      "roll_deg": 5.0,
+      "shift_eye": 0.29,
+      "scale_pct": 2.3
+    },
+    "jitter_std": {
+      "yaw_deg": 0.41,
+      "pitch_deg": 1.05,
+      "roll_deg": 0.29,
+      "shift_eye": 0.01,
+      "scale_pct": 0.52
+    },
+    "limits": {
+      "yaw_deg": 8.0,
+      "pitch_deg": 8.0,
+      "roll_deg": 4.0,
+      "shift_eye": 0.35,
+      "scale_pct": 6.0
+    },
+    "fails": [
+      "yaw_deg",
+      "roll_deg"
+    ],
+    "pass": false
+  },
+  "B_still_photo": {
+    "frames": 240,
+    "detected": 240,
+    "eye_distance_px": 55.196093726454855,
+    "spread_p5_p95": {
+      "yaw_deg": 5.23,
+      "pitch_deg": 7.91,
+      "roll_deg": 11.72,
+      "shift_eye": 0.21,
+      "scale_pct": 2.38
+    },
+    "max_abs": {
+      "yaw_deg": 3.32,
+      "pitch_deg": 7.13,
+      "roll_deg": 7.62,
+      "shift_eye": 0.24,
+      "scale_pct": 1.89
+    },
+    "jitter_std": {
+      "yaw_deg": 0.63,
+      "pitch_deg": 1.1,
+      "roll_deg": 0.47,
+      "shift_eye": 0.02,
+      "scale_pct": 0.6
+    },
+    "limits": {
+      "yaw_deg": 8.0,
+      "pitch_deg": 8.0,
+      "roll_deg": 4.0,
+      "shift_eye": 0.35,
+      "scale_pct": 6.0
+    },
+    "fails": [
+      "roll_deg"
+    ],
+    "pass": false
+  },
+  "C_short": {
+    "frames": 240,
+    "detected": 240,
+    "eye_distance_px": 55.80648487485334,
+    "spread_p5_p95": {
+      "yaw_deg": 9.57,
+      "pitch_deg": 7.64,
+      "roll_deg": 11.88,
+      "shift_eye": 0.25,
+      "scale_pct": 4.44
+    },
+    "max_abs": {
+      "yaw_deg": 6.58,
+      "pitch_deg": 7.47,
+      "roll_deg": 8.3,
+      "shift_eye": 0.29,
+      "scale_pct": 2.91
+    },
+    "jitter_std": {
+      "yaw_deg": 0.58,
+      "pitch_deg": 1.09,
+      "roll_deg": 0.38,
+      "shift_eye": 0.02,
+      "scale_pct": 0.58
+    },
+    "limits": {
+      "yaw_deg": 8.0,
+      "pitch_deg": 8.0,
+      "roll_deg": 4.0,
+      "shift_eye": 0.35,
+      "scale_pct": 6.0
+    },
+    "fails": [
+      "yaw_deg",
+      "roll_deg"
+    ],
+    "pass": false
+  },
+  "idle_waiting_v3_take1": {
+    "frames": 240,
+    "detected": 240,
+    "eye_distance_px": 56.126150038533645,
+    "spread_p5_p95": {
+      "yaw_deg": 3.6,
+      "pitch_deg": 7.06,
+      "roll_deg": 1.99,
+      "shift_eye": 0.09,
+      "scale_pct": 2.74
+    },
+    "max_abs": {
+      "yaw_deg": 2.51,
+      "pitch_deg": 6.95,
+      "roll_deg": 1.43,
+      "shift_eye": 0.11,
+      "scale_pct": 2.11
+    },
+    "jitter_std": {
+      "yaw_deg": 0.28,
+      "pitch_deg": 0.52,
+      "roll_deg": 0.25,
+      "shift_eye": 0.0,
+      "scale_pct": 0.24
+    },
+    "limits": {
+      "yaw_deg": 10.0,
+      "pitch_deg": 14.0,
+      "roll_deg": 12.0,
+      "shift_eye": 0.3,
+      "scale_pct": 5.0
+    },
+    "fails": [],
+    "pass": true
+  },
+  "idle_waiting_v3_take2": {
+    "frames": 240,
+    "detected": 240,
+    "eye_distance_px": 55.861025460521645,
+    "spread_p5_p95": {
+      "yaw_deg": 3.94,
+      "pitch_deg": 9.74,
+      "roll_deg": 3.21,
+      "shift_eye": 0.08,
+      "scale_pct": 2.22
+    },
+    "max_abs": {
+      "yaw_deg": 3.02,
+      "pitch_deg": 7.61,
+      "roll_deg": 2.4,
+      "shift_eye": 0.1,
+      "scale_pct": 1.43
+    },
+    "jitter_std": {
+      "yaw_deg": 0.21,
+      "pitch_deg": 0.38,
+      "roll_deg": 0.16,
+      "shift_eye": 0.0,
+      "scale_pct": 0.22
+    },
+    "limits": {
+      "yaw_deg": 10.0,
+      "pitch_deg": 14.0,
+      "roll_deg": 12.0,
+      "shift_eye": 0.3,
+      "scale_pct": 5.0
+    },
+    "fails": [],
+    "pass": true
+  }
+}

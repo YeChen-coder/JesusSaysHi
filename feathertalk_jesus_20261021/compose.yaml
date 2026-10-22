@@ -1,0 +1,24 @@
+# Jesus FeatherTalk training (isolated project; never touches SpecterSaysHi outputs).
+name: feathertalk-jesus-20261021
+services:
+  worker:
+    image: feathertalk-lab:local
+    gpus: all
+    network_mode: none
+    mem_limit: 10g
+    cpus: 4
+    shm_size: 1g
+    volumes:
+      - ./data:/work/data
+      - ./output:/work/output
+      - ./checkpoints:/work/checkpoints
+      - ./:/clean:ro
+      - ../../SpecterSaysHi/feathertalk_lab/upstream:/opt/FeatherTalk:ro
+      - ../../SpecterSaysHi/feathertalk_lab/stream_core.py:/baseline/stream_core.py:ro
+      - ../Jesus_material/muse_video_20261021:/sources:ro
+      - ../../SpecterSaysHi/feathertalk_qinche_refine_20261018/evaluation:/novel:ro
+    environment:
+      PYTHONPATH: /clean:/baseline:/opt/FeatherTalk
+      OMP_NUM_THREADS: '4'
+      OPENBLAS_NUM_THREADS: '1'
+    command: [python, -u, /clean/pipeline.py]

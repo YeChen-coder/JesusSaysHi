@@ -1,0 +1,9 @@
+I'll read the Imagine skill and the three round-2 prompt files, then make one image edit from the same reference for each.The skill says to use each prompt verbatim with one `image_edit` from the reference. I'll generate all three portraits from `source_reference.png` at 2:3.All three edits returned. I'll copy each native file under the matching name, then record size and SHA256 without changing the originals.The session log maps each prompt to a different returned file. I'll copy those unchanged and write the round-2 record from the measured files.All three round-2 portraits succeeded. Each one is a single `image_edit` from `source_reference.png` at 2:3, saved as an unchanged `.jpg`.
+
+| Candidate | Status | Saved path | Pixels | Bytes | SHA256 |
+|---|---|---|---|---|---|
+| A2 olive grove | success | `C:\Users\yeche\Desktop\CodexRelatedProject\JesusSaysHi\Jesus_material\frontal_base_20261021\A2_olive_grove.jpg` | 832×1248 | 344,911 | `d0a27277e7b3ce099eb5d0848eb5781f18beadf4ef12cdf024fc4db672a732fd` |
+| B2 Galilee shore | success | `C:\Users\yeche\Desktop\CodexRelatedProject\JesusSaysHi\Jesus_material\frontal_base_20261021\B2_galilee_shore.jpg` | 832×1248 | 310,697 | `dd5cf7136df0c3e15b77ce9e3794b2337260962a009e70850d25dd97bff12933` |
+| C2 stone courtyard | success | `C:\Users\yeche\Desktop\CodexRelatedProject\JesusSaysHi\Jesus_material\frontal_base_20261021\C2_stone_courtyard.jpg` | 832×1248 | 310,173 | `5b2b21de6a942bcdacb130a23d843664a4aa44f557dbc5cb5772cff733e9ccd5` |
+
+Native returns were session files `images\3.jpg`, `images\1.jpg`, and `images\2.jpg` respectively. Saved copies match those files byte for byte. The record is `generation_results_round2.json` in the same folder. `generation_results.json` and the other existing files were left unchanged. No failures, no retries, and no videos.
