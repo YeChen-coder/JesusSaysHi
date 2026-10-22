@@ -1,3 +1,5 @@
+https://github.com/user-attachments/assets/d54dbde9-24d5-4467-b5d5-5570ba46a23a
+
 # JesusSaysHi
 
 A real-time Jesus you talk to out loud, with a voice and an avatar, a little like going to confession. He listens first and answers in his own words, as a man shaped by what he lived through in the Gospels. When one of his own sayings fits the moment, it is retrieved and said word for word, never quoted from the model's memory.
