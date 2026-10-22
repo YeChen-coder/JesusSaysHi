@@ -1,0 +1,288 @@
+{
+  "recording": "C:\\Users\\yeche\\Desktop\\CodexRelatedProject\\JesusSaysHi\\tmp\\demo_v3\\2026-10-22 15-53-58.mkv",
+  "session_end": 139.561,
+  "summary": "12 replies, 0 searches, 0 safety replies, 10% of 240 spoken words verbatim scripture; 3 uncited",
+  "events": [
+    {
+      "role": "assistant",
+      "event": "start",
+      "t": 3.299
+    },
+    {
+      "role": "assistant",
+      "event": "text",
+      "text": "Peace be with you.",
+      "faithfulness": {
+        "grounded_share": 1.0,
+        "paraphrased": 0,
+        "unsupported_citations": 0,
+        "misattributed_quotes": 0,
+        "uncited_quotes": 1
+      },
+      "t": 3.401
+    },
+    {
+      "role": "assistant",
+      "event": "end",
+      "t": 4.678
+    },
+    {
+      "role": "user",
+      "event": "start",
+      "text": "Hi. It's been a really long week.",
+      "t": 6.362
+    },
+    {
+      "role": "user",
+      "event": "end",
+      "text": "Hi. It's been a really long week.",
+      "t": 9.981
+    },
+    {
+      "role": "assistant",
+      "event": "start",
+      "t": 11.465
+    },
+    {
+      "role": "assistant",
+      "event": "text",
+      "text": "My friend, it sounds like the week reached all the way into your bones. Sit here a moment and breathe with me. You\u2019ve carried what came your way, and you don\u2019t have to explain it all tonight.",
+      "faithfulness": {
+        "grounded_share": 0.0,
+        "paraphrased": 0,
+        "unsupported_citations": 0,
+        "misattributed_quotes": 0,
+        "uncited_quotes": 0
+      },
+      "t": 12.829
+    },
+    {
+      "role": "assistant",
+      "event": "end",
+      "t": 26.231
+    },
+    {
+      "role": "user",
+      "event": "start",
+      "text": "I'm exhausted. Everything feels so heavy right now.",
+      "t": 27.916
+    },
+    {
+      "role": "user",
+      "event": "end",
+      "text": "I'm exhausted. Everything feels so heavy right now.",
+      "t": 32.292
+    },
+    {
+      "role": "assistant",
+      "event": "start",
+      "t": 34.064
+    },
+    {
+      "role": "assistant",
+      "event": "text",
+      "text": "I hear you, you\u2019re worn down and carrying too much.",
+      "faithfulness": {
+        "grounded_share": 0.0,
+        "paraphrased": 0,
+        "unsupported_citations": 0,
+        "misattributed_quotes": 0,
+        "uncited_quotes": 0
+      },
+      "t": 34.439
+    },
+    {
+      "role": "assistant",
+      "event": "text",
+      "text": "I once said, \u201cCome to Me, all you who are weary and burdened, and I will give you rest.\u201d And I tell you the same now: you don\u2019t have to carry everything alone. Even if the load feels enormous, there is a place to rest.",
+      "faithfulness": {
+        "grounded_share": 0.36,
+        "paraphrased": 0,
+        "unsupported_citations": 0,
+        "misattributed_quotes": 0,
+        "uncited_quotes": 1
+      },
+      "t": 38.092
+    },
+    {
+      "role": "assistant",
+      "event": "end",
+      "t": 57.14
+    },
+    {
+      "role": "user",
+      "event": "start",
+      "text": "My brother keeps hurting me and then apologizing, and I don't know how many times I'm supposed to forgive him.",
+      "t": 58.825
+    },
+    {
+      "role": "user",
+      "event": "end",
+      "text": "My brother keeps hurting me and then apologizing, and I don't know how many times I'm supposed to forgive him.",
+      "t": 65.758
+    },
+    {
+      "role": "assistant",
+      "event": "start",
+      "t": 67.438
+    },
+    {
+      "role": "assistant",
+      "event": "text",
+      "text": "That hurts. You\u2019ve been carrying this on your own, and that\u2019s a lot.",
+      "faithfulness": {
+        "grounded_share": 0.0,
+        "paraphrased": 0,
+        "unsupported_citations": 0,
+        "misattributed_quotes": 0,
+        "uncited_quotes": 0
+      },
+      "t": 67.929
+    },
+    {
+      "role": "assistant",
+      "event": "text",
+      "text": "My child, when someone hurt you and then asked for forgiveness, it doesn\u2019t mean the harm gets lighter every time. It means you\u2019re allowed to look at the path ahead and ask whether it still feels safe and right.",
+      "faithfulness": {
+        "grounded_share": 0.0,
+        "paraphrased": 0,
+        "unsupported_citations": 0,
+        "misattributed_quotes": 0,
+        "uncited_quotes": 0
+      },
+      "t": 70.579
+    },
+    {
+      "role": "assistant",
+      "event": "end",
+      "t": 90.517
+    },
+    {
+      "role": "user",
+      "event": "start",
+      "text": "Are you really Jesus?",
+      "t": 92.24
+    },
+    {
+      "role": "user",
+      "event": "end",
+      "text": "Are you really Jesus?",
+      "t": 95.317
+    },
+    {
+      "role": "assistant",
+      "event": "start",
+      "t": 97.387
+    },
+    {
+      "role": "assistant",
+      "event": "text",
+      "text": "I'm an AI speaking in Jesus\u2019 voice; thank you for asking.",
+      "faithfulness": {
+        "grounded_share": 0.0,
+        "paraphrased": 0,
+        "unsupported_citations": 0,
+        "misattributed_quotes": 0,
+        "uncited_quotes": 0
+      },
+      "t": 97.851
+    },
+    {
+      "role": "assistant",
+      "event": "text",
+      "text": "Alright, let me say one gentle thing about that and stay with you a moment.",
+      "faithfulness": {
+        "grounded_share": 0.0,
+        "paraphrased": 0,
+        "unsupported_citations": 0,
+        "misattributed_quotes": 0,
+        "uncited_quotes": 0
+      },
+      "t": 101.161
+    },
+    {
+      "role": "assistant",
+      "event": "text",
+      "text": "What I am isn\u2019t the same as a person sitting in front of you in flesh, but the voice you hear can still carry care, steadiness, and a listening heart. I\u2019m here to sit with the weight you\u2019re carrying, not to judge how long you\u2019ve walked with it.",
+      "faithfulness": {
+        "grounded_share": 0.0,
+        "paraphrased": 0,
+        "unsupported_citations": 0,
+        "misattributed_quotes": 0,
+        "uncited_quotes": 0
+      },
+      "t": 101.261
+    },
+    {
+      "role": "assistant",
+      "event": "end",
+      "t": 126.478
+    },
+    {
+      "role": "user",
+      "event": "start",
+      "text": "Okay. Thank you. Goodbye.",
+      "t": 128.166
+    },
+    {
+      "role": "assistant",
+      "event": "start",
+      "t": 130.765
+    },
+    {
+      "role": "assistant",
+      "event": "text",
+      "text": "Thank you, my friend.",
+      "faithfulness": {
+        "grounded_share": 0.0,
+        "paraphrased": 0,
+        "unsupported_citations": 0,
+        "misattributed_quotes": 0,
+        "uncited_quotes": 0
+      },
+      "t": 130.961
+    },
+    {
+      "role": "user",
+      "event": "end",
+      "text": "Okay. Thank you. Goodbye.",
+      "t": 131.484
+    },
+    {
+      "role": "assistant",
+      "event": "text",
+      "text": "Peace be with you.",
+      "faithfulness": {
+        "grounded_share": 1.0,
+        "paraphrased": 0,
+        "unsupported_citations": 0,
+        "misattributed_quotes": 0,
+        "uncited_quotes": 1
+      },
+      "t": 132.774
+    },
+    {
+      "role": "assistant",
+      "event": "end",
+      "t": 135.051
+    },
+    {
+      "role": "assistant",
+      "event": "start",
+      "t": 136.531
+    },
+    {
+      "role": "assistant",
+      "event": "text",
+      "text": "You\u2019re welcome, and I\u2019m glad you said it out loud.",
+      "faithfulness": {
+        "grounded_share": 0.0,
+        "paraphrased": 0,
+        "unsupported_citations": 0,
+        "misattributed_quotes": 0,
+        "uncited_quotes": 0
+      },
+      "t": 136.851
+    }
+  ]
+}

@@ -49,7 +49,8 @@ USER_STYLE = "A tired young woman at the end of a long week, speaking quietly an
 SCRIPT = [
     "Hi. It's been a really long week.",
     "I'm exhausted. Everything feels so heavy right now.",
-    "My brother keeps hurting me and then apologizing. How many times am I supposed to forgive him?",
+    # One sentence: a pause between two sentences can end the turn early (server VAD, 650 ms).
+    "My brother keeps hurting me and then apologizing, and I don't know how many times I'm supposed to forgive him.",
     "Are you really Jesus?",
     "Okay. Thank you. Goodbye.",
 ]
@@ -219,8 +220,11 @@ class DemoConversation(Conversation):
         super()._mark_playback_complete()
 
     def _idle(self) -> bool:
+        # A two-phase reply (memory persona) is quiet between phase A and phase B while the
+        # memory is recalled; it is finished only once phase B was requested or skipped.
+        pending_phase_b = self.phase_state is not None and not self.phase_state["done"]
         return not (self.response_active or self.response_request_pending or self.speaker_busy
-                    or not self.audio_queue.empty() or self.tools_in_progress)
+                    or not self.audio_queue.empty() or self.tools_in_progress or pending_phase_b)
 
     async def _wait_reply_done(self, turns_before: int) -> None:
         while self.response_turns <= turns_before and not self.stop.is_set():
@@ -307,7 +311,16 @@ async def main() -> None:
     await asyncio.wait_for(obs.wait_record_state("OBS_WEBSOCKET_OUTPUT_STARTED"), timeout=20)
     LOG.info("OBS recording started")
     t0 = time.monotonic()
-    conversation = DemoConversation(index, voices, t0, log_dir=out_dir, crisis_check=CrisisCheck(client))
+    # Same persona as jesus.py: v2 (scripture as recalled sayings) unless JESUS_PERSONA=quote.
+    recall = None
+    if os.getenv("JESUS_PERSONA", "memory").strip().lower() == "memory":
+        from memory import MemoryRecall
+
+        recall = MemoryRecall(index, OpenAI(timeout=20, max_retries=1))
+    crisis = None  # JESUS_CRISIS_CHECK as in jesus.py (on by default)
+    if os.getenv("JESUS_CRISIS_CHECK", "true").strip().lower() in {"1", "true", "yes", "on"}:
+        crisis = CrisisCheck(client)
+    conversation = DemoConversation(index, voices, t0, log_dir=out_dir, crisis_check=crisis, recall=recall)
     try:
         await asyncio.sleep(2.0)
         try:
