@@ -311,12 +311,12 @@ async def main() -> None:
     await asyncio.wait_for(obs.wait_record_state("OBS_WEBSOCKET_OUTPUT_STARTED"), timeout=20)
     LOG.info("OBS recording started")
     t0 = time.monotonic()
-    # Same persona as jesus.py: v2 (scripture as recalled sayings) unless JESUS_PERSONA=quote.
+    # Same persona as jesus.py: episodic memory unless JESUS_PERSONA=quote.
     recall = None
     if os.getenv("JESUS_PERSONA", "memory").strip().lower() == "memory":
-        from memory import MemoryRecall
+        from memory import EpisodeRecall
 
-        recall = MemoryRecall(index, OpenAI(timeout=20, max_retries=1))
+        recall = EpisodeRecall(index, OpenAI(timeout=20, max_retries=1))
     crisis = None  # JESUS_CRISIS_CHECK as in jesus.py (on by default)
     if os.getenv("JESUS_CRISIS_CHECK", "true").strip().lower() in {"1", "true", "yes", "on"}:
         crisis = CrisisCheck(client)

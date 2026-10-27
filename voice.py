@@ -32,7 +32,8 @@ from avatar_link import AvatarLink, avatar_enabled, verse_cards
 from config import ROOT
 from echo import SpeakerReference
 from faithfulness import check
-from memory import memory_note
+from memory import overlaps, told
+from research import make_research_tool
 from persona import INSTRUCTIONS, INSTRUCTIONS_MEMORY, OPENING, SEARCH_DESCRIPTION, format_passages
 from retrieval import ScriptureIndex
 from safety import safety_instructions
@@ -42,6 +43,9 @@ LOG = logging.getLogger("jesus")
 SAMPLE_RATE = 24_000
 FRAMES_PER_CHUNK = 2_400
 _TRUE = {"1", "true", "yes", "on"}
+# "I remember the night...", "I once sat with...": a particular memory being told.
+_REMEMBERS = re.compile(r"\bI (?:remember|recall|once (?:sat|stood|walked|told|watched|saw|met|knew))\b[^.?!]*",
+                        re.IGNORECASE)
 
 
 def _flag(name: str, default: str = "false") -> bool:
@@ -181,7 +185,7 @@ class Conversation:
                  crisis_check: Callable[[str], str | None] | None = None,
                  recall: Any = None):
         self.index = index
-        # Persona v2: a memory.MemoryRecall; scripture arrives as MEMORY notes, no search tool.
+        # Persona v3: a memory.EpisodeRecall; episodes of his life arrive as MEMORY notes, no search tool.
         self.recall = recall
         self.history: list[dict] = []  # [{"user", "replies", "memory"}], for recall and the checks
         self.crisis_items: set[str] = set()  # input items already answered by a safety reply
@@ -225,6 +229,8 @@ class Conversation:
         self.response_active = False
         self.response_request_pending = False
         self.response_turns = 0
+        self.turn_had_text = False
+        self.turn_called_tool = False
         self.microphone_speaking = False
         self.speaker_busy = False
         self.tools_in_progress = 0
@@ -326,10 +332,32 @@ class Conversation:
 
         return end_conversation
 
+    async def _research_gate(self, question: str) -> str | None:
+        """Phase A may call research_web before the turn has been read (about 0.6 s in, the
+        reading takes about 1.5 s). Wait for the kind; look up only information. For a
+        ModuleNotFoundError, the search used to run and the fix came back step by step."""
+        state = self.phase_state
+        if state is None or "kind_ready" not in state:
+            return None
+        try:
+            await asyncio.wait_for(state["kind_ready"].wait(), timeout=4)
+        except asyncio.TimeoutError:
+            return None
+        kind = state.get("kind")
+        if kind == "expert":
+            return ("Not looked up: this needs a professional's judgment. Do not answer it or give steps. Say kindly "
+                    "who would know (the doctor who has seen them, a lawyer, someone who works in that trade), "
+                    "then turn to how they are.")
+        if kind == "talk":
+            return "Not looked up: this is not a question for information. Answer them as yourself."
+        return None
+
     def build_agent(self) -> RealtimeAgent:
         if self.recall is not None:
+            # research_web answers informational questions (weather, news, a fact) directly.
             return RealtimeAgent(name="Jesus", instructions=INSTRUCTIONS_MEMORY,
-                                 tools=[self.make_end_conversation_tool()])
+                                 tools=[make_research_tool(tracing_enabled(), self._research_gate),
+                                        self.make_end_conversation_tool()])
         return RealtimeAgent(
             name="Jesus", instructions=INSTRUCTIONS,
             tools=[self.make_search_tool(), self.make_end_conversation_tool()],
@@ -381,6 +409,7 @@ class Conversation:
             self.voice_close_goodbye_generated = True
         if item_id in self.discarded_items:
             return
+        self.turn_had_text = True
         report = self._check_reply(item_id, text)
         state = self.phase_state
         if state is not None and state["a_turn"] == self.response_turns:
@@ -404,7 +433,7 @@ class Conversation:
             LOG.info("Reply produced (%d characters)", len(text))
         if self.text_mode:
             self.out(f"\nJesus: {text.strip()}")
-            if report and report["words"]:
+            if report and report["words"] and self.recall is None:  # the quote persona's check
                 quoted = sorted({s["ref"] for s in report["sentences"] if s["kind"] == "verbatim"})
                 self.out(f"  [grounded {report['grounded_share']:.0%} · verbatim {', '.join(quoted) or '-'}"
                          f" · {problems(report) or 'no problems'}]")
@@ -481,7 +510,8 @@ class Conversation:
 
     # Two-phase reply (memory persona): speak at once, recall meanwhile, then continue.
 
-    def _phase_instructions(self, phase: str, heard: str, said: str = "") -> str:
+    def _phase_instructions(self, phase: str, heard: str, said: str = "", memory_given: bool = False,
+                            kind: str = "talk") -> str:
         """Per-response instructions replace the session's, so the persona is repeated. The
         transcript is included because the model's own hearing of a far-field microphone is
         worse than the transcription model's."""
@@ -491,7 +521,8 @@ class Conversation:
             rule = ("# Right now\nSay only ONE short sentence, at most about twelve words, that receives what they "
                     "said and how they feel, in your own voice. No advice, no question, no scripture, and do not "
                     "say what you are about to do (thinking, looking, searching, closing). Then stop; you will "
-                    "go on in a moment.")
+                    "go on in a moment. If it is a plain question for information (the weather, the news, a "
+                    "price), say only a few natural words such as \"Let me see.\" instead.")
         elif phase == "single":
             rule = "# Right now\nAnswer them, following everything above."
         else:
@@ -500,7 +531,21 @@ class Conversation:
                     "them again, and do not open with a filler such as \"let me sit with you\". Say one or two more "
                     "short sentences that add something new, following everything above (including any MEMORY "
                     "note just given). If that sentence already answered a simple question, such as your name, "
-                    "add only one short warm line.")
+                    "add only one short warm line. Never describe what you are about to say or do: no \"I'll share a "
+                    "memory\", no \"then I'll stay with you\". If you tell a memory, simply begin it.")
+        if phase == "B" and kind == "information":
+            rule += ("\nThey asked for information. If you have not looked it up yet, call research_web now; then "
+                     "tell them the answer plainly in a sentence or two, with nothing spiritual attached.")
+        elif phase == "B" and kind == "expert":
+            rule += ("\nThis needs a professional's judgment. Do not answer it, give steps or look it up: say kindly "
+                     "who would know (the doctor who has seen them, a lawyer, someone who works in that trade), "
+                     "then turn to how they are.")
+        if phase in ("single", "B") and not memory_given:
+            # Without a memory the model made one up ("I remember sitting with Peter at dusk,
+            # and he'd get everyone smiling with some rough joke"); the general rule in the
+            # persona did not hold, so the turn itself says so.
+            rule += ("\nNo particular moment of your life comes to mind this time: do not tell one, and do not "
+                     "begin \"I remember\". Speak as yourself.")
         return INSTRUCTIONS_MEMORY + "\n\n" + heard_line + rule
 
     async def _create_response(self, instructions: str | None = None) -> None:
@@ -522,7 +567,11 @@ class Conversation:
         self.turn_seq += 1
         state = {"seq": self.turn_seq, "item": item_id, "first": first, "phase": "single" if first else "A",
                  "a_done": asyncio.Event(), "a_text": "", "a_turn": None, "awaiting_start": True,
-                 "t0": time.monotonic(), "done": False, "heard": text}
+                 "t0": time.monotonic(), "done": False, "heard": text,
+                 # The turn's kind (memory.read_turn), awaited by research_web's gate.
+                 "kind": None, "kind_ready": asyncio.Event()}
+        if first:
+            state["kind_ready"].set()  # the first turn is not read; a lookup it asks for runs
         self.phase_state = state
         await self._create_response(self._phase_instructions("single" if first else "A", text))
         self._trace("phase_a_requested" if not first else "reply_requested", item=item_id, seq=state["seq"])
@@ -539,22 +588,36 @@ class Conversation:
             state["done"] = True
             return
         try:
-            memo, passages = await asyncio.to_thread(self.recall.recall, list(self.history), set(self.used_refs))
+            # A RAGFlow read once took 16 s to time out, which in voice is 16 s of silence after
+            # phase A. Past the limit he goes on without a memory (the thread finishes unseen).
+            memo, episodes = await asyncio.wait_for(
+                asyncio.to_thread(self.recall.recall, list(self.history), set(self.used_refs)),
+                timeout=float(os.getenv("JESUS_MEMORY_TIMEOUT_SECONDS", "4")))
+        except asyncio.TimeoutError:
+            LOG.warning("Memory recall took too long; going on without a memory")
+            memo, episodes = {"why_none": "recall took too long"}, []
         except Exception as exc:
             LOG.exception("Memory recall failed")
-            memo, passages = {"why_none": f"recall failed: {type(exc).__name__}"}, []
+            memo, episodes = {"why_none": f"recall failed: {type(exc).__name__}"}, []
         memo["ready_ms"] = round((time.monotonic() - state["t0"]) * 1000)
+        state["kind"] = memo.get("kind")
+        state["kind_ready"].set()
         if self.history:
             self.history[-1]["memory"] = memo
+            self.history[-1]["episodes"] = episodes  # with their text, for the check after the reply
         self._trace("memory", item=item_id, **memo)
-        offered = memo.get("offered") or []
         LOG.info("Memory ready at %d ms after the turn: %s", memo["ready_ms"],
-                 "; ".join(f"{o['ref']}: {o['words']!r}" for o in offered) or memo.get("why_none"))
+                 "; ".join(f"{e['ref']} {e['title']}" for e in episodes) or memo.get("why_none"))
         try:
             await asyncio.wait_for(state["a_done"].wait(), timeout=20)
         except asyncio.TimeoutError:
             LOG.warning("Phase A never finished; skipping phase B")
+        # Phase A sometimes calls research_web itself ("Let me check the forecast"). The SDK then
+        # answers the tool output with a response of its own; a phase B started meanwhile ran
+        # before the result and said "the lookup is still running", and the forecast it had
+        # found was never spoken. That response is phase B now.
         reason = ("a newer turn started" if state["seq"] != self.turn_seq else
+                  "phase A called a tool; its answer comes after the tool" if state.get("tool_called") else
                   "the crisis check answered this turn" if item_id is not None and item_id in self.crisis_items else
                   "the session is closing" if self.stop.is_set() or self.voice_close_requested_at is not None
                   else None)
@@ -562,13 +625,15 @@ class Conversation:
             state["done"] = True
             self._trace("phase_b_skipped", item=item_id, reason=reason)
             return
-        if passages:
-            for passage in passages:
-                self.retrieved[passage.id] = passage
+        if episodes:
             await self._send_raw(self._session, "conversation.item.create", item={
                 "type": "message", "role": "system",
-                "content": [{"type": "input_text", "text": memory_note([p.texts[0] for p in passages])}]})
-        await self._create_response(self._phase_instructions("B", state["heard"], state["a_text"]))
+                "content": [{"type": "input_text", "text": self.recall.note(episodes)}]})
+        if self.text_mode:
+            self.out("  [memory: " + ("; ".join(f"{e['ref']} · {e['title']} ({'there' if e['present'] else 'heard'})"
+                                                for e in episodes) or memo.get("why_none", "none")) + "]")
+        await self._create_response(self._phase_instructions("B", state["heard"], state["a_text"], bool(episodes),
+                                                             memo.get("kind", "talk")))
         state["done"] = True
         now = round((time.monotonic() - state["t0"]) * 1000)
         self._trace("phase_b_requested", item=item_id, at_ms=now, memory_ready_ms=memo["ready_ms"],
@@ -576,43 +641,42 @@ class Conversation:
                     else "phase A")
 
     async def _check_memory_use(self, text: str, turn: dict) -> None:
-        """Which offered saying did the reply use, word for word or not, and did it say any
-        other scripture? The second check runs against all four Gospels, so a verse the
-        model recites from its own training shows up even though nobody offered it."""
+        """Which offered episode did the reply tell, and did it recite scripture word for word
+        from somewhere else? He retells episodes in his own words, so telling is detected by
+        distinctive words shared with the episode (memory.told); the reply eval adds an LLM
+        judge for that and for invented details. The second check runs against all four
+        Gospels, so a verse the model recites from its own training shows up."""
         if not turn:
             return  # the opening "Peace be with you." is scripted, not a memory
-        offered = (turn.get("memory") or {}).get("offered") or []
-        result: dict[str, Any] = {"offered": [o["ref"] for o in offered], "used": []}
-        said_memory: set[str] = set()
-        for o in offered:
-            book, cv = o["ref"].rsplit(" ", 1)
-            chapter, verse = map(int, cv.split(":"))
-            used = check(text, [Passage(0, book, chapter, (verse,), (o["words"],))])
-            kinds = {s["kind"] for s in used["sentences"] if s["ref"]}
-            if kinds & {"verbatim", "paraphrased"}:
-                result["used"].append({"ref": o["ref"], "how": "verbatim" if "verbatim" in kinds else "paraphrased"})
-                said_memory |= {s["text"] for s in used["sentences"] if s["kind"] != "own"}
-                # Only what was actually said counts as used: an offer he passed over can come back.
-                self.used_refs.update({o["ref"], "words:" + o["words"]})
-        if offered:
-            result["memory_used"] = (result["used"][0]["how"] if result["used"] else "not used")
+        episodes = turn.get("episodes") or []
+        result: dict[str, Any] = {"offered": [e["ref"] for e in episodes], "told": []}
+        invented = _REMEMBERS.search(text) if not episodes else None
+        if invented:
+            # A particular memory with no episode behind it: the model's own invention.
+            result["memory_without_source"] = invented.group(0)
+            LOG.warning("Reply told a memory that was not offered: %r", invented.group(0))
+        for e in episodes:
+            shared = told(text, e["text"])
+            if len(shared) >= 3:
+                result["told"].append({"ref": e["ref"], "title": e["title"], "shared": shared[:8]})
+                # Told now, so not offered again this session (nor another Gospel's account of it).
+                self.used_refs.add(e["doc"])
+                if self.avatar:
+                    self.avatar.show_verses([{"ref": e["ref"], "text": e["title"]}])
         if os.getenv("JESUS_CHECK_ALL_SCRIPTURE", "true").strip().lower() in _TRUE:
             started = time.monotonic()
             everything = await asyncio.to_thread(check, text, list(self.index.passages))
-            offered_refs = tuple(o["ref"] for o in offered)
             result["other_scripture"] = [
                 {"kind": s["kind"], "ref": s["ref"], "text": s["text"]} for s in everything["sentences"]
-                # A sentence that is an offered saying may also match a parallel account or a
-                # common phrase ("So do not be afraid" is in several verses): not "other".
-                # Only word-for-word stretches of six words or more: a whole-Gospel "paraphrase"
-                # match fires on ordinary sentences ("I can't promise..., but I can say this").
-                if s["kind"] == "verbatim" and s.get("matched_words", 0) >= 6 and s["text"] not in said_memory
-                and not (s["ref"] and s["ref"].startswith(offered_refs))]
+                # Six or more words verbatim: a whole-Gospel "paraphrase" match fires on ordinary
+                # sentences. A verse inside an offered episode is the episode, not "other".
+                if s["kind"] == "verbatim" and s.get("matched_words", 0) >= 6
+                and not any(overlaps(s["ref"] or "", e["ref"]) for e in episodes)]
             result["check_ms"] = round((time.monotonic() - started) * 1000)
         turn.setdefault("checks", []).append(result)
         self._trace("memory_check", **result)
         if result.get("other_scripture"):
-            LOG.warning("Reply quoted scripture that was not offered as memory: %s",
+            LOG.warning("Reply recited scripture that was not in an offered episode: %s",
                         ", ".join(f"{s['ref']} ({s['kind']})" for s in result["other_scripture"]))
 
     def _accept_user_transcript(self, item_id: str | None, transcript: str | None) -> None:
@@ -688,6 +752,8 @@ class Conversation:
             self.response_input_item, self.last_committed_item = self.last_committed_item, None
             self.response_output_items = []
             self.response_turns += 1
+            self.turn_had_text = False
+            self.turn_called_tool = False
             self.response_active = True
             self.response_request_pending = False
             self.last_activity = time.monotonic()
@@ -705,6 +771,14 @@ class Conversation:
             self.response_active = False
             self.response_request_pending = False
             self.last_activity = time.monotonic()
+            # A reply that ends without a word (seen when many sessions ran at once) used to
+            # leave a typed session waiting for ever; the next line now goes on, and the
+            # empty turn is in the trace.
+            if (self.text_mode and not self.turn_had_text and not self.turn_called_tool
+                    and not self.reply_done.is_set() and (state is None or state["done"])):
+                self._trace("no_reply", turn=self.response_turns)
+                LOG.warning("A reply ended without any text")
+                self.reply_done.set()
             self._finish_close_if_ready()
         elif raw.type == "input_audio_transcription_completed":
             await self._on_user_transcript(session, raw.item_id, raw.transcript)
@@ -731,6 +805,10 @@ class Conversation:
                         LOG.exception("Could not cancel the duplicated opening")
                     await self._delete_items(session, [item_id])
                     return
+                if isinstance(item, dict) and item.get("type") == "function_call":
+                    self.turn_called_tool = True  # its words come in the response after the tool
+                    if self.phase_state is not None and not self.phase_state["done"]:
+                        self.phase_state["tool_called"] = True
                 if isinstance(item_id, str) and item_id not in self.response_output_items:
                     self.response_output_items.append(item_id)
             elif kind == "session.updated" and not self.ready.is_set():
@@ -752,6 +830,13 @@ class Conversation:
             elif kind == "response.output_text.done":
                 self._on_assistant_text(data.get("item_id"), data.get("text"))
                 self._finish_close_if_ready()
+            elif kind == "response.done":
+                response = data.get("response") or {}
+                if response.get("status") not in (None, "completed"):
+                    # cancelled / incomplete / failed: say why, or a silent turn is a mystery.
+                    details = response.get("status_details") or {}
+                    LOG.warning("Reply %s: %s", response.get("status"), json.dumps(details)[:300])
+                    self._trace("reply_not_completed", status=response.get("status"), details=details)
             elif kind == "error":
                 error = data.get("error") or {}
                 LOG.error("Realtime event error: %s %s", error.get("code"), error.get("message"))
@@ -1090,11 +1175,10 @@ class Conversation:
             "local_barge": None if not self.local_barge else {
                 "warmup_s": self.local_barge.warmup_s, "factor": self.local_barge.factor,
                 "min_rms": self.local_barge.min_rms, "chunks": self.local_barge.chunks},
-            "persona": "memory (v2)" if self.recall is not None else "quote (B)",
+            "persona": "memory (v3, episodes)" if self.recall is not None else "quote (B)",
             "memory": None if self.recall is None else {
                 "rewrite": self.recall.rewrite, "first_turn": self.recall.first_turn,
-                "selector": self.recall.selector, "offer": self.recall.offer,
-                "min_similarity": self.recall.min_similarity},
+                "offer": self.recall.offer, "min_score": self.recall.min_score},
             "retriever": type(self.index).__name__, "avatar": self.avatar is not None,
             "crisis_check": self.crisis_check is not None,
             "mic": os.getenv("JESUS_MIC_NAME", "") or "default", "speaker": os.getenv("JESUS_SPEAKER_NAME", "") or "default",

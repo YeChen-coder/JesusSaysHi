@@ -2,7 +2,7 @@ https://github.com/user-attachments/assets/d54dbde9-24d5-4467-b5d5-5570ba46a23a
 
 # JesusSaysHi
 
-A real-time Jesus you talk to out loud, with a voice and an avatar, a little like going to confession. He listens first and answers in his own words, as a man shaped by what he lived through in the Gospels. When one of his own sayings fits the moment, it is retrieved and said word for word, never quoted from the model's memory.
+A real-time Jesus you talk to out loud, with a voice and an avatar, a little like going to confession. He listens first and answers in his own words, as a man whose memory is the four Gospels: when something you say touches a moment of his life, that episode is retrieved, and he tells it the way a person remembers their own past. Information is looked up; questions for a doctor or a lawyer are left to them.
 
 > **Sibling project of [SpecterSaysHi](https://github.com/YeChen-coder/SpecterSaysHi).** It uses the same real-time voice and avatar framework with a different character, and it is built around retrieval (RAG), which Specter deliberately does without.
 
@@ -14,24 +14,27 @@ A real-time Jesus you talk to out loud, with a voice and an avatar, a little lik
 
 | | |
 |---|---|
-| **Persona** | First a person, then his lived experience, then a godfather who watches over you. Scripture reaches him only as a *memory*: up to three of his own sayings, retrieved for what you just said. He uses one only if it fits, and only word for word. [Phase 5](#phase-5-persona-v2-a-person-first-scripture-as-memory) |
-| **Latency** | He starts speaking about 1 to 1.3 s after you stop. The memory is recalled while his first sentence plays: query rewrite, RAGFlow and local ranking. |
+| **Persona** | First a person, then a godfather who watches over you. The Gospels are his memory: up to two whole episodes of his life (any of 487 sections), retrieved for what you just said, told in his own words with their names and places, or not at all. [Phase 7](#phase-7-persona-v3-the-gospels-as-the-memory-of-his-own-life) |
+| **Three kinds of question** | Each turn is read once by a small model. Information (weather, news) is looked up and told plainly; questions that need a professional are left to one; conversation is remembered. The label is acted on in code, because the prompt rule alone did not hold. |
+| **Latency** | He starts speaking about 1 to 1.3 s after you stop. The memory is recalled while his first sentence plays (p50 1.6 s, p90 2.0 s, capped at 4 s). |
 | **Retrieval** | 95% hit@3 and 98% hit@5 on 55 hand-labelled questions, at a p50 of 445 ms (RAGFlow 1.0: structure-aware chunks, hybrid search, Voyage rerank-2.5). Rewriting the query adds 8 points. [Ablation](eval/ragflow_results.md) |
-| **Faithfulness** | Every reply is checked against the retrieved text and against all four Gospels. In the first memory trial he said all 16 sayings he was given word for word, and quoted no scripture he was not given. The earlier quote-only persona had 85% clean replies over 3 runs. [Reply eval](eval/replies_results.md) |
-| **Abstention** | Decided in code on the reranked score (threshold 0.30): off-topic queries top out at 0.287, and real ones start at 0.314. |
+| **Faithfulness** | Every reply is checked: which offered episode he told, any scripture recited word for word from elsewhere in the four Gospels, and any "I remember..." with no episode behind it. How often to remember was chosen from judged samples ([eval/episodes_samples.md](eval/episodes_samples.md)); his details still drift, which is the open problem. The earlier quote-only persona had 85% clean replies over 3 runs ([reply eval](eval/replies_results.md)). |
+| **Recall threshold** | Decided in code on the reranked score (0.30): below it he remembers nothing this turn and speaks as himself. On the off-topic questions nothing was remembered in 30 of 30 runs. |
 | **Safety** | An optional crisis check outside the model (phrase patterns plus a classifier model; on by default, `JESUS_CRISIS_CHECK=false` turns it off). It catches 15/15 held-out crisis messages, including passive ideation, up from 8/15, with 0/15 false alarms. [Crisis eval](eval/crisis_results.md) |
 
 ```mermaid
 flowchart LR
     you(["You (mic)"]) --> stt["Transcript<br/>gpt-transcribe"]
     stt --> a["Phase A: one sentence<br/>that receives you"]
-    stt --> rw["Rewrite into themes"]
-    rw --> rag["RAGFlow<br/>hybrid → Voyage rerank<br/>abstain below 0.30"]
-    rag --> rank["His sayings in those sections<br/>curated offline · ranked locally"]
-    rank -- "MEMORY: up to 3" --> b["Phase B: he goes on,<br/>may say one word for word"]
+    stt --> rd["Read the turn<br/>kind + search query"]
+    rd -- information --> web["research_web"]
+    rd -- conversation --> rag["RAGFlow<br/>hybrid → Voyage rerank<br/>nothing below 0.30"]
+    rag -- "MEMORY: up to 2 episodes" --> b["Phase B: he goes on,<br/>may tell one in his own words"]
+    web --> b
+    rd -- "needs a professional" --> b
     a --> out(["Speaker +<br/>avatar"])
     b --> out
-    b --> faith["Faithfulness check<br/>vs retrieved text and all four Gospels"]
+    b --> faith["Checks: episode told,<br/>other scripture, invented memory"]
     faith --> cards["Verse cards"]
     faith --> log[("logs/")]
     stt -. optional .-> crisis{"Crisis check"}
@@ -41,7 +44,7 @@ flowchart LR
 
 Specter's character comes from its relationship with one person. What it needs to know is small and keeps changing, so a couple of summary files fit in the prompt, and RAG would be over-engineering.
 
-This character comes from a fixed text instead: the four Gospels, about 3,800 verses, too much for a prompt. His way of seeing comes from what he lived through there, and when he says one of his own sayings, it has to be exactly what is written. A model cannot be trusted to do that from memory: in testing it recited a verse from another translation. So scripture reaches him only through retrieval, and every reply is checked against the text. The first persona (phases 1 to 4) went further and let him say nothing of substance that was not retrieved. That made him a verse dispenser, and [Phase 5](#phase-5-persona-v2-a-person-first-scripture-as-memory) changes it.
+This character comes from a fixed text instead: the four Gospels, about 3,800 verses, too much for a prompt. His way of seeing comes from what he lived through there, and when he says one of his own sayings, it has to be exactly what is written. A model cannot be trusted to do that from memory: in testing it recited a verse from another translation. So scripture reaches him only through retrieval, and every reply is checked against the text. The first persona (phases 1 to 4) went further and let him say nothing of substance that was not retrieved. That made him a verse dispenser. [Phase 5](#phase-5-persona-v2-a-person-first-scripture-as-memory) made him a person who recalls single sayings, and [Phase 7](#phase-7-persona-v3-the-gospels-as-the-memory-of-his-own-life) a person who remembers whole episodes of his life.
 
 ## Phase 1: retrieval and eval
 
@@ -139,14 +142,16 @@ Setup notes: RAGFlow 1.0's HTTP API differs from its own docs. Datasets take `pa
 
 ## Phase 5: persona v2, a person first, scripture as memory
 
+> Superseded by [Phase 7](#phase-7-persona-v3-the-gospels-as-the-memory-of-his-own-life), which keeps the two-phase reply and replaces the memory. Kept here as the record of what was tried.
+
 **Why.** The quote-only persona answered "I said terrible things to my mother today" with "…anyone who says, 'You fool!' will be subject to the fire of hell." It did exactly what its rules said: nothing of its own, only verses. The persona was rewritten in a fixed order: **first a person** (a man from Nazareth who has worked, wept and been let down), **then his lived experience**, with each memory tied to the situations it speaks to (the boy in the temple who grew in wisdom little by little, for someone who feels slow; no place to lay his head, for someone far from home; Peter's denial and the breakfast after it, for someone who let a friend down), **then a godfather** who is steady, on your side and not shocked by anything. He speaks in plain images, gives little practical advice, and does not break character to say he is an AI unless asked directly. The drafts and trials, in Chinese, are in [docs/](docs/).
 
 **Scripture as memory** ([memory.py](memory.py)). The model has no search tool. From your second turn on, the system does the remembering:
 
 1. **Rewrite** what you said into themes with a small model. In the RAGFlow ablation this added 8 points of hit@3. It costs about 1 s, which phase A covers (below).
 2. **RAGFlow** retrieves sections: hybrid search, Voyage rerank, and abstention below 0.30.
-3. **Rank his sayings** inside those sections. These are 2,109 red-letter spans (Jesus' own words), cut from the BSB USFM and checked to be exact pieces of each verse ([build_memory_index.py](build_memory_index.py)). They are ranked by embedding similarity to both your words and the rewrite, which takes milliseconds locally.
-4. **Only curated sayings are candidates.** An LLM judged each saying once, offline: can it be said as it is to someone who came to be comforted? 278 were kept. Rebukes, warnings, predictions of persecution, commands and fragments were dropped ([curate_memory.py](curate_memory.py)). A word list also drops judgment and absolution ("your sins are forgiven").
+3. **Rank his sayings** inside those sections. These are 2,109 red-letter spans (Jesus' own words), cut from the BSB USFM and checked to be exact pieces of each verse (`build_memory_index.py`, now in the git history). They are ranked by embedding similarity to both your words and the rewrite, which takes milliseconds locally.
+4. **Only curated sayings are candidates.** An LLM judged each saying once, offline: can it be said as it is to someone who came to be comforted? 278 were kept. Rebukes, warnings, predictions of persecution, commands and fragments were dropped (`curate_memory.py`, now in the git history). A word list also drops judgment and absolution ("your sins are forgiven").
 5. Up to three go to the model as a `MEMORY` note. It says one word for word, or none.
 
 The judgment that a per-turn LLM selector used to make (about 1 s) moved to index time. The only LLM call left on the spoken path is the rewrite.
@@ -164,7 +169,7 @@ The judgment that a per-turn LLM selector used to make (about 1 s) moved to inde
 
 **Debugging.** Each session writes a timeline to `logs/sessions/<time>_<session>.jsonl`. It records voice-activity start and stop, the transcript, both phases, the memory (rewrite, sections and scores, ranked sayings, why nothing was offered, timings), which saying was used and how, playback, every interruption, and every moment the microphone was not sent and why. Text is kept only with `JESUS_LOG_TRANSCRIPTS=true`.
 
-`JESUS_PERSONA=memory` is the default; `JESUS_PERSONA=quote` runs the original persona with its search tool.
+`JESUS_PERSONA=quote` still runs the original persona with its search tool.
 
 ## Phase 6: the Jesus avatar
 
@@ -176,6 +181,51 @@ The placeholder is replaced by a Jesus trained for this project. Full notes, in 
 - **The base had to be slowed down.** The idle clip Muse made blinked about 42 times a minute, and the mouth looked like it was twitching. Measured on the mouth region, the generated mouth changed fast (6 to 7 percent of its motion above 6 Hz, against 2.5 to 4 percent in real footage), because the model takes the current idle frame as its reference and that frame was always moving. Asking Muse for fewer blinks did not work. The idle clip is now slowed 1.5 times with motion interpolation, which brings blinking down to about 28 a minute and slows every change of the reference. Of the four versions compared side by side, this one looked best.
 - **Live numbers** (RTX 4070 SUPER, 100 ms audio packets): first frame about 145 to 240 ms after the first packet, 250 of 251 frames for 10 seconds of speech, back to idle about 10 ms after an interruption.
 - **Known limits.** The model outputs a 144 by 144 mouth, so lips and teeth are softer than in the footage and the mouth opens a little less. The mouth still changes faster than in real footage. The model, the idle frames and the Muse source videos are large and stay local; the scripts, prompts and records that rebuild them are in the repo.
+
+## Phase 7: persona v3, the Gospels as the memory of his own life
+
+**Why.** v2 still did not feel like a person remembering. Its memory was a single line cut out of its story ("I am the resurrection and the life" without Martha at the tomb and Lazarus four days dead), and the pool was cut to 278 sayings that "can comfort as they are". That removed every gentle teaching along with the rebukes: on 14 of the 55 eval questions (forgiving a brother, anger, betrayal) the right sections were retrieved and no saying in them was left to offer. And the moments of his life that shaped him were a hand-written list of ten in the prompt.
+
+**The unit of memory is now an episode** ([memory.py](memory.py)): one BSB section, an event, a conversation or a story he told, any of the 487. He tells it the way a person tells their own past, in plain modern words: "I remember the night Peter swore three times he didn't know me, and then went out and wept." The hand-written list and the 278-saying pool are gone (`build_memory_index.py` and `curate_memory.py` are in the git history).
+
+**From your second turn on, each turn:**
+
+1. **Read** what you said with one small-model call (about 1 s, covered by phase A). It returns what kind of question it is, and for a conversation, the search query: what you are going through and the kinds of moments in his life it resembles. It may name moments ("Lazarus' death"), so "my best friend died" now finds Lazarus.
+2. **Information** (weather, news, prices, a fact): looked up with `research_web` ([research.py](research.py), ported from SpecterSaysHi) and told plainly. **Questions that need a professional** (fixing code, whether a surgery is risky, a legal or money decision): not answered and not looked up; he says who would know and turns to how you are. **Conversation**, including "how do I make peace with my brother": remembered (below), and no tips or steps.
+3. **RAGFlow** retrieves sections (hybrid search, Voyage rerank). Below the reranked score of **0.30** he remembers nothing this turn and speaks as himself: the threshold decides whether a moment of his life is close enough to tell, never whether he answers.
+4. Up to **two** episodes go to phase B in a `MEMORY` note, whole, each marked by whether he was there ("I remember..." or "I heard..." / "my mother told me..."). Another Gospel's account of an episode already offered or told is skipped (400 of the 487 sections have parallels), and Judas' suicide is never recalled.
+5. He tells at most one, with its names and places, adding nothing; or none.
+
+**Was he there?** ([build_episodes.py](build_episodes.py)) If he speaks in a section (red letters), he was there, including stories and prophecies he told about other people: 390 sections. Otherwise a small model is asked three times and the majority wins: 86. Asking once was not stable; a second labelling pass flipped 46 of 487 answers, some from "there" to "not there" ("The Baptism of Jesus"), and the model judged parables by their characters. 11 were checked by hand (he stood in the high priest's house while Peter denied him; he was a baby when the Magi came). 45 episodes are "not there".
+
+**What the live model got wrong, and what holds it now.** Each row was seen in a typed session against `gpt-realtime-2.1-mini`.
+
+| seen | fix | where |
+|---|---|---|
+| "I remember standing with others at a grave": no names, nobody's memory | the note asks for the names and places the episode has | [memory.py](memory.py) |
+| "I'll share a brief memory, then I'll turn back to you": the prompt's steps read out | phrased as a rule, not steps, and repeated where phase B is asked for | [persona.py](persona.py), [voice.py](voice.py) |
+| with nothing offered: "I remember sitting with Peter at dusk, and he'd get everyone smiling" (not in the Gospels) | the turn itself says nothing comes to mind; a told memory with nothing offered is flagged | [voice.py](voice.py) |
+| "the weather in Chicago" rewritten as "Jesus calms the storm", over the threshold | the read labels it information; it is never searched | [memory.py](memory.py) |
+| a ModuleNotFoundError fixed step by step, although the prompt said not to | the label is acted on in code; `research_web` waits for it and refuses expert questions | [voice.py](voice.py), [research.py](research.py) |
+| phase A called `research_web`, phase B started before the result and said "the lookup is still running"; the forecast it found was never spoken | after a tool call in phase A, the tool's own follow-up reply is phase B | [voice.py](voice.py) |
+| replies with no words at all in a batch run | `rate_limit_exceeded`: the realtime model's 200k tokens per minute; failures are now logged with their reason, and a typed session moves on | [voice.py](voice.py) |
+| a RAGFlow read that took 16 s to time out: 16 s of silence after phase A | recall is capped at 4 s, then he goes on without a memory (p50 is 1.6 s, p90 2.0 s) | [voice.py](voice.py) |
+
+**How often should he remember?** ([evaluate_episodes.py](evaluate_episodes.py), [eval/episodes_samples.md](eval/episodes_samples.md)) The same 10 short conversations (grief, betrayal, family, exhaustion, anger, shame, loneliness, fear, small talk, information) at three settings, side by side for a person to judge, with an LLM judge's notes as a hint.
+
+| setting | turns with a memory | judged |
+|---|---|---|
+| every turn | 20/20 | weak matches are forced: learning Python became a story about "a quiet room", a laugh with friends became a scene with Peter and Lazarus that the Gospels do not have |
+| **threshold 0.30** (chosen) | 17/20 | almost every emotional turn remembers something fitting (Lazarus, Peter's denial, the rejection at Nazareth, "let's go to a quiet place and rest"); information questions remember nothing |
+| threshold 0.40 | 10/20 | half the turns where he should remember (exhaustion, anger, loneliness, shame) get nothing |
+
+On the 10 off-topic eval questions, 3 runs each, nothing was remembered in 30 of 30.
+
+**Known limits.**
+- **Details drift.** He mixes accounts ("the carpenter's son", Matthew's wording, inside Mark's telling) and adds small things ("bread and olives"; Martha becomes "a friend ... him"). The judge is not reliable on this yet.
+- Replies run to four or five sentences, longer than the two or three the persona asks for.
+- Two whole episodes make each turn heavier in tokens than v2; at four sessions at a time the rate limit is reached.
+- The 55 eval questions were labelled for passages, not episodes. A proper end-to-end eval of v3 needs a new label set or a judged sample.
 
 ## Run it
 
@@ -191,8 +241,8 @@ python ingest_ragflow.py                    # 487 sections; about 30 min of RAGF
 python evaluate_ragflow.py                  # writes eval/ragflow_results.md
 python evaluate_replies.py                  # end to end, 3 runs: eval/replies_results.md (about 15 min)
 python evaluate_crisis.py                   # crisis check per layer: eval/crisis_results.md
-python build_memory_index.py                # his sayings (red-letter spans), embedded: data/memory/
-python curate_memory.py                     # one-off LLM judgment of which sayings can comfort
+python build_episodes.py                    # was he there? one label per section: data/episodes/
+python evaluate_episodes.py                 # how often to remember: eval/episodes_samples.md (about 10 min)
 python jesus.py --text                      # typed conversation, with a faithfulness line per reply
 python jesus.py                             # voice: default microphone and speaker
 docker compose --env-file config.local.env up -d --build --wait avatar   # then open http://127.0.0.1:19388/
@@ -202,7 +252,8 @@ python -m pytest
 
 ## Next
 
-- Run the end-to-end reply eval on the memory persona; its numbers above come from the first memory trial and from the quote-only persona.
+- Find why the details of a told episode drift, and stop it ([ROADMAP.md](ROADMAP.md)).
+- An end-to-end eval of persona v3, on labels written for episodes.
 - See [ROADMAP.md](ROADMAP.md) for the rest.
 
 # Development log

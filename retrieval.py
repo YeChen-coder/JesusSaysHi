@@ -155,9 +155,10 @@ REWRITE_INSTRUCTIONS = (
 )
 
 
-def rewrite_query(client, text: str, model: str) -> str:
+def rewrite_query(client, text: str, model: str, instructions: str = REWRITE_INSTRUCTIONS) -> str:
     """Close the gap between how people talk ("my boss gaslights me") and how scripture
     talks. In the voice app the realtime model writes the tool argument itself, so this
-    rewrite costs no extra round trip there; offline it stands in for that step."""
-    response = client.responses.create(model=model, instructions=REWRITE_INSTRUCTIONS, input=text)
+    rewrite costs no extra round trip there; offline it stands in for that step. The
+    episodic memory passes its own instructions (moments of his life, not themes)."""
+    response = client.responses.create(model=model, instructions=instructions, input=text)
     return response.output_text.strip()

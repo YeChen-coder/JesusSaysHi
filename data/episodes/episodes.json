@@ -1,0 +1,6560 @@
+{
+ "John 01.01 The Beginning.txt": {
+  "ref": "John 1:1-5",
+  "title": "The Beginning",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "The Word was with God in the beginning; light shines in darkness",
+  "parallels": [
+   "Genesis 1:1-2",
+   "Hebrews 11:1-3"
+  ]
+ },
+ "John 01.06 The Witness of John.txt": {
+  "ref": "John 1:6-13",
+  "title": "The Witness of John",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "John the Baptist witnesses about the Light; the world fails to recognize Jesus",
+  "parallels": []
+ },
+ "John 01.14 The Word Became Flesh.txt": {
+  "ref": "John 1:14-18",
+  "title": "The Word Became Flesh",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "The Word becomes flesh; John testifies; grace and truth come through Jesus",
+  "parallels": [
+   "Psalm 84:1-12"
+  ]
+ },
+ "John 01.19 The Mission of John the Baptist.txt": {
+  "ref": "John 1:19-28",
+  "title": "The Mission of John the Baptist",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "John the Baptist answers priests and Pharisees about his identity and baptizing",
+  "parallels": [
+   "Isaiah 40:1-5",
+   "Matthew 3:1-12",
+   "Mark 1:1-8",
+   "Luke 3:1-20"
+  ]
+ },
+ "John 01.29 Jesus the Lamb of God.txt": {
+  "ref": "John 1:29-34",
+  "title": "Jesus the Lamb of God",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus comes to John; John identifies him as the Lamb of God",
+  "parallels": [
+   "Matthew 3:13-17",
+   "Mark 1:9-11",
+   "Luke 3:21-22"
+  ]
+ },
+ "John 01.35 The First Disciples.txt": {
+  "ref": "John 1:35-42",
+  "title": "The First Disciples",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.12,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus is followed by disciples, invites them to stay, and meets Andrew and Simon Peter.",
+  "parallels": [
+   "Matthew 4:18-22",
+   "Mark 1:16-20",
+   "Luke 5:1-11"
+  ]
+ },
+ "John 01.43 Jesus Calls Philip and Nathanael.txt": {
+  "ref": "John 1:43-51",
+  "title": "Jesus Calls Philip and Nathanael",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.39,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus sets out, calls Philip, meets Nathanael, and speaks with him",
+  "parallels": []
+ },
+ "John 02.01 The Wedding at Cana.txt": {
+  "ref": "John 2:1-11",
+  "title": "The Wedding at Cana",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.15,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus attends a wedding, turns water into wine, and reveals his glory.",
+  "parallels": []
+ },
+ "John 02.12 Jesus Cleanses the Temple.txt": {
+  "ref": "John 2:12-25",
+  "title": "Jesus Cleanses the Temple",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.11,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus goes to Jerusalem, cleanses the temple, and speaks about his body and rising again.",
+  "parallels": [
+   "Matthew 21:12-17",
+   "Mark 11:15-19",
+   "Luke 19:45-48"
+  ]
+ },
+ "John 03.01 Jesus and Nicodemus.txt": {
+  "ref": "John 3:1-21",
+  "title": "Jesus and Nicodemus",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.8,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus speaks at night with Nicodemus about new birth and belief.",
+  "parallels": [
+   "Genesis 22:1-10",
+   "Romans 5:6-11"
+  ]
+ },
+ "John 03.22 Johns Testimony about Jesus.txt": {
+  "ref": "John 3:22-36",
+  "title": "John’s Testimony about Jesus",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus and his disciples travel, stay, and baptize in Judea; John testifies about him.",
+  "parallels": []
+ },
+ "John 04.01 Jesus and the Samaritan Woman.txt": {
+  "ref": "John 4:1-26",
+  "title": "Jesus and the Samaritan Woman",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.42,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus travels to Samaria, meets a woman, and teaches about living water",
+  "parallels": []
+ },
+ "John 04.27 The Disciples Return and Marvel.txt": {
+  "ref": "John 4:27-38",
+  "title": "The Disciples Return and Marvel",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.53,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus speaks with disciples, teaches about spiritual food and the coming harvest",
+  "parallels": []
+ },
+ "John 04.39 Many Samaritans Believe.txt": {
+  "ref": "John 4:39-42",
+  "title": "Many Samaritans Believe",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Samaritans believe in Jesus; he stays two days and teaches them",
+  "parallels": []
+ },
+ "John 04.43 Jesus Heals the Officials Son.txt": {
+  "ref": "John 4:43-54",
+  "title": "Jesus Heals the Official’s Son",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.08,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus comes to Galilee and heals an official’s dying son from afar",
+  "parallels": [
+   "Matthew 8:5-13",
+   "Luke 7:1-10"
+  ]
+ },
+ "John 05.01 The Pool of Bethesda.txt": {
+  "ref": "John 5:1-15",
+  "title": "The Pool of Bethesda",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.12,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus visits Jerusalem, heals a paralyzed man, then warns him at the temple",
+  "parallels": []
+ },
+ "John 05.16 The Father and the Son.txt": {
+  "ref": "John 5:16-30",
+  "title": "The Father and the Son",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.85,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus speaks after Sabbath healing, defending his authority and unity with the Father.",
+  "parallels": []
+ },
+ "John 05.31 Testimonies about Jesus.txt": {
+  "ref": "John 5:31-38",
+  "title": "Testimonies about Jesus",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus speaks about testimony, John, his works, and the Father witnessing him.",
+  "parallels": []
+ },
+ "John 05.39 The Witness of Scripture.txt": {
+  "ref": "John 5:39-47",
+  "title": "The Witness of Scripture",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus speaks to opponents about Scripture, Moses, unbelief, and his divine authority",
+  "parallels": [
+   "Luke 16:19-31"
+  ]
+ },
+ "John 06.01 The Feeding of the Five Thousand.txt": {
+  "ref": "John 6:1-15",
+  "title": "The Feeding of the Five Thousand",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.1,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus feeds five thousand, then withdraws when crowd wants to make him king.",
+  "parallels": [
+   "Matthew 14:13-21",
+   "Mark 6:30-44",
+   "Luke 9:10-17"
+  ]
+ },
+ "John 06.16 Jesus Walks on Water.txt": {
+  "ref": "John 6:16-21",
+  "title": "Jesus Walks on Water",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.07,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus walks on the sea and gets into the disciples’ boat",
+  "parallels": [
+   "Matthew 14:22-33",
+   "Mark 6:45-52"
+  ]
+ },
+ "John 06.22 Jesus the Bread of Life.txt": {
+  "ref": "John 6:22-58",
+  "title": "Jesus the Bread of Life",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.7,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus meets the crowd and teaches that he is the bread of life.",
+  "parallels": []
+ },
+ "John 06.59 Many Disciples Turn Back.txt": {
+  "ref": "John 6:59-66",
+  "title": "Many Disciples Turn Back",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.49,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches in Capernaum; disciples grumble and many leave him.",
+  "parallels": [
+   "Matthew 8:18-22",
+   "Luke 9:57-62",
+   "Luke 14:25-33"
+  ]
+ },
+ "John 06.67 Peters Confession of Faith.txt": {
+  "ref": "John 6:67-71",
+  "title": "Peter’s Confession of Faith",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.25,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus questions the Twelve; Peter confesses faith; Jesus says one disciple will betray him.",
+  "parallels": [
+   "Matthew 16:13-20",
+   "Mark 8:27-30",
+   "Luke 9:18-20"
+  ]
+ },
+ "John 07.01 Jesus Teaches at the Feast.txt": {
+  "ref": "John 7:1-24",
+  "title": "Jesus Teaches at the Feast",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.5,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus goes secretly to the feast and teaches in the temple courts",
+  "parallels": []
+ },
+ "John 07.25 Is Jesus the Christ.txt": {
+  "ref": "John 7:25-36",
+  "title": "Is Jesus the Christ?",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.35,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches in the temple, claims divine sending, and they try to seize him.",
+  "parallels": []
+ },
+ "John 07.37 Living Water.txt": {
+  "ref": "John 7:37-39",
+  "title": "Living Water",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.37,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus publicly invites the thirsty to come to him and receive living water, meaning the Spirit.",
+  "parallels": []
+ },
+ "John 07.40 Division over Jesus.txt": {
+  "ref": "John 7:40-44",
+  "title": "Division over Jesus",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Crowd debates Jesus; some call him prophet or Christ, others want to seize him.",
+  "parallels": []
+ },
+ "John 07.45 The Unbelief of the Jewish Leaders.txt": {
+  "ref": "John 7:45-53",
+  "title": "The Unbelief of the Jewish Leaders",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Officers report Jesus’ words; Pharisees argue with Nicodemus; everyone goes home.",
+  "parallels": []
+ },
+ "John 08.01 The Woman Caught in Adultery.txt": {
+  "ref": "John 8:1-11",
+  "title": "The Woman Caught in Adultery",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.18,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches in the temple, confronts accusers, and tells a woman to sin no more",
+  "parallels": []
+ },
+ "John 08.12 Jesus the Light of the World.txt": {
+  "ref": "John 8:12-29",
+  "title": "Jesus the Light of the World",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.75,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches in the temple, debates Pharisees, and speaks about the Father and his coming departure.",
+  "parallels": [
+   "1 John 1:5-10"
+  ]
+ },
+ "John 08.30 The Truth Will Set You Free.txt": {
+  "ref": "John 8:30-47",
+  "title": "The Truth Will Set You Free",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.82,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches, debates unbelieving Jews, and speaks about truth, freedom, and their opposition",
+  "parallels": [
+   "2 John 1:4-6"
+  ]
+ },
+ "John 08.48 Before Abraham Was Born, I Am.txt": {
+  "ref": "John 8:48-59",
+  "title": "Before Abraham Was Born, I Am",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.54,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus debates the Jews in the temple and claims to exist before Abraham.",
+  "parallels": []
+ },
+ "John 09.01 Jesus Heals the Man Born Blind.txt": {
+  "ref": "John 9:1-12",
+  "title": "Jesus Heals the Man Born Blind",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.27,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus sees a blind man, heals him with mud, and sends him to wash.",
+  "parallels": []
+ },
+ "John 09.13 The Pharisees Investigate the Healing.txt": {
+  "ref": "John 9:13-34",
+  "title": "The Pharisees Investigate the Healing",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Pharisees question the healed blind man and expel him",
+  "parallels": []
+ },
+ "John 09.35 Spiritual Blindness.txt": {
+  "ref": "John 9:35-41",
+  "title": "Spiritual Blindness",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.49,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus finds the healed man, reveals himself, receives worship, and speaks about spiritual blindness.",
+  "parallels": []
+ },
+ "John 10.01 Jesus the Good Shepherd.txt": {
+  "ref": "John 10:1-21",
+  "title": "Jesus the Good Shepherd",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.84,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches the good shepherd parable; people argue about his words.",
+  "parallels": [
+   "Psalm 23:1-6",
+   "Ezekiel 34:11-24"
+  ]
+ },
+ "John 10.22 Jesus at the Feast of Dedication.txt": {
+  "ref": "John 10:22-39",
+  "title": "Jesus at the Feast of Dedication",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.67,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus walks in the temple, teaches, argues, and narrowly escapes arrest",
+  "parallels": []
+ },
+ "John 10.40 Johns Testimony Confirmed.txt": {
+  "ref": "John 10:40-42",
+  "title": "John’s Testimony Confirmed",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus goes across the Jordan; many come, affirm John, and believe in him",
+  "parallels": []
+ },
+ "John 11.01 The Death of Lazarus.txt": {
+  "ref": "John 11:1-16",
+  "title": "The Death of Lazarus",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.39,
+  "llm_present": true,
+  "agreement": "2/3",
+  "gist": "Jesus hears Lazarus is sick, then decides to go back to Judea",
+  "parallels": []
+ },
+ "John 11.17 Jesus Comforts Martha and Mary.txt": {
+  "ref": "John 11:17-37",
+  "title": "Jesus Comforts Martha and Mary",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.12,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus meets Martha and Mary, comforts them, and weeps over Lazarus",
+  "parallels": []
+ },
+ "John 11.38 Jesus Raises Lazarus.txt": {
+  "ref": "John 11:38-44",
+  "title": "Jesus Raises Lazarus",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.4,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus goes to Lazarus’s tomb, prays, commands him out, and Lazarus lives",
+  "parallels": [
+   "Acts 9:36-43"
+  ]
+ },
+ "John 11.45 The Plot to Kill Jesus.txt": {
+  "ref": "John 11:45-57",
+  "title": "The Plot to Kill Jesus",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Others plot to kill Jesus; he withdraws with disciples, while people search for him.",
+  "parallels": [
+   "Matthew 26:1-5",
+   "Mark 14:1-2",
+   "Luke 22:1-2"
+  ]
+ },
+ "John 12.01 Mary Anoints Jesus.txt": {
+  "ref": "John 12:1-8",
+  "title": "Mary Anoints Jesus",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.18,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus dines at Bethany, is anointed by Mary, and responds to Judas",
+  "parallels": [
+   "Matthew 26:6-13",
+   "Mark 14:3-9",
+   "Luke 7:36-50"
+  ]
+ },
+ "John 12.09 The Plot to Kill Lazarus.txt": {
+  "ref": "John 12:9-11",
+  "title": "The Plot to Kill Lazarus",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus is there; crowds come to see him and Lazarus, while priests plot to kill Lazarus",
+  "parallels": []
+ },
+ "John 12.12 The Triumphal Entry.txt": {
+  "ref": "John 12:12-19",
+  "title": "The Triumphal Entry",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus enters Jerusalem riding a donkey as crowds praise him",
+  "parallels": [
+   "Zechariah 9:9-13",
+   "Matthew 21:1-11",
+   "Mark 11:1-11",
+   "Luke 19:28-40"
+  ]
+ },
+ "John 12.20 Jesus Predicts His Death.txt": {
+  "ref": "John 12:20-36",
+  "title": "Jesus Predicts His Death",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.58,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Greeks ask to see Jesus; he predicts his death and speaks to the crowd",
+  "parallels": []
+ },
+ "John 12.37 Belief and Unbelief.txt": {
+  "ref": "John 12:37-50",
+  "title": "Belief and Unbelief",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.52,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus speaks publicly about belief, light, judgment, and the Father sending him.",
+  "parallels": []
+ },
+ "John 13.01 Jesus Washes His Disciples Feet.txt": {
+  "ref": "John 13:1-17",
+  "title": "Jesus Washes His Disciples’ Feet",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.41,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus washes disciples’ feet and teaches them humility and service",
+  "parallels": []
+ },
+ "John 13.18 Jesus Predicts His Betrayal.txt": {
+  "ref": "John 13:18-30",
+  "title": "Jesus Predicts His Betrayal",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.42,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus at supper predicts betrayal, identifies Judas, and sends him out.",
+  "parallels": [
+   "Psalm 41:1-13"
+  ]
+ },
+ "John 13.31 Love One Another.txt": {
+  "ref": "John 13:31-35",
+  "title": "Love One Another",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.94,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus tells disciples to love one another and says he will soon leave",
+  "parallels": [
+   "Romans 12:9-13",
+   "1 John 3:11-24"
+  ]
+ },
+ "John 13.36 Jesus Predicts Peters Denial.txt": {
+  "ref": "John 13:36-38",
+  "title": "Jesus Predicts Peter’s Denial",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.56,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus tells Peter he will deny him three times before the rooster crows",
+  "parallels": [
+   "Matthew 26:31-35",
+   "Mark 14:27-31",
+   "Luke 22:31-38"
+  ]
+ },
+ "John 14.01 In My Fathers House Are Many Rooms.txt": {
+  "ref": "John 14:1-4",
+  "title": "In My Father’s House Are Many Rooms",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus comforts disciples and says he will go prepare a place and return",
+  "parallels": []
+ },
+ "John 14.05 The Way, the Truth, and the Life.txt": {
+  "ref": "John 14:5-14",
+  "title": "The Way, the Truth, and the Life",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.84,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus speaks to the disciples about knowing him, the Father, and answering prayer",
+  "parallels": []
+ },
+ "John 14.15 Jesus Promises the Holy Spirit.txt": {
+  "ref": "John 14:15-26",
+  "title": "Jesus Promises the Holy Spirit",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.92,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus speaks to disciples, promising the Holy Spirit and future help.",
+  "parallels": [
+   "John 16:5-16"
+  ]
+ },
+ "John 14.27 Peace I Leave with You.txt": {
+  "ref": "John 14:27-31",
+  "title": "Peace I Leave with You",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus comforts the disciples, predicts his departure, and leads them onward.",
+  "parallels": []
+ },
+ "John 15.01 Jesus the True Vine.txt": {
+  "ref": "John 15:1-8",
+  "title": "Jesus the True Vine",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches his disciples that he is the true vine and they must remain in him.",
+  "parallels": [
+   "Isaiah 27:1-13"
+  ]
+ },
+ "John 15.09 No Greater Love.txt": {
+  "ref": "John 15:9-17",
+  "title": "No Greater Love",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches the disciples about love, friendship, obedience, and bearing lasting fruit.",
+  "parallels": []
+ },
+ "John 15.18 The Hatred of the World.txt": {
+  "ref": "John 15:18-27",
+  "title": "The Hatred of the World",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus speaks to disciples about coming hatred, persecution, and the Spirit's testimony",
+  "parallels": []
+ },
+ "John 16.01 Persecution Foretold.txt": {
+  "ref": "John 16:1-4",
+  "title": "Persecution Foretold",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus warns disciples they will be persecuted and killed",
+  "parallels": [
+   "Acts 23:12-22"
+  ]
+ },
+ "John 16.05 The Promise of the Holy Spirit.txt": {
+  "ref": "John 16:5-16",
+  "title": "The Promise of the Holy Spirit",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus speaks to disciples about leaving and sending the Spirit",
+  "parallels": [
+   "John 14:15-26"
+  ]
+ },
+ "John 16.17 Grief Will Turn to Joy.txt": {
+  "ref": "John 16:17-22",
+  "title": "Grief Will Turn to Joy",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.78,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus speaks to disciples about sorrow turning into lasting joy",
+  "parallels": []
+ },
+ "John 16.23 Ask in My Name.txt": {
+  "ref": "John 16:23-33",
+  "title": "Ask in My Name",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.83,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches disciples, promises the Father’s help, and says he will leave them.",
+  "parallels": [
+   "Matthew 18:19-20"
+  ]
+ },
+ "John 17.01 Prayer for the Son.txt": {
+  "ref": "John 17:1-5",
+  "title": "Prayer for the Son",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.86,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus prays to the Father, asking for glory after completing his work",
+  "parallels": []
+ },
+ "John 17.06 Prayer for the Disciples.txt": {
+  "ref": "John 17:6-19",
+  "title": "Prayer for the Disciples",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus prays to the Father for his disciples’ protection and sanctification",
+  "parallels": []
+ },
+ "John 17.20 Prayer for All Believers.txt": {
+  "ref": "John 17:20-26",
+  "title": "Prayer for All Believers",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus prays for future believers to be one with him and the Father",
+  "parallels": []
+ },
+ "John 18.01 The Betrayal of Jesus.txt": {
+  "ref": "John 18:1-14",
+  "title": "The Betrayal of Jesus",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.23,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus goes to a garden, confronts soldiers, is arrested and taken away",
+  "parallels": [
+   "Matthew 26:47-56",
+   "Mark 14:43-52",
+   "Luke 22:47-53"
+  ]
+ },
+ "John 18.15 Peters First Denial.txt": {
+  "ref": "John 18:15-18",
+  "title": "Peter’s First Denial",
+  "present": true,
+  "source": "reviewed",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Peter enters the high priest’s courtyard and denies knowing Jesus",
+  "parallels": [
+   "Matthew 26:69-70",
+   "Mark 14:66-68",
+   "Luke 22:54-57"
+  ]
+ },
+ "John 18.19 Jesus before the High Priest.txt": {
+  "ref": "John 18:19-24",
+  "title": "Jesus before the High Priest",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.55,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus is questioned by the high priest, struck, and sent to Caiaphas",
+  "parallels": [
+   "Matthew 26:57-68",
+   "Mark 14:53-65",
+   "Luke 22:66-71"
+  ]
+ },
+ "John 18.25 Peters Second and Third Denials.txt": {
+  "ref": "John 18:25-27",
+  "title": "Peter’s Second and Third Denials",
+  "present": true,
+  "source": "reviewed",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Peter denies Jesus three times; the rooster crows",
+  "parallels": [
+   "Matthew 26:71-75",
+   "Mark 14:69-72",
+   "Luke 22:58-62"
+  ]
+ },
+ "John 18.28 Jesus before Pilate.txt": {
+  "ref": "John 18:28-40",
+  "title": "Jesus before Pilate",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.25,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Pilate questions Jesus; Jesus speaks of his kingdom and truth.",
+  "parallels": [
+   "Matthew 27:11-14",
+   "Luke 23:1-5"
+  ]
+ },
+ "John 19.01 The Soldiers Mock Jesus.txt": {
+  "ref": "John 19:1-15",
+  "title": "The Soldiers Mock Jesus",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.08,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus is flogged, mocked, questioned by Pilate, and condemned by the crowd",
+  "parallels": [
+   "Isaiah 50:4-11",
+   "Matthew 27:27-31",
+   "Mark 15:16-20",
+   "Luke 22:63-65"
+  ]
+ },
+ "John 19.16 The Crucifixion.txt": {
+  "ref": "John 19:16-27",
+  "title": "The Crucifixion",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.03,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus is crucified, speaks from the cross, and entrusts his mother to a disciple.",
+  "parallels": [
+   "Psalm 22:1-31",
+   "Matthew 27:32-44",
+   "Mark 15:21-32",
+   "Luke 23:26-43"
+  ]
+ },
+ "John 19.28 The Death of Jesus.txt": {
+  "ref": "John 19:28-30",
+  "title": "The Death of Jesus",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.09,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus says he is thirsty, receives sour wine, and dies",
+  "parallels": [
+   "Psalm 22:1-31",
+   "Matthew 27:45-56",
+   "Mark 15:33-41",
+   "Luke 23:44-49"
+  ]
+ },
+ "John 19.31 Jesus Side Is Pierced.txt": {
+  "ref": "John 19:31-37",
+  "title": "Jesus’ Side Is Pierced",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Soldiers, after Jesus dies, pierce his side and note no bones are broken.",
+  "parallels": [
+   "Zechariah 12:10-14"
+  ]
+ },
+ "John 19.38 The Burial of Jesus.txt": {
+  "ref": "John 19:38-42",
+  "title": "The Burial of Jesus",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Joseph and Nicodemus bury Jesus in a nearby tomb",
+  "parallels": [
+   "Isaiah 53:9-12",
+   "Matthew 27:57-61",
+   "Mark 15:42-47",
+   "Luke 23:50-56"
+  ]
+ },
+ "John 20.01 The Resurrection.txt": {
+  "ref": "John 20:1-9",
+  "title": "The Resurrection",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Mary finds the empty tomb; Peter and another disciple inspect it and believe",
+  "parallels": [
+   "Matthew 28:1-10",
+   "Mark 16:1-8",
+   "Luke 24:1-12"
+  ]
+ },
+ "John 20.10 Jesus Appears to Mary Magdalene.txt": {
+  "ref": "John 20:10-18",
+  "title": "Jesus Appears to Mary Magdalene",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.21,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus appears risen to Mary Magdalene and sends her to tell the disciples",
+  "parallels": [
+   "Mark 16:9-11"
+  ]
+ },
+ "John 20.19 Jesus Appears to the Disciples.txt": {
+  "ref": "John 20:19-23",
+  "title": "Jesus Appears to the Disciples",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.37,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus appears to disciples, shows wounds, and sends them with the Holy Spirit",
+  "parallels": [
+   "Luke 24:36-49",
+   "1 John 1:1-4"
+  ]
+ },
+ "John 20.24 Jesus Appears to Thomas.txt": {
+  "ref": "John 20:24-29",
+  "title": "Jesus Appears to Thomas",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.31,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus appears to Thomas, shows his wounds, and blesses believers",
+  "parallels": []
+ },
+ "John 20.30 The Purpose of Johns Book.txt": {
+  "ref": "John 20:30-31",
+  "title": "The Purpose of John’s Book",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "John says Jesus did many signs, written to inspire belief and life",
+  "parallels": []
+ },
+ "John 21.01 Jesus Appears by the Sea of Tiberias.txt": {
+  "ref": "John 21:1-14",
+  "title": "Jesus Appears by the Sea of Tiberias",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.1,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Risen Jesus appears by the sea, directs a miraculous catch, and eats breakfast with disciples",
+  "parallels": []
+ },
+ "John 21.15 Jesus and Peter.txt": {
+  "ref": "John 21:15-19",
+  "title": "Jesus and Peter",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.48,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus questions Peter three times, restores him, predicts his death, and tells him to follow.",
+  "parallels": []
+ },
+ "John 21.20 Jesus and the Beloved Disciple.txt": {
+  "ref": "John 21:20-25",
+  "title": "Jesus and the Beloved Disciple",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.19,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus speaks to Peter about the beloved disciple and his future",
+  "parallels": []
+ },
+ "Luke 01.01 Dedication to Theophilus.txt": {
+  "ref": "Luke 1:1-4",
+  "title": "Dedication to Theophilus",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Luke explains writing an orderly account for Theophilus",
+  "parallels": [
+   "Acts 1:1-3"
+  ]
+ },
+ "Luke 01.05 Gabriel Foretells Johns Birth.txt": {
+  "ref": "Luke 1:5-25",
+  "title": "Gabriel Foretells John’s Birth",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Gabriel tells Zechariah Elizabeth will bear John; Zechariah is struck mute",
+  "parallels": []
+ },
+ "Luke 01.26 Gabriel Foretells Jesus Birth.txt": {
+  "ref": "Luke 1:26-38",
+  "title": "Gabriel Foretells Jesus’ Birth",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Gabriel tells Mary she will conceive Jesus and gives the child his name.",
+  "parallels": []
+ },
+ "Luke 01.39 Mary Visits Elizabeth.txt": {
+  "ref": "Luke 1:39-45",
+  "title": "Mary Visits Elizabeth",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Mary visits Elizabeth; unborn John leaps and Elizabeth blesses her",
+  "parallels": []
+ },
+ "Luke 01.46 Marys Song.txt": {
+  "ref": "Luke 1:46-56",
+  "title": "Mary’s Song",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Mary praises God for favor, mercy, and reversing fortunes; then stays with Elizabeth.",
+  "parallels": [
+   "1 Samuel 2:1-11"
+  ]
+ },
+ "Luke 01.57 The Birth of John the Baptist.txt": {
+  "ref": "Luke 1:57-66",
+  "title": "The Birth of John the Baptist",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Elizabeth bears John; neighbors marvel; Zechariah names him John and speaks again",
+  "parallels": []
+ },
+ "Luke 01.67 Zechariahs Song.txt": {
+  "ref": "Luke 1:67-80",
+  "title": "Zechariah’s Song",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Zechariah prophesies about John’s future role and God’s salvation",
+  "parallels": []
+ },
+ "Luke 02.01 The Birth of Jesus.txt": {
+  "ref": "Luke 2:1-7",
+  "title": "The Birth of Jesus",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Jesus is born in Bethlehem and laid in a manger",
+  "parallels": [
+   "Matthew 1:18-25"
+  ]
+ },
+ "Luke 02.08 The Shepherds and the Angels.txt": {
+  "ref": "Luke 2:8-20",
+  "title": "The Shepherds and the Angels",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Shepherds hear angels, visit baby Jesus, and praise God",
+  "parallels": []
+ },
+ "Luke 02.21 Jesus Presented at the Temple.txt": {
+  "ref": "Luke 2:21-24",
+  "title": "Jesus Presented at the Temple",
+  "present": false,
+  "source": "reviewed",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "2/3",
+  "gist": "Jesus is circumcised and presented at the temple by his parents",
+  "parallels": []
+ },
+ "Luke 02.25 The Prophecy of Simeon.txt": {
+  "ref": "Luke 2:25-35",
+  "title": "The Prophecy of Simeon",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Baby Jesus is brought to the temple, blessed by Simeon, and prophesied over.",
+  "parallels": []
+ },
+ "Luke 02.36 The Prophecy of Anna.txt": {
+  "ref": "Luke 2:36-38",
+  "title": "The Prophecy of Anna",
+  "present": false,
+  "source": "reviewed",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "2/3",
+  "gist": "Anna praises God and speaks about the child to waiting people",
+  "parallels": []
+ },
+ "Luke 02.39 The Return to Nazareth.txt": {
+  "ref": "Luke 2:39-40",
+  "title": "The Return to Nazareth",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Jesus grows up in Nazareth after his parents return from Jerusalem",
+  "parallels": [
+   "Matthew 2:19-23"
+  ]
+ },
+ "Luke 02.41 The Boy Jesus at the Temple.txt": {
+  "ref": "Luke 2:41-52",
+  "title": "The Boy Jesus at the Temple",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.08,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Twelve-year-old Jesus stays in Jerusalem, teaches in the temple, then returns home.",
+  "parallels": []
+ },
+ "Luke 03.01 The Mission of John the Baptist.txt": {
+  "ref": "Luke 3:1-20",
+  "title": "The Mission of John the Baptist",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "John the Baptist preaches repentance, baptizes crowds, rebukes Herod, and is imprisoned",
+  "parallels": [
+   "Isaiah 40:1-5",
+   "Matthew 3:1-12",
+   "Mark 1:1-8",
+   "John 1:19-28"
+  ]
+ },
+ "Luke 03.21 The Baptism of Jesus.txt": {
+  "ref": "Luke 3:21-22",
+  "title": "The Baptism of Jesus",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus is baptized; the Spirit descends and a heavenly voice speaks",
+  "parallels": [
+   "Matthew 3:13-17",
+   "Mark 1:9-11",
+   "John 1:29-34"
+  ]
+ },
+ "Luke 03.23 The Genealogy of Jesus.txt": {
+  "ref": "Luke 3:23-38",
+  "title": "The Genealogy of Jesus",
+  "present": false,
+  "source": "model 2/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "2/3",
+  "gist": "Jesus’ genealogy traces his ancestry back to Adam and God.",
+  "parallels": [
+   "Ruth 4:18-22",
+   "Matthew 1:1-17"
+  ]
+ },
+ "Luke 04.01 The Temptation of Jesus.txt": {
+  "ref": "Luke 4:1-13",
+  "title": "The Temptation of Jesus",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.14,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus is led into the wilderness and tempted by the devil, then answers each test.",
+  "parallels": [
+   "Matthew 4:1-11",
+   "Mark 1:12-13"
+  ]
+ },
+ "Luke 04.14 Jesus Begins His Ministry.txt": {
+  "ref": "Luke 4:14-15",
+  "title": "Jesus Begins His Ministry",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus returns to Galilee and teaches in synagogues, praised by everyone",
+  "parallels": [
+   "Isaiah 9:1-7",
+   "Matthew 4:12-17",
+   "Mark 1:14-15"
+  ]
+ },
+ "Luke 04.16 The Rejection at Nazareth.txt": {
+  "ref": "Luke 4:16-30",
+  "title": "The Rejection at Nazareth",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.51,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus reads Isaiah in Nazareth, teaches, angers the crowd, and escapes their attack.",
+  "parallels": [
+   "Isaiah 61:1-11",
+   "Matthew 13:53-58",
+   "Mark 6:1-6"
+  ]
+ },
+ "Luke 04.31 Jesus Expels an Unclean Spirit.txt": {
+  "ref": "Luke 4:31-37",
+  "title": "Jesus Expels an Unclean Spirit",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.04,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches in Capernaum and drives out an unclean spirit",
+  "parallels": [
+   "Mark 1:21-28"
+  ]
+ },
+ "Luke 04.38 Jesus Heals at Peters House.txt": {
+  "ref": "Luke 4:38-41",
+  "title": "Jesus Heals at Peter’s House",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus goes to Simon’s house, heals many sick people, and drives out demons",
+  "parallels": [
+   "Matthew 8:14-17",
+   "Mark 1:29-34"
+  ]
+ },
+ "Luke 04.42 Jesus Preaches in Judea.txt": {
+  "ref": "Luke 4:42-44",
+  "title": "Jesus Preaches in Judea",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.37,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus leaves a crowd, explains his mission, and preaches in Judea.",
+  "parallels": [
+   "Mark 1:35-39"
+  ]
+ },
+ "Luke 05.01 The First Disciples.txt": {
+  "ref": "Luke 5:1-11",
+  "title": "The First Disciples",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.1,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches from a boat, causes a miraculous catch, and calls Simon, James, and John.",
+  "parallels": [
+   "Matthew 4:18-22",
+   "Mark 1:16-20",
+   "John 1:35-42"
+  ]
+ },
+ "Luke 05.12 The Lepers Prayer.txt": {
+  "ref": "Luke 5:12-16",
+  "title": "The Leper’s Prayer",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.25,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus heals a man with leprosy and withdraws to pray",
+  "parallels": [
+   "Leviticus 14:1-32",
+   "Matthew 8:1-4",
+   "Mark 1:40-45"
+  ]
+ },
+ "Luke 05.17 Jesus Heals a Paralytic.txt": {
+  "ref": "Luke 5:17-26",
+  "title": "Jesus Heals a Paralytic",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.25,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus heals a paralytic, forgives his sins, and amazes the crowd",
+  "parallels": [
+   "Matthew 9:1-8",
+   "Mark 2:1-12"
+  ]
+ },
+ "Luke 05.27 Jesus Calls Levi.txt": {
+  "ref": "Luke 5:27-32",
+  "title": "Jesus Calls Levi",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.25,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus calls Levi, eats with tax collectors, and answers Pharisees",
+  "parallels": [
+   "Matthew 9:9-13",
+   "Mark 2:13-17"
+  ]
+ },
+ "Luke 05.33 Questions about Fasting.txt": {
+  "ref": "Luke 5:33-35",
+  "title": "Questions about Fasting",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.55,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus answers why his followers do not fast while he is with them",
+  "parallels": [
+   "Matthew 9:14-15",
+   "Mark 2:18-20"
+  ]
+ },
+ "Luke 05.36 The Patches and the Wineskins.txt": {
+  "ref": "Luke 5:36-39",
+  "title": "The Patches and the Wineskins",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.94,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches a parable about new cloth, new wine, and old wineskins",
+  "parallels": [
+   "Matthew 9:16-17",
+   "Mark 2:21-22"
+  ]
+ },
+ "Luke 06.01 The Lord of the Sabbath.txt": {
+  "ref": "Luke 6:1-5",
+  "title": "The Lord of the Sabbath",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.52,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus and disciples pluck grain on Sabbath; he defends their actions",
+  "parallels": [
+   "1 Samuel 21:1-7",
+   "Matthew 12:1-8",
+   "Mark 2:23-28"
+  ]
+ },
+ "Luke 06.06 Jesus Heals on the Sabbath.txt": {
+  "ref": "Luke 6:6-11",
+  "title": "Jesus Heals on the Sabbath",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.23,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches in synagogue, heals a man's withered hand, angering Pharisees.",
+  "parallels": [
+   "Matthew 12:9-14",
+   "Mark 3:1-6"
+  ]
+ },
+ "Luke 06.12 The Twelve Apostles.txt": {
+  "ref": "Luke 6:12-16",
+  "title": "The Twelve Apostles",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus prays overnight, then chooses twelve disciples as apostles",
+  "parallels": [
+   "Matthew 10:1-4",
+   "Mark 3:13-19"
+  ]
+ },
+ "Luke 06.17 Jesus Heals the Multitudes.txt": {
+  "ref": "Luke 6:17-19",
+  "title": "Jesus Heals the Multitudes",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus comes down, teaches, and heals many in a crowd",
+  "parallels": [
+   "Matthew 4:23-25",
+   "Mark 3:7-12"
+  ]
+ },
+ "Luke 06.20 The Beatitudes.txt": {
+  "ref": "Luke 6:20-23",
+  "title": "The Beatitudes",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.92,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus tells disciples they are blessed despite poverty and persecution",
+  "parallels": [
+   "Psalm 1:1-6",
+   "Matthew 5:3-12"
+  ]
+ },
+ "Luke 06.24 Woes to the Satisfied.txt": {
+  "ref": "Luke 6:24-26",
+  "title": "Woes to the Satisfied",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus warns the rich, full, laughing, and popular with woes",
+  "parallels": [
+   "Amos 6:1-7"
+  ]
+ },
+ "Luke 06.27 Love Your Enemies.txt": {
+  "ref": "Luke 6:27-36",
+  "title": "Love Your Enemies",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches his listeners to love enemies, show mercy, and do good unselfishly",
+  "parallels": [
+   "Matthew 5:38-48"
+  ]
+ },
+ "Luke 06.37 Judging Others.txt": {
+  "ref": "Luke 6:37-42",
+  "title": "Judging Others",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.97,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches against judging, condemning, hypocrisy, and blind guidance.",
+  "parallels": [
+   "Matthew 7:1-6",
+   "Romans 14:1-12"
+  ]
+ },
+ "Luke 06.43 A Tree and Its Fruit.txt": {
+  "ref": "Luke 6:43-45",
+  "title": "A Tree and Its Fruit",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches that people are known by the fruit of their hearts",
+  "parallels": [
+   "Matthew 7:15-23",
+   "Matthew 12:33-37"
+  ]
+ },
+ "Luke 06.46 The House on the Rock.txt": {
+  "ref": "Luke 6:46-49",
+  "title": "The House on the Rock",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches about houses built on rock or sand",
+  "parallels": [
+   "Matthew 7:24-27"
+  ]
+ },
+ "Luke 07.01 The Faith of the Centurion.txt": {
+  "ref": "Luke 7:1-10",
+  "title": "The Faith of the Centurion",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.06,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus goes to Capernaum, hears the centurion’s request, praises his faith, and heals the servant",
+  "parallels": [
+   "Matthew 8:5-13",
+   "John 4:43-54"
+  ]
+ },
+ "Luke 07.11 Jesus Raises a Widows Son.txt": {
+  "ref": "Luke 7:11-17",
+  "title": "Jesus Raises a Widow’s Son",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.07,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus visits Nain, raises a widow’s dead son, and the crowd praises God",
+  "parallels": []
+ },
+ "Luke 07.18 Johns Inquiry.txt": {
+  "ref": "Luke 7:18-23",
+  "title": "John’s Inquiry",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.35,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus heals many and answers John’s disciples about his identity",
+  "parallels": [
+   "Matthew 11:1-6"
+  ]
+ },
+ "Luke 07.24 Jesus Testifies about John.txt": {
+  "ref": "Luke 7:24-35",
+  "title": "Jesus Testifies about John",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.79,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus speaks to the crowds about John, praising him and rebuking critics",
+  "parallels": [
+   "Malachi 3:1-5",
+   "Matthew 11:7-19"
+  ]
+ },
+ "Luke 07.36 A Sinful Woman Anoints Jesus.txt": {
+  "ref": "Luke 7:36-50",
+  "title": "A Sinful Woman Anoints Jesus",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.47,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus dines at a Pharisee’s house, a sinful woman anoints him, and he forgives her.",
+  "parallels": [
+   "Matthew 26:6-13",
+   "Mark 14:3-9",
+   "John 12:1-8"
+  ]
+ },
+ "Luke 08.01 Women Minister to Jesus.txt": {
+  "ref": "Luke 8:1-3",
+  "title": "Women Minister to Jesus",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus travels preaching; women who were healed support him and the Twelve",
+  "parallels": []
+ },
+ "Luke 08.04 The Parable of the Sower.txt": {
+  "ref": "Luke 8:4-15",
+  "title": "The Parable of the Sower",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.88,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus tells the parable of the sower and explains its meaning to disciples",
+  "parallels": [
+   "Matthew 13:1-23",
+   "Mark 4:1-20"
+  ]
+ },
+ "Luke 08.16 The Lesson of the Lamp.txt": {
+  "ref": "Luke 8:16-18",
+  "title": "The Lesson of the Lamp",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches the parable of the lamp and warns to listen carefully",
+  "parallels": [
+   "Mark 4:21-25"
+  ]
+ },
+ "Luke 08.19 Jesus Mother and Brothers.txt": {
+  "ref": "Luke 8:19-21",
+  "title": "Jesus’ Mother and Brothers",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.3,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus speaks about his mother and brothers and obedience to God",
+  "parallels": [
+   "Matthew 12:46-50",
+   "Mark 3:31-35"
+  ]
+ },
+ "Luke 08.22 Jesus Calms the Storm.txt": {
+  "ref": "Luke 8:22-25",
+  "title": "Jesus Calms the Storm",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.12,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus travels by boat, sleeps, calms a storm, and rebukes the disciples",
+  "parallels": [
+   "Psalm 107:1-43",
+   "Matthew 8:23-27",
+   "Mark 4:35-41"
+  ]
+ },
+ "Luke 08.26 The Demons and the Pigs.txt": {
+  "ref": "Luke 8:26-39",
+  "title": "The Demons and the Pigs",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.04,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus meets a demon-possessed man, casts out demons, and leaves after the pigs drown",
+  "parallels": [
+   "Matthew 8:28-34",
+   "Mark 5:1-20"
+  ]
+ },
+ "Luke 08.40 The Healing Touch of Jesus.txt": {
+  "ref": "Luke 8:40-56",
+  "title": "The Healing Touch of Jesus",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.14,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus heals a bleeding woman and raises Jairus’s daughter from death",
+  "parallels": [
+   "Matthew 9:18-26",
+   "Mark 5:21-43"
+  ]
+ },
+ "Luke 09.01 The Ministry of the Twelve.txt": {
+  "ref": "Luke 9:1-6",
+  "title": "The Ministry of the Twelve",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.47,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus sends the Twelve out to preach, heal, and travel lightly",
+  "parallels": [
+   "Matthew 10:5-15",
+   "Mark 6:7-13"
+  ]
+ },
+ "Luke 09.07 Herod Tries to See Jesus.txt": {
+  "ref": "Luke 9:7-9",
+  "title": "Herod Tries to See Jesus",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Herod hears reports and wants to see Jesus",
+  "parallels": [
+   "Matthew 14:1-12",
+   "Mark 6:14-29"
+  ]
+ },
+ "Luke 09.10 The Feeding of the Five Thousand.txt": {
+  "ref": "Luke 9:10-17",
+  "title": "The Feeding of the Five Thousand",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.08,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus welcomes crowds, teaches, heals, multiplies loaves and fish, and feeds five thousand.",
+  "parallels": [
+   "Matthew 14:13-21",
+   "Mark 6:30-44",
+   "John 6:1-15"
+  ]
+ },
+ "Luke 09.18 Peters Confession of Christ.txt": {
+  "ref": "Luke 9:18-20",
+  "title": "Peter’s Confession of Christ",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.27,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus prays, asks disciples who he is, and Peter confesses him as Christ",
+  "parallels": [
+   "Matthew 16:13-20",
+   "Mark 8:27-30",
+   "John 6:67-71"
+  ]
+ },
+ "Luke 09.21 Christs Passion Foretold.txt": {
+  "ref": "Luke 9:21-22",
+  "title": "Christ’s Passion Foretold",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.73,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus warns them and foretells his suffering, death, and resurrection",
+  "parallels": [
+   "Matthew 16:21-23",
+   "Mark 8:31-33"
+  ]
+ },
+ "Luke 09.23 Take Up Your Cross.txt": {
+  "ref": "Luke 9:23-27",
+  "title": "Take Up Your Cross",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.94,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches disciples to deny self, take up cross, and follow him",
+  "parallels": [
+   "Matthew 16:24-28",
+   "Mark 8:34-38"
+  ]
+ },
+ "Luke 09.28 The Transfiguration.txt": {
+  "ref": "Luke 9:28-36",
+  "title": "The Transfiguration",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus prays on a mountain, is transfigured, and Moses and Elijah speak with him",
+  "parallels": [
+   "Matthew 17:1-13",
+   "Mark 9:1-13",
+   "2 Peter 1:16-21"
+  ]
+ },
+ "Luke 09.37 The Boy with an Evil Spirit.txt": {
+  "ref": "Luke 9:37-42",
+  "title": "The Boy with an Evil Spirit",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.15,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus meets a crowd, heals an afflicted boy, and returns him to his father",
+  "parallels": [
+   "Matthew 17:14-18",
+   "Mark 9:14-29"
+  ]
+ },
+ "Luke 09.43 The Second Prediction of the Passion.txt": {
+  "ref": "Luke 9:43-45",
+  "title": "The Second Prediction of the Passion",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.28,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus predicts his coming betrayal and suffering; disciples do not understand",
+  "parallels": [
+   "Matthew 17:22-23",
+   "Mark 9:30-32"
+  ]
+ },
+ "Luke 09.46 The Greatest in the Kingdom.txt": {
+  "ref": "Luke 9:46-50",
+  "title": "The Greatest in the Kingdom",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.43,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches disciples about humility and welcomes a child; answers John about exorcist",
+  "parallels": [
+   "Matthew 18:1-5",
+   "Mark 9:33-41"
+  ]
+ },
+ "Luke 09.51 The Samaritans Reject Jesus.txt": {
+  "ref": "Luke 9:51-56",
+  "title": "The Samaritans Reject Jesus",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus travels to Jerusalem, is rejected by Samaritans, rebukes disciples, moves on",
+  "parallels": []
+ },
+ "Luke 09.57 The Cost of Discipleship.txt": {
+  "ref": "Luke 9:57-62",
+  "title": "The Cost of Discipleship",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.49,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches followers about the cost of following him",
+  "parallels": [
+   "Matthew 8:18-22",
+   "Luke 14:25-33",
+   "John 6:59-66"
+  ]
+ },
+ "Luke 10.01 Jesus Sends the Seventy-Two.txt": {
+  "ref": "Luke 10:1-12",
+  "title": "Jesus Sends the Seventy-Two",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.87,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus appoints seventy-two, sends them out, and gives instructions and warnings",
+  "parallels": [
+   "Matthew 9:35-38"
+  ]
+ },
+ "Luke 10.13 Woe to the Unrepentant.txt": {
+  "ref": "Luke 10:13-16",
+  "title": "Woe to the Unrepentant",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus rebukes towns for rejecting miracles and his messengers",
+  "parallels": [
+   "Matthew 11:20-24"
+  ]
+ },
+ "Luke 10.17 The Joyful Return.txt": {
+  "ref": "Luke 10:17-20",
+  "title": "The Joyful Return",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.71,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus tells the seventy-two Satan fell and gives authority, urging heavenly joy",
+  "parallels": []
+ },
+ "Luke 10.21 Jesus Prayer of Thanksgiving.txt": {
+  "ref": "Luke 10:21-24",
+  "title": "Jesus’ Prayer of Thanksgiving",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.85,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus prays, thanks the Father, and speaks privately to the disciples",
+  "parallels": [
+   "Matthew 11:25-30"
+  ]
+ },
+ "Luke 10.25 The Parable of the Good Samaritan.txt": {
+  "ref": "Luke 10:25-37",
+  "title": "The Parable of the Good Samaritan",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.67,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus answers a lawyer and tells the Good Samaritan parable.",
+  "parallels": []
+ },
+ "Luke 10.38 Martha and Mary.txt": {
+  "ref": "Luke 10:38-42",
+  "title": "Martha and Mary",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.3,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus visits Martha’s home; Mary listens, Martha worries, Jesus teaches priority",
+  "parallels": []
+ },
+ "Luke 11.01 The Lords Prayer.txt": {
+  "ref": "Luke 11:1-4",
+  "title": "The Lord’s Prayer",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.56,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches his disciples how to pray.",
+  "parallels": [
+   "Matthew 6:5-15"
+  ]
+ },
+ "Luke 11.05 Ask, Seek, Knock.txt": {
+  "ref": "Luke 11:5-13",
+  "title": "Ask, Seek, Knock",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.98,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches a parable about persistence in prayer and God giving good gifts.",
+  "parallels": [
+   "Matthew 7:7-12"
+  ]
+ },
+ "Luke 11.14 A House Divided.txt": {
+  "ref": "Luke 11:14-23",
+  "title": "A House Divided",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.68,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus drives out a mute demon and debates accusations, explaining God’s kingdom",
+  "parallels": [
+   "Matthew 12:22-30",
+   "Mark 3:20-27"
+  ]
+ },
+ "Luke 11.24 An Unclean Spirit Returns.txt": {
+  "ref": "Luke 11:24-26",
+  "title": "An Unclean Spirit Returns",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "2/3",
+  "gist": "Jesus tells a parable about an unclean spirit returning with seven worse spirits",
+  "parallels": [
+   "Matthew 12:43-45"
+  ]
+ },
+ "Luke 11.27 True Blessedness.txt": {
+  "ref": "Luke 11:27-28",
+  "title": "True Blessedness",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.28,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches the crowd about true blessedness",
+  "parallels": []
+ },
+ "Luke 11.29 The Sign of Jonah.txt": {
+  "ref": "Luke 11:29-32",
+  "title": "The Sign of Jonah",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.94,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus tells crowds they will get only the sign of Jonah",
+  "parallels": [
+   "Jonah 3:1-10",
+   "Matthew 12:38-42"
+  ]
+ },
+ "Luke 11.33 The Lamp of the Body.txt": {
+  "ref": "Luke 11:33-36",
+  "title": "The Lamp of the Body",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches that light should be visible and warns about inner darkness",
+  "parallels": [
+   "Matthew 6:22-24"
+  ]
+ },
+ "Luke 11.37 Woes to Pharisees and Experts in the Law.txt": {
+  "ref": "Luke 11:37-54",
+  "title": "Woes to Pharisees and Experts in the Law",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.76,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus dines with a Pharisee and rebukes Pharisees and experts in the law.",
+  "parallels": [
+   "Matthew 23:1-36"
+  ]
+ },
+ "Luke 12.01 The Leaven of the Pharisees.txt": {
+  "ref": "Luke 12:1-3",
+  "title": "The Leaven of the Pharisees",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.69,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus warns disciples against Pharisees’ hypocrisy and hidden things being revealed",
+  "parallels": [
+   "Matthew 16:5-12",
+   "Mark 8:14-21"
+  ]
+ },
+ "Luke 12.04 Fear God Alone.txt": {
+  "ref": "Luke 12:4-7",
+  "title": "Fear God Alone",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus warns disciples not to fear humans, but to fear God and trust his care",
+  "parallels": [
+   "Matthew 10:26-31"
+  ]
+ },
+ "Luke 12.08 Confessing Christ.txt": {
+  "ref": "Luke 12:8-12",
+  "title": "Confessing Christ",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches disciples about confessing him and facing persecution",
+  "parallels": [
+   "Matthew 10:32-33"
+  ]
+ },
+ "Luke 12.13 The Parable of the Rich Fool.txt": {
+  "ref": "Luke 12:13-21",
+  "title": "The Parable of the Rich Fool",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.84,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus answers a crowd member and tells the parable of the rich fool",
+  "parallels": []
+ },
+ "Luke 12.22 Do Not Worry.txt": {
+  "ref": "Luke 12:22-31",
+  "title": "Do Not Worry",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.97,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches his disciples not to worry about food, clothing, or life",
+  "parallels": [
+   "Matthew 6:25-34"
+  ]
+ },
+ "Luke 12.32 Treasures in Heaven.txt": {
+  "ref": "Luke 12:32-34",
+  "title": "Treasures in Heaven",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus tells disciples not to fear and to store treasure in heaven",
+  "parallels": [
+   "Matthew 6:19-21"
+  ]
+ },
+ "Luke 12.35 Readiness at Any Hour.txt": {
+  "ref": "Luke 12:35-48",
+  "title": "Readiness at Any Hour",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.94,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches readiness, warning servants to stay alert for the master’s unexpected return.",
+  "parallels": [
+   "Matthew 24:36-51",
+   "Mark 13:32-37"
+  ]
+ },
+ "Luke 12.49 Not Peace but Division.txt": {
+  "ref": "Luke 12:49-53",
+  "title": "Not Peace but Division",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus says he has come to bring fire, baptism, and division",
+  "parallels": [
+   "Micah 7:1-6",
+   "Matthew 10:34-39"
+  ]
+ },
+ "Luke 12.54 Interpreting the Present Time.txt": {
+  "ref": "Luke 12:54-56",
+  "title": "Interpreting the Present Time",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.91,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches crowds to read signs of the present time",
+  "parallels": [
+   "Matthew 16:1-4",
+   "Mark 8:11-13"
+  ]
+ },
+ "Luke 12.57 Reconciling with an Adversary.txt": {
+  "ref": "Luke 12:57-59",
+  "title": "Reconciling with an Adversary",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus urges settling with an adversary before court",
+  "parallels": [
+   "Matthew 5:21-26"
+  ]
+ },
+ "Luke 13.01 A Call to Repentance.txt": {
+  "ref": "Luke 13:1-5",
+  "title": "A Call to Repentance",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.76,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus responds to reports of deaths, warning everyone to repent",
+  "parallels": [
+   "Joel 1:13-20",
+   "Amos 5:4-15",
+   "Zephaniah 2:1-3"
+  ]
+ },
+ "Luke 13.06 The Parable of the Barren Fig Tree.txt": {
+  "ref": "Luke 13:6-9",
+  "title": "The Parable of the Barren Fig Tree",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.95,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus tells a parable about a barren fig tree",
+  "parallels": [
+   "Isaiah 5:1-7"
+  ]
+ },
+ "Luke 13.10 Jesus Heals a Disabled Woman.txt": {
+  "ref": "Luke 13:10-17",
+  "title": "Jesus Heals a Disabled Woman",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.32,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus heals a disabled woman in a synagogue on the Sabbath",
+  "parallels": []
+ },
+ "Luke 13.18 The Parable of the Mustard Seed.txt": {
+  "ref": "Luke 13:18-19",
+  "title": "The Parable of the Mustard Seed",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.93,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches a parable comparing God’s kingdom to a growing mustard seed",
+  "parallels": [
+   "Matthew 13:31-32",
+   "Mark 4:30-34"
+  ]
+ },
+ "Luke 13.20 The Parable of the Leaven.txt": {
+  "ref": "Luke 13:20-21",
+  "title": "The Parable of the Leaven",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.91,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus compares God's kingdom to leaven mixed into flour",
+  "parallels": [
+   "Matthew 13:33"
+  ]
+ },
+ "Luke 13.22 The Narrow Door.txt": {
+  "ref": "Luke 13:22-30",
+  "title": "The Narrow Door",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.85,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus travels, teaches, answers about salvation, and warns about the narrow door",
+  "parallels": [
+   "Matthew 7:13-14"
+  ]
+ },
+ "Luke 13.31 Lament over Jerusalem.txt": {
+  "ref": "Luke 13:31-35",
+  "title": "Lament over Jerusalem",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.82,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus hears warning, predicts continued healing, laments Jerusalem's rejection",
+  "parallels": [
+   "Matthew 23:37-39"
+  ]
+ },
+ "Luke 14.01 Jesus Heals a Man with Dropsy.txt": {
+  "ref": "Luke 14:1-6",
+  "title": "Jesus Heals a Man with Dropsy",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.3,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus eats with Pharisees, heals a man with dropsy, and debates Sabbath law",
+  "parallels": []
+ },
+ "Luke 14.07 The Parable of the Guests.txt": {
+  "ref": "Luke 14:7-14",
+  "title": "The Parable of the Guests",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.88,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus watches guests, teaches humility, and tells his host to invite the poor.",
+  "parallels": []
+ },
+ "Luke 14.15 The Parable of the Banquet.txt": {
+  "ref": "Luke 14:15-24",
+  "title": "The Parable of the Banquet",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.87,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus answers a guest and tells the parable of the banquet",
+  "parallels": [
+   "Matthew 22:1-14"
+  ]
+ },
+ "Luke 14.25 The Cost of Discipleship.txt": {
+  "ref": "Luke 14:25-33",
+  "title": "The Cost of Discipleship",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.93,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus speaks to crowds about the cost of discipleship",
+  "parallels": [
+   "Matthew 8:18-22",
+   "Luke 9:57-62",
+   "John 6:59-66"
+  ]
+ },
+ "Luke 14.34 Good Salt.txt": {
+  "ref": "Luke 14:34-35",
+  "title": "Good Salt",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches about salt losing its flavor and being thrown out",
+  "parallels": [
+   "Matthew 5:13-16",
+   "Mark 9:49-50"
+  ]
+ },
+ "Luke 15.01 The Parable of the Lost Sheep.txt": {
+  "ref": "Luke 15:1-7",
+  "title": "The Parable of the Lost Sheep",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.74,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus tells the parable of the lost sheep to listeners",
+  "parallels": [
+   "Matthew 18:10-14"
+  ]
+ },
+ "Luke 15.08 The Parable of the Lost Coin.txt": {
+  "ref": "Luke 15:8-10",
+  "title": "The Parable of the Lost Coin",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus tells a parable about a woman finding a lost coin",
+  "parallels": []
+ },
+ "Luke 15.11 The Parable of the Prodigal Son.txt": {
+  "ref": "Luke 15:11-32",
+  "title": "The Parable of the Prodigal Son",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.99,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus tells a parable about a lost son forgiven by his father",
+  "parallels": [
+   "Deuteronomy 21:18-21"
+  ]
+ },
+ "Luke 16.01 The Parable of the Shrewd Manager.txt": {
+  "ref": "Luke 16:1-13",
+  "title": "The Parable of the Shrewd Manager",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.98,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus tells disciples a parable about a shrewd manager and serving God or money.",
+  "parallels": []
+ },
+ "Luke 16.14 The Law and the Prophets.txt": {
+  "ref": "Luke 16:14-18",
+  "title": "The Law and the Prophets",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.82,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus rebukes Pharisees and teaches about the Law, kingdom, and divorce",
+  "parallels": []
+ },
+ "Luke 16.19 The Rich Man and Lazarus.txt": {
+  "ref": "Luke 16:19-31",
+  "title": "The Rich Man and Lazarus",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "A rich man and beggar die; Lazarus is comforted, the rich man tormented.",
+  "parallels": [
+   "John 5:39-47"
+  ]
+ },
+ "Luke 17.01 Temptations and Trespasses.txt": {
+  "ref": "Luke 17:1-4",
+  "title": "Temptations and Trespasses",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.94,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches disciples about sin, rebuke, repentance, and forgiveness",
+  "parallels": [
+   "Matthew 18:6-9",
+   "Mark 9:42-48"
+  ]
+ },
+ "Luke 17.05 The Power of Faith.txt": {
+  "ref": "Luke 17:5-10",
+  "title": "The Power of Faith",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.9,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches the apostles about faith and humble service",
+  "parallels": [
+   "Matthew 17:19-20"
+  ]
+ },
+ "Luke 17.11 The Ten Lepers.txt": {
+  "ref": "Luke 17:11-19",
+  "title": "The Ten Lepers",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.29,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus meets ten lepers, heals them, and praises one grateful man",
+  "parallels": [
+   "2 Kings 5:1-14"
+  ]
+ },
+ "Luke 17.20 The Coming of the Kingdom.txt": {
+  "ref": "Luke 17:20-37",
+  "title": "The Coming of the Kingdom",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.92,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches Pharisees and disciples about the coming kingdom and the Son of Man.",
+  "parallels": [
+   "Genesis 19:24-29"
+  ]
+ },
+ "Luke 18.01 The Parable of the Persistent Widow.txt": {
+  "ref": "Luke 18:1-8",
+  "title": "The Parable of the Persistent Widow",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.86,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches a parable about persistent prayer and God’s justice.",
+  "parallels": []
+ },
+ "Luke 18.09 The Pharisee and the Tax Collector.txt": {
+  "ref": "Luke 18:9-14",
+  "title": "The Pharisee and the Tax Collector",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.87,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus tells a parable about a Pharisee and tax collector praying",
+  "parallels": []
+ },
+ "Luke 18.15 Jesus Blesses the Children.txt": {
+  "ref": "Luke 18:15-17",
+  "title": "Jesus Blesses the Children",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.53,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus welcomes children, blesses them, and teaches childlike faith",
+  "parallels": [
+   "Matthew 19:13-15",
+   "Mark 10:13-16"
+  ]
+ },
+ "Luke 18.18 The Rich Young Ruler.txt": {
+  "ref": "Luke 18:18-30",
+  "title": "The Rich Young Ruler",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.65,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches a rich ruler about eternal life, then teaches disciples about riches",
+  "parallels": [
+   "Matthew 19:16-30",
+   "Mark 10:17-31"
+  ]
+ },
+ "Luke 18.31 The Third Prediction of the Passion.txt": {
+  "ref": "Luke 18:31-34",
+  "title": "The Third Prediction of the Passion",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.61,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus predicts his suffering, death, and resurrection to the Twelve",
+  "parallels": [
+   "Matthew 20:17-19",
+   "Mark 10:32-34"
+  ]
+ },
+ "Luke 18.35 Jesus Heals a Blind Beggar.txt": {
+  "ref": "Luke 18:35-43",
+  "title": "Jesus Heals a Blind Beggar",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.12,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus passes by Jericho, heals a blind beggar, and the man follows him",
+  "parallels": [
+   "Matthew 20:29-34",
+   "Mark 10:46-52"
+  ]
+ },
+ "Luke 19.01 Jesus and Zacchaeus.txt": {
+  "ref": "Luke 19:1-10",
+  "title": "Jesus and Zacchaeus",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.22,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus enters Jericho, stays with Zacchaeus, and teaches about salvation",
+  "parallels": [
+   "Numbers 5:5-10"
+  ]
+ },
+ "Luke 19.11 The Parable of the Ten Minas.txt": {
+  "ref": "Luke 19:11-27",
+  "title": "The Parable of the Ten Minas",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.91,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus tells the parable of a nobleman and his servants' minas",
+  "parallels": [
+   "Matthew 25:14-30"
+  ]
+ },
+ "Luke 19.28 The Triumphal Entry.txt": {
+  "ref": "Luke 19:28-40",
+  "title": "The Triumphal Entry",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.26,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus rides into Jerusalem, is praised, and answers Pharisees",
+  "parallels": [
+   "Zechariah 9:9-13",
+   "Matthew 21:1-11",
+   "Mark 11:1-11",
+   "John 12:12-19"
+  ]
+ },
+ "Luke 19.41 Jesus Weeps over Jerusalem.txt": {
+  "ref": "Luke 19:41-44",
+  "title": "Jesus Weeps over Jerusalem",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.85,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus sees Jerusalem and weeps, warning of its coming destruction",
+  "parallels": [
+   "Isaiah 29:1-16"
+  ]
+ },
+ "Luke 19.45 Jesus Cleanses the Temple.txt": {
+  "ref": "Luke 19:45-48",
+  "title": "Jesus Cleanses the Temple",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.25,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus drives out sellers and teaches in the temple; leaders plot to kill him",
+  "parallels": [
+   "Matthew 21:12-17",
+   "Mark 11:15-19",
+   "John 2:12-25"
+  ]
+ },
+ "Luke 20.01 Jesus Authority Challenged.txt": {
+  "ref": "Luke 20:1-8",
+  "title": "Jesus’ Authority Challenged",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.22,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches in the temple and debates priests about John’s baptism and his authority.",
+  "parallels": [
+   "Matthew 21:23-27",
+   "Mark 11:27-33"
+  ]
+ },
+ "Luke 20.09 The Parable of the Wicked Tenants.txt": {
+  "ref": "Luke 20:9-18",
+  "title": "The Parable of the Wicked Tenants",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.87,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus tells a parable, then answers the crowd about the rejected cornerstone.",
+  "parallels": [
+   "Matthew 21:33-46",
+   "Mark 12:1-12"
+  ]
+ },
+ "Luke 20.19 Paying Taxes to Caesar.txt": {
+  "ref": "Luke 20:19-26",
+  "title": "Paying Taxes to Caesar",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.14,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus answers spies about paying taxes to Caesar and to God",
+  "parallels": [
+   "Matthew 22:15-22",
+   "Mark 12:13-17"
+  ]
+ },
+ "Luke 20.27 The Sadducees and the Resurrection.txt": {
+  "ref": "Luke 20:27-40",
+  "title": "The Sadducees and the Resurrection",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.47,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus answers Sadducees about resurrection and the living God.",
+  "parallels": [
+   "Matthew 22:23-33",
+   "Mark 12:18-27"
+  ]
+ },
+ "Luke 20.41 Whose Son Is the Christ.txt": {
+  "ref": "Luke 20:41-44",
+  "title": "Whose Son Is the Christ?",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.95,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches in the temple that the Christ is greater than David",
+  "parallels": [
+   "Matthew 22:41-46",
+   "Mark 12:35-37"
+  ]
+ },
+ "Luke 20.45 Beware of the Scribes.txt": {
+  "ref": "Luke 20:45-47",
+  "title": "Beware of the Scribes",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.81,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus warns disciples about scribes’ hypocrisy and coming condemnation",
+  "parallels": [
+   "Mark 12:38-40"
+  ]
+ },
+ "Luke 21.01 The Poor Widows Offering.txt": {
+  "ref": "Luke 21:1-4",
+  "title": "The Poor Widow’s Offering",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.58,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus watches a widow give two small coins and praises her sacrifice",
+  "parallels": [
+   "Mark 12:41-44"
+  ]
+ },
+ "Luke 21.05 Temple Destruction and Other Signs.txt": {
+  "ref": "Luke 21:5-9",
+  "title": "Temple Destruction and Other Signs",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.64,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus predicts temple destruction and warns about deceivers, wars, and unrest",
+  "parallels": [
+   "Matthew 24:1-8",
+   "Mark 13:1-8"
+  ]
+ },
+ "Luke 21.10 Witnessing to All Nations.txt": {
+  "ref": "Luke 21:10-19",
+  "title": "Witnessing to All Nations",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.98,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus tells disciples about coming persecutions and how to endure and witness",
+  "parallels": [
+   "Matthew 24:9-14",
+   "Mark 13:9-13"
+  ]
+ },
+ "Luke 21.20 The Destruction of Jerusalem.txt": {
+  "ref": "Luke 21:20-24",
+  "title": "The Destruction of Jerusalem",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Jesus predicts Jerusalem’s coming destruction and exile",
+  "parallels": [
+   "Matthew 24:15-25",
+   "Mark 13:14-23"
+  ]
+ },
+ "Luke 21.25 The Return of the Son of Man.txt": {
+  "ref": "Luke 21:25-28",
+  "title": "The Return of the Son of Man",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": false,
+  "agreement": "2/3",
+  "gist": "Cosmic signs herald the Son of Man’s future coming and redemption.",
+  "parallels": [
+   "Matthew 24:26-31",
+   "Mark 13:24-27"
+  ]
+ },
+ "Luke 21.29 The Lesson of the Fig Tree.txt": {
+  "ref": "Luke 21:29-33",
+  "title": "The Lesson of the Fig Tree",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.92,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches a parable about fig trees and the coming kingdom",
+  "parallels": [
+   "Matthew 24:32-35",
+   "Mark 13:28-31"
+  ]
+ },
+ "Luke 21.34 Be Watchful for the Day.txt": {
+  "ref": "Luke 21:34-38",
+  "title": "Be Watchful for the Day",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.66,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches daily at the temple and spends nights on the Mount of Olives.",
+  "parallels": []
+ },
+ "Luke 22.01 The Plot to Kill Jesus.txt": {
+  "ref": "Luke 22:1-2",
+  "title": "The Plot to Kill Jesus",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Chief priests and scribes plot to kill Jesus during Passover",
+  "parallels": [
+   "Matthew 26:1-5",
+   "Mark 14:1-2",
+   "John 11:45-57"
+  ]
+ },
+ "Luke 22.03 Judas Agrees to Betray Jesus.txt": {
+  "ref": "Luke 22:3-6",
+  "title": "Judas Agrees to Betray Jesus",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Judas plans Jesus' betrayal with priests for money",
+  "parallels": [
+   "Matthew 26:14-16",
+   "Mark 14:10-11"
+  ]
+ },
+ "Luke 22.07 Preparing the Passover.txt": {
+  "ref": "Luke 22:7-13",
+  "title": "Preparing the Passover",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.58,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus sends Peter and John to prepare the Passover meal",
+  "parallels": [
+   "Matthew 26:17-19",
+   "Mark 14:12-16"
+  ]
+ },
+ "Luke 22.14 The Last Supper.txt": {
+  "ref": "Luke 22:14-23",
+  "title": "The Last Supper",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.64,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus eats Passover with the apostles, shares bread and cup, predicts betrayal",
+  "parallels": [
+   "Matthew 26:20-30",
+   "Mark 14:17-26",
+   "1 Corinthians 11:17-34"
+  ]
+ },
+ "Luke 22.24 Who Is the Greatest.txt": {
+  "ref": "Luke 22:24-30",
+  "title": "Who Is the Greatest?",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.86,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches the disciples about humility, service, and their future kingdom role.",
+  "parallels": []
+ },
+ "Luke 22.31 Jesus Predicts Peters Denial.txt": {
+  "ref": "Luke 22:31-38",
+  "title": "Jesus Predicts Peter’s Denial",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.76,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus speaks to Peter, predicts denial, and instructs the disciples about readiness",
+  "parallels": [
+   "Matthew 26:31-35",
+   "Mark 14:27-31",
+   "John 13:36-38"
+  ]
+ },
+ "Luke 22.39 Jesus Prays on the Mount of Olives.txt": {
+  "ref": "Luke 22:39-46",
+  "title": "Jesus Prays on the Mount of Olives",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.32,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus goes to the Mount of Olives, prays, is strengthened by an angel, and rebukes sleeping disciples",
+  "parallels": [
+   "Matthew 26:36-46",
+   "Mark 14:32-42"
+  ]
+ },
+ "Luke 22.47 The Betrayal of Jesus.txt": {
+  "ref": "Luke 22:47-53",
+  "title": "The Betrayal of Jesus",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.4,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Judas betrays Jesus; he rebukes them, heals an ear, and is seized.",
+  "parallels": [
+   "Matthew 26:47-56",
+   "Mark 14:43-52",
+   "John 18:1-14"
+  ]
+ },
+ "Luke 22.54 Peter Denies Jesus.txt": {
+  "ref": "Luke 22:54-62",
+  "title": "Peter Denies Jesus",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.06,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus is seized, taken to the high priest, and looks at Peter after the denials",
+  "parallels": [
+   "Matthew 26:69-75",
+   "Mark 14:66-72",
+   "John 18:15-18"
+  ]
+ },
+ "Luke 22.63 The Soldiers Mock Jesus.txt": {
+  "ref": "Luke 22:63-65",
+  "title": "The Soldiers Mock Jesus",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus is mocked, beaten, blindfolded, and insulted by the soldiers.",
+  "parallels": [
+   "Isaiah 50:4-11",
+   "Matthew 27:27-31",
+   "Mark 15:16-20",
+   "John 19:1-15"
+  ]
+ },
+ "Luke 22.66 Jesus before the Sanhedrin.txt": {
+  "ref": "Luke 22:66-71",
+  "title": "Jesus before the Sanhedrin",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.4,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus is before the Sanhedrin and answers their questions about being the Christ",
+  "parallels": [
+   "Matthew 26:57-68",
+   "Mark 14:53-65",
+   "John 18:19-24"
+  ]
+ },
+ "Luke 23.01 Jesus before Pilate.txt": {
+  "ref": "Luke 23:1-5",
+  "title": "Jesus before Pilate",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.04,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus is brought before Pilate and responds to accusations.",
+  "parallels": [
+   "Matthew 27:11-14",
+   "John 18:28-40"
+  ]
+ },
+ "Luke 23.06 Jesus before Herod.txt": {
+  "ref": "Luke 23:6-12",
+  "title": "Jesus before Herod",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus is sent to Herod, questioned, mocked, and returned to Pilate",
+  "parallels": []
+ },
+ "Luke 23.13 The Crowd Chooses Barabbas.txt": {
+  "ref": "Luke 23:13-25",
+  "title": "The Crowd Chooses Barabbas",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Pilate questions the crowd; they demand Barabbas and Jesus’ crucifixion.",
+  "parallels": [
+   "Matthew 27:15-23",
+   "Mark 15:6-11"
+  ]
+ },
+ "Luke 23.26 The Crucifixion.txt": {
+  "ref": "Luke 23:26-43",
+  "title": "The Crucifixion",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.29,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus is crucified, speaks to mourners, forgives, and promises paradise to a criminal",
+  "parallels": [
+   "Psalm 22:1-31",
+   "Matthew 27:32-44",
+   "Mark 15:21-32",
+   "John 19:16-27"
+  ]
+ },
+ "Luke 23.44 The Death of Jesus.txt": {
+  "ref": "Luke 23:44-49",
+  "title": "The Death of Jesus",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.07,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus dies on the cross as darkness falls; onlookers react.",
+  "parallels": [
+   "Psalm 31:1-24",
+   "Matthew 27:45-56",
+   "Mark 15:33-41",
+   "John 19:28-30"
+  ]
+ },
+ "Luke 23.50 The Burial of Jesus.txt": {
+  "ref": "Luke 23:50-56",
+  "title": "The Burial of Jesus",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Joseph buries Jesus; women watch the tomb and prepare spices",
+  "parallels": [
+   "Isaiah 53:9-12",
+   "Matthew 27:57-61",
+   "Mark 15:42-47",
+   "John 19:38-42"
+  ]
+ },
+ "Luke 24.01 The Resurrection.txt": {
+  "ref": "Luke 24:1-12",
+  "title": "The Resurrection",
+  "present": false,
+  "source": "reviewed",
+  "jesus_share": 0.11,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Women find the empty tomb; angels announce Jesus has risen.",
+  "parallels": [
+   "Matthew 28:1-10",
+   "Mark 16:1-8",
+   "John 20:1-9"
+  ]
+ },
+ "Luke 24.13 The Road to Emmaus.txt": {
+  "ref": "Luke 24:13-35",
+  "title": "The Road to Emmaus",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.1,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus walks to Emmaus, explains Scripture, eats with two disciples, and is recognized",
+  "parallels": [
+   "Mark 16:12-13"
+  ]
+ },
+ "Luke 24.36 Jesus Appears to the Disciples.txt": {
+  "ref": "Luke 24:36-49",
+  "title": "Jesus Appears to the Disciples",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.62,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus appears to the disciples, shows his wounds, eats fish, and teaches them.",
+  "parallels": [
+   "John 20:19-23",
+   "1 John 1:1-4"
+  ]
+ },
+ "Luke 24.50 The Ascension.txt": {
+  "ref": "Luke 24:50-53",
+  "title": "The Ascension",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus blesses the disciples at Bethany and ascends into heaven",
+  "parallels": [
+   "Mark 16:19-20",
+   "Acts 1:6-11"
+  ]
+ },
+ "Mark 01.01 The Mission of John the Baptist.txt": {
+  "ref": "Mark 1:1-11",
+  "title": "The Mission of John the Baptist",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus comes from Nazareth, is baptized by John, and receives heaven’s affirmation.",
+  "parallels": [
+   "Isaiah 40:1-5",
+   "Matthew 3:1-17",
+   "Luke 3:1-22",
+   "John 1:19-34"
+  ]
+ },
+ "Mark 01.12 The Temptation and Preaching of Jesus.txt": {
+  "ref": "Mark 1:12-15",
+  "title": "The Temptation and Preaching of Jesus",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.26,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus is tempted in the wilderness and then preaches repentance in Galilee",
+  "parallels": [
+   "Matthew 4:1-17",
+   "Luke 4:1-15"
+  ]
+ },
+ "Mark 01.16 The First Disciples.txt": {
+  "ref": "Mark 1:16-20",
+  "title": "The First Disciples",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.12,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus calls Simon, Andrew, James, and John to follow him",
+  "parallels": [
+   "Matthew 4:18-22",
+   "Luke 5:1-11",
+   "John 1:35-42"
+  ]
+ },
+ "Mark 01.21 Jesus Expels an Unclean Spirit.txt": {
+  "ref": "Mark 1:21-28",
+  "title": "Jesus Expels an Unclean Spirit",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.04,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches in Capernaum and casts out an unclean spirit.",
+  "parallels": [
+   "Luke 4:31-37"
+  ]
+ },
+ "Mark 01.29 Jesus Heals at Peters House.txt": {
+  "ref": "Mark 1:29-34",
+  "title": "Jesus Heals at Peter’s House",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus heals Peter’s mother-in-law and many sick and demon-possessed people.",
+  "parallels": [
+   "Matthew 8:14-17",
+   "Luke 4:38-41"
+  ]
+ },
+ "Mark 01.35 Jesus Prays and Preaches.txt": {
+  "ref": "Mark 1:35-39",
+  "title": "Jesus Prays and Preaches",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.28,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus prays alone, then travels through Galilee preaching and casting out demons",
+  "parallels": [
+   "Luke 4:42-44"
+  ]
+ },
+ "Mark 01.40 The Lepers Prayer.txt": {
+  "ref": "Mark 1:40-45",
+  "title": "The Leper’s Prayer",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.26,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus heals a leper, orders secrecy, and the man spreads the news",
+  "parallels": [
+   "Leviticus 14:1-32",
+   "Matthew 8:1-4",
+   "Luke 5:12-16"
+  ]
+ },
+ "Mark 02.01 Jesus Heals a Paralytic.txt": {
+  "ref": "Mark 2:1-12",
+  "title": "Jesus Heals a Paralytic",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.27,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus heals a paralytic, forgives his sins, and amazes the crowd.",
+  "parallels": [
+   "Matthew 9:1-8",
+   "Luke 5:17-26"
+  ]
+ },
+ "Mark 02.13 Jesus Calls Levi.txt": {
+  "ref": "Mark 2:13-17",
+  "title": "Jesus Calls Levi",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.19,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus calls Levi, dines with tax collectors, and answers Pharisees",
+  "parallels": [
+   "Matthew 9:9-13",
+   "Luke 5:27-32"
+  ]
+ },
+ "Mark 02.18 Questions about Fasting.txt": {
+  "ref": "Mark 2:18-20",
+  "title": "Questions about Fasting",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.56,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus answers questions about why his disciples do not fast",
+  "parallels": [
+   "Matthew 9:14-15",
+   "Luke 5:33-35"
+  ]
+ },
+ "Mark 02.21 The Patches and the Wineskins.txt": {
+  "ref": "Mark 2:21-22",
+  "title": "The Patches and the Wineskins",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches parables about cloth patches and wineskins",
+  "parallels": [
+   "Matthew 9:16-17",
+   "Luke 5:36-39"
+  ]
+ },
+ "Mark 02.23 The Lord of the Sabbath.txt": {
+  "ref": "Mark 2:23-28",
+  "title": "The Lord of the Sabbath",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.62,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus walks through grainfields, debates Sabbath law, and declares authority over the Sabbath",
+  "parallels": [
+   "1 Samuel 21:1-7",
+   "Matthew 12:1-8",
+   "Luke 6:1-5"
+  ]
+ },
+ "Mark 03.01 Jesus Heals on the Sabbath.txt": {
+  "ref": "Mark 3:1-6",
+  "title": "Jesus Heals on the Sabbath",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.23,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus heals a man’s withered hand in synagogue on the Sabbath",
+  "parallels": [
+   "Matthew 12:9-14",
+   "Luke 6:6-11"
+  ]
+ },
+ "Mark 03.07 Jesus Heals the Multitudes.txt": {
+  "ref": "Mark 3:7-12",
+  "title": "Jesus Heals the Multitudes",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus withdraws by the sea, heals many, and silences unclean spirits",
+  "parallels": [
+   "Matthew 4:23-25",
+   "Luke 6:17-19"
+  ]
+ },
+ "Mark 03.13 The Twelve Apostles.txt": {
+  "ref": "Mark 3:13-19",
+  "title": "The Twelve Apostles",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus appoints the twelve apostles on a mountain",
+  "parallels": [
+   "Matthew 10:1-4",
+   "Luke 6:12-16"
+  ]
+ },
+ "Mark 03.20 A House Divided.txt": {
+  "ref": "Mark 3:20-27",
+  "title": "A House Divided",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.46,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus is at home, crowds gather, relatives and scribes accuse him, and he answers in parables",
+  "parallels": [
+   "Matthew 12:22-30",
+   "Luke 11:14-23"
+  ]
+ },
+ "Mark 03.28 The Unpardonable Sin.txt": {
+  "ref": "Mark 3:28-30",
+  "title": "The Unpardonable Sin",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.74,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus warns that blasphemy against the Holy Spirit is unforgivable",
+  "parallels": [
+   "Matthew 12:31-32"
+  ]
+ },
+ "Mark 03.31 Jesus Mother and Brothers.txt": {
+  "ref": "Mark 3:31-35",
+  "title": "Jesus’ Mother and Brothers",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.36,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches crowd, redefining family as those who do God’s will",
+  "parallels": [
+   "Matthew 12:46-50",
+   "Luke 8:19-21"
+  ]
+ },
+ "Mark 04.01 The Parable of the Sower.txt": {
+  "ref": "Mark 4:1-9",
+  "title": "The Parable of the Sower",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.69,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches crowds by the sea in parables, including the sower.",
+  "parallels": [
+   "Matthew 13:1-9",
+   "Luke 8:4-8"
+  ]
+ },
+ "Mark 04.10 The Purpose of Jesus Parables.txt": {
+  "ref": "Mark 4:10-12",
+  "title": "The Purpose of Jesus’ Parables",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.69,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus explains parables’ hidden meaning to the Twelve",
+  "parallels": [
+   "Isaiah 6:1-13",
+   "Matthew 13:10-17",
+   "Luke 8:9-10"
+  ]
+ },
+ "Mark 04.13 The Parable of the Sower Explained.txt": {
+  "ref": "Mark 4:13-20",
+  "title": "The Parable of the Sower Explained",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.97,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus explains the parable of the sower to his listeners",
+  "parallels": [
+   "Matthew 13:18-23",
+   "Luke 8:11-15"
+  ]
+ },
+ "Mark 04.21 The Lesson of the Lamp.txt": {
+  "ref": "Mark 4:21-25",
+  "title": "The Lesson of the Lamp",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.91,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches about a lamp, hearing, and judgment by measure",
+  "parallels": [
+   "Luke 8:16-18"
+  ]
+ },
+ "Mark 04.26 The Seed Growing Secretly.txt": {
+  "ref": "Mark 4:26-29",
+  "title": "The Seed Growing Secretly",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.96,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches a parable about seed growing secretly and harvest coming",
+  "parallels": []
+ },
+ "Mark 04.30 The Parable of the Mustard Seed.txt": {
+  "ref": "Mark 4:30-34",
+  "title": "The Parable of the Mustard Seed",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.62,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches the crowd the mustard seed parable, then explains parables privately to disciples.",
+  "parallels": [
+   "Matthew 13:31-32",
+   "Luke 13:18-19"
+  ]
+ },
+ "Mark 04.35 Jesus Calms the Storm.txt": {
+  "ref": "Mark 4:35-41",
+  "title": "Jesus Calms the Storm",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.15,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus sails with disciples, calms a storm, and questions their fear",
+  "parallels": [
+   "Psalm 107:1-43",
+   "Matthew 8:23-27",
+   "Luke 8:22-25"
+  ]
+ },
+ "Mark 05.01 The Demons and the Pigs.txt": {
+  "ref": "Mark 5:1-20",
+  "title": "The Demons and the Pigs",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.09,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus meets a demon-possessed man, casts demons into pigs, and sends him home",
+  "parallels": [
+   "Matthew 8:28-34",
+   "Luke 8:26-39"
+  ]
+ },
+ "Mark 05.21 The Healing Touch of Jesus.txt": {
+  "ref": "Mark 5:21-43",
+  "title": "The Healing Touch of Jesus",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.11,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus heals a bleeding woman and raises Jairus’s daughter to life",
+  "parallels": [
+   "Matthew 9:18-26",
+   "Luke 8:40-56"
+  ]
+ },
+ "Mark 06.01 The Rejection at Nazareth.txt": {
+  "ref": "Mark 6:1-6",
+  "title": "The Rejection at Nazareth",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.11,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches in Nazareth, is rejected, heals a few, then leaves teaching elsewhere",
+  "parallels": [
+   "Matthew 13:53-58",
+   "Luke 4:16-30"
+  ]
+ },
+ "Mark 06.07 The Ministry of the Twelve.txt": {
+  "ref": "Mark 6:7-13",
+  "title": "The Ministry of the Twelve",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.32,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus sends the Twelve out with authority and instructions",
+  "parallels": [
+   "Matthew 10:5-15",
+   "Luke 9:1-6"
+  ]
+ },
+ "Mark 06.14 The Beheading of John.txt": {
+  "ref": "Mark 6:14-29",
+  "title": "The Beheading of John",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Herod has John the Baptist imprisoned and beheaded after a banquet request.",
+  "parallels": [
+   "Matthew 14:1-12",
+   "Luke 9:7-9"
+  ]
+ },
+ "Mark 06.30 The Feeding of the Five Thousand.txt": {
+  "ref": "Mark 6:30-44",
+  "title": "The Feeding of the Five Thousand",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.09,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus sees the crowd, teaches them, multiplies loaves and fish, and feeds five thousand.",
+  "parallels": [
+   "Matthew 14:13-21",
+   "Luke 9:10-17",
+   "John 6:1-15"
+  ]
+ },
+ "Mark 06.45 Jesus Walks on Water.txt": {
+  "ref": "Mark 6:45-52",
+  "title": "Jesus Walks on Water",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.06,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus walks on water, enters the boat, and calms the disciples",
+  "parallels": [
+   "Matthew 14:22-33",
+   "John 6:16-21"
+  ]
+ },
+ "Mark 06.53 Jesus Heals at Gennesaret.txt": {
+  "ref": "Mark 6:53-56",
+  "title": "Jesus Heals at Gennesaret",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus goes through Gennesaret and heals many sick people",
+  "parallels": [
+   "Matthew 14:34-36"
+  ]
+ },
+ "Mark 07.01 The Tradition of the Elders.txt": {
+  "ref": "Mark 7:1-13",
+  "title": "The Tradition of the Elders",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.55,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Pharisees question Jesus about ritual washing; he rebukes their traditions.",
+  "parallels": [
+   "Matthew 15:1-9"
+  ]
+ },
+ "Mark 07.14 What Defiles a Man.txt": {
+  "ref": "Mark 7:14-23",
+  "title": "What Defiles a Man",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.77,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches the crowd and explains that inner evil, not food, defiles a person.",
+  "parallels": [
+   "Matthew 15:10-20"
+  ]
+ },
+ "Mark 07.24 The Faith of the Gentile Woman.txt": {
+  "ref": "Mark 7:24-30",
+  "title": "The Faith of the Gentile Woman",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.24,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus visits Tyre, meets a Greek woman, and heals her demon-possessed daughter.",
+  "parallels": [
+   "Matthew 15:21-28"
+  ]
+ },
+ "Mark 07.31 The Deaf and Mute Man.txt": {
+  "ref": "Mark 7:31-37",
+  "title": "The Deaf and Mute Man",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.02,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus travels, heals a deaf-mute man, and the crowd is amazed",
+  "parallels": [
+   "Matthew 9:27-34"
+  ]
+ },
+ "Mark 08.01 The Feeding of the Four Thousand.txt": {
+  "ref": "Mark 8:1-10",
+  "title": "The Feeding of the Four Thousand",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.23,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus feeds four thousand with seven loaves and fish, then leaves by boat",
+  "parallels": [
+   "2 Kings 4:42-44",
+   "Matthew 15:29-39"
+  ]
+ },
+ "Mark 08.11 The Demand for a Sign.txt": {
+  "ref": "Mark 8:11-13",
+  "title": "The Demand for a Sign",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.31,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Pharisees demand a sign; Jesus refuses and leaves by boat",
+  "parallels": [
+   "Matthew 16:1-4",
+   "Luke 12:54-56"
+  ]
+ },
+ "Mark 08.14 The Leaven of the Pharisees and of Herod.txt": {
+  "ref": "Mark 8:14-21",
+  "title": "The Leaven of the Pharisees and of Herod",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.64,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus warns disciples about Pharisees and Herod, then rebukes their misunderstanding about bread",
+  "parallels": [
+   "Matthew 16:5-12",
+   "Luke 12:1-3"
+  ]
+ },
+ "Mark 08.22 The Blind Man at Bethsaida.txt": {
+  "ref": "Mark 8:22-26",
+  "title": "The Blind Man at Bethsaida",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.1,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus heals a blind man at Bethsaida and sends him home",
+  "parallels": []
+ },
+ "Mark 08.27 Peters Confession of Christ.txt": {
+  "ref": "Mark 8:27-30",
+  "title": "Peter’s Confession of Christ",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.23,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus asks disciples who people say he is; Peter confesses him as Christ",
+  "parallels": [
+   "Matthew 16:13-20",
+   "Luke 9:18-20",
+   "John 6:67-71"
+  ]
+ },
+ "Mark 08.31 Christs Passion Foretold.txt": {
+  "ref": "Mark 8:31-33",
+  "title": "Christ’s Passion Foretold",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.24,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus predicts suffering, Peter rebukes him, and Jesus rebukes Peter.",
+  "parallels": [
+   "Matthew 16:21-23",
+   "Luke 9:21-22"
+  ]
+ },
+ "Mark 08.34 Take Up Your Cross.txt": {
+  "ref": "Mark 8:34-38",
+  "title": "Take Up Your Cross",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.88,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches crowd and disciples to deny self and take up the cross",
+  "parallels": [
+   "Matthew 16:24-28",
+   "Luke 9:23-27"
+  ]
+ },
+ "Mark 09.01 The Transfiguration.txt": {
+  "ref": "Mark 9:1-13",
+  "title": "The Transfiguration",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.28,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus takes Peter, James, and John up a mountain, is transfigured, and speaks about Elijah.",
+  "parallels": [
+   "Matthew 17:1-13",
+   "Luke 9:28-36",
+   "2 Peter 1:16-21"
+  ]
+ },
+ "Mark 09.14 The Boy with an Evil Spirit.txt": {
+  "ref": "Mark 9:14-29",
+  "title": "The Boy with an Evil Spirit",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.22,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus meets the crowd, heals a demon-possessed boy, and teaches about faith and prayer.",
+  "parallels": [
+   "Matthew 17:14-18",
+   "Luke 9:37-42"
+  ]
+ },
+ "Mark 09.30 The Second Prediction of the Passion.txt": {
+  "ref": "Mark 9:30-32",
+  "title": "The Second Prediction of the Passion",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.36,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches disciples about his coming death and resurrection",
+  "parallels": [
+   "Matthew 17:22-23",
+   "Luke 9:43-45"
+  ]
+ },
+ "Mark 09.33 The Greatest in the Kingdom.txt": {
+  "ref": "Mark 9:33-41",
+  "title": "The Greatest in the Kingdom",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.55,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches the disciples about greatness, welcomes a child, and answers John.",
+  "parallels": [
+   "Matthew 18:1-5",
+   "Luke 9:46-50"
+  ]
+ },
+ "Mark 09.42 Temptations and Trespasses.txt": {
+  "ref": "Mark 9:42-48",
+  "title": "Temptations and Trespasses",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus warns against causing believers to sin and urges drastic self-denial",
+  "parallels": [
+   "Matthew 18:6-9",
+   "Luke 17:1-4"
+  ]
+ },
+ "Mark 09.49 Good Salt.txt": {
+  "ref": "Mark 9:49-50",
+  "title": "Good Salt",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches that salt is good and urges peace among his followers",
+  "parallels": [
+   "Matthew 5:13-16",
+   "Luke 14:34-35"
+  ]
+ },
+ "Mark 10.01 Teachings about Divorce.txt": {
+  "ref": "Mark 10:1-12",
+  "title": "Teachings about Divorce",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.52,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus travels, teaches crowds and disciples, and debates Pharisees about divorce",
+  "parallels": [
+   "Matthew 19:1-12"
+  ]
+ },
+ "Mark 10.13 Jesus Blesses the Children.txt": {
+  "ref": "Mark 10:13-16",
+  "title": "Jesus Blesses the Children",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.45,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus welcomes children, teaches about childlike faith, and blesses them",
+  "parallels": [
+   "Matthew 19:13-15",
+   "Luke 18:15-17"
+  ]
+ },
+ "Mark 10.17 The Rich Young Man.txt": {
+  "ref": "Mark 10:17-31",
+  "title": "The Rich Young Man",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.62,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches a rich man, then speaks to the disciples about wealth and salvation.",
+  "parallels": [
+   "Matthew 19:16-30",
+   "Luke 18:18-30"
+  ]
+ },
+ "Mark 10.32 The Third Prediction of the Passion.txt": {
+  "ref": "Mark 10:32-34",
+  "title": "The Third Prediction of the Passion",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.57,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus predicts his arrest, death, and rising while walking to Jerusalem",
+  "parallels": [
+   "Matthew 20:17-19",
+   "Luke 18:31-34"
+  ]
+ },
+ "Mark 10.35 The Request of James and John.txt": {
+  "ref": "Mark 10:35-45",
+  "title": "The Request of James and John",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.67,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus answers James and John, teaches servant leadership, and predicts his sacrificial death",
+  "parallels": [
+   "Matthew 20:20-28"
+  ]
+ },
+ "Mark 10.46 Jesus Heals Bartimaeus.txt": {
+  "ref": "Mark 10:46-52",
+  "title": "Jesus Heals Bartimaeus",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.11,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus stops for Bartimaeus, restores his sight, and he follows Jesus.",
+  "parallels": [
+   "Matthew 20:29-34",
+   "Luke 18:35-43"
+  ]
+ },
+ "Mark 11.01 The Triumphal Entry.txt": {
+  "ref": "Mark 11:1-11",
+  "title": "The Triumphal Entry",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.23,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus enters Jerusalem on a colt amid shouts, then goes to the temple and back",
+  "parallels": [
+   "Zechariah 9:9-13",
+   "Matthew 21:1-11",
+   "Luke 19:28-40",
+   "John 12:12-19"
+  ]
+ },
+ "Mark 11.12 Jesus Curses the Fig Tree.txt": {
+  "ref": "Mark 11:12-14",
+  "title": "Jesus Curses the Fig Tree",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.12,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus curses a fig tree after finding it fruitless",
+  "parallels": [
+   "Matthew 21:18-22",
+   "Mark 11:20-25"
+  ]
+ },
+ "Mark 11.15 Jesus Cleanses the Temple.txt": {
+  "ref": "Mark 11:15-19",
+  "title": "Jesus Cleanses the Temple",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.2,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus enters the temple, drives out sellers, teaches, then leaves Jerusalem",
+  "parallels": [
+   "Matthew 21:12-17",
+   "Luke 19:45-48",
+   "John 2:12-25"
+  ]
+ },
+ "Mark 11.20 The Withered Fig Tree.txt": {
+  "ref": "Mark 11:20-25",
+  "title": "The Withered Fig Tree",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.72,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus sees the withered fig tree and teaches about faith, prayer, forgiveness",
+  "parallels": [
+   "Matthew 21:18-22",
+   "Mark 11:12-14"
+  ]
+ },
+ "Mark 11.27 Jesus Authority Challenged.txt": {
+  "ref": "Mark 11:27-33",
+  "title": "Jesus’ Authority Challenged",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.32,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus in the temple is challenged about his authority and questions John’s baptism",
+  "parallels": [
+   "Matthew 21:23-27",
+   "Luke 20:1-8"
+  ]
+ },
+ "Mark 12.01 The Parable of the Wicked Tenants.txt": {
+  "ref": "Mark 12:1-12",
+  "title": "The Parable of the Wicked Tenants",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.84,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus tells a parable, then leaders try to arrest him.",
+  "parallels": [
+   "Matthew 21:33-46",
+   "Luke 20:9-18"
+  ]
+ },
+ "Mark 12.13 Paying Taxes to Caesar.txt": {
+  "ref": "Mark 12:13-17",
+  "title": "Paying Taxes to Caesar",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.25,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus debates tax payment to Caesar and answers with a saying",
+  "parallels": [
+   "Matthew 22:15-22",
+   "Luke 20:19-26"
+  ]
+ },
+ "Mark 12.18 The Sadducees and the Resurrection.txt": {
+  "ref": "Mark 12:18-27",
+  "title": "The Sadducees and the Resurrection",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.43,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus debates Sadducees about resurrection and marriage after death",
+  "parallels": [
+   "Matthew 22:23-33",
+   "Luke 20:27-40"
+  ]
+ },
+ "Mark 12.28 The Greatest Commandment.txt": {
+  "ref": "Mark 12:28-34",
+  "title": "The Greatest Commandment",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.38,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus answers a scribe about the greatest commandment and praises his insight",
+  "parallels": [
+   "Deuteronomy 6:1-19",
+   "Matthew 22:34-40"
+  ]
+ },
+ "Mark 12.35 Whose Son Is the Christ.txt": {
+  "ref": "Mark 12:35-37",
+  "title": "Whose Son Is the Christ?",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.73,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches in the temple and asks how Christ can be David’s son",
+  "parallels": [
+   "Matthew 22:41-46",
+   "Luke 20:41-44"
+  ]
+ },
+ "Mark 12.38 Beware of the Scribes.txt": {
+  "ref": "Mark 12:38-40",
+  "title": "Beware of the Scribes",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.9,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus warns about scribes’ pride, fraud, and coming judgment",
+  "parallels": [
+   "Luke 20:45-47"
+  ]
+ },
+ "Mark 12.41 The Widows Offering.txt": {
+  "ref": "Mark 12:41-44",
+  "title": "The Widow’s Offering",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.43,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus watches the treasury, notices a widow’s small offering, and praises her sacrifice",
+  "parallels": [
+   "Luke 21:1-4"
+  ]
+ },
+ "Mark 13.01 Temple Destruction and Other Signs.txt": {
+  "ref": "Mark 13:1-8",
+  "title": "Temple Destruction and Other Signs",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.58,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus leaves the temple, predicts its destruction, and teaches about coming signs.",
+  "parallels": [
+   "Matthew 24:1-8",
+   "Luke 21:5-9"
+  ]
+ },
+ "Mark 13.09 Witnessing to All Nations.txt": {
+  "ref": "Mark 13:9-13",
+  "title": "Witnessing to All Nations",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus warns disciples of persecution, trials, betrayal, and endurance",
+  "parallels": [
+   "Matthew 24:9-14",
+   "Luke 21:10-19"
+  ]
+ },
+ "Mark 13.14 The Abomination of Desolation.txt": {
+  "ref": "Mark 13:14-23",
+  "title": "The Abomination of Desolation",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus warns disciples about coming tribulation and false messiahs",
+  "parallels": [
+   "Matthew 24:15-25",
+   "Luke 21:20-24"
+  ]
+ },
+ "Mark 13.24 The Return of the Son of Man.txt": {
+  "ref": "Mark 13:24-27",
+  "title": "The Return of the Son of Man",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "The Son of Man comes in glory and sends angels to gather the elect.",
+  "parallels": [
+   "Matthew 24:26-31",
+   "Luke 21:25-28"
+  ]
+ },
+ "Mark 13.28 The Lesson of the Fig Tree.txt": {
+  "ref": "Mark 13:28-31",
+  "title": "The Lesson of the Fig Tree",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches the fig tree lesson about signs and coming events",
+  "parallels": [
+   "Matthew 24:32-35",
+   "Luke 21:29-33"
+  ]
+ },
+ "Mark 13.32 Readiness at Any Hour.txt": {
+  "ref": "Mark 13:32-37",
+  "title": "Readiness at Any Hour",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches disciples to stay alert and watch for the unknown returning master.",
+  "parallels": [
+   "Matthew 24:36-51",
+   "Luke 12:35-48"
+  ]
+ },
+ "Mark 14.01 The Plot to Kill Jesus.txt": {
+  "ref": "Mark 14:1-2",
+  "title": "The Plot to Kill Jesus",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Leaders plot Jesus' arrest and death, but avoid doing it during the feast",
+  "parallels": [
+   "Matthew 26:1-5",
+   "Luke 22:1-2",
+   "John 11:45-57"
+  ]
+ },
+ "Mark 14.03 Jesus Anointed at Bethany.txt": {
+  "ref": "Mark 14:3-9",
+  "title": "Jesus Anointed at Bethany",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.5,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus at Bethany is anointed; he defends the woman and foretells her remembrance",
+  "parallels": [
+   "Matthew 26:6-13",
+   "Luke 7:36-50",
+   "John 12:1-8"
+  ]
+ },
+ "Mark 14.10 Judas Agrees to Betray Jesus.txt": {
+  "ref": "Mark 14:10-11",
+  "title": "Judas Agrees to Betray Jesus",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Judas agrees with chief priests to betray Jesus for money",
+  "parallels": [
+   "Matthew 26:14-16",
+   "Luke 22:3-6"
+  ]
+ },
+ "Mark 14.12 Preparing the Passover.txt": {
+  "ref": "Mark 14:12-16",
+  "title": "Preparing the Passover",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.47,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus directs disciples to prepare the Passover meal room",
+  "parallels": [
+   "Matthew 26:17-19",
+   "Luke 22:7-13"
+  ]
+ },
+ "Mark 14.17 The Last Supper.txt": {
+  "ref": "Mark 14:17-26",
+  "title": "The Last Supper",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.57,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus shares the Last Supper, predicts betrayal, institutes bread and cup, then leaves with the disciples.",
+  "parallels": [
+   "Matthew 26:20-30",
+   "Luke 22:14-23",
+   "1 Corinthians 11:17-34"
+  ]
+ },
+ "Mark 14.27 Jesus Predicts Peters Denial.txt": {
+  "ref": "Mark 14:27-31",
+  "title": "Jesus Predicts Peter’s Denial",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.55,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus predicts Peter will deny him before the rooster crows",
+  "parallels": [
+   "Zechariah 13:7-9",
+   "Matthew 26:31-35",
+   "Luke 22:31-38",
+   "John 13:36-38"
+  ]
+ },
+ "Mark 14.32 Jesus Prays at Gethsemane.txt": {
+  "ref": "Mark 14:32-42",
+  "title": "Jesus Prays at Gethsemane",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.51,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus prays in Gethsemane, agonizes, returns to sleeping disciples, and meets the betrayer",
+  "parallels": [
+   "Matthew 26:36-46",
+   "Luke 22:39-46"
+  ]
+ },
+ "Mark 14.43 The Betrayal of Jesus.txt": {
+  "ref": "Mark 14:43-52",
+  "title": "The Betrayal of Jesus",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.25,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Judas betrays Jesus; he is arrested, speaks, and the disciples flee",
+  "parallels": [
+   "Matthew 26:47-56",
+   "Luke 22:47-53",
+   "John 18:1-14"
+  ]
+ },
+ "Mark 14.53 Jesus before the Sanhedrin.txt": {
+  "ref": "Mark 14:53-65",
+  "title": "Jesus before the Sanhedrin",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.09,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus is taken before the Sanhedrin, questioned, condemned, and mocked.",
+  "parallels": [
+   "Matthew 26:57-68",
+   "Luke 22:66-71",
+   "John 18:19-24"
+  ]
+ },
+ "Mark 14.66 Peter Denies Jesus.txt": {
+  "ref": "Mark 14:66-72",
+  "title": "Peter Denies Jesus",
+  "present": true,
+  "source": "reviewed",
+  "jesus_share": 0.07,
+  "llm_present": false,
+  "agreement": "2/3",
+  "gist": "Peter denies knowing Jesus; rooster crows; he remembers Jesus' words and weeps",
+  "parallels": [
+   "Matthew 26:69-75",
+   "Luke 22:54-62",
+   "John 18:15-18"
+  ]
+ },
+ "Mark 15.01 Jesus Delivered to Pilate.txt": {
+  "ref": "Mark 15:1-5",
+  "title": "Jesus Delivered to Pilate",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.05,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus is handed to Pilate, questioned, and remains mostly silent",
+  "parallels": [
+   "Matthew 27:1-2"
+  ]
+ },
+ "Mark 15.06 The Crowd Chooses Barabbas.txt": {
+  "ref": "Mark 15:6-11",
+  "title": "The Crowd Chooses Barabbas",
+  "present": true,
+  "source": "reviewed",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Pilate offers release; crowd, urged by priests, chooses Barabbas instead",
+  "parallels": [
+   "Matthew 27:15-23",
+   "Luke 23:13-25"
+  ]
+ },
+ "Mark 15.12 Pilate Delivers Up Jesus.txt": {
+  "ref": "Mark 15:12-15",
+  "title": "Pilate Delivers Up Jesus",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Pilate questions the crowd, then has Jesus flogged and handed over to crucifixion",
+  "parallels": [
+   "Matthew 27:24-26"
+  ]
+ },
+ "Mark 15.16 The Soldiers Mock Jesus.txt": {
+  "ref": "Mark 15:16-20",
+  "title": "The Soldiers Mock Jesus",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "soldiers mock Jesus, dress him, strike him, then lead him away to crucify him",
+  "parallels": [
+   "Isaiah 50:4-11",
+   "Matthew 27:27-31",
+   "Luke 22:63-65",
+   "John 19:1-15"
+  ]
+ },
+ "Mark 15.21 The Crucifixion.txt": {
+  "ref": "Mark 15:21-32",
+  "title": "The Crucifixion",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus is crucified, mocked, and watched by passersby, priests, and fellow criminals.",
+  "parallels": [
+   "Psalm 22:1-31",
+   "Matthew 27:32-44",
+   "Luke 23:26-43",
+   "John 19:16-27"
+  ]
+ },
+ "Mark 15.33 The Death of Jesus.txt": {
+  "ref": "Mark 15:33-41",
+  "title": "The Death of Jesus",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.07,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus on the cross cries out, dies; temple veil tears, centurion and women watch",
+  "parallels": [
+   "Psalm 22:1-31",
+   "Matthew 27:45-56",
+   "Luke 23:44-49",
+   "John 19:28-30"
+  ]
+ },
+ "Mark 15.42 The Burial of Jesus.txt": {
+  "ref": "Mark 15:42-47",
+  "title": "The Burial of Jesus",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Joseph buries Jesus; women watch the tomb",
+  "parallels": [
+   "Isaiah 53:9-12",
+   "Matthew 27:57-61",
+   "Luke 23:50-56",
+   "John 19:38-42"
+  ]
+ },
+ "Mark 16.01 The Resurrection.txt": {
+  "ref": "Mark 16:1-8",
+  "title": "The Resurrection",
+  "present": false,
+  "source": "model 2/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "2/3",
+  "gist": "Women find the empty tomb; a young man says Jesus has risen.",
+  "parallels": [
+   "Matthew 28:1-10",
+   "Luke 24:1-12",
+   "John 20:1-9"
+  ]
+ },
+ "Mark 16.09 Jesus Appears to Mary Magdalene.txt": {
+  "ref": "Mark 16:9-11",
+  "title": "Jesus Appears to Mary Magdalene",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus appears alive to Mary Magdalene after rising; she tells the others",
+  "parallels": [
+   "John 20:10-18"
+  ]
+ },
+ "Mark 16.12 Jesus Appears to Two Disciples.txt": {
+  "ref": "Mark 16:12-13",
+  "title": "Jesus Appears to Two Disciples",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus appears to two disciples while walking, then they report it and are not believed",
+  "parallels": [
+   "Luke 24:13-35"
+  ]
+ },
+ "Mark 16.14 The Great Commission.txt": {
+  "ref": "Mark 16:14-18",
+  "title": "The Great Commission",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.68,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus appears to the Eleven and gives them the Great Commission",
+  "parallels": [
+   "Matthew 28:16-20"
+  ]
+ },
+ "Mark 16.19 The Ascension.txt": {
+  "ref": "Mark 16:19-20",
+  "title": "The Ascension",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus is taken up into heaven; the disciples preach and signs accompany them",
+  "parallels": [
+   "Luke 24:50-53",
+   "Acts 1:6-11"
+  ]
+ },
+ "Matthew 01.01 The Genealogy of Jesus.txt": {
+  "ref": "Matthew 1:1-17",
+  "title": "The Genealogy of Jesus",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Jesus’ ancestry is listed from Abraham to Joseph and Mary",
+  "parallels": [
+   "Ruth 4:18-22",
+   "Luke 3:23-38"
+  ]
+ },
+ "Matthew 01.18 The Birth of Jesus.txt": {
+  "ref": "Matthew 1:18-25",
+  "title": "The Birth of Jesus",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Jesus is conceived and born; Joseph learns in a dream and names him",
+  "parallels": [
+   "Isaiah 7:10-16",
+   "Luke 2:1-7"
+  ]
+ },
+ "Matthew 02.01 The Pilgrimage of the Magi.txt": {
+  "ref": "Matthew 2:1-12",
+  "title": "The Pilgrimage of the Magi",
+  "present": false,
+  "source": "reviewed",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "2/3",
+  "gist": "Magi visit child Jesus, worship him, and give gifts.",
+  "parallels": [
+   "Micah 5:1-6"
+  ]
+ },
+ "Matthew 02.13 The Flight to Egypt.txt": {
+  "ref": "Matthew 2:13-15",
+  "title": "The Flight to Egypt",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Joseph takes Jesus and Mary to Egypt to escape Herod",
+  "parallels": [
+   "Hosea 11:1-7"
+  ]
+ },
+ "Matthew 02.16 Weeping and Great Mourning.txt": {
+  "ref": "Matthew 2:16-18",
+  "title": "Weeping and Great Mourning",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Herod orders Bethlehem boys killed; Jeremiah's prophecy of Rachel's mourning is fulfilled",
+  "parallels": [
+   "Jeremiah 31:1-25"
+  ]
+ },
+ "Matthew 02.19 The Return to Nazareth.txt": {
+  "ref": "Matthew 2:19-23",
+  "title": "The Return to Nazareth",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus is taken from Egypt to Israel and settles in Nazareth",
+  "parallels": [
+   "Luke 2:39-40"
+  ]
+ },
+ "Matthew 03.01 The Mission of John the Baptist.txt": {
+  "ref": "Matthew 3:1-12",
+  "title": "The Mission of John the Baptist",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "John preaches repentance and baptizes people in the wilderness.",
+  "parallels": [
+   "Isaiah 40:1-5",
+   "Mark 1:1-8",
+   "Luke 3:1-20",
+   "John 1:19-28"
+  ]
+ },
+ "Matthew 03.13 The Baptism of Jesus.txt": {
+  "ref": "Matthew 3:13-17",
+  "title": "The Baptism of Jesus",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.16,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus is baptized by John; heavens open, Spirit descends, voice from heaven speaks",
+  "parallels": [
+   "Mark 1:9-11",
+   "Luke 3:21-22",
+   "John 1:29-34"
+  ]
+ },
+ "Matthew 04.01 The Temptation of Jesus.txt": {
+  "ref": "Matthew 4:1-11",
+  "title": "The Temptation of Jesus",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.24,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus fasts in wilderness, is tempted by the devil, answers with scripture",
+  "parallels": [
+   "Mark 1:12-13",
+   "Luke 4:1-13"
+  ]
+ },
+ "Matthew 04.12 Jesus Begins His Ministry.txt": {
+  "ref": "Matthew 4:12-17",
+  "title": "Jesus Begins His Ministry",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.08,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus moves to Galilee and begins preaching repentance.",
+  "parallels": [
+   "Isaiah 9:1-7",
+   "Mark 1:14-15",
+   "Luke 4:14-15"
+  ]
+ },
+ "Matthew 04.18 The First Disciples.txt": {
+  "ref": "Matthew 4:18-22",
+  "title": "The First Disciples",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.11,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus calls Peter, Andrew, James, and John to follow him",
+  "parallels": [
+   "Mark 1:16-20",
+   "Luke 5:1-11",
+   "John 1:35-42"
+  ]
+ },
+ "Matthew 04.23 Jesus Heals the Multitudes.txt": {
+  "ref": "Matthew 4:23-25",
+  "title": "Jesus Heals the Multitudes",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches, preaches, heals crowds across Galilee and nearby regions",
+  "parallels": [
+   "Mark 3:7-12",
+   "Luke 6:17-19"
+  ]
+ },
+ "Matthew 05.01 The Sermon on the Mount.txt": {
+  "ref": "Matthew 5:1-2",
+  "title": "The Sermon on the Mount",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus goes up the mountain and begins teaching his disciples",
+  "parallels": []
+ },
+ "Matthew 05.03 The Beatitudes.txt": {
+  "ref": "Matthew 5:3-12",
+  "title": "The Beatitudes",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches the Beatitudes to the crowd on a mountain",
+  "parallels": [
+   "Psalm 1:1-6",
+   "Luke 6:20-23"
+  ]
+ },
+ "Matthew 05.13 Salt and Light.txt": {
+  "ref": "Matthew 5:13-16",
+  "title": "Salt and Light",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches disciples they are salt and light, shining good deeds before others",
+  "parallels": [
+   "Mark 9:49-50",
+   "Luke 14:34-35",
+   "Philippians 2:12-18"
+  ]
+ },
+ "Matthew 05.17 The Fulfillment of the Law.txt": {
+  "ref": "Matthew 5:17-20",
+  "title": "The Fulfillment of the Law",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches that he fulfills the Law and warns about keeping commandments",
+  "parallels": []
+ },
+ "Matthew 05.21 Anger and Reconciliation.txt": {
+  "ref": "Matthew 5:21-26",
+  "title": "Anger and Reconciliation",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches about anger, reconciliation, and settling disputes quickly",
+  "parallels": [
+   "Luke 12:57-59"
+  ]
+ },
+ "Matthew 05.27 Adultery.txt": {
+  "ref": "Matthew 5:27-30",
+  "title": "Adultery",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches about lust, adultery, and radical self-denial",
+  "parallels": [
+   "Leviticus 18:1-30"
+  ]
+ },
+ "Matthew 05.31 Divorce.txt": {
+  "ref": "Matthew 5:31-32",
+  "title": "Divorce",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches about divorce and adultery during the Sermon on the Mount",
+  "parallels": [
+   "Deuteronomy 24:1-5",
+   "Luke 16:18"
+  ]
+ },
+ "Matthew 05.33 Oaths and Vows.txt": {
+  "ref": "Matthew 5:33-37",
+  "title": "Oaths and Vows",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches not to swear oaths; let yes mean yes and no mean no.",
+  "parallels": [
+   "Numbers 30:1-16"
+  ]
+ },
+ "Matthew 05.38 Love Your Enemies.txt": {
+  "ref": "Matthew 5:38-48",
+  "title": "Love Your Enemies",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches love for enemies and perfect obedience to God",
+  "parallels": [
+   "Leviticus 24:17-23",
+   "Luke 6:27-36"
+  ]
+ },
+ "Matthew 06.01 Giving to the Needy.txt": {
+  "ref": "Matthew 6:1-4",
+  "title": "Giving to the Needy",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches to give secretly, not for public praise",
+  "parallels": [
+   "Deuteronomy 15:7-11"
+  ]
+ },
+ "Matthew 06.05 The Lords Prayer.txt": {
+  "ref": "Matthew 6:5-15",
+  "title": "The Lord’s Prayer",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches how to pray and gives the Lord’s Prayer",
+  "parallels": [
+   "Luke 11:1-4"
+  ]
+ },
+ "Matthew 06.16 Proper Fasting.txt": {
+  "ref": "Matthew 6:16-18",
+  "title": "Proper Fasting",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches how to fast secretly without showing off",
+  "parallels": []
+ },
+ "Matthew 06.19 Treasures in Heaven.txt": {
+  "ref": "Matthew 6:19-21",
+  "title": "Treasures in Heaven",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches about earthly and heavenly treasures",
+  "parallels": [
+   "Luke 12:32-34"
+  ]
+ },
+ "Matthew 06.22 The Lamp of the Body.txt": {
+  "ref": "Matthew 6:22-24",
+  "title": "The Lamp of the Body",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches about the eye, light, and serving God or money",
+  "parallels": [
+   "Luke 11:33-36"
+  ]
+ },
+ "Matthew 06.25 Do Not Worry.txt": {
+  "ref": "Matthew 6:25-34",
+  "title": "Do Not Worry",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches the crowd not to worry about food, clothes, or tomorrow",
+  "parallels": [
+   "Luke 12:22-31"
+  ]
+ },
+ "Matthew 07.01 Judging Others.txt": {
+  "ref": "Matthew 7:1-6",
+  "title": "Judging Others",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches against judging others and warns about giving holy things to unworthy people",
+  "parallels": [
+   "Luke 6:37-42",
+   "Romans 14:1-12"
+  ]
+ },
+ "Matthew 07.07 Ask, Seek, Knock.txt": {
+  "ref": "Matthew 7:7-12",
+  "title": "Ask, Seek, Knock",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches to ask, seek, knock, and treat others as you wish",
+  "parallels": [
+   "Luke 11:5-13"
+  ]
+ },
+ "Matthew 07.13 The Narrow Gate.txt": {
+  "ref": "Matthew 7:13-14",
+  "title": "The Narrow Gate",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches about the narrow gate and the broad road",
+  "parallels": [
+   "Luke 13:22-30"
+  ]
+ },
+ "Matthew 07.15 A Tree and Its Fruit.txt": {
+  "ref": "Matthew 7:15-23",
+  "title": "A Tree and Its Fruit",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches about false prophets, true fruit, and final judgment",
+  "parallels": [
+   "Luke 6:43-45"
+  ]
+ },
+ "Matthew 07.24 The House on the Rock.txt": {
+  "ref": "Matthew 7:24-27",
+  "title": "The House on the Rock",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches a parable about building on rock or sand",
+  "parallels": [
+   "Luke 6:46-49"
+  ]
+ },
+ "Matthew 07.28 The Authority of Jesus.txt": {
+  "ref": "Matthew 7:28-29",
+  "title": "The Authority of Jesus",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus finishes teaching; the crowds are astonished at his authority.",
+  "parallels": []
+ },
+ "Matthew 08.01 The Lepers Prayer.txt": {
+  "ref": "Matthew 8:1-4",
+  "title": "The Leper’s Prayer",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.37,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus heals a leper and tells him to show the priest",
+  "parallels": [
+   "Leviticus 14:1-32",
+   "Mark 1:40-45",
+   "Luke 5:12-16"
+  ]
+ },
+ "Matthew 08.05 The Faith of the Centurion.txt": {
+  "ref": "Matthew 8:5-13",
+  "title": "The Faith of the Centurion",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.42,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus enters Capernaum, hears a centurion, praises his faith, and heals the servant remotely.",
+  "parallels": [
+   "Luke 7:1-10",
+   "John 4:43-54"
+  ]
+ },
+ "Matthew 08.14 Jesus Heals at Peters House.txt": {
+  "ref": "Matthew 8:14-17",
+  "title": "Jesus Heals at Peter’s House",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus heals Peter’s mother-in-law and many sick and demon-possessed people",
+  "parallels": [
+   "Mark 1:29-34",
+   "Luke 4:38-41"
+  ]
+ },
+ "Matthew 08.18 The Cost of Discipleship.txt": {
+  "ref": "Matthew 8:18-22",
+  "title": "The Cost of Discipleship",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.36,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus tells would-be followers to leave everything and follow him",
+  "parallels": [
+   "Luke 9:57-62",
+   "Luke 14:25-33",
+   "John 6:59-66"
+  ]
+ },
+ "Matthew 08.23 Jesus Calms the Storm.txt": {
+  "ref": "Matthew 8:23-27",
+  "title": "Jesus Calms the Storm",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.1,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus calms a storm after waking in the boat",
+  "parallels": [
+   "Psalm 107:1-43",
+   "Mark 4:35-41",
+   "Luke 8:22-25"
+  ]
+ },
+ "Matthew 08.28 The Demons and the Pigs.txt": {
+  "ref": "Matthew 8:28-34",
+  "title": "The Demons and the Pigs",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.01,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus meets demon-possessed men, expels demons into pigs, and the town asks him to leave",
+  "parallels": [
+   "Mark 5:1-20",
+   "Luke 8:26-39"
+  ]
+ },
+ "Matthew 09.01 Jesus Heals a Paralytic.txt": {
+  "ref": "Matthew 9:1-8",
+  "title": "Jesus Heals a Paralytic",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.38,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus heals a paralytic, forgives sins, and disputes with scribes.",
+  "parallels": [
+   "Mark 2:1-12",
+   "Luke 5:17-26"
+  ]
+ },
+ "Matthew 09.09 Jesus Calls Matthew.txt": {
+  "ref": "Matthew 9:9-13",
+  "title": "Jesus Calls Matthew",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.34,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus calls Matthew and eats with tax collectors; answers Pharisees",
+  "parallels": [
+   "Mark 2:13-17",
+   "Luke 5:27-32"
+  ]
+ },
+ "Matthew 09.14 Questions about Fasting.txt": {
+  "ref": "Matthew 9:14-15",
+  "title": "Questions about Fasting",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.53,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus answers John’s disciples about fasting and compares himself to a bridegroom",
+  "parallels": [
+   "Mark 2:18-20",
+   "Luke 5:33-35"
+  ]
+ },
+ "Matthew 09.16 The Patches and the Wineskins.txt": {
+  "ref": "Matthew 9:16-17",
+  "title": "The Patches and the Wineskins",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches about new cloth patches and wineskins",
+  "parallels": [
+   "Mark 2:21-22",
+   "Luke 5:36-39"
+  ]
+ },
+ "Matthew 09.18 The Healing Touch of Jesus.txt": {
+  "ref": "Matthew 9:18-26",
+  "title": "The Healing Touch of Jesus",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.1,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus goes with a leader, heals a bleeding woman, and raises his daughter",
+  "parallels": [
+   "Mark 5:21-43",
+   "Luke 8:40-56"
+  ]
+ },
+ "Matthew 09.27 Jesus Heals the Blind and Mute.txt": {
+  "ref": "Matthew 9:27-34",
+  "title": "Jesus Heals the Blind and Mute",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.18,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus heals two blind men and frees a mute demon-possessed man; Pharisees accuse him.",
+  "parallels": [
+   "Mark 7:31-37"
+  ]
+ },
+ "Matthew 09.35 The Lord of the Harvest.txt": {
+  "ref": "Matthew 9:35-38",
+  "title": "The Lord of the Harvest",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.3,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches, preaches, heals crowds, and tells disciples to pray for workers",
+  "parallels": [
+   "Luke 10:1-12"
+  ]
+ },
+ "Matthew 10.01 The Twelve Apostles.txt": {
+  "ref": "Matthew 10:1-4",
+  "title": "The Twelve Apostles",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus calls the twelve and gives them authority over healing and exorcism",
+  "parallels": [
+   "Mark 3:13-19",
+   "Luke 6:12-16"
+  ]
+ },
+ "Matthew 10.05 The Ministry of the Twelve.txt": {
+  "ref": "Matthew 10:5-15",
+  "title": "The Ministry of the Twelve",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.95,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus sends out the twelve and gives them instructions for their mission",
+  "parallels": [
+   "Mark 6:7-13",
+   "Luke 9:1-6"
+  ]
+ },
+ "Matthew 10.16 Sheep among Wolves.txt": {
+  "ref": "Matthew 10:16-25",
+  "title": "Sheep among Wolves",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus sends disciples, warning them about persecution and betrayal",
+  "parallels": [
+   "2 Timothy 1:3-12"
+  ]
+ },
+ "Matthew 10.26 Fear God Alone.txt": {
+  "ref": "Matthew 10:26-31",
+  "title": "Fear God Alone",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus tells disciples not to fear and to trust God",
+  "parallels": [
+   "Luke 12:4-7"
+  ]
+ },
+ "Matthew 10.32 Confessing Christ.txt": {
+  "ref": "Matthew 10:32-33",
+  "title": "Confessing Christ",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches disciples about confessing or denying him before others",
+  "parallels": [
+   "Luke 12:8-12"
+  ]
+ },
+ "Matthew 10.34 Not Peace but a Sword.txt": {
+  "ref": "Matthew 10:34-39",
+  "title": "Not Peace but a Sword",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches that loyalty to him may divide families and demands self-denial",
+  "parallels": [
+   "Micah 7:1-6",
+   "Luke 12:49-53"
+  ]
+ },
+ "Matthew 10.40 The Reward of Service.txt": {
+  "ref": "Matthew 10:40-42",
+  "title": "The Reward of Service",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches disciples about receiving them and rewarding kindness",
+  "parallels": [
+   "2 Kings 4:8-17"
+  ]
+ },
+ "Matthew 11.01 Johns Inquiry.txt": {
+  "ref": "Matthew 11:1-6",
+  "title": "John’s Inquiry",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.48,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches; John’s disciples ask if he is the coming one; Jesus answers with signs",
+  "parallels": [
+   "Luke 7:18-23"
+  ]
+ },
+ "Matthew 11.07 Jesus Testifies about John.txt": {
+  "ref": "Matthew 11:7-19",
+  "title": "Jesus Testifies about John",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.95,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus speaks to the crowds about John the Baptist",
+  "parallels": [
+   "Malachi 3:1-5",
+   "Luke 7:24-35"
+  ]
+ },
+ "Matthew 11.20 Woe to the Unrepentant.txt": {
+  "ref": "Matthew 11:20-24",
+  "title": "Woe to the Unrepentant",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.84,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus denounces cities that ignored his miracles and warns of judgment",
+  "parallels": [
+   "Luke 10:13-16"
+  ]
+ },
+ "Matthew 11.25 Rest for the Weary.txt": {
+  "ref": "Matthew 11:25-30",
+  "title": "Rest for the Weary",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.96,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus praises the Father and invites the weary to find rest in him",
+  "parallels": [
+   "Luke 10:21-24"
+  ]
+ },
+ "Matthew 12.01 The Lord of the Sabbath.txt": {
+  "ref": "Matthew 12:1-8",
+  "title": "The Lord of the Sabbath",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.69,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus walks through grainfields, defends disciples, and teaches about Sabbath mercy",
+  "parallels": [
+   "1 Samuel 21:1-7",
+   "Mark 2:23-28",
+   "Luke 6:1-5"
+  ]
+ },
+ "Matthew 12.09 Jesus Heals on the Sabbath.txt": {
+  "ref": "Matthew 12:9-14",
+  "title": "Jesus Heals on the Sabbath",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.42,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus heals a man’s withered hand in a synagogue on the Sabbath",
+  "parallels": [
+   "Mark 3:1-6",
+   "Luke 6:6-11"
+  ]
+ },
+ "Matthew 12.15 Gods Chosen Servant.txt": {
+  "ref": "Matthew 12:15-21",
+  "title": "God’s Chosen Servant",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus withdraws, heals crowds, and tells them to keep quiet; Isaiah prophecy quoted",
+  "parallels": [
+   "Isaiah 42:1-9"
+  ]
+ },
+ "Matthew 12.22 A House Divided.txt": {
+  "ref": "Matthew 12:22-30",
+  "title": "A House Divided",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.65,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus heals a demon-possessed blind mute man and teaches against the Pharisees",
+  "parallels": [
+   "Mark 3:20-27",
+   "Luke 11:14-23"
+  ]
+ },
+ "Matthew 12.31 The Unpardonable Sin.txt": {
+  "ref": "Matthew 12:31-32",
+  "title": "The Unpardonable Sin",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches that blasphemy against the Holy Spirit will not be forgiven",
+  "parallels": [
+   "Mark 3:28-30"
+  ]
+ },
+ "Matthew 12.33 Good and Bad Fruit.txt": {
+  "ref": "Matthew 12:33-37",
+  "title": "Good and Bad Fruit",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches about good and bad words, judgment, and the heart",
+  "parallels": [
+   "Luke 6:43-45"
+  ]
+ },
+ "Matthew 12.38 The Sign of Jonah.txt": {
+  "ref": "Matthew 12:38-42",
+  "title": "The Sign of Jonah",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.86,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus answers Pharisees, gives Jonah sign, compares himself to Jonah and Solomon",
+  "parallels": [
+   "Jonah 3:1-10",
+   "Luke 11:29-32"
+  ]
+ },
+ "Matthew 12.43 An Unclean Spirit Returns.txt": {
+  "ref": "Matthew 12:43-45",
+  "title": "An Unclean Spirit Returns",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus warns that an expelled demon returns with worse spirits",
+  "parallels": [
+   "Luke 11:24-26"
+  ]
+ },
+ "Matthew 12.46 Jesus Mother and Brothers.txt": {
+  "ref": "Matthew 12:46-50",
+  "title": "Jesus’ Mother and Brothers",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.43,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus speaks to the crowd about his mother and brothers",
+  "parallels": [
+   "Mark 3:31-35",
+   "Luke 8:19-21"
+  ]
+ },
+ "Matthew 13.01 The Parable of the Sower.txt": {
+  "ref": "Matthew 13:1-9",
+  "title": "The Parable of the Sower",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.68,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus by the sea teaches crowds the parable of the sower.",
+  "parallels": [
+   "Mark 4:1-9",
+   "Luke 8:4-8"
+  ]
+ },
+ "Matthew 13.10 The Purpose of Jesus Parables.txt": {
+  "ref": "Matthew 13:10-17",
+  "title": "The Purpose of Jesus’ Parables",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.9,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus explains why he speaks in parables to the disciples",
+  "parallels": [
+   "Isaiah 6:1-13",
+   "Mark 4:10-12",
+   "Luke 8:9-10"
+  ]
+ },
+ "Matthew 13.18 The Parable of the Sower Explained.txt": {
+  "ref": "Matthew 13:18-23",
+  "title": "The Parable of the Sower Explained",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus explains the parable of the sower and the different kinds of hearers",
+  "parallels": [
+   "Mark 4:13-20",
+   "Luke 8:11-15"
+  ]
+ },
+ "Matthew 13.24 The Parable of the Weeds.txt": {
+  "ref": "Matthew 13:24-30",
+  "title": "The Parable of the Weeds",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.96,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus tells a parable about weeds, wheat, and a coming harvest.",
+  "parallels": [
+   "Ezekiel 17:1-10"
+  ]
+ },
+ "Matthew 13.31 The Parable of the Mustard Seed.txt": {
+  "ref": "Matthew 13:31-32",
+  "title": "The Parable of the Mustard Seed",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.9,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus tells the mustard seed parable about the kingdom growing বড়",
+  "parallels": [
+   "Mark 4:30-34",
+   "Luke 13:18-19"
+  ]
+ },
+ "Matthew 13.33 The Parable of the Leaven.txt": {
+  "ref": "Matthew 13:33",
+  "title": "The Parable of the Leaven",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.8,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus tells a parable about leaven mixed into flour",
+  "parallels": [
+   "Luke 13:20-21"
+  ]
+ },
+ "Matthew 13.34 I Will Open My Mouth in Parables.txt": {
+  "ref": "Matthew 13:34-35",
+  "title": "I Will Open My Mouth in Parables",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus speaks to the crowds in parables, fulfilling prophecy",
+  "parallels": [
+   "Psalm 78:1-72"
+  ]
+ },
+ "Matthew 13.36 The Parable of the Weeds Explained.txt": {
+  "ref": "Matthew 13:36-43",
+  "title": "The Parable of the Weeds Explained",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.83,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus explains the parable of the weeds to his disciples",
+  "parallels": [
+   "Zephaniah 1:1-6"
+  ]
+ },
+ "Matthew 13.44 The Parables of the Treasure and the Pearl.txt": {
+  "ref": "Matthew 13:44-46",
+  "title": "The Parables of the Treasure and the Pearl",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches parables about hidden treasure and a priceless pearl",
+  "parallels": []
+ },
+ "Matthew 13.47 The Parable of the Net.txt": {
+  "ref": "Matthew 13:47-52",
+  "title": "The Parable of the Net",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.94,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches parables about the net and trained scribe",
+  "parallels": []
+ },
+ "Matthew 13.53 The Rejection at Nazareth.txt": {
+  "ref": "Matthew 13:53-58",
+  "title": "The Rejection at Nazareth",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.13,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches in Nazareth; townspeople reject him, so he performs few miracles",
+  "parallels": [
+   "Mark 6:1-6",
+   "Luke 4:16-30"
+  ]
+ },
+ "Matthew 14.01 The Beheading of John.txt": {
+  "ref": "Matthew 14:1-12",
+  "title": "The Beheading of John",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Herod imprisons and beheads John; John’s disciples bury him and tell Jesus.",
+  "parallels": [
+   "Mark 6:14-29",
+   "Luke 9:7-9"
+  ]
+ },
+ "Matthew 14.13 The Feeding of the Five Thousand.txt": {
+  "ref": "Matthew 14:13-21",
+  "title": "The Feeding of the Five Thousand",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.09,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus feeds five thousand with five loaves and two fish",
+  "parallels": [
+   "Mark 6:30-44",
+   "Luke 9:10-17",
+   "John 6:1-15"
+  ]
+ },
+ "Matthew 14.22 Jesus Walks on Water.txt": {
+  "ref": "Matthew 14:22-33",
+  "title": "Jesus Walks on Water",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.08,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus walks on water, calls Peter out, rescues him, and calms the disciples.",
+  "parallels": [
+   "Mark 6:45-52",
+   "John 6:16-21"
+  ]
+ },
+ "Matthew 14.34 Jesus Heals at Gennesaret.txt": {
+  "ref": "Matthew 14:34-36",
+  "title": "Jesus Heals at Gennesaret",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus arrives at Gennesaret and heals all who touch his cloak",
+  "parallels": [
+   "Mark 6:53-56"
+  ]
+ },
+ "Matthew 15.01 The Tradition of the Elders.txt": {
+  "ref": "Matthew 15:1-9",
+  "title": "The Tradition of the Elders",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.78,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Pharisees question handwashing; Jesus rebukes them for nullifying God’s command.",
+  "parallels": [
+   "Mark 7:1-13"
+  ]
+ },
+ "Matthew 15.10 What Defiles a Man.txt": {
+  "ref": "Matthew 15:10-20",
+  "title": "What Defiles a Man",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.76,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches the crowd and disciples what truly defiles a person.",
+  "parallels": [
+   "Mark 7:14-23"
+  ]
+ },
+ "Matthew 15.21 The Faith of the Canaanite Woman.txt": {
+  "ref": "Matthew 15:21-28",
+  "title": "The Faith of the Canaanite Woman",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.28,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus meets a Canaanite woman, tests her faith, and heals her daughter.",
+  "parallels": [
+   "Mark 7:24-30"
+  ]
+ },
+ "Matthew 15.29 The Feeding of the Four Thousand.txt": {
+  "ref": "Matthew 15:29-39",
+  "title": "The Feeding of the Four Thousand",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.17,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus heals crowds, feeds four thousand with loaves and fish, then leaves by boat.",
+  "parallels": [
+   "2 Kings 4:42-44",
+   "Mark 8:1-10"
+  ]
+ },
+ "Matthew 16.01 The Demand for a Sign.txt": {
+  "ref": "Matthew 16:1-4",
+  "title": "The Demand for a Sign",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.7,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Pharisees and Sadducees demand a sign; Jesus rebukes them and leaves.",
+  "parallels": [
+   "Mark 8:11-13",
+   "Luke 12:54-56"
+  ]
+ },
+ "Matthew 16.05 The Leaven of the Pharisees and Sadducees.txt": {
+  "ref": "Matthew 16:5-12",
+  "title": "The Leaven of the Pharisees and Sadducees",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.57,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus warns disciples about Pharisees and Sadducees, then explains he meant their teaching.",
+  "parallels": [
+   "Mark 8:14-21",
+   "Luke 12:1-3"
+  ]
+ },
+ "Matthew 16.13 Peters Confession of Christ.txt": {
+  "ref": "Matthew 16:13-20",
+  "title": "Peter’s Confession of Christ",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.62,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus asks who he is, receives Peter’s confession, and gives the church keys",
+  "parallels": [
+   "Mark 8:27-30",
+   "Luke 9:18-20",
+   "John 6:67-71"
+  ]
+ },
+ "Matthew 16.21 Christs Passion Foretold.txt": {
+  "ref": "Matthew 16:21-23",
+  "title": "Christ’s Passion Foretold",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.26,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus predicts his suffering, Peter rebukes him, and Jesus rebukes Peter.",
+  "parallels": [
+   "Mark 8:31-33",
+   "Luke 9:21-22"
+  ]
+ },
+ "Matthew 16.24 Take Up Your Cross.txt": {
+  "ref": "Matthew 16:24-28",
+  "title": "Take Up Your Cross",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.96,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus tells disciples to deny self, take up cross, follow him",
+  "parallels": [
+   "Mark 8:34-38",
+   "Luke 9:23-27"
+  ]
+ },
+ "Matthew 17.01 The Transfiguration.txt": {
+  "ref": "Matthew 17:1-13",
+  "title": "The Transfiguration",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.27,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus takes Peter, James, and John up a mountain, is transfigured, speaks with Moses and Elijah",
+  "parallels": [
+   "Mark 9:1-13",
+   "Luke 9:28-36",
+   "2 Peter 1:16-21"
+  ]
+ },
+ "Matthew 17.14 The Boy with a Demon.txt": {
+  "ref": "Matthew 17:14-18",
+  "title": "The Boy with a Demon",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.26,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus heals a demon-possessed boy after the father asks for help",
+  "parallels": [
+   "Mark 9:14-29",
+   "Luke 9:37-42"
+  ]
+ },
+ "Matthew 17.19 The Power of Faith.txt": {
+  "ref": "Matthew 17:19-20",
+  "title": "The Power of Faith",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.71,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches disciples privately about faith and moving mountains",
+  "parallels": [
+   "Luke 17:5-10"
+  ]
+ },
+ "Matthew 17.22 The Second Prediction of the Passion.txt": {
+  "ref": "Matthew 17:22-23",
+  "title": "The Second Prediction of the Passion",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.66,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus predicts his death and resurrection, and the disciples grieve",
+  "parallels": [
+   "Mark 9:30-32",
+   "Luke 9:43-45"
+  ]
+ },
+ "Matthew 17.24 The Temple Tax.txt": {
+  "ref": "Matthew 17:24-27",
+  "title": "The Temple Tax",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.62,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus discusses temple tax and tells Peter how to pay it",
+  "parallels": []
+ },
+ "Matthew 18.01 The Greatest in the Kingdom.txt": {
+  "ref": "Matthew 18:1-5",
+  "title": "The Greatest in the Kingdom",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.61,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches disciples about childlike humility and greatness in heaven",
+  "parallels": [
+   "Mark 9:33-41",
+   "Luke 9:46-50"
+  ]
+ },
+ "Matthew 18.06 Temptations and Trespasses.txt": {
+  "ref": "Matthew 18:6-9",
+  "title": "Temptations and Trespasses",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches about sin, stumbling others, and drastic self-denial to avoid hell",
+  "parallels": [
+   "Mark 9:42-48",
+   "Luke 17:1-4"
+  ]
+ },
+ "Matthew 18.10 The Parable of the Lost Sheep.txt": {
+  "ref": "Matthew 18:10-14",
+  "title": "The Parable of the Lost Sheep",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches the parable of the lost sheep",
+  "parallels": [
+   "Luke 15:1-7"
+  ]
+ },
+ "Matthew 18.15 A Brother Who Sins.txt": {
+  "ref": "Matthew 18:15-18",
+  "title": "A Brother Who Sins",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches disciples how to confront a sinning brother",
+  "parallels": [
+   "Deuteronomy 19:15-21"
+  ]
+ },
+ "Matthew 18.19 Ask in My Name.txt": {
+  "ref": "Matthew 18:19-20",
+  "title": "Ask in My Name",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus says he is with gathered disciples and promises answered agreement",
+  "parallels": [
+   "John 16:23-33"
+  ]
+ },
+ "Matthew 18.21 The Unforgiving Servant.txt": {
+  "ref": "Matthew 18:21-35",
+  "title": "The Unforgiving Servant",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.91,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches Peter a parable about mercy and unforgiveness",
+  "parallels": [
+   "Romans 12:14-21"
+  ]
+ },
+ "Matthew 19.01 Teachings about Divorce.txt": {
+  "ref": "Matthew 19:1-12",
+  "title": "Teachings about Divorce",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.61,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus travels, heals crowds, and teaches Pharisees and disciples about divorce.",
+  "parallels": [
+   "Mark 10:1-12"
+  ]
+ },
+ "Matthew 19.13 Jesus Blesses the Children.txt": {
+  "ref": "Matthew 19:13-15",
+  "title": "Jesus Blesses the Children",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.33,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus welcomes children, blesses them, and says the kingdom belongs to such as these",
+  "parallels": [
+   "Mark 10:13-16",
+   "Luke 18:15-17"
+  ]
+ },
+ "Matthew 19.16 The Rich Young Man.txt": {
+  "ref": "Matthew 19:16-30",
+  "title": "The Rich Young Man",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.66,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches a rich young man, then speaks to disciples about wealth and reward",
+  "parallels": [
+   "Mark 10:17-31",
+   "Luke 18:18-30"
+  ]
+ },
+ "Matthew 20.01 The Parable of the Workers.txt": {
+  "ref": "Matthew 20:1-16",
+  "title": "The Parable of the Workers",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Jesus tells a parable about a landowner paying workers",
+  "parallels": []
+ },
+ "Matthew 20.17 The Third Prediction of the Passion.txt": {
+  "ref": "Matthew 20:17-19",
+  "title": "The Third Prediction of the Passion",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.78,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus predicts his coming arrest, death, and resurrection on the way to Jerusalem",
+  "parallels": [
+   "Mark 10:32-34",
+   "Luke 18:31-34"
+  ]
+ },
+ "Matthew 20.20 A Mothers Request.txt": {
+  "ref": "Matthew 20:20-28",
+  "title": "A Mother’s Request",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.62,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus speaks with James and John’s mother, teaches humility, and predicts serving and his death",
+  "parallels": [
+   "Mark 10:35-45"
+  ]
+ },
+ "Matthew 20.29 The Blind Men by the Road.txt": {
+  "ref": "Matthew 20:29-34",
+  "title": "The Blind Men by the Road",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.09,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus heals two blind men near Jericho, and they follow him",
+  "parallels": [
+   "Mark 10:46-52",
+   "Luke 18:35-43"
+  ]
+ },
+ "Matthew 21.01 The Triumphal Entry.txt": {
+  "ref": "Matthew 21:1-11",
+  "title": "The Triumphal Entry",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.22,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus enters Jerusalem on a donkey amid crowds praising him.",
+  "parallels": [
+   "Zechariah 9:9-13",
+   "Mark 11:1-11",
+   "Luke 19:28-40",
+   "John 12:12-19"
+  ]
+ },
+ "Matthew 21.12 Jesus Cleanses the Temple.txt": {
+  "ref": "Matthew 21:12-17",
+  "title": "Jesus Cleanses the Temple",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.25,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus enters the temple, drives out traders, heals, and answers critics.",
+  "parallels": [
+   "Mark 11:15-19",
+   "Luke 19:45-48",
+   "John 2:12-25"
+  ]
+ },
+ "Matthew 21.18 The Barren Fig Tree.txt": {
+  "ref": "Matthew 21:18-22",
+  "title": "The Barren Fig Tree",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.51,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus curses a barren fig tree and teaches faith to the disciples",
+  "parallels": [
+   "Mark 11:12-14",
+   "Mark 11:20-25"
+  ]
+ },
+ "Matthew 21.23 Jesus Authority Challenged.txt": {
+  "ref": "Matthew 21:23-27",
+  "title": "Jesus’ Authority Challenged",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.36,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches in the temple and answers priests about his authority and John’s baptism.",
+  "parallels": [
+   "Mark 11:27-33",
+   "Luke 20:1-8"
+  ]
+ },
+ "Matthew 21.28 The Parable of the Two Sons.txt": {
+  "ref": "Matthew 21:28-32",
+  "title": "The Parable of the Two Sons",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.94,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus tells a parable about two sons and comments on repentance",
+  "parallels": []
+ },
+ "Matthew 21.33 The Parable of the Wicked Tenants.txt": {
+  "ref": "Matthew 21:33-46",
+  "title": "The Parable of the Wicked Tenants",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.76,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus tells a parable to priests and Pharisees, warning them they’ll lose God’s kingdom.",
+  "parallels": [
+   "Mark 12:1-12",
+   "Luke 20:9-18"
+  ]
+ },
+ "Matthew 22.01 The Parable of the Banquet.txt": {
+  "ref": "Matthew 22:1-14",
+  "title": "The Parable of the Banquet",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.97,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus tells a parable about a king’s wedding banquet and invited guests",
+  "parallels": [
+   "Luke 14:15-24"
+  ]
+ },
+ "Matthew 22.15 Paying Taxes to Caesar.txt": {
+  "ref": "Matthew 22:15-22",
+  "title": "Paying Taxes to Caesar",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.23,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus answers Pharisees about paying taxes to Caesar",
+  "parallels": [
+   "Mark 12:13-17",
+   "Luke 20:19-26"
+  ]
+ },
+ "Matthew 22.23 The Sadducees and the Resurrection.txt": {
+  "ref": "Matthew 22:23-33",
+  "title": "The Sadducees and the Resurrection",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.4,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus answers Sadducees about resurrection and marriage after death",
+  "parallels": [
+   "Mark 12:18-27",
+   "Luke 20:27-40"
+  ]
+ },
+ "Matthew 22.34 The Greatest Commandment.txt": {
+  "ref": "Matthew 22:34-40",
+  "title": "The Greatest Commandment",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.55,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus answers a test question about the greatest commandment",
+  "parallels": [
+   "Deuteronomy 6:1-19",
+   "Mark 12:28-34"
+  ]
+ },
+ "Matthew 22.41 Whose Son Is the Christ.txt": {
+  "ref": "Matthew 22:41-46",
+  "title": "Whose Son Is the Christ?",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.6,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus questions Pharisees about the Christ being David’s son and Lord",
+  "parallels": [
+   "Mark 12:35-37",
+   "Luke 20:41-44"
+  ]
+ },
+ "Matthew 23.01 Woes to Scribes and Pharisees.txt": {
+  "ref": "Matthew 23:1-36",
+  "title": "Woes to Scribes and Pharisees",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.99,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches crowds and disciples, then denounces scribes and Pharisees with woes.",
+  "parallels": [
+   "Luke 11:37-54"
+  ]
+ },
+ "Matthew 23.37 Lament over Jerusalem.txt": {
+  "ref": "Matthew 23:37-39",
+  "title": "Lament over Jerusalem",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus laments Jerusalem and predicts they will not see him again",
+  "parallels": [
+   "Luke 13:31-35"
+  ]
+ },
+ "Matthew 24.01 Temple Destruction and Other Signs.txt": {
+  "ref": "Matthew 24:1-8",
+  "title": "Temple Destruction and Other Signs",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.62,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus leaves the temple, predicts its destruction, and teaches about future signs.",
+  "parallels": [
+   "Mark 13:1-8",
+   "Luke 21:5-9"
+  ]
+ },
+ "Matthew 24.09 Witnessing to All Nations.txt": {
+  "ref": "Matthew 24:9-14",
+  "title": "Witnessing to All Nations",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus warns disciples of persecution, betrayal, false prophets, and worldwide preaching",
+  "parallels": [
+   "Mark 13:9-13",
+   "Luke 21:10-19"
+  ]
+ },
+ "Matthew 24.15 The Abomination of Desolation.txt": {
+  "ref": "Matthew 24:15-25",
+  "title": "The Abomination of Desolation",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus warns disciples about coming tribulation and false messiahs",
+  "parallels": [
+   "Mark 13:14-23",
+   "Luke 21:20-24"
+  ]
+ },
+ "Matthew 24.26 The Return of the Son of Man.txt": {
+  "ref": "Matthew 24:26-31",
+  "title": "The Return of the Son of Man",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Jesus predicts his future return, signs in heaven, and angelic gathering of the elect",
+  "parallels": [
+   "Mark 13:24-27",
+   "Luke 21:25-28"
+  ]
+ },
+ "Matthew 24.32 The Lesson of the Fig Tree.txt": {
+  "ref": "Matthew 24:32-35",
+  "title": "The Lesson of the Fig Tree",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus teaches about the fig tree and predicts coming events",
+  "parallels": [
+   "Mark 13:28-31",
+   "Luke 21:29-33"
+  ]
+ },
+ "Matthew 24.36 Readiness at Any Hour.txt": {
+  "ref": "Matthew 24:36-51",
+  "title": "Readiness at Any Hour",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "2/3",
+  "gist": "Jesus teaches that his return will be unexpected, urging watchfulness and faithfulness.",
+  "parallels": [
+   "Genesis 6:1-7",
+   "Mark 13:32-37",
+   "Luke 12:35-48"
+  ]
+ },
+ "Matthew 25.01 The Parable of the Ten Virgins.txt": {
+  "ref": "Matthew 25:1-13",
+  "title": "The Parable of the Ten Virgins",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "2/3",
+  "gist": "Jesus tells the parable of the ten virgins and warns to keep watch",
+  "parallels": []
+ },
+ "Matthew 25.14 The Parable of the Talents.txt": {
+  "ref": "Matthew 25:14-30",
+  "title": "The Parable of the Talents",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "2/3",
+  "gist": "Jesus tells a parable about servants, talents, rewards, and punishment",
+  "parallels": [
+   "Luke 19:11-27"
+  ]
+ },
+ "Matthew 25.31 The Sheep and the Goats.txt": {
+  "ref": "Matthew 25:31-46",
+  "title": "The Sheep and the Goats",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 1.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus speaks of coming in glory to judge nations and reward or condemn people",
+  "parallels": []
+ },
+ "Matthew 26.01 The Plot to Kill Jesus.txt": {
+  "ref": "Matthew 26:1-5",
+  "title": "The Plot to Kill Jesus",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.26,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus predicts his crucifixion while priests plot to arrest and kill him",
+  "parallels": [
+   "Mark 14:1-2",
+   "Luke 22:1-2",
+   "John 11:45-57"
+  ]
+ },
+ "Matthew 26.06 Jesus Anointed at Bethany.txt": {
+  "ref": "Matthew 26:6-13",
+  "title": "Jesus Anointed at Bethany",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.49,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Woman anoints Jesus; disciples اعتراض, Jesus defends her and says it prepares him for burial",
+  "parallels": [
+   "Mark 14:3-9",
+   "Luke 7:36-50",
+   "John 12:1-8"
+  ]
+ },
+ "Matthew 26.14 Judas Agrees to Betray Jesus.txt": {
+  "ref": "Matthew 26:14-16",
+  "title": "Judas Agrees to Betray Jesus",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Judas bargains with priests to betray Jesus for thirty pieces of silver",
+  "parallels": [
+   "Mark 14:10-11",
+   "Luke 22:3-6"
+  ]
+ },
+ "Matthew 26.17 Preparing the Passover.txt": {
+  "ref": "Matthew 26:17-19",
+  "title": "Preparing the Passover",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.4,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus tells disciples where to prepare the Passover meal",
+  "parallels": [
+   "Mark 14:12-16",
+   "Luke 22:7-13"
+  ]
+ },
+ "Matthew 26.20 The Last Supper.txt": {
+  "ref": "Matthew 26:20-30",
+  "title": "The Last Supper",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.56,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus shares Passover meal, predicts betrayal, blesses bread and wine, then leaves for Olives.",
+  "parallels": [
+   "Mark 14:17-26",
+   "Luke 22:14-23",
+   "1 Corinthians 11:17-34"
+  ]
+ },
+ "Matthew 26.31 Jesus Predicts Peters Denial.txt": {
+  "ref": "Matthew 26:31-35",
+  "title": "Jesus Predicts Peter’s Denial",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.56,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus predicts the disciples’ falling away and Peter’s three denials",
+  "parallels": [
+   "Zechariah 13:7-9",
+   "Mark 14:27-31",
+   "Luke 22:31-38",
+   "John 13:36-38"
+  ]
+ },
+ "Matthew 26.36 Jesus Prays at Gethsemane.txt": {
+  "ref": "Matthew 26:36-46",
+  "title": "Jesus Prays at Gethsemane",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.54,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus prays in Gethsemane, returns to sleepy disciples, then rises to meet betrayer",
+  "parallels": [
+   "Mark 14:32-42",
+   "Luke 22:39-46"
+  ]
+ },
+ "Matthew 26.47 The Betrayal of Jesus.txt": {
+  "ref": "Matthew 26:47-56",
+  "title": "The Betrayal of Jesus",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.5,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Judas betrays Jesus; he is arrested and speaks before disciples flee.",
+  "parallels": [
+   "Mark 14:43-52",
+   "Luke 22:47-53",
+   "John 18:1-14"
+  ]
+ },
+ "Matthew 26.57 Jesus before the Sanhedrin.txt": {
+  "ref": "Matthew 26:57-68",
+  "title": "Jesus before the Sanhedrin",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.14,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus is tried before Caiaphas and the Sanhedrin, speaks, is accused, struck, and mocked",
+  "parallels": [
+   "Mark 14:53-65",
+   "Luke 22:66-71",
+   "John 18:19-24"
+  ]
+ },
+ "Matthew 26.69 Peter Denies Jesus.txt": {
+  "ref": "Matthew 26:69-75",
+  "title": "Peter Denies Jesus",
+  "present": true,
+  "source": "reviewed",
+  "jesus_share": 0.07,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Peter denies knowing Jesus three times; the rooster crows; Peter weeps.",
+  "parallels": [
+   "Mark 14:66-72",
+   "Luke 22:54-62",
+   "John 18:15-18"
+  ]
+ },
+ "Matthew 27.01 Jesus Delivered to Pilate.txt": {
+  "ref": "Matthew 27:1-2",
+  "title": "Jesus Delivered to Pilate",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus is bound, led away, and handed over to Pilate.",
+  "parallels": [
+   "Mark 15:1-5"
+  ]
+ },
+ "Matthew 27.03 Judas Hangs Himself.txt": {
+  "ref": "Matthew 27:3-10",
+  "title": "Judas Hangs Himself",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Judas returns silver, hangs himself, and priests buy the potter’s field",
+  "parallels": [
+   "Zechariah 11:10-17"
+  ]
+ },
+ "Matthew 27.11 Jesus before Pilate.txt": {
+  "ref": "Matthew 27:11-14",
+  "title": "Jesus before Pilate",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.06,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus stands before Pilate, is accused, and stays silent",
+  "parallels": [
+   "Luke 23:1-5",
+   "John 18:28-40"
+  ]
+ },
+ "Matthew 27.15 The Crowd Chooses Barabbas.txt": {
+  "ref": "Matthew 27:15-23",
+  "title": "The Crowd Chooses Barabbas",
+  "present": true,
+  "source": "reviewed",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "2/3",
+  "gist": "Pilate asks the crowd to choose Barabbas or Jesus; they demand Jesus be crucified.",
+  "parallels": [
+   "Mark 15:6-11",
+   "Luke 23:13-25"
+  ]
+ },
+ "Matthew 27.24 Pilate Washes His Hands.txt": {
+  "ref": "Matthew 27:24-26",
+  "title": "Pilate Washes His Hands",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Pilate washes hands, crowd accepts blame, Jesus is flogged and handed over",
+  "parallels": [
+   "Mark 15:12-15"
+  ]
+ },
+ "Matthew 27.27 The Soldiers Mock Jesus.txt": {
+  "ref": "Matthew 27:27-31",
+  "title": "The Soldiers Mock Jesus",
+  "present": true,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Soldiers mock Jesus, dress him up, beat him, then lead him to crucifixion",
+  "parallels": [
+   "Isaiah 50:4-11",
+   "Mark 15:16-20",
+   "Luke 22:63-65",
+   "John 19:1-15"
+  ]
+ },
+ "Matthew 27.32 The Crucifixion.txt": {
+  "ref": "Matthew 27:32-44",
+  "title": "The Crucifixion",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.03,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus is crucified, mocked, and watched on the cross",
+  "parallels": [
+   "Psalm 22:1-31",
+   "Mark 15:21-32",
+   "Luke 23:26-43",
+   "John 19:16-27"
+  ]
+ },
+ "Matthew 27.45 The Death of Jesus.txt": {
+  "ref": "Matthew 27:45-56",
+  "title": "The Death of Jesus",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.05,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus is crucified, cries out, dies; temple veil tears, earthquake, witnesses react",
+  "parallels": [
+   "Psalm 22:1-31",
+   "Mark 15:33-41",
+   "Luke 23:44-49",
+   "John 19:28-30"
+  ]
+ },
+ "Matthew 27.57 The Burial of Jesus.txt": {
+  "ref": "Matthew 27:57-61",
+  "title": "The Burial of Jesus",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "Joseph buries Jesus in a tomb; women watch from nearby",
+  "parallels": [
+   "Isaiah 53:9-12",
+   "Mark 15:42-47",
+   "Luke 23:50-56",
+   "John 19:38-42"
+  ]
+ },
+ "Matthew 27.62 The Guards at the Tomb.txt": {
+  "ref": "Matthew 27:62-66",
+  "title": "The Guards at the Tomb",
+  "present": false,
+  "source": "reviewed",
+  "jesus_share": 0.06,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "chief priests secure Jesus’ tomb and post a guard",
+  "parallels": []
+ },
+ "Matthew 28.01 The Resurrection.txt": {
+  "ref": "Matthew 28:1-10",
+  "title": "The Resurrection",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.1,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus appears risen to the women, greets them, and sends them to Galilee.",
+  "parallels": [
+   "Mark 16:1-8",
+   "Luke 24:1-12",
+   "John 20:1-9"
+  ]
+ },
+ "Matthew 28.11 The Report of the Guards.txt": {
+  "ref": "Matthew 28:11-15",
+  "title": "The Report of the Guards",
+  "present": false,
+  "source": "model 3/3",
+  "jesus_share": 0.0,
+  "llm_present": false,
+  "agreement": "3/3",
+  "gist": "guards report to priests; priests bribe them to spread a false story",
+  "parallels": []
+ },
+ "Matthew 28.16 The Great Commission.txt": {
+  "ref": "Matthew 28:16-20",
+  "title": "The Great Commission",
+  "present": true,
+  "source": "he speaks",
+  "jesus_share": 0.67,
+  "llm_present": true,
+  "agreement": "3/3",
+  "gist": "Jesus appears to the disciples and gives the Great Commission",
+  "parallels": [
+   "Mark 16:14-18"
+  ]
+ }
+}
