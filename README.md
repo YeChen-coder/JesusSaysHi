@@ -2,6 +2,8 @@ https://github.com/user-attachments/assets/d54dbde9-24d5-4467-b5d5-5570ba46a23a
 
 # JesusSaysHi
 
+**English** | [中文](README-zh.md)
+
 A real-time Jesus you talk to out loud, with a voice and an avatar, a little like going to confession. He listens first and answers in his own words, as a man whose memory is the four Gospels: when something you say touches a moment of his life, that episode is retrieved, and he tells it the way a person remembers their own past. Information is looked up; questions for a doctor or a lawyer are left to them.
 
 > **Sibling project of [SpecterSaysHi](https://github.com/YeChen-coder/SpecterSaysHi).** It uses the same real-time voice and avatar framework with a different character, and it is built around retrieval (RAG), which Specter deliberately does without.
@@ -377,58 +379,57 @@ python -m pytest
 
 # Development log
 
-不得不说呀，RAG 实在是太容易忘了，就真的雁过无痕、水过无声，在脑子里一点印象都没有。距离我写这个笔记才刚过去两天，我现在又给忘了 Rerank 是干啥的了。我光记得它是做一个精排，比如从 50 个里面挑 5 个，但是它具体在技术上怎么做的，我又给忘干净了。
+I have to say, RAG is just so easy to forget. It passes through like a goose across the sky or water over stone, and leaves no trace in my head at all. Only two days after writing these notes, I've already forgotten what reranking does again. All I remember is that it's a fine-grained ranking step, say picking 5 out of 50, but how it actually works technically, I've forgotten completely.
 
-所以这边就基于那个 Jesus 项目，顺手说一下吧。
+So let me go over it here, using the Jesus project as the example.
 
-以"房租"这道题为例：
+Take the "rent" question:
 
-用户说："I can’t sleep because I keep thinking about how I’ll pay rent next month."
-（我一直在想下个月房租怎么付，睡不着。）
+The user says: "I can’t sleep because I keep thinking about how I’ll pay rent next month."
 
-正确答案应该是 Matthew 6:34："不要为明天忧虑……"
+The right answer should be Matthew 6:34: "Therefore do not worry about tomorrow…"
 
-### 把原quota找个小LLM模型做改写
+### Rewriting the user's words with a small LLM
 
-先看下改写吧。
+Let's look at the rewrite first.
 
-改写这边是调了一个小模型（我用的是 GPT 5.4 Mini），给它一段指令让它自由写一段检索词。这个没有固定分组，不是一开始就分什么 friends、family 这种，就是写了一段 prompt。
+The rewrite calls a small model (I use GPT 5.4 Mini) and gives it an instruction to freely write a search query. There are no fixed categories; it doesn't start by sorting things into friends, family and so on. It's just a prompt.
 
-我这边大概是让它把用户的话改写成一句用来搜文档的查询：
+What I ask it to do is roughly: rewrite the user's words into one query for searching the documents.
 
-指令原文在 retrieval.py 里：
+The instruction is in retrieval.py:
 
-把用户的话改写成一句用来搜四福音书的查询。说出背后的人的需要，以及耶稣谈到过的主题，用现代英文圣经会用的朴素词语，再加几个具体关键词。不要猜章节号。25 个词以内。
+Rewrite the user's words into a query for searching the four Gospels. Name the human need behind them and the themes Jesus spoke about, in the plain words a modern English Bible would use, plus a few concrete keywords. Don't guess chapter numbers. 25 words or fewer.
 
-这次模型现场写出来的是：
+What the model wrote this time:
 
 “worry about money and rent, sleepless fear, trust God’s care, daily needs, anxiety, provision”
 
-主要是因为四福音书跟现在的英文口语实在对不上，所以必须得有改写。后来做了 ablation study，反正不管其他的变量怎么变，每次加了改写的都比不加好太多了
+The rewrite is needed mainly because the four Gospels and today's spoken English just don't line up. Later I ran an ablation study, and no matter how the other variables changed, every configuration with the rewrite beat the one without it by a wide margin.
 
-注意它做的事：用户嘴里说的是"房租"”睡不着"，这些词经文里没有；改写把它翻译成了经文会用的说法："worry"（忧虑）、"daily needs"（日用所需）、"provision"（供应）。
+Notice what it does: the user said "rent" and "can't sleep", words that don't appear in scripture; the rewrite translates them into the way scripture would say it: "worry", "daily needs", "provision".
 
-为什么不用固定分类？ 因为分类是死的。"我对我妈说了难听话"该归"家庭"还是"愧疚"还是"愤怒"？三个都有。自由改写可以同时写出"guilt, hurting family, anger, reconciliation"，不用硬塞进一个格子。
+Why not fixed categories? Because categories are rigid. Is "I said terrible things to my mother" about "family", "guilt" or "anger"? It's all three. A free rewrite can write "guilt, hurting family, anger, reconciliation" all at once, without forcing it into one box.
 
-### 向量和语义空间：空间不是人划分的，是模型学出来的
+### Vectors and semantic space: the space isn't divided up by people, the model learns it
 
-向量：embedding 模型（text-embedding-3-small）把任何一段文字变成 1536 个数字，刚才跑出来的长度就是 1536。
+Vectors: an embedding model (text-embedding-3-small) turns any piece of text into 1,536 numbers; the length that came out of the run just now was 1,536.
 
-语义空间：你可以把它想象成一张 1536 维的地图，每段文字都是地图上的一个点。这张地图没有人去规定"第 3 维代表家庭、第 7 维代表金钱"，每一维也没有人能叫出名字。模型是在海量文本上训练出来的，学到的唯一规则是：意思相近的文字，位置就靠近。
+Semantic space: picture it as a map with 1,536 dimensions, where every piece of text is a point. Nobody decided that "dimension 3 means family and dimension 7 means money", and nobody can name any of the dimensions. The model was trained on a huge amount of text, and the only rule it learned is: text with similar meaning sits close together.
 
-相似度：两个点有多近，用"余弦相似度"量，越接近 1 越像。
+Similarity: how close two points are is measured with cosine similarity; the closer to 1, the more alike.
 
 ---
 
-我这边先补充一下：其实项目里处于从 0 到 1 的阶段出的结果真的很乱。所以我再简单把流程梳理说明一下。
+A quick note first: while the project was going from 0 to 1, the results really were a mess. So let me lay out the flow again briefly.
 
-各种东西为了追求效果叠在一起，让整个事情变得非常 chaotic.
+All sorts of things got piled on top of each other in pursuit of better results, and the whole thing became very chaotic.
 
-先说一下，之前一直说的那个全文检索，其实就是 BM25;
+First: the full-text search I keep mentioning is just BM25.
 
-step 1 生成 487 个段落文件（pericopes.py）
+Step 1: generate 487 section files (pericopes.py)
 
-每个 BSB 段落存成一个文本文件，第一行是标题，后面每行一节经文。这是一个真实的文件：
+Each BSB section is saved as a text file: the first line is the title, then one verse per line. Here is a real file:
 
 Matthew 11:25-30 · Rest for the Weary
 
@@ -443,119 +444,119 @@ Matthew 11:29 Take My yoke upon you and learn from Me, ...
 
 Matthew 11:30 For My yoke is easy and My burden is light."
 
-统计一下这 487 个段落，一个段落一般就是一个小故事或一段讲话：
+Some statistics on the 487 sections. A section is usually one short story or one speech:
 
-| | 最短 | 中位数 | 平均 | 最长 |
+| | shortest | median | mean | longest |
 |---|---|---|---|---|
-| 节数 | 2 节 | **6 节** | 7.7 节 | 37 节 |
-| 英文词数 | 26 词 | **135 词** | | 808 词 |
+| verses | 2 | **6** | 7.7 | 37 |
+| English words | 26 | **135** | | 808 |
 
-135 个英文词，大概就是**中文一小段话的长度**，读出来不到一分钟。按长度分布：
+135 English words is roughly **one short paragraph**, under a minute to read aloud. By length:
 
-| 每段节数 | 段落数 |
+| verses per section | sections |
 |---|---|
-| 1–3 节 | 86 |
-| 4–6 节 | 166 |
-| 7–10 节 | 115 |
-| 11–20 节 | 108 |
-| 21 节以上 | 12 |
+| 1–3 | 86 |
+| 4–6 | 166 |
+| 7–10 | 115 |
+| 11–20 | 108 |
+| 21 or more | 12 |
 
-超过 20 节的只有 12 段，都是很长的对话或讲论。最长的三段是"生命的粮"（John 6，37 节）、"文士和法利赛人有祸了"（Matthew 23）、"撒玛利亚妇人"（John 4）。
+Only 12 sections have more than 20 verses, all long dialogues or discourses. The three longest are "The Bread of Life" (John 6, 37 verses), "Woes to Scribes and Pharisees" (Matthew 23) and "The Samaritan Woman" (John 4).
 
-"劳苦的人得安息"这个段落一共 6 节，就是刚才看到的那个文件：
+The "Rest for the Weary" section has 6 verses; it's the file we just saw:
 
 ```
-Matthew 11:25-30 · Rest for the Weary            ← 标题行（也算一个子块）
-Matthew 11:25 At that time Jesus declared, ...   ← 子块
-Matthew 11:26 Yes, Father, ...                   ← 子块
-Matthew 11:27 All things have been entrusted ... ← 子块
-Matthew 11:28 Come to Me, all you who are weary  ← 子块
-Matthew 11:29 Take My yoke upon you ...          ← 子块
-Matthew 11:30 For My yoke is easy ...            ← 子块
-└──────────────── 整个文件 = 一个父块 ────────────────┘
+Matthew 11:25-30 · Rest for the Weary            ← title line (also counts as a child chunk)
+Matthew 11:25 At that time Jesus declared, ...   ← child chunk
+Matthew 11:26 Yes, Father, ...                   ← child chunk
+Matthew 11:27 All things have been entrusted ... ← child chunk
+Matthew 11:28 Come to Me, all you who are weary  ← child chunk
+Matthew 11:29 Take My yoke upon you ...          ← child chunk
+Matthew 11:30 For My yoke is easy ...            ← child chunk
+└──────────── the whole file = one parent chunk ────────────┘
 ```
 
-- **子块**就是文件里的**一行**：一节经文，或者标题行。检索时用子块来匹配，因为一行意思集中，好对上。
-- **父块**就是**整个文件**，也就是整个段落。某一行被命中后，交出去的是整个段落，这样模型能看到上下文：比如 11:28 前面的 11:25 是耶稣在祷告，后面的 11:29 讲"负我的轭"。
+- A **child chunk** is **one line** of the file: one verse, or the title line. Retrieval matches on child chunks, because a single line has a focused meaning and is easier to match.
+- A **parent chunk** is **the whole file**, that is, the whole section. Once a line is hit, the whole section is handed over, so the model sees the context: for example, before 11:28, in 11:25, Jesus is praying, and after it, 11:29 talks about "take My yoke".
 
-项目里，"块"其实很直观：**子块 = 一节经文，父块 = 一个带小标题的段落。**
+In this project, "chunks" are actually very intuitive: **child chunk = one verse, parent chunk = one section with its heading.**
 
-## Jesus 整体流程
+## The overall Jesus flow
 
-先讲整体的大流程，细节后面再补充。
+First the big picture; details come later.
 
-整个流程从用户输入一句话（原文）开始：
+The whole flow starts with the user saying one sentence (the original words):
 
-1. 改写输入
-用一个小的生成式 model，配合刚才提到的 prompt，对用户的原始输入进行改写。
+1. Rewrite the input
+A small generative model, with the prompt mentioned above, rewrites the user's original input.
 
-2. 检索段落（RAG flow）
-这一步分为两个小阶段：
-(a) 初筛出 30 个 candidate。
-(b) 进行 rerank，最终返回 3 个结果及其 rerank score（with their rerank score）。要求 score 必须高于 0.3，不高于 0.3 的段落直接丢弃。
+2. Retrieve sections (RAGFlow)
+This step has two stages:
+(a) A first pass picks 30 candidates.
+(b) A rerank, which finally returns 3 results with their rerank scores. The score must be above 0.3; any section at or below 0.3 is discarded.
 
-3. 匹配耶稣原话
-根据段落 ID 到知识库中查询这 3 个段落对应的耶稣原话。比如找到了 15 句，但因为之前已经做过一轮筛选，需要检查这 15 句是否在预设的 278 句范围内：在的话保留，不在就直接剔除。经过这一步后，假设只剩下 5 句候选。
+3. Match Jesus' own words
+Using the section IDs, look up Jesus' own words in those 3 sections in the knowledge base. Say 15 sayings are found; since one round of filtering was already done earlier, each of the 15 is checked against the preset list of 278: if it's on the list it stays, otherwise it's dropped. Suppose 5 candidates are left after this step.
 
-4. 候选排序并取 Top 3
-在本地花几毫秒单纯比对向量相似度，对剩下的 5 句候选排个序，取前 3 句交给模型。
+4. Rank the candidates and take the top 3
+Spend a few milliseconds locally comparing vector similarity only, rank the remaining 5 candidates, and give the top 3 to the model.
 
-补充说明：为什么第 4 步还要拿改写后的原话去做向量相似度排序？
-虽然当前例子里只有 5 句，全塞进一条 memory 给模型也能处理，但常规情况下候选句可能多达 20 几句，直接全塞进 memory 会给模型造成负担。所以加了这一步相似度比对并排序，筛选出 Top 3。反正就是得把它的输出量给标准化嘛。
+A note: why does step 4 still rank by vector similarity against the rewritten query?
+In this example there are only 5, and putting them all into one memory would be fine for the model, but normally there could be twenty-some candidate sayings, and stuffing all of them into memory would weigh the model down. So this similarity ranking was added to pick the top 3. In short, the amount of output has to be standardized.
 
-因为之前去挑、去 match，谁知道它会出来一个什么结果呢？少了无所谓，但万一很多，你让模型怎么办呢？
+Because when you go picking and matching like that, who knows what will come out? Too few doesn't matter, but if there are a lot, what is the model supposed to do with them?
 
-它那个 real-time 的 context window 也得控制啊。你 context 炸了，时延就长了；时延一长，沉浸感就差很多了.
+The realtime context window has to be kept under control too. If the context blows up, latency goes up; once latency goes up, the immersion gets much worse.
 
-补充一下，第四步这边的重新排序其实迭代了好几版：
+To add: the reranking in step 4 actually went through several versions:
 
-第一版原本是用 cross-encoder 的 model 来调，后来又找了一个小模型来看它们是不是有关系。它本来是一个保全策略，但太慢了，得花一秒，体验很不好。
+The first version called a cross-encoder model, and later a small model was used to judge whether they were related. It was meant as a safety measure, but it was too slow: it took a second, which felt bad.
 
-现在用的是本地的向量排序，就是为了让它能快速开口，目前几毫秒就可以搞定。
+Now it uses local vector ranking, just so that he can start speaking quickly; it currently takes a few milliseconds.
 
-如果换成 Voyage 重排就是来算当前筛出来的这几句话单独是不是跟用户谈的这件事情有关系，claude code 估了一下大概要 150 多毫秒。这在效果上确实可以改进，但 trade-off 就是要多花大概 100 多毫秒
+Switching to Voyage reranking would score whether each of the currently selected sayings, on its own, relates to what the user is talking about. Claude Code estimated that at a bit over 150 ms. It would improve the results, but the trade-off is roughly another 100-plus ms.
 
-5. 组装 Memory 并由模型输出
-将排名前 3 的内容作为 memory 输入给模型。Prompt 中要求模型在进入第二阶段回复时，最多挑一句并逐字说出来，不用自己发挥。因为这里要求完全还原原文，所以会通过相似度比对来作为一个 evaluation 指标。
+5. Assemble the memory and have the model answer
+The top 3 go to the model as memory. The prompt tells the model that in the second phase of its reply it may pick at most one and say it word for word, without improvising. Because this requires reproducing the original text exactly, similarity matching is used as an evaluation metric.
 
-如果跑完这么一套流程，实在是连一句耶稣原话都没有，那也行，就什么都不给。
+If, after running through all of that, there really isn't a single saying of Jesus left, that's fine too: nothing is given.
 
-这个会在最后 real time 那边的 prompt 里写明，直接不引用了.
+That is spelled out in the realtime prompt at the end: then he simply doesn't quote.
 
 <img width="945" height="186" alt="image" src="https://github.com/user-attachments/assets/d39402f0-6075-4029-9129-0d8ffab8d951" />
 
-上面这张图是拿那 55 个 ground truths 跑出来的结果分析。
+The image above is the analysis of a run over the 55 ground truths.
 
-针对那 14 道题，这其实不是检索的问题，RAGFlow 那边找的段落是对的。但因为段落里对应的耶稣原话不在那 278 句里，所以出了问题。
+For those 14 questions, it isn't actually a retrieval problem: RAGFlow found the right sections. The problem is that the matching sayings of Jesus in those sections weren't among the 278.
 
-补充说明一下那 278 句的筛选规则：核心是看“能不能原样对一个寻求安慰的人说”。原文里很多耶稣原话确实没法直接说，比如“要爱你们的仇敌”、“要饶恕他 70 个 7 次”，像这类的就被过滤掉了。其实这个也是我的原因。我确实不太乐意把它搞成一个……就是我真的不太乐意让它听起来像是说教的。
+A word on how the 278 were picked: the core test is "can it be said as it is to someone looking for comfort". Many of Jesus' own words in the text really can't be said that way, like "love your enemies" or "forgive him seventy times seven", and those were filtered out. That was actually my doing, too. I really didn't want to turn it into a... I just really didn't want it to sound preachy.
 
-我确实对宗教不是很了解，但我对“人机恋”这个群体还是很了解的。反正我在人机恋的圈子里，就看到大家跟不同的模型会有一些情感上的连接。经常会有说换了模型、或者模型降智、又或者被暗改路由到不知道那里去了，反正各种各样的事情，导致用户被模型“创”到。
+I admit I don't know much about religion, but I do know the human–AI romance community quite well. In that community, I've seen people form emotional connections with different models. People often talk about the model being swapped, the model getting dumber, or being quietly rerouted to who knows where, all sorts of things, and users end up getting hurt by the model.
 
-这样不好，就是不好。所以我这边就尽可能让它走一个更加温和的路线了
+That's not good, it's just not good. So I steered it toward the gentlest path I could.
 
-以及，再怎么样也得考虑一下 scenario：我们这个 scenario 一开始就是冲着 voice companion 来的，它毕竟不是一个真的 Jesus。
+And whatever else, the scenario has to be considered: our scenario was aimed at a voice companion from the start. It isn't a real Jesus after all.
 
-不过这个无所谓，都很好改：把那 278 句扩充一下，再把筛选规则放宽一点就行。这些都能调整，不是什么大问题。
+But that doesn't matter, it's all easy to change: expand the 278, loosen the filter rules a bit. All of this can be adjusted; it's not a big problem.
 
-最终模型生成回复并呈现给用户，这就是完整的大致流程
+Finally the model generates a reply and presents it to the user. That's the complete flow, roughly.
 
-### 0.导入。生成段落文件+四道工序给RAGFlow
+### 0. Ingestion: generate the section files, then four stages in RAGFlow
 
-先看代码，按实际实现来讲，不凭印象：
+Look at the code first and describe what is actually implemented, not what I remember:
 
-再拿一个真实的段落文件，并把一次检索的分数逐项打印出来：
+Then take a real section file and print out the scores of one retrieval, item by item:
 
-先纠正一个误会：**你其实一直在用 BM25。** 阶段 1 那个我手写的 BM25 已经不用了，但 RAGFlow 的"全文检索"本身就是 BM25 类的关键词打分，由 Infinity 内置。它在混合检索里占 0.3 的权重。
+First, to correct a misunderstanding: **you've actually been using BM25 all along.** The BM25 I hand-wrote in phase 1 is no longer used, but RAGFlow's "full-text search" is itself BM25-style keyword scoring, built into Infinity. It carries a weight of 0.3 in the hybrid search.
 
-下面分成"导入时做了什么"和"每次查询时做了什么"两部分。
+Below, it's split into "what happens at ingestion" and "what happens on every query".
 
 ---
-导入时（离线，只做一次）
+At ingestion (offline, done once)
 
-**1. 生成 487 个段落文件**（`pericopes.py`）
+**1. Generate 487 section files** (`pericopes.py`)
 
-每个 BSB 段落存成一个文本文件，第一行是标题，后面每行一节经文。这是一个真实的文件：
+Each BSB section is saved as a text file: the first line is the title, then one verse per line. Here is a real file:
 
 ```
 Matthew 11:25-30 · Rest for the Weary
@@ -567,319 +568,319 @@ Matthew 11:29 Take My yoke upon you and learn from Me, ...
 Matthew 11:30 For My yoke is easy and My burden is light."
 ```
 
-**2. 上传给 RAGFlow，它按 4 道工序处理**（参数在 `ingest_ragflow.py` 里）
+**2. Upload to RAGFlow, which processes them in 4 stages** (parameters in `ingest_ragflow.py`)
 
-| 工序 | 做什么 | 你的设置 |
+| stage | what it does | your settings |
 |---|---|---|
-| Parser | 读文件 | 普通文本 |
-| GeneralChunker | 切块 | **整个文件是一个父块**；**按换行切出子块**，每节经文一个子块 |
-| Extractor | 调 LLM 给每个块加内容 | 每块生成 **5 个关键词**和 **3 个"可能会被问到的问题"** |
-| Tokenizer + Embedding | 建两种索引 | **全文索引**（把词拆开、记下每个词出现在哪里、有多常见）；**向量索引**（`text-embedding-3-small` 生成 1536 维向量） |
+| Parser | reads the file | plain text |
+| GeneralChunker | splits into chunks | **the whole file is one parent chunk**; **child chunks are split on newlines**, one per verse |
+| Extractor | calls an LLM to add content to each chunk | **5 keywords** and **3 "questions it might be asked"** per chunk |
+| Tokenizer + Embedding | builds two indexes | a **full-text index** (splits the words, records where each word occurs and how common it is); a **vector index** (1,536-dimensional vectors from `text-embedding-3-small`) |
 
-以 Matthew 11:28 这个子块为例，它在 Infinity 里大概存着这些：
+Taking the Matthew 11:28 child chunk as an example, Infinity stores roughly:
 
-- 经文原文："Come to Me, all you who are weary and burdened…"
-- LLM 生成的关键词，类似：weary, burdened, rest, invitation, comfort
-- LLM 生成的问题，类似："Where can I find rest when I'm exhausted?"
-- 一个 1536 维的向量
-- 它属于哪个父块（"Rest for the Weary"这个文件）
+- the verse text: "Come to Me, all you who are weary and burdened…"
+- keywords generated by the LLM, something like: weary, burdened, rest, invitation, comfort
+- questions generated by the LLM, something like: "Where can I find rest when I'm exhausted?"
+- a 1,536-dimensional vector
+- which parent chunk it belongs to (the "Rest for the Weary" file)
 
-（具体是哪 5 个关键词、哪 3 个问题，是当时 LLM 生成的，上面只是示意。）
+(Exactly which 5 keywords and 3 questions were generated by the LLM at the time; the above is only an illustration.)
 
-**全文检索为什么这次有用？** 阶段 1 的 BM25 只能匹配经文原文的字，而"burned out"这种词经文里根本没有。现在每个块多了 LLM 写的关键词和问题，里面有很多现代说法，关键词匹配就有东西可对了。
+**Why is full-text search useful this time?** Phase 1's BM25 could only match the words of the verse text, and words like "burned out" simply aren't in scripture. Now every chunk also carries LLM-written keywords and questions, full of modern phrasing, so keyword matching has something to match against.
 
 ---
 
-## 二、每次查询时（以"我累垮了"为例）
+## 2. On every query (using "I'm burned out" as the example)
 
 ```
-改写后的查询："Jesus rest for the weary, burden, heavy heart, tired and burned out, ..."
+Rewritten query: "Jesus rest for the weary, burden, heavy heart, tired and burned out, ..."
         │
         ▼
-① 在 Infinity 里同时做两路检索，对象是所有子块
-   ├─ 全文（BM25）：查询里的词和块里的词（原文+关键词+问题）重合了多少，越少见的词越值钱
-   └─ 向量：查询向量和块向量在语义空间里有多近
+① Two searches at once in Infinity, over all child chunks
+   ├─ full text (BM25): how much the query's words overlap the chunk's words (text + keywords + questions); rarer words count for more
+   └─ vector: how close the query vector and the chunk vector are in semantic space
         │
         ▼
-② 合并：总分 = 0.3 × 全文分 + 0.7 × 向量分，取前 30 个候选
+② Combine: total = 0.3 × full-text score + 0.7 × vector score, take the top 30 candidates
         │
         ▼
-③ Voyage 重排：把查询和这 30 个候选逐个"一起读"，重新打分、重新排序
+③ Voyage rerank: read the query "together with" each of the 30 candidates, score them again, rank them again
         │
         ▼
-④ 每个段落只留一个（多节经文都命中同一段时，不重复算），取前 3
+④ Keep one per section (when several verses hit the same section, it isn't counted twice), take the top 3
         │
         ▼
-⑤ 拒答判断：第一名的分数 < 0.30 → 一个都不返回
+⑤ Abstention: if the top score is < 0.30 → return nothing
         │
         ▼
-⑥ 子块命中 → 返回它所属的整个段落（父块）
+⑥ A child chunk is hit → return the whole section it belongs to (the parent chunk)
 ```
 
-刚才实际跑出来的前 5 名，对比加不加重排：
+The top 5 from the run just now, with and without the rerank:
 
-| 排名 | 只用混合检索 | 分数 | 加上重排 | 分数 |
+| rank | hybrid search only | score | with rerank | score |
 |---|---|---|---|---|
-| 1 | 劳苦的人得安息 Matthew 11:25 | 0.767 | 劳苦的人得安息 Matthew 11:25 | 0.519 |
-| 2 | 差遣七十二人 Luke 10:1 | 0.756 | 我留下平安给你们 John 14:27 | 0.484 |
-| 3 | 我留下平安给你们 John 14:27 | 0.755 | 喂饱五千人 Mark 6:30（"来歇一歇"） | 0.445 |
-| 4 | 客西马尼园祷告 Matthew 26:36 | 0.751 | 奉我的名求 John 16:23 | 0.413 |
-| 5 | 差遣十二门徒 Matthew 10:5 | 0.749 | 撒玛利亚妇人 John 4:1 | 0.402 |
+| 1 | Rest for the Weary, Matthew 11:25 | 0.767 | Rest for the Weary, Matthew 11:25 | 0.519 |
+| 2 | Jesus Sends the Seventy-Two, Luke 10:1 | 0.756 | Peace I Leave with You, John 14:27 | 0.484 |
+| 3 | Peace I Leave with You, John 14:27 | 0.755 | The Feeding of the Five Thousand, Mark 6:30 ("rest a while") | 0.445 |
+| 4 | Jesus Prays at Gethsemane, Matthew 26:36 | 0.751 | Ask in My Name, John 16:23 | 0.413 |
+| 5 | The Ministry of the Twelve, Matthew 10:5 | 0.749 | Jesus and the Samaritan Woman, John 4:1 | 0.402 |
 
-从这张表能直接看出两件事：
+Two things can be read straight off this table:
 
-1. **重排改变了排名**：只用混合检索时，第 2 名是"差遣七十二人"，和"累垮了"没什么关系，大概是因为里面有"平安"这类词。重排把它挤了出去，换上了"来歇一歇"这种真正贴题的段落。
-2. **重排把分数拉开了**：混合检索的 5 个分数挤在 0.749–0.767 之间，几乎分不出好坏；重排后从 0.519 一路排到 0.402，差距明显。这就是为什么"低于 0.30 就拒答"的门槛只能设在重排分数上。
+1. **The rerank changes the ranking.** With hybrid search alone, number 2 is "Jesus Sends the Seventy-Two", which has little to do with "burned out"; probably it got in because of words like "peace". The rerank pushed it out and brought in a section that really fits, "rest a while".
+2. **The rerank spreads the scores apart.** The 5 hybrid scores are squeezed between 0.749 and 0.767, almost impossible to tell apart; after the rerank they run from 0.519 down to 0.402, clearly separated. That's why the "below 0.30, abstain" threshold can only be set on the rerank score.
 
-另外说明一下：RAGFlow 1.0 返回的结果里虽然有"全文分""向量分"两个字段，但实际值和总分一模一样，**拿不到两路各自的分数**。所以上面没法列出 0.3 和 0.7 各贡献了多少，这是这个版本 API 的限制。
+Also note: the results RAGFlow 1.0 returns have a "full-text score" field and a "vector score" field, but their values are identical to the total, so **you can't get the two scores separately**. That's why the table above can't show how much the 0.3 and the 0.7 each contributed; it's a limitation of this version's API.
 
-### rerank 用的是个transformer 模型
+### The rerank is a transformer model
 
-"凭什么"打得准？因为它就是专门为这件事训练出来的。 训练数据是海量的"问题 + 段落 + 是否相关"三元组，来源包括搜索引擎里人们点了哪个结果、人工标注、更大的模型给出的判断等等。训练目标很简单：相关的配对打高分，不相关的打低分。看了几百万个例子之后，它就成了一个专门判断"相关不相关"的阅卷老师。
+Why does it score so accurately? Because it was trained for exactly this. The training data is a huge number of "question + passage + relevant or not" triples, from sources such as which result people clicked in a search engine, human labels, and judgments from larger models. The training goal is simple: relevant pairs score high, irrelevant ones low. After millions of examples, it becomes an examiner that does nothing but judge "relevant or not".
 
-（Voyage 是闭源模型，具体用了哪些训练数据没有公开；上面说的是这类重排模型的通用原理，业内叫 cross-encoder，向量检索那种叫 bi-encoder。）
+(Voyage is a closed model, and which training data it used isn't public; the above is the general principle behind this kind of reranker, which the industry calls a cross-encoder, while the kind used for vector search is called a bi-encoder.)
 
-那为什么不全部用重排？ 因为太慢。它必须在提问的那一刻把问题和每个候选逐对读一遍，没法提前算好。四福音书有几千节，全读一遍来不及。
+So why not rerank everything? Because it's too slow. It has to read the question together with each candidate, pair by pair, at the moment the question is asked, and none of it can be computed in advance. The four Gospels have several thousand verses; there's no time to read them all.
 
-注意一下，这个项目在第二步 RAG flow 找段落那个部分，是先用混合检索粗筛，然后再重排（Rerank）的。
+Note that in this project, in step 2 where RAGFlow finds sections, hybrid search does a coarse first pass and the rerank comes after it.
 
-在第四步挑耶稣的话的时候，他只是用了一个本地的向量相似度,因为这样快，而且它真的不需要那么大的算力，只需要几毫秒。
+In step 4, picking Jesus' words, it only uses local vector similarity, because that's fast and it really doesn't need much compute: just a few milliseconds.
 
-如果用 Voyage 重排的话，不仅计算量更大，还要再走一次网络，耗时仍然会比这个多一点，其实完全没必要
+Using Voyage reranking there would not only cost more compute but also another network round trip, so it would still take longer; it's really not necessary.
 
 ---
-这个注意一下：那 30 个 candidate 是“块”，不是 30 个不同的段落。
+Note this: those 30 candidates are "chunks", not 30 different sections.
 
-其实确实得用“块”，不能说“节”，因为里面的 subtitle 也作为一个独立的东西算作子块了，所以用“节”不好描述，统一都用“块”吧。我们就说拿到这 30 个子块。
+It really has to be "chunks", not "verses", because the subtitle also counts as its own child chunk, so "verse" doesn't describe it well. Let's just say "chunks" throughout: we get these 30 child chunks.
 
-对，是 30 个，但要说清楚两个细节。代码里相关的参数是（`ragflow_retrieval.py`）：
+Yes, it's 30, but two details need to be made clear. The relevant parameters in the code (`ragflow_retrieval.py`) are:
 
 ```python
-"keywords_similarity_weight": 0.3,   # 全文（BM25）占 0.3，向量占 0.7
-"rerank_candidates_count": 30,       # 混合检索的前 30 名交给重排
-"page_size": max(k * 3, 10),         # k=3，所以重排后返回前 10 个
+"keywords_similarity_weight": 0.3,   # full text (BM25) 0.3, vectors 0.7
+"rerank_candidates_count": 30,       # the top 30 of the hybrid search go to the rerank
+"page_size": max(k * 3, 10),         # k=3, so the top 10 after the rerank are returned
 ```
 
-完整的数量变化是这样的：
+The full change in numbers looks like this:
 
 ```
-所有块
-  │ 混合检索：0.3 × BM25 + 0.7 × 向量
+All chunks
+  │ hybrid search: 0.3 × BM25 + 0.7 × vector
   ▼
-前 30 个候选子块 ──→ Voyage 逐个重排
+Top 30 candidate child chunks ──→ Voyage reranks each one
   │
   ▼
-重排后的前 10 个子块（RAGFlow 返回给你的程序）
-  │ 你的代码：同一个段落只留一个(这边代码设定是它 rerank 之后再次算关键词分+Voyage分权重总得分，要前 10 个。因为如果设定少了，对应段落去重回来的全都是同一个段落，这样就不太好了)
+Top 10 child chunks after the rerank (what RAGFlow returns to your program)
+  │ your code: keep one per section (here the code, after the rerank, computes a weighted total of keyword score + Voyage score again and takes the top 10. If it took fewer, deduplicating by section could bring back only one and the same section, which isn't good)
   ▼
-从合并到的所有段落里，按平均分排序，只要前 3 个段落（再判断第一名是否 ≥ 0.30， 如果第一个都低于0.3，就全部不要； 当时的思路是：0.30 是用来判断"这个问题本身该不该回答"的，不是用来筛选单个段落的。
+Of all the merged sections, sorted by average score, only the top 3 sections are kept (then check whether the top one is ≥ 0.30; if even the top one is below 0.3, drop them all. The thinking at the time: 0.30 decides "whether this question should be answered at all", not which individual sections to keep.
 
-它的标定方法就能说明这一点：拿 55 道真实问题和 10 道离题问题（比如"芝加哥天气怎么样"），只比较每个问题的第一名分数：
+How it was calibrated shows this: take 55 real questions and 10 off-topic questions (such as "what's the weather in Chicago") and compare only the top score of each question:
 
-真实问题的第一名，最低是 0.314；
-离题问题的第一名，最高是 0.287。
-0.30 刚好卡在两者中间。所以它回答的是"这个问题和四福音书有没有关系"：第一名都不到 0.30，说明整本福音书里都找不到相关的内容，干脆不回忆。第一名过了线，说明问题是相关的，就把前 3 个都交给下一步。）
+The top score of a real question was at least 0.314;
+the top score of an off-topic question was at most 0.287.
+0.30 sits right between the two. So what it answers is "does this question have anything to do with the four Gospels": if even the top one is under 0.30, nothing relevant can be found anywhere in the Gospels, so he simply doesn't recall anything. If the top one passes the line, the question is relevant, and all top 3 are handed to the next step.)
 ```
 
-上面那个平均分在源码有写：合并完之后，RAGFlow 会按段落的平均分从高到低重新排序（源码注释就写着 Sort by similarity descending）。
+The average score above is in the source: after merging, RAGFlow re-sorts the sections by average score from high to low (the source comment literally says "Sort by similarity descending").
 
-平均分是这么来的：
+The average score comes from this:
 
-前 10 个子块，每个都有一个最终分（0.3 × 关键词分 + 0.7 × Voyage 分）。属于同一个段落的那几个子块，把它们的最终分加起来再除以个数，就是这个段落的分数。
+Each of the top 10 child chunks has a final score (0.3 × keyword score + 0.7 × Voyage score). For the child chunks that belong to the same section, add up their final scores and divide by how many there are; that's the section's score.
 
-拿到前面的前三个段落之后，再去找它们对应的 278 个耶稣亲口说的话。接着把他说过的这些话，用本地几毫秒的向量相似度重新排序，再取前三个送给模型。
+With the top three sections in hand, look up the sayings among the 278 spoken by Jesus himself that belong to them. Then rerank those sayings with local vector similarity, a few milliseconds, and send the top three to the model.
 
 ---
-权重其实用了两次，两次都是针对子块：
+The weights are actually used twice, both times on child chunks:
 
-第一轮，选 30 个候选时：每个子块的分数 = 0.3 × 关键词分（BM25） + 0.7 × 向量分，按这个分数取前 30 个子块。
+Round 1, picking the 30 candidates: each child chunk's score = 0.3 × keyword score (BM25) + 0.7 × vector score; the top 30 child chunks by this score are taken.
 
-第二轮，重排之后：每个子块的分数 = 0.3 × RAGFlow 自己写的关键词重合度（TokenSimilarity） + 0.7 × Voyage 分，按这个分数取前 10 个子块。
+Round 2, after the rerank: each child chunk's score = 0.3 × RAGFlow's own keyword overlap (TokenSimilarity) + 0.7 × Voyage score; the top 10 child chunks by this score are taken.
 
 <img width="847" height="212" alt="image" src="https://github.com/user-attachments/assets/4d238a6a-f01d-4091-a2e3-7989f62976d8" />
 
-BM25 是两部分相乘，"这个词在这一块里出现得多不多" × “这个词在整个库里有多稀有”。第二部分就是你说的"比例"，叫 IDF。
+BM25 multiplies two parts: "how often this word appears in this chunk" × "how rare this word is in the whole collection". The second part is the "ratio" you mentioned; it's called IDF.
 
-但要纠正一个细节：这个比例不是按 400 多个段落算的，是按大约 3,800 个子块（一节一节的经文）算的。 因为 Infinity 里真正被索引、被搜索的单位是子块，段落（父块）只是最后用来拼回去的。
+But one detail needs correcting: this ratio isn't computed over the 400-odd sections, it's computed over about 3,800 child chunks (verse by verse). That's because the unit Infinity actually indexes and searches is the child chunk; the section (parent chunk) is only used at the end to put things back together.
 
-举个例子：
+For example:
 
-“weary”（劳苦）只在少数几节经文里出现，非常稀有。一旦匹配上，就是很强的信号，分数高。
-“the”几乎每节都有，太常见了，匹配上也几乎不加分。
+"weary" appears in only a few verses; it's very rare. Once it matches, that's a strong signal, and the score is high.
+"the" is in almost every verse; it's far too common, and matching it adds almost nothing.
 
-（实际公式还多做了两件事：一个词重复很多次，分数不会无限涨，会封顶；一块越长，单个词的分量越轻。这样长经文不会因为字多而占便宜。）
+(The actual formula does two more things: a word repeated many times doesn't keep raising the score without limit, it saturates; and the longer a chunk, the less any single word weighs. That way long verses don't win just by having more words.)
 
-BM25（第一轮，选 30 个候选时用）它问的是："这一块里有你的词吗？有的话，这些词有多珍贵？"
+BM25 (round 1, used to pick the 30 candidates) asks: "Are your words in this chunk? If so, how precious are they?"
 
-对查询里的每个词，算一个分，再全部加起来：这个词的分 = 稀有程度 × 在这一块里出现的次数
+For each word in the query, compute a score, then add them all up: the word's score = rarity × number of times it appears in this chunk
 
-稀有程度：在全部约 3,800 节经文里，有多少节含有这个词。越少越珍贵。
+Rarity: of all ~3,800 verses, how many contain this word. The fewer, the more precious.
 
-“weary”只有几节有 → 很珍贵，分高
+"weary" is in only a few verses → very precious, high score
 
-“heart”有很多节都有 → 普通，分低
+"heart" is in many verses → ordinary, low score
 
-出现次数：在这一节里出现了几次。但有封顶，出现 10 次不会是 1 次的 10 倍。而且一节越长，每个词的分量越轻。哦，它这个是按“节”算的，因为这个“节”在这里面就是子块的意思。这是因为在第一步初筛、到 rerank 之前，它筛出来的这些东西，最终要拿出来的结果是子块，而不是一个一个段落。所以它这里面才会说是按照那 3000 多个子块来算的
+Count: how many times it appears in this verse. But it saturates: 10 occurrences are not worth 10 times one. And the longer the verse, the less each word weighs. Oh, it counts by "verse" because a "verse" here means a child chunk. That's because in the first pass, before the rerank, what gets picked out has to come back as child chunks, not as whole sections. That's why it says it's computed over those 3,000-odd child chunks.
 
-这一节里含有 weary、burden、rest 三个词，都比较稀有，所以总分高。
+This verse contains weary, burden and rest, all fairly rare, so its total is high.
 
-特点：看全局的稀有程度，分数没有上限，是 Infinity 数据库自带的功能。
+Characteristics: it looks at rarity across the whole collection, the score has no upper bound, and it's a built-in feature of the Infinity database.
 
 ---
 
-第二个：关键词重合度（第二轮，重排之后用）
+The second one: keyword overlap (round 2, used after the rerank)
 
-它问的是："你的问题里，有百分之多少的词，在这一块里出现了？"
+It asks: "What percentage of the words in your question appear in this chunk?"
 
-做法：
+How:
 
-给查询里每个词一个重要性权重（RAGFlow 自己算的，大致也是越特别的词越重要）；
-看这一块（经文原文 + 标题 + LLM 生成的关键词和问题）里有没有这个词，只看有没有，不数次数；
-出现了的词的权重之和 ÷ 所有查询词的权重之和。
+Give each word in the query an importance weight (RAGFlow computes it itself; roughly, the more distinctive the word, the more important);
+check whether the chunk (verse text + title + LLM-generated keywords and questions) contains the word, only whether it does, without counting;
+sum of the weights of the words that appear ÷ sum of the weights of all query words.
 
-假设权重是 weary 3、burden 3、rest 2、heart 2、peace 1，总共 11：
+Say the weights are weary 3, burden 3, rest 2, heart 2, peace 1, 11 in total:
 
-这一节出现了 weary、burden、rest → (3 + 3 + 2) ÷ 11 = 0.73
+This verse contains weary, burden and rest → (3 + 3 + 2) ÷ 11 = 0.73
 
-（还有一个小细节：两个相邻的词组成的词组，比如"heavy heart"，如果整个词组都匹配上，会额外加分。所以短语完整匹配比只零散匹配上几个字更值钱。）
+(One more small detail: a phrase of two neighbouring words, like "heavy heart", gets extra credit if the whole phrase matches. So a complete phrase match is worth more than a few scattered word matches.)
 
-特点：结果在 0 到 1 之间，表示"问题被覆盖了多少"；不数次数，只在那 30 个候选里算。
+Characteristics: the result is between 0 and 1 and says "how much of the question is covered"; it doesn't count occurrences, and it's computed only over those 30 candidates.
 
 
-为什么第二轮要换成重合度？因为它要和 Voyage 的分数相加，而 Voyage 的分数在 0 到 1 之间。BM25 没有上限，直接加会乱套；重合度天然就在 0 到 1 之间，可以直接按比例混合。
+Why switch to overlap in round 2? Because it has to be added to the Voyage score, which is between 0 and 1. BM25 has no upper bound, so adding it directly would throw things off; overlap is naturally between 0 and 1, so the two can be mixed in proportion directly.
 
 <img width="845" height="305" alt="image" src="https://github.com/user-attachments/assets/ba02eeb4-8272-4e35-a660-df6fddaee6e6" />
 
 
 ---
 
-**细节 1：这 30 个是"块"，不是 30 个不同的段落。**
+**Detail 1: these 30 are "chunks", not 30 different sections.**
 
-同一个段落里可能有好几节经文同时被命中。比如 Matthew 11:28、11:29、11:30 都和"累垮了"很像，它们会各占一个名额。所以 30 个候选块可能只来自十几个段落。这就是为什么 RAGFlow 返回 10 个之后，代码还要按段落去一次重，才剩下 3 个。
+Several verses of the same section may be hit at once. For example, Matthew 11:28, 11:29 and 11:30 all resemble "burned out", and each takes one of the places. So the 30 candidate chunks may come from only a dozen or so sections. That's why, after RAGFlow returns 10, the code still deduplicates by section, leaving 3.
 
-**细节 2：重排读的是是单节经文，即为子块。**
+**Detail 2: the rerank reads single verses, that is, child chunks.**
 
-另外，这三个数字（0.3、30、10）都是可以调的参数。0.3 是在消融实验里比较 0.3 和 0.7 之后定下来的；30 和 10 当时没有专门做实验，用的是经验值。
-
----
-
-等一下，谈到这儿事情还没完，我好生气啊！
-
-我之前光看他跟我谈话输出的效果，觉得还挺可以的，挺符合那种 Jesus 该有的形象。对不起啊，我确实不是一个非常懂这边文化的人，我是按照类似于天父那样仁慈、慈悲、非常亲和的印象来判断的。
-
-可是今天把上面这么一大串逻辑走了一遍，看他怎么挑段落、怎么送给模型，我才发现事情非常不对。我第二版的 prompt 搞错了，完全走歪了。当时我光看结果，那天实在太晚，我又急着弄别的事就没好好搞，对不起。
-
-现在得写第三版 prompt 了。第二版纯粹是从 278 个句子里挑，那这整件事有什么意义呢？我直接把那 278 句话送给 real-time model 不好吗？哪怕是拿那两千多句耶稣亲口说的话，两千多句也不是很大的 token 啊。直接送给模型让它去判断，不比现在这么绕一大圈脱裤子放屁更好吗？哎呦，我就是气得没办法了，真是气得脑袋疼
-
-而且这也违背了我的初衷。我之所以坚持要从四福音书里挑子块，是因为我希望这个人物说话时是带有背景的，而不是单独抛出一句话。单单一句话放在不同的情境、不同的身份下，表达的意思完全不一样。我之所以要从段落里取，就是希望他带着上下文背景，去贴合用户真正在聊的事情。
-
-所以现在得重新改了。唉，这就是技术债吧。要不是今天从头到尾跑了一遍，我还真没发现它跟我的本意差了这么多
-
-更生气了。
-
-因为要他改嘛，然后他跟我说在之前版本里面，那个 prompt 他居然手写了这次的一些经历，手写了十段！
-
-我说怎么那时候验收的时候，明明当时我真的觉得效果还挺好，觉得他说得特别像，“当他在什么时候，遇到了一个什么事情”。刚才我还以为是我的幻觉或者我记错了，结果这玩意儿居然是手写的吗？哎呀，我真的要生气了！
+Also, all three numbers (0.3, 30, 10) are adjustable parameters. 0.3 was settled after comparing 0.3 and 0.7 in the ablation; 30 and 10 weren't tested specifically at the time and are rules of thumb.
 
 ---
 
-然后又遇到问题了，就是 real-time 2.1 mini 没办法做这件事情。
+Wait, it doesn't end there. I'm so angry!
 
-它这边主要问题出在：因为要塑造一个人物，但原文里有大量第三人称，而且这个人物并不是亲身经历当时的情形，是听来的，纯属第三人称转述，反正就是他自己不知道的事。在 prompt 里其实好处理，直接写成"我听说……"就行，但原文直接送到模型里，模型那边就会乱掉。
+Before, I only looked at how the output read when he talked with me, and thought it was pretty good, quite fitting for how Jesus should come across. I'm sorry, I'm really not someone who understands this culture well; I was judging by an impression of something like a heavenly father: kind, merciful, very approachable.
 
-我最开始觉得是不是因为拿来举例、说明问题的段落太长了。但看了一下统计结果，发现根本行不通：长的不行，短的也不行，只有中间长度的错误率是最低的。长段落我还能切分，短段落怎么合并？就算强行合在一起，本质上还是同一个问题：通篇都是第三人称和各种转述，根本没法处理。
+But today, after walking through all of the logic above, seeing how he picks sections and sends them to the model, I realized something was very wrong. My second version of the prompt was wrong; it went completely off course. Back then I only looked at the results; it was really late that day and I was rushing to do something else, so I didn't do it properly. I'm sorry.
 
-我觉得像这种 scenario，真的不太适合用改造后的版本，这种场景下确实不能对材料乱做处理。
+Now I have to write a third version of the prompt. The second version only picks from 278 sentences, so what's the point of the whole thing? Why not just send those 278 to the realtime model directly? Even the two-thousand-odd sayings in Jesus' own words aren't that many tokens. Send them straight to the model and let it judge; wouldn't that be better than going all the way around like this, a completely pointless detour? Ugh, I'm so angry I don't know what to do, so angry my head hurts.
 
-而且对比实在太夸张了：整个测试跑一轮下来，2.1 mini 能出 14 到 19 个错误；而 2.1 那边只会出 4 到 5 个错误。这个对比太强烈了，所以没办法，之后还是只能选用价格贵三倍的 2.1
+And it goes against my original intent. The reason I insisted on picking child chunks from the four Gospels is that I wanted this character to speak with context behind him, not just toss out a single sentence. The same sentence means completely different things in different situations and coming from different people. The whole reason I take it from sections is that I want him to bring that context with him and fit what the user is really talking about.
 
----
+So now it has to be redone. Sigh, this is technical debt. If I hadn't run through it from start to finish today, I really wouldn't have noticed how far it had drifted from what I meant.
 
-又做了一些比较小的改进，主要是 Claude Code 做的。
+Now I'm even angrier.
 
-然后我问了一下为什么这么搞：
+Because I asked him to change it, and he told me that in the earlier version, in the prompt, he had actually hand-written some of these life experiences. Hand-written ten of them!
 
-1. 他把犹太自杀那段永远都不改，直接标进去了。因为这玩意儿太容易跟一些负面的东西对上，绝对不行。
-2. 他选经历的时候是选了两段进去。我问了一下为什么是 2，他说有的经历（比如在拉撒路的）其实是分成三段的；而且原文中确实有相当一部分故事线不是在一段中就讲明白的，所以他设定成了 2。不过其实分成三段的真的不多。
-
-我觉得这个在工程上可以做拼接，但得对原文有相当深入的了解才行。以我现在的水平实在是不太行，让我手动去分我也分不出来。
-
-不过其实也是可以的：只是调个顺序，给他 merge 一下。这个先放这儿，放在 roadmap 上。现在去读原文再给他拼接，不是我的工作，不是我现阶段要做的事情
-
+So that's why, back at acceptance testing, I really did think it worked well and that he sounded just right: "when he was at such-and-such a time, something happened to him". Just now I still thought I'd imagined it or remembered wrong, and it turns out this thing was hand-written? Oh, I'm really getting angry!
 
 ---
 
-因为大改了，其实之前谈的都是 V2 版本那个脱裤子放屁的、278 句的那个。所以这边就先说一下，现在当前这个版本的 RAG 是怎么搞的吧。
+Then I hit another problem: realtime 2.1 mini can't do this.
 
-比之前那个合理多了，真的合理多了！
+The main problem is this: we're building a character, but the original text has a lot of third person, and in places this character didn't live through the events himself; he heard about them, pure third-person retelling, things he didn't know himself. In the prompt it's easy to handle, you just write "I heard...", but when the original text goes straight to the model, the model gets confused.
 
-**README 顶部那张图已经是新的了**，是在上一次提交（v3）时改的，现在是"读这一轮 → 分三类 → RAGFlow → 最多 2 段经历"的流程。
+At first I thought maybe the sections given as examples to explain things were too long. But looking at the statistics, that doesn't hold at all: long ones fail, short ones fail too, and only the medium-length ones have the lowest error rate. Long sections I could still split, but how would I merge short ones? Even if I forced them together, it's the same problem underneath: the whole thing is third person and all kinds of retelling, and there's simply no way to handle it.
 
-需要注意的是** Development log 里"Jesus 整体流程"那一节**：那里写的第 3–5 步（"匹配耶稣原话""278 句""取 Top 3 交给模型""逐字说出来"）描述的是 **v2**，现在已经不是这样了。那是你自己的笔记，我没有动。如果你想，可以在那一节开头加一句"以下是 v2 的流程"，要我来加也行。
+I think for a scenario like this, a modified version really isn't suitable; in this kind of setting you really can't process the material carelessly.
 
-## 现在的 RAG 是怎么做的（v3）
+And the contrast is just too extreme: in one full test run, 2.1 mini makes 14 to 19 errors, while 2.1 makes only 4 to 5. The contrast is so stark that there's no choice: from now on it can only be 2.1, at three times the price.
 
-**导入阶段，和以前完全一样：**
-487 个段落文件 → RAGFlow 切成父块（一个段落）和子块（一节经文）→ LLM 给每块生成关键词和问题 → 在 Infinity 里建向量索引和 BM25 索引。
+---
 
-**新增一步离线准备：**
-`build_episodes.py` 给每个段落标注"耶稣在不在场"。规则是：段落里有他说的话就算在场；没有的，让模型投票三次取多数；剩下的我人工核对。
+Then a few smaller improvements, mostly done by Claude Code.
 
-**每一轮对话：**
+I asked why it did them this way:
+
+1. It made Judas' suicide permanently excluded, marked directly in the data. That one matches negative things far too easily; absolutely not.
+2. When choosing experiences it puts in two sections. I asked why 2, and it said some experiences (the one with Lazarus, for example) are actually split across three sections, and a good share of the storylines in the text aren't told within a single section, so it set it to 2. Though not many are actually split into three.
+
+I think this could be stitched together in engineering, but it takes quite a deep knowledge of the text. At my current level I really can't; if I had to split them by hand, I couldn't.
+
+Though it is doable: just reorder them and merge them for him. I'll leave this here and put it on the roadmap. Reading the text now and stitching it together isn't my job, not what I'm doing at this stage.
+
+
+---
+
+Since it was a big overhaul, and everything discussed so far is the V2 version, the pointless-detour one with the 278 sentences, let me first describe how the RAG works in the current version.
+
+It's much more reasonable than before, really much more reasonable!
+
+**The diagram at the top of the README is already the new one.** It was changed in the previous commit (v3), and is now the flow "read the turn → three kinds → RAGFlow → up to 2 episodes".
+
+Note that in **the "The overall Jesus flow" section of the Development log**, steps 3–5 ("match Jesus' own words", "278 sentences", "take the top 3 for the model", "say it word for word") describe **v2**; that's no longer how it works. Those are your own notes and I haven't touched them. If you like, you can add a line at the top of that section saying "what follows is the v2 flow", or I can add it.
+
+## How the RAG works now (v3)
+
+**Ingestion, exactly the same as before:**
+487 section files → RAGFlow splits them into parent chunks (a section) and child chunks (a verse) → an LLM generates keywords and questions for each chunk → vector and BM25 indexes are built in Infinity.
+
+**A new offline preparation step:**
+`build_episodes.py` labels each section with "was Jesus there". The rule: if he speaks in the section, he was there; for the rest, a model votes three times and the majority wins; what's left I checked by hand.
+
+**Every turn:**
 
 ```
-① 读这一轮（一次小模型调用，约 1 秒）
-   同时输出两样东西：
-   · 类别：信息 / 需要专业判断 / 聊天
-   · 检索词（只有"聊天"才有）：对方在经历什么 + 耶稣一生中类似的时刻，可以点名（"拉撒路之死"）
+① Read the turn (one small-model call, about 1 s)
+   It outputs two things at once:
+   · kind: information / needs a professional / conversation
+   · search query (only for "conversation"): what the person is going through + similar moments in Jesus' life, which it may name ("Lazarus' death")
         │
-        ├─ 信息 → 联网查（research_web），直接告诉对方
-        ├─ 专业 → 不查，不回忆，告诉对方该问谁
-        └─ 聊天 ↓
-② RAGFlow 检索（内部和以前一样）
-   混合检索选 30 个子块 → Voyage 重排 → 0.3 关键词 + 0.7 Voyage → 前 10 个子块
-   → 合并成段落（取平均分）→ 排序
-   第一名低于 0.30 → 这一轮什么都不回忆
+        ├─ information → look it up online (research_web), tell them directly
+        ├─ professional → no lookup, no memory, tell them who to ask
+        └─ conversation ↓
+② RAGFlow retrieval (internally the same as before)
+   hybrid search picks 30 child chunks → Voyage rerank → 0.3 keywords + 0.7 Voyage → top 10 child chunks
+   → merged into sections (average score) → sorted
+   top one below 0.30 → nothing is recalled this turn
         │
-③ 挑出最多 2 段经历
-   · 平行记载只留一个版本（同一件事不想起两遍）
-   · 这次对话里已经讲过的不再给
-   · 犹大自杀那一段永远不给
+③ Pick at most 2 episodes
+   · only one version of a parallel account (the same event isn't recalled twice)
+   · nothing already told in this conversation is given again
+   · Judas' suicide is never given
         │
-④ 写成记忆提示交给模型
-   每段附上完整原文，并标明：你在场 / 你不在场（听说的）/ 这是你讲过的比喻
+④ Written up as a memory note for the model
+   each episode with its full text, marked: you were there / you were not there (you heard about it) / this is a parable you told
         │
-⑤ 第二阶段：他用现代口语讲出其中一段（或者都不讲）
-   要说出人名地名、保持顺序、不添加、不替别人编心理活动
+⑤ Phase B: he tells one of them in modern spoken words (or neither)
+   naming the people and places, keeping the order, adding nothing, not making up what others thought
         │
-⑥ 检查（不拦截，只记录）
-   · 讲了哪一段（看和原文共有的特征词）
-   · 有没有逐字背出别处的经文
-   · 没给记忆却说"我记得……"（编造）
+⑥ Checks (they don't block, they only log)
+   · which episode he told (by the distinctive words it shares with the text)
+   · whether he recited scripture from elsewhere word for word
+   · whether he said "I remember..." with no memory given (invented)
 ```
 
-## 和前给的那一长串相比，改了哪些
+## What changed compared with the long walk-through above
 
-| 环节 | 之前（v2，我们之前逐步讲过的那套） | 现在（v3） |
+| step | before (v2, the version walked through step by step above) | now (v3) |
 |---|---|---|
-| 改写 | 只输出检索词：耶稣**讲过**什么主题 | **同时输出类别**和检索词；检索词改成耶稣**经历过**什么，可以点名具体事件 |
-| 信息类、专业类问题 | 没区分，照样去检索、去回忆 | 不检索；信息类联网查，专业类交给专业的人 |
-| RAGFlow 内部 | 混合检索 → 重排子块 → 合并父块取平均 | **没变** |
-| 阈值 0.30 | 第一名低于 0.30 就不回忆 | **没变** |
-| 取几个段落 | 3 个 | 多取几个候选，最后最多 2 个 |
-| 第二层：耶稣原话库 | 2,109 句红字 → 只留 278 句 → 本地向量排序 → 取前 3 句 | **整层删掉** |
-| 去重和过滤 | 只去掉"说过的"和"严厉的" | 平行记载去重、讲过的不再给、犹大自杀永不给 |
-| 交给模型的 | 3 句**原话** | 2 段**完整经历** + 在场 / 听说 / 比喻 的标注 |
-| 模型怎么说 | **逐字**说出一句 | **用自己的话讲**，意思准确就行 |
-| 检查 | 逐字比对：是原文、意译还是自己的话 | 讲了哪段、有没有背别处经文、有没有凭空编造；另外有离线的逐句核对工具 |
-| 实时模型 | mini | 完整版 `gpt-realtime-2.1` |
+| Rewrite | outputs only the search query: the themes Jesus **spoke about** | outputs **the kind as well** as the query; the query is now what Jesus **lived through**, and may name specific events |
+| Information and professional questions | not distinguished; still searched and recalled | not searched; information is looked up online, professional questions are left to professionals |
+| Inside RAGFlow | hybrid search → rerank child chunks → merge into parent chunks by average | **unchanged** |
+| Threshold 0.30 | top one below 0.30 → nothing is recalled | **unchanged** |
+| How many sections | 3 | a few more candidates, at most 2 in the end |
+| Second layer: Jesus' own words | 2,109 red-letter sayings → only 278 kept → local vector ranking → top 3 | **removed entirely** |
+| Dedup and filters | only removes "already said" and "harsh" | parallel accounts deduplicated, already told not given again, Judas' suicide never given |
+| What the model gets | 3 **sayings** | 2 **whole episodes** + labels: there / heard about it / parable |
+| How the model says it | **word for word**, one saying | **in his own words**, as long as the meaning is accurate |
+| Checks | word-for-word comparison: original, paraphrase or own words | which episode was told, whether scripture from elsewhere was recited, whether anything was invented out of nothing; plus an offline claim-by-claim checking tool |
+| Realtime model | mini | the full `gpt-realtime-2.1` |
 
-一句话概括：**RAGFlow 那一段完全没动，动的是它前后两头**。前面多了一步"先判断这是什么类型的问题"；后面去掉了"从段落里挑一句原话"那一层，改成"把整段经历交给他，让他用自己的话讲"。
+In one sentence: **the RAGFlow part didn't change at all; what changed is both ends of it**. In front, a step was added: "first decide what kind of question this is". Behind, the layer "pick one saying from the section" was removed and replaced by "hand him the whole episode and let him tell it in his own words".
 
 ---
 
-上面的 Phase 1 到 Phase 8 都是 AI 写的，重点一点都不突出，而且太长了。这个项目又跑到第三版去了，我实在是没什么力气去给它整。
+Phases 1 to 8 above were all written by AI. Nothing is emphasized, and it's far too long. And the project has already moved on to version three; I really don't have the energy to sort it out.
 
-反正要是我写，这个 README 哪怕是从技术或者架构的角度来写，也不会是现在这个样子。但没办法，我这边有点忙不过来了。
+Anyway, if I were writing it, this README wouldn't look like this, even written from a technical or architectural angle. But there's no help for it; I'm a bit too busy to keep up.
 
-第三版的 evaluation 其实没有很多数据。而且我又想了一下，整件事情如果不是非得用 RAG，如果真是我做来给自己用的，那折腾什么 RAG 呀？直接在 prompt 里写一句，讲清楚用 Gospel 的经历来回答用户问题，那不就行了吗？折腾什么 RAG 不 RAG，还开六个容器
+There actually isn't much evaluation data for version three. And thinking it over again: if this whole thing didn't have to use RAG, if I were really making it for myself, why bother with RAG at all? Just write one line in the prompt telling it to answer the user with experiences from the Gospels, and wouldn't that do? Why fuss over RAG or no RAG, and run six containers?
