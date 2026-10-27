@@ -32,7 +32,7 @@ from avatar_link import AvatarLink, avatar_enabled, verse_cards
 from config import ROOT
 from echo import SpeakerReference
 from faithfulness import check
-from memory import overlaps, told
+from memory import fits_closely, overlaps, told
 from research import make_research_tool
 from persona import INSTRUCTIONS, INSTRUCTIONS_MEMORY, OPENING, SEARCH_DESCRIPTION, format_passages
 from retrieval import ScriptureIndex
@@ -513,7 +513,7 @@ class Conversation:
     # Two-phase reply (memory persona): speak at once, recall meanwhile, then continue.
 
     def _phase_instructions(self, phase: str, heard: str, said: str = "", memory_given: bool = False,
-                            kind: str = "talk") -> str:
+                            kind: str = "talk", memory_close: bool = False) -> str:
         """Per-response instructions replace the session's, so the persona is repeated. The
         transcript is included because the model's own hearing of a far-field microphone is
         worse than the transcription model's."""
@@ -542,6 +542,12 @@ class Conversation:
             rule += ("\nThis needs a professional's judgment. Do not answer it, give steps or look it up: say kindly "
                      "who would know (the doctor who has seen them, a lawyer, someone who works in that trade), "
                      "then turn to how they are.")
+        if phase == "B" and memory_close and kind == "talk":
+            # Allowed but not asked, he told none of three in the v3 demo: two or three sentences
+            # went to advice in images ("set the load down like a sack by the door").
+            rule += ("\nA moment from your life speaks closely to this (the MEMORY note): these sentences are that "
+                     "memory. Begin it at once (\"I remember...\"), with its names, then one short line back to them. "
+                     "No advice or image of your own this time.")
         if phase in ("single", "B") and not memory_given:
             # Without a memory the model made one up ("I remember sitting with Peter at dusk,
             # and he'd get everyone smiling with some rough joke"); the general rule in the
@@ -635,7 +641,7 @@ class Conversation:
             self.out("  [memory: " + ("; ".join(f"{e['ref']} · {e['title']} ({'there' if e['present'] else 'heard'})"
                                                 for e in episodes) or memo.get("why_none", "none")) + "]")
         await self._create_response(self._phase_instructions("B", state["heard"], state["a_text"], bool(episodes),
-                                                             memo.get("kind", "talk")))
+                                                             memo.get("kind", "talk"), fits_closely(episodes)))
         state["done"] = True
         now = round((time.monotonic() - state["t0"]) * 1000)
         self._trace("phase_b_requested", item=item_id, at_ms=now, memory_ready_ms=memo["ready_ms"],

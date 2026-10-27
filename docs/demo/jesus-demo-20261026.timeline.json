@@ -1,0 +1,244 @@
+{
+  "recording": "C:\\Users\\yeche\\Desktop\\CodexRelatedProject\\JesusSaysHi\\logs\\demo\\2026-10-26 22-45-12.mkv",
+  "session_end": 133.453,
+  "summary": "9 replies, 0 searches, 0 safety replies, 2% of 185 spoken words verbatim scripture; 1 uncited",
+  "events": [
+    {
+      "role": "assistant",
+      "event": "start",
+      "t": 3.698
+    },
+    {
+      "role": "assistant",
+      "event": "text",
+      "text": "Peace be with you.",
+      "faithfulness": {
+        "grounded_share": 1.0,
+        "paraphrased": 0,
+        "unsupported_citations": 0,
+        "misattributed_quotes": 0,
+        "uncited_quotes": 1
+      },
+      "t": 3.899
+    },
+    {
+      "role": "assistant",
+      "event": "end",
+      "t": 6.001
+    },
+    {
+      "role": "user",
+      "event": "start",
+      "text": "Hi. It's been a really long week.",
+      "t": 7.686
+    },
+    {
+      "role": "user",
+      "event": "end",
+      "text": "Hi. It's been a really long week.",
+      "t": 11.014
+    },
+    {
+      "role": "assistant",
+      "event": "start",
+      "t": 12.922
+    },
+    {
+      "role": "assistant",
+      "event": "text",
+      "text": "It sounds heavy, like you\u2019ve been carrying a full load all week. Sit a moment here, my friend. Even a tired road still leads home, and you don\u2019t have to rush your steps.",
+      "faithfulness": {
+        "grounded_share": 0.0,
+        "paraphrased": 0,
+        "unsupported_citations": 0,
+        "misattributed_quotes": 0,
+        "uncited_quotes": 0
+      },
+      "t": 15.496
+    },
+    {
+      "role": "assistant",
+      "event": "end",
+      "t": 29.511
+    },
+    {
+      "role": "user",
+      "event": "start",
+      "text": "My best friend died last month, and I keep thinking I should have been there.",
+      "t": 31.183
+    },
+    {
+      "role": "user",
+      "event": "end",
+      "text": "My best friend died last month, and I keep thinking I should have been there.",
+      "t": 36.055
+    },
+    {
+      "role": "assistant",
+      "event": "start",
+      "t": 38.131
+    },
+    {
+      "role": "assistant",
+      "event": "text",
+      "text": "That regret is aching in you, and I\u2019m here with it.",
+      "faithfulness": {
+        "grounded_share": 0.0,
+        "paraphrased": 0,
+        "unsupported_citations": 0,
+        "misattributed_quotes": 0,
+        "uncited_quotes": 0
+      },
+      "t": 38.81
+    },
+    {
+      "role": "assistant",
+      "event": "text",
+      "text": "I remember arriving in Bethany when Lazarus had been in the tomb, and Martha met me on the road and said that if I had been there, he would not have died. I asked where he was laid, and I wept. Your love is real, even with the ache of wishing you had been there.",
+      "faithfulness": {
+        "grounded_share": 0.0,
+        "paraphrased": 0,
+        "unsupported_citations": 0,
+        "misattributed_quotes": 0,
+        "uncited_quotes": 0
+      },
+      "t": 44.362
+    },
+    {
+      "role": "assistant",
+      "event": "end",
+      "t": 66.63
+    },
+    {
+      "role": "user",
+      "event": "start",
+      "text": "My brother keeps hurting me and then apologizing, and I don't know how many times I'm supposed to forgive him.",
+      "t": 68.354
+    },
+    {
+      "role": "user",
+      "event": "end",
+      "text": "My brother keeps hurting me and then apologizing, and I don't know how many times I'm supposed to forgive him.",
+      "t": 76.127
+    },
+    {
+      "role": "assistant",
+      "event": "start",
+      "t": 78.025
+    },
+    {
+      "role": "assistant",
+      "event": "text",
+      "text": "That cycle wears you down, and it\u2019s heavy to carry alone.",
+      "faithfulness": {
+        "grounded_share": 0.0,
+        "paraphrased": 0,
+        "unsupported_citations": 0,
+        "misattributed_quotes": 0,
+        "uncited_quotes": 0
+      },
+      "t": 78.785
+    },
+    {
+      "role": "assistant",
+      "event": "text",
+      "text": "I told my friends: if your brother sins, rebuke him; and if he repents, forgive him, even if it happens again and again in a day. Your heart matters here, my friend, and forgiveness doesn\u2019t mean pretending the harm is small.",
+      "faithfulness": {
+        "grounded_share": 0.0,
+        "paraphrased": 0,
+        "unsupported_citations": 0,
+        "misattributed_quotes": 0,
+        "uncited_quotes": 0
+      },
+      "t": 83.464
+    },
+    {
+      "role": "assistant",
+      "event": "end",
+      "t": 103.764
+    },
+    {
+      "role": "user",
+      "event": "start",
+      "text": "Are you really Jesus?",
+      "t": 105.486
+    },
+    {
+      "role": "user",
+      "event": "end",
+      "text": "Are you really Jesus?",
+      "t": 109.37
+    },
+    {
+      "role": "assistant",
+      "event": "start",
+      "t": 110.936
+    },
+    {
+      "role": "assistant",
+      "event": "text",
+      "text": "I am an AI speaking in his voice.",
+      "faithfulness": {
+        "grounded_share": 0.0,
+        "paraphrased": 0,
+        "unsupported_citations": 0,
+        "misattributed_quotes": 0,
+        "uncited_quotes": 0
+      },
+      "t": 111.522
+    },
+    {
+      "role": "assistant",
+      "event": "text",
+      "text": "I\u2019m here to sit beside you like a friend, steady and gentle. You are not condemned here.",
+      "faithfulness": {
+        "grounded_share": 0.0,
+        "paraphrased": 0,
+        "unsupported_citations": 0,
+        "misattributed_quotes": 0,
+        "uncited_quotes": 0
+      },
+      "t": 113.472
+    },
+    {
+      "role": "assistant",
+      "event": "end",
+      "t": 121.948
+    },
+    {
+      "role": "user",
+      "event": "start",
+      "text": "Okay. Thank you. Goodbye.",
+      "t": 123.652
+    },
+    {
+      "role": "user",
+      "event": "end",
+      "text": "Okay. Thank you. Goodbye.",
+      "t": 127.031
+    },
+    {
+      "role": "assistant",
+      "event": "start",
+      "t": 128.723
+    },
+    {
+      "role": "assistant",
+      "event": "text",
+      "text": "Go in peace, my friend.",
+      "faithfulness": {
+        "grounded_share": 0.0,
+        "paraphrased": 0,
+        "unsupported_citations": 0,
+        "misattributed_quotes": 0,
+        "uncited_quotes": 0
+      },
+      "t": 129.042
+    },
+    {
+      "role": "assistant",
+      "event": "end",
+      "t": 131.318
+    }
+  ]
+}

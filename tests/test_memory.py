@@ -195,3 +195,10 @@ def test_phase_b_carries_the_kind(tmp_path):
     assert "Do not answer it" in c._phase_instructions("B", "Is it risky?", "I hear you.", kind="expert")
     talk = c._phase_instructions("B", "I feel alone.", "I hear you.", memory_given=True, kind="talk")
     assert "They asked for information" not in talk and "This needs a professional" not in talk
+
+
+def test_a_close_fit_is_asked_for_and_a_loose_one_only_allowed():
+    close = memory_note([dict(EPISODES[LAZARUS], score=0.5)])
+    loose = memory_note([dict(EPISODES[LAZARUS], score=0.33)])
+    assert "tell it now" in close and "never bend it" not in close
+    assert "never bend it" in loose and "tell it now" not in loose

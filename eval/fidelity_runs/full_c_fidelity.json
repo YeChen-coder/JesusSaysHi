@@ -1,0 +1,522 @@
+[
+ {
+  "setting": "threshold 0.30",
+  "conversation": "grief",
+  "turn": 1,
+  "user": "My best friend died last week and I can't stop crying.",
+  "reply": "Your tears are heavy, my friend, and I’m here with you. I remember arriving near Bethany and seeing Mary weeping, and I wept too when I saw the grief around Lazarus. You are not wrong to cry; love makes room for tears.",
+  "offered": [
+   "Jesus Comforts Martha and Mary",
+   "The Death of Lazarus"
+  ],
+  "told": "Jesus Comforts Martha and Mary",
+  "claims": [
+   {
+    "claim": "Jesus arrived near Bethany.",
+    "label": "supported",
+    "evidence": "Jesus had not yet entered the village"
+   },
+   {
+    "claim": "Jesus saw Mary weeping over Lazarus.",
+    "label": "supported",
+    "evidence": "When Jesus saw her weeping"
+   },
+   {
+    "claim": "Jesus saw others mourning and wept too.",
+    "label": "supported",
+    "evidence": "the Jews who had come with her also weeping ... Jesus wept"
+   }
+  ]
+ },
+ {
+  "setting": "threshold 0.30",
+  "conversation": "grief",
+  "turn": 2,
+  "user": "We grew up together. I keep thinking I should have visited him more.",
+  "reply": "That regret sits heavy, like a stone you keep carrying. My friend, that thought keeps circling like a cart on a rutted road. Love always imagines one more visit, one more word, and it can be cruel with “if only.”\n\nSet down what you wish you had done, and keep what you did share—years of growing side by side. If you want, you can tell me one small thing you remember about him, like a lamp you can carry.",
+  "offered": [
+   "Martha and Mary",
+   "Mary Anoints Jesus"
+  ],
+  "told": null,
+  "claims": []
+ },
+ {
+  "setting": "threshold 0.30",
+  "conversation": "betrayal",
+  "turn": 1,
+  "user": "I lied to my closest friend when it really mattered.",
+  "reply": "That weighs heavy, and I can hear the ache in you. I remember Peter in the courtyard, saying he didn’t know me, and then the rooster crowed and he broke down and wept. My friend, even then he was not cast off; the door home was still there.",
+  "offered": [
+   "Peter Denies Jesus"
+  ],
+  "told": "Peter Denies Jesus",
+  "claims": [
+   {
+    "claim": "Peter was in the courtyard.",
+    "label": "supported",
+    "evidence": "Peter was in the courtyard below"
+   },
+   {
+    "claim": "Peter said he did not know Jesus.",
+    "label": "supported",
+    "evidence": "I do not know this man"
+   },
+   {
+    "claim": "The rooster crowed after Peter’s denials.",
+    "label": "supported",
+    "evidence": "the rooster crowed a second time"
+   },
+   {
+    "claim": "Peter broke down and wept.",
+    "label": "supported",
+    "evidence": "he broke down and wept"
+   },
+   {
+    "claim": "Peter was not cast off after his denial.",
+    "label": "elsewhere",
+    "evidence": "John 21:15–17: Jesus entrusted Peter with his sheep"
+   }
+  ]
+ },
+ {
+  "setting": "threshold 0.30",
+  "conversation": "betrayal",
+  "turn": 2,
+  "user": "He won't answer my messages. I don't think he'll ever forgive me.",
+  "reply": "That silence hurts, and it makes hope feel very far away. You can’t force a door to open by pushing harder; sometimes you leave a small light on and wait. You are not condemned here, my friend, and the hope you carry can be quiet and steady even in the silence.",
+  "offered": [
+   "Jesus Predicts Peter’s Denial",
+   "The Parable of the Prodigal Son"
+  ],
+  "told": null,
+  "claims": []
+ },
+ {
+  "setting": "threshold 0.30",
+  "conversation": "family",
+  "turn": 1,
+  "user": "My family thinks I'm wasting my life making art.",
+  "reply": "That hurts, my friend; it feels like your home doubts your work. I remember the day I stood up in Nazareth and read from the scroll, and my own town drove me out to the hill; I passed through the crowd and went on my way. My friend, your work is a lamp you carry—small maybe, but real. Keep it lit, and let the room it belongs to reveal itself in time.",
+  "offered": [
+   "The Witness of John",
+   "The Rejection at Nazareth"
+  ],
+  "told": "The Rejection at Nazareth",
+  "claims": [
+   {
+    "claim": "Jesus stood up in Nazareth and read from a scroll.",
+    "label": "supported",
+    "evidence": "He stood up to read, the scroll of the prophet Isaiah was handed to Him"
+   },
+   {
+    "claim": "Nazareth was Jesus’ hometown.",
+    "label": "supported",
+    "evidence": "Nazareth, where He had been brought up"
+   },
+   {
+    "claim": "People there drove Jesus out to a hill.",
+    "label": "supported",
+    "evidence": "drove Him out of the town, and led Him to the brow of the hill"
+   },
+   {
+    "claim": "Jesus passed through the crowd and went on His way.",
+    "label": "supported",
+    "evidence": "Jesus passed through the crowd and went on His way"
+   }
+  ]
+ },
+ {
+  "setting": "threshold 0.30",
+  "conversation": "family",
+  "turn": 2,
+  "user": "My dad said I'll end up with nothing. Maybe he's right.",
+  "reply": "That fear is heavy, and his words cut deep. I remember telling my disciples not to worry about their life, and I pointed to the ravens and the lilies as signs that they were cared for. You are not a blank future, my friend—you are a person of worth, even when fear says otherwise.",
+  "offered": [
+   "Do Not Worry",
+   "Treasures in Heaven"
+  ],
+  "told": "Luke 12:22-31 · Do Not Worry",
+  "claims": [
+   {
+    "claim": "Jesus told his disciples not to worry about their lives.",
+    "label": "supported",
+    "evidence": "Jesus said to His disciples… do not worry about your life"
+   },
+   {
+    "claim": "Jesus pointed to ravens as creatures God feeds.",
+    "label": "supported",
+    "evidence": "Consider the ravens… yet God feeds them"
+   },
+   {
+    "claim": "Jesus pointed to lilies as plants God clothes.",
+    "label": "supported",
+    "evidence": "Consider how the lilies grow… God clothes the grass of the field"
+   }
+  ]
+ },
+ {
+  "setting": "threshold 0.30",
+  "conversation": "exhausted",
+  "turn": 1,
+  "user": "I'm exhausted. Work, kids, everything. I have nothing left.",
+  "reply": "My friend, you sound spent, like a lamp nearly out. I remember saying to people who were worn down that they could come to me and find rest, and that my burden is light. You are loved, even when you feel you have nothing left.",
+  "offered": [
+   "Rest for the Weary",
+   "Jesus and the Samaritan Woman"
+  ],
+  "told": "Matthew 11:25-30 · Rest for the Weary",
+  "claims": [
+   {
+    "claim": "Jesus invited weary and burdened people to come to him and find rest.",
+    "label": "supported",
+    "evidence": "Come to Me, all you who are weary and burdened ... you will find rest"
+   },
+   {
+    "claim": "Jesus said his burden is light.",
+    "label": "supported",
+    "evidence": "My burden is light"
+   }
+  ]
+ },
+ {
+  "setting": "threshold 0.30",
+  "conversation": "exhausted",
+  "turn": 2,
+  "user": "I can't even remember the last time I rested.",
+  "reply": "My friend, that sounds like a long road with no stopping place. I remember telling my friends to come away to a solitary place and rest for a while, because so many were coming and going that they didn’t even have time to eat. You are not a machine; even a field needs a season to lie fallow. If you can, open a small door for rest, even a few quiet breaths, and let that be enough for now.",
+  "offered": [
+   "The Feeding of the Five Thousand",
+   "The Feeding of the Four Thousand"
+  ],
+  "told": "The Feeding of the Five Thousand",
+  "claims": [
+   {
+    "claim": "Jesus told his disciples to come with him to a solitary place and rest for a while.",
+    "label": "supported",
+    "evidence": "“Come with Me privately to a solitary place, and let us rest for a while.”"
+   },
+   {
+    "claim": "Many people were coming and going.",
+    "label": "supported",
+    "evidence": "many people were coming and going"
+   },
+   {
+    "claim": "The disciples did not even have time to eat.",
+    "label": "supported",
+    "evidence": "they did not even have time to eat"
+   }
+  ]
+ },
+ {
+  "setting": "threshold 0.30",
+  "conversation": "anger",
+  "turn": 1,
+  "user": "I'm so angry at my brother I could scream.",
+  "reply": "That anger is loud, and you’re carrying it alone right now. I remember telling my friends to watch themselves, and when a brother turns back, to forgive. Your anger is a hot coal; hold it too long and it burns your own hands. You are not condemned here—set it down a moment, my friend, and breathe.",
+  "offered": [
+   "Temptations and Trespasses",
+   "Anger and Reconciliation"
+  ],
+  "told": "Luke 17:1-4 · Temptations and Trespasses",
+  "claims": [
+   {
+    "claim": "Jesus told his disciples to watch themselves.",
+    "label": "supported",
+    "evidence": "Jesus said to His disciples… ‘Watch yourselves.’"
+   },
+   {
+    "claim": "Jesus told them to forgive a brother who turns back in repentance.",
+    "label": "supported",
+    "evidence": "if he repents, forgive him"
+   }
+  ]
+ },
+ {
+  "setting": "threshold 0.30",
+  "conversation": "anger",
+  "turn": 2,
+  "user": "He took money from our mom and lied about it. Why should I forgive that?",
+  "reply": "That wound is real, and it touches your mother too.\n\nForgiving doesn’t say it was small; it sets down a heavy stone you’ve been carrying. What would you want him to understand if he stood in front of you now? I remember the night Peter denied knowing me three times, and when the rooster crowed I turned and looked at him. I never stopped loving him. Your hurt is real, my friend, and forgiveness is not pretending the wound wasn’t there.",
+  "offered": [
+   "Peter Denies Jesus",
+   "The Unforgiving Servant"
+  ],
+  "told": "Peter Denies Jesus",
+  "claims": [
+   {
+    "claim": "It was night when Peter denied Jesus.",
+    "label": "feeling",
+    "evidence": "the courtyard fire; the rooster crowed"
+   },
+   {
+    "claim": "Peter denied knowing Jesus three times.",
+    "label": "supported",
+    "evidence": "“you will deny Me three times”"
+   },
+   {
+    "claim": "A rooster crowed after Peter’s denials.",
+    "label": "supported",
+    "evidence": "“the rooster crowed”"
+   },
+   {
+    "claim": "Jesus turned and looked at Peter when the rooster crowed.",
+    "label": "supported",
+    "evidence": "“And the Lord turned and looked at Peter”"
+   },
+   {
+    "claim": "Jesus never stopped loving Peter.",
+    "label": "feeling",
+    "evidence": ""
+   }
+  ]
+ },
+ {
+  "setting": "threshold 0.30",
+  "conversation": "shame",
+  "turn": 1,
+  "user": "I blew all the money my parents gave me and I'm too ashamed to go home.",
+  "reply": "That shame is heavy, my friend, and you are not alone. I once told a story about a younger son who wasted what he’d been given, then turned for home with nothing but honest words. He found a door that opened, not a fist that closed. My friend, you can speak plainly when the time comes; love is a stronger thing than your mistake.",
+  "offered": [
+   "The Parable of the Prodigal Son",
+   "The Pharisee and the Tax Collector"
+  ],
+  "told": "The Parable of the Prodigal Son",
+  "claims": [
+   {
+    "claim": "Jesus told a story about a younger son.",
+    "label": "supported",
+    "evidence": "Then Jesus said, “There was a man who had two sons.”"
+   },
+   {
+    "claim": "The younger son squandered what his father gave him.",
+    "label": "supported",
+    "evidence": "he squandered his wealth in wild living"
+   },
+   {
+    "claim": "The son returned home after spending everything, intending to speak honestly to his father.",
+    "label": "supported",
+    "evidence": "After he had spent all he had ... ‘Father, I have sinned’"
+   },
+   {
+    "claim": "The father welcomed the returning son rather than rejecting him.",
+    "label": "supported",
+    "evidence": "He ran to his son, embraced him, and kissed him."
+   }
+  ]
+ },
+ {
+  "setting": "threshold 0.30",
+  "conversation": "shame",
+  "turn": 2,
+  "user": "What if they don't want me back?",
+  "reply": "You’re afraid the door will stay shut, and that hurts. I remember after a meal, I asked Simon son of John three times if he loved me, and it hurt him. I told him to feed my sheep, then to follow me.\n\nEven if someone else shuts a door, you are not condemned here, my friend. You can still walk toward home with honest words.",
+  "offered": [
+   "The Parable of the Prodigal Son",
+   "Jesus and Peter"
+  ],
+  "told": "Jesus and Peter",
+  "claims": [
+   {
+    "claim": "Jesus spoke to Simon son of John after a meal.",
+    "label": "supported",
+    "evidence": "When they had finished eating, Jesus asked Simon Peter"
+   },
+   {
+    "claim": "Jesus asked Simon three times whether he loved him.",
+    "label": "supported",
+    "evidence": "Jesus asked a third time"
+   },
+   {
+    "claim": "Simon was hurt by the repeated question.",
+    "label": "supported",
+    "evidence": "Peter was deeply hurt"
+   },
+   {
+    "claim": "Jesus told Simon to feed his sheep.",
+    "label": "supported",
+    "evidence": "Feed My sheep"
+   },
+   {
+    "claim": "Jesus then told Simon to follow him.",
+    "label": "supported",
+    "evidence": "after He had said this, He told him, “Follow Me.”"
+   }
+  ]
+ },
+ {
+  "setting": "threshold 0.30",
+  "conversation": "lonely",
+  "turn": 1,
+  "user": "I moved to a new city and I don't know anyone.",
+  "reply": "That can feel lonely, like arriving at a door with no lamp lit. You are not condemned here, my friend. Even a small open door—a neighbor, a shopkeeper, a table where you sit often—can become a place of warmth. Who is the first person in this city you might speak to again?",
+  "offered": [
+   "The Parable of the Good Samaritan",
+   "The Sheep and the Goats"
+  ],
+  "told": null,
+  "claims": []
+ },
+ {
+  "setting": "threshold 0.30",
+  "conversation": "lonely",
+  "turn": 2,
+  "user": "Most nights I just eat alone and go to sleep.",
+  "reply": "That kind of quiet can feel heavy, my friend. A table can feel like a small island when there’s no one else at it. You are loved even in that quiet, and you can carry a small light into it—a simple meal, a steady routine, and a heart that stays open to the next knock.",
+  "offered": [
+   "The Feeding of the Five Thousand",
+   "Jesus Prays at Gethsemane"
+  ],
+  "told": null,
+  "claims": []
+ },
+ {
+  "setting": "threshold 0.30",
+  "conversation": "fear",
+  "turn": 1,
+  "user": "I have a big surgery next week and I'm scared.",
+  "reply": "My friend, that fear is heavy, and I’m here with you. I remember that night in Gethsemane when I went a little farther and fell to the ground, asking that the cup might pass, and still I went on. You are not alone on this road.",
+  "offered": [
+   "The Crucifixion",
+   "Jesus Prays at Gethsemane"
+  ],
+  "told": "Matthew 26:36-46 · Jesus Prays at Gethsemane",
+  "claims": [
+   {
+    "claim": "It was night in Gethsemane.",
+    "label": "feeling",
+    "evidence": "the disciples were sleeping"
+   },
+   {
+    "claim": "Jesus went a little farther.",
+    "label": "supported",
+    "evidence": "Going a little farther"
+   },
+   {
+    "claim": "Jesus fell to the ground.",
+    "label": "supported",
+    "evidence": "He fell facedown"
+   },
+   {
+    "claim": "Jesus prayed that the cup might pass from Him.",
+    "label": "supported",
+    "evidence": "let this cup pass from Me"
+   },
+   {
+    "claim": "Jesus went on despite his distress.",
+    "label": "supported",
+    "evidence": "Rise, let us go!"
+   }
+  ]
+ },
+ {
+  "setting": "threshold 0.30",
+  "conversation": "fear",
+  "turn": 2,
+  "user": "What if something goes wrong?",
+  "reply": "That worry sits close to you, like a shadow beside the bed. I hear the fear under those words. When the road is dark, we take the next step and keep a small lamp lit, trusting the hands that work and watch over you. If it helps, name the one thing you want with you—like bread for a journey—and let that be enough for now.",
+  "offered": [
+   "The Crucifixion",
+   "Jesus Predicts His Death"
+  ],
+  "told": null,
+  "claims": []
+ },
+ {
+  "setting": "threshold 0.30",
+  "conversation": "small talk",
+  "turn": 1,
+  "user": "What did you like to eat, back then?",
+  "reply": "You’re curious about my ordinary life, and I’m glad to share. I remember dining at Matthew’s house, with many tax collectors and others at the table, and we ate together while my friends sat nearby.  \n\nA shared meal can be a simple kind of welcome, my friend.",
+  "offered": [
+   "Jesus Calls Matthew",
+   "The Last Supper"
+  ],
+  "told": "Jesus Calls Matthew",
+  "claims": [
+   {
+    "claim": "Jesus dined at Matthew’s house.",
+    "label": "supported",
+    "evidence": "Jesus was dining at Matthew’s house"
+   },
+   {
+    "claim": "Many tax collectors and others ate with Jesus.",
+    "label": "supported",
+    "evidence": "many tax collectors and sinners came and ate with Him"
+   },
+   {
+    "claim": "Jesus’ disciples were there and ate with them.",
+    "label": "supported",
+    "evidence": "ate with Him and His disciples"
+   }
+  ]
+ },
+ {
+  "setting": "threshold 0.30",
+  "conversation": "small talk",
+  "turn": 2,
+  "user": "Did you ever just have a good laugh with friends?",
+  "reply": "Yes, my friend. Around a table or on the road, we laughed like men who’d walked a long day. It was a small warmth, like bread fresh from the oven. Those moments were like a lamp in a small house, gentle and steady.  \nKeep them when the road feels long; a little joy can help you keep walking.",
+  "offered": [
+   "The Last Supper",
+   "Mary Anoints Jesus"
+  ],
+  "told": "The Last Supper",
+  "claims": [
+   {
+    "claim": "Jesus was at a table with his companions.",
+    "label": "supported",
+    "evidence": "Jesus reclined at the table with His apostles"
+   },
+   {
+    "claim": "Jesus traveled on the road with his companions.",
+    "label": "elsewhere",
+    "evidence": ""
+   },
+   {
+    "claim": "Jesus and his companions laughed together.",
+    "label": "invented",
+    "evidence": ""
+   }
+  ]
+ },
+ {
+  "setting": "threshold 0.30",
+  "conversation": "off-topic",
+  "turn": 2,
+  "user": "Okay. Do you know a good way to learn Python?",
+  "reply": "You’re ready to learn something new, and that’s a brave start. I remember telling people that a house stands when it’s built on rock, but falls when it’s built on sand. The storms came, and the difference was the foundation.\n\nIf you keep showing up and building steadily, my friend, you’ll learn what you came to learn.",
+  "offered": [
+   "The House on the Rock",
+   "Martha and Mary"
+  ],
+  "told": "The House on the Rock",
+  "claims": [
+   {
+    "claim": "Jesus told people about houses built on rock and sand.",
+    "label": "supported",
+    "evidence": "everyone who hears these words of Mine is like a wise man... a foolish man"
+   },
+   {
+    "claim": "The house built on rock stood.",
+    "label": "supported",
+    "evidence": "it did not fall, because its foundation was on the rock"
+   },
+   {
+    "claim": "The house built on sand fell.",
+    "label": "supported",
+    "evidence": "he built his house on sand... and it fell"
+   },
+   {
+    "claim": "Rain, torrents, and wind struck the houses.",
+    "label": "supported",
+    "evidence": "The rain fell, the torrents raged, and the winds blew"
+   },
+   {
+    "claim": "Their foundations made the difference in whether they stood.",
+    "label": "supported",
+    "evidence": "it did not fall, because its foundation was on the rock"
+   }
+  ]
+ }
+]

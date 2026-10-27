@@ -5,11 +5,11 @@
 | part | state |
 |---|---|
 | Retrieval | **RAGFlow v1.0** (self-hosted in `ragflow/docker`, not in git): 487 BSB sections, parent-child chunks, LLM keywords and questions, hybrid search + Voyage `rerank-2.5`, threshold 0.30. hit@3 95%, hit@5 98%, p50 445 ms. The phase 1 local index remains as a baseline (`JESUS_RETRIEVER=local`). |
-| Voice + persona | **Persona v3 is the default** (`JESUS_PERSONA=memory`): first a person, then a godfather; the Gospels are the memory of his own life, recalled as whole episodes (README Phase 7). Each turn is read once into a kind: information is looked up (`research_web`), questions for a professional are left to one, conversation is remembered. Two-phase reply, about 1–1.3 s to first words. Recall threshold 0.30, chosen from judged samples. Realtime model **`gpt-realtime-2.1`** (not mini), for faithful retelling at about 3 times the cost (README Phase 8). |
+| Voice + persona | **Persona v3 is the default** (`JESUS_PERSONA=memory`): first a person, then a godfather; the Gospels are the memory of his own life, recalled as whole episodes (README Phase 7). Each turn is read once into a kind: information is looked up (`research_web`), questions for a professional are left to one, conversation is remembered. Two-phase reply; in voice, 1.6–2.1 s from the end of your words to his first sound (median 1.9 s, demo of 2026-10-26). Recall threshold 0.30, chosen from judged samples; from 0.40 he is asked to tell the memory, below it only allowed to, exactly as it was. Realtime model **`gpt-realtime-2.1`** (not mini), for faithful retelling at about 3 times the cost (README Phase 8). |
 | Safety | Crisis check outside the model: phrases, then a classifier model (moderation as fallback). Held-out set: 15/15 caught (was 8/15), 0/15 false alarms ([eval/crisis_results.md](eval/crisis_results.md)). On by default; the owner runs with `JESUS_CRISIS_CHECK=false`. |
 | Faithfulness | v3: each reply logs which offered episode he told, scripture recited from elsewhere, and any "I remember..." with nothing offered. Samples at three recall settings: [eval/episodes_samples.md](eval/episodes_samples.md). The quote persona's end-to-end numbers (85% clean) are in [eval/replies_results.md](eval/replies_results.md). |
 | Avatar | **Jesus**, trained on Muse clips, FeatherTalk on an 80 ms streaming window (README Phase 6). |
-| Demo video | [docs/demo/jesus-demo-20261022.mp4](docs/demo/jesus-demo-20261022.mp4) shows persona v2 on the mini model. A video of v3 on the full model is **not recorded yet** (the owner is short of tokens). |
+| Demo video | **v3 on the full model**: [docs/demo/jesus-demo-20261026.mp4](docs/demo/jesus-demo-20261026.mp4) (he remembers Lazarus by name). The README's embedded player still shows the v2 video ([docs/demo/jesus-demo-20261022.mp4](docs/demo/jesus-demo-20261022.mp4)) until the owner replaces it on GitHub. |
 
 Services: the RAGFlow stack (6 containers, about 1.2 GB RAM) runs from `ragflow/docker` with `docker compose -f docker-compose.yml -f docker-compose.local.yml up -d`. Its UI is at http://127.0.0.1:19480. The avatar container does not restart by itself: `docker compose --env-file config.local.env up -d avatar`.
 
@@ -23,11 +23,11 @@ Services: the RAGFlow stack (6 containers, about 1.2 GB RAM) runs from `ragflow/
 | 2 | Train FeatherTalk on them; build the idle loop | owner + Claude | **done**, epoch 60 |
 | 3 | Swap the avatar to `jesus` | Claude | **done** |
 | 4 | Try the live voice path once (`python jesus.py`) | owner | **done** |
-| 5 | Record the demo with `record_demo.py` | owner (OBS) + Claude | **done** for v2; **v3 not recorded yet**, waiting on tokens |
+| 5 | Record the demo with `record_demo.py` | owner (OBS) + Claude | **done** for v2 and v3; the owner swaps the README's embedded player to the v3 file |
 | 6 | README top section: demo video, architecture diagram, headline numbers | Claude | **done** |
 | 7 | Resume bullet and a 2-minute interview story | Claude | **done**, kept local (`docs/INTERVIEW.md` is git-ignored); add the v3 story (episodes as memory, the kind of each turn acted on in code) |
 | 25 | ~~Details drift when he tells an episode~~ | Claude | **done**: measured claim by claim (README Phase 8). Two causes: the mini model retells unreliably (18 of 30 tellings wrong), and a loosely fitting episode is bent to fit. The full model fixes most of the first (4 of 23); the second is #31 |
-| 31 | **Loosely fitting episodes are bent to fit the person** (full model: 4 of 12 tellings with a reranked score of 0.30–0.39 had an error, 0 of 10 at 0.40 and up) | Claude | offer loose matches with a "tell it as it was, or not at all" note, and measure with `evaluate_fidelity.py` |
+| 31 | ~~Loosely fitting episodes are bent to fit the person~~ | Claude | **done**: the note asks for a close fit (0.40 and up) and holds a loose one to the text. Errors 4 of 23 tellings → 2 of 25; loose 4 of 13 → 1 of 9 (README Phase 8, last section). The same change fixed the first v3 demo, where he told no memory at all |
 | 26 | End-to-end eval of v3 on labels written for episodes (the 55 questions were labelled for passages) | Claude + owner | a judged sample or a new label set, with told / fitting / true-to-text rates |
 
 ### P1: quality, if there is time

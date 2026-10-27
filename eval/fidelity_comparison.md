@@ -15,9 +15,12 @@ Setting, his own feelings, and things true elsewhere in the Gospels are retellin
 | `gpt-realtime-2.1-mini` | after, run B | 14 | 5 (36%) | 79 | 19 |
 | `gpt-realtime-2.1` | after, run A | 10 | 9 (90%) | 32 | 1 |
 | `gpt-realtime-2.1` | after, run B | 13 | 10 (77%) | 40 | 4 |
+| `gpt-realtime-2.1` | close fits asked for, run C | 14 | 13 (93%) | 52 | 1 |
+| `gpt-realtime-2.1` | close fits asked for, run D | 11 | 10 (91%) | 42 | 1 |
 
 "after" adds three things to the MEMORY note: parables are marked as stories he told, keep the order of what
-happened, and do not say what others thought.
+happened, and do not say what others thought. "close fits asked for" (runs C and D) also asks him to tell the
+first episode when its reranked score is 0.40 or more, and below that to tell one only exactly as it happened.
 
 **Reading.**
 - The prompt changes did not help the mini model (no better, within noise; two runs each of about 15 memories).

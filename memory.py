@@ -62,7 +62,14 @@ KINDS = ("information", "expert", "talk")
 
 
 def read_turn(client, said: str) -> tuple[str, str]:
-    """(kind, query). Output that is not the JSON asked for is taken as a plain query."""
+    """(kind, query). Output that is not the JSON asked for is taken as a plain query.
+
+    Its own deadline: in a demo one read took over 4 s (usually 1-1.8 s), so the whole recall
+    timed out and the turn that most needed a memory (a friend's death) got none. Past the
+    deadline the caller searches with the words as said."""
+    if hasattr(client, "with_options"):
+        client = client.with_options(timeout=float(os.getenv("JESUS_MEMORY_READ_TIMEOUT_SECONDS", "2.5")),
+                                     max_retries=0)
     response = client.responses.create(model=rewrite_model(), instructions=READ, input=said)
     raw = response.output_text.strip()
     try:
@@ -129,8 +136,22 @@ def is_parable(doc: str, title: str) -> bool:
     return "parable" in title.lower() or doc in _PARABLES
 
 
+def close_fit() -> float:
+    """The reranked score from which an episode is told, not just offered (README Phase 8:
+    on the full model, 0 of 10 tellings at 0.40 and up had an error, 4 of 12 below)."""
+    return float(os.getenv("JESUS_MEMORY_CLOSE", "0.40"))
+
+
+def fits_closely(episodes: list[dict]) -> bool:
+    return bool(episodes) and (episodes[0].get("score") or 0) >= close_fit()
+
+
 def memory_note(episodes: list[dict]) -> str:
-    """The MEMORY note for phase B. It must not show that a memory was handed over."""
+    """The MEMORY note for phase B. It must not show that a memory was handed over.
+
+    A note that only allowed a memory ("at most one, or none; often none fits") was read as
+    "don't": in the v3 demo he told none of three, giving advice in images instead. So a
+    close fit is now asked for, and a loose one allowed only if told exactly as it was."""
     parts = []
     for e in episodes:
         if is_parable(e.get("doc", ""), e["title"]):
@@ -141,8 +162,13 @@ def memory_note(episodes: list[dict]) -> str:
         else:
             how = "You were not there: you heard of it, or were told it (of your birth, by your mother)."
         parts.append(f"[{e['title']}] {how}\n{e['text']}")
-    return ("MEMORY: moments from your life that may speak to what they just said. Tell at most one, or none; "
-            "often none fits. If you tell one, do it briefly, in one or two sentences of plain modern words, the "
+    if fits_closely(episodes):
+        ask = ("MEMORY: moments from your life. The first speaks closely to what they just said: tell it now, in "
+               "this reply, unless telling it would hurt them. ")
+    else:
+        ask = ("MEMORY: moments from your life that only touch on what they just said. Tell one only if it truly "
+               "fits and you can tell it exactly as it happened; never bend it to fit them. Otherwise tell none. ")
+    return (ask + "Tell at most one, briefly, in one or two sentences of plain modern words, the "
             "way a man remembers his own past: what happened, who was there, what you did or said, or, if it is a "
             "story you told, that you once told it. Say the names and places it has (Lazarus, Martha, Bethany, "
             "Peter): names are what make it your memory and not a vague story. Keep the order of what happened. You may "

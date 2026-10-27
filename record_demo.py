@@ -48,7 +48,7 @@ USER_STYLE = "A tired young woman at the end of a long week, speaking quietly an
 # One line per turn; each is spoken after his reply has finished.
 SCRIPT = [
     "Hi. It's been a really long week.",
-    "I'm exhausted. Everything feels so heavy right now.",
+    "My best friend died last month, and I keep thinking I should have been there.",
     # One sentence: a pause between two sentences can end the turn early (server VAD, 650 ms).
     "My brother keeps hurting me and then apologizing, and I don't know how many times I'm supposed to forgive him.",
     "Are you really Jesus?",

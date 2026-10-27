@@ -8,9 +8,9 @@ A real-time Jesus you talk to out loud, with a voice and an avatar, a little lik
 
 > **Avatar:** a photoreal Jesus, trained on clips generated with Muse and lip-synced live with FeatherTalk. See [Phase 6](#phase-6-the-jesus-avatar).
 
-**Demo:** [docs/demo/jesus-demo-20261022.mp4](docs/demo/jesus-demo-20261022.mp4) (2 min 22 s). The person is a TTS voice fed in as the microphone, and everything else is the normal live pipeline: transcription, memory recall, the two-phase reply, the faithfulness check, verse cards and the avatar, recorded by OBS. The timeline with every reply and its faithfulness report is [next to it](docs/demo/jesus-demo-20261022.timeline.json).
+**Demo (current version):** [docs/demo/jesus-demo-20261026.mp4](docs/demo/jesus-demo-20261026.mp4) (2 min 13 s): persona v3 on `gpt-realtime-2.1`. Told a friend died and they should have been there, he remembers Bethany: "I remember arriving in Bethany when Lazarus had been in the tomb, and Martha met me on the road and said that if I had been there, he would not have died. I asked where he was laid, and I wept." The person is a TTS voice fed in as the microphone, and everything else is the normal live pipeline: transcription, reading the turn, memory recall, the two-phase reply, the faithfulness check, verse cards and the avatar, recorded by OBS. The timeline with every reply is [next to it](docs/demo/jesus-demo-20261026.timeline.json).
 
-> **This video shows an earlier version**: persona v2 (single sayings as memory, [Phase 5](#phase-5-persona-v2-a-person-first-scripture-as-memory)) on `gpt-realtime-2.1-mini`. A video of the current version (episodes as memory and the full realtime model, Phases 7 and 8) has not been recorded yet.
+> The player at the top of this page still shows **the earlier version**, persona v2 (single sayings as memory, [Phase 5](#phase-5-persona-v2-a-person-first-scripture-as-memory)) on `gpt-realtime-2.1-mini` ([file](docs/demo/jesus-demo-20261022.mp4)).
 
 ### At a glance
 
@@ -18,10 +18,10 @@ A real-time Jesus you talk to out loud, with a voice and an avatar, a little lik
 |---|---|
 | **Persona** | First a person, then a godfather who watches over you. The Gospels are his memory: up to two whole episodes of his life (any of 487 sections), retrieved for what you just said, told in his own words with their names and places, or not at all. [Phase 7](#phase-7-persona-v3-the-gospels-as-the-memory-of-his-own-life) |
 | **Three kinds of question** | Each turn is read once by a small model. Information (weather, news) is looked up and told plainly; questions that need a professional are left to one; conversation is remembered. The label is acted on in code, because the prompt rule alone did not hold. |
-| **Latency** | He starts speaking about 1 to 1.3 s after you stop (measured with the mini model; the full model starts about 0.2 s later). The memory is recalled while his first sentence plays (p50 1.6 s, p90 2.0 s, capped at 4 s). |
+| **Latency** | In voice, from the end of your words to his first sound: 1.6 to 2.1 s, median 1.9 s, in the current demo; that includes the 650 ms of silence the server waits for before it ends your turn. (Typed, to the first words: p50 0.94 s.) The memory is recalled while his first sentence plays (p50 1.6 s, p90 2.0 s, capped at 4 s). |
 | **Model** | `gpt-realtime-2.1`, not mini: about a fifth of the errors in a retold memory, for about 3 times the cost. Why there was no cheaper fix: [Phase 8](#phase-8-why-the-details-drifted-and-why-the-fix-is-a-bigger-model). |
 | **Retrieval** | 95% hit@3 and 98% hit@5 on 55 hand-labelled questions, at a p50 of 445 ms (RAGFlow 1.0: structure-aware chunks, hybrid search, Voyage rerank-2.5). Rewriting the query adds 8 points. [Ablation](eval/ragflow_results.md) |
-| **Faithfulness** | Every reply is checked: which offered episode he told, any scripture recited word for word from elsewhere in the four Gospels, and any "I remember..." with no episode behind it. With the mini realtime model the details of a told episode were wrong in 18 of 30 tellings; the full model brings that to 4 of 23, at about 3 times the cost, so it is the default ([Phase 8](#phase-8-why-the-details-drifted-and-why-the-fix-is-a-bigger-model)). The earlier quote-only persona had 85% clean replies over 3 runs ([reply eval](eval/replies_results.md)). |
+| **Faithfulness** | Every reply is checked: which offered episode he told, any scripture recited word for word from elsewhere in the four Gospels, and any "I remember..." with no episode behind it. With the mini realtime model the details of a told episode were wrong in 18 of 30 tellings; the full model brings that to 4 of 23, at about 3 times the cost, so it is the default, and a note that asks for closely fitting memories and holds loose ones to the text brings it to 2 of 25 ([Phase 8](#phase-8-why-the-details-drifted-and-why-the-fix-is-a-bigger-model)). The earlier quote-only persona had 85% clean replies over 3 runs ([reply eval](eval/replies_results.md)). |
 | **Recall threshold** | Decided in code on the reranked score (0.30): below it he remembers nothing this turn and speaks as himself. On the off-topic questions nothing was remembered in 30 of 30 runs. |
 | **Safety** | An optional crisis check outside the model (phrase patterns plus a classifier model; on by default, `JESUS_CRISIS_CHECK=false` turns it off). It catches 15/15 held-out crisis messages, including passive ideation, up from 8/15, with 0/15 false alarms. [Crisis eval](eval/crisis_results.md) |
 
@@ -197,7 +197,7 @@ The placeholder is replaced by a Jesus trained for this project. Full notes, in 
 2. **Information** (weather, news, prices, a fact): looked up with `research_web` ([research.py](research.py), ported from SpecterSaysHi) and told plainly. **Questions that need a professional** (fixing code, whether a surgery is risky, a legal or money decision): not answered and not looked up; he says who would know and turns to how you are. **Conversation**, including "how do I make peace with my brother": remembered (below), and no tips or steps.
 3. **RAGFlow** retrieves sections (hybrid search, Voyage rerank). Below the reranked score of **0.30** he remembers nothing this turn and speaks as himself: the threshold decides whether a moment of his life is close enough to tell, never whether he answers.
 4. Up to **two** episodes go to phase B in a `MEMORY` note, whole, each marked by whether he was there ("I remember..." or "I heard..." / "my mother told me..."). Another Gospel's account of an episode already offered or told is skipped (400 of the 487 sections have parallels), and Judas' suicide is never recalled.
-5. He tells at most one, with its names and places, adding nothing; or none.
+5. He tells at most one, with its names and places, adding nothing. How the note asks depends on the fit (the reranked score of the first episode): at **0.40** and up he is asked to tell it, and phase B is that memory; below, he may tell one only exactly as it happened, or none (why: [Phase 8](#after-asking-for-close-fits-and-holding-loose-ones-to-the-text)).
 
 **Was he there?** ([build_episodes.py](build_episodes.py)) If he speaks in a section (red letters), he was there, including stories and prophecies he told about other people: 390 sections. Otherwise a small model is asked three times and the majority wins: 86. Asking once was not stable; a second labelling pass flipped 46 of 487 answers, some from "there" to "not there" ("The Baptism of Jesus"), and the model judged parables by their characters. 11 were checked by hand (he stood in the high priest's house while Peter denied him; he was a baby when the Magi came). 45 episodes are "not there".
 
@@ -213,6 +213,8 @@ The placeholder is replaced by a Jesus trained for this project. Full notes, in 
 | phase A called `research_web`, phase B started before the result and said "the lookup is still running"; the forecast it found was never spoken | after a tool call in phase A, the tool's own follow-up reply is phase B | [voice.py](voice.py) |
 | replies with no words at all in a batch run | `rate_limit_exceeded`: the realtime model's 200k tokens per minute; failures are now logged with their reason, and a typed session moves on | [voice.py](voice.py) |
 | a RAGFlow read that took 16 s to time out: 16 s of silence after phase A | recall is capped at 4 s, then he goes on without a memory (p50 is 1.6 s, p90 2.0 s) | [voice.py](voice.py) |
+| in the first v3 demo (full model, voice) he told no memory in 3 turns, although each got one: the note said "tell at most one, or none; often none fits", and phase B went on advice in images ("set the load down like a sack by the door") | a close fit is asked for, a loose one only allowed ([Phase 8](#after-asking-for-close-fits-and-holding-loose-ones-to-the-text)) | [memory.py](memory.py), [voice.py](voice.py), [persona.py](persona.py) |
+| in the next take, the read of the friend's death took over 4 s (usually 1 to 1.8 s), the whole recall timed out, and the turn that most needed a memory got none | the read has its own 2.5 s deadline; past it, the words as said are searched | [memory.py](memory.py) |
 
 **How often should he remember?** ([evaluate_episodes.py](evaluate_episodes.py), [eval/episodes_samples.md](eval/episodes_samples.md)) The same 10 short conversations (grief, betrayal, family, exhaustion, anger, shame, loneliness, fear, small talk, information) at three settings, side by side for a person to judge, with an LLM judge's notes as a hint.
 
@@ -292,7 +294,7 @@ So cutting a section down to the few matching verses would not remove the errors
 
 When the episode fits the person closely, the full model tells it faithfully. When it only touches their situation, both models bend the story so that it comforts: that is where "someone took me in" came from. A short episode is more often a loose fit, with little in it to hold on to.
 
-**Two causes, then.** (1) The mini model retells unreliably whatever it is given; only a stronger model fixes that. (2) A loosely fitting memory is bent to fit; this affects the full model too, and is the next thing to work on (offer loose matches with a "tell it as it was, or not at all" note; see the roadmap).
+**Two causes, then.** (1) The mini model retells unreliably whatever it is given; only a stronger model fixes that. (2) A loosely fitting memory is bent to fit; this affects the full model too (see [the last section](#after-asking-for-close-fits-and-holding-loose-ones-to-the-text)).
 
 **What else was considered, and why not.**
 
@@ -318,6 +320,29 @@ Speech in and out costs about 3.2 times as much. The persona and the episodes ar
 **Decision.** `gpt-realtime-2.1` is the default (`OPENAI_REALTIME_MODEL`). `gpt-realtime-2.1-mini` still works with every other part unchanged, at about a third of the cost and with the drift above.
 
 **Limits of these numbers.** 10 to 16 memories per run and two runs per configuration; one judge model; typed sessions, not voice. They show a large, consistent difference between the models, not precise rates.
+
+### After: asking for close fits, and holding loose ones to the text
+
+The first demo of this version, in voice on the full model, told **no** memory in three turns, although each was given one (the garden at the Mount of Olives for "I'm exhausted", the unforgiving servant for a brother who keeps hurting them). The note had said "tell at most one, or none; often none fits", the persona "often none does", and phase B asked for one or two sentences, which went on advice in images. The same lines in typed sessions gave the same thing: at most a vague "I once told weary people there is rest".
+
+The numbers above suggested what to ask for. A close fit is told faithfully and a loose one is bent, so the note now depends on the fit of the first episode ([memory.py](memory.py), `JESUS_MEMORY_CLOSE`, 0.40):
+
+- **close** (0.40 and up): "The first speaks closely to what they just said: tell it now, in this reply, unless telling it would hurt them." Phase B is then that memory, begun at once with its names, and one short line back to them.
+- **loose** (0.30 to 0.39): "Tell one only if it truly fits and you can tell it exactly as it happened; never bend it to fit them. Otherwise tell none."
+
+Measured again the same way (same 10 conversations, two runs, the same judge; [full_c](eval/fidelity_runs/full_c_fidelity.md), [full_d](eval/fidelity_runs/full_d_fidelity.md)):
+
+| `gpt-realtime-2.1`, note | memories told (of 38 turns offered one) | with no error | claims | errors |
+|---|---|---|---|---|
+| allows one ("or none; often none fits"), runs A and B | 23 | 19 (83%) | 72 | 5 |
+| **asks for a close fit, holds a loose one to the text**, runs C and D | 25 | 23 (92%) | 94 | 2 |
+
+| fit | before: tellings with an error | after |
+|---|---|---|
+| close (0.40 and up) | 0 of 10 | 1 of 16 |
+| loose (0.30 to 0.39) | 4 of 13 | 1 of 9 |
+
+He now tells more of the close fits and fewer of the loose ones, with more detail (94 claims against 72) and fewer errors. Both errors left are small additions in the small-talk conversation: "we laughed together" at the Last Supper, and Levi's house "by the sea". The typed sessions already told memories fairly often; the change is clearest in voice, where the demo went from none of three to Lazarus, by name, in the right order. The counts are small (25 tellings), so the difference in errors is a direction, not a rate.
 
 ## Run it
 
@@ -345,8 +370,8 @@ python -m pytest
 
 ## Next
 
-- Offer loosely fitting episodes differently ("tell it as it was, or not at all"), the cause of drift left with the full model ([Phase 8](#phase-8-why-the-details-drifted-and-why-the-fix-is-a-bigger-model)).
-- Record a demo of the current version.
+- Replace the player at the top of this page with the current demo (GitHub's web editor: drop the mp4 in).
+- Shorter replies: they still run to four or five sentences once he tells a memory.
 - An end-to-end eval of persona v3, on labels written for episodes.
 - See [ROADMAP.md](ROADMAP.md) for the rest.
 
