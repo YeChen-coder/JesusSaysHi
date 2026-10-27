@@ -118,7 +118,9 @@ def session_settings(text_mode: bool = False, create_response: bool = True) -> d
     """create_response=False: server VAD only detects turns, and the app starts each reply
     itself (the memory persona does, after recalling a verse)."""
     settings: dict[str, Any] = {
-        "model_name": os.getenv("OPENAI_REALTIME_MODEL", "gpt-realtime-2.1-mini"),
+        # The full model, not mini: mini got the details of a remembered episode wrong in about 6 of 10
+        # tellings, the full model in about 1 of 6 (README Phase 8). It costs about 3 times as much.
+        "model_name": os.getenv("OPENAI_REALTIME_MODEL", "gpt-realtime-2.1"),
         "output_modalities": ["text"] if text_mode else ["audio"],
     }
     if text_mode:

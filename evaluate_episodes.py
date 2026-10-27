@@ -98,7 +98,8 @@ def judge(client: OpenAI, turn: dict) -> dict | None:
         return {"note": "judge output was not JSON"}
 
 
-def render(results: dict, conversations: list) -> str:
+def render(results: dict, conversations: list, settings: list | None = None) -> str:
+    settings = settings or list(SETTINGS)
     lines = ["# How often should he remember? Samples", "",
              f"{date.today().isoformat()} · the same {len(conversations)} conversations at three recall settings · "
              "`memory` = the moments offered to him (best reranked score) · `judge` = an LLM's notes, a hint, not the "
@@ -107,7 +108,7 @@ def render(results: dict, conversations: list) -> str:
               "offered. The other columns are the judge's.", "",
               "| setting | turns with a memory offered | told one | true to the text | fit good | forced or wrong | "
               "missed | invented with nothing offered |", "|---|---|---|---|---|---|---|---|"]
-    for setting in SETTINGS:
+    for setting in settings:
         turns = [t for conv in results[setting].values() for t in conv[1:]]
         judged = [t["judge"] for t in turns if t.get("judge")]
         told = [j for j in judged if j.get("told")]
@@ -123,7 +124,7 @@ def render(results: dict, conversations: list) -> str:
             if i == 0:
                 continue  # the greeting
             lines += [f"**Person:** {said}", ""]
-            for setting in SETTINGS:
+            for setting in settings:
                 turns = results[setting][name]
                 if i >= len(turns):
                     lines += [f"- *{setting}*: (session ended early)", ""]
@@ -148,7 +149,8 @@ def render(results: dict, conversations: list) -> str:
     return "\n".join(lines) + "\n"
 
 
-async def main_async(only: list[str] | None, parallel: int) -> None:
+async def main_async(only: list[str] | None, parallel: int, settings: list[str] | None = None,
+                     out=None) -> None:
     from jesus import open_index
 
     load_settings()
@@ -168,22 +170,30 @@ async def main_async(only: list[str] | None, parallel: int) -> None:
                 (t["offered"][0]["title"] if t["offered"] else "-") for t in turns[1:]), flush=True)
             return setting, name, turns
 
-    done = await asyncio.gather(*(one(s, n, l) for s in SETTINGS for n, l in chosen))
-    results = {s: {} for s in SETTINGS}
+    chosen_settings = [s for s in SETTINGS if not settings or s in settings]
+    done = await asyncio.gather(*(one(s, n, l) for s in chosen_settings for n, l in chosen))
+    results = {s: {} for s in chosen_settings}
     for setting, name, turns in done:
         results[setting][name] = turns
-    OUT.with_suffix(".md").write_text(render(results, chosen), encoding="utf-8")
-    OUT.with_suffix(".json").write_text(json.dumps(results, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"Wrote {OUT.with_suffix('.md')}")
+    target = out or OUT
+    target.with_suffix(".md").write_text(render(results, chosen, chosen_settings), encoding="utf-8")
+    target.with_suffix(".json").write_text(json.dumps(results, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"Wrote {target.with_suffix('.md')}")
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--only", help="comma-separated conversation names")
     parser.add_argument("--parallel", type=int, default=2, help="sessions at a time")
+    parser.add_argument("--settings", help=f"comma-separated, from: {', '.join(SETTINGS)}")
+    parser.add_argument("--out", help="output path without extension (default eval/episodes_samples)")
     args = parser.parse_args()
     logging.basicConfig(level=logging.WARNING, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
-    asyncio.run(main_async(args.only.split(",") if args.only else None, args.parallel))
+    from pathlib import Path
+
+    asyncio.run(main_async(args.only.split(",") if args.only else None, args.parallel,
+                           args.settings.split(",") if args.settings else None,
+                           Path(args.out) if args.out else None))
 
 
 if __name__ == "__main__":

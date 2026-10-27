@@ -10,15 +10,18 @@ A real-time Jesus you talk to out loud, with a voice and an avatar, a little lik
 
 **Demo:** [docs/demo/jesus-demo-20261022.mp4](docs/demo/jesus-demo-20261022.mp4) (2 min 22 s). The person is a TTS voice fed in as the microphone, and everything else is the normal live pipeline: transcription, memory recall, the two-phase reply, the faithfulness check, verse cards and the avatar, recorded by OBS. The timeline with every reply and its faithfulness report is [next to it](docs/demo/jesus-demo-20261022.timeline.json).
 
+> **This video shows an earlier version**: persona v2 (single sayings as memory, [Phase 5](#phase-5-persona-v2-a-person-first-scripture-as-memory)) on `gpt-realtime-2.1-mini`. A video of the current version (episodes as memory and the full realtime model, Phases 7 and 8) has not been recorded yet.
+
 ### At a glance
 
 | | |
 |---|---|
 | **Persona** | First a person, then a godfather who watches over you. The Gospels are his memory: up to two whole episodes of his life (any of 487 sections), retrieved for what you just said, told in his own words with their names and places, or not at all. [Phase 7](#phase-7-persona-v3-the-gospels-as-the-memory-of-his-own-life) |
 | **Three kinds of question** | Each turn is read once by a small model. Information (weather, news) is looked up and told plainly; questions that need a professional are left to one; conversation is remembered. The label is acted on in code, because the prompt rule alone did not hold. |
-| **Latency** | He starts speaking about 1 to 1.3 s after you stop. The memory is recalled while his first sentence plays (p50 1.6 s, p90 2.0 s, capped at 4 s). |
+| **Latency** | He starts speaking about 1 to 1.3 s after you stop (measured with the mini model; the full model starts about 0.2 s later). The memory is recalled while his first sentence plays (p50 1.6 s, p90 2.0 s, capped at 4 s). |
+| **Model** | `gpt-realtime-2.1`, not mini: about a fifth of the errors in a retold memory, for about 3 times the cost. Why there was no cheaper fix: [Phase 8](#phase-8-why-the-details-drifted-and-why-the-fix-is-a-bigger-model). |
 | **Retrieval** | 95% hit@3 and 98% hit@5 on 55 hand-labelled questions, at a p50 of 445 ms (RAGFlow 1.0: structure-aware chunks, hybrid search, Voyage rerank-2.5). Rewriting the query adds 8 points. [Ablation](eval/ragflow_results.md) |
-| **Faithfulness** | Every reply is checked: which offered episode he told, any scripture recited word for word from elsewhere in the four Gospels, and any "I remember..." with no episode behind it. How often to remember was chosen from judged samples ([eval/episodes_samples.md](eval/episodes_samples.md)); his details still drift, which is the open problem. The earlier quote-only persona had 85% clean replies over 3 runs ([reply eval](eval/replies_results.md)). |
+| **Faithfulness** | Every reply is checked: which offered episode he told, any scripture recited word for word from elsewhere in the four Gospels, and any "I remember..." with no episode behind it. With the mini realtime model the details of a told episode were wrong in 18 of 30 tellings; the full model brings that to 4 of 23, at about 3 times the cost, so it is the default ([Phase 8](#phase-8-why-the-details-drifted-and-why-the-fix-is-a-bigger-model)). The earlier quote-only persona had 85% clean replies over 3 runs ([reply eval](eval/replies_results.md)). |
 | **Recall threshold** | Decided in code on the reranked score (0.30): below it he remembers nothing this turn and speaks as himself. On the off-topic questions nothing was remembered in 30 of 30 runs. |
 | **Safety** | An optional crisis check outside the model (phrase patterns plus a classifier model; on by default, `JESUS_CRISIS_CHECK=false` turns it off). It catches 15/15 held-out crisis messages, including passive ideation, up from 8/15, with 0/15 false alarms. [Crisis eval](eval/crisis_results.md) |
 
@@ -222,10 +225,99 @@ The placeholder is replaced by a Jesus trained for this project. Full notes, in 
 On the 10 off-topic eval questions, 3 runs each, nothing was remembered in 30 of 30.
 
 **Known limits.**
-- **Details drift.** He mixes accounts ("the carpenter's son", Matthew's wording, inside Mark's telling) and adds small things ("bread and olives"; Martha becomes "a friend ... him"). The judge is not reliable on this yet.
+- **Details drift.** He mixes accounts ("the carpenter's son", Matthew's wording, inside Mark's telling) and adds small things ("bread and olives"; Martha becomes "a friend ... him"). Measured and largely fixed by the full realtime model: see [Phase 8](#phase-8-why-the-details-drifted-and-why-the-fix-is-a-bigger-model).
 - Replies run to four or five sentences, longer than the two or three the persona asks for.
 - Two whole episodes make each turn heavier in tokens than v2; at four sessions at a time the rate limit is reached.
 - The 55 eval questions were labelled for passages, not episodes. A proper end-to-end eval of v3 needs a new label set or a judged sample.
+
+## Phase 8: why the details drifted, and why the fix is a bigger model
+
+**The problem.** With episodes as memory, he told the right moment but often got its details wrong. Asked about a friend's death, he remembered Lazarus, and then said he was with Martha and Mary "on the day Lazarus was buried", in their house; the text says Lazarus had been in the tomb four days, and Jesus had not yet entered the village. Told someone was lonely in a new city, he took the episode where he has "no place to lay his head" and said someone took him in.
+
+**Measuring it** ([evaluate_fidelity.py](evaluate_fidelity.py)). Every memory he tells is split into concrete claims (who, where, what happened, who said what), and `gpt-6-sol` labels each against the episode he was given, its parallel accounts and the rest of the Gospels. A first version had a single "not in the text" label, and reading its output, most of those were not errors at all: the night and the cold at Gethsemane, "I loved Peter", or Peter weeping when he had only been given the prediction of the denial. So retelling and error are now separate labels:
+
+| label | meaning | counts as |
+|---|---|---|
+| supported | in the episode he was given | retelling |
+| elsewhere | not in that episode, but true elsewhere in the Gospels (his life, which he knows) | retelling |
+| feeling | what he felt, or the plain setting (night, cold, a quiet place) | retelling |
+| **wrong** | contradicts the Gospels: wrong order, person, speaker; a parable told as something he saw; two episodes blended; thoughts given to others | **error** |
+| **invented** | in none of the four Gospels ("I liked bread and olives") | **error** |
+
+**The errors, by kind** (mini model, 0.30 threshold):
+
+| kind | example |
+|---|---|
+| order and setting smoothed over | "with Martha and Mary on the day Lazarus was buried", for four days after, before he entered the village |
+| the story bent to fit the person | lonely in a new city: "someone took me in when I had no place to lay my head" (nobody does) |
+| a parable told as something seen | "I heard a man planning his barns" (the rich fool is a story he told) |
+| thoughts given to others | "Peter thought he could never come back" |
+| small inventions | "the five loaves were small", "I liked fruit" |
+
+**Where it comes from.** Four questions, each answered with the same 10 conversations ([evaluate_episodes.py](evaluate_episodes.py)) at the 0.30 threshold, typed sessions, all runs in [eval/fidelity_runs/](eval/fidelity_runs/) and the summary in [eval/fidelity_comparison.md](eval/fidelity_comparison.md).
+
+*1. Is it the prompt?* No. Three rules were added to the MEMORY note: parables are marked as stories he told (by their BSB titles, plus four that do not say so), keep the order of what happened, and do not say what others thought. The mini model did not improve:
+
+| model | note | memories told | with no error | errors |
+|---|---|---|---|---|
+| `gpt-realtime-2.1-mini` | before | 12 | 7 (58%) | 8 |
+| `gpt-realtime-2.1-mini` | with the three rules, run A | 16 | 7 (44%) | 19 |
+| `gpt-realtime-2.1-mini` | with the three rules, run B | 14 | 5 (36%) | 19 |
+
+*2. Is it the model?* Yes, mostly. The same note with the full model:
+
+| model | note | memories told | with no error | errors |
+|---|---|---|---|---|
+| `gpt-realtime-2.1` | with the three rules, run A | 10 | 9 (90%) | 1 |
+| `gpt-realtime-2.1` | with the three rules, run B | 13 | 10 (77%) | 4 |
+
+Over both runs: the mini model got something wrong in 18 of 30 tellings, the full model in 4 of 23, with about a fifth of the errors. The full model also says about half as much about the past (32 to 40 claims per run, against 78 to 79), and tells fewer memories it was not sure fitted.
+
+*3. Is it the length of the episode? Would cutting long ones help?* No. The obvious suspect was the long sections: the Lazarus one is 21 verses, and the model has to turn it into one or two spoken sentences. Grouped by length, the short episodes were the worst for both models, and the full model made no error at all on the long ones:
+
+| episode length | mini: tellings with an error | full: tellings with an error |
+|---|---|---|
+| short (2–6 verses, about 110 words) | 8 of 10 (80%) | 3 of 6 (50%) |
+| medium (7–12 verses, about 210 words) | 3 of 9 (33%) | 1 of 4 (25%) |
+| long (13+ verses, about 310 words) | 7 of 11 (64%) | 0 of 13 (0%) |
+
+So cutting a section down to the few matching verses would not remove the errors. It would take away the very context (who was there, what came first) that the full model uses to get them right. Short episodes go wrong for another reason, the next one.
+
+*4. Does it depend on how well the memory fits?* Yes, for the full model. Grouped by the reranked score of the episode he told:
+
+| fit (reranked score) | mini: tellings with an error | full: tellings with an error |
+|---|---|---|
+| close (0.40 and up) | 8 of 13 (62%) | 0 of 10 (0%) |
+| loose (0.30 to 0.39) | 10 of 17 (59%) | 4 of 12 (33%) |
+
+When the episode fits the person closely, the full model tells it faithfully. When it only touches their situation, both models bend the story so that it comforts: that is where "someone took me in" came from. A short episode is more often a loose fit, with little in it to hold on to.
+
+**Two causes, then.** (1) The mini model retells unreliably whatever it is given; only a stronger model fixes that. (2) A loosely fitting memory is bent to fit; this affects the full model too, and is the next thing to work on (offer loose matches with a "tell it as it was, or not at all" note; see the roadmap).
+
+**What else was considered, and why not.**
+
+| option | why not (or not yet) |
+|---|---|
+| more rules in the prompt or the note | tested above: no effect on the mini model |
+| give only the matching verses of a long episode | long episodes were not the problem; the full model was error-free on them |
+| one episode per turn instead of two | does not touch either cause, and some events span two sections (Lazarus is three) |
+| raise the threshold to 0.40 | the samples lost about half the moments where he should remember (exhaustion, anger, loneliness, shame) |
+| write a fact card for each episode offline | a precompiled version of each memory; the owner rejected canned material for this character |
+| draft phase B with a stronger text model and have the voice read it out | 1 to 2 s more before he speaks, and it sounds read |
+| **the full realtime model** | **chosen**: about a fifth of the errors, about 0.2 s slower to start, about 3 times the cost |
+
+**Cost and latency.** OpenAI's prices per million tokens, as of October 2026:
+
+| model | audio in / out | text in / out | cached in |
+|---|---|---|---|
+| `gpt-realtime-2.1` | $32 / $64 | $4.00 / $24.00 | $0.40 |
+| `gpt-realtime-2.1-mini` | $10 / $20 | $0.60 / $2.40 | $0.06 (text) |
+
+Speech in and out costs about 3.2 times as much. The persona and the episodes are text input, about 6.7 times as much; two whole episodes per turn make that share larger than in v2. In typed sessions the full model's first words came about 0.2 s later (p50 0.94 s against 0.73 s, p90 1.47 s against 1.22 s); phase B came at the same time (p50 3.4 s), since it waits on the recall either way.
+
+**Decision.** `gpt-realtime-2.1` is the default (`OPENAI_REALTIME_MODEL`). `gpt-realtime-2.1-mini` still works with every other part unchanged, at about a third of the cost and with the drift above.
+
+**Limits of these numbers.** 10 to 16 memories per run and two runs per configuration; one judge model; typed sessions, not voice. They show a large, consistent difference between the models, not precise rates.
 
 ## Run it
 
@@ -243,6 +335,7 @@ python evaluate_replies.py                  # end to end, 3 runs: eval/replies_r
 python evaluate_crisis.py                   # crisis check per layer: eval/crisis_results.md
 python build_episodes.py                    # was he there? one label per section: data/episodes/
 python evaluate_episodes.py                 # how often to remember: eval/episodes_samples.md (about 10 min)
+python evaluate_fidelity.py                 # each told memory, claim by claim: eval/fidelity_results.md
 python jesus.py --text                      # typed conversation, with a faithfulness line per reply
 python jesus.py                             # voice: default microphone and speaker
 docker compose --env-file config.local.env up -d --build --wait avatar   # then open http://127.0.0.1:19388/
@@ -252,7 +345,8 @@ python -m pytest
 
 ## Next
 
-- Find why the details of a told episode drift, and stop it ([ROADMAP.md](ROADMAP.md)).
+- Offer loosely fitting episodes differently ("tell it as it was, or not at all"), the cause of drift left with the full model ([Phase 8](#phase-8-why-the-details-drifted-and-why-the-fix-is-a-bigger-model)).
+- Record a demo of the current version.
 - An end-to-end eval of persona v3, on labels written for episodes.
 - See [ROADMAP.md](ROADMAP.md) for the rest.
 

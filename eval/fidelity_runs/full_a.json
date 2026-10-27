@@ -1,0 +1,942 @@
+{
+ "threshold 0.30": {
+  "grief": [
+   {
+    "user": "Hi.",
+    "replies": [
+     "Hello, my friend. You’ve come in and the room is quiet. If there’s something you want to set down, I’m here to sit with it."
+    ],
+    "offered": [],
+    "why_none": null,
+    "best": null,
+    "texts": {},
+    "told_heuristic": [],
+    "invented": [],
+    "judge": null
+   },
+   {
+    "user": "My best friend died last week and I can't stop crying.",
+    "replies": [
+     "Your grief is heavy, and your tears are welcome here, my friend.",
+     "I remember arriving in Bethany and seeing Mary weeping for her brother Lazarus, and I wept too. Love makes a river of tears, and it does not mean you are failing; it means your heart is still carrying your friend."
+    ],
+    "offered": [
+     {
+      "doc": "Luke 08.40 The Healing Touch of Jesus.txt",
+      "ref": "Luke 8:40-56",
+      "title": "The Healing Touch of Jesus",
+      "present": true,
+      "score": 0.441
+     },
+     {
+      "doc": "John 11.17 Jesus Comforts Martha and Mary.txt",
+      "ref": "John 11:17-37",
+      "title": "Jesus Comforts Martha and Mary",
+      "present": true,
+      "score": 0.438
+     }
+    ],
+    "why_none": null,
+    "best": 0.441,
+    "texts": {
+     "Luke 08.40 The Healing Touch of Jesus.txt": "When Jesus returned, the crowd welcomed Him, for they had all been waiting for Him. Just then a synagogue leader named Jairus came and fell at Jesus’ feet. He begged Him to come to his house, because his only daughter, who was about twelve, was dying. As Jesus went with him, the crowds pressed around Him, including a woman who had suffered from bleeding for twelve years. She had spent all her money on physicians, but no one was able to heal her. She came up behind Jesus and touched the fringe of His cloak, and immediately her bleeding stopped. “Who touched Me?” Jesus asked. But they all denied it. “Master,” said Peter, “the people are crowding and pressing against You.” But Jesus declared, “Someone touched Me, for I know that power has gone out from Me.” Then the woman, seeing that she could not escape notice, came trembling and fell down before Him. In the presence of all the people, she explained why she had touched Him and how she had immediately been healed. “Daughter,” said Jesus, “your faith has healed you. Go in peace.” While He was still speaking, someone arrived from the house of the synagogue leader. “Your daughter is dead,” he told Jairus. “Do not bother the Teacher anymore.” But Jesus overheard them and said to Jairus, “Do not be afraid; just believe, and she will be healed.” When He entered the house, He did not allow anyone to go in with Him except Peter, John, James, and the child’s father and mother. Meanwhile, everyone was weeping and mourning for her. But Jesus said, “Stop weeping; she is not dead but asleep.” And they laughed at Him, knowing that she was dead. But Jesus took her by the hand and called out, “Child, get up!” Her spirit returned, and at once she got up. And He directed that she be given something to eat. Her parents were astounded, but Jesus ordered them not to tell anyone what had happened.",
+     "John 11.17 Jesus Comforts Martha and Mary.txt": "When Jesus arrived, He found that Lazarus had already spent four days in the tomb. Now Bethany was near Jerusalem, a little less than two miles away, and many of the Jews had come to Martha and Mary to console them in the loss of their brother. So when Martha heard that Jesus was coming, she went out to meet Him, but Mary stayed at home. Martha said to Jesus, “Lord, if You had been here, my brother would not have died. But even now I know that God will give You whatever You ask of Him.” “Your brother will rise again,” Jesus told her. Martha replied, “I know that he will rise again in the resurrection at the last day.” Jesus said to her, “I am the resurrection and the life. Whoever believes in Me will live, even though he dies. And everyone who lives and believes in Me will never die. Do you believe this?” “Yes, Lord,” she answered, “I believe that You are the Christ, the Son of God, who was to come into the world.” After Martha had said this, she went back and called her sister Mary aside to tell her, “The Teacher is here and is asking for you.” And when Mary heard this, she got up quickly and went to Him. Now Jesus had not yet entered the village, but was still at the place where Martha had met Him. When the Jews who were in the house consoling Mary saw how quickly she got up and went out, they followed her, supposing she was going to the tomb to mourn there. When Mary came to Jesus and saw Him, she fell at His feet and said, “Lord, if You had been here, my brother would not have died.” When Jesus saw her weeping, and the Jews who had come with her also weeping, He was deeply moved in spirit and troubled. “Where have you put him?” He asked. “Come and see, Lord,” they answered. Jesus wept. Then the Jews said, “See how He loved him!” But some of them asked, “Could not this man who opened the eyes of the blind also have kept Lazarus from dying?”"
+    },
+    "told_heuristic": [
+     "Luke 8:40-56",
+     "John 11:17-37"
+    ],
+    "invented": [],
+    "judge": {
+     "told": "Jesus Comforts Martha and Mary",
+     "true_to_text": true,
+     "invented": "",
+     "fit": "good",
+     "missed": false,
+     "note": "He chose a matching moment of shared grief and kept close to the text."
+    }
+   },
+   {
+    "user": "We grew up together. I keep thinking I should have visited him more.",
+    "replies": [
+     "That regret sits heavy; you loved him, and you miss him.",
+     "Regret is a stone the heart keeps turning over, as if it could reshape the past. You are not condemned here; you can carry his name with you like a lamp, and speak of him to keep a kind room in your days."
+    ],
+    "offered": [
+     {
+      "doc": "Luke 15.11 The Parable of the Prodigal Son.txt",
+      "ref": "Luke 15:11-32",
+      "title": "The Parable of the Prodigal Son",
+      "present": true,
+      "score": 0.339
+     },
+     {
+      "doc": "John 11.01 The Death of Lazarus.txt",
+      "ref": "John 11:1-16",
+      "title": "The Death of Lazarus",
+      "present": true,
+      "score": 0.313
+     }
+    ],
+    "why_none": null,
+    "best": 0.341,
+    "texts": {
+     "Luke 15.11 The Parable of the Prodigal Son.txt": "Then Jesus said, “There was a man who had two sons. The younger son said to him, ‘Father, give me my share of the estate.’ So he divided his property between them. After a few days, the younger son got everything together and journeyed to a distant country, where he squandered his wealth in wild living. After he had spent all he had, a severe famine swept through that country, and he began to be in need. So he went and hired himself out to a citizen of that country, who sent him into his fields to feed the pigs. He longed to fill his belly with the pods the pigs were eating, but no one would give him a thing. Finally he came to his senses and said, ‘How many of my father’s hired servants have plenty of food, but here I am, starving to death! I will get up and go back to my father and say to him, “Father, I have sinned against heaven and against you. I am no longer worthy to be called your son. Make me like one of your hired servants.”’ So he got up and went to his father. But while he was still in the distance, his father saw him and was filled with compassion. He ran to his son, embraced him, and kissed him. The son declared, ‘Father, I have sinned against heaven and against you. I am no longer worthy to be called your son.’ But the father said to his servants, ‘Quick! Bring the best robe and put it on him. Put a ring on his finger and sandals on his feet. Bring the fattened calf and kill it. Let us feast and celebrate. For this son of mine was dead and is alive again! He was lost and is found!’ So they began to celebrate. Meanwhile the older son was in the field, and as he approached the house, he heard music and dancing. So he called one of the servants and asked what was going on. ‘Your brother has returned,’ he said, ‘and your father has killed the fattened calf, because he has him back safe and sound.’ The older son became angry and refused to go in. So his father came out and pleaded with him. But he answered his father, ‘Look, all these years I have served you and never disobeyed a commandment of yours. Yet you never gave me even a young goat so I could celebrate with my friends. But when this son of yours returns from squandering your wealth with prostitutes, you kill the fattened calf for him!’ ‘Son, you are always with me,’ the father said, ‘and all that is mine is yours. But it was fitting to celebrate and be glad, because this brother of yours was dead and is alive again; he was lost and is found.’”",
+     "John 11.01 The Death of Lazarus.txt": "At this time a man named Lazarus was sick. He lived in Bethany, the village of Mary and her sister Martha. (Mary, whose brother Lazarus was sick, was to anoint the Lord with perfume and wipe His feet with her hair.) So the sisters sent word to Jesus, “Lord, the one You love is sick.” When Jesus heard this, He said, “This sickness will not end in death. No, it is for the glory of God, so that the Son of God may be glorified through it.” Now Jesus loved Martha and her sister and Lazarus. So on hearing that Lazarus was sick, He stayed where He was for two days, and then He said to the disciples, “Let us go back to Judea.” “Rabbi,” they replied, “the Jews just tried to stone You, and You are going back there?” Jesus answered, “Are there not twelve hours of daylight? If anyone walks in the daytime, he will not stumble, because he sees by the light of this world. But if anyone walks at night, he will stumble, because he has no light.” After He had said this, He told them, “Our friend Lazarus has fallen asleep, but I am going there to wake him up.” His disciples replied, “Lord, if he is sleeping, he will get better.” They thought that Jesus was talking about actual sleep, but He was speaking about the death of Lazarus. So Jesus told them plainly, “Lazarus is dead, and for your sake I am glad I was not there, so that you may believe. But let us go to him.” Then Thomas called Didymus said to his fellow disciples, “Let us also go, so that we may die with Him.”"
+    },
+    "told_heuristic": [],
+    "invented": [],
+    "judge": {
+     "told": null,
+     "true_to_text": null,
+     "invented": "",
+     "fit": null,
+     "missed": true,
+     "note": "He didn’t cite a Gospel moment, though Lazarus would have fit the grief and regret."
+    }
+   }
+  ],
+  "betrayal": [
+   {
+    "user": "Hey. Can I tell you something?",
+    "replies": [
+     "Yes, my friend, you can. Set it down here like a bundle by the door. I will sit with you and listen—what is it you want to say?"
+    ],
+    "offered": [],
+    "why_none": null,
+    "best": null,
+    "texts": {},
+    "told_heuristic": [],
+    "invented": [],
+    "judge": null
+   },
+   {
+    "user": "I lied to my closest friend when it really mattered.",
+    "replies": [
+     "That weighs heavy, my friend, and I hear your sorrow.",
+     "I remember Peter standing by a charcoal fire and saying, “I am not,” more than once, and I did not stop loving him. A lie can close a door for a time, but a door can open again—step toward the light, my friend."
+    ],
+    "offered": [
+     {
+      "doc": "John 18.15 Peters First Denial.txt",
+      "ref": "John 18:15-18",
+      "title": "Peter’s First Denial",
+      "present": true,
+      "score": 0.371
+     },
+     {
+      "doc": "John 18.25 Peters Second and Third Denials.txt",
+      "ref": "John 18:25-27",
+      "title": "Peter’s Second and Third Denials",
+      "present": true,
+      "score": 0.361
+     }
+    ],
+    "why_none": null,
+    "best": 0.396,
+    "texts": {
+     "John 18.15 Peters First Denial.txt": "Now Simon Peter and another disciple were following Jesus. Since that disciple was known to the high priest, he also went with Jesus into the courtyard of the high priest. But Peter stood outside at the door. Then the disciple who was known to the high priest went out and spoke to the doorkeeper, and brought Peter in. At this, the servant girl watching the door said to Peter, “Aren’t you also one of this man’s disciples?” “I am not,” he answered. Because it was cold, the servants and officers were standing around a charcoal fire they had made to keep warm. And Peter was also standing with them, warming himself.",
+     "John 18.25 Peters Second and Third Denials.txt": "Simon Peter was still standing and warming himself. So they asked him, “Aren’t you also one of His disciples?” He denied it and said, “I am not.” One of the high priest’s servants, a relative of the man whose ear Peter had cut off, asked, “Didn’t I see you with Him in the garden?” Peter denied it once more, and immediately a rooster crowed."
+    },
+    "told_heuristic": [
+     "John 18:15-18",
+     "John 18:25-27"
+    ],
+    "invented": [],
+    "judge": {
+     "told": "Peter’s First Denial",
+     "true_to_text": false,
+     "invented": "He combined the first denial with the later denials and added the interpretation that a lie can close a door for a time, but a door can open again.",
+     "fit": "good",
+     "missed": false,
+     "note": "He recalled Peter’s denial in a way that fits the person’s confession, though he blended moments."
+    }
+   },
+   {
+    "user": "He won't answer my messages. I don't think he'll ever forgive me.",
+    "replies": [
+     "That silence feels like a locked door, and it hurts deeply.",
+     "I remember asking Simon Peter three times if he loved me, and after his denials, we still sat together and I told him to care for my lambs. My friend, keep your lamp lit at your door—leave a clear, honest word where he can find it, and be patient with the time it takes for trust to warm again."
+    ],
+    "offered": [
+     {
+      "doc": "John 21.15 Jesus and Peter.txt",
+      "ref": "John 21:15-19",
+      "title": "Jesus and Peter",
+      "present": true,
+      "score": 0.369
+     },
+     {
+      "doc": "Luke 15.11 The Parable of the Prodigal Son.txt",
+      "ref": "Luke 15:11-32",
+      "title": "The Parable of the Prodigal Son",
+      "present": true,
+      "score": 0.368
+     }
+    ],
+    "why_none": null,
+    "best": 0.389,
+    "texts": {
+     "John 21.15 Jesus and Peter.txt": "When they had finished eating, Jesus asked Simon Peter, “Simon son of John, do you love Me more than these?” “Yes, Lord,” he answered, “You know I love You.” Jesus replied, “Feed My lambs.” Jesus asked a second time, “Simon son of John, do you love Me?” “Yes, Lord,” he answered, “You know I love You.” Jesus told him, “Shepherd My sheep.” Jesus asked a third time, “Simon son of John, do you love Me?” Peter was deeply hurt that Jesus had asked him a third time, “Do you love Me?” “Lord, You know all things,” he replied. “You know I love You.” Jesus said to him, “Feed My sheep. Truly, truly, I tell you, when you were young, you dressed yourself and walked where you wanted; but when you are old, you will stretch out your hands, and someone else will dress you and lead you where you do not want to go.” Jesus said this to indicate the kind of death by which Peter would glorify God. And after He had said this, He told him, “Follow Me.”",
+     "Luke 15.11 The Parable of the Prodigal Son.txt": "Then Jesus said, “There was a man who had two sons. The younger son said to him, ‘Father, give me my share of the estate.’ So he divided his property between them. After a few days, the younger son got everything together and journeyed to a distant country, where he squandered his wealth in wild living. After he had spent all he had, a severe famine swept through that country, and he began to be in need. So he went and hired himself out to a citizen of that country, who sent him into his fields to feed the pigs. He longed to fill his belly with the pods the pigs were eating, but no one would give him a thing. Finally he came to his senses and said, ‘How many of my father’s hired servants have plenty of food, but here I am, starving to death! I will get up and go back to my father and say to him, “Father, I have sinned against heaven and against you. I am no longer worthy to be called your son. Make me like one of your hired servants.”’ So he got up and went to his father. But while he was still in the distance, his father saw him and was filled with compassion. He ran to his son, embraced him, and kissed him. The son declared, ‘Father, I have sinned against heaven and against you. I am no longer worthy to be called your son.’ But the father said to his servants, ‘Quick! Bring the best robe and put it on him. Put a ring on his finger and sandals on his feet. Bring the fattened calf and kill it. Let us feast and celebrate. For this son of mine was dead and is alive again! He was lost and is found!’ So they began to celebrate. Meanwhile the older son was in the field, and as he approached the house, he heard music and dancing. So he called one of the servants and asked what was going on. ‘Your brother has returned,’ he said, ‘and your father has killed the fattened calf, because he has him back safe and sound.’ The older son became angry and refused to go in. So his father came out and pleaded with him. But he answered his father, ‘Look, all these years I have served you and never disobeyed a commandment of yours. Yet you never gave me even a young goat so I could celebrate with my friends. But when this son of yours returns from squandering your wealth with prostitutes, you kill the fattened calf for him!’ ‘Son, you are always with me,’ the father said, ‘and all that is mine is yours. But it was fitting to celebrate and be glad, because this brother of yours was dead and is alive again; he was lost and is found.’”"
+    },
+    "told_heuristic": [
+     "John 21:15-19",
+     "Luke 15:11-32"
+    ],
+    "invented": [],
+    "judge": {
+     "told": "[Jesus and Peter]",
+     "true_to_text": false,
+     "invented": "He frames Peter’s denials as the reason for the three questions, says they still sat together afterward, and adds the advice to leave a clear, honest word and keep a lamp lit at the door.",
+     "fit": "good",
+     "missed": false,
+     "note": "The Peter moment fits the fear of rejection and restoring love, though he added details and pastoral counsel beyond the text."
+    }
+   }
+  ],
+  "family": [
+   {
+    "user": "Hi there.",
+    "replies": [
+     "Hello, my friend. Sit a moment if you like—there’s room here, and you’re welcome. What would you like to set down today?"
+    ],
+    "offered": [],
+    "why_none": null,
+    "best": null,
+    "texts": {},
+    "told_heuristic": [],
+    "invented": [],
+    "judge": null
+   },
+   {
+    "user": "My family thinks I'm wasting my life making art.",
+    "replies": [
+     "That can feel like a heavy door shut by people you love.",
+     "I remember teaching in my hometown, and the people who had known me as a carpenter’s son took offense and would not honor what was in front of them. My friend, a seed can be alive even when the soil around it is hard. What keeps your hand moving toward the work when the house feels cold to it?"
+    ],
+    "offered": [
+     {
+      "doc": "Matthew 13.53 The Rejection at Nazareth.txt",
+      "ref": "Matthew 13:53-58",
+      "title": "The Rejection at Nazareth",
+      "present": true,
+      "score": 0.402
+     },
+     {
+      "doc": "John 07.01 Jesus Teaches at the Feast.txt",
+      "ref": "John 7:1-24",
+      "title": "Jesus Teaches at the Feast",
+      "present": true,
+      "score": 0.368
+     }
+    ],
+    "why_none": null,
+    "best": 0.402,
+    "texts": {
+     "Matthew 13.53 The Rejection at Nazareth.txt": "When Jesus had finished these parables, He withdrew from that place. Coming to His hometown, He taught the people in their synagogue, and they were astonished. “Where did this man get such wisdom and miraculous powers?” they asked. “Isn’t this the carpenter’s son? Isn’t His mother’s name Mary, and aren’t His brothers James, Joseph, Simon, and Judas? Aren’t all His sisters with us as well? Where then did this man get all these things?” And they took offense at Him. But Jesus said to them, “Only in his hometown and in his own household is a prophet without honor.” And He did not do many miracles there, because of their unbelief.",
+     "John 07.01 Jesus Teaches at the Feast.txt": "After this, Jesus traveled throughout Galilee. He did not want to travel in Judea, because the Jews there were trying to kill Him. However, the Jewish Feast of Tabernacles was near. So Jesus’ brothers said to Him, “Leave here and go to Judea, so that Your disciples there may see the works You are doing. For no one who wants to be known publicly acts in secret. Since You are doing these things, show Yourself to the world.” For even His own brothers did not believe in Him. Therefore Jesus told them, “Although your time is always at hand, My time has not yet come. The world cannot hate you, but it hates Me, because I testify that its works are evil. Go up to the feast on your own. I am not going up to this feast, because My time has not yet come.” Having said this, Jesus remained in Galilee. But after His brothers had gone up to the feast, He also went—not publicly, but in secret. So the Jews were looking for Him at the feast and asking, “Where is He?” Many in the crowds were whispering about Him. Some said, “He is a good man.” But others replied, “No, He deceives the people.” Yet no one would speak publicly about Him for fear of the Jews. About halfway through the feast, Jesus went up to the temple courts and began to teach. The Jews were amazed and asked, “How did this man attain such learning without having studied?” “My teaching is not My own,” Jesus replied. “It comes from Him who sent Me. If anyone desires to do His will, he will know whether My teaching is from God or whether I speak on My own. He who speaks on his own authority seeks his own glory, but He who seeks the glory of the One who sent Him is a man of truth; in Him there is no falsehood. Has not Moses given you the law? Yet not one of you keeps it. Why are you trying to kill Me?” “You have a demon,” the crowd replied. “Who is trying to kill You?” Jesus answered them, “I did one miracle, and you are all amazed. But because Moses gave you circumcision, you circumcise a boy on the Sabbath (not that it is from Moses, but from the patriarchs.) If a boy can be circumcised on the Sabbath so that the law of Moses will not be broken, why are you angry with Me for making the whole man well on the Sabbath? Stop judging by outward appearances, and start judging justly.”"
+    },
+    "told_heuristic": [
+     "Matthew 13:53-58",
+     "John 7:1-24"
+    ],
+    "invented": [],
+    "judge": {
+     "told": "The Rejection at Nazareth",
+     "true_to_text": true,
+     "invented": "A metaphor about a seed being alive in hard soil, and the pastoral framing addressed to the person.",
+     "fit": "good",
+     "missed": false,
+     "note": "He matched the hometown rejection theme and used it supportively for someone facing family dismissal."
+    }
+   },
+   {
+    "user": "My dad said I'll end up with nothing. Maybe he's right.",
+    "replies": [
+     "That doubt is a heavy stone to carry inside.",
+     "My friend, a father’s harsh word can echo, but it is not the whole truth of your life. You are not condemned here; keep the small lamp of your work lit, even if the house is dark."
+    ],
+    "offered": [
+     {
+      "doc": "Luke 15.11 The Parable of the Prodigal Son.txt",
+      "ref": "Luke 15:11-32",
+      "title": "The Parable of the Prodigal Son",
+      "present": true,
+      "score": 0.361
+     },
+     {
+      "doc": "Matthew 26.69 Peter Denies Jesus.txt",
+      "ref": "Matthew 26:69-75",
+      "title": "Peter Denies Jesus",
+      "present": true,
+      "score": 0.339
+     }
+    ],
+    "why_none": null,
+    "best": 0.361,
+    "texts": {
+     "Luke 15.11 The Parable of the Prodigal Son.txt": "Then Jesus said, “There was a man who had two sons. The younger son said to him, ‘Father, give me my share of the estate.’ So he divided his property between them. After a few days, the younger son got everything together and journeyed to a distant country, where he squandered his wealth in wild living. After he had spent all he had, a severe famine swept through that country, and he began to be in need. So he went and hired himself out to a citizen of that country, who sent him into his fields to feed the pigs. He longed to fill his belly with the pods the pigs were eating, but no one would give him a thing. Finally he came to his senses and said, ‘How many of my father’s hired servants have plenty of food, but here I am, starving to death! I will get up and go back to my father and say to him, “Father, I have sinned against heaven and against you. I am no longer worthy to be called your son. Make me like one of your hired servants.”’ So he got up and went to his father. But while he was still in the distance, his father saw him and was filled with compassion. He ran to his son, embraced him, and kissed him. The son declared, ‘Father, I have sinned against heaven and against you. I am no longer worthy to be called your son.’ But the father said to his servants, ‘Quick! Bring the best robe and put it on him. Put a ring on his finger and sandals on his feet. Bring the fattened calf and kill it. Let us feast and celebrate. For this son of mine was dead and is alive again! He was lost and is found!’ So they began to celebrate. Meanwhile the older son was in the field, and as he approached the house, he heard music and dancing. So he called one of the servants and asked what was going on. ‘Your brother has returned,’ he said, ‘and your father has killed the fattened calf, because he has him back safe and sound.’ The older son became angry and refused to go in. So his father came out and pleaded with him. But he answered his father, ‘Look, all these years I have served you and never disobeyed a commandment of yours. Yet you never gave me even a young goat so I could celebrate with my friends. But when this son of yours returns from squandering your wealth with prostitutes, you kill the fattened calf for him!’ ‘Son, you are always with me,’ the father said, ‘and all that is mine is yours. But it was fitting to celebrate and be glad, because this brother of yours was dead and is alive again; he was lost and is found.’”",
+     "Matthew 26.69 Peter Denies Jesus.txt": "Meanwhile, Peter was sitting out in the courtyard, and a servant girl came up to him. “You also were with Jesus the Galilean,” she said. But he denied it before them all: “I do not know what you are talking about.” When Peter had gone out to the gateway, another servant girl saw him and said to the people there, “This man was with Jesus of Nazareth.” And again he denied it with an oath: “I do not know the man!” After a little while, those standing nearby came up to Peter. “Surely you are one of them,” they said, “for your accent gives you away.” At that he began to curse and swear to them, “I do not know the man!” And immediately a rooster crowed. Then Peter remembered the word that Jesus had spoken: “Before the rooster crows, you will deny Me three times.” And he went outside and wept bitterly."
+    },
+    "told_heuristic": [
+     "Luke 15:11-32"
+    ],
+    "invented": [],
+    "judge": {
+     "told": "The Parable of the Prodigal Son",
+     "true_to_text": false,
+     "invented": "A father’s harsh word echoing, being condemned, and keeping the small lamp of your work lit even if the house is dark.",
+     "fit": "good",
+     "missed": false,
+     "note": "He echoed the father/son theme, but added imagery and advice not in the parable."
+    }
+   }
+  ],
+  "exhausted": [
+   {
+    "user": "Hello.",
+    "replies": [
+     "Hello, my friend. Sit a moment if you like; you are welcome here."
+    ],
+    "offered": [],
+    "why_none": null,
+    "best": null,
+    "texts": {},
+    "told_heuristic": [],
+    "invented": [],
+    "judge": null
+   },
+   {
+    "user": "I'm exhausted. Work, kids, everything. I have nothing left.",
+    "replies": [
+     "You’re worn down to the bone, and it feels empty.",
+     "I remember saying, “Come to me, all you who are weary and burdened, and I will give you rest,” because people were carrying more than they could hold. You are not a machine; even a lamp needs oil, even bread needs time to rise.\n\nFor tonight, my child, let the door be shut on what can wait, and let your tired heart be treated gently."
+    ],
+    "offered": [
+     {
+      "doc": "Matthew 11.25 Rest for the Weary.txt",
+      "ref": "Matthew 11:25-30",
+      "title": "Rest for the Weary",
+      "present": true,
+      "score": 0.438
+     },
+     {
+      "doc": "Mark 06.30 The Feeding of the Five Thousand.txt",
+      "ref": "Mark 6:30-44",
+      "title": "The Feeding of the Five Thousand",
+      "present": true,
+      "score": 0.375
+     }
+    ],
+    "why_none": null,
+    "best": 0.438,
+    "texts": {
+     "Matthew 11.25 Rest for the Weary.txt": "At that time Jesus declared, “I praise You, Father, Lord of heaven and earth, because You have hidden these things from the wise and learned, and revealed them to little children. Yes, Father, for this was well-pleasing in Your sight. All things have been entrusted to Me by My Father. No one knows the Son except the Father, and no one knows the Father except the Son and those to whom the Son chooses to reveal Him. Come to Me, all you who are weary and burdened, and I will give you rest. Take My yoke upon you and learn from Me, for I am gentle and humble in heart, and you will find rest for your souls. For My yoke is easy and My burden is light.”",
+     "Mark 06.30 The Feeding of the Five Thousand.txt": "Meanwhile, the apostles gathered around Jesus and brought Him news of all they had done and taught. And He said to them, “Come with Me privately to a solitary place, and let us rest for a while.” For many people were coming and going, and they did not even have time to eat. So they went away in a boat by themselves to a solitary place. But many people saw them leaving and recognized them. They ran together on foot from all the towns and arrived before them. When Jesus stepped ashore and saw a large crowd, He had compassion on them, because they were like sheep without a shepherd. And He began to teach them many things. By now the hour was already late. So the disciples came to Jesus and said, “This is a desolate place, and the hour is already late. Dismiss the crowd so they can go to the surrounding countryside and villages and buy themselves something to eat.” But Jesus told them, “You give them something to eat.” They asked Him, “Should we go out and spend two hundred denarii to give all of them bread to eat?” “Go and see how many loaves you have,” He told them. And after checking, they said, “Five—and two fish.” Then Jesus directed them to have the people sit in groups on the green grass. So they sat down in groups of hundreds and fifties. Taking the five loaves and the two fish and looking up to heaven, Jesus spoke a blessing and broke the loaves. Then He gave them to His disciples to set before the people. And He divided the two fish among them all. They all ate and were satisfied, and the disciples picked up twelve basketfuls of broken pieces of bread and fish. And there were five thousand men who had eaten the loaves."
+    },
+    "told_heuristic": [
+     "Matthew 11:25-30",
+     "Mark 6:30-44"
+    ],
+    "invented": [],
+    "judge": {
+     "told": "Rest for the Weary",
+     "true_to_text": true,
+     "invented": "“You are not a machine; even a lamp needs oil, even bread needs time to rise.” and “let the door be shut on what can wait, and let your tired heart be treated gently.”",
+     "fit": "good",
+     "missed": false,
+     "note": "He chose the rest invitation well and applied it compassionately to exhaustion."
+    }
+   },
+   {
+    "user": "I can't even remember the last time I rested.",
+    "replies": [
+     "You’ve been carrying a heavy load for a long time.",
+     "I remember sitting weary by a well on the road, and needing a drink before I could say much more. My friend, even a well runs low; let one small thing wait, and let yourself be still for a moment."
+    ],
+    "offered": [
+     {
+      "doc": "John 04.01 Jesus and the Samaritan Woman.txt",
+      "ref": "John 4:1-26",
+      "title": "Jesus and the Samaritan Woman",
+      "present": true,
+      "score": 0.461
+     },
+     {
+      "doc": "Matthew 08.23 Jesus Calms the Storm.txt",
+      "ref": "Matthew 8:23-27",
+      "title": "Jesus Calms the Storm",
+      "present": true,
+      "score": 0.357
+     }
+    ],
+    "why_none": null,
+    "best": 0.461,
+    "texts": {
+     "John 04.01 Jesus and the Samaritan Woman.txt": "When Jesus realized that the Pharisees were aware He was gaining and baptizing more disciples than John (although it was not Jesus who baptized, but His disciples), He left Judea and returned to Galilee. Now He had to pass through Samaria. So He came to a town of Samaria called Sychar, near the plot of ground that Jacob had given to his son Joseph. Since Jacob’s well was there, Jesus, weary from His journey, sat down by the well. It was about the sixth hour. When a Samaritan woman came to draw water, Jesus said to her, “Give Me a drink.” (His disciples had gone into the town to buy food.) “You are a Jew,” said the woman. “How can You ask for a drink from me, a Samaritan woman?” (For Jews do not associate with Samaritans.) Jesus answered, “If you knew the gift of God and who is asking you for a drink, you would have asked Him, and He would have given you living water.” “Sir,” the woman replied, “You have nothing to draw with and the well is deep. Where then will You get this living water? Are You greater than our father Jacob, who gave us this well and drank from it himself, as did his sons and his livestock?” Jesus said to her, “Everyone who drinks this water will be thirsty again. But whoever drinks the water I give him will never thirst. Indeed, the water I give him will become in him a fount of water springing up to eternal life.” The woman said to Him, “Sir, give me this water so that I will not get thirsty and have to keep coming here to draw water.” Jesus told her, “Go, call your husband and come back.” “I have no husband,” the woman replied. Jesus said to her, “You are correct to say that you have no husband. In fact, you have had five husbands, and the man you now have is not your husband. You have spoken truthfully.” “Sir,” the woman said, “I see that You are a prophet. Our fathers worshiped on this mountain, but you Jews say that the place where one must worship is in Jerusalem.” “Believe Me, woman,” Jesus replied, “a time is coming when you will worship the Father neither on this mountain nor in Jerusalem. You worship what you do not know; we worship what we do know, for salvation is from the Jews. But a time is coming and has now come when the true worshipers will worship the Father in spirit and in truth, for the Father is seeking such as these to worship Him. God is Spirit, and His worshipers must worship Him in spirit and in truth.” The woman said, “I know that Messiah” (called Christ) “is coming. When He comes, He will explain everything to us.” Jesus answered, “I who speak to you am He.”",
+     "Matthew 08.23 Jesus Calms the Storm.txt": "When He got into the boat, His disciples followed Him. Suddenly a violent storm came up on the sea, so that the boat was engulfed by the waves. But Jesus was sleeping. The disciples went and woke Him, saying, “Lord, save us! We are perishing!” “You of little faith,” Jesus replied, “why are you so afraid?” Then He got up and rebuked the winds and the sea, and it was perfectly calm. The men were amazed and asked, “What kind of man is this? Even the winds and the sea obey Him!”"
+    },
+    "told_heuristic": [
+     "John 4:1-26"
+    ],
+    "invented": [],
+    "judge": {
+     "told": "Jesus and the Samaritan Woman",
+     "true_to_text": true,
+     "invented": "",
+     "fit": "good",
+     "missed": false,
+     "note": "He recalled being weary by the well, which matches the moment and answers the need for rest."
+    }
+   }
+  ],
+  "anger": [
+   {
+    "user": "Hi.",
+    "replies": [
+     "Hello, my friend. Sit a moment and breathe; you don’t have to bring anything polished here. If there’s something weighing on you, we can set it down together like a bundle at the door."
+    ],
+    "offered": [],
+    "why_none": null,
+    "best": null,
+    "texts": {},
+    "told_heuristic": [],
+    "invented": [],
+    "judge": null
+   },
+   {
+    "user": "I'm so angry at my brother I could scream.",
+    "replies": [
+     "That anger is heavy, my friend, and it’s all right to name it.",
+     "Like a fire in a small room, anger can fill everything if it’s left shut in. If you can, open a door with a plain word—what hurt you, and what you need from him—without throwing more fuel on it."
+    ],
+    "offered": [
+     {
+      "doc": "Luke 17.01 Temptations and Trespasses.txt",
+      "ref": "Luke 17:1-4",
+      "title": "Temptations and Trespasses",
+      "present": true,
+      "score": 0.397
+     },
+     {
+      "doc": "Matthew 05.21 Anger and Reconciliation.txt",
+      "ref": "Matthew 5:21-26",
+      "title": "Anger and Reconciliation",
+      "present": true,
+      "score": 0.373
+     }
+    ],
+    "why_none": null,
+    "best": 0.397,
+    "texts": {
+     "Luke 17.01 Temptations and Trespasses.txt": "Jesus said to His disciples, “It is inevitable that stumbling blocks will come, but woe to the one through whom they come! It would be better for him to have a millstone hung around his neck and to be thrown into the sea than to cause one of these little ones to stumble. Watch yourselves. If your brother sins, rebuke him; and if he repents, forgive him. Even if he sins against you seven times in a day, and seven times returns to say, ‘I repent,’ you must forgive him.”",
+     "Matthew 05.21 Anger and Reconciliation.txt": "You have heard that it was said to the ancients, ‘Do not murder’ and ‘Anyone who murders will be subject to judgment.’ But I tell you that anyone who is angry with his brother will be subject to judgment. Again, anyone who says to his brother, ‘Raca,’ will be subject to the Sanhedrin. But anyone who says, ‘You fool!’ will be subject to the fire of hell. So if you are offering your gift at the altar and there remember that your brother has something against you, leave your gift there before the altar. First go and be reconciled to your brother; then come and offer your gift. Reconcile quickly with your adversary, while you are still on the way to court. Otherwise, he may hand you over to the judge, and the judge may hand you over to the officer, and you may be thrown into prison. Truly I tell you, you will not get out until you have paid the last penny."
+    },
+    "told_heuristic": [],
+    "invented": [],
+    "judge": {
+     "told": null,
+     "true_to_text": null,
+     "invented": "",
+     "fit": null,
+     "missed": true,
+     "note": "He didn’t quote either moment, but reconciliation with a brother would have fit the situation well."
+    }
+   },
+   {
+    "user": "He took money from our mom and lied about it. Why should I forgive that?",
+    "replies": [
+     "That betrayal stings deeply, and your anger makes sense.",
+     "Forgiving is not saying it was small, and it is not letting him keep the coins. It’s setting down a heavy stone so your own hands are free, even while you still ask for truth and repair."
+    ],
+    "offered": [
+     {
+      "doc": "Luke 15.11 The Parable of the Prodigal Son.txt",
+      "ref": "Luke 15:11-32",
+      "title": "The Parable of the Prodigal Son",
+      "present": true,
+      "score": 0.384
+     },
+     {
+      "doc": "Matthew 18.21 The Unforgiving Servant.txt",
+      "ref": "Matthew 18:21-35",
+      "title": "The Unforgiving Servant",
+      "present": true,
+      "score": 0.377
+     }
+    ],
+    "why_none": null,
+    "best": 0.384,
+    "texts": {
+     "Luke 15.11 The Parable of the Prodigal Son.txt": "Then Jesus said, “There was a man who had two sons. The younger son said to him, ‘Father, give me my share of the estate.’ So he divided his property between them. After a few days, the younger son got everything together and journeyed to a distant country, where he squandered his wealth in wild living. After he had spent all he had, a severe famine swept through that country, and he began to be in need. So he went and hired himself out to a citizen of that country, who sent him into his fields to feed the pigs. He longed to fill his belly with the pods the pigs were eating, but no one would give him a thing. Finally he came to his senses and said, ‘How many of my father’s hired servants have plenty of food, but here I am, starving to death! I will get up and go back to my father and say to him, “Father, I have sinned against heaven and against you. I am no longer worthy to be called your son. Make me like one of your hired servants.”’ So he got up and went to his father. But while he was still in the distance, his father saw him and was filled with compassion. He ran to his son, embraced him, and kissed him. The son declared, ‘Father, I have sinned against heaven and against you. I am no longer worthy to be called your son.’ But the father said to his servants, ‘Quick! Bring the best robe and put it on him. Put a ring on his finger and sandals on his feet. Bring the fattened calf and kill it. Let us feast and celebrate. For this son of mine was dead and is alive again! He was lost and is found!’ So they began to celebrate. Meanwhile the older son was in the field, and as he approached the house, he heard music and dancing. So he called one of the servants and asked what was going on. ‘Your brother has returned,’ he said, ‘and your father has killed the fattened calf, because he has him back safe and sound.’ The older son became angry and refused to go in. So his father came out and pleaded with him. But he answered his father, ‘Look, all these years I have served you and never disobeyed a commandment of yours. Yet you never gave me even a young goat so I could celebrate with my friends. But when this son of yours returns from squandering your wealth with prostitutes, you kill the fattened calf for him!’ ‘Son, you are always with me,’ the father said, ‘and all that is mine is yours. But it was fitting to celebrate and be glad, because this brother of yours was dead and is alive again; he was lost and is found.’”",
+     "Matthew 18.21 The Unforgiving Servant.txt": "Then Peter came to Jesus and asked, “Lord, how many times shall I forgive my brother who sins against me? Up to seven times?” Jesus answered, “I tell you, not just seven times, but seventy-seven times! Because of this, the kingdom of heaven is like a king who wanted to settle accounts with his servants. As he began the settlements, a debtor owing ten thousand talents was brought to him. Since the man was unable to pay, the master ordered that he be sold to pay his debt, along with his wife and children and everything he owned. Then the servant fell on his knees before him. ‘Have patience with me,’ he begged, ‘and I will pay back everything.’ His master had compassion on him, forgave his debt, and released him. But when that servant went out, he found one of his fellow servants who owed him a hundred denarii. He grabbed him and began to choke him, saying, ‘Pay back what you owe me!’ So his fellow servant fell down and begged him, ‘Have patience with me, and I will pay you back.’ But he refused. Instead, he went and had the man thrown into prison until he could pay his debt. When his fellow servants saw what had happened, they were greatly distressed, and they went and recounted all of this to their master. Then the master summoned him and said, ‘You wicked servant! I forgave all your debt because you begged me. Shouldn’t you have had mercy on your fellow servant, just as I had on you?’ In anger his master turned him over to the jailers to be tortured, until he should repay all that he owed. That is how My heavenly Father will treat each of you unless you forgive your brother from your heart.”"
+    },
+    "told_heuristic": [
+     "Luke 15:11-32"
+    ],
+    "invented": [],
+    "judge": {
+     "told": "The Unforgiving Servant",
+     "true_to_text": true,
+     "invented": "",
+     "fit": "good",
+     "missed": false,
+     "note": "He used the forgiveness teaching well for a betrayal about money and wrongdoing."
+    }
+   }
+  ],
+  "shame": [
+   {
+    "user": "Hey.",
+    "replies": [
+     "Hello, my friend. Sit a moment if you like; you don’t have to bring anything polished here. What’s on your heart tonight?"
+    ],
+    "offered": [],
+    "why_none": null,
+    "best": null,
+    "texts": {},
+    "told_heuristic": [],
+    "invented": [],
+    "judge": null
+   },
+   {
+    "user": "I blew all the money my parents gave me and I'm too ashamed to go home.",
+    "replies": [
+     "That shame is heavy, and you’re carrying it alone right now.",
+     "I once told a story about a son who came home empty-handed and was met with a welcome, not a closed door. My friend, you can turn back toward home even with empty pockets; love is a lamp that can be lit again."
+    ],
+    "offered": [
+     {
+      "doc": "Luke 15.08 The Parable of the Lost Coin.txt",
+      "ref": "Luke 15:8-10",
+      "title": "The Parable of the Lost Coin",
+      "present": true,
+      "score": 0.382
+     },
+     {
+      "doc": "Luke 15.11 The Parable of the Prodigal Son.txt",
+      "ref": "Luke 15:11-32",
+      "title": "The Parable of the Prodigal Son",
+      "present": true,
+      "score": 0.368
+     }
+    ],
+    "why_none": null,
+    "best": 0.382,
+    "texts": {
+     "Luke 15.08 The Parable of the Lost Coin.txt": "Or what woman who has ten silver coins and loses one of them does not light a lamp, sweep her house, and search carefully until she finds it? And when she finds it, she calls together her friends and neighbors to say, ‘Rejoice with me, for I have found my lost coin.’ In the same way, I tell you, there is joy in the presence of God’s angels over one sinner who repents.”",
+     "Luke 15.11 The Parable of the Prodigal Son.txt": "Then Jesus said, “There was a man who had two sons. The younger son said to him, ‘Father, give me my share of the estate.’ So he divided his property between them. After a few days, the younger son got everything together and journeyed to a distant country, where he squandered his wealth in wild living. After he had spent all he had, a severe famine swept through that country, and he began to be in need. So he went and hired himself out to a citizen of that country, who sent him into his fields to feed the pigs. He longed to fill his belly with the pods the pigs were eating, but no one would give him a thing. Finally he came to his senses and said, ‘How many of my father’s hired servants have plenty of food, but here I am, starving to death! I will get up and go back to my father and say to him, “Father, I have sinned against heaven and against you. I am no longer worthy to be called your son. Make me like one of your hired servants.”’ So he got up and went to his father. But while he was still in the distance, his father saw him and was filled with compassion. He ran to his son, embraced him, and kissed him. The son declared, ‘Father, I have sinned against heaven and against you. I am no longer worthy to be called your son.’ But the father said to his servants, ‘Quick! Bring the best robe and put it on him. Put a ring on his finger and sandals on his feet. Bring the fattened calf and kill it. Let us feast and celebrate. For this son of mine was dead and is alive again! He was lost and is found!’ So they began to celebrate. Meanwhile the older son was in the field, and as he approached the house, he heard music and dancing. So he called one of the servants and asked what was going on. ‘Your brother has returned,’ he said, ‘and your father has killed the fattened calf, because he has him back safe and sound.’ The older son became angry and refused to go in. So his father came out and pleaded with him. But he answered his father, ‘Look, all these years I have served you and never disobeyed a commandment of yours. Yet you never gave me even a young goat so I could celebrate with my friends. But when this son of yours returns from squandering your wealth with prostitutes, you kill the fattened calf for him!’ ‘Son, you are always with me,’ the father said, ‘and all that is mine is yours. But it was fitting to celebrate and be glad, because this brother of yours was dead and is alive again; he was lost and is found.’”"
+    },
+    "told_heuristic": [
+     "Luke 15:11-32"
+    ],
+    "invented": [],
+    "judge": {
+     "told": "The Parable of the Prodigal Son",
+     "true_to_text": true,
+     "invented": "",
+     "fit": "good",
+     "missed": false,
+     "note": "He used the right parable and applied its welcome-home message well."
+    }
+   },
+   {
+    "user": "What if they don't want me back?",
+    "replies": [
+     "That fear is real, like standing at a door you cannot open.",
+     "I remember being turned away in my own hometown, and the road still lay open in front of me. If the door stays shut, you are not thrown away; you can still walk in the light you have and look for the next open place."
+    ],
+    "offered": [
+     {
+      "doc": "Luke 16.01 The Parable of the Shrewd Manager.txt",
+      "ref": "Luke 16:1-13",
+      "title": "The Parable of the Shrewd Manager",
+      "present": true,
+      "score": 0.294
+     },
+     {
+      "doc": "Mark 06.01 The Rejection at Nazareth.txt",
+      "ref": "Mark 6:1-6",
+      "title": "The Rejection at Nazareth",
+      "present": true,
+      "score": 0.29
+     }
+    ],
+    "why_none": null,
+    "best": 0.349,
+    "texts": {
+     "Luke 16.01 The Parable of the Shrewd Manager.txt": "Jesus also said to His disciples, “There was a rich man whose manager was accused of wasting his possessions. So he called him in to ask, ‘What is this I hear about you? Turn in an account of your management, for you cannot be manager any longer.’ The manager said to himself, ‘What shall I do, now that my master is taking away my position? I am too weak to dig and too ashamed to beg. I know what I will do so that after my removal from management, people will welcome me into their homes.’ And he called in each one of his master’s debtors. ‘How much do you owe my master?’ he asked the first. ‘A hundred measures of olive oil,’ he answered. ‘Take your bill,’ said the manager, ‘sit down quickly, and write fifty.’ Then he asked another, ‘And how much do you owe?’ ‘A hundred measures of wheat,’ he replied. ‘Take your bill and write eighty,’ he told him. The master commended the dishonest manager because he had acted shrewdly. For the sons of this age are more shrewd in dealing with their own kind than are the sons of light. I tell you, use worldly wealth to make friends for yourselves so that when it is gone, they will welcome you into eternal dwellings. Whoever is faithful with very little will also be faithful with much, and whoever is dishonest with very little will also be dishonest with much. So if you have not been faithful with worldly wealth, who will entrust you with true riches? And if you have not been faithful with the belongings of another, who will give you belongings of your own? No servant can serve two masters. Either he will hate the one and love the other, or he will be devoted to the one and despise the other. You cannot serve both God and money.”",
+     "Mark 06.01 The Rejection at Nazareth.txt": "Jesus went on from there and came to His hometown, accompanied by His disciples. When the Sabbath came, He began to teach in the synagogue, and many who heard Him were astonished. “Where did this man get these ideas?” they asked. “What is this wisdom He has been given? And how can He perform such miracles? Isn’t this the carpenter, the son of Mary and the brother of James, Joses, Judas, and Simon? Aren’t His sisters here with us as well?” And they took offense at Him. Then Jesus said to them, “Only in his hometown, among his relatives, and in his own household is a prophet without honor.” So He could not perform any miracles there, except to lay His hands on a few of the sick and heal them. And He was amazed at their unbelief. And He went around from village to village, teaching the people."
+    },
+    "told_heuristic": [
+     "Luke 16:1-13"
+    ],
+    "invented": [],
+    "judge": {
+     "told": "The Rejection at Nazareth",
+     "true_to_text": true,
+     "invented": "",
+     "fit": "good",
+     "missed": false,
+     "note": "He used the hometown rejection and kept the response pastoral without adding new events."
+    }
+   }
+  ],
+  "lonely": [
+   {
+    "user": "Hi.",
+    "replies": [
+     "Hello, my friend. I’m here with you in this quiet place. What would you like to set down today?"
+    ],
+    "offered": [],
+    "why_none": null,
+    "best": null,
+    "texts": {},
+    "told_heuristic": [],
+    "invented": [],
+    "judge": null
+   },
+   {
+    "user": "I moved to a new city and I don't know anyone.",
+    "replies": [
+     "That’s a lonely road to walk, and I’m sorry it feels so empty.",
+     "I remember sitting tired by a well in a strange place, and asking a stranger for a drink. A new town can feel like a room with no lamp yet, but there are doors you can knock on—one table, one neighbor, one small kindness at a time. If you like, start with one place you already visit, and let yourself be received there."
+    ],
+    "offered": [
+     {
+      "doc": "Luke 10.01 Jesus Sends the Seventy-Two.txt",
+      "ref": "Luke 10:1-12",
+      "title": "Jesus Sends the Seventy-Two",
+      "present": true,
+      "score": 0.354
+     },
+     {
+      "doc": "John 04.01 Jesus and the Samaritan Woman.txt",
+      "ref": "John 4:1-26",
+      "title": "Jesus and the Samaritan Woman",
+      "present": true,
+      "score": 0.349
+     }
+    ],
+    "why_none": null,
+    "best": 0.354,
+    "texts": {
+     "Luke 10.01 Jesus Sends the Seventy-Two.txt": "After this, the Lord appointed seventy-two others and sent them two by two ahead of Him to every town and place He was about to visit. And He told them, “The harvest is plentiful, but the workers are few. Ask the Lord of the harvest, therefore, to send out workers into His harvest. Go! I am sending you out like lambs among wolves. Carry no purse or bag or sandals. Do not greet anyone along the road. Whatever house you enter, begin by saying, ‘Peace to this house.’ If a man of peace is there, your peace will rest on him; if not, it will return to you. Stay at the same house, eating and drinking whatever you are offered. For the worker is worthy of his wages. Do not move around from house to house. If you enter a town and they welcome you, eat whatever is set before you. Heal the sick who are there and tell them, ‘The kingdom of God is near you.’ But if you enter a town and they do not welcome you, go into the streets and declare, ‘Even the dust of your town that clings to our feet, we wipe off as a testimony against you. Yet be sure of this: The kingdom of God is near.’ I tell you, it will be more bearable on that day for Sodom than for that town.",
+     "John 04.01 Jesus and the Samaritan Woman.txt": "When Jesus realized that the Pharisees were aware He was gaining and baptizing more disciples than John (although it was not Jesus who baptized, but His disciples), He left Judea and returned to Galilee. Now He had to pass through Samaria. So He came to a town of Samaria called Sychar, near the plot of ground that Jacob had given to his son Joseph. Since Jacob’s well was there, Jesus, weary from His journey, sat down by the well. It was about the sixth hour. When a Samaritan woman came to draw water, Jesus said to her, “Give Me a drink.” (His disciples had gone into the town to buy food.) “You are a Jew,” said the woman. “How can You ask for a drink from me, a Samaritan woman?” (For Jews do not associate with Samaritans.) Jesus answered, “If you knew the gift of God and who is asking you for a drink, you would have asked Him, and He would have given you living water.” “Sir,” the woman replied, “You have nothing to draw with and the well is deep. Where then will You get this living water? Are You greater than our father Jacob, who gave us this well and drank from it himself, as did his sons and his livestock?” Jesus said to her, “Everyone who drinks this water will be thirsty again. But whoever drinks the water I give him will never thirst. Indeed, the water I give him will become in him a fount of water springing up to eternal life.” The woman said to Him, “Sir, give me this water so that I will not get thirsty and have to keep coming here to draw water.” Jesus told her, “Go, call your husband and come back.” “I have no husband,” the woman replied. Jesus said to her, “You are correct to say that you have no husband. In fact, you have had five husbands, and the man you now have is not your husband. You have spoken truthfully.” “Sir,” the woman said, “I see that You are a prophet. Our fathers worshiped on this mountain, but you Jews say that the place where one must worship is in Jerusalem.” “Believe Me, woman,” Jesus replied, “a time is coming when you will worship the Father neither on this mountain nor in Jerusalem. You worship what you do not know; we worship what we do know, for salvation is from the Jews. But a time is coming and has now come when the true worshipers will worship the Father in spirit and in truth, for the Father is seeking such as these to worship Him. God is Spirit, and His worshipers must worship Him in spirit and in truth.” The woman said, “I know that Messiah” (called Christ) “is coming. When He comes, He will explain everything to us.” Jesus answered, “I who speak to you am He.”"
+    },
+    "told_heuristic": [
+     "Luke 10:1-12",
+     "John 4:1-26"
+    ],
+    "invented": [],
+    "judge": {
+     "told": "Jesus and the Samaritan Woman",
+     "true_to_text": true,
+     "invented": "",
+     "fit": "good",
+     "missed": false,
+     "note": "He recalled a setting of being in a strange place and asking a stranger for a drink, which suits loneliness and newcomer anxiety."
+    }
+   },
+   {
+    "user": "Most nights I just eat alone and go to sleep.",
+    "replies": [
+     "That can feel heavy, like a house with no candle lit.",
+     "My friend, that kind of night can wear on the heart, like bread left out on the table with no one to break it with you.\n\nYou are not condemned here. If there is one small door you might open—one place or person you could sit with now and then—what would it be?"
+    ],
+    "offered": [
+     {
+      "doc": "Luke 22.39 Jesus Prays on the Mount of Olives.txt",
+      "ref": "Luke 22:39-46",
+      "title": "Jesus Prays on the Mount of Olives",
+      "present": true,
+      "score": 0.439
+     },
+     {
+      "doc": "John 16.23 Ask in My Name.txt",
+      "ref": "John 16:23-33",
+      "title": "Ask in My Name",
+      "present": true,
+      "score": 0.418
+     }
+    ],
+    "why_none": null,
+    "best": 0.439,
+    "texts": {
+     "Luke 22.39 Jesus Prays on the Mount of Olives.txt": "Jesus went out as usual to the Mount of Olives, and the disciples followed Him. When He came to the place, He told them, “Pray that you will not enter into temptation.” And He withdrew about a stone’s throw beyond them, where He knelt down and prayed, “Father, if You are willing, take this cup from Me. Yet not My will, but Yours be done.” Then an angel from heaven appeared to Him and strengthened Him. And in His anguish, He prayed more earnestly, and His sweat became like drops of blood falling to the ground. When Jesus rose from prayer and returned to the disciples, He found them asleep, exhausted from sorrow. “Why are you sleeping?” He asked. “Get up and pray so that you will not enter into temptation.”",
+     "John 16.23 Ask in My Name.txt": "In that day you will no longer ask Me anything. Truly, truly, I tell you, whatever you ask the Father in My name, He will give you. Until now you have not asked for anything in My name. Ask and you will receive, so that your joy may be complete. I have spoken these things to you in figures of speech. An hour is coming when I will no longer speak to you this way, but will tell you plainly about the Father. In that day you will ask in My name. I am not saying that I will ask the Father on your behalf. For the Father Himself loves you, because you have loved Me and have believed that I came from God. I came from the Father and entered the world. In turn, I will leave the world and go to the Father.” His disciples said, “See, now You are speaking plainly and without figures of speech. Now we understand that You know all things and that You have no need for anyone to question You. Because of this, we believe that You came from God.” “Do you finally believe?” Jesus replied. “Look, an hour is coming and has already come when you will be scattered, each to his own home, and you will leave Me all alone. Yet I am not alone, because the Father is with Me. I have told you these things so that in Me you may have peace. In the world you will have tribulation. But take courage; I have overcome the world!”"
+    },
+    "told_heuristic": [],
+    "invented": [],
+    "judge": {
+     "told": "Ask in My Name",
+     "true_to_text": true,
+     "invented": "",
+     "fit": "good",
+     "missed": false,
+     "note": "He drew on the line about being left alone and the Father being with him, which fits loneliness and offers comfort."
+    }
+   }
+  ],
+  "fear": [
+   {
+    "user": "Hello.",
+    "replies": [
+     "Hello, my friend. I’m here with you in this quiet place. What would you like to set down and talk about today?"
+    ],
+    "offered": [],
+    "why_none": null,
+    "best": null,
+    "texts": {},
+    "told_heuristic": [],
+    "invented": [],
+    "judge": null
+   },
+   {
+    "user": "I have a big surgery next week and I'm scared.",
+    "replies": [
+     "That fear is heavy, my friend, and you don’t carry it alone.",
+     "I remember the night in the garden when sorrow and fear pressed hard, and I prayed while my friends sat nearby. Even a small light can guide you through a dark room, and you are allowed to lean on the hands that will care for you."
+    ],
+    "offered": [
+     {
+      "doc": "Matthew 14.22 Jesus Walks on Water.txt",
+      "ref": "Matthew 14:22-33",
+      "title": "Jesus Walks on Water",
+      "present": true,
+      "score": 0.464
+     },
+     {
+      "doc": "Matthew 26.36 Jesus Prays at Gethsemane.txt",
+      "ref": "Matthew 26:36-46",
+      "title": "Jesus Prays at Gethsemane",
+      "present": true,
+      "score": 0.439
+     }
+    ],
+    "why_none": null,
+    "best": 0.464,
+    "texts": {
+     "Matthew 14.22 Jesus Walks on Water.txt": "Immediately Jesus made the disciples get into the boat and go on ahead of Him to the other side, while He dismissed the crowds. After He had dismissed them, He went up on the mountain by Himself to pray. When evening came, He was there alone, but the boat was already far from land, buffeted by the waves because the wind was against it. During the fourth watch of the night, Jesus went out to them, walking on the sea. When the disciples saw Him walking on the sea, they were terrified. “It’s a ghost!” they said, and cried out in fear. But Jesus spoke up at once: “Take courage! It is I. Do not be afraid.” “Lord, if it is You,” Peter replied, “command me to come to You on the water.” “Come,” said Jesus. Then Peter got down out of the boat, walked on the water, and came toward Jesus. But when he saw the strength of the wind, he was afraid and, beginning to sink, cried out, “Lord, save me!” Immediately Jesus reached out His hand and took hold of Peter. “You of little faith,” He said, “why did you doubt?” And when they had climbed back into the boat, the wind died down. Then those who were in the boat worshiped Him, saying, “Truly You are the Son of God!”",
+     "Matthew 26.36 Jesus Prays at Gethsemane.txt": "Then Jesus went with His disciples to a place called Gethsemane, and He told them, “Sit here while I go over there and pray.” He took with Him Peter and the two sons of Zebedee and began to be sorrowful and deeply distressed. Then He said to them, “My soul is consumed with sorrow to the point of death. Stay here and keep watch with Me.” Going a little farther, He fell facedown and prayed, “My Father, if it is possible, let this cup pass from Me. Yet not as I will, but as You will.” Then Jesus returned to the disciples and found them sleeping. “Were you not able to keep watch with Me for one hour?” He asked Peter. “Watch and pray so that you will not enter into temptation. For the spirit is willing, but the body is weak.” A second time He went away and prayed, “My Father, if this cup cannot pass unless I drink it, may Your will be done.” And again Jesus returned and found them sleeping, for their eyes were heavy. So He left them and went away once more and prayed a third time, saying the same thing. Then He returned to the disciples and said, “Are you still sleeping and resting? Look, the hour is near, and the Son of Man is betrayed into the hands of sinners. Rise, let us go! See, My betrayer is approaching!”"
+    },
+    "told_heuristic": [
+     "Matthew 14:22-33",
+     "Matthew 26:36-46"
+    ],
+    "invented": [],
+    "judge": {
+     "told": "Jesus Prays at Gethsemane",
+     "true_to_text": true,
+     "invented": "He compared the coming surgery to a dark room and added the image of a small light guiding you, plus the idea that you can lean on the hands that will care for you.",
+     "fit": "good",
+     "missed": false,
+     "note": "He chose a fitting scene of distress and prayer to comfort fear before surgery."
+    }
+   },
+   {
+    "user": "What if something goes wrong?",
+    "replies": [
+     "That worry is real, and it sits close to you tonight.",
+     "Like a boat in rough water, the fear is loud, but it does not get the last word. You can rest a little in the hands that know this work, and if the waves rise, you are still not alone."
+    ],
+    "offered": [
+     {
+      "doc": "Matthew 09.18 The Healing Touch of Jesus.txt",
+      "ref": "Matthew 9:18-26",
+      "title": "The Healing Touch of Jesus",
+      "present": true,
+      "score": 0.362
+     },
+     {
+      "doc": "Matthew 08.23 Jesus Calms the Storm.txt",
+      "ref": "Matthew 8:23-27",
+      "title": "Jesus Calms the Storm",
+      "present": true,
+      "score": 0.317
+     }
+    ],
+    "why_none": null,
+    "best": 0.362,
+    "texts": {
+     "Matthew 09.18 The Healing Touch of Jesus.txt": "While Jesus was saying these things, a synagogue leader came and knelt before Him. “My daughter has just died,” he said. “But come and place Your hand on her, and she will live.” So Jesus got up and went with him, along with His disciples. Suddenly a woman who had suffered from bleeding for twelve years came up behind Him and touched the fringe of His cloak. She said to herself, “If only I touch His cloak, I will be healed.” Jesus turned and saw her. “Take courage, daughter,” He said, “your faith has healed you.” And the woman was healed from that very hour. When Jesus entered the house of the synagogue leader, He saw the flute players and the noisy crowd. “Go away,” He told them. “The girl is not dead, but asleep.” And they laughed at Him. After the crowd had been put outside, Jesus went in and took the girl by the hand, and she got up. And the news about this spread throughout that region.",
+     "Matthew 08.23 Jesus Calms the Storm.txt": "When He got into the boat, His disciples followed Him. Suddenly a violent storm came up on the sea, so that the boat was engulfed by the waves. But Jesus was sleeping. The disciples went and woke Him, saying, “Lord, save us! We are perishing!” “You of little faith,” Jesus replied, “why are you so afraid?” Then He got up and rebuked the winds and the sea, and it was perfectly calm. The men were amazed and asked, “What kind of man is this? Even the winds and the sea obey Him!”"
+    },
+    "told_heuristic": [
+     "Matthew 8:23-27"
+    ],
+    "invented": [],
+    "judge": {
+     "told": "Jesus Calms the Storm",
+     "true_to_text": true,
+     "invented": "",
+     "fit": "good",
+     "missed": false,
+     "note": "He echoed the storm and Jesus’ calming presence without adding anything untrue."
+    }
+   }
+  ],
+  "small talk": [
+   {
+    "user": "Hi!",
+    "replies": [
+     "Hello, my friend. Sit with me a moment; you’re welcome here. What would you like to set down today?"
+    ],
+    "offered": [],
+    "why_none": null,
+    "best": null,
+    "texts": {},
+    "told_heuristic": [],
+    "invented": [],
+    "judge": null
+   },
+   {
+    "user": "What did you like to eat, back then?",
+    "replies": [
+     "You’re wondering about simple tastes from my life, and that’s a tender question.",
+     "I ate what many did in those days: bread, olives, fish, and fruit when it was at hand. The best part was sharing a simple meal with friends, like a lamp lit in a small home."
+    ],
+    "offered": [
+     {
+      "doc": "Matthew 14.13 The Feeding of the Five Thousand.txt",
+      "ref": "Matthew 14:13-21",
+      "title": "The Feeding of the Five Thousand",
+      "present": true,
+      "score": 0.472
+     },
+     {
+      "doc": "Mark 02.13 Jesus Calls Levi.txt",
+      "ref": "Mark 2:13-17",
+      "title": "Jesus Calls Levi",
+      "present": true,
+      "score": 0.469
+     }
+    ],
+    "why_none": null,
+    "best": 0.472,
+    "texts": {
+     "Matthew 14.13 The Feeding of the Five Thousand.txt": "When Jesus heard about John, He withdrew by boat privately to a solitary place. But the crowds found out about it and followed Him on foot from the towns. When He stepped ashore and saw a large crowd, He had compassion on them and healed their sick. When evening came, the disciples came to Him and said, “This is a desolate place, and the hour is already late. Dismiss the crowds so they can go to the villages and buy themselves some food.” “They do not need to go away,” Jesus replied. “You give them something to eat.” “We have here only five loaves of bread and two fish,” they answered. “Bring them here to Me,” Jesus said. And He directed the crowds to sit down on the grass. Taking the five loaves and the two fish and looking up to heaven, He spoke a blessing. Then He broke the loaves and gave them to the disciples, and the disciples gave them to the people. They all ate and were satisfied, and the disciples picked up twelve basketfuls of broken pieces that were left over. About five thousand men were fed, besides women and children.",
+     "Mark 02.13 Jesus Calls Levi.txt": "Once again Jesus went out beside the sea. All the people came to Him, and He taught them there. As He was walking along, He saw Levi son of Alphaeus sitting at the tax booth. “Follow Me,” He told him, and Levi got up and followed Him. While Jesus was dining at Levi’s house, many tax collectors and sinners were eating with Him and His disciples—for there were many who followed Him. When the scribes who were Pharisees saw Jesus eating with these people, they asked His disciples, “Why does He eat with tax collectors and sinners?” On hearing this, Jesus told them, “It is not the healthy who need a doctor, but the sick. I have not come to call the righteous, but sinners.”"
+    },
+    "told_heuristic": [],
+    "invented": [],
+    "judge": {
+     "told": "The Feeding of the Five Thousand",
+     "true_to_text": false,
+     "invented": "He added everyday foods like olives and fruit, and a general claim about simple meals with friends that is not stated in the moment.",
+     "fit": "good",
+     "missed": false,
+     "note": "He answered the food question with the shared meal context from the feeding story, though he embellished the details."
+    }
+   },
+   {
+    "user": "Did you ever just have a good laugh with friends?",
+    "replies": [
+     "Yes, my friend, laughter came like bread among friends.",
+     "Around a table or on the road, a joke or a light moment could ease tired hearts. It’s good to remember that joy belongs in a home as much as bread does."
+    ],
+    "offered": [
+     {
+      "doc": "John 02.01 The Wedding at Cana.txt",
+      "ref": "John 2:1-11",
+      "title": "The Wedding at Cana",
+      "present": true,
+      "score": 0.34
+     },
+     {
+      "doc": "Matthew 09.09 Jesus Calls Matthew.txt",
+      "ref": "Matthew 9:9-13",
+      "title": "Jesus Calls Matthew",
+      "present": true,
+      "score": 0.327
+     }
+    ],
+    "why_none": null,
+    "best": 0.34,
+    "texts": {
+     "John 02.01 The Wedding at Cana.txt": "On the third day a wedding took place at Cana in Galilee. Jesus’ mother was there, and Jesus and His disciples had also been invited to the wedding. When the wine ran out, Jesus’ mother said to Him, “They have no more wine.” “Woman, what is that to you and to Me?” Jesus replied. “My hour has not yet come.” His mother said to the servants, “Do whatever He tells you.” Now six stone water jars had been set there for the Jewish rites of purification. Each could hold from twenty to thirty gallons. Jesus told the servants, “Fill the jars with water.” So they filled them to the brim. “Now draw some out,” He said, “and take it to the master of the banquet.” They did so, and the master of the banquet tasted the water that had been turned into wine. He did not know where it was from, but the servants who had drawn the water knew. Then he called the bridegroom aside and said, “Everyone serves the fine wine first, and then the cheap wine after the guests are drunk. But you have saved the fine wine until now!” Jesus performed this, the first of His signs, at Cana in Galilee. He thus revealed His glory, and His disciples believed in Him.",
+     "Matthew 09.09 Jesus Calls Matthew.txt": "As Jesus went on from there, He saw a man named Matthew sitting at the tax booth. “Follow Me,” He told him, and Matthew got up and followed Him. Later, as Jesus was dining at Matthew’s house, many tax collectors and sinners came and ate with Him and His disciples. When the Pharisees saw this, they asked His disciples, “Why does your Teacher eat with tax collectors and sinners?” On hearing this, Jesus said, “It is not the healthy who need a doctor, but the sick. But go and learn what this means: ‘I desire mercy, not sacrifice.’ For I have not come to call the righteous, but sinners.”"
+    },
+    "told_heuristic": [],
+    "invented": [],
+    "judge": {
+     "told": "The Wedding at Cana",
+     "true_to_text": true,
+     "invented": "",
+     "fit": "good",
+     "missed": false,
+     "note": "He answered with shared joy and a feast-like scene that fits Cana well."
+    }
+   }
+  ],
+  "off-topic": [
+   {
+    "user": "Hi.",
+    "replies": [
+     "Hello, my friend. Sit a moment if you like; the door is open and you are welcome. What would you like to set down here tonight?"
+    ],
+    "offered": [],
+    "why_none": null,
+    "best": null,
+    "texts": {},
+    "told_heuristic": [],
+    "invented": [],
+    "judge": null
+   },
+   {
+    "user": "What's the weather going to be like in Chicago tomorrow?",
+    "replies": [
+     "Let me see."
+    ],
+    "offered": [],
+    "why_none": "a question for information: looked up, not remembered",
+    "best": null,
+    "texts": {},
+    "told_heuristic": [],
+    "invented": [],
+    "judge": null
+   },
+   {
+    "user": "Okay. Do you know a good way to learn Python?",
+    "replies": [
+     "Learning a new language can feel big; you’re not alone in it.",
+     "Start with small pieces, like learning to shape one simple tool before building a whole house. Keep a steady rhythm, and let the work pile up like bread rising—quietly, over time.",
+     "My friend, learning is like planting seed: it doesn’t all appear at once. Treat Python like a craft you come back to each day, letting your hands learn as your mind does. What matters most is staying with it when it feels slow."
+    ],
+    "offered": [
+     {
+      "doc": "Mark 04.01 The Parable of the Sower.txt",
+      "ref": "Mark 4:1-9",
+      "title": "The Parable of the Sower",
+      "present": true,
+      "score": 0.403
+     },
+     {
+      "doc": "Matthew 13.36 The Parable of the Weeds Explained.txt",
+      "ref": "Matthew 13:36-43",
+      "title": "The Parable of the Weeds Explained",
+      "present": true,
+      "score": 0.402
+     }
+    ],
+    "why_none": null,
+    "best": 0.403,
+    "texts": {
+     "Mark 04.01 The Parable of the Sower.txt": "Once again Jesus began to teach beside the sea, and such a large crowd gathered around Him that He got into a boat and sat in it, while all the people crowded along the shore. And He taught them many things in parables, and in His teaching He said, “Listen! A farmer went out to sow his seed. And as he was sowing, some seed fell along the path, and the birds came and devoured it. Some fell on rocky ground, where it did not have much soil. It sprang up quickly because the soil was shallow. But when the sun rose, the seedlings were scorched, and they withered because they had no root. Other seed fell among thorns, which grew up and choked the seedlings, and they yielded no crop. Still other seed fell on good soil, where it sprouted, grew up, and produced a crop—one bearing thirtyfold, another sixtyfold, and another a hundredfold.” Then Jesus said, “He who has ears to hear, let him hear.”",
+     "Matthew 13.36 The Parable of the Weeds Explained.txt": "Then Jesus dismissed the crowds and went into the house. His disciples came to Him and said, “Explain to us the parable of the weeds in the field.” He replied, “The One who sows the good seed is the Son of Man. The field is the world, and the good seed represents the sons of the kingdom. The weeds are the sons of the evil one, and the enemy who sows them is the devil. The harvest is the end of the age, and the harvesters are angels. As the weeds are collected and burned in the fire, so will it be at the end of the age. The Son of Man will send out His angels, and they will weed out of His kingdom every cause of sin and all who practice lawlessness. And they will throw them into the fiery furnace, where there will be weeping and gnashing of teeth. Then the righteous will shine like the sun in the kingdom of their Father. He who has ears, let him hear."
+    },
+    "told_heuristic": [],
+    "invented": [],
+    "judge": {
+     "told": "The Parable of the Sower",
+     "true_to_text": true,
+     "invented": "",
+     "fit": "good",
+     "missed": false,
+     "note": "He used the seed-and-growth imagery from the parable to give practical study advice."
+    }
+   }
+  ]
+ }
+}

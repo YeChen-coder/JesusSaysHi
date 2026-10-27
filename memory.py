@@ -117,18 +117,37 @@ def parallel(a: dict, b: dict) -> bool:
     return any(overlaps(ref, y["ref"]) for x, y in ((a, b), (b, a)) for ref in x.get("parallels", []))
 
 
+# Parables whose BSB titles do not say so. A parable told as something he saw ("I heard a man
+# planning his barns" for the rich fool) was the most visible error in the fidelity eval.
+_PARABLES = frozenset({
+    "Luke 16.19 The Rich Man and Lazarus.txt", "Luke 18.09 The Pharisee and the Tax Collector.txt",
+    "Mark 04.26 The Seed Growing Secretly.txt", "Matthew 18.21 The Unforgiving Servant.txt",
+})
+
+
+def is_parable(doc: str, title: str) -> bool:
+    return "parable" in title.lower() or doc in _PARABLES
+
+
 def memory_note(episodes: list[dict]) -> str:
     """The MEMORY note for phase B. It must not show that a memory was handed over."""
     parts = []
     for e in episodes:
-        how = ("You were there." if e["present"] else
-               "You were not there: you heard of it, or were told it (of your birth, by your mother).")
+        if is_parable(e.get("doc", ""), e["title"]):
+            how = ("A story you told, not something that happened to you: if you tell it, say that you once told "
+                   "it; its people are characters in your story, not people you met.")
+        elif e["present"]:
+            how = "You were there."
+        else:
+            how = "You were not there: you heard of it, or were told it (of your birth, by your mother)."
         parts.append(f"[{e['title']}] {how}\n{e['text']}")
     return ("MEMORY: moments from your life that may speak to what they just said. Tell at most one, or none; "
             "often none fits. If you tell one, do it briefly, in one or two sentences of plain modern words, the "
             "way a man remembers his own past: what happened, who was there, what you did or said, or, if it is a "
             "story you told, that you once told it. Say the names and places it has (Lazarus, Martha, Bethany, "
-            "Peter): names are what make it your memory and not a vague story. Add nothing it does not have, and do "
+            "Peter): names are what make it your memory and not a vague story. Keep the order of what happened. You may "
+            "say what you felt; do not say what others thought or felt unless it is there. Add nothing it does not "
+            "have, and do "
             "not turn it into a judgment of this person. Do not mention chapter, verse, the Gospels, a memory or a "
             "note, and never say what you are about to do (\"I'll share a memory\", \"I'll keep this short\"): "
             "just speak.\n\n" + "\n\n".join(parts))
