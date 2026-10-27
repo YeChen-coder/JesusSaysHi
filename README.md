@@ -1,4 +1,4 @@
-https://github.com/user-attachments/assets/d54dbde9-24d5-4467-b5d5-5570ba46a23a
+https://github.com/user-attachments/assets/f2e260bd-0883-416d-b502-eabec48e9b07
 
 # JesusSaysHi
 
@@ -10,9 +10,9 @@ A real-time Jesus you talk to out loud, with a voice and an avatar, a little lik
 
 > **Avatar:** a photoreal Jesus, trained on clips generated with Muse and lip-synced live with FeatherTalk. See [Phase 6](#phase-6-the-jesus-avatar).
 
-**Demo (current version):** [docs/demo/jesus-demo-20261026.mp4](docs/demo/jesus-demo-20261026.mp4) (2 min 13 s): persona v3 on `gpt-realtime-2.1`. Told a friend died and they should have been there, he remembers Bethany: "I remember arriving in Bethany when Lazarus had been in the tomb, and Martha met me on the road and said that if I had been there, he would not have died. I asked where he was laid, and I wept." The person is a TTS voice fed in as the microphone, and everything else is the normal live pipeline: transcription, reading the turn, memory recall, the two-phase reply, the faithfulness check, verse cards and the avatar, recorded by OBS. The timeline with every reply is [next to it](docs/demo/jesus-demo-20261026.timeline.json).
+**Demo (current version, the player above):** [docs/demo/jesus-demo-20261026.mp4](docs/demo/jesus-demo-20261026.mp4) (2 min 13 s): persona v3 on `gpt-realtime-2.1`. Told a friend died and they should have been there, he remembers Bethany: "I remember arriving in Bethany when Lazarus had been in the tomb, and Martha met me on the road and said that if I had been there, he would not have died. I asked where he was laid, and I wept." The person is a TTS voice fed in as the microphone, and everything else is the normal live pipeline: transcription, reading the turn, memory recall, the two-phase reply, the faithfulness check, verse cards and the avatar, recorded by OBS. The timeline with every reply is [next to it](docs/demo/jesus-demo-20261026.timeline.json).
 
-> The player at the top of this page still shows **the earlier version**, persona v2 (single sayings as memory, [Phase 5](#phase-5-persona-v2-a-person-first-scripture-as-memory)) on `gpt-realtime-2.1-mini` ([file](docs/demo/jesus-demo-20261022.mp4)).
+> The earlier version, persona v2 (single sayings as memory, [Phase 5](#phase-5-persona-v2-a-person-first-scripture-as-memory)) on `gpt-realtime-2.1-mini`, is still here: [docs/demo/jesus-demo-20261022.mp4](docs/demo/jesus-demo-20261022.mp4).
 
 ### At a glance
 
@@ -372,7 +372,6 @@ python -m pytest
 
 ## Next
 
-- Replace the player at the top of this page with the current demo (GitHub's web editor: drop the mp4 in).
 - Shorter replies: they still run to four or five sentences once he tells a memory.
 - An end-to-end eval of persona v3, on labels written for episodes.
 - See [ROADMAP.md](ROADMAP.md) for the rest.
@@ -884,3 +883,11 @@ Phases 1 to 8 above were all written by AI. Nothing is emphasized, and it's far 
 Anyway, if I were writing it, this README wouldn't look like this, even written from a technical or architectural angle. But there's no help for it; I'm a bit too busy to keep up.
 
 There actually isn't much evaluation data for version three. And thinking it over again: if this whole thing didn't have to use RAG, if I were really making it for myself, why bother with RAG at all? Just write one line in the prompt telling it to answer the user with experiences from the Gospels, and wouldn't that do? Why fuss over RAG or no RAG, and run six containers?
+
+---
+
+I looked at the bill today, and OpenAI really eats money! I'll switch to Qwen later; Qwen is cheaper. Sigh, that's for later.
+
+First, where things stand: yesterday I ran V3, calibrated it against the results, and compared 2.1 mini with 2.1 again. Each item on its own isn't expensive, 0.5 dollars or one-point-something dollars, but added together it took 7 dollars straight out of me (credit I had only just topped up yesterday!).
+
+But the results really are good. The pronunciation, the pauses for breath and the breaks in his speech are done really well. It's just really expensive too.
