@@ -4,7 +4,7 @@ https://github.com/user-attachments/assets/f2e260bd-0883-416d-b502-eabec48e9b07
 
 **English** | [中文](README-zh.md)
 
-A real-time Jesus you talk to out loud, with a voice and an avatar, a little like going to confession. He listens first and answers in his own words, as a man whose memory is the four Gospels: when something you say touches a moment of his life, that episode is retrieved, and he tells it the way a person remembers their own past. Information is looked up; questions for a doctor or a lawyer are left to them.
+A real-time Jesus you talk to out loud, with a voice and an avatar. He listens first and answers in his own words, as a man whose memory is the four Gospels: when something you say touches a moment of his life, that episode is retrieved, and he tells it the way a person remembers their own past. Information is looked up; questions for a doctor or a lawyer are left to them.
 
 > **Sibling project of [SpecterSaysHi](https://github.com/YeChen-coder/SpecterSaysHi).** It uses the same real-time voice and avatar framework with a different character, and it is built around retrieval (RAG), which Specter deliberately does without.
 
@@ -50,6 +50,184 @@ flowchart LR
 Specter's character comes from its relationship with one person. What it needs to know is small and keeps changing, so a couple of summary files fit in the prompt, and RAG would be over-engineering.
 
 This character comes from a fixed text instead: the four Gospels, about 3,800 verses, too much for a prompt. His way of seeing comes from what he lived through there, and when he says one of his own sayings, it has to be exactly what is written. A model cannot be trusted to do that from memory: in testing it recited a verse from another translation. So scripture reaches him only through retrieval, and every reply is checked against the text. The first persona (phases 1 to 4) went further and let him say nothing of substance that was not retrieved. That made him a verse dispenser. [Phase 5](#phase-5-persona-v2-a-person-first-scripture-as-memory) made him a person who recalls single sayings, and [Phase 7](#phase-7-persona-v3-the-gospels-as-the-memory-of-his-own-life) a person who remembers whole episodes of his life.
+
+## My notes
+
+Claude Code put far too much into this README, and since I still haven't fully understood it all, I don't want to start deleting things yet. Then I ran into the same problem again later. That's just the kind of technical debt you pick up while exploring.
+
+To give myself at least a slightly clearer grasp of things, almost all the notes below were dictated after I understood the relevant part. They should bring out the main points a little better than the original README.
+
+I'll explain why it's configured this way in a moment. First, let's establish a few facts so this doesn't get too confusing. There are quite a few things you can change here, and it really does include a lot of engineering optimizations:
+
+1. OpenAI's built-in interrupt response is set to false, which means OpenAI's native barge-in isn't used here. This is related to automatic responses; I'll explain the details shortly.
+2. Create response (OpenAI's own automatic response) is also set to false.
+3. Barge-in is actually implemented locally here: acoustic echo cancellation, combined with detecting a sudden rise in ambient volume, lets the local program decide whether the user is interrupting.
+
+All right. To make what follows a little clearer, let's first review the general input structure of an OpenAI large language model. The point is to explain the distinction between `session.instructions` and `response.instructions`.
+
+Broadly speaking, we can think of a language model's input as having three parts.
+
+The first part is the instructions that apply to this response. This is the sort of thing people discuss online when talking about writing prompts, rules, and structured schemas. There are two forms:
+
+One is what OpenAI calls `session.instructions`. This is the default: it applies when no `response.instructions` are provided for this response.
+
+But if `response.instructions` are provided for this response, they replace `session.instructions`.
+
+`session.instructions` and `response.instructions` are an either-or choice: there must be one, and only one. They replace each other; they don't stack.
+
+The second part is the available tool definitions, including tool names, descriptions, and parameter structures. These are supplied through the `tools` field.
+
+The third part is the conversation history used for this response, which includes several kinds of entry:
+
+• system: supplementary instructions or material added earlier
+• user: the user's input
+• assistant: the model's previous answers
+• system: RAG results added later also go here
+• function call and function call output: both are included if a function was called
+• the user's latest input, and so on
+
+It all keeps going in conversation order: added material plus the user's input, then an answer, then another round.
+
+If an instruction comes in through `item.create`, it goes into the system entries in the third part. It isn't the same thing as the replaceable instructions in the first part.
+
+---
+
+All right, let's keep going.
+
+In this project, we need both a quick response and a character that stays in character, so we have to alternate between two prompts. (A little more on why:
+
+As you'll see below, only Prompt 2 does the substantive work. So why is Prompt 1 necessary at all? There are actually two reasons, and the main one is that running the RAG pipeline in the background takes time. The prompter has to get the RAG results first and then push them into the conversation. Before those results arrive and are added, there's a gap of about two to three seconds, which is unforgivable in a realtime conversation. Someone might point out that OpenAI's Realtime API can already start speaking immediately, and the docs describe this kind of background flow: start the response, let the model say a short filler line, and run RAG and return its results while that line is being spoken. Why doesn't that work here? Because during that filler the model says things like "Let me see what the scriptures say" or "Let me look through my experiences." For this persona, that's completely out of character and breaks the experience. So that approach doesn't work. We have to get the memory retrieved by RAG locally, assemble all the prompts, and send them to the model so that what it says is right from the start, instead of beginning with filler.)
+
+The actual `response.instructions` structure is as follows. In practice, it alternates 1, 2, 1, 2:
+
+Prompt 1 = shared persona + this turn's user transcript + A's instructions
+
+Prompt 2 = shared persona + this turn's user transcript + B's instructions + conditional instructions as needed + [memory from RAG]
+
+The shared persona comes from `INSTRUCTIONS_MEMORY` in `persona.py`.
+
+One thing to note: to keep both the context window and my wallet from blowing up, the design here is actually quite clever.
+
+The shared persona, the user's transcribed text for this turn, A's instructions, B's instructions, and any conditional instructions we are discussing apply only to the current response.
+
+That's because they are passed through `response.instructions`. Written this way, they serve only as instructions for the current response, rather than accumulating as more and more prompts in the historical context window.
+
+So what does stay? Only these three things keep getting added:
+
+1. The user's audio: continually sent through `conversation.item.create` as `item.content`.
+2. The memories retrieved turn after turn.
+3. The model's own responses.
+
+This is why the shared persona (base persona) has to appear in both Prompt 1 and Prompt 2.
+
+It isn't redundant: the instructions supplied before aren't in its context window. When we ask for a response this time, we have to send them in again.
+
+Prompt 1: append the following after the shared persona.
+
+Source: `_phase_instructions("A", ...)` in `voice.py`.
+
+'''
+// What they just said
+Transcribed: "<USER_TRANSCRIPT>" // This text was added as a correction hint because the project had observed misheard words and dropped negations.
+Trust these words over what you think you heard, including every "not" and "don't".
+
+// Right now
+Say only ONE short sentence, at most about twelve words, that receives what they said and how they feel, in your own voice. No advice, no question, no scripture, and do not say what you are about to do (thinking, looking, searching, closing). Then stop; you will go on in a moment. If it is a plain question for information (the weather, the news, a price), say only a few natural words such as "Let me see." instead.
+
+'''
+
+Prompt 2: append the following after the shared persona, from `_phase_instructions("B", ...)` in `voice.py`.
+
+'''
+// What they just said
+Transcribed: "<USER_TRANSCRIPT>"
+Trust these words over what you think you heard, including every "not" and "don't".
+
+// Right now
+You have just said to them: "<PHASE_A_SPOKEN_TEXT>"
+Go on from there as one flowing reply: do not repeat or rephrase that sentence, do not greet them again, and do not open with a filler such as "let me sit with you". Say one or two more short sentences that add something new, following everything above (including any MEMORY note just given). If that sentence already answered a simple question, such as your name, add only one short warm line. Never describe what you are about to say or do: no "I'll share a memory", no "then I'll stay with you". If you tell a memory, simply begin it.
+'''
+
+Prompt 2 also appends the following original instructions as appropriate.
+
+For a factual query:
+They asked for information. If you have not looked it up yet, call research_web now; then tell them the answer plainly in a sentence or two, with nothing spiritual attached.
+
+For a question that needs professional judgment:
+This needs a professional's judgment. Do not answer it, give steps or look it up: say kindly who would know (the doctor who has seen them, a lawyer, someone who works in that trade), then turn to how they are. (It's written this way because I sincerely think that someone trying to solve a technical problem, whether in medicine, programming, or anything else, really shouldn't be asking here.)
+
+For ordinary conversation where the supplied memory is a close fit:
+A moment from your life speaks closely to this (the MEMORY note): these sentences are that memory. Begin it at once ("I remember..."), with its names, then one short line back to them. No advice or image of your own this time.
+
+If no memory was supplied this turn:
+No particular moment of your life comes to mind this time: do not tell one, and do not begin "I remember". Speak as yourself.
+These conditions aren't all added at once. For example, ordinary conversation with no memory found gets the last passage; a factual query with no memory gets both the "information" and "no memory" passages.
+
+
+With all that in mind, let's walk through the overall flow. To keep this from turning into layers within layers, we'll leave the RAG details until later and look only at the big picture for now.
+
+<img width="2244" height="1280" alt="JesusFlow" src="https://github.com/user-attachments/assets/3b6214b7-f7f6-4fb3-b489-b4bcd4c98856" />
+
+
+
+Everything starts with the user:
+
+1. The user speaks, and that audio goes into the realtime model. (Note: the session is already created when the program starts, before the user speaks, so there's no need to worry about that.)
+2. Once the user's audio reaches the realtime model, it goes two ways:
+(a) The audio is appended directly to the realtime model as a user message.
+(b) The realtime model must return a text transcript. We need text to match against RAG later; we can't do that directly with audio, so it has to return text in any case.
+3. Once the program gets the transcribed text, it does two things at the same time:
+(a) Creates a response with Prompt 1.
+(b) Uses the freshly transcribed text to match against RAG and retrieve a memory.
+4. The user now hears Response 1, generated by the realtime model from Prompt 1. While the user listens to Response 1, the memory is retrieved in the background.
+5. Once the memory is available, the background process requests another response with the memory + Prompt 2, sending them to the realtime model.
+6. The realtime model generates Response 2 from the memory and Prompt 2, and plays it to the user in the current conversation.
+
+That takes us from the start through the end of the first complete turn. Multi-turn conversation is just this cycle repeated.
+
+What's retained, what's currently in the context window, and how it's handled have all been explained above, so I won't repeat them here. Once the first turn makes sense, the rest is easy.
+
+Note: it's the same session from beginning to end. Preventing the two pieces of speech from talking over each other is just an engineering detail. (It's very simple and handled on the playback side:
+
+Either way, they have to come out on the same audio track, waiting in the same playback queue. The only thing we do is wait for Response 1's audio to finish playing before playing the audio from Response 2. It's a queue; that's all there is to it.) But they absolutely mustn't be split into two sessions. This ensures that during multi-turn conversation the model has all its previous responses. If you split it into two, the context stops lining up and none of it fits together.
+
+One more thing: since barge-in is implemented here, let's explain how that works too.
+
+The logic is very simple: this is streaming output, so the model keeps pushing audio chunks to us, and on our side each chunk is queued as it arrives.
+
+If the user starts interrupting, of course the speaker has to stop first:
+
+1. A tracker records which response is currently playing, which part and audio chunk it has reached, and how much time has played.
+2. The program first uses the OpenAI SDK to tell the model to stop generating if it hasn't finished yet.
+3. To align the history with what the user actually heard, it also uses `conversation.item.truncate` to truncate the server-side history at the right point.
+
+There is currently a gap here: Response 1 and Response 2 normally go through the queue.
+
+I haven't actually encountered this before. Response 1 is usually very short, and there's generally a gap of half a second to a second between it and Response 2. So I haven't run into this corner case: Response 2 has already finished generating but hasn't played yet, is waiting in the queue, and the user interrupts. Response 2 should then be cleared entirely. But the current code truncates based on the number of bytes played and doesn't cover the case where that number is zero, so this is a known gap.
+
+Now, back to RAG.
+
+It's really only the tail end of RAG that changed. Previously, it picked from 278 sayings. The earlier stages still work as before: first get the words, then continue through to the top 10 from Voyage's rerank model. (Voyage first scores each candidate: it receives a query, the user's search question, and a document, one candidate text, and returns a `relevance_score` indicating how related they are.) Everything up to that point is the same as before.
+
+What differs afterward is that once we get the reranker's results, we calculate a combined hybrid score:
+We still use RAGFlow's built-in similarity with a weight of 0.3, plus the Voyage reranker score multiplied by 0.7, to get the final combined score. Even how many entries it selects is dynamic. Because the prompt requires it not to select duplicates, the number of child chunks it can select grows progressively according to a formula. Starting with no memory at all, it selects 15.
+
+These highly ranked child chunks first need to be merged back into their corresponding paragraphs. What ultimately goes to the model now isn't a single word or the saying of Jesus associated with that word: we want to select two paragraphs.
+
+Once they have been mapped to paragraphs, the logic is:
+Suppose the hits map to more than two paragraphs, say five. We use the same averaging logic as before: add up the scores of the hits and divide by the number of hits to get the average score.
+
+The final cutoff is still 0.3. If even the best paragraph's average score doesn't exceed 0.3, the retrieved memories aren't much good; better to have none, so we use none of them.
+
+Finally, the top two paragraphs are sent to the model, with instructions in the prompt to choose one.
+
+Why send two paragraphs instead of one?
+Because the prompt requires it not to repeat things it has already said. If you give it only one episode to talk about over and over, anyone would get annoyed. Giving it two leaves some room for error.
+
+Why not send three?
+Because episodes spread across two sections are more common in this book. Some span three, but there really aren't many. Mainly to save tokens, we didn't make it a choice of one out of three.
+
+That's the overall picture.
 
 ## Phase 1: retrieval and eval
 
@@ -878,7 +1056,7 @@ In one sentence: **the RAGFlow part didn't change at all; what changed is both e
 
 ---
 
-Phases 1 to 8 above were all written by AI. Nothing is emphasized, and it's far too long. And the project has already moved on to version three; I really don't have the energy to sort it out.
+Phases 1 to 8 above were all written by AI. Nothing is emphasized, and it's far too long. And the project has already moved on to version three; I really don't have the energy to sort it out. Update: I've added a supplement in my own notes near the top, explaining the RAG side of things (the later stages, and RAG in V3).
 
 Anyway, if I were writing it, this README wouldn't look like this, even written from a technical or architectural angle. But there's no help for it; I'm a bit too busy to keep up.
 
